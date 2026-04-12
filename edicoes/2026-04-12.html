@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wellness Intelligence | Você Mais+</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --green:    #1C3A2B;
+      --sage:     #4A7C5F;
+      --terra:    #C4592A;
+      --amber:    #D4A843;
+      --cream:    #F5F0E8;
+      --white:    #FFFFFF;
+      --charcoal: #1A1A1A;
+      --muted:    #6B6B6B;
+      --border:   #E0DAD0;
+      --lime:     #C8D94E;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--cream);
+      color: var(--charcoal);
+      min-height: 100vh;
+    }
+
+    /* ─── HEADER ─────────────────────────────────────────── */
+    header {
+      background: var(--white);
+      border-bottom: 1.5px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+
+    .logo-mark {
+      width: 32px;
+      height: 32px;
+      background: var(--green);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+    }
+
+    .logo-text {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--charcoal);
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+    }
+
+    .logo-text span {
+      color: var(--sage);
+    }
+
+    nav {
+      display: flex;
+      gap: 6px;
+    }
+
+    nav a {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      text-decoration: none;
+      padding: 6px 12px;
+      border-radius: 100px;
+      transition: all 0.15s;
+    }
+
+    nav a:hover, nav a.active {
+      background: var(--charcoal);
+      color: var(--white);
+    }
+
+    .header-date {
+      font-size: 11px;
+      font-weight: 500;
+      color: var(--muted);
+      letter-spacing: 0.04em;
+    }
+
+    /* ─── HERO STRIP ─────────────────────────────────────── */
+    .hero-strip {
+      background: var(--green);
+      color: var(--white);
+      padding: 14px 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 32px;
+    }
+
+    .hero-strip-label {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      opacity: 0.6;
+    }
+
+    .hero-strip-headline {
+      font-size: 13px;
+      font-weight: 500;
+    }
+
+    .hero-strip-headline strong {
+      font-weight: 800;
+    }
+
+    /* ─── MAIN GRID ──────────────────────────────────────── */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 32px 80px;
+    }
+
+    /* Edição do dia label */
+    .edition-label {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+
+    .edition-label .dot {
+      width: 8px; height: 8px;
+      background: var(--terra);
+      border-radius: 50%;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+
+    .edition-label span {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--terra);
+    }
+
+    /* Grid layout */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-auto-rows: 80px;
+      gap: 16px;
+    }
+
+    /* ─── CARDS ──────────────────────────────────────────── */
+    .card {
+      border-radius: 16px;
+      padding: 28px;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 16px 40px rgba(0,0,0,0.12);
+    }
+
+    /* Sizes */
+    .card-hero   { grid-column: span 7; grid-row: span 5; }
+    .card-tall   { grid-column: span 5; grid-row: span 5; }
+    .card-wide   { grid-column: span 7; grid-row: span 4; }
+    .card-medium { grid-column: span 5; grid-row: span 4; }
+    .card-small  { grid-column: span 4; grid-row: span 4; }
+    .card-sq     { grid-column: span 4; grid-row: span 3; }
+
+    /* Colors */
+    .card-green  { background: var(--green); color: var(--white); }
+    .card-sage   { background: var(--sage); color: var(--white); }
+    .card-terra  { background: var(--terra); color: var(--white); }
+    .card-amber  { background: var(--amber); color: var(--charcoal); }
+    .card-lime   { background: var(--lime); color: var(--charcoal); }
+    .card-cream  { background: var(--white); color: var(--charcoal); border: 1.5px solid var(--border); }
+    .card-dark   { background: var(--charcoal); color: var(--white); }
+
+    /* Image cards */
+    .card-image {
+      background-size: cover;
+      background-position: center;
+    }
+
+    .card-image::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 55%);
+      border-radius: inherit;
+    }
+
+    .card-image * { position: relative; z-index: 1; }
+    .card-image { color: var(--white); }
+
+    /* Card parts */
+    .card-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 9.5px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 5px 10px;
+      border-radius: 100px;
+      background: rgba(255,255,255,0.18);
+      backdrop-filter: blur(4px);
+      width: fit-content;
+      margin-bottom: auto;
+    }
+
+    .card-green .card-tag,
+    .card-dark .card-tag,
+    .card-sage .card-tag,
+    .card-terra .card-tag { background: rgba(255,255,255,0.18); color: inherit; }
+
+    .card-cream .card-tag,
+    .card-amber .card-tag,
+    .card-lime  .card-tag { background: rgba(0,0,0,0.08); color: inherit; }
+
+    .tag-dot {
+      width: 5px; height: 5px;
+      border-radius: 50%;
+      background: currentColor;
+      opacity: 0.7;
+    }
+
+    .card-headline {
+      font-size: clamp(16px, 2.2vw, 26px);
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      margin: 12px 0 0;
+    }
+
+    .card-hero .card-headline { font-size: clamp(24px, 3vw, 38px); }
+
+    .card-sub {
+      font-size: 12.5px;
+      font-weight: 400;
+      line-height: 1.5;
+      margin-top: 10px;
+      opacity: 0.75;
+    }
+
+    .card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 16px;
+    }
+
+    .card-cta {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      opacity: 0.65;
+    }
+
+    .card-arrow {
+      width: 36px; height: 36px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 15px;
+      transition: background 0.15s;
+    }
+
+    .card-cream .card-arrow,
+    .card-amber .card-arrow,
+    .card-lime  .card-arrow { background: rgba(0,0,0,0.09); }
+
+    .card:hover .card-arrow { background: rgba(255,255,255,0.35); }
+    .card-cream:hover .card-arrow,
+    .card-amber:hover .card-arrow,
+    .card-lime:hover .card-arrow { background: rgba(0,0,0,0.16); }
+
+    /* Score badge */
+    .score-badge {
+      position: absolute;
+      top: 24px;
+      right: 24px;
+      font-size: 20px;
+      line-height: 1;
+    }
+
+    /* Priority flag */
+    .priority-flag {
+      position: absolute;
+      top: 24px;
+      right: 24px;
+      width: 28px; height: 28px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .flag-red    { background: #FF4444; color: white; }
+    .flag-orange { background: #FF8C42; color: white; }
+    .flag-yellow { background: #FFD166; color: var(--charcoal); }
+
+    /* Stat highlight */
+    .stat-big {
+      font-size: clamp(36px, 5vw, 60px);
+      font-weight: 900;
+      letter-spacing: -0.04em;
+      line-height: 1;
+      margin: 10px 0 4px;
+    }
+
+    .stat-label {
+      font-size: 11px;
+      font-weight: 500;
+      opacity: 0.7;
+    }
+
+    /* ─── SECTION DIVIDER ─────────────────────────────────── */
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin: 48px 0 24px;
+    }
+
+    .section-title {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .section-line {
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    /* ─── FOOTER ─────────────────────────────────────────── */
+    footer {
+      background: var(--green);
+      color: var(--white);
+      padding: 40px 32px;
+      text-align: center;
+    }
+
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer-logo {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      opacity: 0.5;
+      margin-bottom: 8px;
+    }
+
+    .footer-note {
+      font-size: 12px;
+      opacity: 0.35;
+    }
+
+    /* ─── RESPONSIVE ─────────────────────────────────────── */
+    @media (max-width: 768px) {
+      .header-inner { padding: 0 20px; }
+      nav { display: none; }
+      .container { padding: 24px 20px 60px; }
+      .grid { grid-template-columns: 1fr 1fr; grid-auto-rows: 120px; gap: 12px; }
+      .card-hero, .card-wide  { grid-column: span 2; grid-row: span 3; }
+      .card-tall, .card-medium { grid-column: span 2; grid-row: span 2; }
+      .card-small, .card-sq   { grid-column: span 1; grid-row: span 2; }
+      .hero-strip { flex-direction: column; gap: 4px; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <a class="logo" href="#">
+      <div class="logo-mark">🌿</div>
+      <div class="logo-text">Wellness Intelligence <span>| Você Mais+</span></div>
+    </a>
+    <nav>
+      <a href="#" class="active">Hoje</a>
+      <a href="#">Tendências</a>
+      <a href="#">Ciência</a>
+      <a href="#">Mercado</a>
+      <a href="#">Regulação</a>
+      <a href="#">Produtos</a>
+    </nav>
+    <div class="header-date">Dom, 12 Abr 2026</div>
+  </div>
+</header>
+
+<!-- HERO STRIP -->
+<div class="hero-strip">
+  <div class="hero-strip-label">⚡ Urgente</div>
+  <div class="hero-strip-headline">
+    <strong>Prazo ANVISA RDC 843/2024:</strong> todos os suplementos precisam ser notificados até setembro de 2026
+  </div>
+</div>
+
+<!-- MAIN -->
+<main class="container">
+
+  <div class="edition-label">
+    <div class="dot"></div>
+    <span>Edição de hoje — 12 de Abril de 2026</span>
+  </div>
+
+  <!-- ROW 1 -->
+  <div class="grid">
+
+    <!-- HERO CARD: Saúde Feminina -->
+    <div class="card card-hero card-green">
+      <div>
+        <div class="card-tag"><div class="tag-dot"></div> Mercado</div>
+        <div class="card-headline">79% das mulheres brasileiras já consomem suplementos</div>
+        <p class="card-sub">A economia feminina da saúde vale US$ 163 bi globalmente. A menopausa sozinha representa US$ 60 trilhões em demandas não atendidas. Uma linha "Ciclo Feminino" por fase da vida é a oportunidade mais clara do semestre.</p>
+      </div>
+      <div class="card-footer">
+        <div class="card-cta">Ver análise completa</div>
+        <div class="card-arrow">→</div>
+      </div>
+      <div class="score-badge">⭐⭐⭐⭐⭐</div>
+    </div>
+
+    <!-- TALL CARD: ANVISA -->
+    <div class="card card-tall card-terra">
+      <div>
+        <div class="card-tag"><div class="tag-dot"></div> Regulação</div>
+        <div class="card-headline">ANVISA intensifica fiscalização no setor</div>
+        <p class="card-sub">RE 1.045/2026 e Operação Casa de Farinha. Prazo final setembro/2026. Compliance vira diferencial competitivo agora.</p>
+      </div>
+      <div class="card-footer">
+        <div class="card-cta">Ação imediata</div>
+        <div class="card-arrow">→</div>
+      </div>
+      <div class="priority-flag flag-red">!</div>
+    </div>
+
+    <!-- MEDIUM: Psicobióticos -->
+    <div class="card card-wide card-cream">
+      <div>
+        <div class="card-tag"><div class="tag-dot"></div> Ciência</div>
+        <div class="card-headline">Psicobióticos atingem maturidade clínica</div>
+        <p class="card-sub">O eixo intestino-cérebro é a maior oportunidade de produto do semestre. 95% da serotonina é produzida no intestino — cepas específicas com efeito em ansiedade e sono já têm evidência robusta.</p>
+      </div>
+      <div class="card-footer">
+        <div class="card-cta">Explorar dados</div>
+        <div class="card-arrow">→</div>
+      </div>
+      <div class="priority-flag flag-orange">↑</div>
+    </div>
+
+    <!-- SMALL CARD: Magnésio stat -->
+    <div class="card card-medium card-amber">
+      <div class="card-tag"><div class="tag-dot"></div> Tendências</div>
+      <div class="stat-big">#1</div>
+      <div class="stat-label">Magnésio quelado é o suplemento mais buscado de 2026 — âncora dos "Big 5" científicos</div>
+      <div class="card-footer">
+        <div class="card-cta">Ver tendência</div>
+        <div class="card-arrow">→</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- SECTION: Médio Prazo -->
+  <div class="section-header">
+    <div class="section-title">🟡 Médio Prazo — Agir em 6 a 18 meses</div>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="grid">
+
+    <!-- Cogumelos -->
+    <div class="card card-small card-dark">
+      <div>
+        <div class="card-tag"><div class="tag-dot"></div> Produtos</div>
+        <div class="card-headline">Cogumelos medicinais indo ao mainstream</div>
+        <p class="card-sub">Lion's mane e reishi em bebidas funcionais. Mercado de US$ 65,8 bi até 2030.</p>
+      </div>
+      <div class="card-footer">
+        <div class="card-cta">Ver mais</div>
+        <div class="card-arrow">→</div>
+      </div>
+    </div>
+
+    <!-- NAD / Longevidade stat -->
+    <div class="card card-small card-lime">
+      <div class="card-tag"><div class="tag-dot"></div> Longevidade</div>
+      <div class="stat-big">7,8%</div>
+      <div class="stat-label">CAGR do mercado de NAD+/NMN — projetado em US$ 16,7 bi até 2033</div>
+      <div class="card-footer">
+        <div class="card-cta">Ver análise</div>
+        <div class="card-arrow">→</div>
+      </div>
+    </div>
+
+    <!-- Plant-based -->
+    <div class="card card-small card-sage">
+      <div>
+        <div class="card-tag"><div class="tag-dot"></div> Mercado</div>
+        <div class="card-headline">Plant-based supera R$ 2,2 bi no Brasil em 2026</div>
+        <p class="card-sub">Veganismo funcional com apelo crescente. Janela de posicionamento de marca ainda aberta.</p>
+      </div>
+      <div class="card-footer">
+        <div class="card-cta">Ver dados</div>
+        <div class="card-arrow">→</div>
+      </div>
+    </div>
+
+    <!-- Neurowellness full-width -->
+    <div class="card card-wide card-cream" style="grid-column: span 7;">
+      <div>
+        <div class="card-tag"><div class="tag-dot"></div> Tendências</div>
+        <div class="card-headline">Global Wellness Institute elege Neurowellness como próxima grande onda</div>
+        <p class="card-sub">A nova fronteira do bem-estar une sono, calma, foco e sistema nervoso. Oportunidade de linha premium "calma/sistema nervoso" com diferenciação científica antes da concorrência chegar.</p>
+      </div>
+      <div class="card-footer">
+        <div class="card-cta">Ver relatório GWI</div>
+        <div class="card-arrow">→</div>
+      </div>
+    </div>
+
+    <!-- Ashwagandha stat -->
+    <div class="card card-medium card-terra">
+      <div class="card-tag"><div class="tag-dot"></div> Ciência</div>
+      <div class="stat-big">71%</div>
+      <div class="stat-label">dos consumidores pagam mais por resultados graduais e naturais — ashwagandha KSM-66 lidera</div>
+      <div class="card-footer">
+        <div class="card-cta">Explorar</div>
+        <div class="card-arrow">→</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- SECTION: Insights Estratégicos -->
+  <div class="section-header">
+    <div class="section-title">💡 Insights Estratégicos desta Edição</div>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="grid">
+
+    <!-- Tema unificador -->
+    <div class="card card-hero card-green" style="grid-column: span 12; grid-row: span 3;">
+      <div>
+        <div class="card-tag"><div class="tag-dot"></div> Análise de Cruzamento</div>
+        <div class="card-headline" style="font-size: clamp(18px,2.5vw,30px); max-width: 900px;">
+          A janela mais urgente está na intersecção de Saúde Feminina + Psicobióticos + Magnésio — sub-atendida, crescente e pronta para consumo imediato
+        </div>
+      </div>
+      <div class="card-footer">
+        <div class="card-cta">Tema unificador desta rodada: estresse × sono × microbioma × longevidade</div>
+        <div class="card-arrow">→</div>
+      </div>
+    </div>
+
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">🌿 Wellness Intelligence | Você Mais+</div>
+    <div class="footer-note">Atualizado automaticamente todos os dias às 7h por inteligência artificial · Para uso interno — fundadores e time comercial</div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wellness Intelligence | você-mais+</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      /* Brand primárias */
+      --navy:    #00276e;
+      --yellow:  #feda14;
+      --black:   #1d1d1b;
+      --white:   #ffffff;
+
+      /* Escala de cinza */
+      --gray-50:  #f7f7f7;
+      --gray-100: #efefef;
+      --gray-200: #e0e0e0;
+      --gray-400: #adadad;
+      --gray-600: #6b6b6b;
+      --gray-800: #2e2e2e;
+
+      --border: rgba(0,0,0,0.09);
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--white);
+      color: var(--black);
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ─── HEADER ─────────────────────────────────────── */
+    header {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      position: sticky; top: 0; z-index: 100;
+    }
+
+    .header-inner {
+      max-width: 1280px; margin: 0 auto;
+      padding: 0 40px; height: 64px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+
+    .logo-wrap {
+      display: flex; align-items: center; gap: 16px;
+      text-decoration: none;
+    }
+
+    .logo-svg { height: 22px; width: auto; }
+
+    .logo-divider { width: 1px; height: 20px; background: var(--gray-200); }
+
+    .logo-sub {
+      font-size: 10px; font-weight: 600;
+      letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--gray-400);
+    }
+
+    nav { display: flex; gap: 2px; }
+
+    nav a {
+      font-size: 11px; font-weight: 600;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      color: var(--gray-600); text-decoration: none;
+      padding: 6px 14px; border-radius: 100px;
+      transition: all 0.15s;
+    }
+
+    nav a:hover  { color: var(--navy); background: var(--gray-50); }
+    nav a.active { color: var(--navy); background: var(--yellow);  }
+
+    .header-date {
+      font-size: 11px; font-weight: 500;
+      color: var(--gray-400); letter-spacing: 0.03em;
+    }
+
+    /* ─── ALERT STRIP ─────────────────────────────────── */
+    .alert-strip {
+      background: var(--navy); color: var(--white);
+      padding: 11px 40px;
+      display: flex; align-items: center;
+      justify-content: center; gap: 20px;
+    }
+
+    .alert-badge {
+      font-size: 9px; font-weight: 800;
+      letter-spacing: 0.14em; text-transform: uppercase;
+      background: var(--yellow); color: var(--navy);
+      padding: 4px 10px; border-radius: 100px;
+      white-space: nowrap;
+    }
+
+    .alert-text { font-size: 12.5px; font-weight: 400; opacity: 0.9; }
+    .alert-text strong { font-weight: 700; }
+
+    /* ─── MAIN ────────────────────────────────────────── */
+    main {
+      max-width: 1280px; margin: 0 auto;
+      padding: 48px 40px 80px;
+    }
+
+    .edition-bar {
+      display: flex; align-items: center;
+      justify-content: space-between;
+      margin-bottom: 28px; padding-bottom: 20px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .edition-live { display: flex; align-items: center; gap: 10px; }
+
+    .live-dot {
+      width: 7px; height: 7px;
+      background: var(--navy); border-radius: 50%;
+      animation: blink 1.8s infinite;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50%       { opacity: 0.25; }
+    }
+
+    .edition-label {
+      font-size: 11px; font-weight: 700;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--navy);
+    }
+
+    .edition-meta {
+      font-size: 11px; font-weight: 400;
+      color: var(--gray-400); letter-spacing: 0.03em;
+    }
+
+    /* ─── GRID ────────────────────────────────────────── */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-auto-rows: 76px;
+      gap: 14px;
+    }
+
+    /* ─── CARDS ───────────────────────────────────────── */
+    .card {
+      border-radius: 14px; padding: 26px;
+      position: relative; overflow: hidden;
+      display: flex; flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.18s, box-shadow 0.18s;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 14px 36px rgba(0,0,0,0.10);
+    }
+
+    /* Sizes */
+    .c-hero  { grid-column: span 7; grid-row: span 5; }
+    .c-tall  { grid-column: span 5; grid-row: span 5; }
+    .c-wide  { grid-column: span 8; grid-row: span 4; }
+    .c-med   { grid-column: span 4; grid-row: span 4; }
+    .c-sm    { grid-column: span 4; grid-row: span 4; }
+    .c-third { grid-column: span 4; grid-row: span 3; }
+    .c-half  { grid-column: span 6; grid-row: span 3; }
+    .c-full  { grid-column: span 12; grid-row: span 3; }
+
+    /* Paleta: apenas primárias + cinzas */
+    .bg-navy    { background: var(--navy);    color: var(--white);  }
+    .bg-yellow  { background: var(--yellow);  color: var(--navy);   }
+    .bg-black   { background: var(--black);   color: var(--white);  }
+    .bg-gray800 { background: var(--gray-800);color: var(--white);  }
+    .bg-gray100 { background: var(--gray-100);color: var(--black);  }
+    .bg-white   { background: var(--white);   color: var(--black);
+                  border: 1px solid var(--border); }
+
+    /* Tag pill */
+    .tag {
+      display: inline-flex; align-items: center; gap: 5px;
+      font-size: 9px; font-weight: 800;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      padding: 4px 10px; border-radius: 100px;
+      width: fit-content;
+    }
+
+    .bg-navy  .tag,
+    .bg-black .tag,
+    .bg-gray800 .tag { background: rgba(255,255,255,0.15); color: var(--white); }
+
+    .bg-yellow .tag  { background: rgba(0,39,110,0.12);   color: var(--navy); }
+    .bg-gray100 .tag { background: var(--navy);            color: var(--white); }
+    .bg-white .tag   { background: var(--navy);            color: var(--white); }
+
+    .tag-dot { width: 4px; height: 4px; border-radius: 50%; background: currentColor; opacity: 0.6; }
+
+    /* Headline */
+    .headline {
+      font-size: clamp(15px, 2vw, 24px);
+      font-weight: 800; line-height: 1.15;
+      letter-spacing: -0.025em; margin-top: 10px;
+    }
+
+    .c-hero .headline { font-size: clamp(22px, 2.8vw, 36px); }
+    .c-full .headline { font-size: clamp(16px, 2vw, 26px); max-width: 900px; }
+
+    .sub {
+      font-size: 12px; font-weight: 400;
+      line-height: 1.55; margin-top: 8px; opacity: 0.72;
+    }
+
+    /* Stat */
+    .stat-num {
+      font-size: clamp(36px, 5vw, 60px);
+      font-weight: 900; letter-spacing: -0.04em;
+      line-height: 1; margin: 10px 0 4px;
+    }
+
+    .stat-desc {
+      font-size: 11px; font-weight: 500;
+      line-height: 1.45; opacity: 0.70;
+    }
+
+    /* Card footer */
+    .card-foot {
+      display: flex; align-items: center;
+      justify-content: space-between; margin-top: 14px;
+    }
+
+    .cta-label {
+      font-size: 9.5px; font-weight: 700;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      opacity: 0.50;
+    }
+
+    .arrow-btn {
+      width: 34px; height: 34px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 14px;
+    }
+
+    .bg-navy .arrow-btn,
+    .bg-black .arrow-btn,
+    .bg-gray800 .arrow-btn { background: rgba(255,255,255,0.15); }
+
+    .bg-yellow .arrow-btn  { background: rgba(0,39,110,0.12); }
+
+    .bg-gray100 .arrow-btn,
+    .bg-white .arrow-btn   { background: var(--navy); color: var(--white); }
+
+    /* Decorative + */
+    .plus-deco {
+      position: absolute; right: 20px;
+      font-size: 52px; font-weight: 900;
+      letter-spacing: -2px; line-height: 1;
+      opacity: 0.08; pointer-events: none;
+      font-family: 'Inter', sans-serif;
+    }
+
+    /* Yellow accent bar (brand element — a linha horizontal do logo) */
+    .accent-bar {
+      display: block; width: 28px; height: 3px;
+      background: var(--yellow); border-radius: 2px;
+      margin-bottom: 12px;
+    }
+
+    .bg-yellow .accent-bar { background: var(--navy); }
+
+    /* ─── SECTION HEADER ──────────────────────────────── */
+    .section-hd {
+      display: flex; align-items: center;
+      gap: 16px; margin: 44px 0 20px;
+    }
+
+    .section-hd-label {
+      font-size: 10px; font-weight: 800;
+      letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--gray-600); white-space: nowrap;
+    }
+
+    .section-hd-line { flex: 1; height: 1px; background: var(--border); }
+
+    /* ─── ARCHIVE ─────────────────────────────────────── */
+    .archive {
+      background: var(--gray-50);
+      border-top: 1px solid var(--border);
+      padding: 56px 40px;
+    }
+
+    .archive-inner { max-width: 1280px; margin: 0 auto; }
+
+    .archive-hd {
+      display: flex; align-items: center;
+      gap: 16px; margin-bottom: 28px;
+    }
+
+    .archive-title {
+      font-size: 10px; font-weight: 800;
+      letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--gray-400); white-space: nowrap;
+    }
+
+    .archive-line { flex: 1; height: 1px; background: var(--border); }
+
+    .archive-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 10px;
+    }
+
+    .archive-card {
+      display: block; text-decoration: none;
+      color: var(--black);
+      background: var(--white); padding: 18px 20px;
+      border-radius: 10px; border: 1px solid var(--border);
+      transition: all 0.15s;
+    }
+
+    .archive-card:hover {
+      border-color: var(--navy);
+      box-shadow: 0 4px 16px rgba(0,39,110,0.09);
+      transform: translateY(-2px);
+    }
+
+    .archive-date {
+      font-size: 9px; font-weight: 800;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--white); background: var(--navy);
+      display: inline-block;
+      padding: 3px 8px; border-radius: 4px;
+      margin-bottom: 9px;
+    }
+
+    .archive-hl {
+      font-size: 12px; font-weight: 600;
+      line-height: 1.4; color: var(--black); margin-bottom: 9px;
+    }
+
+    .archive-tags { display: flex; flex-wrap: wrap; gap: 4px; }
+
+    .archive-tags span {
+      font-size: 8.5px; font-weight: 700;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      padding: 3px 7px; border-radius: 100px;
+      background: var(--gray-100); color: var(--gray-600);
+    }
+
+    /* ─── FOOTER ──────────────────────────────────────── */
+    footer {
+      background: var(--navy); color: var(--white);
+      padding: 36px 40px;
+    }
+
+    .footer-inner {
+      max-width: 1280px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+
+    .footer-brand { display: flex; align-items: center; gap: 14px; }
+    .footer-logo-svg { height: 16px; opacity: 0.75; }
+    .footer-sep { width: 1px; height: 16px; background: rgba(255,255,255,0.2); }
+    .footer-tagline { font-size: 11px; font-weight: 500; opacity: 0.45; letter-spacing: 0.06em; }
+    .footer-note { font-size: 11px; opacity: 0.35; }
+
+    /* ─── RESPONSIVE ──────────────────────────────────── */
+    @media (max-width: 900px) {
+      .header-inner { padding: 0 20px; }
+      nav { display: none; }
+      main { padding: 28px 20px 60px; }
+      .grid { grid-template-columns: 1fr 1fr; grid-auto-rows: 100px; gap: 10px; }
+      .c-hero, .c-wide  { grid-column: span 2; grid-row: span 3; }
+      .c-tall, .c-med   { grid-column: span 2; grid-row: span 3; }
+      .c-sm, .c-third   { grid-column: span 1; grid-row: span 2; }
+      .c-full           { grid-column: span 2; grid-row: span 2; }
+      .alert-strip { flex-direction: column; gap: 6px; padding: 12px 20px; text-align: center; }
+      .archive { padding: 40px 20px; }
+      .footer-inner { flex-direction: column; gap: 12px; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <a class="logo-wrap" href="#">
+      <img class="logo-svg" src="logo-positiva.png" alt="você-mais+" />
+      <div class="logo-divider"></div>
+      <div class="logo-sub">Wellness Intelligence</div>
+    </a>
+
+    <nav>
+      <a href="#" class="active">Hoje</a>
+      <a href="#">Tendências</a>
+      <a href="#">Ciência</a>
+      <a href="#">Mercado</a>
+      <a href="#">Regulação</a>
+      <a href="#">Produtos</a>
+    </nav>
+
+    <div class="header-date">Dom, 12 Abr 2026</div>
+  </div>
+</header>
+
+<!-- ALERT STRIP -->
+<div class="alert-strip">
+  <span class="alert-badge">⚡ Urgente</span>
+  <span class="alert-text"><strong>ANVISA RDC 843/2024:</strong> prazo final setembro/2026 — todos os suplementos precisam de notificação. Compliance vira diferencial competitivo agora.</span>
+</div>
+
+<!-- MAIN -->
+<main>
+
+  <div class="edition-bar">
+    <div class="edition-live">
+      <div class="live-dot"></div>
+      <span class="edition-label">Edição de hoje — 12 de Abril de 2026</span>
+    </div>
+    <span class="edition-meta">8 tendências · Atualizado às 07h08</span>
+  </div>
+
+  <!-- ROW 1 -->
+  <div class="grid">
+
+    <!-- HERO: Saúde Feminina -->
+    <div class="card c-hero bg-navy">
+      <div>
+        <span class="accent-bar"></span>
+        <div class="tag"><div class="tag-dot"></div>Mercado · Feminino</div>
+        <div class="headline">79% das mulheres brasileiras já consomem suplementos</div>
+        <p class="sub">A economia feminina da saúde vale US$ 163 bi globalmente. A "economia da menopausa" representa US$ 60 trilhões em demandas não atendidas. A janela para uma linha "Ciclo Feminino" por fase da vida é agora.</p>
+      </div>
+      <div class="card-foot">
+        <span class="cta-label">Ver análise completa</span>
+        <div class="arrow-btn">→</div>
+      </div>
+      <span class="plus-deco" style="bottom:16px;">+</span>
+    </div>
+
+    <!-- TALL: ANVISA -->
+    <div class="card c-tall bg-black">
+      <div>
+        <span class="accent-bar"></span>
+        <div class="tag"><div class="tag-dot"></div>Regulação</div>
+        <div class="headline">ANVISA intensifica fiscalização no setor de suplementos</div>
+        <p class="sub">RE 1.045/2026 + Operação Casa de Farinha. Prazo final setembro/2026. Quem se adequar antes lidera.</p>
+      </div>
+      <div class="card-foot">
+        <span class="cta-label">Ação imediata</span>
+        <div class="arrow-btn">→</div>
+      </div>
+    </div>
+
+    <!-- WIDE: Psicobióticos -->
+    <div class="card c-wide bg-gray100">
+      <div>
+        <div class="tag"><div class="tag-dot"></div>Ciência</div>
+        <div class="headline">Psicobióticos atingem maturidade clínica — maior oportunidade de produto do semestre</div>
+        <p class="sub">95% da serotonina é produzida no intestino. Cepas específicas com efeito comprovado em ansiedade e sono. Ideia: Simbiótico "Equilíbrio Mental".</p>
+      </div>
+      <div class="card-foot">
+        <span class="cta-label">Explorar dados</span>
+        <div class="arrow-btn">→</div>
+      </div>
+    </div>
+
+    <!-- STAT: Magnésio -->
+    <div class="card c-med bg-yellow">
+      <div>
+        <span class="accent-bar"></span>
+        <div class="tag"><div class="tag-dot"></div>Tendências</div>
+        <div class="stat-num">#1</div>
+        <div class="stat-desc">Magnésio quelado — suplemento mais buscado de 2026 e âncora dos "Big 5" científicos</div>
+      </div>
+      <div class="card-foot">
+        <span class="cta-label">Ver tendência</span>
+        <div class="arrow-btn">→</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- SECTION: Médio Prazo -->
+  <div class="section-hd">
+    <span class="section-hd-label">Médio Prazo — Agir em 6 a 18 meses</span>
+    <div class="section-hd-line"></div>
+  </div>
+
+  <div class="grid">
+
+    <!-- Cogumelos -->
+    <div class="card c-sm bg-gray800">
+      <div>
+        <div class="tag"><div class="tag-dot"></div>Produtos</div>
+        <div class="headline">Cogumelos medicinais indo ao mainstream global</div>
+        <p class="sub">Lion's mane e reishi em bebidas funcionais. Mercado de US$ 65,8 bi até 2030.</p>
+      </div>
+      <div class="card-foot">
+        <span class="cta-label">Ver mais</span>
+        <div class="arrow-btn">→</div>
+      </div>
+    </div>
+
+    <!-- NAD+ stat -->
+    <div class="card c-sm bg-navy">
+      <div>
+        <span class="accent-bar"></span>
+        <div class="tag"><div class="tag-dot"></div>Longevidade</div>
+        <div class="stat-num">7,8%</div>
+        <div class="stat-desc">CAGR do mercado de NAD+/NMN — projetado em US$ 16,7 bi até 2033</div>
+      </div>
+      <div class="card-foot">
+        <span class="cta-label">Ver análise</span>
+        <div class="arrow-btn">→</div>
+      </div>
+    </div>
+
+    <!-- Plant-based -->
+    <div class="card c-sm bg-white">
+      <div>
+        <div class="tag"><div class="tag-dot"></div>Mercado</div>
+        <div class="headline">Plant-based ultrapassa R$ 2,2 bi no Brasil em 2026</div>
+        <p class="sub">Veganismo funcional com apelo crescente. Janela de posicionamento de marca ainda aberta.</p>
+      </div>
+      <div class="card-foot">
+        <span class="cta-label">Ver dados</span>
+        <div class="arrow-btn">→</div>
+      </div>
+    </div>
+
+    <!-- Neurowellness -->
+    <div class="card c-wide bg-navy">
+      <div>
+        <span class="accent-bar"></span>
+        <div class="tag"><div class="tag-dot"></div>Tendências · Global</div>
+        <div class="headline">Global Wellness Institute elege Neurowellness como próxima grande onda do bem-estar</div>
+        <p class="sub">Sono, calma, foco e sistema nervoso como fronteira premium do wellness. Oportunidade de linha com diferenciação científica antes da concorrência chegar ao Brasil.</p>
+      </div>
+      <div class="card-foot">
+        <span class="cta-label">Relatório GWI</span>
+        <div class="arrow-btn">→</div>
+      </div>
+      <span class="plus-deco" style="bottom:12px;">+</span>
+    </div>
+
+    <!-- Ashwagandha stat -->
+    <div class="card c-med bg-yellow">
+      <div>
+        <span class="accent-bar"></span>
+        <div class="tag"><div class="tag-dot"></div>Ciência</div>
+        <div class="stat-num">71%</div>
+        <div class="stat-desc">dos consumidores pagam mais por resultados graduais e naturais — ashwagandha KSM-66 lidera</div>
+      </div>
+      <div class="card-foot">
+        <span class="cta-label">Explorar</span>
+        <div class="arrow-btn">→</div>
+      </div>
+    </div>
+
+    <!-- Influenciadores -->
+    <div class="card c-third bg-gray100">
+      <div>
+        <div class="tag"><div class="tag-dot"></div>Digital</div>
+        <div class="stat-num">73%</div>
+        <div class="stat-desc">das compras de suplementos no Brasil são impactadas por criadores de conteúdo</div>
+      </div>
+      <div class="card-foot">
+        <span class="cta-label">Estratégia</span>
+        <div class="arrow-btn">→</div>
+      </div>
+    </div>
+
+    <!-- Adaptogênicos -->
+    <div class="card c-third bg-white">
+      <div>
+        <div class="tag"><div class="tag-dot"></div>Tendências</div>
+        <div class="headline">Adaptogênicos em explosão</div>
+        <p class="sub">Magnésio malato, L-teanina e Ashwagandha KSM-66 são os ingredientes do momento.</p>
+      </div>
+      <div class="card-foot">
+        <span class="cta-label">Ver dados</span>
+        <div class="arrow-btn">→</div>
+      </div>
+    </div>
+
+    <!-- Saúde feminina stat -->
+    <div class="card c-third bg-black">
+      <div>
+        <span class="accent-bar"></span>
+        <div class="tag"><div class="tag-dot"></div>Oportunidade</div>
+        <div class="stat-num">US$163bi</div>
+        <div class="stat-desc">mercado global de saúde feminina — território sub-atendido no Brasil</div>
+      </div>
+      <div class="card-foot">
+        <span class="cta-label">Estratégia</span>
+        <div class="arrow-btn">→</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- INSIGHTS -->
+  <div class="section-hd">
+    <span class="section-hd-label">+ Insights estratégicos desta edição</span>
+    <div class="section-hd-line"></div>
+  </div>
+
+  <div class="grid">
+    <div class="card c-full bg-navy">
+      <div>
+        <span class="accent-bar"></span>
+        <div class="tag"><div class="tag-dot"></div>Análise de Cruzamento</div>
+        <div class="headline">A janela mais urgente está na intersecção de Saúde Feminina + Psicobióticos + Magnésio — sub-atendida, crescente e pronta para consumo imediato</div>
+      </div>
+      <div class="card-foot">
+        <span class="cta-label">Tema unificador: estresse × sono × microbioma × longevidade</span>
+        <div class="arrow-btn">→</div>
+      </div>
+      <span class="plus-deco" style="bottom:12px; font-size:72px;">+</span>
+    </div>
+  </div>
+
+</main>
+
+<!-- ARQUIVO -->
+<section class="archive">
+  <div class="archive-inner">
+    <div class="archive-hd">
+      <span class="archive-title">Edições Anteriores</span>
+      <div class="archive-line"></div>
+    </div>
+    <div class="archive-grid">
+      <!-- ARCHIVE_ENTRIES_START -->
+      <a class="archive-card" href="edicoes/2026-04-12.html">
+        <div class="archive-date">12 Abr 2026</div>
+        <div class="archive-hl">Saúde feminina, psicobióticos, ANVISA e Neurowellness</div>
+        <div class="archive-tags">
+          <span>Mercado</span><span>Ciência</span><span>Regulação</span><span>Tendências</span>
+        </div>
+      </a>
+      <!-- ARCHIVE_ENTRIES_END -->
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img class="footer-logo-svg" src="logo-branca.png" alt="você-mais+" />
+      <div class="footer-sep"></div>
+      <span class="footer-tagline">Nutrição com clareza.</span>
+    </div>
+    <span class="footer-note">Atualizado automaticamente às 7h · Para uso interno — fundadores e time comercial</span>
+  </div>
+</footer>
+
+</body>
+</html>
