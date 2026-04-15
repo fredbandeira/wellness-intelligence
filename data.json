@@ -1,6 +1,132 @@
 {
   "editions": [
     {
+      "date": "2026-04-15",
+      "dateLabel": "15 de Abril de 2026",
+      "cards": [
+        {
+          "category": "mercado",
+          "tag": "Mercado · Crescimento",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Setor de suplementos cresce 42% em faturamento — Brasil é o 3° maior mercado global",
+          "summary": "Entre fevereiro de 2025 e janeiro de 2026, o setor de suplementos no Brasil registrou alta de 42% em faturamento e 34% em volume de unidades vendidas, segundo dados consolidados da BRASNUTRI e Euromonitor. O Brasil ocupa hoje a 3° posição no ranking mundial, atrás apenas dos EUA e Austrália. A projeção é de R$ 13,8 bilhões em faturamento até 2030, com crescimento médio anual de 15%. O segmento feminino cresce acima da média do setor.",
+          "source": "BRASNUTRI / Euromonitor International / Revista SuplementAção, Abr 2026",
+          "curto": "9", "medio": "8", "longo": "8",
+          "idea": "Capitalizar o momento de expansão com lançamentos agressivos de novos SKUs no segundo semestre. O mercado está receptivo — quem lançar com qualidade e comunicação clara agora captura share de mercado de forma duradoura."
+        },
+        {
+          "category": "regulação",
+          "tag": "Regulação · Alerta",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "ANVISA proíbe suplementos com alegações terapêuticas e intensifica recolhimentos em 2026",
+          "summary": "Em março de 2026, a ANVISA proibiu a divulgação de suplementos com alegações terapêuticas não aprovadas e determinou o recolhimento de produtos da Bioghen Suplementos Nutricionais por falhas graves de fabricação. A agência também interditou empresa na Paraíba por irregularidades sanitárias. O prazo final de adequação à RDC 843/2024 é setembro de 2026. Marcas que antecipam a conformidade saem na frente.",
+          "source": "ANVISA / gov.br / Saudeacessivel.com.br, Mar 2026",
+          "curto": "10", "medio": "7", "longo": "5",
+          "idea": "Auditoria urgente de toda a comunicação de produto — textos de site, embalagem, redes sociais e materiais de vendas. Remover qualquer alegação terapêutica e substituir por linguagem funcional aprovada. Transformar compliance em sinal de confiança visível ao consumidor."
+        },
+        {
+          "category": "mercado",
+          "tag": "Mercado · Feminino",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Mulheres lideram consumo de suplementos — pedidos online crescem 24,8% e 79% já suplementam",
+          "summary": "Levantamento do Soldiers Insights aponta que pedidos femininos online de suplementos cresceram 24,8% entre 2024 e 2025, ritmo superior ao crescimento geral do mercado. Pesquisa do Instituto Locomotiva confirma que 79% das mulheres brasileiras usam suplementos ativamente. As principais categorias de demanda feminina em 2026 são: equilíbrio metabólico, sono e bem-estar emocional, e saúde da pele, cabelos e unhas.",
+          "source": "Soldiers Insights / Instituto Locomotiva / Sincofarma SP, Mar 2026",
+          "curto": "9", "medio": "9", "longo": "8",
+          "idea": "Linha segmentada por necessidade feminina com embalagem e comunicação direcionada. As categorias mais quentes — equilíbrio metabólico, sono e beleza — podem ser endereçadas com 3 produtos-âncora de entrada para o público feminino da Você Mais+."
+        },
+        {
+          "category": "mercado",
+          "tag": "Crescimento · Mercado",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "42% de crescimento em faturamento: mercado de suplementos acelera além das projeções",
+          "summary": "O mercado brasileiro de suplementos registrou 42% de alta em faturamento e 34% em volume entre fevereiro de 2025 e janeiro de 2026. O ritmo supera todas as projeções setoriais anteriores e consolida o Brasil como o 3° maior consumidor mundial. Fusões e aquisições no setor aceleraram, com grandes players disputando marcas de nicho com crescimento orgânico forte.",
+          "source": "BRASNUTRI / CartaCapital / Euromonitor, 2026",
+          "curto": "9", "medio": "8", "longo": "7",
+          "idea": "Momento ideal para escalar distribuição e investir em brand awareness. O crescimento do mercado eleva a maré para todos os barcos — quem tiver comunicação e produto sólido agora cresce de forma desproporcional."
+        },
+        {
+          "category": "ciência",
+          "tag": "Ciência · Longevidade",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "NMN pode reduzir pressão arterial — nova pesquisa clínica publicada em abril de 2026",
+          "summary": "Nova pesquisa publicada em abril de 2026 indica que o NMN (mononucleotídeo de nicotinamida) pode reduzir a pressão arterial, com efeito mais relevante na pressão sistólica de adultos com 60 anos ou mais. Os cientistas ressaltam que o efeito é discreto e complementar a tratamentos convencionais. O estudo fortalece o posicionamento do NMN como suplemento de longevidade com evidência clínica crescente.",
+          "source": "Tua Saúde / PubMed, Abr 2026",
+          "curto": "5", "medio": "8", "longo": "9",
+          "idea": "Incluir NMN em linha de longevidade com linguagem científica acessível voltada ao público 50+. O dado de pressão arterial amplia o apelo além do antiaging — abre porta para o segmento de saúde cardiovascular preventiva."
+        },
+        {
+          "category": "ciência",
+          "tag": "Ciência · Feminino",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Linhaça comprovada como aliada do equilíbrio hormonal feminino — da TPM à menopausa",
+          "summary": "Estudo publicado em abril de 2026 confirma que a linhaça é uma das fontes vegetais mais ricas em lignanas e ômega-3, compostos que atuam diretamente na modulação dos níveis de estrogênio feminino. Os benefícios se estendem desde a TPM até a menopausa, com ação na redução de sintomas de oscilação hormonal. A evidência científica coloca a linhaça como ingrediente funcional de alta credibilidade para produtos femininos.",
+          "source": "Tua Saúde / Saúde da Mulher 2026, Abr 2026",
+          "curto": "8", "medio": "8", "longo": "7",
+          "idea": "Fórmula Ciclo Feminino com linhaça, magnésio e vitamina B6 para TPM, ou linha Menopausa+ com linhaça e fitoestrógenos naturais. Ingrediente acessível, com forte evidência e comunicação emocional poderosa."
+        },
+        {
+          "category": "tendências",
+          "tag": "Tendências · Clean Label",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Clean Label cresce para USD 99 bi até 2034 — transparência de ingredientes vira diferencial decisivo",
+          "summary": "O mercado global de ingredientes clean label, avaliado em USD 53,2 bilhões em 2024, deve atingir USD 99,3 bilhões até 2034 com CAGR de 6,4%. Mais de 60% dos consumidores globais afirmam confiar mais em marcas que explicam claramente a origem e o processamento dos ingredientes. No Brasil, a tendência se acelera impulsionada pela fiscalização crescente da ANVISA e pela exigência do consumidor millennial.",
+          "source": "BHB Food / Accio Business / ANB Farma, 2026",
+          "curto": "8", "medio": "9", "longo": "8",
+          "idea": "Reestruturar rotulagem e comunicação da Você Mais+ com QR code de rastreabilidade de ingredientes e declaração clara de clean label. Diferencial imediato num mercado onde concorrentes ainda usam listas longas de excipientes."
+        },
+        {
+          "category": "tendências",
+          "tag": "Tendências · Digital",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Líderes de Opinião Digitais substituem influenciadores no wellness — mercado brasileiro de R$ 82 bi",
+          "summary": "O mercado de wellness brasileiro atingiu R$ 82,3 bilhões em 2024 e deve chegar a R$ 209,5 bilhões até 2033. A Focusnetworks aponta que o termo influenciador está sendo substituído pelo conceito de Líder de Opinião Digital — profissionais com credencial real como nutricionistas, médicos e farmacêuticos. Micro-influenciadores nessa categoria convertem 3x mais do que macros sem credencial. A autenticidade científica se torna o maior ativo de comunicação.",
+          "source": "Focusnetworks / Times Brasil / We Are Social Brasil, Abr 2026",
+          "curto": "8", "medio": "8", "longo": "7",
+          "idea": "Programa de parceria com nutricionistas e farmacêuticos no TikTok e Reels — conteúdo educativo de 60 segundos com linguagem científica acessível. A Você Mais+ tem o produto e a credencial; falta só a estratégia de amplificação."
+        },
+        {
+          "category": "mercado",
+          "tag": "Mercado · Feminino",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "79% das mulheres brasileiras consomem suplementos — público feminino lidera crescimento do setor",
+          "summary": "Levantamento do Instituto Locomotiva confirma que 79% das mulheres brasileiras fazem uso ativo de suplementos, superando o consumo masculino em todas as faixas etárias. O crescimento de pedidos online femininos de 24,8% em 12 meses consolida este público como o principal driver de expansão do setor. As categorias de maior procura são: hormônios e ciclo, sono e bem-estar emocional, cabelos e pele.",
+          "source": "Instituto Locomotiva / Sincofarma SP, Mar 2026",
+          "curto": "9", "medio": "9", "longo": "8",
+          "idea": "Comunicação institucional da Você Mais+ posicionando a marca como especialista em saúde feminina natural. Criar conteúdo educativo por fase da vida — jovem adulta, maternidade, perimenopausa — e construir autoridade no segmento antes da competição se intensificar."
+        },
+        {
+          "category": "produtos",
+          "tag": "Produtos · Essenciais",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Omega-3 + Vitamina D + Magnésio: trio âncora consolidado nos protocolos de saúde de 2026",
+          "summary": "O trio ômega-3, vitamina D e magnésio tornou-se o protocolo de suplementação básica mais prescrito por médicos e nutricionistas no Brasil em 2026. Os três ingredientes aparecem em conjunto nas principais discussões científicas de saúde preventiva e longevidade. O magnésio quelado lidera as buscas individuais, enquanto combinações em kit crescem nas plataformas de e-commerce. A família Big 5 com creatina e colágeno completa o portfólio âncora.",
+          "source": "Doctors First / MEDBR Médicos Brasil / Google Trends, Abr 2026",
+          "curto": "8", "medio": "8", "longo": "7",
+          "idea": "Kit Big 5 Você Mais+ — ômega-3, vitamina D, magnésio quelado, colágeno e creatina — como oferta de entrada para novos clientes. Posicionar como protocolo completo de saúde preventiva com linguagem médica acessível e comunicação baseada em resultados reais."
+        },
+        {
+          "category": "tendências",
+          "tag": "Tendências · IA",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Suplementação personalizada via Inteligência Artificial ganha escala no mercado nacional",
+          "summary": "A inteligência artificial entrou definitivamente no desenvolvimento e prescrição de suplementos em 2025-2026. Marcas que investem em IA reduzem ciclos de P&D e oferecem recomendações personalizadas com base em perfil de saúde, rotina e objetivos. No mercado direto ao consumidor, quizzes e anamneses digitais com recomendação de produto crescem 40% ao ano. O consumidor exige cada vez mais personalização e eficácia comprovada.",
+          "source": "Food Connection / Farmacotecnica / BPMoney, 2026",
+          "curto": "6", "medio": "9", "longo": "9",
+          "idea": "Quiz de suplementação personalizada no site e WhatsApp da Você Mais+ — 5 perguntas, recomendação de protocolo e oferta de kit. Aumenta conversão, reduz indecisão e educa o consumidor sobre os produtos certos para o seu perfil."
+        },
+        {
+          "category": "ciência",
+          "tag": "Ciência · Microbioma",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Psicobióticos atingem maturidade clínica — 95% da serotonina produzida no intestino",
+          "summary": "O eixo microbioma-intestino-cérebro passou de hipótese científica a protocolo clínico adotado por nutricionistas e psiquiatras. Cepas como Lactobacillus rhamnosus e Bifidobacterium longum têm evidência robusta de efeito positivo em ansiedade, humor e qualidade do sono. Novos biomarcadores intestinais estão sendo usados para personalizar protocolos psicobióticos. O mercado global de psicobióticos deve crescer a CAGR acima de 8% até 2030.",
+          "source": "Gut Microbiota for Health / Nature Reviews Neuroscience / PubMed, 2026",
+          "curto": "7", "medio": "9", "longo": "8",
+          "idea": "Simbiótico Equilíbrio Mental com cepas clinicamente validadas para ansiedade, humor e sono. Posicionamento como suplemento de saúde mental natural — categoria com apelo crescente e diferenciação real frente a produtos genéricos."
+        }
+      ]
+    },
+    {
       "date": "2026-04-12",
       "dateLabel": "12 de Abril de 2026",
       "cards": [
