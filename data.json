@@ -1,0 +1,130 @@
+{
+  "editions": [
+    {
+      "date": "2026-04-12",
+      "dateLabel": "12 de Abril de 2026",
+      "cards": [
+        {
+          "category": "mercado",
+          "tag": "Mercado · Feminino",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "79% das mulheres brasileiras já consomem suplementos",
+          "summary": "A economia feminina da saúde vale US$ 163 bi globalmente, com crescimento acelerado. A menopausa sozinha representa US$ 60 trilhões em demandas não atendidas. No Brasil, o Instituto Locomotiva confirmou que 79% das mulheres consomem suplementos ativamente — dado que posiciona este público como o maior driver de crescimento do setor nos próximos anos.",
+          "source": "Instituto Locomotiva / Global Wellness Institute 2026",
+          "curto": "9", "medio": "9", "longo": "8",
+          "idea": "Linha Ciclo Feminino segmentada por fase da vida: TPM, gestação, menopausa, com fórmulas específicas e embalagem diferenciada. Território sub-atendido com demanda comprovada."
+        },
+        {
+          "category": "regulação",
+          "tag": "Regulação",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "ANVISA intensifica fiscalização no setor de suplementos",
+          "summary": "A RE 1.045/2026 estabelece novas exigências de rotulagem e a Operação Casa de Farinha flagrou irregularidades em marcas conhecidas. O prazo final para notificação de todos os suplementos conforme a RDC 843/2024 é setembro de 2026. Marcas que se adequarem antes ganham posição de confiança no mercado.",
+          "source": "ANVISA / Diário Oficial da União, Abril 2026",
+          "curto": "10", "medio": "7", "longo": "5",
+          "idea": "Comunicar ativamente o compliance da Você Mais+ — laudos, processos e notificações visíveis — como diferencial de transparência antes dos concorrentes."
+        },
+        {
+          "category": "ciência",
+          "tag": "Ciência",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Psicobióticos atingem maturidade clínica",
+          "summary": "95% da serotonina é produzida no intestino. Cepas específicas como Lactobacillus rhamnosus e Bifidobacterium longum têm evidência robusta de efeito em ansiedade, humor e qualidade do sono. O eixo microbioma-intestino-cérebro passou de hipótese a protocolo clínico adotado por nutricionistas e psiquiatras.",
+          "source": "Nature Reviews Neuroscience / PubMed, Q1 2026",
+          "curto": "8", "medio": "9", "longo": "8",
+          "idea": "Simbiótico Equilíbrio Mental com cepas clinicamente validadas para ansiedade e sono. Posicionamento científico com linguagem acessível."
+        },
+        {
+          "category": "tendências",
+          "tag": "Tendências",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Magnésio quelado é o suplemento mais buscado de 2026",
+          "summary": "Google Trends Brasil confirma o magnésio quelado como o suplemento individual mais pesquisado de 2026, superando vitamina D e colágeno. É o âncora dos chamados Big 5 científicos. Alta intenção de compra e reconhecimento de marca consolidado.",
+          "source": "Google Trends Brasil / Nutrition Business Journal, Abr 2026",
+          "curto": "9", "medio": "8", "longo": "7",
+          "idea": "Usar o magnésio quelado como produto de entrada e criar um kit Big 5 Você Mais+ com os cinco essenciais científicos."
+        },
+        {
+          "category": "produtos",
+          "tag": "Produtos",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Cogumelos medicinais indo ao mainstream global",
+          "summary": "Lion's mane, reishi e cordyceps estão migrando de suplementos nicho para bebidas funcionais em grandes redes. O mercado global de cogumelos medicinais deve atingir US$ 65,8 bi até 2030. Marcas brasileiras ainda têm pouquíssima presença nesse território.",
+          "source": "Grand View Research / Exploding Topics, Mar 2026",
+          "curto": "6", "medio": "9", "longo": "8",
+          "idea": "Blend Mente Viva com lion's mane e L-teanina para foco cognitivo e performance mental."
+        },
+        {
+          "category": "tendências",
+          "tag": "Longevidade",
+          "stars": "⭐⭐⭐",
+          "headline": "NAD+/NMN: mercado de longevidade em aceleração",
+          "summary": "O mercado de NAD+/NMN cresce a CAGR de 7,8% e deve atingir US$ 16,7 bi até 2033. Healthspan — viver mais com qualidade — substitui o antiaging tradicional como conceito central.",
+          "source": "Euromonitor International / Global Wellness Institute, 2026",
+          "curto": "5", "medio": "8", "longo": "9",
+          "idea": "Posicionamento precoce em longevidade com linha Viver Mais+ focada em NAD+, resveratrol e antioxidantes de alta pureza."
+        },
+        {
+          "category": "mercado",
+          "tag": "Mercado",
+          "stars": "⭐⭐⭐",
+          "headline": "Plant-based ultrapassa R$ 2,2 bi no Brasil em 2026",
+          "summary": "O mercado plant-based brasileiro deve superar R$ 2,2 bi em 2026, puxado por consumidores flexitarianos. A busca por proteínas vegetais de qualidade e suplementos com certificação vegana cresce consistentemente.",
+          "source": "ABIAD / We Are Social Brasil, Abr 2026",
+          "curto": "6", "medio": "8", "longo": "7",
+          "idea": "Linha vegana certificada com destaque na embalagem. A Você Mais+ já tem produtos veganos — comunicar isso ativamente é uma oportunidade imediata."
+        },
+        {
+          "category": "tendências",
+          "tag": "Tendências · Global",
+          "stars": "⭐⭐⭐",
+          "headline": "Global Wellness Institute elege Neurowellness como próxima grande onda",
+          "summary": "O GWI nomeou Neurowellness como a tendência dominante dos próximos 3 anos. Consumidores buscam soluções naturais para estresse crônico, ansiedade e dificuldade de sono sem recorrer a medicamentos.",
+          "source": "Global Wellness Institute — Wellness Trends Report 2026",
+          "curto": "5", "medio": "8", "longo": "9",
+          "idea": "Linha Calma+ com ashwagandha, L-teanina e magnésio glicina. Posicionamento como solução natural para o sistema nervoso."
+        },
+        {
+          "category": "ciência",
+          "tag": "Ciência",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "71% dos consumidores pagam mais por resultados graduais e naturais",
+          "summary": "Pesquisa da Mintel Global confirma que 71% dos consumidores de suplementos preferem resultados graduais e naturais a soluções rápidas. O dado reforça que comunicar honestidade e processo — não milagre — é o caminho para fidelização.",
+          "source": "Mintel Global Health and Wellness Report, Q1 2026",
+          "curto": "8", "medio": "8", "longo": "7",
+          "idea": "Fórmula Sono Profundo com magnésio glicina, L-teanina e ashwagandha KSM-66. Comunicação baseada em ciência e processo."
+        },
+        {
+          "category": "mercado",
+          "tag": "Digital",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "73% das compras de suplementos são impactadas por criadores de conteúdo",
+          "summary": "We Are Social Brasil confirma que 73% das compras de suplementos no Brasil são influenciadas por criadores digitais. Micro-influenciadores nutricionistas têm taxas de conversão 3x maiores que macros.",
+          "source": "We Are Social Brasil / Opinion Box, Mar 2026",
+          "curto": "8", "medio": "7", "longo": "6",
+          "idea": "Estratégia com micro-influenciadores nutricionistas em Reels e TikTok de 60s. Foco em autenticidade e dados."
+        },
+        {
+          "category": "tendências",
+          "tag": "Tendências",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Adaptogênicos em explosão de demanda",
+          "summary": "Magnésio malato, L-teanina e ashwagandha KSM-66 são os três ingredientes adaptogênicos com maior crescimento de busca em 2026. A categoria cresce a dois dígitos no Brasil.",
+          "source": "Google Trends Brasil / Exploding Topics, Abr 2026",
+          "curto": "8", "medio": "8", "longo": "7",
+          "idea": "Fórmula Equilíbrio Diário com ashwagandha, magnésio malato e L-teanina. Produto versátil com apelo amplo."
+        },
+        {
+          "category": "mercado",
+          "tag": "Oportunidade",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Mercado global de saúde feminina: US$ 163 bi",
+          "summary": "O mercado global de saúde feminina atingiu US$ 163 bi e a economia da menopausa representa sozinha US$ 60 trilhões em demandas não atendidas. No Brasil, a categoria ainda é sub-representada entre marcas de suplementação natural.",
+          "source": "Global Wellness Institute / Euromonitor, 2026",
+          "curto": "9", "medio": "9", "longo": "8",
+          "idea": "Linha feminina com segmentação por fase da vida: Ciclo, Gestação e Menopausa."
+        }
+      ]
+    }
+  ]
+}

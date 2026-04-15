@@ -9,398 +9,267 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      /* Brand primárias */
-      --navy:    #00276e;
-      --yellow:  #feda14;
-      --black:   #1d1d1b;
-      --white:   #ffffff;
-
-      /* Escala de cinza */
+      --navy:     #00276e;
+      --yellow:   #feda14;
+      --black:    #1d1d1b;
+      --white:    #ffffff;
       --gray-50:  #f7f7f7;
       --gray-100: #efefef;
       --gray-200: #e0e0e0;
       --gray-400: #adadad;
       --gray-600: #6b6b6b;
       --gray-800: #2e2e2e;
-
-      --border: rgba(0,0,0,0.09);
+      --border:   rgba(0,0,0,0.09);
     }
 
-    body {
-      font-family: 'Inter', sans-serif;
-      background: var(--white);
-      color: var(--black);
-      min-height: 100vh;
-      -webkit-font-smoothing: antialiased;
+    body { font-family:'Inter',sans-serif; background:var(--white); color:var(--black); -webkit-font-smoothing:antialiased; }
+
+    /* HEADER */
+    header { background:var(--white); border-bottom:1px solid var(--border); position:sticky; top:0; z-index:100; }
+    .header-inner { max-width:1280px; margin:0 auto; padding:0 40px; height:64px; display:flex; align-items:center; justify-content:space-between; }
+    .logo-wrap { display:flex; align-items:center; gap:16px; text-decoration:none; }
+    .logo-img  { height:22px; width:auto; }
+    .logo-divider { width:1px; height:20px; background:var(--gray-200); }
+    .logo-sub { font-size:10px; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:var(--gray-400); }
+    nav { display:flex; gap:2px; }
+    nav a { font-size:11px; font-weight:600; letter-spacing:0.08em; text-transform:uppercase; color:var(--gray-600); text-decoration:none; padding:6px 14px; border-radius:100px; transition:all .15s; }
+    nav a:hover  { color:var(--navy); background:var(--gray-50); }
+    nav a.active { color:var(--navy); background:var(--yellow); }
+    .header-date { font-size:11px; font-weight:500; color:var(--gray-400); }
+
+    /* ALERT STRIP */
+    .alert-strip { background:var(--navy); color:var(--white); padding:11px 40px; display:flex; align-items:center; justify-content:center; gap:20px; }
+    .alert-badge { font-size:9px; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; background:var(--yellow); color:var(--navy); padding:4px 10px; border-radius:100px; white-space:nowrap; }
+    .alert-text  { font-size:12.5px; opacity:.9; }
+    .alert-text strong { font-weight:700; }
+
+    /* MAIN */
+    main { max-width:1280px; margin:0 auto; padding:48px 40px 80px; }
+    .edition-bar { display:flex; align-items:center; justify-content:space-between; margin-bottom:28px; padding-bottom:20px; border-bottom:1px solid var(--border); }
+    .edition-live { display:flex; align-items:center; gap:10px; }
+    .live-dot { width:7px; height:7px; background:var(--navy); border-radius:50%; animation:blink 1.8s infinite; }
+    @keyframes blink { 0%,100%{opacity:1} 50%{opacity:.25} }
+    .edition-label { font-size:11px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--navy); }
+    .edition-meta  { font-size:11px; color:var(--gray-400); }
+
+    /* GRID */
+    .grid { display:grid; grid-template-columns:repeat(12,1fr); grid-auto-rows:76px; gap:14px; }
+
+    /* CARDS */
+    .card { border-radius:14px; padding:26px; position:relative; overflow:hidden; display:flex; flex-direction:column; justify-content:space-between; transition:transform .18s,box-shadow .18s; cursor:pointer; }
+    .card:hover { transform:translateY(-3px); box-shadow:0 14px 36px rgba(0,0,0,.10); }
+
+    .c-hero  { grid-column:span 7; grid-row:span 5; }
+    .c-tall  { grid-column:span 5; grid-row:span 5; }
+    .c-wide  { grid-column:span 8; grid-row:span 4; }
+    .c-med   { grid-column:span 4; grid-row:span 4; }
+    .c-sm    { grid-column:span 4; grid-row:span 4; }
+    .c-third { grid-column:span 4; grid-row:span 3; }
+    .c-full  { grid-column:span 12; grid-row:span 3; }
+
+    .bg-navy    { background:var(--navy);    color:var(--white); }
+    .bg-yellow  { background:var(--yellow);  color:var(--navy);  }
+    .bg-black   { background:var(--black);   color:var(--white); }
+    .bg-gray800 { background:var(--gray-800);color:var(--white); }
+    .bg-gray100 { background:var(--gray-100);color:var(--black); }
+    .bg-white   { background:var(--white);   color:var(--black); border:1px solid var(--border); }
+
+    .tag { display:inline-flex; align-items:center; gap:5px; font-size:9px; font-weight:800; letter-spacing:.12em; text-transform:uppercase; padding:4px 10px; border-radius:100px; width:fit-content; }
+    .bg-navy .tag,.bg-black .tag,.bg-gray800 .tag { background:rgba(255,255,255,.15); color:var(--white); }
+    .bg-yellow .tag  { background:rgba(0,39,110,.12); color:var(--navy); }
+    .bg-gray100 .tag,.bg-white .tag { background:var(--navy); color:var(--white); }
+    .tag-dot { width:4px; height:4px; border-radius:50%; background:currentColor; opacity:.6; }
+
+    .headline { font-size:clamp(15px,2vw,24px); font-weight:800; line-height:1.15; letter-spacing:-.025em; margin-top:10px; }
+    .c-hero .headline { font-size:clamp(22px,2.8vw,36px); }
+    .c-full .headline { font-size:clamp(16px,2vw,26px); max-width:900px; }
+    .sub { font-size:12px; line-height:1.55; margin-top:8px; opacity:.72; }
+
+    .stat-num  { font-size:clamp(36px,5vw,60px); font-weight:900; letter-spacing:-.04em; line-height:1; margin:10px 0 4px; }
+    .stat-desc { font-size:11px; font-weight:500; line-height:1.45; opacity:.70; }
+
+    .card-foot { display:flex; align-items:center; justify-content:space-between; margin-top:14px; }
+    .cta-label { font-size:9.5px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; opacity:.50; }
+    .arrow-btn { width:34px; height:34px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:14px; }
+    .bg-navy .arrow-btn,.bg-black .arrow-btn,.bg-gray800 .arrow-btn { background:rgba(255,255,255,.15); }
+    .bg-yellow .arrow-btn { background:rgba(0,39,110,.12); }
+    .bg-gray100 .arrow-btn,.bg-white .arrow-btn { background:var(--navy); color:var(--white); }
+
+    .accent-bar { display:block; width:28px; height:3px; background:var(--yellow); border-radius:2px; margin-bottom:12px; }
+    .bg-yellow .accent-bar { background:var(--navy); }
+    .plus-deco  { position:absolute; right:20px; font-size:52px; font-weight:900; opacity:.08; pointer-events:none; }
+
+    /* SECTION HEADER */
+    .section-hd { display:flex; align-items:center; gap:16px; margin:44px 0 20px; }
+    .section-hd-label { font-size:10px; font-weight:800; letter-spacing:.14em; text-transform:uppercase; color:var(--gray-600); white-space:nowrap; }
+    .section-hd-line  { flex:1; height:1px; background:var(--border); }
+
+    /* MODAL */
+    .modal-overlay {
+      position:fixed; inset:0; z-index:500;
+      background:rgba(0,20,55,.55);
+      backdrop-filter:blur(6px);
+      display:flex; align-items:center; justify-content:center;
+      padding:24px;
+      opacity:0; pointer-events:none;
+      transition:opacity .22s;
     }
+    .modal-overlay.open { opacity:1; pointer-events:all; }
 
-    /* ─── HEADER ─────────────────────────────────────── */
-    header {
-      background: var(--white);
-      border-bottom: 1px solid var(--border);
-      position: sticky; top: 0; z-index: 100;
+    .modal {
+      background:var(--white); border-radius:20px;
+      width:100%; max-width:640px; max-height:88vh; overflow-y:auto;
+      box-shadow:0 32px 80px rgba(0,0,0,.22);
+      transform:translateY(20px); transition:transform .25s;
+      position:relative;
     }
+    .modal-overlay.open .modal { transform:translateY(0); }
 
-    .header-inner {
-      max-width: 1280px; margin: 0 auto;
-      padding: 0 40px; height: 64px;
-      display: flex; align-items: center; justify-content: space-between;
-    }
+    .modal-header { background:var(--navy); border-radius:20px 20px 0 0; padding:28px 32px 24px; position:relative; }
+    .modal-tag    { display:inline-flex; align-items:center; gap:5px; font-size:9px; font-weight:800; letter-spacing:.12em; text-transform:uppercase; padding:4px 10px; border-radius:100px; background:rgba(255,255,255,.15); color:var(--white); margin-bottom:12px; }
+    .modal-headline { font-size:22px; font-weight:800; line-height:1.2; letter-spacing:-.02em; color:var(--white); }
+    .modal-stars  { font-size:16px; margin-top:8px; }
+    .modal-close  { position:absolute; top:20px; right:20px; width:36px; height:36px; border-radius:50%; background:rgba(255,255,255,.15); border:none; color:var(--white); font-size:18px; cursor:pointer; display:flex; align-items:center; justify-content:center; transition:background .15s; }
+    .modal-close:hover { background:rgba(255,255,255,.28); }
 
-    .logo-wrap {
-      display: flex; align-items: center; gap: 16px;
-      text-decoration: none;
-    }
+    .modal-body { padding:28px 32px 32px; }
+    .modal-section { margin-bottom:24px; }
+    .modal-section-title { font-size:9px; font-weight:800; letter-spacing:.14em; text-transform:uppercase; color:var(--gray-400); margin-bottom:8px; padding-bottom:8px; border-bottom:1px solid var(--border); }
+    .modal-text { font-size:14px; line-height:1.65; color:var(--black); }
 
-    .logo-svg { height: 22px; width: auto; }
+    .modal-source { display:flex; align-items:center; gap:8px; margin-top:12px; }
+    .modal-source-label { font-size:10px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--gray-400); }
+    .modal-source-val   { font-size:12px; font-weight:500; color:var(--navy); }
 
-    .logo-divider { width: 1px; height: 20px; background: var(--gray-200); }
+    .modal-scores { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; }
+    .score-item   { background:var(--gray-50); border:1px solid var(--border); border-radius:10px; padding:14px; text-align:center; }
+    .score-num    { font-size:26px; font-weight:900; color:var(--navy); line-height:1; }
+    .score-label  { font-size:9px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--gray-400); margin-top:4px; }
 
-    .logo-sub {
-      font-size: 10px; font-weight: 600;
-      letter-spacing: 0.14em; text-transform: uppercase;
-      color: var(--gray-400);
-    }
+    .modal-idea       { background:var(--navy); border-radius:12px; padding:18px 20px; color:var(--white); }
+    .modal-idea-accent{ display:inline-block; width:20px; height:3px; background:var(--yellow); border-radius:2px; margin-bottom:10px; }
+    .modal-idea-label { font-size:9px; font-weight:800; letter-spacing:.12em; text-transform:uppercase; opacity:.5; margin-bottom:6px; }
+    .modal-idea-text  { font-size:14px; font-weight:600; line-height:1.5; }
 
-    nav { display: flex; gap: 2px; }
+    .modal-fit { margin-top:24px; }
+    .modal-fit-title { font-size:9px; font-weight:800; letter-spacing:.14em; text-transform:uppercase; color:var(--gray-400); margin-bottom:12px; padding-bottom:8px; border-bottom:1px solid var(--border); }
+    .modal-fit-btns  { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; }
+    .modal-fit-btn   { background:var(--gray-50); border:1px solid var(--border); border-radius:10px; padding:16px 10px; text-align:center; cursor:pointer; transition:all .15s; }
+    .modal-fit-btn:hover { border-color:var(--navy); background:var(--white); transform:translateY(-2px); box-shadow:0 4px 16px rgba(0,39,110,.08); }
+    .modal-fit-btn.selected { border-color:var(--navy); background:var(--navy); color:var(--white); }
+    .modal-fit-btn.selected .fit-label { color:var(--white); }
+    .fit-emoji  { font-size:24px; display:block; margin-bottom:6px; }
+    .fit-label  { font-size:9px; font-weight:800; letter-spacing:.12em; text-transform:uppercase; color:var(--gray-600); }
 
-    nav a {
-      font-size: 11px; font-weight: 600;
-      letter-spacing: 0.08em; text-transform: uppercase;
-      color: var(--gray-600); text-decoration: none;
-      padding: 6px 14px; border-radius: 100px;
-      transition: all 0.15s;
-    }
+    /* ARCHIVE */
+    .archive { background:var(--gray-50); border-top:1px solid var(--border); padding:56px 40px; }
+    .archive-inner { max-width:1280px; margin:0 auto; }
+    .archive-hd    { display:flex; align-items:center; gap:16px; margin-bottom:28px; }
+    .archive-title { font-size:10px; font-weight:800; letter-spacing:.14em; text-transform:uppercase; color:var(--gray-400); white-space:nowrap; }
+    .archive-line  { flex:1; height:1px; background:var(--border); }
+    .archive-grid  { display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:10px; }
+    .archive-card  { display:block; text-decoration:none; color:var(--black); background:var(--white); padding:18px 20px; border-radius:10px; border:1px solid var(--border); transition:all .15s; }
+    .archive-card:hover { border-color:var(--navy); box-shadow:0 4px 16px rgba(0,39,110,.09); transform:translateY(-2px); }
+    .archive-date  { font-size:9px; font-weight:800; letter-spacing:.1em; text-transform:uppercase; color:var(--white); background:var(--navy); display:inline-block; padding:3px 8px; border-radius:4px; margin-bottom:9px; }
+    .archive-hl    { font-size:12px; font-weight:600; line-height:1.4; margin-bottom:9px; }
+    .archive-tags  { display:flex; flex-wrap:wrap; gap:4px; }
+    .archive-tags span { font-size:8.5px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; padding:3px 7px; border-radius:100px; background:var(--gray-100); color:var(--gray-600); }
 
-    nav a:hover  { color: var(--navy); background: var(--gray-50); }
-    nav a.active { color: var(--navy); background: var(--yellow);  }
+    /* FOOTER */
+    footer { background:var(--navy); color:var(--white); padding:36px 40px; }
+    .footer-inner   { max-width:1280px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; }
+    .footer-brand   { display:flex; align-items:center; gap:14px; }
+    .footer-sep     { width:1px; height:16px; background:rgba(255,255,255,.2); }
+    .footer-tagline { font-size:11px; font-weight:500; opacity:.45; letter-spacing:.06em; }
+    .footer-note    { font-size:11px; opacity:.35; }
 
-    .header-date {
-      font-size: 11px; font-weight: 500;
-      color: var(--gray-400); letter-spacing: 0.03em;
-    }
-
-    /* ─── ALERT STRIP ─────────────────────────────────── */
-    .alert-strip {
-      background: var(--navy); color: var(--white);
-      padding: 11px 40px;
-      display: flex; align-items: center;
-      justify-content: center; gap: 20px;
-    }
-
-    .alert-badge {
-      font-size: 9px; font-weight: 800;
-      letter-spacing: 0.14em; text-transform: uppercase;
-      background: var(--yellow); color: var(--navy);
-      padding: 4px 10px; border-radius: 100px;
-      white-space: nowrap;
-    }
-
-    .alert-text { font-size: 12.5px; font-weight: 400; opacity: 0.9; }
-    .alert-text strong { font-weight: 700; }
-
-    /* ─── MAIN ────────────────────────────────────────── */
-    main {
-      max-width: 1280px; margin: 0 auto;
-      padding: 48px 40px 80px;
-    }
-
-    .edition-bar {
-      display: flex; align-items: center;
-      justify-content: space-between;
-      margin-bottom: 28px; padding-bottom: 20px;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .edition-live { display: flex; align-items: center; gap: 10px; }
-
-    .live-dot {
-      width: 7px; height: 7px;
-      background: var(--navy); border-radius: 50%;
-      animation: blink 1.8s infinite;
-    }
-
-    @keyframes blink {
-      0%, 100% { opacity: 1; }
-      50%       { opacity: 0.25; }
-    }
-
-    .edition-label {
-      font-size: 11px; font-weight: 700;
-      letter-spacing: 0.1em; text-transform: uppercase;
-      color: var(--navy);
-    }
-
-    .edition-meta {
-      font-size: 11px; font-weight: 400;
-      color: var(--gray-400); letter-spacing: 0.03em;
-    }
-
-    /* ─── GRID ────────────────────────────────────────── */
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(12, 1fr);
-      grid-auto-rows: 76px;
-      gap: 14px;
-    }
-
-    /* ─── CARDS ───────────────────────────────────────── */
-    .card {
-      border-radius: 14px; padding: 26px;
-      position: relative; overflow: hidden;
-      display: flex; flex-direction: column;
-      justify-content: space-between;
-      transition: transform 0.18s, box-shadow 0.18s;
-      cursor: pointer;
-    }
-
-    .card:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 14px 36px rgba(0,0,0,0.10);
-    }
-
-    /* Sizes */
-    .c-hero  { grid-column: span 7; grid-row: span 5; }
-    .c-tall  { grid-column: span 5; grid-row: span 5; }
-    .c-wide  { grid-column: span 8; grid-row: span 4; }
-    .c-med   { grid-column: span 4; grid-row: span 4; }
-    .c-sm    { grid-column: span 4; grid-row: span 4; }
-    .c-third { grid-column: span 4; grid-row: span 3; }
-    .c-half  { grid-column: span 6; grid-row: span 3; }
-    .c-full  { grid-column: span 12; grid-row: span 3; }
-
-    /* Paleta: apenas primárias + cinzas */
-    .bg-navy    { background: var(--navy);    color: var(--white);  }
-    .bg-yellow  { background: var(--yellow);  color: var(--navy);   }
-    .bg-black   { background: var(--black);   color: var(--white);  }
-    .bg-gray800 { background: var(--gray-800);color: var(--white);  }
-    .bg-gray100 { background: var(--gray-100);color: var(--black);  }
-    .bg-white   { background: var(--white);   color: var(--black);
-                  border: 1px solid var(--border); }
-
-    /* Tag pill */
-    .tag {
-      display: inline-flex; align-items: center; gap: 5px;
-      font-size: 9px; font-weight: 800;
-      letter-spacing: 0.12em; text-transform: uppercase;
-      padding: 4px 10px; border-radius: 100px;
-      width: fit-content;
-    }
-
-    .bg-navy  .tag,
-    .bg-black .tag,
-    .bg-gray800 .tag { background: rgba(255,255,255,0.15); color: var(--white); }
-
-    .bg-yellow .tag  { background: rgba(0,39,110,0.12);   color: var(--navy); }
-    .bg-gray100 .tag { background: var(--navy);            color: var(--white); }
-    .bg-white .tag   { background: var(--navy);            color: var(--white); }
-
-    .tag-dot { width: 4px; height: 4px; border-radius: 50%; background: currentColor; opacity: 0.6; }
-
-    /* Headline */
-    .headline {
-      font-size: clamp(15px, 2vw, 24px);
-      font-weight: 800; line-height: 1.15;
-      letter-spacing: -0.025em; margin-top: 10px;
-    }
-
-    .c-hero .headline { font-size: clamp(22px, 2.8vw, 36px); }
-    .c-full .headline { font-size: clamp(16px, 2vw, 26px); max-width: 900px; }
-
-    .sub {
-      font-size: 12px; font-weight: 400;
-      line-height: 1.55; margin-top: 8px; opacity: 0.72;
-    }
-
-    /* Stat */
-    .stat-num {
-      font-size: clamp(36px, 5vw, 60px);
-      font-weight: 900; letter-spacing: -0.04em;
-      line-height: 1; margin: 10px 0 4px;
-    }
-
-    .stat-desc {
-      font-size: 11px; font-weight: 500;
-      line-height: 1.45; opacity: 0.70;
-    }
-
-    /* Card footer */
-    .card-foot {
-      display: flex; align-items: center;
-      justify-content: space-between; margin-top: 14px;
-    }
-
-    .cta-label {
-      font-size: 9.5px; font-weight: 700;
-      letter-spacing: 0.1em; text-transform: uppercase;
-      opacity: 0.50;
-    }
-
-    .arrow-btn {
-      width: 34px; height: 34px; border-radius: 50%;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 14px;
-    }
-
-    .bg-navy .arrow-btn,
-    .bg-black .arrow-btn,
-    .bg-gray800 .arrow-btn { background: rgba(255,255,255,0.15); }
-
-    .bg-yellow .arrow-btn  { background: rgba(0,39,110,0.12); }
-
-    .bg-gray100 .arrow-btn,
-    .bg-white .arrow-btn   { background: var(--navy); color: var(--white); }
-
-    /* Decorative + */
-    .plus-deco {
-      position: absolute; right: 20px;
-      font-size: 52px; font-weight: 900;
-      letter-spacing: -2px; line-height: 1;
-      opacity: 0.08; pointer-events: none;
-      font-family: 'Inter', sans-serif;
-    }
-
-    /* Yellow accent bar (brand element — a linha horizontal do logo) */
-    .accent-bar {
-      display: block; width: 28px; height: 3px;
-      background: var(--yellow); border-radius: 2px;
-      margin-bottom: 12px;
-    }
-
-    .bg-yellow .accent-bar { background: var(--navy); }
-
-    /* ─── SECTION HEADER ──────────────────────────────── */
-    .section-hd {
-      display: flex; align-items: center;
-      gap: 16px; margin: 44px 0 20px;
-    }
-
-    .section-hd-label {
-      font-size: 10px; font-weight: 800;
-      letter-spacing: 0.14em; text-transform: uppercase;
-      color: var(--gray-600); white-space: nowrap;
-    }
-
-    .section-hd-line { flex: 1; height: 1px; background: var(--border); }
-
-    /* ─── ARCHIVE ─────────────────────────────────────── */
-    .archive {
-      background: var(--gray-50);
-      border-top: 1px solid var(--border);
-      padding: 56px 40px;
-    }
-
-    .archive-inner { max-width: 1280px; margin: 0 auto; }
-
-    .archive-hd {
-      display: flex; align-items: center;
-      gap: 16px; margin-bottom: 28px;
-    }
-
-    .archive-title {
-      font-size: 10px; font-weight: 800;
-      letter-spacing: 0.14em; text-transform: uppercase;
-      color: var(--gray-400); white-space: nowrap;
-    }
-
-    .archive-line { flex: 1; height: 1px; background: var(--border); }
-
-    .archive-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      gap: 10px;
-    }
-
-    .archive-card {
-      display: block; text-decoration: none;
-      color: var(--black);
-      background: var(--white); padding: 18px 20px;
-      border-radius: 10px; border: 1px solid var(--border);
-      transition: all 0.15s;
-    }
-
-    .archive-card:hover {
-      border-color: var(--navy);
-      box-shadow: 0 4px 16px rgba(0,39,110,0.09);
-      transform: translateY(-2px);
-    }
-
-    .archive-date {
-      font-size: 9px; font-weight: 800;
-      letter-spacing: 0.1em; text-transform: uppercase;
-      color: var(--white); background: var(--navy);
-      display: inline-block;
-      padding: 3px 8px; border-radius: 4px;
-      margin-bottom: 9px;
-    }
-
-    .archive-hl {
-      font-size: 12px; font-weight: 600;
-      line-height: 1.4; color: var(--black); margin-bottom: 9px;
-    }
-
-    .archive-tags { display: flex; flex-wrap: wrap; gap: 4px; }
-
-    .archive-tags span {
-      font-size: 8.5px; font-weight: 700;
-      letter-spacing: 0.08em; text-transform: uppercase;
-      padding: 3px 7px; border-radius: 100px;
-      background: var(--gray-100); color: var(--gray-600);
-    }
-
-    /* ─── FOOTER ──────────────────────────────────────── */
-    footer {
-      background: var(--navy); color: var(--white);
-      padding: 36px 40px;
-    }
-
-    .footer-inner {
-      max-width: 1280px; margin: 0 auto;
-      display: flex; align-items: center; justify-content: space-between;
-    }
-
-    .footer-brand { display: flex; align-items: center; gap: 14px; }
-    .footer-logo-svg { height: 16px; opacity: 0.75; }
-    .footer-sep { width: 1px; height: 16px; background: rgba(255,255,255,0.2); }
-    .footer-tagline { font-size: 11px; font-weight: 500; opacity: 0.45; letter-spacing: 0.06em; }
-    .footer-note { font-size: 11px; opacity: 0.35; }
-
-    /* ─── RESPONSIVE ──────────────────────────────────── */
-    @media (max-width: 900px) {
-      .header-inner { padding: 0 20px; }
-      nav { display: none; }
-      main { padding: 28px 20px 60px; }
-      .grid { grid-template-columns: 1fr 1fr; grid-auto-rows: 100px; gap: 10px; }
-      .c-hero, .c-wide  { grid-column: span 2; grid-row: span 3; }
-      .c-tall, .c-med   { grid-column: span 2; grid-row: span 3; }
-      .c-sm, .c-third   { grid-column: span 1; grid-row: span 2; }
-      .c-full           { grid-column: span 2; grid-row: span 2; }
-      .alert-strip { flex-direction: column; gap: 6px; padding: 12px 20px; text-align: center; }
-      .archive { padding: 40px 20px; }
-      .footer-inner { flex-direction: column; gap: 12px; text-align: center; }
+    /* RESPONSIVE */
+    @media(max-width:900px){
+      .header-inner{padding:0 20px;} nav{display:none;}
+      main{padding:28px 20px 60px;}
+      .grid{grid-template-columns:1fr 1fr;grid-auto-rows:100px;gap:10px;}
+      .c-hero,.c-wide{grid-column:span 2;grid-row:span 3;}
+      .c-tall,.c-med{grid-column:span 2;grid-row:span 3;}
+      .c-sm,.c-third{grid-column:span 1;grid-row:span 2;}
+      .c-full{grid-column:span 2;grid-row:span 2;}
+      .alert-strip{flex-direction:column;gap:6px;padding:12px 20px;text-align:center;}
+      .archive{padding:40px 20px;}
+      .footer-inner{flex-direction:column;gap:12px;text-align:center;}
+      .modal{border-radius:16px;} .modal-header{padding:24px;border-radius:16px 16px 0 0;}
+      .modal-headline{font-size:18px;} .modal-body{padding:22px 24px 28px;}
     }
   </style>
 </head>
 <body>
 
+<!-- MODAL -->
+<div class="modal-overlay" id="modal">
+  <div class="modal" role="dialog" aria-modal="true">
+    <div class="modal-header">
+      <button class="modal-close" id="modal-close-btn" aria-label="Fechar">&times;</button>
+      <div class="modal-tag"    id="m-tag"></div>
+      <div class="modal-headline" id="m-headline"></div>
+      <div class="modal-stars"  id="m-stars"></div>
+    </div>
+    <div class="modal-body">
+      <div class="modal-section">
+        <div class="modal-section-title">Análise</div>
+        <div class="modal-text" id="m-summary"></div>
+        <div class="modal-source">
+          <span class="modal-source-label">Fonte</span>
+          <span class="modal-source-val" id="m-source"></span>
+        </div>
+      </div>
+      <div class="modal-section">
+        <div class="modal-section-title">Score de Impacto</div>
+        <div class="modal-scores">
+          <div class="score-item"><div class="score-num" id="m-curto"></div><div class="score-label">Curto prazo<br>0–6 meses</div></div>
+          <div class="score-item"><div class="score-num" id="m-medio"></div><div class="score-label">Médio prazo<br>6–18 meses</div></div>
+          <div class="score-item"><div class="score-num" id="m-longo"></div><div class="score-label">Longo prazo<br>18+ meses</div></div>
+        </div>
+      </div>
+      <div class="modal-idea">
+        <div class="modal-idea-accent"></div>
+        <div class="modal-idea-label">Ideia para Você Mais+</div>
+        <div class="modal-idea-text" id="m-idea"></div>
+      </div>
+      <div class="modal-fit">
+        <div class="modal-fit-title">Esta análise tem fit com a sua empresa?</div>
+        <div class="modal-fit-btns">
+          <button class="modal-fit-btn" onclick="selectFit(this)">
+            <span class="fit-emoji">👍</span>
+            <span class="fit-label">Tem Fit</span>
+          </button>
+          <button class="modal-fit-btn" onclick="selectFit(this)">
+            <span class="fit-emoji">📝</span>
+            <span class="fit-label">Quero Mais</span>
+          </button>
+          <button class="modal-fit-btn" onclick="selectFit(this)">
+            <span class="fit-emoji">👎</span>
+            <span class="fit-label">Não é pra mim</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- HEADER -->
 <header>
   <div class="header-inner">
     <a class="logo-wrap" href="#">
-      <img class="logo-svg" src="logo-positiva.png" alt="você-mais+" />
+      <img class="logo-img" src="logo-positiva.png" alt="você-mais+" />
       <div class="logo-divider"></div>
       <div class="logo-sub">Wellness Intelligence</div>
     </a>
-
     <nav>
-      <a href="#" class="active">Hoje</a>
-      <a href="#">Tendências</a>
-      <a href="#">Ciência</a>
-      <a href="#">Mercado</a>
-      <a href="#">Regulação</a>
-      <a href="#">Produtos</a>
+      <a href="#" class="active" data-filter="all">Hoje</a>
+      <a href="#" data-filter="tendências">Tendências</a>
+      <a href="#" data-filter="ciência">Ciência</a>
+      <a href="#" data-filter="mercado">Mercado</a>
+      <a href="#" data-filter="regulação">Regulação</a>
+      <a href="#" data-filter="produtos">Produtos</a>
     </nav>
-
     <div class="header-date">Dom, 12 Abr 2026</div>
   </div>
 </header>
@@ -411,9 +280,11 @@
   <span class="alert-text"><strong>ANVISA RDC 843/2024:</strong> prazo final setembro/2026 — todos os suplementos precisam de notificação. Compliance vira diferencial competitivo agora.</span>
 </div>
 
-<!-- MAIN -->
-<main>
+<!-- CROSS-EDITION VIEW (filtro por categoria em todas as edições) -->
+<div id="cross-edition-view" style="display:none;"></div>
 
+<!-- MAIN -->
+<main id="main-content">
   <div class="edition-bar">
     <div class="edition-live">
       <div class="live-dot"></div>
@@ -425,65 +296,48 @@
   <!-- ROW 1 -->
   <div class="grid">
 
-    <!-- HERO: Saúde Feminina -->
-    <div class="card c-hero bg-navy">
+    <div class="card c-hero bg-navy" data-modal="1" data-category="mercado">
       <div>
         <span class="accent-bar"></span>
         <div class="tag"><div class="tag-dot"></div>Mercado · Feminino</div>
         <div class="headline">79% das mulheres brasileiras já consomem suplementos</div>
-        <p class="sub">A economia feminina da saúde vale US$ 163 bi globalmente. A "economia da menopausa" representa US$ 60 trilhões em demandas não atendidas. A janela para uma linha "Ciclo Feminino" por fase da vida é agora.</p>
+        <p class="sub">A economia feminina da saúde vale US$ 163 bi globalmente. A janela para uma linha por fase da vida é agora.</p>
       </div>
-      <div class="card-foot">
-        <span class="cta-label">Ver análise completa</span>
-        <div class="arrow-btn">→</div>
-      </div>
+      <div class="card-foot"><span class="cta-label">Ler análise completa</span><div class="arrow-btn">→</div></div>
       <span class="plus-deco" style="bottom:16px;">+</span>
     </div>
 
-    <!-- TALL: ANVISA -->
-    <div class="card c-tall bg-black">
+    <div class="card c-tall bg-black" data-modal="2" data-category="regulação">
       <div>
         <span class="accent-bar"></span>
         <div class="tag"><div class="tag-dot"></div>Regulação</div>
         <div class="headline">ANVISA intensifica fiscalização no setor de suplementos</div>
         <p class="sub">RE 1.045/2026 + Operação Casa de Farinha. Prazo final setembro/2026. Quem se adequar antes lidera.</p>
       </div>
-      <div class="card-foot">
-        <span class="cta-label">Ação imediata</span>
-        <div class="arrow-btn">→</div>
-      </div>
+      <div class="card-foot"><span class="cta-label">Ler análise completa</span><div class="arrow-btn">→</div></div>
     </div>
 
-    <!-- WIDE: Psicobióticos -->
-    <div class="card c-wide bg-gray100">
+    <div class="card c-wide bg-gray100" data-modal="3" data-category="ciência">
       <div>
         <div class="tag"><div class="tag-dot"></div>Ciência</div>
         <div class="headline">Psicobióticos atingem maturidade clínica — maior oportunidade de produto do semestre</div>
-        <p class="sub">95% da serotonina é produzida no intestino. Cepas específicas com efeito comprovado em ansiedade e sono. Ideia: Simbiótico "Equilíbrio Mental".</p>
+        <p class="sub">95% da serotonina é produzida no intestino. Cepas com efeito comprovado em ansiedade e sono.</p>
       </div>
-      <div class="card-foot">
-        <span class="cta-label">Explorar dados</span>
-        <div class="arrow-btn">→</div>
-      </div>
+      <div class="card-foot"><span class="cta-label">Ler análise completa</span><div class="arrow-btn">→</div></div>
     </div>
 
-    <!-- STAT: Magnésio -->
-    <div class="card c-med bg-yellow">
+    <div class="card c-med bg-yellow" data-modal="4" data-category="tendências">
       <div>
         <span class="accent-bar"></span>
         <div class="tag"><div class="tag-dot"></div>Tendências</div>
         <div class="stat-num">#1</div>
         <div class="stat-desc">Magnésio quelado — suplemento mais buscado de 2026 e âncora dos "Big 5" científicos</div>
       </div>
-      <div class="card-foot">
-        <span class="cta-label">Ver tendência</span>
-        <div class="arrow-btn">→</div>
-      </div>
+      <div class="card-foot"><span class="cta-label">Ler análise completa</span><div class="arrow-btn">→</div></div>
     </div>
 
   </div>
 
-  <!-- SECTION: Médio Prazo -->
   <div class="section-hd">
     <span class="section-hd-label">Médio Prazo — Agir em 6 a 18 meses</span>
     <div class="section-hd-line"></div>
@@ -491,125 +345,92 @@
 
   <div class="grid">
 
-    <!-- Cogumelos -->
-    <div class="card c-sm bg-gray800">
+    <div class="card c-sm bg-gray800" data-modal="5" data-category="produtos">
       <div>
         <div class="tag"><div class="tag-dot"></div>Produtos</div>
         <div class="headline">Cogumelos medicinais indo ao mainstream global</div>
         <p class="sub">Lion's mane e reishi em bebidas funcionais. Mercado de US$ 65,8 bi até 2030.</p>
       </div>
-      <div class="card-foot">
-        <span class="cta-label">Ver mais</span>
-        <div class="arrow-btn">→</div>
-      </div>
+      <div class="card-foot"><span class="cta-label">Ler análise completa</span><div class="arrow-btn">→</div></div>
     </div>
 
-    <!-- NAD+ stat -->
-    <div class="card c-sm bg-navy">
+    <div class="card c-sm bg-navy" data-modal="6" data-category="tendências">
       <div>
         <span class="accent-bar"></span>
         <div class="tag"><div class="tag-dot"></div>Longevidade</div>
         <div class="stat-num">7,8%</div>
         <div class="stat-desc">CAGR do mercado de NAD+/NMN — projetado em US$ 16,7 bi até 2033</div>
       </div>
-      <div class="card-foot">
-        <span class="cta-label">Ver análise</span>
-        <div class="arrow-btn">→</div>
-      </div>
+      <div class="card-foot"><span class="cta-label">Ler análise completa</span><div class="arrow-btn">→</div></div>
     </div>
 
-    <!-- Plant-based -->
-    <div class="card c-sm bg-white">
+    <div class="card c-sm bg-white" data-modal="7" data-category="mercado">
       <div>
         <div class="tag"><div class="tag-dot"></div>Mercado</div>
         <div class="headline">Plant-based ultrapassa R$ 2,2 bi no Brasil em 2026</div>
-        <p class="sub">Veganismo funcional com apelo crescente. Janela de posicionamento de marca ainda aberta.</p>
+        <p class="sub">Veganismo funcional com apelo crescente. Janela de posicionamento ainda aberta.</p>
       </div>
-      <div class="card-foot">
-        <span class="cta-label">Ver dados</span>
-        <div class="arrow-btn">→</div>
-      </div>
+      <div class="card-foot"><span class="cta-label">Ler análise completa</span><div class="arrow-btn">→</div></div>
     </div>
 
-    <!-- Neurowellness -->
-    <div class="card c-wide bg-navy">
+    <div class="card c-wide bg-navy" data-modal="8" data-category="tendências">
       <div>
         <span class="accent-bar"></span>
         <div class="tag"><div class="tag-dot"></div>Tendências · Global</div>
         <div class="headline">Global Wellness Institute elege Neurowellness como próxima grande onda do bem-estar</div>
-        <p class="sub">Sono, calma, foco e sistema nervoso como fronteira premium do wellness. Oportunidade de linha com diferenciação científica antes da concorrência chegar ao Brasil.</p>
+        <p class="sub">Sono, calma, foco e sistema nervoso como fronteira premium. Oportunidade de linha com diferenciação científica.</p>
       </div>
-      <div class="card-foot">
-        <span class="cta-label">Relatório GWI</span>
-        <div class="arrow-btn">→</div>
-      </div>
+      <div class="card-foot"><span class="cta-label">Ler análise completa</span><div class="arrow-btn">→</div></div>
       <span class="plus-deco" style="bottom:12px;">+</span>
     </div>
 
-    <!-- Ashwagandha stat -->
-    <div class="card c-med bg-yellow">
+    <div class="card c-med bg-yellow" data-modal="9" data-category="ciência">
       <div>
         <span class="accent-bar"></span>
         <div class="tag"><div class="tag-dot"></div>Ciência</div>
         <div class="stat-num">71%</div>
-        <div class="stat-desc">dos consumidores pagam mais por resultados graduais e naturais — ashwagandha KSM-66 lidera</div>
+        <div class="stat-desc">dos consumidores pagam mais por resultados graduais e naturais</div>
       </div>
-      <div class="card-foot">
-        <span class="cta-label">Explorar</span>
-        <div class="arrow-btn">→</div>
-      </div>
+      <div class="card-foot"><span class="cta-label">Ler análise completa</span><div class="arrow-btn">→</div></div>
     </div>
 
-    <!-- Influenciadores -->
-    <div class="card c-third bg-gray100">
+    <div class="card c-third bg-gray100" data-modal="10" data-category="mercado">
       <div>
         <div class="tag"><div class="tag-dot"></div>Digital</div>
         <div class="stat-num">73%</div>
         <div class="stat-desc">das compras de suplementos no Brasil são impactadas por criadores de conteúdo</div>
       </div>
-      <div class="card-foot">
-        <span class="cta-label">Estratégia</span>
-        <div class="arrow-btn">→</div>
-      </div>
+      <div class="card-foot"><span class="cta-label">Ler análise completa</span><div class="arrow-btn">→</div></div>
     </div>
 
-    <!-- Adaptogênicos -->
-    <div class="card c-third bg-white">
+    <div class="card c-third bg-white" data-modal="11" data-category="tendências">
       <div>
         <div class="tag"><div class="tag-dot"></div>Tendências</div>
-        <div class="headline">Adaptogênicos em explosão</div>
-        <p class="sub">Magnésio malato, L-teanina e Ashwagandha KSM-66 são os ingredientes do momento.</p>
+        <div class="headline">Adaptogênicos em explosão de demanda</div>
+        <p class="sub">Magnésio malato, L-teanina e Ashwagandha KSM-66 lideram as buscas em 2026.</p>
       </div>
-      <div class="card-foot">
-        <span class="cta-label">Ver dados</span>
-        <div class="arrow-btn">→</div>
-      </div>
+      <div class="card-foot"><span class="cta-label">Ler análise completa</span><div class="arrow-btn">→</div></div>
     </div>
 
-    <!-- Saúde feminina stat -->
-    <div class="card c-third bg-black">
+    <div class="card c-third bg-black" data-modal="12" data-category="mercado">
       <div>
         <span class="accent-bar"></span>
         <div class="tag"><div class="tag-dot"></div>Oportunidade</div>
-        <div class="stat-num">US$163bi</div>
+        <div class="stat-num" style="font-size:clamp(22px,3vw,36px);">US$163bi</div>
         <div class="stat-desc">mercado global de saúde feminina — território sub-atendido no Brasil</div>
       </div>
-      <div class="card-foot">
-        <span class="cta-label">Estratégia</span>
-        <div class="arrow-btn">→</div>
-      </div>
+      <div class="card-foot"><span class="cta-label">Ler análise completa</span><div class="arrow-btn">→</div></div>
     </div>
 
   </div>
 
-  <!-- INSIGHTS -->
   <div class="section-hd">
     <span class="section-hd-label">+ Insights estratégicos desta edição</span>
     <div class="section-hd-line"></div>
   </div>
 
   <div class="grid">
-    <div class="card c-full bg-navy">
+    <div class="card c-full bg-navy" data-modal="13" data-category="all">
       <div>
         <span class="accent-bar"></span>
         <div class="tag"><div class="tag-dot"></div>Análise de Cruzamento</div>
@@ -619,11 +440,13 @@
         <span class="cta-label">Tema unificador: estresse × sono × microbioma × longevidade</span>
         <div class="arrow-btn">→</div>
       </div>
-      <span class="plus-deco" style="bottom:12px; font-size:72px;">+</span>
+      <span class="plus-deco" style="bottom:12px;font-size:72px;">+</span>
     </div>
   </div>
 
 </main>
+
+<!-- FIM MAIN-CONTENT -->
 
 <!-- ARQUIVO -->
 <section class="archive">
@@ -637,9 +460,7 @@
       <a class="archive-card" href="edicoes/2026-04-12.html">
         <div class="archive-date">12 Abr 2026</div>
         <div class="archive-hl">Saúde feminina, psicobióticos, ANVISA e Neurowellness</div>
-        <div class="archive-tags">
-          <span>Mercado</span><span>Ciência</span><span>Regulação</span><span>Tendências</span>
-        </div>
+        <div class="archive-tags"><span>Mercado</span><span>Ciência</span><span>Regulação</span><span>Tendências</span></div>
       </a>
       <!-- ARCHIVE_ENTRIES_END -->
     </div>
@@ -650,13 +471,162 @@
 <footer>
   <div class="footer-inner">
     <div class="footer-brand">
-      <img class="footer-logo-svg" src="logo-branca.png" alt="você-mais+" />
+      <img src="logo-branca.png" alt="você-mais+" style="height:16px;opacity:.75;" />
       <div class="footer-sep"></div>
       <span class="footer-tagline">Nutrição com clareza.</span>
     </div>
     <span class="footer-note">Atualizado automaticamente às 7h · Para uso interno — fundadores e time comercial</span>
   </div>
 </footer>
+
+<!-- MODAL DATA -->
+<script>
+var MODALS = {
+  1:  { tag:"Mercado · Feminino", stars:"⭐⭐⭐⭐⭐", headline:"79% das mulheres brasileiras já consomem suplementos", summary:"A economia feminina da saúde vale US$ 163 bi globalmente, com crescimento acelerado. A menopausa sozinha representa US$ 60 trilhões em demandas não atendidas. No Brasil, o Instituto Locomotiva confirmou que 79% das mulheres consomem suplementos ativamente — dado que posiciona este público como o maior driver de crescimento do setor nos próximos anos.", source:"Instituto Locomotiva / Global Wellness Institute 2026", curto:"9", medio:"9", longo:"8", idea:"Linha Ciclo Feminino segmentada por fase da vida: TPM, gestação, menopausa, com fórmulas específicas e embalagem diferenciada. Território sub-atendido com demanda comprovada." },
+  2:  { tag:"Regulação", stars:"⭐⭐⭐⭐⭐", headline:"ANVISA intensifica fiscalização no setor de suplementos", summary:"A RE 1.045/2026 estabelece novas exigências de rotulagem e a Operação Casa de Farinha flagrou irregularidades em marcas conhecidas. O prazo final para notificação de todos os suplementos conforme a RDC 843/2024 é setembro de 2026. Marcas que se adequarem antes ganham posição de confiança no mercado.", source:"ANVISA / Diário Oficial da União, Abril 2026", curto:"10", medio:"7", longo:"5", idea:"Comunicar ativamente o compliance da Você Mais+ — laudos, processos e notificações visíveis — como diferencial de transparência antes dos concorrentes. Clear Concept aplicado à regulação." },
+  3:  { tag:"Ciência", stars:"⭐⭐⭐⭐", headline:"Psicobióticos atingem maturidade clínica", summary:"95% da serotonina é produzida no intestino. Cepas específicas como Lactobacillus rhamnosus e Bifidobacterium longum têm evidência robusta de efeito em ansiedade, humor e qualidade do sono. O eixo microbioma-intestino-cérebro passou de hipótese a protocolo clínico adotado por nutricionistas e psiquiatras.", source:"Nature Reviews Neuroscience / PubMed, Q1 2026", curto:"8", medio:"9", longo:"8", idea:"Simbiótico Equilíbrio Mental com cepas clinicamente validadas para ansiedade e sono. Posicionamento científico com linguagem acessível — diferencial claro da Você Mais+." },
+  4:  { tag:"Tendências", stars:"⭐⭐⭐⭐⭐", headline:"Magnésio quelado é o suplemento mais buscado de 2026", summary:"Google Trends Brasil confirma o magnésio quelado como o suplemento individual mais pesquisado de 2026, superando vitamina D e colágeno. É o âncora dos chamados Big 5 científicos. Alta intenção de compra e reconhecimento de marca consolidado.", source:"Google Trends Brasil / Nutrition Business Journal, Abr 2026", curto:"9", medio:"8", longo:"7", idea:"Usar o magnésio quelado como produto de entrada para novos clientes e criar um kit Big 5 Você Mais+ com os cinco essenciais científicos: magnésio, vitamina D, ômega-3, creatina e colágeno." },
+  5:  { tag:"Produtos", stars:"⭐⭐⭐⭐", headline:"Cogumelos medicinais indo ao mainstream global", summary:"Lion's mane, reishi e cordyceps estão migrando de suplementos nicho para bebidas funcionais em grandes redes. O mercado global de cogumelos medicinais deve atingir US$ 65,8 bi até 2030. Marcas brasileiras ainda têm pouquíssima presença nesse território.", source:"Grand View Research / Exploding Topics, Mar 2026", curto:"6", medio:"9", longo:"8", idea:"Blend Mente Viva com lion's mane e L-teanina para foco cognitivo e performance mental. Posicionamento premium com respaldo científico crescente." },
+  6:  { tag:"Longevidade", stars:"⭐⭐⭐", headline:"NAD+/NMN: mercado de longevidade em aceleração", summary:"O mercado de NAD+/NMN cresce a CAGR de 7,8% e deve atingir US$ 16,7 bi até 2033. Healthspan — viver mais com qualidade — substitui o antiaging tradicional como conceito central. Público de 40-60 anos com alto poder aquisitivo e disposição crescente a pagar por resultados comprovados.", source:"Euromonitor International / Global Wellness Institute, 2026", curto:"5", medio:"8", longo:"9", idea:"Posicionamento precoce em longevidade com linha Viver Mais+ focada em NAD+, resveratrol e antioxidantes de alta pureza. Janela de 12-18 meses antes da comoditização." },
+  7:  { tag:"Mercado", stars:"⭐⭐⭐", headline:"Plant-based ultrapassa R$ 2,2 bi no Brasil em 2026", summary:"O mercado plant-based brasileiro deve superar R$ 2,2 bi em 2026, puxado por consumidores flexitarianos. A busca por proteínas vegetais de qualidade e suplementos com certificação vegana cresce consistentemente, especialmente entre 25-40 anos.", source:"ABIAD / We Are Social Brasil, Abr 2026", curto:"6", medio:"8", longo:"7", idea:"Linha vegana certificada com destaque na embalagem. A Você Mais+ já tem produtos veganos — comunicar isso ativamente é uma oportunidade imediata de posicionamento." },
+  8:  { tag:"Tendências · Global", stars:"⭐⭐⭐", headline:"Global Wellness Institute elege Neurowellness como próxima grande onda", summary:"O GWI nomeou Neurowellness como a tendência dominante dos próximos 3 anos. Consumidores buscam soluções naturais para estresse crônico, ansiedade e dificuldade de sono sem recorrer a medicamentos. O mercado ainda é pouco explorado por marcas brasileiras de suplementação.", source:"Global Wellness Institute — Wellness Trends Report 2026", curto:"5", medio:"8", longo:"9", idea:"Linha Calma+ com ashwagandha, L-teanina e magnésio glicina. Posicionamento como solução natural para o sistema nervoso — território com apelo premium e crescimento estrutural." },
+  9:  { tag:"Ciência", stars:"⭐⭐⭐⭐", headline:"71% dos consumidores pagam mais por resultados graduais e naturais", summary:"Pesquisa da Mintel Global confirma que 71% dos consumidores de suplementos preferem resultados graduais e naturais a soluções rápidas. Ashwagandha KSM-66 e L-teanina lideram as buscas por adaptogênicos. O dado reforça que comunicar honestidade e processo — não milagre — é o caminho para fidelização.", source:"Mintel Global Health and Wellness Report, Q1 2026", curto:"8", medio:"8", longo:"7", idea:"Fórmula Sono Profundo com magnésio glicina, L-teanina e ashwagandha KSM-66. Comunicação baseada em ciência e processo — alinhada com o Clear Concept da Você Mais+." },
+  10: { tag:"Digital", stars:"⭐⭐⭐⭐", headline:"73% das compras de suplementos são impactadas por criadores de conteúdo", summary:"We Are Social Brasil confirma que 73% das compras de suplementos no Brasil são influenciadas por criadores digitais. O consumidor busca autenticidade e credencial científica. Micro-influenciadores nutricionistas têm taxas de conversão 3x maiores que macros.", source:"We Are Social Brasil / Opinion Box, Mar 2026", curto:"8", medio:"7", longo:"6", idea:"Estratégia com micro-influenciadores nutricionistas em Reels e TikTok de 60s. Foco em autenticidade e dados — não em promessas. Parceria com profissionais de saúde credenciados." },
+  11: { tag:"Tendências", stars:"⭐⭐⭐⭐", headline:"Adaptogênicos em explosão de demanda", summary:"Magnésio malato, L-teanina e ashwagandha KSM-66 são os três ingredientes adaptogênicos com maior crescimento de busca em 2026. O consumidor os associa a equilíbrio, energia limpa e recuperação do sono sem efeitos colaterais. A categoria cresce a dois dígitos no Brasil.", source:"Google Trends Brasil / Exploding Topics, Abr 2026", curto:"8", medio:"8", longo:"7", idea:"Fórmula Equilíbrio Diário com ashwagandha, magnésio malato e L-teanina. Produto versátil com apelo amplo — manhã ou noite — para o público de 30-50 anos." },
+  12: { tag:"Oportunidade", stars:"⭐⭐⭐⭐⭐", headline:"Mercado global de saúde feminina: US$ 163 bi", summary:"O mercado global de saúde feminina atingiu US$ 163 bi e a economia da menopausa representa sozinha US$ 60 trilhões em demandas não atendidas. No Brasil, a categoria ainda é sub-representada entre marcas de suplementação natural.", source:"Global Wellness Institute / Euromonitor, 2026", curto:"9", medio:"9", longo:"8", idea:"Linha feminina com segmentação por fase da vida: Ciclo, Gestação e Menopausa. Posicionamento como a marca de suplementação que realmente entende a mulher brasileira." },
+  13: { tag:"Análise de Cruzamento", stars:"⭐⭐⭐⭐⭐", headline:"A janela mais urgente: Saúde Feminina + Psicobióticos + Magnésio", summary:"As tendências desta rodada convergem em um ponto: a mulher brasileira é o maior mercado de suplementação do país, e ela busca soluções para equilíbrio hormonal, humor, sono e energia. A intersecção de saúde feminina, psicobióticos e magnésio quelado é sub-atendida, crescente e pronta para consumo imediato. Tema unificador: estresse, sono, microbioma e longevidade.", source:"Análise cruzada — Wellness Intelligence Você Mais+, Abr 2026", curto:"9", medio:"9", longo:"8", idea:"Kit Bem-Estar Feminino Completo com magnésio quelado, simbiótico e adaptogênico. Lançamento com comunicação científica e emocional — o produto que a Você Mais+ pode liderar no Brasil." }
+};
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Abre modal ao clicar em card
+  document.querySelectorAll('[data-modal]').forEach(function(card) {
+    card.addEventListener('click', function() {
+      var id = this.getAttribute('data-modal');
+      var d  = MODALS[id];
+      if (!d) return;
+      document.getElementById('m-tag').textContent      = d.tag;
+      document.getElementById('m-headline').textContent = d.headline;
+      document.getElementById('m-stars').textContent    = d.stars;
+      document.getElementById('m-summary').textContent  = d.summary;
+      document.getElementById('m-source').textContent   = d.source;
+      document.getElementById('m-curto').textContent    = d.curto + '/10';
+      document.getElementById('m-medio').textContent    = d.medio + '/10';
+      document.getElementById('m-longo').textContent    = d.longo + '/10';
+      document.getElementById('m-idea').textContent     = d.idea;
+      document.getElementById('modal').classList.add('open');
+      document.body.style.overflow = 'hidden';
+    });
+  });
+
+  // Fecha ao clicar no overlay
+  document.getElementById('modal').addEventListener('click', function(e) {
+    if (e.target === this) closeModal();
+  });
+
+  // Fecha ao clicar no X
+  document.getElementById('modal-close-btn').addEventListener('click', closeModal);
+
+  // Fecha com Esc
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeModal();
+  });
+
+  function closeModal() {
+    document.getElementById('modal').classList.remove('open');
+    document.body.style.overflow = '';
+    // Reset botões de fit ao fechar
+    document.querySelectorAll('.modal-fit-btn').forEach(function(b) { b.classList.remove('selected'); });
+  }
+
+  // FILTRO DO MENU — cross-edition via data.json
+  var crossView = document.getElementById('cross-edition-view');
+  var mainContent = document.getElementById('main-content');
+
+  document.querySelectorAll('nav a[data-filter]').forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      var filter = this.getAttribute('data-filter');
+
+      document.querySelectorAll('nav a').forEach(function(a) { a.classList.remove('active'); });
+      this.classList.add('active');
+
+      if (filter === 'all') {
+        // Volta para a edição de hoje
+        mainContent.style.display = '';
+        crossView.style.display = 'none';
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        return;
+      }
+
+      // Busca data.json e filtra por categoria em todas as edições
+      fetch('data.json?v=' + Date.now())
+        .then(function(r) { return r.json(); })
+        .then(function(data) {
+          var results = [];
+          data.editions.forEach(function(edition) {
+            edition.cards.forEach(function(card) {
+              if (card.category === filter) {
+                results.push({ card: card, date: edition.date, dateLabel: edition.dateLabel });
+              }
+            });
+          });
+
+          // Ordena do mais recente para o mais antigo
+          results.sort(function(a, b) { return b.date.localeCompare(a.date); });
+
+          // Renderiza
+          var label = link.textContent;
+          var html = '<div style="max-width:1280px;margin:0 auto;padding:48px 40px 80px;">';
+          html += '<div class="edition-bar"><div class="edition-live"><div class="live-dot"></div><span class="edition-label">Filtro: ' + label + '</span></div><span class="edition-meta">' + results.length + ' resultado' + (results.length !== 1 ? 's' : '') + ' · todas as edições</span></div>';
+
+          if (results.length === 0) {
+            html += '<p style="color:var(--gray-400);font-size:14px;margin-top:32px;">Nenhum resultado encontrado para esta categoria.</p>';
+          } else {
+            results.forEach(function(item) {
+              var c = item.card;
+              html += '<div style="display:flex;gap:20px;padding:24px 0;border-bottom:1px solid var(--border);cursor:pointer;" onclick="openCrossModal(' + JSON.stringify(c).replace(/"/g, '&quot;') + ')">';
+              html += '<div style="min-width:110px;text-align:right;padding-top:4px;"><span style="font-size:9px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--white);background:var(--navy);padding:3px 8px;border-radius:4px;">' + item.dateLabel + '</span></div>';
+              html += '<div style="flex:1;">';
+              html += '<div style="font-size:9px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--gray-400);margin-bottom:6px;">' + c.tag + ' · ' + c.stars + '</div>';
+              html += '<div style="font-size:18px;font-weight:800;line-height:1.2;letter-spacing:-.02em;color:var(--black);margin-bottom:8px;">' + c.headline + '</div>';
+              html += '<div style="font-size:13px;line-height:1.6;color:var(--gray-600);">' + c.summary + '</div>';
+              html += '<div style="margin-top:10px;font-size:11px;color:var(--gray-400);">Fonte: ' + c.source + '</div>';
+              html += '</div>';
+              html += '<div style="align-self:center;width:34px;height:34px;border-radius:50%;background:var(--navy);color:var(--white);display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0;">→</div>';
+              html += '</div>';
+            });
+          }
+          html += '</div>';
+          crossView.innerHTML = html;
+          mainContent.style.display = 'none';
+          crossView.style.display = '';
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    });
+  });
+
+  // Botões de fit
+  window.selectFit = function(btn) {
+    document.querySelectorAll('.modal-fit-btn').forEach(function(b) { b.classList.remove('selected'); });
+    btn.classList.add('selected');
+  };
+
+  // Abre modal a partir da view cross-edition
+  window.openCrossModal = function(c) {
+    document.getElementById('m-tag').textContent      = c.tag;
+    document.getElementById('m-headline').textContent = c.headline;
+    document.getElementById('m-stars').textContent    = c.stars;
+    document.getElementById('m-summary').textContent  = c.summary;
+    document.getElementById('m-source').textContent   = c.source;
+    document.getElementById('m-curto').textContent    = c.curto + '/10';
+    document.getElementById('m-medio').textContent    = c.medio + '/10';
+    document.getElementById('m-longo').textContent    = c.longo + '/10';
+    document.getElementById('m-idea').textContent     = c.idea;
+    document.getElementById('modal').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  };
+});
+</script>
 
 </body>
 </html>
