@@ -1,6 +1,156 @@
 {
   "editions": [
     {
+      "date": "2026-04-18",
+      "dateLabel": "18 de Abril de 2026",
+      "cards": [
+        {
+          "category": "regulação",
+          "tag": "Regulação · Urgente",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "ANVISA alerta sobre cúrcuma: danos hepáticos raros mas graves obrigam novos limites e advertências obrigatórias em suplementos",
+          "summary": "A ANVISA divulgou alerta de farmacovigilância para suplementos com cúrcuma após casos raros de inflamação e lesão hepática. Novas advertências obrigatórias e prazo de adequação até setembro 2026. Marcas devem auditar formulações imediatamente.",
+          "source": "ANVISA / Terra Brasil Noticias / gov.br / CRN6, Mar-Abr 2026",
+          "curto": "10",
+          "medio": "6",
+          "longo": "4",
+          "idea": "Auditoria imediata das formulações com cúrcuma: verificar dosagem versus novos limites ANVISA e atualizar rotulagem antes de setembro 2026. Comunicar compliance proativamente como diferencial de confiança."
+        },
+        {
+          "category": "ciência",
+          "tag": "Ciência · Creatina",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Creatina vai além da academia: estudos 2025-2026 confirmam potencial nootrópico, neuroprotetor e anti-envelhecimento",
+          "summary": "Pesquisas de 2025-2026 confirmam que creatina melhora cognição, reduz fadiga mental e preserva massa muscular em idosos. Mercado global ultrapassa US$1,1 bilhão com crescimento em saúde e longevidade.",
+          "source": "O Tempo / Food Connection / Hospital Oswaldo Cruz / Instituto de Longevidade, 2025-2026",
+          "curto": "8",
+          "medio": "9",
+          "longo": "9",
+          "idea": "Relançar creatina com posicionamento duplo: performance E cognição e longevidade. Campanha para profissionais 35-55 anos preocupados com função cerebral e envelhecimento ativo."
+        },
+        {
+          "category": "ciência",
+          "tag": "Ciência · Vitamina D",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "66% dos brasileiros têm insuficiência de Vitamina D mesmo no país mais ensolarado do mundo — Fiocruz e SciELO confirmam o paradoxo",
+          "summary": "Estudos multicêntricos revelam que 15,3% dos brasileiros têm deficiência e 50,9% insuficiência de D3, inclusive no verão. Estilo de vida urbano e genética são fatores principais. Protocolo D3+K2 consolida-se como intervenção preventiva prioritária.",
+          "source": "Agência Fiocruz / SciELO Brazil / Correio Braziliense / Jovem Pan, Jan-2026",
+          "curto": "9",
+          "medio": "8",
+          "longo": "8",
+          "idea": "Campanha Você já checou sua Vitamina D? com dado impactante dos 66% de deficiência. Protocolo D3+K2 como carro-chefe preventivo comunicando a sinergia científica D3+K2."
+        },
+        {
+          "category": "mercado",
+          "tag": "Dado · Plant-Based Brasil",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "R$2,2 bilhões: mercado plant-based supera expectativas no Brasil — flexitarianos impulsionam com crescimento de 12% ao ano",
+          "summary": "Mercado plant-based brasileiro supera R$2,2 bilhões em 2026. 26% dos brasileiros já consomem proteína vegetal mensalmente. Ervilha, arroz e cânhamo lideram por perfil nutricional e apelo clean label.",
+          "source": "GFI Brasil / Vegan Business / Euromonitor / Sobeabola, 2025-2026",
+          "curto": "7",
+          "medio": "9",
+          "longo": "9",
+          "idea": "Linha Proteína Vegetal Premium com blend ervilha+arroz, certificação vegana e comunicação clean label. Focar no flexitariano, segmento maior que o vegano estrito."
+        },
+        {
+          "category": "tendências",
+          "tag": "Tendências · Nootrópicos",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Lion's Mane lidera categoria foco calmo — cogumelos nootrópicos naturais superam estimulantes em aceitação e sustentabilidade cognitiva",
+          "summary": "Lion's Mane consolida-se como líder dos nootrópicos naturais com compostos erinacinas e hericenonas que estimulam NGF. Baixa concorrência qualificada no Brasil cria oportunidade para marcas técnicas.",
+          "source": "Collagensei / Nammushroom / Nordicoil / Unicpharma / Naturecan, 2026",
+          "curto": "7",
+          "medio": "9",
+          "longo": "9",
+          "idea": "Complexo Foco Ativo com Lion's Mane extrato padronizado 30% beta-glucanas, Ashwagandha KSM-66 e L-Teanina. Diferencial: padronização do extrato declarada na embalagem."
+        },
+        {
+          "category": "tendências",
+          "tag": "Tendências · Longevidade",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "NMN, espermidina e senolytics chegam aos suplementos em 2026 — ciência da longevidade celular sai dos laboratórios para o mercado",
+          "summary": "NMN eleva NAD+ e melhora função mitocondrial. Espermidina ativa autofagia. Mercado ainda incipiente no Brasil com alta oportunidade de posicionamento pioneiro antes de grandes players internacionais.",
+          "source": "Omre / iHerb Blog / Naturecan Portugal / Getwonderfeel, 2026",
+          "curto": "5",
+          "medio": "8",
+          "longo": "10",
+          "idea": "Linha Longevidade Ativa posicionada para o consumidor 40+ preventivo. Iniciar com NMN+Resveratrol como combo com parceria de médicos funcionalistas para validação científica."
+        },
+        {
+          "category": "tendências",
+          "tag": "Tendências · Clean Label",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Clean label vira exigência básica do consumidor brasileiro — 55% rejeitam aditivos artificiais quando há alternativas naturais",
+          "summary": "NIS Summit 2026 confirma que 55% dos consumidores rejeitam ingredientes artificiais quando alternativas naturais existem. Mercado global clean label salta de US$28bi para US$89bi até 2034.",
+          "source": "NIS Summit 2026 / bhbfood.com / Food Connection Brasil / Doremus Blog, 2026",
+          "curto": "8",
+          "medio": "9",
+          "longo": "9",
+          "idea": "Auditoria de ingredientes da Você Mais+: eliminar aditivos desnecessários e criar página Nossos Ingredientes com origem, evidência e propósito de cada componente."
+        },
+        {
+          "category": "tendências",
+          "tag": "Tendências · Saúde Feminina",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Maca peruana, melatonina e adaptógenos lideram saúde feminina — menopausa emerge como maior oportunidade inexplorada do mercado",
+          "summary": "79% das mulheres consomem suplementos. Ingredientes líderes: maca peruana, feno-grego para hormônios; melatonina para sono; biotina para pele. Menopausa representa US$60 trilhões em demandas não atendidas globalmente.",
+          "source": "Sincofarma SP / Bonitamulher.com / Sanavita / Natusvita, 2026",
+          "curto": "9",
+          "medio": "10",
+          "longo": "9",
+          "idea": "Linha Por Ela por Fase da Vida com três SKUs: Ciclo (20-35), Equilíbrio (35-50), Vitalidade 50+. Cada produto com identidade visual distinta e comunicação emocional por fase."
+        },
+        {
+          "category": "mercado",
+          "tag": "Dado · Mercado Global",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Mercado global de suplementos atinge US$109 bilhões em 2026 — projetado para dobrar até 2034 com CAGR de 9%",
+          "summary": "Mercado global de suplementos cresce de US$100,92bi em 2025 para US$109bi em 2026, com projeção de US$219bi até 2034. Brasil, terceiro maior consumidor mundial, cresce 15% ao ano.",
+          "source": "MEDBR / Hile.com.br / Revistasuplementacao.com.br / Ekobe.ind.br, 2026",
+          "curto": "7",
+          "medio": "8",
+          "longo": "9",
+          "idea": "Usar dado de US$109bi em narrativa de autoridade institucional para justificar investimento em expansão e criar conteúdo de posicionamento para investidores e parceiros."
+        },
+        {
+          "category": "ciência",
+          "tag": "Ciência · Psicobióticos",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Psicobióticos ganham validação científica: probióticos produtores de serotonina e GABA abrem nova fronteira para saúde mental natural",
+          "summary": "Estudos de 2026 confirmam que cepas específicas de Lactobacillus e Bifidobacterium produzem serotonina e GABA com efeitos positivos em ansiedade leve e qualidade do sono via eixo intestino-cérebro.",
+          "source": "Revista Saber Digital FAA / Debates em Psiquiatria / UNESP / Nutritotal, 2026",
+          "curto": "6",
+          "medio": "9",
+          "longo": "9",
+          "idea": "Complexo Bem-Estar Intestinal com cepas psicobióticas específicas, prebióticos e ômega-3. Posicionar como suporte natural ao eixo intestino-mente para ansiedade e sono."
+        },
+        {
+          "category": "mercado",
+          "tag": "Mercado · Proteína Vegetal",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Proteína de ervilha e arroz lideram plant-based no Brasil — 26% dos brasileiros já consomem mensalmente com crescimento de 12% ao ano",
+          "summary": "26% dos brasileiros já consomem proteína vegetal mensalmente, impulsionados principalmente por flexitarianos. Ervilha lidera por perfil completo de aminoácidos quando combinada com arroz e rastreabilidade.",
+          "source": "GFI Brasil / Sobeabola / Vegan Business / Agrishow Digital, 2026",
+          "curto": "7",
+          "medio": "8",
+          "longo": "9",
+          "idea": "Proteína Vegetal Você Mais+ com blend ervilha+arroz, zero adoçantes artificiais e certificação vegana. Posicionar como proteína limpa para todos, não apenas veganos."
+        },
+        {
+          "category": "tendências",
+          "tag": "Digital · Microinfluência",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Microinfluenciadores de saúde com 7% de engajamento dominam wellness digital — especialistas com credencial real substituem influenciadores genéricos",
+          "summary": "Microinfluenciadores de saúde alcançam 7% de engajamento, contra 1-2% de macros sem credencial. 73% das compras de suplementos no Brasil são influenciadas por criadores digitais.",
+          "source": "Nação Digital / Focusnetworks / We Are Social Brasil / São Paulo Aberta, 2026",
+          "curto": "8",
+          "medio": "8",
+          "longo": "7",
+          "idea": "Programa Embaixadores Científicos com 10-15 nutricionistas e farmacêuticos regionais para Reels de 60 segundos. Maior engajamento com menor budget que macroinfluenciadores sem credencial."
+        }
+      ]
+    },
+    {
       "date": "2026-04-17",
       "dateLabel": "17 de Abril de 2026",
       "cards": [
