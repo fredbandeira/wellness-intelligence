@@ -1,6 +1,156 @@
 {
   "editions": [
     {
+      "date": "2026-04-17",
+      "dateLabel": "17 de Abril de 2026",
+      "cards": [
+        {
+          "category": "regulação",
+          "tag": "Regulação · Urgente",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "ANVISA publica IN 432/2026 — nova regulação de aditivos alimentares impacta formulação de suplementos",
+          "summary": "A ANVISA publicou em 1° de abril de 2026 a Instrução Normativa nº 432/2026, promovendo alterações na regulamentação de aditivos alimentares e coadjuvantes de tecnologia no Brasil. Afeta diretamente a formulação de suplementos, exigindo revisão de ingredientes. Combinada ao prazo final da RDC 843/2024 em setembro de 2026, cria urgência regulatória real. Compliance antecipado é vantagem competitiva mensurável.",
+          "source": "ANVISA / Intertox / Mattos Filho / gov.br, Abr 2026",
+          "curto": "10",
+          "medio": "7",
+          "longo": "5",
+          "idea": "Auditoria urgente de toda a formulação e comunicação de produto frente à IN 432/2026. Mapear produtos que precisam de ajuste antes de setembro de 2026 e comunicar ativamente o compliance da Você Mais+ como diferencial de confiança."
+        },
+        {
+          "category": "mercado",
+          "tag": "Mercado · Crescimento",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Brasil rumo a R$13,8 bilhões em suplementos até 2030 — crescimento de 15% já em 2025",
+          "summary": "O mercado brasileiro de suplementos registrou crescimento de 15% em 2025, movimentando cerca de R$ 7,6 bilhões, com projeção de R$ 13,8 bilhões até 2030. Brasil consolida 3° posição mundial, atrás apenas de EUA e Austrália. 59% dos lares brasileiros já consomem suplementos. Fusões e aquisições aceleram, criando janela limitada para marcas independentes estabelecerem posição de autoridade.",
+          "source": "BRASNUTRI / Revista SuplementAção / Panorama Farmacêutico / CartaCapital, 2025-2026",
+          "curto": "9",
+          "medio": "9",
+          "longo": "8",
+          "idea": "Aproveitar o momento de expansão para escalar distribuição e investir em brand awareness com posicionamento técnico antes da consolidação via M&A."
+        },
+        {
+          "category": "tendências",
+          "tag": "Tendências · Magnésio",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Magnésio quelado supera Vitamina D e colágeno como o suplemento mais buscado do Brasil em 2026",
+          "summary": "Google Trends Brasil confirma magnésio bisglicinato e treonato no topo das buscas em 2026. Deficiência afeta estimados 70% dos brasileiros e está associada a insônia, ansiedade, cãibras e fadiga. O magnésio é cofator em mais de 300 reações enzimáticas e essencial para conversão da vitamina D em forma ativa. Formas queladas têm absorção superior às inorgânicas.",
+          "source": "Google Trends Brasil / InfoMoney / MEDBR Médicos Brasil / NFO Portugal, 2026",
+          "curto": "9",
+          "medio": "8",
+          "longo": "7",
+          "idea": "Posicionar magnésio bisglicinato como produto de entrada com campanha educativa sobre os 7 sinais de deficiência. Criar kit Magnésio + Vitamina D3+K2 como protocolo de entrada com dado dos 70% de deficiência."
+        },
+        {
+          "category": "mercado",
+          "tag": "Dado · Mercado Brasil",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "15% de crescimento do setor de suplementos no Brasil em 2025 — mercado rumo a R$13,8bi até 2030",
+          "summary": "O crescimento de 15% em 2025 coloca o Brasil em trajetória acelerada rumo aos R$ 13,8 bilhões até 2030. O segmento feminino cresce acima da média, com pedidos online crescendo 24,8% em 12 meses. O consumidor principal em 2026 é a mulher entre 25-55 anos preocupada com saúde preventiva, sono, humor e longevidade.",
+          "source": "BRASNUTRI / Revista SuplementAção / Sincofarma SP, 2025-2026",
+          "curto": "9",
+          "medio": "9",
+          "longo": "8",
+          "idea": "Usar dado de crescimento de 15% em narrativa de marca combinado com dados de deficiências nutricionais para criar urgência de suplementação preventiva."
+        },
+        {
+          "category": "ciência",
+          "tag": "Ciência · Adaptógenos",
+          "stars": "⭐⭐⭐",
+          "headline": "O que a ciência realmente diz sobre adaptógenos em 2026 — análise crítica aponta ashwagandha como única com evidência robusta",
+          "summary": "Análise crítica publicada pelo Detroit News em abril de 2026 revisou o estado da ciência sobre adaptógenos. Ashwagandha (KSM-66 e Sensoril) tem evidência mais robusta para redução de cortisol. Rhodiola rosea é promissora para fadiga mental. Outros adaptógenos carecem de estudos de alta qualidade. Consumidores e profissionais exigem evidência clínica específica, não apenas tradição de uso.",
+          "source": "Detroit News / Eu.detroitnews.com / Botanic Tonics / Wellnesslabsrx, Abr 2026",
+          "curto": "6",
+          "medio": "8",
+          "longo": "7",
+          "idea": "Auditar comunicação dos adaptógenos da Você Mais+ e separar ingredientes com evidência robusta (ashwagandha, rhodiola) dos emergentes. Posicionar a marca como referência de honestidade científica."
+        },
+        {
+          "category": "tendências",
+          "tag": "Tendências · Feminino",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Saúde feminina 2026: sono e equilíbrio metabólico lideram demanda — menopausa recebe mais visibilidade científica",
+          "summary": "Pesquisas de 2026 mostram que saúde feminina evoluiu para abordagens personalizadas por fase da vida. Menopausa recebeu mais visibilidade, com medicina adotando protocolos integrados de densidade óssea, sono e metabolismo. 70% das mulheres usarão tecnologias de monitoramento hormonal personalizado até 2026. Economia global de saúde feminina vale US$ 163 bilhões.",
+          "source": "Bonitamulher.com / Jovem Pan / Lab São Bernardo / Sincofarma SP, 2026",
+          "curto": "9",
+          "medio": "9",
+          "longo": "8",
+          "idea": "Linha Ciclo da Vida Você Mais+ com três linhas segmentadas por fase: Força (25-35), Equilíbrio (35-50) e Longevidade Feminina (50+). Território sub-explorado com demanda crescente confirmada por dados."
+        },
+        {
+          "category": "tendências",
+          "tag": "Tendências · Nootrópicos",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Nootrópicos naturais em alta: trabalho remoto e sobrecarga cognitiva criam nova demanda por foco e memória",
+          "summary": "Consolidação do trabalho híbrido tornou sobrecarga cognitiva uma das principais queixas dos trabalhadores urbanos em 2026. Nootrópicos naturais mais buscados: Lion's Mane, Fosfatidilserina, Bacopa Monnieri e L-Teanina. Mercado global cresce com baixa concorrência qualificada no Brasil — a maioria dos produtos usa formas de baixa absorção.",
+          "source": "Farmacotecnica / Metropoles / SaudeAmericas / MEDBR, 2026",
+          "curto": "7",
+          "medio": "9",
+          "longo": "9",
+          "idea": "Suplemento Clareza Mental com Lion's Mane (extrato duplo) + Fosfatidilserina + Vitamina B12 para o trabalhador de alta performance 30-50 anos. Alta margem, baixa concorrência qualificada e apelo crescente."
+        },
+        {
+          "category": "mercado",
+          "tag": "Mercado · Feminino",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "79% das mulheres brasileiras usam suplementos — público feminino lidera crescimento e redefine o mercado",
+          "summary": "Instituto Locomotiva 2026 confirma que 79% das mulheres brasileiras suplementam, superando consumo masculino de 71%. Pedidos online femininos cresceram 24,8% entre 2024 e 2025. Categorias mais demandadas: equilíbrio metabólico, sono e bem-estar emocional, e saúde da pele. Mulher 25-55 anos é o consumidor mais relevante do setor com maior ticket médio e maior frequência de recompra.",
+          "source": "Instituto Locomotiva / Soldiers Insights / Sincofarma SP / Jovem Pan, 2026",
+          "curto": "9",
+          "medio": "9",
+          "longo": "8",
+          "idea": "Reposicionamento estratégico da Você Mais+ com foco primário no público feminino como audiência principal, não como nicho. Criar conteúdo educativo por fase da vida no Instagram e TikTok com nutricionistas parceiras."
+        },
+        {
+          "category": "mercado",
+          "tag": "Dado · Público Feminino",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "79% das mulheres brasileiras consomem suplementos — Instituto Locomotiva 2026",
+          "summary": "79% de consumo ativo de suplementos entre mulheres brasileiras contra 71% entre homens posiciona o público feminino como driver dominante do mercado. O crescimento de 24,8% nos pedidos online femininos em 12 meses sinaliza demanda estrutural. A mulher que consome suplementos em 2026 é informada, exigente e faz pesquisa — o que valoriza marcas com comunicação técnica e credibilidade científica.",
+          "source": "Instituto Locomotiva / Sincofarma SP, Mar 2026",
+          "curto": "9",
+          "medio": "9",
+          "longo": "8",
+          "idea": "Usar o dado de 79% como âncora de comunicação institucional. Criar quiz de suplementação personalizada por fase da vida no WhatsApp e site para aumentar conversão e reduzir indecisão de compra."
+        },
+        {
+          "category": "produtos",
+          "tag": "Produtos · Colágeno",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Colágeno vegano e Verisol: nova geração muda o mercado e exige prova de absorção como diferencial obrigatório",
+          "summary": "Mercado de colágeno evolui em duas direções: popularização do colágeno vegano e sofisticação do colágeno peptídeo com tecnologia patenteada como Verisol. A demanda por comprovação de absorção cresce — não basta mais conter colágeno, é necessário demonstrar biodisponibilidade. Combinação colágeno + vitamina C + magnésio torna-se protocolo de beleza e articulações recomendado por nutricionistas.",
+          "source": "Instituto da Pele / Radarbeleza / Nutrify / Vegan Business, 2026",
+          "curto": "7",
+          "medio": "8",
+          "longo": "7",
+          "idea": "Linha Colágeno Premium com peptídeos de alta biodisponibilidade e comunicação baseada em diferenciação técnica. Criar versão vegana certificada aproveitando crescimento do mercado plant-based."
+        },
+        {
+          "category": "mercado",
+          "tag": "Mercado · Plant-Based",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Plant-based ultrapassa R$2,2 bilhões no Brasil em 2026 — flexitarianos e veganos impulsionam proteínas vegetais",
+          "summary": "Mercado plant-based brasileiro deve superar R$ 2,2 bilhões em 2026, superando estimativas da Euromonitor. Crescimento impulsionado principalmente por flexitarianos — que reduzem proteína animal por razões de saúde e meio ambiente. Proteínas de ervilha, arroz e cânhamo lideram crescimento com perfil nutricional sólido e apelo clean label.",
+          "source": "Vegan Business / GFI Brasil / Veggieroots / Euromonitor, 2026",
+          "curto": "7",
+          "medio": "8",
+          "longo": "8",
+          "idea": "Linha Proteína Vegetal Premium com blend de proteína de ervilha + arroz para perfil completo de aminoácidos, certificação vegana e comunicação clean label com origem declarada."
+        },
+        {
+          "category": "tendências",
+          "tag": "Digital · Influência",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Líderes de Opinião Digital substituem influenciadores no wellness — nutricionistas e médicos convertem 3x mais",
+          "summary": "Focusnetworks aponta que o conceito de influenciador está sendo substituído pelo Líder de Opinião Digital no wellness — profissionais com credencial real como nutricionistas, médicos e farmacêuticos. Micro-influenciadores nessa categoria convertem 3x mais do que macros sem credencial científica. 73% das compras de suplementos no Brasil são influenciadas por criadores digitais.",
+          "source": "Focusnetworks / We Are Social Brasil / Questão de Ciência / Jornal USP, 2026",
+          "curto": "8",
+          "medio": "8",
+          "longo": "7",
+          "idea": "Programa Embaixadores Científicos com 10-15 nutricionistas e farmacêuticos regionais para criação de conteúdo educativo em Reels e TikTok de 60 segundos. Credencial profissional transfere autoridade científica para a marca organicamente."
+        }
+      ]
+    },
+    {
       "date": "2026-04-16",
       "dateLabel": "16 de Abril de 2026",
       "cards": [
