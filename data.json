@@ -1,6 +1,156 @@
 {
   "editions": [
     {
+      "date": "2026-04-19",
+      "dateLabel": "19 de Abril de 2026",
+      "cards": [
+        {
+          "category": "regulação",
+          "tag": "Regulação · Urgente",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "ANVISA aprova curcumina como suplemento e emite alerta de hepatotoxicidade — limite 80-130 mg/dia e 6 meses para adequação",
+          "summary": "Em 15 de abril de 2026, a ANVISA votou pela inclusão da curcumina na lista de suplementos alimentares com limites de 80-130 mg/dia de curcuminoides totais. Em paralelo, o Alerta 4/2026 alerta sobre risco de hepatotoxicidade. Empresas têm 6 meses para adequação.",
+          "source": "ANVISA / gov.br / Portal Afya / Regoola.io, Abr 2026",
+          "curto": "10",
+          "medio": "8",
+          "longo": "5",
+          "idea": "Adequar imediatamente produtos com cúrcuma aos limites aprovados e comunicar o alerta de hepatotoxicidade com transparência. Criar conteúdo educativo sobre a diferença entre curcumina em alimentos e extratos concentrados em suplementos."
+        },
+        {
+          "category": "mercado",
+          "tag": "Digital · Social Commerce",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "TikTok Shop redefine venda de suplementos — 70% das compras decididas por vídeo, criadores científicos convertem 3x mais",
+          "summary": "NielsenIQ: 70% das decisões de compra no social commerce são influenciadas por vídeos. Social commerce avança 3x mais rápido que e-commerce convencional. Criadores com credencial científica convertem desproporcionalmente mais no segmento de suplementos.",
+          "source": "NielsenIQ / Accenture / Ancora1.com / CNDL Varejo S.A, Abr 2026",
+          "curto": "9",
+          "medio": "8",
+          "longo": "7",
+          "idea": "Criar conta TikTok Shop com parceria de 5-8 nutricionistas para conteúdo técnico de 60-90 segundos com link direto de compra. Priorizar micro-criadores com credencial real sobre macro-influenciadores de lifestyle."
+        },
+        {
+          "category": "ciência",
+          "tag": "Ciência · Feminino",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Creatina reposicionada como suplemento feminino essencial — mulheres têm 70-80% menos creatina endógena que homens",
+          "summary": "Pesquisas de 2026 confirmam que mulheres têm 70-80% menos creatina endógena que homens. Benefícios científicos para menopausa, densidade óssea, humor e recuperação muscular. Mercado feminino de creatina cresce acima da média do setor.",
+          "source": "CreatinaeSaude.com.br / SaudeAmericas / BeltNutrition / TuaSaude / Exame, 2026",
+          "curto": "8",
+          "medio": "9",
+          "longo": "8",
+          "idea": "Linha Creatina Feminina Você Mais+ com campanha centrada nos 3 pilares de evidência para mulheres: força e composição, humor e energia, longevidade óssea na menopausa. Dado dos 70-80% é gancho viral de alto engajamento."
+        },
+        {
+          "category": "ciência",
+          "tag": "Dado · Deficiência",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "80% dos brasileiros têm deficiência de ômega-3 — dado estrutural confirma mercado massivo sub-atendido",
+          "summary": "Aproximadamente 80% dos brasileiros não consomem ômega-3 em quantidade suficiente. Impactos em saúde cardiovascular, função cognitiva e controle inflamatório. Oportunidade estrutural massiva para marcas com produto diferenciado por qualidade e concentração.",
+          "source": "BlogViiish.com.br / TuaSaude / BioBalance Nutraceuticals / DSM-Firmenich, 2026",
+          "curto": "8",
+          "medio": "8",
+          "longo": "8",
+          "idea": "Campanha dos 5 sintomas de deficiência de ômega-3 que passam despercebidos. Produto com alto índice EPA+DHA e certificação de pureza como resposta completa para essa lacuna nutricional massiva da população brasileira."
+        },
+        {
+          "category": "ciência",
+          "tag": "Ciência · Vitamina D",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Paradoxo brasileiro: deficiência de vitamina D afeta 60% mesmo em país tropical — guideline 2026 favorece suplementação diária",
+          "summary": "Estudo Fiocruz 2026: deficiência endêmica no Brasil independente de região. São Paulo: 20,5% deficiência e 52,4% insuficiência. Novo consenso da Sociedade de Endocrinologia recomenda suplementação diária sobre doses semanais por maior eficácia.",
+          "source": "Fiocruz / Mantecorp Saúde / Nutritotal / Metrópoles / UAI Notícias, Abr 2026",
+          "curto": "7",
+          "medio": "8",
+          "longo": "7",
+          "idea": "Conteúdo do paradoxo: país tropical com 60% de população deficiente em vitamina D. Protocolo trio Vitamina D3 + K2 + Magnésio como base essencial. Novo guideline que favorece dose diária converte consumidores de doses semanais ineficazes."
+        },
+        {
+          "category": "tendências",
+          "tag": "Tendências · Psicobióticos",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Psicobióticos emergem como nova fronteira de saúde mental — eixo microbiota-intestino-cérebro vira protocolo clínico reconhecido",
+          "summary": "Em 2026, psicobióticos consolidam-se como categoria clínica legítima com atividade antidepressiva e ansiolítica confirmada. 95% da serotonina é produzida no intestino. 59% dos consumidores associam saúde intestinal ao bem-estar mental.",
+          "source": "NIH PMC / Revista Debates em Psiquiatria / Jornal USP / Credited.com.br, 2026",
+          "curto": "6",
+          "medio": "9",
+          "longo": "9",
+          "idea": "Linha Equilíbrio Mental Você Mais+ com blend de psicobióticos com evidência clínica (L. rhamnosus GG + B. longum) combinados com magnésio bisglicinato e vitamina B6. Conteúdo sobre eixo intestino-cérebro viraliza por unir ciência com experiência cotidiana."
+        },
+        {
+          "category": "produtos",
+          "tag": "Produtos · Longevidade",
+          "stars": "⭐⭐⭐",
+          "headline": "NMN e NAD+: longevidade em cápsulas movimenta bilhões mas ciência em humanos ainda é incipiente",
+          "summary": "NMN como precursor de NAD+ ganha tração como protocolo de longevidade premium. Combinação NMN + Resveratrol popular entre consumidores de alto poder aquisitivo. Evidências robustas ainda limitadas a estudos em animais e laboratório.",
+          "source": "Ramos da Ciência / LCL Med / Fortune / Naturecan PT, 2026",
+          "curto": "4",
+          "medio": "7",
+          "longo": "9",
+          "idea": "Posicionar Você Mais+ como marca que comunica longevidade com honestidade científica: separar o que está provado do que é promissor sobre NMN e NAD+. Transparência constrói confiança com o consumidor premium de longevidade — mais valioso e fiel."
+        },
+        {
+          "category": "mercado",
+          "tag": "Mercado · Anti-Aging",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Mercado anti-aging global atinge US$ 91 bilhões em 2026 — colágeno nova geração com peptídeos cresce 7,66% ao ano",
+          "summary": "Anti-aging projeta US$ 91,09 bilhões em 2026 e US$ 127,63 bilhões até 2031. Colágeno hidrolisado cresce de US$ 5,94 bi para US$ 8,59 bi até 2029. Entrada da JBS no mercado de colágeno sinaliza comoditização iminente.",
+          "source": "Mordor Intelligence / Fortune Business Insights / CNN Brasil / BHBFood, 2026",
+          "curto": "7",
+          "medio": "8",
+          "longo": "8",
+          "idea": "Colágeno Premium Você Mais+ com peptídeos de alta biodisponibilidade e comunicação técnica diferenciada de commodities. Urgência pela entrada da JBS: posicionar qualidade e transparência de origem antes da comoditização acelerar."
+        },
+        {
+          "category": "mercado",
+          "tag": "Dado · Adaptógenos",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Mercado global de adaptógenos vale US$ 9,26 bilhões em 2026 — ashwagandha domina com 26% de market share global",
+          "summary": "Mercado global de adaptógenos atingiu US$ 9,26 bilhões em 2026 com projeção de US$ 12,81 bilhões até 2036. Ashwagandha lidera com 26% de market share. Lion's mane acelera na categoria cognitiva.",
+          "source": "OpenPR / Precedence Research / MarketsandMarkets / Grand View Research, 2026",
+          "curto": "7",
+          "medio": "8",
+          "longo": "8",
+          "idea": "Posicionamento premium de adaptógenos: comunicar extratos padronizados com evidência clínica (KSM-66, rhodiola 3% rosavinas, lion's mane 30% beta-glucanas) versus produtos genéricos com concentrações sub-terapêuticas."
+        },
+        {
+          "category": "tendências",
+          "tag": "Tendências · Clean Label",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Clean label vai de US$ 28,2 bilhões para US$ 89,7 bilhões até 2034 — McKinsey aponta transparência como principal fator de compra em 2026",
+          "summary": "Mercado global de ingredientes clean label: US$ 28,2 bilhões em 2024 para US$ 89,7 bilhões até 2034. McKinsey 2026: transparência de ingredientes é o principal fator de decisão do consumidor moderno.",
+          "source": "Global Market Insights / McKinsey / FoodConnection / Purefy Nutrition, 2026",
+          "curto": "7",
+          "medio": "8",
+          "longo": "9",
+          "idea": "Auditoria clean label completa: revisar rótulos, remover excipientes desnecessários, declarar origem dos extratos. Conteúdo comparativo do rótulo Você Mais+ versus concorrentes. Transparência é argumento de venda decisivo com consumidor informado de 2026."
+        },
+        {
+          "category": "ciência",
+          "tag": "Ciência · Ômega-3",
+          "stars": "⭐⭐⭐",
+          "headline": "Meta-análise 2026: EPA ideal para coração e triglicerídeos, DHA essencial para cognição — diferenciação é estratégia de mercado",
+          "summary": "Meta-análise DSM-Firmenich e Universidade de Soochow 2026: EPA e DHA reduzem frequência cardíaca em indivíduos de risco. EPA superior para triglicerídeos. DHA predominante nas membranas cerebrais e essencial para memória e aprendizado.",
+          "source": "Frontiers in Nutrition / DSM-Firmenich / Universidade de Soochow / TuaSaude, 2026",
+          "curto": "6",
+          "medio": "7",
+          "longo": "7",
+          "idea": "Dois perfis Ômega-3 Premium Você Mais+: Coração (EPA dominante) e Mente (DHA dominante). Diferenciação técnica justifica posicionamento premium frente a óleos de peixe genéricos de baixa concentração."
+        },
+        {
+          "category": "mercado",
+          "tag": "Mercado · Digital",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Nutrição e suplementos cresce 5,61% ao ano até 2035 — varejo digital consolida como canal dominante com nutrição esportiva avançando 8,4%",
+          "summary": "CAGR de 5,61% até 2035. Nutrição esportiva lidera com 8,4% ao ano. Pedidos online femininos crescem 24,8% em 12 meses. Marcas sem presença digital estruturada perdem participação de forma acelerada e irreversível.",
+          "source": "CNDL Varejo S.A / ParaíbaTotal / Ekobe / FoodConnection, Abr 2026",
+          "curto": "8",
+          "medio": "9",
+          "longo": "9",
+          "idea": "Estratégia digital integrada: e-commerce próprio com SEO técnico, integração TikTok Shop e Instagram Shopping, funil WhatsApp com quiz de suplementação por fase da vida. E-commerce próprio como canal prioritário de crescimento."
+        }
+      ]
+    },
+    {
       "date": "2026-04-18",
       "dateLabel": "18 de Abril de 2026",
       "cards": [
