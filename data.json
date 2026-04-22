@@ -1,6 +1,132 @@
 {
   "editions": [
     {
+      "date": "2026-04-21",
+      "dateLabel": "21 de Abril de 2026",
+      "cards": [
+        {
+          "category": "regulação",
+          "tag": "Regulação · Urgente",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "ANVISA IN 431/2026 atualiza limites de nutrientes e constituintes para suplementos — prazo final setembro 2026 exige adequação imediata",
+          "summary": "Em 1° de abril de 2026, a ANVISA publicou a IN 431/2026 atualizando limites para nutrientes, bioativos, enzimas e probióticos em suplementos. Combinada à RDC 843/2024 e à IN 432/2026, eleva o grau de exigência técnica de formulação e comunicação. Prazo de adequação: setembro 2026.",
+          "source": "ANVISA / IN nº 431/2026 / CRN6 / Regoola.io / Intertox, Abr 2026",
+          "curto": "10", "medio": "8", "longo": "5",
+          "idea": "Auditoria técnica urgente da linha Você Mais+ frente aos novos limites da IN 431/2026. Publicar nota de compliance proativa no site e redes sociais como diferencial de confiança antes dos concorrentes."
+        },
+        {
+          "category": "mercado",
+          "tag": "Mercado · Menopausa",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Economia climatérica: menopausa representa US$60 trilhões em demandas globais não atendidas — Brasil tem oportunidade de mercado inexplorada",
+          "summary": "Data8 2026 aponta US$60 tri em demandas de saúde para menopausa não atendidas globalmente. GWI confirma economia feminina de saúde de US$163bi. No Brasil, 79% das mulheres suplementam com segmento 45-60 crescendo acima da média. Poucas marcas têm portfólio específico para menopausa.",
+          "source": "Data8 / Global Wellness Institute / Meio&Mensagem / Sincofarma SP / Instituto Locomotiva, Abr 2026",
+          "curto": "9", "medio": "10", "longo": "9",
+          "idea": "Linha Menopausa+ Você Mais+ com três produtos: Suporte Ósseo (D3+K2+magnésio), Equilíbrio Hormonal Natural (maca+ashwagandha+isoflavonas) e Sono e Humor (magnésio bisglicinato+melatonina+L-teanina)."
+        },
+        {
+          "category": "ciência",
+          "tag": "Ciência · Magnésio",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Magnésio bisglicinato atravessa a barreira hematoencefálica — evidência de 2026 confirma ação direta em ansiedade, sono e calma neural",
+          "summary": "Pesquisas de 2026 consolidam o bisglicinato como a forma de magnésio com melhor acesso ao SNC. Superior às formas inorgânicas em absorção e capacidade de cruzar a barreira hematoencefálica. Suplemento mais buscado no Google Trends Brasil 2026 com 70% dos brasileiros deficientes.",
+          "source": "TuaSaude / VitalisFit / DrAlarissaDiniz / OceanDrop / Google Trends Brasil, Abr 2026",
+          "curto": "9", "medio": "8", "longo": "7",
+          "idea": "Campanha Magnésio que Chega ao Cérebro com diferenciação direta de produtos genéricos com óxido. Kit Magnésio Bisglicinato + Vitamina D3+K2 com argumento de cofator essencial para ativação da vitamina D."
+        },
+        {
+          "category": "mercado",
+          "tag": "Dado · Mercado Global",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Mercado global de wellness atinge US$6,8 trilhões em 2024 — projeta US$9,8 trilhões até 2029 com CAGR de 7,6%",
+          "summary": "Global Wellness Institute: mercado global de wellness cresceu para US$6,8 trilhões em 2024, projetando US$9,8 tri até 2029. Brasil: US$222bi até 2034 com CAGR de 10,4% — terceiro maior consumidor de suplementos do mundo crescendo 15% ao ano.",
+          "source": "Global Wellness Institute / Naturaltech / InfoMoney / Catarinense Pharma, 2026",
+          "curto": "6", "medio": "8", "longo": "9",
+          "idea": "Usar o dado de US$6,8 trilhões como contexto estratégico institucional para investidores, parceiros e lojistas. Com Brasil crescendo 15% ao ano (2x a média global), a oportunidade de captura de market share é desproporcional."
+        },
+        {
+          "category": "ciência",
+          "tag": "Ciência · Adaptógenos",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Frontiers in Nutrition 2026: ashwagandha + rhodiola têm efeito antidepressivo e ansiolítico convergente — sinergia neurotrófica confirmada",
+          "summary": "Estudo na Frontiers in Nutrition 2026 identifica mecanismos convergentes entre ashwagandha e rhodiola: modulação monoaminérgica, neurotropismo (BDNF e NGF) e ação anti-inflamatória. Ashwagandha superior para cortisol longo prazo; rhodiola superior para fadiga e foco agudo.",
+          "source": "Frontiers in Nutrition / Umaseostras.com.br / FarmaciaSempreViva / Essentia Pharma, Abr 2026",
+          "curto": "7", "medio": "8", "longo": "7",
+          "idea": "Fórmula Adaptadores Completo com ashwagandha KSM-66 + rhodiola rosea 3% rosavinas + magnésio bisglicinato. Série de conteúdo comparativo: o que cada adaptógeno faz melhor e por que a combinação é superior."
+        },
+        {
+          "category": "tendências",
+          "tag": "Tendências · IA",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Suplementação personalizada via IA cresce 40% ao ano — quizzes e anamneses digitais redefinem prescrição e conversão no varejo DTC",
+          "summary": "Plataformas DTC com personalização por perfil e fase da vida crescem 40% ao ano. Consumidor que recebe recomendação específica converte mais e retorna mais. No segmento feminino, personalização por fase da vida (ciclo, gestação, menopausa) é especialmente valorizada.",
+          "source": "Food Connection / BPMoney / Farmacotecnica / Central do Varejo, Abr 2026",
+          "curto": "7", "medio": "9", "longo": "8",
+          "idea": "Quiz de Suplementação Você Mais+ em 5 passos: sexo biológico, faixa etária, sintomas, fase da vida feminina e objetivo. Output: protocolo com 2-3 produtos + botão de compra. Implementar no WhatsApp e site."
+        },
+        {
+          "category": "produtos",
+          "tag": "Produtos · Colágeno",
+          "stars": "⭐⭐⭐",
+          "headline": "Verisol e peptídeos bioativos consolidam padrão de biodisponibilidade em colágeno — prova de absorção vira exigência de mercado em 2026",
+          "summary": "Mercado bifurcado entre commodities genéricas e peptídeos patenteados (Verisol, Body Balance) com evidência clínica. Colágeno ganha destaque entre mulheres 45+. Entrada da JBS acelera comoditização do segmento básico — diferencial migra para evidência declarada.",
+          "source": "Instituto da Pele / RadarBeleza / Terra Brasil Notícias / EssentialNutrition, 2026",
+          "curto": "6", "medio": "7", "longo": "7",
+          "idea": "Colágeno Premium Você Mais+ com peptídeos Verisol declarados na embalagem. Protocolo colágeno + vitamina C + magnésio para mulheres 45+. Infográfico comparativo de absorção como conteúdo de autoridade."
+        },
+        {
+          "category": "mercado",
+          "tag": "Mercado · Plant-Based",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Proteína vegetal ultrapassa US$9,57 bilhões até 2027 com CAGR 7,8% — ervilha e arroz consolidam no Brasil com apelo clean label e flexitariano",
+          "summary": "26% dos brasileiros já consomem proteína vegetal mensalmente. Flexitarianos dominam o crescimento. Proteína de ervilha + arroz consolida-se por aminoácidos completos e boa digestibilidade. Convergência plant-based + clean label é o território mais valorizado.",
+          "source": "VeganBusiness / GFI Brasil / Ekobé Indústria / BHBFood / Food Connection, 2026",
+          "curto": "7", "medio": "9", "longo": "9",
+          "idea": "Proteína Vegetal Você Mais+ com blend ervilha+arroz+cânhamo, zero adoçantes artificiais e certificação vegana. Posicionamento: proteína limpa para todos. Público-alvo: mulheres flexitarianas 25-45 anos."
+        },
+        {
+          "category": "mercado",
+          "tag": "Dado · Probióticos",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "9,88% CAGR: mercado de probióticos no Brasil cresce impulsionado por saúde mental e eixo intestino-cérebro como protocolo clínico",
+          "summary": "Mercado brasileiro de probióticos: USD 2,1 bilhões em 2025 com CAGR de 9,88% até 2034. Crescimento sustentado por saúde intestinal preventiva, psicobióticos com evidência clínica e simbióticos premium. Eixo microbiota-intestino-cérebro consolidado como protocolo clínico.",
+          "source": "IMARC Group / Mordor Intelligence / Data Bridge Market Research / Gut Microbiota for Health, 2026",
+          "curto": "7", "medio": "9", "longo": "9",
+          "idea": "Simbiótico Premium Você Mais+ com cepas declaradas (L. rhamnosus GG + B. longum + B. bifidum) + prebióticos FOS + enzimas digestivas. Posicionamento duplo: intestino + mente com alto retorno de compra."
+        },
+        {
+          "category": "tendências",
+          "tag": "Tendências · Formatos",
+          "stars": "⭐⭐⭐",
+          "headline": "Gummies, shots e sachês reinventam a experiência de suplementação — formato é novo diferencial de adesão e conversão em 2026",
+          "summary": "Formatos mastigáveis e shots líquidos crescem à frente de cápsulas, especialmente entre jovens urbanos 20-35 anos. Maior recompra por melhor adesão e experiência. Gummies de adaptógenos e probióticos são a nova fronteira no Brasil. Atenção: regulação ANVISA para gummies em consolidação.",
+          "source": "Ekobé Indústria / Central do Varejo / Catarinense Pharma / Acontece Botucatu, 2026",
+          "curto": "5", "medio": "8", "longo": "8",
+          "idea": "Pesquisa de intenção com clientes sobre formatos preferidos. Se demanda confirmada, pilotar gummies de Magnésio + L-Teanina como entrada no segmento — baixo risco, alto potencial de recompra."
+        },
+        {
+          "category": "tendências",
+          "tag": "Digital · LOD",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Líderes de Opinião Digitais substituem influenciadores — nutricionistas e farmacêuticos convertem 3x mais com 7% de engajamento",
+          "summary": "LODs com credencial científica real convertem 3x mais que macros sem formação técnica. Micro-LODs (10-100k) alcançam 7% de engajamento vs 1-2% de perfis genéricos. 73% das compras de suplementos influenciadas por criadores digitais no Brasil.",
+          "source": "Focusnetworks / We Are Social Brasil / Nação Digital / Opinion Box, Abr 2026",
+          "curto": "8", "medio": "8", "longo": "7",
+          "idea": "Programa Embaixadores Científicos com 12-15 nutricionistas e farmacêuticos regionais: 1 Reel/TikTok semanal de 60-90s + comissão de 15-20% sobre vendas rastreadas via link exclusivo."
+        },
+        {
+          "category": "ciência",
+          "tag": "Ciência · Longevidade Feminina",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Protocolo longevidade feminina 45+: creatina + D3+K2 + magnésio bisglicinato + colágeno como quaterna científica essencial",
+          "summary": "Protocolo de quatro suplementos com evidência clínica específica para longevidade feminina 45+: creatina (massa muscular, ossos, cognição), vitamina D3+K2 (absorção de cálcio, imunidade), magnésio bisglicinato (sono, ansiedade, cardiovascular) e colágeno com peptídeos (pele, articulações). Endereça fadiga, insônia, dores articulares e declínio cognitivo.",
+          "source": "Nutrients Journal / Fiocruz / TuaSaude / Ocean Drop / Drogaraia / EssentialNutrition, 2026",
+          "curto": "8", "medio": "9", "longo": "9",
+          "idea": "Kit Longevidade Feminina Você Mais+ com os quatro pilares em caixa mensal. Comunicação para mulheres 45-55 com linguagem de qualidade de vida ativa. Maior ticket médio e maior recompra do portfólio."
+        }
+      ]
+    },
+    {
       "date": "2026-04-19",
       "dateLabel": "19 de Abril de 2026",
       "cards": [
