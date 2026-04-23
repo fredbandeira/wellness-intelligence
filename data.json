@@ -1,6 +1,156 @@
 {
   "editions": [
     {
+      "date": "2026-04-23",
+      "dateLabel": "23 de Abril de 2026",
+      "cards": [
+        {
+          "category": "regulação",
+          "tag": "Regulação · Urgente",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "ANVISA restringe cúrcuma em suplementos com risco hepático — advertências obrigatórias em rótulos e novos limites de curcuminoides a partir de abril 2026",
+          "summary": "ANVISA publica instrução normativa no DOU de 22/04/2026 atualizando limites de cúrcuma após identificação de risco de danos ao fígado. Advertência obrigatória para gestantes, lactantes, crianças e portadores de doenças hepáticas. Tetraidrocurcuminoides ganham permissão mas não podem ser misturados ao extrato natural no mesmo produto. Ação imediata de revisão de rótulos obrigatória para qualquer marca com curcumina na linha.",
+          "source": "ANVISA / Agência Brasil EBC / Acessa.com / Imirante.com / CBN Caruaru, 22 Abr 2026",
+          "curto": "10",
+          "medio": "6",
+          "longo": "4",
+          "idea": "Auditoria imediata dos produtos com cúrcuma, revisão de rotulagem com advertências obrigatórias. Transformar o compliance em conteúdo educativo nas redes — o que mudou, por que a ANVISA agiu e o que isso significa para o consumidor."
+        },
+        {
+          "category": "mercado",
+          "tag": "Mercado · Global",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Mercado wellness global atinge US$6,8 trilhões em 2024 — projeção de US$9,8 trilhões até 2029 com CAGR de 7,6% impulsionada por longevidade, saúde mental e digitalização",
+          "summary": "Global Wellness Institute registra US$6,8 trilhões em 2024 com projeção de US$9,8 trilhões até 2029. Brasil movimenta US$96 bilhões e figura entre os 12 maiores mercados de wellness do mundo. Longevidade saudável (60% dos consumidores priorizam envelhecer bem), saúde mental e digitalização da saúde com wearables lideram o crescimento.",
+          "source": "Global Wellness Institute / Inspira FM / CartaCapital / Medicina SA / Sebrae RS, 2026",
+          "curto": "6",
+          "medio": "8",
+          "longo": "9",
+          "idea": "Posicionamento Você Mais+ como marca de wellness integral — hub de conteúdo conectando produtos a pilares de bem-estar (energia, sono, foco, imunidade, longevidade) em vez de claims isolados por ingrediente."
+        },
+        {
+          "category": "ciência",
+          "tag": "Ciência · Magnésio + Vitamina D",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Magnésio + Vitamina D: sinergia validada cientificamente para sono, estresse e metabolismo ósseo — dupla mais prescrita por profissionais de saúde em 2026",
+          "summary": "Estudo Vanderbilt University (180 participantes) confirma magnésio regula conversão ativa da vitamina D. Combinação melhora qualidade do sono via melatonina e reduz cortisol. Buscas pela dupla atingem picos históricos no Google Trends Brasil em abril 2026. Saúde óssea, redução de estresse e sono são os três benefícios mais documentados.",
+          "source": "Vanderbilt University Study / Journal of Research in Medical Sciences / Tua Saude / Metropoles / Unikka Pharma, Abr 2026",
+          "curto": "8",
+          "medio": "8",
+          "longo": "7",
+          "idea": "Kit Sono e Equilíbrio Você Mais+ com magnésio bisglicinato (400mg) + vitamina D3 (2000 UI) + K2 (100mcg) em sachê noturno. Posicionamento: ritual da noite para dormir melhor e proteger seus ossos."
+        },
+        {
+          "category": "mercado",
+          "tag": "Dado · Mercado Feminino",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "79% das mulheres brasileiras usam suplementos — mercado feminino cresce 18% ao ano e personalização por fase da vida define as marcas vencedoras de 2026",
+          "summary": "Instituto Locomotiva revela 79% das mulheres brasileiras usam suplementos regularmente vs 71% dos homens. Mercado feminino movimenta mais de R$4 bilhões anuais crescendo 18% ao ano. Três tendências dominantes: personalização por fase da vida, saúde hormonal natural e formatos inovadores (gummies, sachês, sticks).",
+          "source": "Instituto Locomotiva / Sincofarma SP / Sanavita / Bonitamulher.com.br / CartaCapital, Mar 2026",
+          "curto": "9",
+          "medio": "10",
+          "longo": "9",
+          "idea": "Linha por fase da vida: ciclo ativo 20-35 (magnésio + ashwagandha), gestação e pós-parto (DHA + folato), menopausa 45-60 (creatina + D3+K2 + colágeno + maca). Comunicação que nomeia a fase converte muito mais que comunicação genérica."
+        },
+        {
+          "category": "tendências",
+          "tag": "Tendências · Adaptogênicos",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Adaptogênicos em bebidas funcionais dominam inovações de abril 2026 — ashwagandha, lion's mane e L-teanina em formatos liquid conquistam geração Z e millennials além das cápsulas",
+          "summary": "FoodNavigator de 22/04/2026 destaca cognição e calma mental como eixos mais buscados em bebidas funcionais. SuperLattes com ashwagandha, reishi e lion's mane e sparkling waters com 1,7g de adaptogênicos chegam ao Brasil via DTC. Ciência confirma eficácia dos adaptogênicos em pesquisa publicada em Detroit News de abril 2026.",
+          "source": "FoodNavigator / Detroit News / Topteny.com / Botanic Tonics / Tribe Organics, Abr 2026",
+          "curto": "6",
+          "medio": "8",
+          "longo": "9",
+          "idea": "Linha Você Mais+ Instant Adaptogens: blend em pó solúvel (ashwagandha KSM-66 + lion's mane + L-teanina + magnésio) em sachê individual. Dissolve em água, café ou leite vegetal — ritual de calma e foco para profissionais 25-40 anos."
+        },
+        {
+          "category": "ciência",
+          "tag": "Ciência · Ômega-3",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Alerta de abril 2026: maioria dos brasileiros consome menos ômega-3 do que o recomendado — déficit generalizado de EPA e DHA impacta saúde cardiovascular, cerebral e articular",
+          "summary": "Pesquisa revela que a maior parte da população brasileira consome EPA e DHA abaixo do recomendado. DHA é o tipo de ômega-3 com maior concentração no tecido cerebral — impacta memória, foco e raciocínio. Em maiores de 50 anos, reposição com fontes de alta qualidade torna-se prioridade clínica documentada.",
+          "source": "Jetss.com / SBCM Revista / Tua Saude / Farmacotecnica / Correiobraziliense, Abr 2026",
+          "curto": "7",
+          "medio": "8",
+          "longo": "7",
+          "idea": "Reformulação do ômega-3 Você Mais+ com declaração explícita de EPA e DHA em mg por cápsula na embalagem frontal. Conteúdo educativo sobre diferença entre ômega-3 genérico vs concentrado premium com certificação IFOS."
+        },
+        {
+          "category": "tendências",
+          "tag": "Tendências · Clean Label 3.0",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Clean label deixa de ser tendência e vira exigência estrutural de mercado — consumidor de 2026 quer comprovação de origem, processos e qualidade ao longo de toda a cadeia produtiva",
+          "summary": "Clean label alcança terceira geração em 2026: consumidor exige clareza sobre procedência, processos e critérios de qualidade de toda a cadeia. Mercado global de ingredientes clean label: US$28,2bi (2024) para US$89,7bi (2034), CAGR 12,2%. No Brasil, 40% apontam ingredientes naturais como fator decisivo de compra — acima de preço.",
+          "source": "Food Connection / TV Inovacao / BHBFood / ITAL-SP / Global Market Insights / PBIS, Mar-Abr 2026",
+          "curto": "8",
+          "medio": "9",
+          "longo": "9",
+          "idea": "Programa Transparência Total: auditoria de ingredientes linha a linha, substituição por naturais onde viável (meta: menos de 7 itens por produto), publicação da auditoria como conteúdo, criação de selo Você Mais+ Clean com QR code rastreável."
+        },
+        {
+          "category": "mercado",
+          "tag": "Dado · Plant-Based",
+          "stars": "⭐⭐⭐",
+          "headline": "Proteínas vegetais crescem 12% ao ano no Brasil até 2027 — ervilha e arroz combinados definem padrão-ouro de plant-based clean para o flexitariano brasileiro",
+          "summary": "Mercado plant-based no Brasil cresce 12% ao ano até 2027 (Meticulous Market Research), superando projeção de R$2,2 bilhões da Euromonitor. 26% dos brasileiros já consomem proteína vegetal mensalmente. Público principal: flexitarianos que reduzem carne por saúde e sustentabilidade. Proteína de ervilha + arroz consolida-se como padrão-ouro por perfil completo de aminoácidos.",
+          "source": "VeganBusiness / GFI Brasil / Euromonitor / Meticulous Market Research / Digital Agrishow, 2026",
+          "curto": "5",
+          "medio": "7",
+          "longo": "9",
+          "idea": "Proteína Vegetal Clean Você Mais+ com blend ervilha + arroz, sem adoçantes artificiais, certificação vegana, lista com menos de 5 ingredientes. Posicionamento para flexitarianas mulheres 25-45 anos que valorizam limpeza de ingredientes acima de sabor intenso."
+        },
+        {
+          "category": "ciência",
+          "tag": "Ciência · Psicobióticos",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Psicobióticos avançam de hipótese para protocolo clínico em 2026 — cepas com identificação específica tornam-se padrão de prescrição de nutricionistas e psiquiatras",
+          "summary": "Eixo microbiota-intestino-cérebro via nervo vago agora é base para prescrição de psicobióticos por nutricionistas e psiquiatras. Cepas L. helveticus R0052 e B. longum R0175 têm maior evidência para redução de cortisol e ansiedade. Probióticos + prebióticos + polifenóis regulam humor via microbiota. Mercado de probióticos cresce 9,88% ao ano no Brasil.",
+          "source": "FIOCRUZ / Revista Contemporanea / UNESP FCFAR / USP BDTA / GreatItalianFoodTrade, 2026",
+          "curto": "7",
+          "medio": "9",
+          "longo": "9",
+          "idea": "Simbiótico Você Mais+ Mente e Intestino: cepas declaradas L. helveticus R0052 + B. longum R0175 + L. rhamnosus GG + prebióticos FOS + inulina. Embalagem com cepas impressas em destaque — diferencial técnico para o consumidor informado."
+        },
+        {
+          "category": "ciência",
+          "tag": "Ciência · Longevidade",
+          "stars": "⭐⭐⭐",
+          "headline": "NMN e NAD+ consolidam-se como protocolo anti-aging: 900mg diários mostram benefícios mensuráveis em energia e metabolismo celular em ensaios clínicos 2025-2026",
+          "summary": "Mercado global de suplementos ultrapassa US$252 bilhões em 2025, 7,5% ao ano, impulsionado por longevidade. NMN em doses de 100-1250mg é seguro e bem tolerado em humanos (estudos 2020-2024). Protocolo Sinclair (NMN 1g + resveratrol 1g + D3+K2) dobra níveis de NAD+ em humanos. Posicionamento responsável: vitalidade celular, não anti-aging absoluto.",
+          "source": "Omre.co / Novoslabs.com / WonderFeel / Goldman Laboratories / iHerb Blog, 2026",
+          "curto": "4",
+          "medio": "7",
+          "longo": "9",
+          "idea": "Dossiê técnico interno: monitorar NMN, urolitina A e espermidina por 12-18 meses enquanto evidência amadurece. Quando nível suficiente para claim responsável no Brasil, lançar linha Longevidade Ativa com linguagem de vitalidade celular."
+        },
+        {
+          "category": "tendências",
+          "tag": "Tendências · Nootrópicos",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Creatina como nootrópico supera uso esportivo em 2026 — memória e cognição tornam-se o principal benefício comunicado para profissionais 25-45 anos com alta demanda mental",
+          "summary": "Creatina consolida-se como nootrópico de escolha para profissionais com alta demanda cognitiva. Redução de fadiga mental e melhora de memória de curto prazo confirmadas em estudos. Mercado global de creatina: US$1,1 bilhão em 2024, impulsionado agora por saúde cognitiva e envelhecimento ativo além do esporte. Mulheres têm 70-80% menos reservas endógenas — oportunidade mal explorada.",
+          "source": "MEDBR Medicos Brasil / Ekobé Industria / Ultimate Nutrition / Contribuciones CLCS / Bodytech Blog, 2026",
+          "curto": "7",
+          "medio": "9",
+          "longo": "8",
+          "idea": "Linha Creatina Inteligente: creatina monohidratada + L-teanina + B6 em sachê. Posicionamento: clareza mental para dias exigentes — para a profissional que precisa de foco e energia cerebral, não apenas muscular."
+        },
+        {
+          "category": "tendências",
+          "tag": "Digital · LODs Científicos",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Nutricionistas e farmacêuticos digitais lideram conversões de suplementos em 2026 — 73% das compras influenciadas por criadores com credencial técnica que convertem 3x mais que celebridades",
+          "summary": "Micro-LODs com formação técnica (10-100k seguidores) alcançam 7% de engajamento vs 1-2% de macros genéricos e convertem 3x mais. 73% das compras de suplementos no Brasil influenciadas por criadores digitais. Vídeos de 60-90s com ingrediente + mecanismo de ação + benefício são o formato de maior conversão. Live commerce domina vendas do setor em 2026.",
+          "source": "Focusnetworks / We Are Social Brasil / Lab Growth / Jornal Cruzeiro / Hypeauditor, 2026",
+          "curto": "8",
+          "medio": "9",
+          "longo": "8",
+          "idea": "Programa Embaixadores Científicos: 12-15 nutricionistas e farmacêuticos regionais com engagement acima de 5%, briefing mensal com ingrediente do mês + roteiro sugerido + link rastreável com comissão de 15-20% sobre vendas."
+        }
+      ]
+    },
+    {
       "date": "2026-04-22",
       "dateLabel": "22 de Abril de 2026",
       "cards": [
