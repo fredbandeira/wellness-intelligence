@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wellness Intelligence | você-mais+</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:     #00276e;
+      --yellow:   #feda14;
+      --black:    #1d1d1b;
+      --white:    #ffffff;
+      --gray-50:  #f7f7f7;
+      --gray-100: #efefef;
+      --gray-200: #e0e0e0;
+      --gray-400: #adadad;
+      --gray-600: #6b6b6b;
+      --gray-800: #2e2e2e;
+      --border:   rgba(0,0,0,0.09);
+    }
+
+    body { font-family:'Inter',sans-serif; background:var(--white); color:var(--black); -webkit-font-smoothing:antialiased; }
+
+    header { background:var(--white); border-bottom:1px solid var(--border); position:sticky; top:0; z-index:100; }
+    .header-inner { max-width:1280px; margin:0 auto; padding:0 40px; height:64px; display:flex; align-items:center; justify-content:space-between; }
+    .logo-wrap { display:flex; align-items:center; gap:16px; text-decoration:none; }
+    .logo-img  { height:22px; width:auto; }
+    .logo-divider { width:1px; height:20px; background:var(--gray-200); }
+    .logo-sub { font-size:10px; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:var(--gray-400); }
+    nav { display:flex; gap:2px; }
+    nav a { font-size:11px; font-weight:600; letter-spacing:0.08em; text-transform:uppercase; color:var(--gray-600); text-decoration:none; padding:6px 14px; border-radius:100px; transition:all .15s; }
+    nav a:hover  { color:var(--navy); background:var(--gray-50); }
+    nav a.active { color:var(--navy); background:var(--yellow); }
+    .header-date { font-size:11px; font-weight:500; color:var(--gray-400); }
+
+    .alert-strip { background:var(--navy); color:var(--white); padding:11px 40px; display:flex; align-items:center; justify-content:center; gap:20px; }
+    .alert-badge { font-size:9px; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; background:var(--yellow); color:var(--navy); padding:4px 10px; border-radius:100px; white-space:nowrap; }
+    .alert-text  { font-size:12.5px; opacity:.9; }
+    .alert-text strong { font-weight:700; }
+
+    main { max-width:1280px; margin:0 auto; padding:48px 40px 80px; }
+    .edition-bar { display:flex; align-items:center; justify-content:space-between; margin-bottom:28px; padding-bottom:20px; border-bottom:1px solid var(--border); }
+    .edition-live { display:flex; align-items:center; gap:10px; }
+    .live-dot { width:7px; height:7px; background:var(--navy); border-radius:50%; animation:blink 1.8s infinite; }
+    @keyframes blink { 0%,100%{opacity:1} 50%{opacity:.25} }
+    .edition-label { font-size:11px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--navy); }
+    .edition-meta  { font-size:11px; color:var(--gray-400); }
+
+    .grid { display:grid; grid-template-columns:repeat(12,1fr); grid-auto-rows:76px; gap:14px; }
+
+    .card { border-radius:14px; padding:26px; position:relative; overflow:hidden; display:flex; flex-direction:column; justify-content:space-between; transition:transform .18s,box-shadow .18s; cursor:pointer; }
+    .card:hover { transform:translateY(-3px); box-shadow:0 14px 36px rgba(0,0,0,.10); }
+
+    .c-hero  { grid-column:span 7; grid-row:span 5; }
+    .c-tall  { grid-column:span 5; grid-row:span 5; }
+    .c-wide  { grid-column:span 8; grid-row:span 4; }
+    .c-med   { grid-column:span 4; grid-row:span 4; }
+    .c-sm    { grid-column:span 4; grid-row:span 4; }
+    .c-third { grid-column:span 4; grid-row:span 3; }
+    .c-full  { grid-column:span 12; grid-row:span 3; }
+
+    .bg-navy    { background:var(--navy);    color:var(--white); }
+    .bg-yellow  { background:var(--yellow);  color:var(--navy);  }
+    .bg-black   { background:var(--black);   color:var(--white); }
+    .bg-gray800 { background:var(--gray-800);color:var(--white); }
+    .bg-gray100 { background:var(--gray-100);color:var(--black); }
+    .bg-white   { background:var(--white);   color:var(--black); border:1px solid var(--border); }
+
+    .tag { display:inline-flex; align-items:center; gap:5px; font-size:9px; font-weight:800; letter-spacing:.12em; text-transform:uppercase; padding:4px 10px; border-radius:100px; width:fit-content; }
+    .bg-navy .tag,.bg-black .tag,.bg-gray800 .tag { background:rgba(255,255,255,.15); color:var(--white); }
+    .bg-yellow .tag  { background:rgba(0,39,110,.12); color:var(--navy); }
+    .bg-gray100 .tag,.bg-white .tag { background:var(--navy); color:var(--white); }
+    .tag-dot { width:4px; height:4px; border-radius:50%; background:currentColor; opacity:.6; }
+
+    .headline { font-size:clamp(15px,2vw,24px); font-weight:800; line-height:1.15; letter-spacing:-.025em; margin-top:10px; }
+    .c-hero .headline { font-size:clamp(22px,2.8vw,36px); }
+    .c-full .headline { font-size:clamp(16px,2vw,26px); max-width:900px; }
+    .sub { font-size:12px; line-height:1.55; margin-top:8px; opacity:.72; }
+
+    .stat-num  { font-size:clamp(36px,5vw,60px); font-weight:900; letter-spacing:-.04em; line-height:1; margin:10px 0 4px; }
+    .stat-desc { font-size:11px; font-weight:500; line-height:1.45; opacity:.70; }
+
+    .card-foot { display:flex; align-items:center; justify-content:space-between; margin-top:14px; }
+    .cta-label { font-size:9.5px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; opacity:.50; }
+    .arrow-btn { width:34px; height:34px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:14px; }
+    .bg-navy .arrow-btn,.bg-black .arrow-btn,.bg-gray800 .arrow-btn { background:rgba(255,255,255,.15); }
+    .bg-yellow .arrow-btn { background:rgba(0,39,110,.12); }
+    .bg-gray100 .arrow-btn,.bg-white .arrow-btn { background:var(--navy); color:var(--white); }
+
+    .accent-bar { display:block; width:28px; height:3px; background:var(--yellow); border-radius:2px; margin-bottom:12px; }
+    .bg-yellow .accent-bar { background:var(--navy); }
+    .plus-deco  { position:absolute; right:20px; font-size:52px; font-weight:900; opacity:.08; pointer-events:none; }
+
+    .section-hd { display:flex; align-items:center; gap:16px; margin:44px 0 20px; }
+    .section-hd-label { font-size:10px; font-weight:800; letter-spacing:.14em; text-transform:uppercase; color:var(--gray-600); white-space:nowrap; }
+    .section-hd-line  { flex:1; height:1px; background:var(--border); }
+
+    .modal-overlay {
+      position:fixed; inset:0; z-index:500;
+      background:rgba(0,20,55,.55);
+      backdrop-filter:blur(6px);
+      display:flex; align-items:center; justify-content:center;
+      padding:24px;
+      opacity:0; pointer-events:none;
+      transition:opacity .22s;
+    }
+    .modal-overlay.open { opacity:1; pointer-events:all; }
+
+    .modal {
+      background:var(--white); border-radius:20px;
+      width:100%; max-width:640px; max-height:88vh; overflow-y:auto;
+      box-shadow:0 32px 80px rgba(0,0,0,.22);
+      transform:translateY(20px); transition:transform .25s;
+      position:relative;
+    }
+    .modal-overlay.open .modal { transform:translateY(0); }
+
+    .modal-header { background:var(--navy); border-radius:20px 20px 0 0; padding:28px 32px 24px; position:relative; }
+    .modal-tag    { display:inline-flex; align-items:center; gap:5px; font-size:9px; font-weight:800; letter-spacing:.12em; text-transform:uppercase; padding:4px 10px; border-radius:100px; background:rgba(255,255,255,.15); color:var(--white); margin-bottom:12px; }
+    .modal-headline { font-size:22px; font-weight:800; line-height:1.2; letter-spacing:-.02em; color:var(--white); }
+    .modal-stars  { font-size:16px; margin-top:8px; }
+    .modal-close  { position:absolute; top:20px; right:20px; width:36px; height:36px; border-radius:50%; background:rgba(255,255,255,.15); border:none; color:var(--white); font-size:18px; cursor:pointer; display:flex; align-items:center; justify-content:center; transition:background .15s; }
+    .modal-close:hover { background:rgba(255,255,255,.28); }
+
+    .modal-body { padding:28px 32px 32px; }
+    .modal-section { margin-bottom:24px; }
+    .modal-section-title { font-size:9px; font-weight:800; letter-spacing:.14em; text-transform:uppercase; color:var(--gray-400); margin-bottom:8px; padding-bottom:8px; border-bottom:1px solid var(--border); }
+    .modal-text { font-size:14px; line-height:1.65; color:var(--black); }
+
+    .modal-source { display:flex; align-items:center; gap:8px; margin-top:12px; }
+    .modal-source-label { font-size:10px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--gray-400); }
+    .modal-source-val   { font-size:12px; font-weight:500; color:var(--navy); }
+
+    .modal-scores { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; }
+    .score-item   { background:var(--gray-50); border:1px solid var(--border); border-radius:10px; padding:14px; text-align:center; }
+    .score-num    { font-size:26px; font-weight:900; color:var(--navy); line-height:1; }
+    .score-label  { font-size:9px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--gray-400); margin-top:4px; }
+
+    .modal-idea       { background:var(--navy); border-radius:12px; padding:18px 20px; color:var(--white); }
+    .modal-idea-accent{ display:inline-block; width:20px; height:3px; background:var(--yellow); border-radius:2px; margin-bottom:10px; }
+    .modal-idea-label { font-size:9px; font-weight:800; letter-spacing:.12em; text-transform:uppercase; opacity:.5; margin-bottom:6px; }
+    .modal-idea-text  { font-size:14px; font-weight:600; line-height:1.5; }
+
+    .modal-fit { margin-top:24px; }
+    .modal-fit-title { font-size:9px; font-weight:800; letter-spacing:.14em; text-transform:uppercase; color:var(--gray-400); margin-bottom:12px; padding-bottom:8px; border-bottom:1px solid var(--border); }
+    .modal-fit-btns  { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; }
+    .modal-fit-btn   { background:var(--gray-50); border:1px solid var(--border); border-radius:10px; padding:16px 10px; text-align:center; cursor:pointer; transition:all .15s; }
+    .modal-fit-btn:hover { border-color:var(--navy); background:var(--white); transform:translateY(-2px); box-shadow:0 4px 16px rgba(0,39,110,.08); }
+    .modal-fit-btn.selected { border-color:var(--navy); background:var(--navy); color:var(--white); }
+    .modal-fit-btn.selected .fit-label { color:var(--white); }
+    .fit-emoji  { font-size:24px; display:block; margin-bottom:6px; }
+    .fit-label  { font-size:9px; font-weight:800; letter-spacing:.12em; text-transform:uppercase; color:var(--gray-600); }
+
+    .archive { background:var(--gray-50); border-top:1px solid var(--border); padding:56px 40px; }
+    .archive-inner { max-width:1280px; margin:0 auto; }
+    .archive-hd    { display:flex; align-items:center; gap:16px; margin-bottom:28px; }
+    .archive-title { font-size:10px; font-weight:800; letter-spacing:.14em; text-transform:uppercase; color:var(--gray-400); white-space:nowrap; }
+    .archive-line  { flex:1; height:1px; background:var(--border); }
+    .archive-grid  { display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:10px; }
+    .archive-card  { display:block; text-decoration:none; color:var(--black); background:var(--white); padding:18px 20px; border-radius:10px; border:1px solid var(--border); transition:all .15s; }
+    .archive-card:hover { border-color:var(--navy); box-shadow:0 4px 16px rgba(0,39,110,.09); transform:translateY(-2px); }
+    .archive-date  { font-size:9px; font-weight:800; letter-spacing:.1em; text-transform:uppercase; color:var(--white); background:var(--navy); display:inline-block; padding:3px 8px; border-radius:4px; margin-bottom:9px; }
+    .archive-hl    { font-size:12px; font-weight:600; line-height:1.4; margin-bottom:9px; }
+    .archive-tags  { display:flex; flex-wrap:wrap; gap:4px; }
+    .archive-tags span { font-size:8.5px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; padding:3px 7px; border-radius:100px; background:var(--gray-100); color:var(--gray-600); }
+
+    footer { background:var(--navy); color:var(--white); padding:36px 40px; }
+    .footer-inner   { max-width:1280px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; }
+    .footer-brand   { display:flex; align-items:center; gap:14px; }
+    .footer-sep     { width:1px; height:16px; background:rgba(255,255,255,.2); }
+    .footer-tagline { font-size:11px; font-weight:500; opacity:.45; letter-spacing:.06em; }
+    .footer-note    { font-size:11px; opacity:.35; }
+
+    @media(max-width:900px){
+      .header-inner{padding:0 20px;} nav{display:none;}
+      main{padding:28px 20px 60px;}
+      .grid{grid-template-columns:1fr 1fr;grid-auto-rows:100px;gap:10px;}
+      .c-hero,.c-wide{grid-column:span 2;grid-row:span 3;}
+      .c-tall,.c-med{grid-column:span 2;grid-row:span 3;}
+      .c-sm,.c-third{grid-column:span 1;grid-row:span 2;}
+      .c-full{grid-column:span 2;grid-row:span 2;}
+      .alert-strip{flex-direction:column;gap:6px;padding:12px 20px;text-align:center;}
+      .archive{padding:40px 20px;}
+      .footer-inner{flex-direction:column;gap:12px;text-align:center;}
+      .modal{border-radius:16px;} .modal-header{padding:24px;border-radius:16px 16px 0 0;}
+      .modal-headline{font-size:18px;} .modal-body{padding:22px 24px 28px;}
+    }
+  </style>
+</head>
+<body>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modal">
+  <div class="modal" role="dialog" aria-modal="true">
+    <div class="modal-header">
+      <button class="modal-close" id="modal-close-btn" aria-label="Fechar">&times;</button>
+      <div class="modal-tag"    id="m-tag"></div>
+      <div class="modal-headline" id="m-headline"></div>
+      <div class="modal-stars"  id="m-stars"></div>
+    </div>
+    <div class="modal-body">
+      <div class="modal-section">
+        <div class="modal-section-title">Análise</div>
+        <div class="modal-text" id="m-summary"></div>
+        <div class="modal-source">
+          <span class="modal-source-label">Fonte</span>
+          <span class="modal-source-val" id="m-source"></span>
+        </div>
+      </div>
+      <div class="modal-section">
+        <div class="modal-section-title">Score de Impacto</div>
+        <div class="modal-scores">
+          <div class="score-item"><div class="score-num" id="m-curto"></div><div class="score-label">Curto prazo<br>0-6 meses</div></div>
+          <div class="score-item"><div class="score-num" id="m-medio"></div><div class="score-label">Médio prazo<br>6-18 meses</div></div>
+          <div class="score-item"><div class="score-num" id="m-longo"></div><div class="score-label">Longo prazo<br>18+ meses</div></div>
+        </div>
+      </div>
+      <div class="modal-idea">
+        <div class="modal-idea-accent"></div>
+        <div class="modal-idea-label">Ideia para Você Mais+</div>
+        <div class="modal-idea-text" id="m-idea"></div>
+      </div>
+      <div class="modal-fit">
+        <div class="modal-fit-title">Esta análise tem fit com a sua empresa?</div>
+        <div class="modal-fit-btns">
+          <button class="modal-fit-btn" onclick="selectFit(this)">
+            <span class="fit-emoji">&#128077;</span>
+            <span class="fit-label">Tem Fit</span>
+          </button>
+          <button class="modal-fit-btn" onclick="selectFit(this)">
+            <span class="fit-emoji">&#128221;</span>
+            <span class="fit-label">Quero Mais</span>
+          </button>
+          <button class="modal-fit-btn" onclick="selectFit(this)">
+            <span class="fit-emoji">&#128078;</span>
+            <span class="fit-label">Não é pra mim</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <a class="logo-wrap" href="#">
+      <img class="logo-img" src="logo-positiva.png" alt="você-mais+" />
+      <div class="logo-divider"></div>
+      <div class="logo-sub">Wellness Intelligence</div>
+    </a>
+    <nav>
+      <a href="#" class="active" data-filter="all">Hoje</a>
+      <a href="#" data-filter="tendências">Tendências</a>
+      <a href="#" data-filter="ciência">Ciência</a>
+      <a href="#" data-filter="mercado">Mercado</a>
+      <a href="#" data-filter="regulação">Regulação</a>
+      <a href="#" data-filter="produtos">Produtos</a>
+    </nav>
+    <div class="header-date">Qui, 23 Abr 2026</div>
+  </div>
+</header>
+
+<!-- ALERT STRIP -->
+<div class="alert-strip">
+  <span class="alert-badge">&#9889; Urgente</span>
+  <span class="alert-text"><strong>ANVISA restringe cúrcuma em suplementos com risco hepático</strong> — nova instrução normativa exige advertências obrigatórias e restringe gestantes, lactantes e pessoas com doenças hepáticas. Marcas com produtos de curcumina devem atualizar rótulos imediatamente.</span>
+</div>
+
+<!-- CROSS-EDITION VIEW -->
+<div id="cross-edition-view" style="display:none;"></div>
+
+<!-- MAIN -->
+<main id="main-content">
+  <div class="edition-bar">
+    <div class="edition-live">
+      <div class="live-dot"></div>
+      <span class="edition-label">Edição de hoje — 23 de Abril de 2026</span>
+    </div>
+    <span class="edition-meta">13 tendências · Atualizado às 07h00</span>
+  </div>
+
+  <!-- ROW 1 — Urgente -->
+  <div class="grid">
+
+    <div class="card c-hero bg-navy" data-modal="1" data-category="regulação">
+      <div>
+        <span class="accent-bar"></span>
+        <div class="tag"><div class="tag-dot"></div>Regulação · Urgente</div>
+        <div class="headline">ANVISA restringe cúrcuma em suplementos com risco hepático — advertências obrigatórias em rótulos e novos limites de curcuminoides a partir de abril 2026</div>
+        <p class="sub">Instrução normativa publicada no DOU de 22/04/2026 exige advertências para gestantes, lactantes e portadores de doenças hepáticas. Tetraidrocurcuminoides ganham permissão mas não podem ser misturados ao extrato natural no mesmo produto.</p>
+      </div>
+      <div class="card-foot"><span class="cta-label">Ler análise completa</span><div class="arrow-btn">&#8594;</div></div>
+      <span class="plus-deco" style="bottom:16px;">+</span>
+    </div>
+
+    <div class="card c-tall bg-black" data-modal="2" data-category="mercado">
+      <div>
+        <span class="accent-bar"></span>
+        <div class="tag"><div class="tag-dot"></div>Mercado · Global</div>
+        <div class="headline">Mercado wellness global atinge US$6,8 trilhões em 2024 — projeção de US$9,8 trilhões até 2029 com CAGR de 7,6%</div>
+        <p class="sub">Brasil movimenta US$96 bilhões e figura entre os 12 maiores mercados de wellness do mundo. Longevidade, saúde mental e digitalização da saúde lideram o crescimento.</p>
+      </div>
+      <div class="card-foot"><span class="cta-label">Ler análise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <div class="card c-wide bg-gray100" data-modal="3" data-category="ciência">
+      <div>
+        <div class="tag"><div class="tag-dot"></div>Ciência · Magnésio + Vitamina D</div>
+        <div class="headline">Magnésio + Vitamina D: dupla ganha validação científica para sono, estresse e metabolismo ósseo — sinergia nutricional do momento para profissionais de saúde</div>
+        <p class="sub">Estudo Vanderbilt (180 participantes) confirma que magnésio regula conversão ativa da vitamina D. Combinação melhora qualidade do sono via melatonina e reduz cortisol.</p>
+      </div>
+      <div class="card-foot"><span class="cta-label">Ler análise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <div class="card c-med bg-yellow" data-modal="4" data-category="mercado">
+      <div>
+        <span class="accent-bar"></span>
+        <div class="tag"><div class="tag-dot"></div>Dado · Mercado Feminino</div>
+        <div class="stat-num">79<span style="font-size:0.38em;font-weight:800;">%</span></div>
+        <div class="stat-desc">das mulheres brasileiras usam suplementos (Instituto Locomotiva). Mercado feminino cresce 18% ao ano — taxa acima da media geral do setor de suplementacao</div>
+      </div>
+      <div class="card-foot"><span class="cta-label">Ler análise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+  </div>
+
+  <div class="section-hd">
+    <span class="section-hd-label">Médio Prazo — Agir em 6 a 18 meses</span>
+    <div class="section-hd-line"></div>
+  </div>
+
+  <div class="grid">
+
+    <div class="card c-sm bg-gray800" data-modal="5" data-category="tendências">
+      <div>
+        <div class="tag"><div class="tag-dot"></div>Tendências · Adaptogênicos</div>
+        <div class="headline">Adaptogênicos em bebidas funcionais: ashwagandha, lion's mane e rhodiola dominam inovações de abril 2026 — formato liquid conquista geração Z e millennials</div>
+        <p class="sub">Bebidas funcionais com adaptogênicos crescem como categoria de maior expansão em 2026. SuperLattes e sparkling waters com 1,7g de adaptogênicos chegam ao Brasil via DTC.</p>
+      </div>
+      <div class="card-foot"><span class="cta-label">Ler análise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <div class="card c-sm bg-navy" data-modal="6" data-category="ciência">
+      <div>
+        <span class="accent-bar"></span>
+        <div class="tag"><div class="tag-dot"></div>Ciência · Ômega-3</div>
+        <div class="headline">Alerta nacional: maioria dos brasileiros consome menos ômega-3 do que o recomendado — déficit generalizado impacta saúde cardiovascular e cognitiva</div>
+        <p class="sub">Pesquisa de abril 2026 revela que consumo de EPA e DHA esta abaixo do recomendado na maior parte da populacao. Fontes de qualidade para maiores de 50 anos tornam-se prioridade clinica.</p>
+      </div>
+      <div class="card-foot"><span class="cta-label">Ler análise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <div class="card c-wide bg-navy" data-modal="7" data-category="tendências">
+      <div>
+        <span class="accent-bar"></span>
+        <div class="tag"><div class="tag-dot"></div>Tendências · Clean Label 3.0</div>
+        <div class="headline">Clean label deixa de ser tendência e vira exigência estrutural de mercado em 2026 — consumidor quer comprovação de origem, processos e qualidade ao longo de toda a cadeia</div>
+        <p class="sub">Mercado global de ingredientes clean label movimenta US$28,2bi e projeta US$89,7bi ate 2034, CAGR 12,2%. No Brasil, 40% dos consumidores citam ingredientes naturais como fator decisivo de compra.</p>
+      </div>
+      <div class="card-foot"><span class="cta-label">Ler análise completa</span><div class="arrow-btn">&#8594;</div></div>
+      <span class="plus-deco" style="bottom:12px;">+</span>
+    </div>
+
+    <div class="card c-med bg-yellow" data-modal="8" data-category="mercado">
+      <div>
+        <span class="accent-bar"></span>
+        <div class="tag"><div class="tag-dot"></div>Dado · Plant-Based</div>
+        <div class="stat-num">12<span style="font-size:0.38em;font-weight:800;">%</span></div>
+        <div class="stat-desc">crescimento anual medio do plant-based no Brasil ate 2027 (Meticulous Market Research). 26% dos brasileiros ja consomem proteina vegetal mensalmente</div>
+      </div>
+      <div class="card-foot"><span class="cta-label">Ler análise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <div class="card c-third bg-gray100" data-modal="9" data-category="ciência">
+      <div>
+        <div class="tag"><div class="tag-dot"></div>Ciência · Psicobióticos</div>
+        <div class="headline">Psicobióticos avançam para prescrição clínica em 2026 — eixo intestino-cérebro incorporado por nutricionistas e psiquiatras com cepas específicas declaradas</div>
+        <p class="sub">Polifenois, ômega-3, curcumina e probióticos com cepas especificas regulam humor e inflamacao via microbiota. Mercado de probioticos cresce 9,88% ao ano no Brasil.</p>
+      </div>
+      <div class="card-foot"><span class="cta-label">Ler análise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <div class="card c-third bg-gray800" data-modal="10" data-category="ciência">
+      <div>
+        <div class="tag"><div class="tag-dot"></div>Ciência · Longevidade</div>
+        <div class="headline">NMN e NAD+ consolidam-se como protocolo anti-aging: 900mg diários mostram melhoras mensuráveis em energia e metabolismo celular em ensaios clínicos 2025-2026</div>
+        <p class="sub">David Sinclair stack com NMN 1g + resveratrol dobra niveis de NAD+ em humanos. Mercado global de suplementos ultrapassa US$252 bilhoes impulsionado por longevidade.</p>
+      </div>
+      <div class="card-foot"><span class="cta-label">Ler análise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <div class="card c-third bg-white" data-modal="11" data-category="tendências">
+      <div>
+        <div class="tag"><div class="tag-dot"></div>Tendências · Nootrópicos</div>
+        <div class="headline">Creatina como nootrópico: uso cognitivo supera esporte em 2026 — mercado de US$1,1bi impulsionado por profissionais 25-45 anos buscando memória e foco</div>
+        <p class="sub">Reducao da fadiga mental e melhora de memória de curto prazo confirmadas em estudos. Mulheres têm 70-80% menos reservas endogenas — oportunidade de mercado mal explorada.</p>
+      </div>
+      <div class="card-foot"><span class="cta-label">Ler análise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <div class="card c-third bg-gray100" data-modal="12" data-category="tendências">
+      <div>
+        <div class="tag"><div class="tag-dot"></div>Digital · LODs Científicos</div>
+        <div class="headline">Nutricionistas e farmacêuticos digitais lideram conversões de suplementos — 73% das compras influenciadas por criadores de saúde com credencial técnica em 2026</div>
+        <p class="sub">Micro-LODs com formacao técnica convertem 3x mais que macro-influenciadores. 7% de engajamento vs 1-2% de macros genéricos. Live commerce domina vendas do setor em 2026.</p>
+      </div>
+      <div class="card-foot"><span class="cta-label">Ler análise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <div class="card c-full bg-navy" data-modal="13" data-category="tendências">
+      <div>
+        <span class="accent-bar"></span>
+        <div class="tag"><div class="tag-dot"></div>Análise de Cruzamento</div>
+        <div class="headline">ANVISA cúrcuma + Magnésio-Vitamina D em alta + Clean label como exigência — regulação restringe ingredientes enquanto ciência e mercado demandam mais transparência e combinações sinérgicas</div>
+      </div>
+      <div class="card-foot"><span class="cta-label">Ler análise completa</span><div class="arrow-btn">&#8594;</div></div>
+      <span class="plus-deco" style="bottom:12px;">+</span>
+    </div>
+
+  </div>
+
+</main>
+
+<!-- ARQUIVO -->
+<section class="archive">
+  <div class="archive-inner">
+    <div class="archive-hd">
+      <span class="archive-title">Edições Anteriores</span>
+      <div class="archive-line"></div>
+    </div>
+    <div class="archive-grid">
+      <!-- ARCHIVE_ENTRIES_START -->
+      <a class="archive-card" href="edicoes/2026-04-23.html">
+        <div class="archive-date">22 Abr 2026</div>
+        <div class="archive-hl">ANVISA clandestinos, mulheres lideram, psicobióticos clínicos e clean label obrigatório</div>
+        <div class="archive-tags"><span>Regulação</span><span>Mercado</span><span>Ciência</span><span>Tendências</span></div>
+      </a>
+      <a class="archive-card" href="edicoes/2026-04-22.html">
+        <div class="archive-date">21 Abr 2026</div>
+        <div class="archive-hl">ANVISA IN 431, menopausa US$60 tri, magnésio e personalização via IA</div>
+        <div class="archive-tags"><span>Regulação</span><span>Mercado</span><span>Ciência</span><span>Tendências</span></div>
+      </a>
+      <a class="archive-card" href="edicoes/2026-04-21.html">
+        <div class="archive-date">19 Abr 2026</div>
+        <div class="archive-hl">ANVISA curcumina, creatina feminina, social commerce e compliance urgente</div>
+        <div class="archive-tags"><span>Regulação</span><span>Ciência</span><span>Mercado</span><span>Digital</span></div>
+      </a>
+      <a class="archive-card" href="edicoes/2026-04-19.html">
+        <div class="archive-date">18 Abr 2026</div>
+        <div class="archive-hl">Ômega-3 80% deficientes, creatina feminina, clean label e longevidade</div>
+        <div class="archive-tags"><span>Ciência</span><span>Tendências</span><span>Mercado</span><span>Digital</span></div>
+      </a>
+      <a class="archive-card" href="edicoes/2026-04-18.html">
+        <div class="archive-date">17 Abr 2026</div>
+        <div class="archive-hl">ANVISA IN 432, magnésio lidera, feminino 79% e nootrópicos</div>
+        <div class="archive-tags"><span>Regulação</span><span>Mercado</span><span>Tendências</span><span>Feminino</span></div>
+      </a>
+      <a class="archive-card" href="edicoes/2026-04-17.html">
+        <div class="archive-date">16 Abr 2026</div>
+        <div class="archive-hl">Vitamina D, adaptogenos, longevidade e psicobioticos</div>
+        <div class="archive-tags"><span>Ciência</span><span>Regulação</span><span>Mercado</span><span>Tendências</span></div>
+      </a>
+      <a class="archive-card" href="edicoes/2026-04-16.html">
+        <div class="archive-date">15 Abr 2026</div>
+        <div class="archive-hl">Crescimento 42%, ANVISA, feminino e clean label</div>
+        <div class="archive-tags"><span>Mercado</span><span>Regulação</span><span>Ciência</span><span>Tendências</span></div>
+      </a>
+      <a class="archive-card" href="edicoes/2026-04-15.html">
+        <div class="archive-date">12 Abr 2026</div>
+        <div class="archive-hl">Saúde feminina, psicobióticos, ANVISA e Neurowellness</div>
+        <div class="archive-tags"><span>Mercado</span><span>Ciência</span><span>Regulação</span><span>Tendências</span></div>
+      </a>
+      <!-- ARCHIVE_ENTRIES_END -->
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="logo-branca.png" alt="você-mais+" style="height:16px;opacity:.75;" />
+      <div class="footer-sep"></div>
+      <span class="footer-tagline">Nutrição com clareza.</span>
+    </div>
+    <span class="footer-note">Atualizado automaticamente às 7h · Para uso interno — fundadores e time comercial</span>
+  </div>
+</footer>
+
+<!-- MODAL DATA -->
+<script>
+var MODALS = {
+  1: { tag:"Regulação · Urgente", stars:"⭐⭐⭐⭐⭐", headline:"ANVISA restringe cúrcuma em suplementos com risco hepático — advertências obrigatórias em rótulos e novos limites de curcuminoides a partir de abril 2026", summary:"Em 22 de abril de 2026, a ANVISA publicou instrução normativa no Diário Oficial da União atualizando os limites de cúrcuma (curcuminoides totais) em suplementos alimentares após identificação de risco de danos ao fígado em monitoramento pós-mercado. As mudanças são imediatas e estruturais: (1) Advertência obrigatória de rotulagem proibindo o uso por gestantes, lactantes, crianças, pessoas com doenças hepáticas, biliares ou úlceras gástricas; (2) Restrição de mistura de tetraidrocurcuminoides com extrato natural de cúrcuma no mesmo produto; (3) Cálculo dos limites de consumo pela soma dos três principais curcuminoides totais. Para qualquer marca com produto à base de cúrcuma ou curcumina na linha, isso é uma ação imediata obrigatória. O prazo de adequação regulatória pressiona revisão de rótulos, bulas, fôlderes e comunicação digital. O mercado de cúrcuma no Brasil cresceu exponencialmente nos últimos 5 anos — a regulação agora cria uma divisão entre marcas que se adequam rapidamente e as que ficam para trás.", source:"ANVISA / Agência Brasil EBC / Acessa.com / Imirante.com / CBN Caruaru, 22 Abr 2026", curto:"10", medio:"6", longo:"4", idea:"Ação imediata em dois níveis: (1) Auditoria de todos os produtos Você Mais+ com cúrcuma ou curcumina — verificar dosagem de curcuminoides totais, revisar rotulagem com advertências obrigatórias e atualizar ficha técnica de todos os canais de venda. (2) Transformar o compliance em conteúdo: publicar nas redes um post educativo explicando o que mudou na regulação da cúrcuma, por que a ANVISA agiu e o que isso significa para o consumidor. Marcas que comunicam ativamente as mudanças regulatórias constroem confiança e educam o mercado. Custo: mínimo. Benefício: posicionamento de autoridade e confiança." },
+  2: { tag:"Mercado · Global", stars:"⭐⭐⭐⭐", headline:"Mercado wellness global atinge US$6,8 trilhões em 2024 — projeção de US$9,8 trilhões até 2029 com CAGR de 7,6% impulsionada por longevidade, saúde mental e digitalização", summary:"O mercado global de wellness atingiu US$6,8 trilhões em 2024, segundo o Global Wellness Institute, e deve chegar a US$9,8 trilhões até 2029, com crescimento médio anual de 7,6%. O Brasil posiciona-se como o maior mercado de wellness da América Latina e um dos 12 maiores do mundo, movimentando US$96 bilhões. Os vetores de crescimento mais expressivos em 2026 são: longevidade saudável (60% dos consumidores dizem que envelhecer bem é prioridade alta), saúde mental como pilar central de wellness, fibra alimentar (buscas cresceram 43,8% em um ano) e digitalização da saúde com wearables e monitoramento contínuo. O autocuidado lidera apostas do setor para 2026, com redes do segmento mirando expansão acelerada. Para marcas de suplementação natural como a Você Mais+, este é o contexto macroeconômico mais favorável da história do setor: consumidor que entende wellness como investimento, mercado crescente e agenda regulatória que favorece marcas de qualidade.", source:"Global Wellness Institute / Inspira FM / CartaCapital / Medicina S/A / Sebrae RS, 2026", curto:"6", medio:"8", longo:"9", idea:"Posicionamento estratégico Você Mais+ como marca de wellness integral, não apenas suplementação pontual. Comunicação que conecta os produtos a pilares de bem-estar — energia, sono, foco, imunidade, longevidade — em vez de claims isolados por ingrediente. Criar hub de conteúdo de wellness no site com guias por objetivo de vida, posicionando a marca como referência editorial além de produto. Médio prazo: produção de relatório anual de wellness Você Mais+ com dados de mercado curados — fortalece autoridade da marca com o trade e com influenciadores parceiros." },
+  3: { tag:"Ciência · Magnésio + Vitamina D", stars:"⭐⭐⭐⭐", headline:"Magnésio + Vitamina D: sinergia validada cientificamente para sono, estresse e metabolismo ósseo — dupla mais prescrita por profissionais de saúde em 2026", summary:"Pesquisas de 2026 consolidam a sinergia entre magnésio e vitamina D como uma das combinações mais eficazes e racionalmente embasadas em suplementação. O mecanismo é direto: a ativação da vitamina D em sua forma biologicamente ativa depende criticamente da disponibilidade de magnésio — estudo da Vanderbilt University com 180 participantes demonstrou que a suplementação de magnésio regula o metabolismo da vitamina D, elevando seus níveis quando baixos e ajustando quando excessivos. Os benefícios documentados incluem: (1) Qualidade do sono — magnésio promove aumento significativo de melatonina e melhora da eficiência do sono (Journal of Research in Medical Sciences); (2) Redução de cortisol e estresse — ambos nutrientes atuam na regulação hormonal; (3) Saúde óssea — vitamina D absorve cálcio, magnésio direciona esse cálcio para ossos e dentes. Em abril de 2026, a busca por combinação de magnésio e vitamina D para melhora do sono atingiu picos históricos no Google Trends Brasil.", source:"Vanderbilt University Study / Journal of Research in Medical Sciences / Tua Saude / Metropoles / Unikka Pharma, Abr 2026", curto:"8", medio:"8", longo:"7", idea:"Kit Sono e Equilíbrio Você Mais+ com magnésio bisglicinato (400mg) + vitamina D3 (2000 UI) + vitamina K2 (100mcg) em formato sachê noturno. Posicionamento: o ritual da noite para dormir melhor, acalmar o sistema nervoso e proteger seus ossos. Conteúdo educativo sobre a sinergia — por que magnésio sem vitamina D não funciona tão bem, e vice-versa. Alta demanda já documentada, formato de kit justifica ticket médio elevado, excelente recompra por uso diário." },
+  4: { tag:"Dado · Mercado Feminino", stars:"⭐⭐⭐⭐⭐", headline:"79% das mulheres brasileiras usam suplementos — mercado feminino cresce 18% ao ano e personalização por fase da vida define as marcas vencedoras de 2026", summary:"O Instituto Locomotiva revela que 79% das mulheres brasileiras usam suplementos regularmente, contra 71% dos homens — uma diferença que reflete o protagonismo feminino no consumo de saúde preventiva. O mercado feminino de suplementos movimenta mais de R$4 bilhões anuais com crescimento de 18% ao ano, taxa acima da média geral do setor. As três tendências que definem o mercado feminino em 2026 são: (1) Personalização por fase da vida — suplementos específicos para ciclo menstrual, gestação, pós-parto e menopausa crescem acima da média, com consumidoras rejeitando produtos genéricos; (2) Saúde hormonal natural — crescimento expressivo de ashwagandha, maca peruana, isoflavonas e magnésio bisglicinato como reguladores do sistema nervoso e ciclo; (3) Formatos inovadores — gummies, sachês solúveis e sticks são preferidos por mulheres que querem suplementação integrada à rotina. A mulher brasileira de 2026 é exigente, informada e busca marcas que a entendam profundamente — não apenas por categoria, mas por fase da vida.", source:"Instituto Locomotiva / Sincofarma SP / Sanavita / Bonitamulher.com.br / CartaCapital, Mar 2026", curto:"9", medio:"10", longo:"9", idea:"Mapeamento completo da jornada da mulher Você Mais+ por fase da vida: ciclo ativo 20-35 anos (magnésio + ashwagandha para TPM, energia e foco), gestação e pós-parto (DHA + folato + ferro quelato), menopausa 45-60 anos (creatina + D3+K2 + colágeno + maca). Lançar linha com nomenclatura por fase da vida — não por sintoma — posiciona a Você Mais+ como marca que entende a mulher brasileira de forma integral. Comunicação que nomeia a fase e os sintomas específicos converte muito mais que comunicação genérica." },
+  5: { tag:"Tendências · Adaptogênicos", stars:"⭐⭐⭐⭐", headline:"Adaptogênicos em bebidas funcionais dominam inovações de abril 2026 — ashwagandha, lion's mane e L-teanina em formatos liquid conquistam geração Z e millennials além das cápsulas", summary:"Abril de 2026 marca uma inflexão no mercado de adaptogênicos: a fronteira de maior crescimento não são mais as cápsulas e tinturas, mas as bebidas funcionais que incorporam ashwagandha, lion's mane, rhodiola e L-teanina em formatos acessíveis e saborosos. Os formatos mais populares incluem SuperLattes com ashwagandha, reishi e lion's mane em pó barista, bebidas espumantes com 1,7g de adaptogênicos totais, e chás funcionais com combinações específicas por objetivo (estresse, foco, sono). A ciência de 2026 está cada vez mais clara: adaptogens realmente funcionam, com pesquisa publicada em Detroit News de abril 2026 revisando a base científica e confirmando os mecanismos de ação. No Brasil, o mercado de bebidas funcionais é nascente e a penetração de adaptogênicos nesse segmento está anos atrás dos EUA e Europa — uma janela de oportunidade para primeiros movimentos. A plataforma FoodNavigator de 22 de abril 2026 destaca cognição e calma mental como os dois eixos mais buscados em bebidas funcionais.", source:"FoodNavigator / Detroit News / Topteny.com / Botanic Tonics / Tribe Organics, Abr 2026", curto:"6", medio:"8", longo:"9", idea:"Linha Você Mais+ Instant Adaptogens: blend em pó solúvel de ashwagandha KSM-66 (300mg) + lion's mane (500mg) + L-teanina (150mg) + magnésio quelato em formato sachê individual. Dissolve em água, café ou leite vegetal. Posicionamento: seu ritual de calma e foco, onde você estiver — para quem quer adaptogênicos sem comprimir cápsulas. Público: profissionais 25-40 anos com rotina intensa. Alta diferenciação de formato no mercado brasileiro, margem elevada e alto potencial de recompra pela experiência de uso diário." },
+  6: { tag:"Ciência · Ômega-3", stars:"⭐⭐⭐⭐", headline:"Alerta de abril 2026: maioria dos brasileiros consome menos ômega-3 do que o recomendado — déficit generalizado de EPA e DHA impacta saúde cardiovascular, cerebral e articular", summary:"Pesquisa divulgada em fevereiro e amplificada em abril de 2026 revela que a maior parte da população brasileira consome ômega-3 em quantidade insuficiente para os benefícios documentados em saúde. O EPA (ácido eicosapentaenoico) e o DHA (ácido docosahexaenoico) são os dois principais ácidos graxos com evidência clínica robusta: redução de eventos cardiovasculares (infarto e AVC), proteção do cérebro via fluidez das membranas neuronais, e suporte a articulações. O DHA é o tipo de ômega-3 com maior concentração no tecido cerebral, participando diretamente de memória, foco e raciocínio. Em pessoas com mais de 50 anos, a reposição com fontes de alta qualidade (óleo de peixe concentrado ou algas) torna-se prioridade clínica documentada. No contexto pós-ANVISA de maior fiscalização, ômega-3 com certificação de pureza e concentração real declarada (EPA+DHA em mg por dose, não apenas óleo total) é diferencial de qualidade que o consumidor informado exige.", source:"Jetss.com / SBCM Revista / Tua Saude / Farmacotecnica / Correiobraziliense, Abr 2026", curto:"7", medio:"8", longo:"7", idea:"Reformulação do ômega-3 Você Mais+ com declaração explícita de EPA e DHA em mg por cápsula na embalagem frontal — não apenas óleo de peixe total. Conteúdo educativo: a diferença entre ômega-3 genérico (1000mg de óleo, 300mg de EPA+DHA) vs concentrado premium (1000mg de EPA+DHA real). Teste de qualidade de terceiros com certificado IFOS ou equivalente publicado no site. Alta margem de diferenciação com custo de comunicação baixo — o consumidor informado paga premium quando entende o que está comprando." },
+  7: { tag:"Tendências · Clean Label 3.0", stars:"⭐⭐⭐⭐", headline:"Clean label deixa de ser tendência e vira exigência estrutural de mercado — consumidor de 2026 quer comprovação de origem, processos e qualidade ao longo de toda a cadeia produtiva", summary:"Em 2026, o movimento clean label alcança sua terceira geração — Clean Label 3.0 — onde não basta mais ter lista curta de ingredientes ou eliminar nomes considerados artificiais. O consumidor atual espera clareza sobre procedência dos ingredientes, processos envolvidos e critérios de qualidade ao longo de toda a cadeia produtiva. Os dados são expressivos: mercado global de ingredientes clean label movimenta US$28,2 bilhões em 2024 e projeta US$89,7 bilhões até 2034, CAGR de 12,2%; quase 1 em 2 consumidores globais opta por produtos clean label; no Brasil, 40% apontam ingredientes naturais como fator decisivo de compra — acima de preço. O NIS Summit 2026 destacou a nova geração de ingredientes que une ciência, saudabilidade e desejo de consumo. A indústria de alimentos está sendo reposicionada: marcas que não comprovam o que declaram perdem espaço para as que demonstram transparência. No segmento de suplementos, o clean label com evidência científica é o posicionamento mais difícil de copiar.", source:"Food Connection / TV Inovação / BHBFood / ITAL-SP / Global Market Insights / PBIS, Mar-Abr 2026", curto:"8", medio:"9", longo:"9", idea:"Programa Transparência Total Você Mais+: (1) Auditoria de ingredientes linha a linha — mapear todos os acessórios (corantes, aromatizantes, adoçantes, excipientes) e substituir por alternativas naturais onde viável. Meta: menos de 7 ingredientes reconhecíveis por produto. (2) Publicar a auditoria como série de conteúdo — 10 posts mostrando o processo de reformulação e os critérios de decisão. (3) Criar selo visual próprio Você Mais+ Clean com QR Code que leva à pagina de ingredientes rastreados. Diferencial competitivo duradouro que aumenta percepção de qualidade e justifica prêmio de preço." },
+  8: { tag:"Dado · Plant-Based", stars:"⭐⭐⭐", headline:"Proteínas vegetais crescem 12% ao ano no Brasil até 2027 — ervilha e arroz combinados definem padrão-ouro de plant-based clean para o flexitariano brasileiro", summary:"O mercado plant-based no Brasil cresce mais de 12% ao ano até 2027, segundo o Meticulous Market Research, superando as expectativas originais de R$2,2 bilhões projetados pela Euromonitor para 2026. O público que sustenta este crescimento não são os veganos estritos — são os flexitarianos, que reduzem carne por saúde e sustentabilidade sem adotar veganismo integral. Dados do GFI Brasil: 26% dos brasileiros já consomem proteína vegetal mensalmente. A proteína de ervilha consolida-se como a opção preferida: perfil completo de aminoácidos quando combinada com arroz (especialmente BCAA), alta tolerabilidade digestiva e boa solubilidade. O mercado B2B de ingredientes proteicos vegetais cresce em panificação, bebidas e snacks proteicos. A convergência mais valorizada é plant-based + clean label: proteína vegetal com lista curta de ingredientes, sem adoçantes artificiais e com certificação vegana, para quem quer comer limpo independente de ser vegano.", source:"VeganBusiness / GFI Brasil / Euromonitor / Meticulous Market Research / Digital Agrishow, 2026", curto:"5", medio:"7", longo:"9", idea:"Proteína Vegetal Clean Você Mais+ com blend de ervilha + arroz (perfil completo de aminoácidos), sem adoçantes artificiais, sem corantes, certificação vegana, lista com menos de 5 ingredientes. Sabores naturais: baunilha natural, cacau puro, sem sabor. Posicionamento para flexitarianos mulheres 25-45 anos que treinam e valorizam limpeza de ingredientes acima de sabor intenso. Kit de experimentação com 3 sachês de sabores diferentes para reduzir barreira de entrada e estimular conversão em compra recorrente." },
+  9: { tag:"Ciência · Psicobióticos", stars:"⭐⭐⭐⭐", headline:"Psicobióticos avançam de hipótese para protocolo clínico em 2026 — cepas com cepa específica declarada tornam-se padrão de prescrição de nutricionistas e psiquiatras", summary:"O campo dos psicobióticos — probióticos com evidência específica para saúde mental — passou definitivamente de hipótese científica para protocolo clínico adotado em 2026. O mecanismo é a comunicação bidirecional pelo eixo intestino-cérebro via nervo vago, com a microbiota produzindo serotonina, GABA e dopamina. Estudos recentes consolidam que probióticos, prebióticos, polifenóis, ômega-3, curcumina e resveratrol auxiliam na regulação do humor e da inflamação via microbiota intestinal. As cepas com maior nível de evidência em 2026 incluem Lactobacillus helveticus R0052 e Bifidobacterium longum R0175, com estudos mostrando redução mensurável de cortisol e ansiedade. O mercado de probióticos no Brasil cresce 9,88% ao ano até 2034. O consumidor informado de 2026 já conhece o eixo intestino-cérebro e busca produtos com cepas específicas declaradas — não probióticos genéricos sem identificação de cepa. Nutricionistas e psiquiatras incorporam psicobióticos nas prescrições para ansiedade leve, distúrbios de sono e bem-estar emocional.", source:"FIOCRUZ / Revista Contemporânea / UNESP FCFAR / USP BDTA / GreatItalianFoodTrade, 2026", curto:"7", medio:"9", longo:"9", idea:"Simbiótico Você Mais+ Mente e Intestino: cepas declaradas Lactobacillus helveticus R0052 + Bifidobacterium longum R0175 + Lactobacillus rhamnosus GG, combinados com prebióticos FOS + inulina e enzimas digestivas. Embalagem com cepas impressas em destaque — diferencial técnico para o consumidor informado. Série de 12 conteúdos sobre eixo intestino-cérebro em linguagem acessível: como a microbiota produz serotonina, quais cepas têm mais evidência, o que são psicobióticos. Alto apelo editorial e alto potencial de prescrição por nutricionistas parceiros." },
+  10: { tag:"Ciência · Longevidade", stars:"⭐⭐⭐", headline:"NMN e NAD+ consolidam-se como protocolo anti-aging: 900mg diários mostram benefícios mensuráveis em energia e metabolismo celular em ensaios clínicos 2025-2026", summary:"O mercado global de suplementos ultrapassa US$252 bilhões em 2025, crescendo 7,5% ao ano, fortemente impulsionado pela busca por longevidade. Em 2026, o protocolo de David Sinclair — NMN 1g + resveratrol 1g + vitamina D3 + K2 — tornou-se referência popular citada por bilhões de visualizações nas redes sociais. Os ensaios clínicos humanos de 2020-2024 mostram que NMN é seguro e bem tolerado em doses de 100-1250mg por dia por 3-12 semanas, sem efeitos colaterais significativos. Os benefícios apontados: NMN dobra níveis de NAD+ (cofator essencial para energia celular e reparo de DNA que declina com a idade), resveratrol ativa sirtuínas protetoras do DNA, e a sinergia dos dois entrega resultados superiores ao uso isolado. Importante: a evidência ainda é limitada para afirmações de extensão da vida humana — o posicionamento responsável é vitalidade e saúde celular, não anti-aging absoluto.", source:"Omre.co / Novoslabs.com / WonderFeel / Goldman Laboratories / iHerb Blog, 2026", curto:"4", medio:"7", longo:"9", idea:"Dossiê técnico interno Longevidade Você Mais+: monitorar NMN, NR (Nicotinamida Ribosídeo), urolitina A e espermidina nos próximos 12-18 meses enquanto a evidência clínica amadurece. Identificar formulador brasileiro confiável para NMN. Quando evidência atingir nível suficiente para claim responsável no Brasil, lançar linha Longevidade Ativa com NMN + resveratrol + vitamina D3+K2 com linguagem de vitalidade celular e posicionamento científico diferenciado. Hoje: conteúdo educativo sobre a ciência do NAD+ — posiciona autoridade antes do produto existir." },
+  11: { tag:"Tendências · Nootrópicos", stars:"⭐⭐⭐⭐", headline:"Creatina como nootrópico supera uso esportivo em 2026 — memória e cognição tornam-se o principal benefício comunicado para profissionais 25-45 anos com alta demanda mental", summary:"A creatina monohidratada vive sua maior expansão de uso em 2026: além do esporte, o ingrediente consolida-se como nootrópico de escolha para profissionais com alta demanda cognitiva. Os estudos são claros: suplementação de creatina reduz fadiga mental e melhora memória de curto prazo especialmente em situações de privação de sono e raciocínio intenso. O mercado global de creatina foi avaliado em mais de US$1,1 bilhão em 2024, impulsionado agora não apenas pelo esporte, mas pelo uso em saúde cognitiva, envelhecimento ativo e bem-estar metabólico. Para mulheres, o dado é especialmente relevante: com 70-80% menos reservas endógenas de creatina do que homens (por menor massa muscular e síntese hepática inferior), a suplementação feminina representa uma das oportunidades mais mal exploradas no mercado. A tendência em 2026 é posicionar creatina como suplemento de qualidade de vida cognitiva — não de performance esportiva exclusiva.", source:"MEDBR Medicos Brasil / Ekobé Industria / Ultimate Nutrition / Contribuciones CLCS / Bodytech Blog, 2026", curto:"7", medio:"9", longo:"8", idea:"Linha Creatina Inteligente Você Mais+: creatina monohidratada + L-teanina (150mg) + vitamina B6 em sachê individual sabor natural. Posicionamento: clareza mental para dias exigentes — para a profissional que precisa de foco e energia cerebral, não apenas muscular. Comunicação dupla: para a academia (performance e força) e para o trabalho (memória e foco). Conteúdo em parceria com coaches executivos e nutricionistas: 5 razões por que creatina não é só para quem malha. Alto apelo para o público feminino informado." },
+  12: { tag:"Digital · LODs Científicos", stars:"⭐⭐⭐⭐", headline:"Nutricionistas e farmacêuticos digitais lideram conversões de suplementos em 2026 — 73% das compras influenciadas por criadores com credencial técnica que convertem 3x mais que celebridades", summary:"A revolução do marketing de suplementos em 2026 é a ascensão do Líder de Opinião Digital (LOD) com credencial científica real. Farmacêuticos, nutricionistas e médicos digitais convertem 3x mais que macro-influenciadores de lifestyle sem formação específica. O mecanismo é duplo: confiança (o consumidor informado procura evidência antes de comprar, e um nutricionista que explica o mecanismo de ação é mais persuasivo que uma celebridade que apenas usa o produto) e audiência qualificada (micro-LODs de 10-100k seguidores alcançam 7% de engajamento versus 1-2% de macros genéricos). Dados do setor: 73% das compras de suplementos no Brasil são influenciadas por criadores digitais. O formato que melhor converte: vídeos de 60-90 segundos com ingrediente + mecanismo de ação + benefício esperado + cuidados de uso. Live commerce domina vendas em 2026. O setor farmacêutico lidera o crescimento de criadores de saúde — e marcas que acessam esses criadores com produto limpo e evidência têm vantagem natural.", source:"Focusnetworks / We Are Social Brasil / Lab Growth / Jornal Cruzeiro / Hypeauditor, 2026", curto:"8", medio:"9", longo:"8", idea:"Programa Embaixadores Científicos Você Mais+: selecionar 12-15 nutricionistas e farmacêuticos regionais com engagement rate acima de 5% e 10-100k seguidores. Modelo operacional: briefing mensal com ingrediente do mes + roteiro sugerido de 60-90s + produto para uso real + link rastreável com comissão de 15-20% sobre vendas. Reunião mensal virtual para alinhamento científico. KPI principal: conversão por link, nao alcance. A autenticidade é garantida porque o LOD tem audiência qualificada que confia nele e a Você Mais+ tem produto limpo e com evidência." },
+  13: { tag:"Análise de Cruzamento", stars:"⭐⭐⭐⭐⭐", headline:"ANVISA cúrcuma + Magnésio-Vitamina D em alta + Clean label como exigência — regulação restringe ingredientes enquanto ciência e mercado demandam transparência e combinações sinérgicas validadas", summary:"Os 13 vetores desta edição de 23 de abril de 2026 revelam uma convergência única no mercado de suplementos: regulação mais restritiva encontra demanda crescente por ingredientes validados e transparência total. FORCA 1 — REGULAÇÃO COMO FILTRO DE QUALIDADE: A ANVISA restringe cúrcuma com risco hepático — um dos ingredientes mais populares em suplementos naturais. Isso sinaliza tendência de maior escrutínio científico de ingredientes amplamente comercializados. Para a Você Mais+: oportunidade de liderar a comunicação sobre quais ingredientes têm evidência sólida e quais têm limitações. FORCA 2 — COMBINAÇÕES SINÉRGICAS COMO DIFERENCIAL: A sinergia magnésio+vitamina D valida o modelo de kits multifuncionais, que entregam valor maior que suplementos isolados. Consumidor que entende a combinação certa paga mais e recompra mais. FORCA 3 — DEMANDA FEMININA + DIGITAL + CLEAN LABEL COMO MOTOR UNIFICADOR: 79% das mulheres brasileiras suplementam, buscam personalização por fase da vida, compram influenciadas por LODs científicos e exigem clean label como condição mínima. O tema unificador de 23 de abril: o mercado de 2026 premia marcas que combinam compliance técnico rigoroso (ANVISA) + formulações com sinergia documentada (magnésio+D, psicobióticos, adaptogênicos) + comunicação científica acessível (LODs) + clean label comprovável. A janela mais urgente para Você Mais+ é o compliance imediato da cúrcuma, seguido do relançamento de kits sinérgicos femininos com comunicação de fase da vida, apoiada por LODs científicos com credencial.", source:"Análise cruzada — Wellness Intelligence Você Mais+, 23 Abr 2026", curto:"10", medio:"10", longo:"9", idea:"Plano 30-60-90 dias: PRIMEIROS 30 DIAS — Auditoria e adequação da cúrcuma (advertências e rótulos), auditoria clean label linha completa, seleção de 5 LODs nutricionistas para piloto de embaixadores. DIAS 31-60 — Relançamento de 2 kits sinérgicos com posicionamento de fase da vida (Kit Noite e Equilíbrio: magnésio+D3+K2 / Kit Feminino 40+: creatina+colágeno+maca), briefing mensal com LODs selecionados. DIAS 61-90 — Conteúdo de transparência sobre reformulação clean label publicado, análise de conversão por LOD, ajuste do programa. Três frentes simultâneas, todas executáveis com recursos existentes, todas gerando conteúdo e posicionamento de marca." }
+};
+
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('[data-modal]').forEach(function(card) {
+    card.addEventListener('click', function() {
+      var id = this.getAttribute('data-modal');
+      var d  = MODALS[id];
+      if (!d) return;
+      document.getElementById('m-tag').textContent      = d.tag;
+      document.getElementById('m-headline').textContent = d.headline;
+      document.getElementById('m-stars').textContent    = d.stars;
+      document.getElementById('m-summary').textContent  = d.summary;
+      document.getElementById('m-source').textContent   = d.source;
+      document.getElementById('m-curto').textContent    = d.curto + '/10';
+      document.getElementById('m-medio').textContent    = d.medio + '/10';
+      document.getElementById('m-longo').textContent    = d.longo + '/10';
+      document.getElementById('m-idea').textContent     = d.idea;
+      document.getElementById('modal').classList.add('open');
+      document.body.style.overflow = 'hidden';
+    });
+  });
+
+  document.getElementById('modal').addEventListener('click', function(e) {
+    if (e.target === this) closeModal();
+  });
+
+  document.getElementById('modal-close-btn').addEventListener('click', closeModal);
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeModal();
+  });
+
+  function closeModal() {
+    document.getElementById('modal').classList.remove('open');
+    document.body.style.overflow = '';
+    document.querySelectorAll('.modal-fit-btn').forEach(function(b) { b.classList.remove('selected'); });
+  }
+
+  var crossView = document.getElementById('cross-edition-view');
+  var mainContent = document.getElementById('main-content');
+
+  document.querySelectorAll('nav a[data-filter]').forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      var filter = this.getAttribute('data-filter');
+
+      document.querySelectorAll('nav a').forEach(function(a) { a.classList.remove('active'); });
+      this.classList.add('active');
+
+      if (filter === 'all') {
+        mainContent.style.display = '';
+        crossView.style.display = 'none';
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        return;
+      }
+
+      fetch('data.json?v=' + Date.now())
+        .then(function(r) { return r.json(); })
+        .then(function(data) {
+          var results = [];
+          data.editions.forEach(function(edition) {
+            edition.cards.forEach(function(card) {
+              if (card.category === filter) {
+                results.push({ card: card, date: edition.date, dateLabel: edition.dateLabel });
+              }
+            });
+          });
+
+          results.sort(function(a, b) { return b.date.localeCompare(a.date); });
+
+          var label = link.textContent;
+          var html = '<div style="max-width:1280px;margin:0 auto;padding:48px 40px 80px;">';
+          html += '<div class="edition-bar"><div class="edition-live"><div class="live-dot"></div><span class="edition-label">Filtro: ' + label + '</span></div><span class="edition-meta">' + results.length + ' resultado' + (results.length !== 1 ? 's' : '') + ' · todas as edicoes</span></div>';
+
+          if (results.length === 0) {
+            html += '<p style="color:var(--gray-400);font-size:14px;margin-top:32px;">Nenhum resultado encontrado para esta categoria.</p>';
+          } else {
+            results.forEach(function(item) {
+              var c = item.card;
+              html += '<div style="display:flex;gap:20px;padding:24px 0;border-bottom:1px solid var(--border);cursor:pointer;" onclick="openCrossModal(' + JSON.stringify(c).replace(/"/g, '&quot;') + ')">';
+              html += '<div style="min-width:110px;text-align:right;padding-top:4px;"><span style="font-size:9px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--white);background:var(--navy);padding:3px 8px;border-radius:4px;">' + item.dateLabel + '</span></div>';
+              html += '<div style="flex:1;">';
+              html += '<div style="font-size:9px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--gray-400);margin-bottom:6px;">' + c.tag + ' · ' + c.stars + '</div>';
+              html += '<div style="font-size:18px;font-weight:800;line-height:1.2;letter-spacing:-.02em;color:var(--black);margin-bottom:8px;">' + c.headline + '</div>';
+              html += '<div style="font-size:13px;line-height:1.6;color:var(--gray-600);">' + c.summary + '</div>';
+              html += '<div style="margin-top:10px;font-size:11px;color:var(--gray-400);">Fonte: ' + c.source + '</div>';
+              html += '</div>';
+              html += '<div style="align-self:center;width:34px;height:34px;border-radius:50%;background:var(--navy);color:var(--white);display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0;">&#8594;</div>';
+              html += '</div>';
+            });
+          }
+
+          html += '</div>';
+          crossView.innerHTML = html;
+          mainContent.style.display = 'none';
+          crossView.style.display = '';
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        })
+        .catch(function() {
+          crossView.innerHTML = '<div style="max-width:1280px;margin:0 auto;padding:48px 40px;"><p style="color:var(--gray-400);">Erro ao carregar dados.</p></div>';
+          mainContent.style.display = 'none';
+          crossView.style.display = '';
+        });
+    });
+  });
+});
+
+function openCrossModal(c) {
+  document.getElementById('m-tag').textContent      = c.tag;
+  document.getElementById('m-headline').textContent = c.headline;
+  document.getElementById('m-stars').textContent    = c.stars;
+  document.getElementById('m-summary').textContent  = c.summary;
+  document.getElementById('m-source').textContent   = c.source;
+  document.getElementById('m-curto').textContent    = c.curto + '/10';
+  document.getElementById('m-medio').textContent    = c.medio + '/10';
+  document.getElementById('m-longo').textContent    = c.longo + '/10';
+  document.getElementById('m-idea').textContent     = c.idea;
+  document.getElementById('modal').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function selectFit(btn) {
+  document.querySelectorAll('.modal-fit-btn').forEach(function(b) { b.classList.remove('selected'); });
+  btn.classList.add('selected');
+}
+</script>
+</body>
+</html>

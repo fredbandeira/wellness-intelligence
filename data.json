@@ -1,6 +1,156 @@
 {
   "editions": [
     {
+      "date": "2026-04-24",
+      "dateLabel": "24 de Abril de 2026",
+      "cards": [
+        {
+          "category": "ciência",
+          "tag": "Ciência · Longevidade Urgente",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "NAD+ pode desacelerar envelhecimento e combater Alzheimer e Parkinson, confirmam cientistas — corrida global por NMN e NR atinge pico histórico em 2026",
+          "summary": "Em março de 2026, a ScienceDaily publicou pesquisa baseada em dados da Nature confirmando o mecanismo pelo qual o NAD+ protege neurônios contra a degeneração associada ao Alzheimer e Parkinson. Ensaios clínicos de 2025-2026 mostram que NMN (900-1250mg/dia) é seguro e dobra os níveis circulantes de NAD+. O mercado global de precursores cresce acima de 20% ao ano com penetração crescente no Brasil via importação e farmácias de manipulação. Estudo Nestlé 2026 revela ainda que NMN e NR interagem positivamente com a microbiota intestinal, conectando longevidade ao eixo intestino-cérebro.",
+          "source": "ScienceDaily / Nature, Mar 2026 / Nestlé Research 2026 / Consumer Health Digest / WonderFeel / BioNutrica",
+          "curto": "5",
+          "medio": "8",
+          "longo": "10",
+          "idea": "Dossiê técnico interno Longevidade Celular Você Mais+: monitorar NMN, NR e urolitina A enquanto a evidência clínica amadurece. Identificar fornecedor nacional certificado de NMN. Série educativa imediata sobre NAD+ para posicionar autoridade científica antes do produto existir. Lançamento planejado 2027: Linha Longevidade Ativa com linguagem de vitalidade celular — não anti-aging absoluto para evitar claims regulatórios problemáticos."
+        },
+        {
+          "category": "tendências",
+          "tag": "Tendências · FemTechs",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Revolução FemTech personaliza saúde feminina — investimento global cresce 170% com wearables e IA para ciclo, menopausa e hormônios em 2026",
+          "summary": "Estado de Minas de abril 2026 documenta a explosão das FemTechs no Brasil: plataformas com IA e wearables que personalizam cuidado com saúde feminina. Dispositivos monitoram temperatura, batimentos e sudorese para mapear ciclo e menopausa. 70% das mulheres usarão tecnologia personalizada de saúde até 2027. O crescimento democratiza o diagnóstico hormonal e cria consumidoras informadas que chegam ao ponto de venda sabendo exatamente o que precisam.",
+          "source": "Estado de Minas, 7 Abr 2026 / Bonitamulher.com.br / CartaCapital / JovemPan Saúde / Sincofarma SP",
+          "curto": "6",
+          "medio": "9",
+          "longo": "10",
+          "idea": "Parceria estratégica com FemTechs: prospectar 2-3 plataformas de saúde feminina no Brasil para integrar o portfólio Você Mais+ como sugestão personalizada. Criar landing pages por fase da vida (ciclo / pós-parto / menopausa) com conteúdo científico + produto recomendado — base para futuras integrações tecnológicas."
+        },
+        {
+          "category": "ciência",
+          "tag": "Ciência · NMN Cardiovascular",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "NMN reduz pressão arterial — pesquisa de abril 2026 confirma novo efeito clínico do suplemento anti-envelhecimento além da longevidade celular",
+          "summary": "Em 12 de abril de 2026, Tua Saúde publicou análise confirmando que NMN demonstra benefício adicional documentado: redução da pressão arterial em adultos de meia-idade via melhora da função endotelial e redução de marcadores inflamatórios vasculares. No Brasil, hipertensão afeta 36 milhões de pessoas — base de consumidores potenciais muito maior que os interessados em longevidade. Tendência que antecede movimentos de mercado em 12-18 meses.",
+          "source": "Tua Saúde, 12 Abr 2026 / Consumer Health Digest / BioNutrica Ireland / WonderFeel 2026",
+          "curto": "4",
+          "medio": "8",
+          "longo": "9",
+          "idea": "Monitorar literatura sobre NMN e hipertensão nos próximos 6 meses. Quando dois ou mais estudos confirmarem o efeito, desenvolver conteúdo técnico para médicos e nutricionistas posicionando NMN + resveratrol como protocolo preventivo cardiovascular e de longevidade. Pré-formular NMN + coenzima Q10 como stack cardiometabólico diferenciado."
+        },
+        {
+          "category": "mercado",
+          "tag": "Dado · Probióticos Brasil",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Mercado de probióticos no Brasil cresce 9,88% ao ano até 2034 — US$2,1 bilhões em 2025 projetam US$4,9 bilhões, maior CAGR setorial do mercado global",
+          "summary": "IMARC Group 2026 aponta Brasil como mercado de probióticos com maior CAGR do mundo: 9,88% ao ano de 2026 a 2034. Os vetores são múltiplos: consciência crescente sobre saúde intestinal, prescrições médicas em alta, expansão do segmento de fermentados e penetração de suplementos com cepas específicas. Consumidor sofisticado de 2026 já busca Lactobacillus helveticus R0052 e Bifidobacterium longum R0175 por nome, separando produtos premium de genéricos.",
+          "source": "IMARC Group Brazil Probiotics Market 2026 / Pronutrition.com.br / Mordor Intelligence / BHBFood",
+          "curto": "7",
+          "medio": "9",
+          "longo": "10",
+          "idea": "Probiótico Premium Você Mais+ com cepas declaradas no rótulo frontal: Lactobacillus helveticus R0052 + Bifidobacterium longum R0175 (saúde mental/sono) ou Lactobacillus rhamnosus GG + Bifidobacterium lactis BB-12 (imunidade/digestão). Formato sachê stick com prebiótico FOS integrado. Alta recompra por uso diário."
+        },
+        {
+          "category": "ciência",
+          "tag": "Ciência · Magnésio Avançado",
+          "stars": "⭐⭐⭐",
+          "headline": "7 tipos de magnésio com benefícios distintos — consumidor informado de 2026 já pergunta qual forma comprar: bisglicinato, threonate, malato ou citrato",
+          "summary": "O mercado de magnésio em 2026 passa por sofisticação notável: o consumidor informado não pergunta mais por magnésio genérico, mas pela forma específica. Bisglicinato para sono e ansiedade, threonate para cognição, malato para energia muscular, citrato para constipação, taurato para coração. Para marcas, esta fragmentação educacional é oportunidade de posicionamento: a marca que educa sobre os tipos constrói autoridade e captura o consumidor que entende a diferença.",
+          "source": "Neoquimica.com.br / GeniusNutra 2026 / NewNutrition / Farmacotécnica / MSD Manuals, 2026",
+          "curto": "6",
+          "medio": "8",
+          "longo": "7",
+          "idea": "Série de conteúdo Você Mais+ 'Qual Magnésio é o Seu?': 7 posts (um por forma) + quiz interativo no site. Reformulação do portfólio: lançar magnésio bisglicinato (sono/ansiedade) e threonate (cognição) como SKUs distintos com posicionamento diferenciado — não como variações do mesmo produto."
+        },
+        {
+          "category": "ciência",
+          "tag": "Ciência · Ômega-3 50+",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Ômega-3 para maiores de 50: três fontes de qualidade comprovadas para proteger cérebro e articulações — déficit na população 50+ torna-se prioridade clínica em abril 2026",
+          "summary": "Tua Saúde de 20 de abril de 2026 detalha as três fontes de ômega-3 mais indicadas para adultos 50+: óleo de peixe concentrado (mínimo 1000mg EPA+DHA real), óleo de algas DHA (vegano, ideal para neuroproteção) e óleo de krill (forma fosfolipídica de alta biodisponibilidade com astaxantina). O mercado premium cresce mais rápido que o commodity, e consumidores 50+ pagam pelo produto diferenciado.",
+          "source": "Tua Saúde, 20 Abr 2026 / SBCM Revista / Farmacotécnica / NHLBI NIH / Correiobraziliense, 2026",
+          "curto": "6",
+          "medio": "8",
+          "longo": "8",
+          "idea": "Linha Ômega Premium 50+ Você Mais+: três SKUs diferenciados por fonte e indicação. Declaração frontal de EPA+DHA em mg reais por cápsula, certificação IFOS de pureza. Infográfico comparativo das três formas com indicação por objetivo de saúde. Parceria com nutricionistas 45-60 anos para endosso técnico por faixa etária."
+        },
+        {
+          "category": "tendências",
+          "tag": "Digital · IA e Suplementos",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Influenciadores criados por IA vendem suplementos nas redes — risco regulatório e reputacional cresce enquanto CONAR prepara regulação para personagens virtuais em saúde",
+          "summary": "Sindpd de 24 de março de 2026 revelou o crescimento de influenciadores digitais criados por IA que promovem suplementos em Instagram e TikTok — como Melanskia, que recomenda suplementos não testados para centenas de milhares de seguidores. Para marcas legítimas: erosão da confiança geral em influenciadores favorece LODs com credencial técnica verificável. O CONAR prepara regulação específica para personagens virtuais — compliance proativo é vantagem competitiva.",
+          "source": "Sindpd, 24 Mar 2026 / Favikon Blog 2026 / Exame Pop TikTok 2026 / HypeAuditor Brazil, Mar 2026",
+          "curto": "8",
+          "medio": "7",
+          "longo": "6",
+          "idea": "Programa Autenticidade Verificável Você Mais+: publicar no site e redes os nomes e qualificações de todos os embaixadores parceiros com link para CRN/CFF. Declaração formal de não uso de influenciadores de IA. Post educativo sobre como identificar influenciadores falsos de saúde — diferencial imediato de confiança."
+        },
+        {
+          "category": "mercado",
+          "tag": "Dado · Saúde Intestinal",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "59% dos consumidores globais consideram o intestino determinante para o bem-estar — Global Wellness Institute 2026 consolida probióticos, prebióticos e fibras como pilares inegociáveis",
+          "summary": "Global Wellness Institute 2026: 59% dos consumidores globais consideram a saúde intestinal determinante para o bom funcionamento do organismo. No Brasil, digestão é o principal benefício buscado em suplementos. A tendência 2026-2028 é a integração intestinal: produtos combinando probióticos + prebióticos + enzimas digestivas + polifenóis em formulação sinérgica. Bebidas funcionais com probióticos crescem como vetor de entrada para novos consumidores.",
+          "source": "Global Wellness Institute 2026 / IMARC Group / Mordor Intelligence / ProNutrition.com.br / BHBFood",
+          "curto": "7",
+          "medio": "9",
+          "longo": "10",
+          "idea": "Kit Saúde Intestinal Integral Você Mais+: simbiótico com cepas declaradas + prebiótico FOS + inulina + enzimas digestivas em cápsula de liberação controlada. Campanha de 8 semanas de protocolo intestinal guiado com LODs nutricionistas. Alta recompra por uso diário, alto apelo para quem já usa probiótico genérico e quer evoluir."
+        },
+        {
+          "category": "tendências",
+          "tag": "Tendências · Beauty Drinks",
+          "stars": "⭐⭐⭐",
+          "headline": "Colágeno migra das cápsulas para bebidas funcionais — café com colágeno, shots e beauty drinks crescem 24% no mercado global e chegam ao Brasil com formato premium",
+          "summary": "Food Connection 2026: mercado de beauty drinks com colágeno hidrolisado cresce 24% globalmente. O formato rompe com a barreira do suplemento tradicional e oferece experiência integrada à rotina: café da manhã com colágeno, shot pré-treino com peptídeos + vitamina C. No Brasil, o segmento de beleza funcional está anos atrás dos EUA e Europa — janela clara para primeiros movimentos.",
+          "source": "Food Connection 2026 / Hilê Suplementos 2026 / Mercado e Consumo Jan 2026 / FoodBiz Brasil",
+          "curto": "5",
+          "medio": "8",
+          "longo": "9",
+          "idea": "Linha Beauty Drink Você Mais+: sachê de colágeno hidrolisado tipo I e III (5g) + vitamina C natural (acerola 200mg) + biotina + ácido hialurônico em sabores funcionais. Posicionamento: o ritual de beleza da manhã, não suplemento. Ticket médio 30-40% maior que colágeno convencional com experiência que gera conteúdo orgânico."
+        },
+        {
+          "category": "mercado",
+          "tag": "Mercado · Suplementos de Sono",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Sono emerge como terceiro pilar de wellness em 2026 — combos naturais de magnésio + L-teanina + ashwagandha superam melatonina isolada em satisfação do consumidor",
+          "summary": "InfoMoney e Catarinense Pharma 2026: fórmulas voltadas ao sono estão entre as três categorias de maior crescimento. A melatonina isolada perde espaço para stacks multiingredientes: magnésio bisglicinato (relaxamento) + L-teanina (ondas alfa cerebrais) + ashwagandha (reduz cortisol noturno) + melatonina 0,5mg (ritmo circadiano). Alta demanda por formato sachê noturno dissolúvel — ritual de transição vigília-sono.",
+          "source": "InfoMoney / Rodrigo Sangion / Catarinense Pharma 2026 / MEDBR Médicos Brasil / Acontece Botucatu 2026",
+          "curto": "8",
+          "medio": "9",
+          "longo": "8",
+          "idea": "Ritual Noite Você Mais+: sachê solúvel sabor camomila + maracujá com magnésio bisglicinato (350mg) + L-teanina (200mg) + ashwagandha KSM-66 (300mg) + melatonina 0,5mg. Série 7 dias para melhorar o sono com LODs nutricionistas. Alta recompra por uso diário, resultado perceptível em 1-2 semanas, amplo público-alvo."
+        },
+        {
+          "category": "mercado",
+          "tag": "Mercado · Democratização",
+          "stars": "⭐⭐⭐",
+          "headline": "Wellness se democratiza em 2026 — marcas nacionais ampliam portfólios com preços acessíveis e formatos de entrada para atingir a classe C e novos consumidores de suplementação",
+          "summary": "Ativa Investimentos e Food Connection 2026: democratização do wellness é tendência estrutural que redefine o mercado brasileiro. Formatos de entrada (sachê unitário, frasco 30 cápsulas), canais D2C e educação digital via LODs formam consumidores em todas as faixas de renda. O consumidor democratizado que entra pelo produto acessível migra para premium quando experimenta resultados reais.",
+          "source": "Ativa Investimentos Blog / Food Connection 2026 / FoodBiz Brasil / Mercado e Consumo Jan 2026 / Sincofarma SP",
+          "curto": "5",
+          "medio": "7",
+          "longo": "8",
+          "idea": "Linha Entrada Você Mais+: versão compacta (30 doses) dos 3 produtos mais vendidos com preço de entrada 30-40% abaixo da linha principal. Kit de degustação com 5 sachês de produtos diferentes a R$9,90 — ponto de entrada de baixo risco. Estratégia de upgrade automático após primeira compra."
+        },
+        {
+          "category": "tendências",
+          "tag": "Digital · Social Commerce",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Live commerce domina vendas de suplementos em 2026 — plataformas são pontos de venda diretos com links rastreáveis e influenciadores que convertem audiência em clientes na hora",
+          "summary": "We Are Social Brasil e Colinatech 2026: social commerce consolida-se como o canal de maior crescimento para venda direta de suplementos. Influenciadores nutricionistas com 50k seguidores em lives de 60 minutos geram vendas superiores a campanhas de mídia paga de R$10k. 73% das compras de suplementos são influenciadas por criadores digitais. Marcas sem estratégia de live commerce em 2026 perdem fatia crescente do mercado.",
+          "source": "We Are Social Brasil 2026 / Colinatech / Favikon Blog 2026 / Lab Growth / Drytelecom 2026",
+          "curto": "9",
+          "medio": "9",
+          "longo": "8",
+          "idea": "Programa Live Commerce Você Mais+: calendário mensal de 4 lives com LODs parceiros, rotacionando temas (sono, imunidade, energia, longevidade). Kit de live para o LOD com briefing científico, roteiro, link rastreável e comissão de 20%. Promoção exclusiva de live com desconto de 15% durante transmissão. Meta: 30% das vendas DTC via live commerce até Q4 2026."
+        }
+      ]
+    },
+    {
       "date": "2026-04-23",
       "dateLabel": "23 de Abril de 2026",
       "cards": [
