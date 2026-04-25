@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wellness Intelligence | você-mais+</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:     #00276e;
+      --yellow:   #feda14;
+      --black:    #1d1d1b;
+      --white:    #ffffff;
+      --gray-50:  #f7f7f7;
+      --gray-100: #efefef;
+      --gray-200: #e0e0e0;
+      --gray-400: #adadad;
+      --gray-600: #6b6b6b;
+      --gray-800: #2e2e2e;
+      --border:   rgba(0,0,0,0.09);
+    }
+
+    body { font-family:'Inter',sans-serif; background:var(--white); color:var(--black); -webkit-font-smoothing:antialiased; }
+
+    header { background:var(--white); border-bottom:1px solid var(--border); position:sticky; top:0; z-index:100; }
+    .header-inner { max-width:1280px; margin:0 auto; padding:0 40px; height:64px; display:flex; align-items:center; justify-content:space-between; }
+    .logo-wrap { display:flex; align-items:center; gap:16px; text-decoration:none; }
+    .logo-img  { height:22px; width:auto; }
+    .logo-divider { width:1px; height:20px; background:var(--gray-200); }
+    .logo-sub { font-size:10px; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:var(--gray-400); }
+    nav { display:flex; gap:2px; }
+    nav a { font-size:11px; font-weight:600; letter-spacing:0.08em; text-transform:uppercase; color:var(--gray-600); text-decoration:none; padding:6px 14px; border-radius:100px; transition:all .15s; }
+    nav a:hover  { color:var(--navy); background:var(--gray-50); }
+    nav a.active { color:var(--navy); background:var(--yellow); }
+    .header-date { font-size:11px; font-weight:500; color:var(--gray-400); }
+
+    .alert-strip { background:var(--navy); color:var(--white); padding:11px 40px; display:flex; align-items:center; justify-content:center; gap:20px; }
+    .alert-badge { font-size:9px; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; background:var(--yellow); color:var(--navy); padding:4px 10px; border-radius:100px; white-space:nowrap; }
+    .alert-text  { font-size:12.5px; opacity:.9; }
+    .alert-text strong { font-weight:700; }
+
+    main { max-width:1280px; margin:0 auto; padding:48px 40px 80px; }
+    .edition-bar { display:flex; align-items:center; justify-content:space-between; margin-bottom:28px; padding-bottom:20px; border-bottom:1px solid var(--border); }
+    .edition-live { display:flex; align-items:center; gap:10px; }
+    .live-dot { width:7px; height:7px; background:var(--navy); border-radius:50%; animation:blink 1.8s infinite; }
+    @keyframes blink { 0%,100%{opacity:1} 50%{opacity:.25} }
+    .edition-label { font-size:11px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--navy); }
+    .edition-meta  { font-size:11px; color:var(--gray-400); }
+
+    .grid { display:grid; grid-template-columns:repeat(12,1fr); grid-auto-rows:76px; gap:14px; }
+
+    .card { border-radius:14px; padding:26px; position:relative; overflow:hidden; display:flex; flex-direction:column; justify-content:space-between; transition:transform .18s,box-shadow .18s; cursor:pointer; }
+    .card:hover { transform:translateY(-3px); box-shadow:0 14px 36px rgba(0,0,0,.10); }
+
+    .c-hero  { grid-column:span 7; grid-row:span 5; }
+    .c-tall  { grid-column:span 5; grid-row:span 5; }
+    .c-wide  { grid-column:span 8; grid-row:span 4; }
+    .c-med   { grid-column:span 4; grid-row:span 4; }
+    .c-sm    { grid-column:span 4; grid-row:span 4; }
+    .c-third { grid-column:span 4; grid-row:span 3; }
+    .c-full  { grid-column:span 12; grid-row:span 3; }
+
+    .bg-navy    { background:var(--navy);    color:var(--white); }
+    .bg-yellow  { background:var(--yellow);  color:var(--navy);  }
+    .bg-black   { background:var(--black);   color:var(--white); }
+    .bg-gray800 { background:var(--gray-800);color:var(--white); }
+    .bg-gray100 { background:var(--gray-100);color:var(--black); }
+    .bg-white   { background:var(--white);   color:var(--black); border:1px solid var(--border); }
+
+    .tag { display:inline-flex; align-items:center; gap:5px; font-size:9px; font-weight:800; letter-spacing:.12em; text-transform:uppercase; padding:4px 10px; border-radius:100px; width:fit-content; }
+    .bg-navy .tag,.bg-black .tag,.bg-gray800 .tag { background:rgba(255,255,255,.15); color:var(--white); }
+    .bg-yellow .tag  { background:rgba(0,39,110,.12); color:var(--navy); }
+    .bg-gray100 .tag,.bg-white .tag { background:var(--navy); color:var(--white); }
+    .tag-dot { width:4px; height:4px; border-radius:50%; background:currentColor; opacity:.6; }
+
+    .headline { font-size:clamp(15px,2vw,24px); font-weight:800; line-height:1.15; letter-spacing:-.025em; margin-top:10px; }
+    .c-hero .headline { font-size:clamp(22px,2.8vw,36px); }
+    .c-full .headline { font-size:clamp(16px,2vw,26px); max-width:900px; }
+    .sub { font-size:12px; line-height:1.55; margin-top:8px; opacity:.72; }
+
+    .stat-num  { font-size:clamp(36px,5vw,60px); font-weight:900; letter-spacing:-.04em; line-height:1; margin:10px 0 4px; }
+    .stat-desc { font-size:11px; font-weight:500; line-height:1.45; opacity:.70; }
+
+    .card-foot { display:flex; align-items:center; justify-content:space-between; margin-top:14px; }
+    .cta-label { font-size:9.5px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; opacity:.50; }
+    .arrow-btn { width:34px; height:34px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:14px; }
+    .bg-navy .arrow-btn,.bg-black .arrow-btn,.bg-gray800 .arrow-btn { background:rgba(255,255,255,.15); }
+    .bg-yellow .arrow-btn { background:rgba(0,39,110,.12); }
+    .bg-gray100 .arrow-btn,.bg-white .arrow-btn { background:var(--navy); color:var(--white); }
+
+    .accent-bar { display:block; width:28px; height:3px; background:var(--yellow); border-radius:2px; margin-bottom:12px; }
+    .bg-yellow .accent-bar { background:var(--navy); }
+    .plus-deco  { position:absolute; right:20px; font-size:52px; font-weight:900; opacity:.08; pointer-events:none; }
+
+    .section-hd { display:flex; align-items:center; gap:16px; margin:44px 0 20px; }
+    .section-hd-label { font-size:10px; font-weight:800; letter-spacing:.14em; text-transform:uppercase; color:var(--gray-600); white-space:nowrap; }
+    .section-hd-line  { flex:1; height:1px; background:var(--border); }
+
+    .modal-overlay {
+      position:fixed; inset:0; z-index:500;
+      background:rgba(0,20,55,.55);
+      backdrop-filter:blur(6px);
+      display:flex; align-items:center; justify-content:center;
+      padding:24px;
+      opacity:0; pointer-events:none;
+      transition:opacity .22s;
+    }
+    .modal-overlay.open { opacity:1; pointer-events:all; }
+
+    .modal {
+      background:var(--white); border-radius:20px;
+      width:100%; max-width:640px; max-height:88vh; overflow-y:auto;
+      box-shadow:0 32px 80px rgba(0,0,0,.22);
+      transform:translateY(20px); transition:transform .25s;
+      position:relative;
+    }
+    .modal-overlay.open .modal { transform:translateY(0); }
+
+    .modal-header { background:var(--navy); border-radius:20px 20px 0 0; padding:28px 32px 24px; position:relative; }
+    .modal-tag    { display:inline-flex; align-items:center; gap:5px; font-size:9px; font-weight:800; letter-spacing:.12em; text-transform:uppercase; padding:4px 10px; border-radius:100px; background:rgba(255,255,255,.15); color:var(--white); margin-bottom:12px; }
+    .modal-headline { font-size:22px; font-weight:800; line-height:1.2; letter-spacing:-.02em; color:var(--white); }
+    .modal-stars  { font-size:16px; margin-top:8px; }
+    .modal-close  { position:absolute; top:20px; right:20px; width:36px; height:36px; border-radius:50%; background:rgba(255,255,255,.15); border:none; color:var(--white); font-size:18px; cursor:pointer; display:flex; align-items:center; justify-content:center; transition:background .15s; }
+    .modal-close:hover { background:rgba(255,255,255,.28); }
+
+    .modal-body { padding:28px 32px 32px; }
+    .modal-section { margin-bottom:24px; }
+    .modal-section-title { font-size:9px; font-weight:800; letter-spacing:.14em; text-transform:uppercase; color:var(--gray-400); margin-bottom:8px; padding-bottom:8px; border-bottom:1px solid var(--border); }
+    .modal-text { font-size:14px; line-height:1.65; color:var(--black); }
+
+    .modal-source { display:flex; align-items:center; gap:8px; margin-top:12px; }
+    .modal-source-label { font-size:10px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--gray-400); }
+    .modal-source-val   { font-size:12px; font-weight:500; color:var(--navy); }
+
+    .modal-scores { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; }
+    .score-item   { background:var(--gray-50); border:1px solid var(--border); border-radius:10px; padding:14px; text-align:center; }
+    .score-num    { font-size:26px; font-weight:900; color:var(--navy); line-height:1; }
+    .score-label  { font-size:9px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--gray-400); margin-top:4px; }
+
+    .modal-idea       { background:var(--navy); border-radius:12px; padding:18px 20px; color:var(--white); }
+    .modal-idea-accent{ display:inline-block; width:20px; height:3px; background:var(--yellow); border-radius:2px; margin-bottom:10px; }
+    .modal-idea-label { font-size:9px; font-weight:800; letter-spacing:.12em; text-transform:uppercase; opacity:.5; margin-bottom:6px; }
+    .modal-idea-text  { font-size:14px; font-weight:600; line-height:1.5; }
+
+    .modal-fit { margin-top:24px; }
+    .modal-fit-title { font-size:9px; font-weight:800; letter-spacing:.14em; text-transform:uppercase; color:var(--gray-400); margin-bottom:12px; padding-bottom:8px; border-bottom:1px solid var(--border); }
+    .modal-fit-btns  { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; }
+    .modal-fit-btn   { background:var(--gray-50); border:1px solid var(--border); border-radius:10px; padding:16px 10px; text-align:center; cursor:pointer; transition:all .15s; }
+    .modal-fit-btn:hover { border-color:var(--navy); }
+    .modal-fit-btn.selected { background:var(--navy); border-color:var(--navy); color:var(--white); }
+    .fit-icon  { font-size:20px; margin-bottom:6px; }
+    .fit-label { font-size:10px; font-weight:700; letter-spacing:.06em; }
+
+    section.archive { background:var(--gray-50); border-top:1px solid var(--border); padding:40px 0 60px; }
+    .archive-inner { max-width:1280px; margin:0 auto; padding:0 40px; }
+    .archive-hd { display:flex; align-items:center; gap:20px; margin-bottom:24px; }
+    .archive-title { font-size:10px; font-weight:800; letter-spacing:.14em; text-transform:uppercase; color:var(--gray-600); white-space:nowrap; }
+    .archive-line  { flex:1; height:1px; background:var(--border); }
+    .archive-grid  { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; }
+    .archive-card  { background:var(--white); border:1px solid var(--border); border-radius:12px; padding:20px; text-decoration:none; color:var(--black); transition:all .15s; display:block; }
+    .archive-card:hover { border-color:var(--navy); transform:translateY(-2px); }
+    .archive-date  { font-size:9px; font-weight:800; letter-spacing:.1em; text-transform:uppercase; color:var(--navy); margin-bottom:8px; }
+    .archive-hl    { font-size:13px; font-weight:700; line-height:1.35; margin-bottom:10px; }
+    .archive-tags  { display:flex; flex-wrap:wrap; gap:4px; }
+    .archive-tags span { font-size:9px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; background:var(--gray-100); color:var(--gray-600); padding:2px 7px; border-radius:100px; }
+
+    footer { background:var(--black); color:var(--white); padding:24px 40px; }
+    .footer-inner { max-width:1280px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; }
+    .footer-brand { display:flex; align-items:center; gap:14px; }
+    .footer-sep   { width:1px; height:16px; background:rgba(255,255,255,.15); }
+    .footer-tagline { font-size:11px; font-weight:500; color:rgba(255,255,255,.4); }
+    .footer-note  { font-size:11px; color:rgba(255,255,255,.3); }
+
+    #cross-edition-view { display:none; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a class="logo-wrap" href="#">
+      <img src="logo-positiva.png" alt="você-mais+" class="logo-img" />
+      <div class="logo-divider"></div>
+      <span class="logo-sub">Wellness Intelligence</span>
+    </a>
+    <nav>
+      <a href="#" class="active" data-filter="all">Todas</a>
+      <a href="#" data-filter="mercado">Mercado</a>
+      <a href="#" data-filter="ciência">Ciência</a>
+      <a href="#" data-filter="tendências">Tendências</a>
+      <a href="#" data-filter="regulação">Regulação</a>
+    </nav>
+    <span class="header-date">Sex, 24 Abr 2026</span>
+  </div>
+</header>
+
+<div class="alert-strip">
+  <span class="alert-badge">&#9888; Alerta Científico</span>
+  <span class="alert-text"><strong>ScienceDaily / Nature, Mar 2026:</strong> NAD+ pode desacelerar envelhecimento e combater Alzheimer e Parkinson — corrida global por NMN e NR atinge pico histórico</span>
+</div>
+
+<div id="cross-edition-view"></div>
+
+<main id="main-content">
+
+  <div class="edition-bar">
+    <div class="edition-live">
+      <div class="live-dot"></div>
+      <span class="edition-label">Edição de hoje — 24 de Abril de 2026</span>
+    </div>
+    <span class="edition-meta">13 tendências · Atualizado às 07h00</span>
+  </div>
+
+  <!-- ROW 1 — Urgente -->
+  <div class="grid">
+
+    <div class="card c-hero bg-navy" data-modal="1" data-category="ciência">
+      <div>
+        <span class="accent-bar"></span>
+        <div class="tag"><div class="tag-dot"></div>Ciência · Longevidade Urgente</div>
+        <div class="headline">NAD+ pode desacelerar envelhecimento e combater Alzheimer e Parkinson, confirmam cientistas — corrida global por NMN e NR atinge pico histórico em 2026</div>
+        <p class="sub">Publicação na ScienceDaily de março 2026, baseada em pesquisa Nature, comprova mecanismo celular do NAD+ na proteção neuronal. Mercado de precursores explode com CAGR acima de 20% globalmente.</p>
+      </div>
+      <div class="card-foot"><span class="cta-label">Ler análise completa</span><div class="arrow-btn">&#8594;</div></div>
+      <span class="plus-deco" style="bottom:16px;">+</span>
+    </div>
+
+    <div class="card c-tall bg-black" data-modal="2" data-category="tendências">
+      <div>
+        <span class="accent-bar"></span>
+        <div class="tag"><div class="tag-dot"></div>Tendências · FemTechs</div>
+        <div class="headline">Revolução FemTech personaliza saúde feminina — investimento global cresce 170% com wearables e IA para ciclo, menopausa e hormônios em 2026</div>
+        <p class="sub">Estado de Minas, abr 2026: FemTechs crescem no Brasil com monitoramento contínuo de hormônios, sono e sintomas vasomotores. 70% das mulheres usarão tecnologia personalizada de saúde até 2027.</p>
+      </div>
+      <div class="card-foot"><span class="cta-label">Ler análise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <div class="card c-wide bg-gray100" data-modal="3" data-category="ciência">
+      <div>
+        <div class="tag"><div class="tag-dot"></div>Ciência · NMN Cardiovascular</div>
+        <div class="headline">NMN reduz pressão arterial — pesquisa de abril 2026 confirma novo efeito clínico do suplemento anti-envelhecimento além da longevidade celular</div>
+        <p class="sub">Tua Saude, 12 Abr 2026: suplemento antienvelhecimento popular comprova redução de pressao arterial em ensaio controlado. NMN ganha indicacao cardiometabolica alem do aging.</p>
+      </div>
+      <div class="card-foot"><span class="cta-label">Ler análise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <div class="card c-med bg-yellow" data-modal="4" data-category="mercado">
+      <div>
+        <span class="accent-bar"></span>
+        <div class="tag"><div class="tag-dot"></div>Dado · Probióticos Brasil</div>
+        <div class="stat-num">9,88<span style="font-size:0.32em;font-weight:800;">%</span></div>
+        <div class="stat-desc">CAGR do mercado de probioticos no Brasil 2026-2034 (IMARC). Avaliado em US$2,1bi em 2025, projeta US$4,9bi em 2034 — o que mais cresce no mundo</div>
+      </div>
+      <div class="card-foot"><span class="cta-label">Ler análise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+  </div>
+
+  <div class="section-hd">
+    <span class="section-hd-label">Médio Prazo — Agir em 6 a 18 meses</span>
+    <div class="section-hd-line"></div>
+  </div>
+
+  <div class="grid">
+
+    <div class="card c-sm bg-gray800" data-modal="5" data-category="ciência">
+      <div>
+        <div class="tag"><div class="tag-dot"></div>Ciência · Magnésio Avançado</div>
+        <div class="headline">7 tipos de magnésio com benefícios distintos — consumidor informado de 2026 já pergunta qual forma comprar: bisglicinato, threonate, malato ou citrato</div>
+        <p class="sub">Neoquimica, 2026: bisglicinato lidera para sono e ansiedade, threonate para cognicao, malato para energia muscular. Educacao de ingrediente torna-se diferencial de marca.</p>
+      </div>
+      <div class="card-foot"><span class="cta-label">Ler análise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <div class="card c-sm bg-navy" data-modal="6" data-category="ciência">
+      <div>
+        <span class="accent-bar"></span>
+        <div class="tag"><div class="tag-dot"></div>Ciência · Ômega-3 50+</div>
+        <div class="headline">Ômega-3 para maiores de 50: três fontes de qualidade para proteger cérebro e articulações — déficit na população 50+ é prioridade clínica em abril 2026</div>
+        <p class="sub">Tua Saude, 20 Abr 2026: oleo de peixe concentrado, oleo de algas DHA e krill ganham destaque para neurologistas e reumatologistas como protocolo de suporte.</p>
+      </div>
+      <div class="card-foot"><span class="cta-label">Ler análise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <div class="card c-wide bg-navy" data-modal="7" data-category="tendências">
+      <div>
+        <span class="accent-bar"></span>
+        <div class="tag"><div class="tag-dot"></div>Digital · IA e Suplementos</div>
+        <div class="headline">Influenciadores criados por IA vendem suplementos nas redes — risco regulatório e reputacional cresce enquanto CONAR prepara regulação para personagens virtuais em saúde</div>
+        <p class="sub">Sindpd, 24 Mar 2026: perfis digitais falsos como "Melanskia" recomendam suplementos nao testados para milhoes de seguidores. Mercado exige autenticidade e compliance de quem anuncia.</p>
+      </div>
+      <div class="card-foot"><span class="cta-label">Ler análise completa</span><div class="arrow-btn">&#8594;</div></div>
+      <span class="plus-deco" style="bottom:12px;">+</span>
+    </div>
+
+    <div class="card c-med bg-yellow" data-modal="8" data-category="mercado">
+      <div>
+        <span class="accent-bar"></span>
+        <div class="tag"><div class="tag-dot"></div>Dado · Saude Intestinal</div>
+        <div class="stat-num">59<span style="font-size:0.38em;font-weight:800;">%</span></div>
+        <div class="stat-desc">dos consumidores globais consideram o intestino determinante para o bom funcionamento do corpo (GWI 2026) — probioticos, prebioticos e fibras como pilares de bem-estar integral</div>
+      </div>
+      <div class="card-foot"><span class="cta-label">Ler análise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <div class="card c-third bg-gray100" data-modal="9" data-category="tendências">
+      <div>
+        <div class="tag"><div class="tag-dot"></div>Tendências · Beauty Drinks</div>
+        <div class="headline">Colágeno migra das capsulas para bebidas funcionais — cafe com colageno, shots e smoothies beauty drink crescem 24% no mercado global em 2026</div>
+        <p class="sub">Food Connection, 2026: formato liquid do colageno hidrolisado amplia publico alem dos usuarios de suplementos tradicionais e eleva ticket medio pela experiencia de consumo.</p>
+      </div>
+      <div class="card-foot"><span class="cta-label">Ler análise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <div class="card c-third bg-gray800" data-modal="10" data-category="mercado">
+      <div>
+        <div class="tag"><div class="tag-dot"></div>Mercado · Suplementos de Sono</div>
+        <div class="headline">Sono emerge como terceiro pilar de wellness em 2026 — combos naturais de magnesio + L-teanina + ashwagandha superam melatonina isolada em preferencia</div>
+        <p class="sub">Catarinense Pharma / InfoMoney, 2026: qualidade do sono e bem-estar emocional figuram entre as tres categorias que mais crescem em suplementos. Consumidor quer solucao multiingrediente sem dependencia.</p>
+      </div>
+      <div class="card-foot"><span class="cta-label">Ler análise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <div class="card c-third bg-white" data-modal="11" data-category="mercado">
+      <div>
+        <div class="tag"><div class="tag-dot"></div>Mercado · Democratizacao</div>
+        <div class="headline">Wellness se democratiza em 2026 — marcas nacionais ampliam portfolio com precos acessiveis e formatos menores para atingir classe C e novos consumidores</div>
+        <p class="sub">Ativa Investimentos, 2026: movimento de democratizacao do wellness e tendencia estrutural — volume de consumidores novos entrando no mercado de suplementos cresce mais que o ticket medio.</p>
+      </div>
+      <div class="card-foot"><span class="cta-label">Ler análise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <div class="card c-third bg-gray100" data-modal="12" data-category="tendências">
+      <div>
+        <div class="tag"><div class="tag-dot"></div>Digital · Social Commerce</div>
+        <div class="headline">Live commerce domina vendas de suplementos em 2026 — plataformas sao pontos de venda diretos com links rastraveis e influenciadores que convertem audiencia em clientes</div>
+        <p class="sub">We Are Social Brasil, 2026: social commerce consolida-se como o canal de maior crescimento para DTC de suplementos. Marcas sem estrategia de live commerce perdem fatia crescente do mercado digital.</p>
+      </div>
+      <div class="card-foot"><span class="cta-label">Ler análise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <div class="card c-full bg-navy" data-modal="13" data-category="tendências">
+      <div>
+        <span class="accent-bar"></span>
+        <div class="tag"><div class="tag-dot"></div>Análise de Cruzamento</div>
+        <div class="headline">NAD+ na ciência + FemTechs em expansão + IA nas redes + sono como pilar = mercado em aceleração técnica com exigência crescente de autenticidade, evidência e personalização</div>
+      </div>
+      <div class="card-foot"><span class="cta-label">Ler análise completa</span><div class="arrow-btn">&#8594;</div></div>
+      <span class="plus-deco" style="bottom:12px;">+</span>
+    </div>
+
+  </div>
+
+</main>
+
+<!-- ARQUIVO -->
+<section class="archive">
+  <div class="archive-inner">
+    <div class="archive-hd">
+      <span class="archive-title">Edições Anteriores</span>
+      <div class="archive-line"></div>
+    </div>
+    <div class="archive-grid">
+      <!-- ARCHIVE_ENTRIES_START -->
+      <a class="archive-card" href="edicoes/2026-04-24.html">
+        <div class="archive-date">23 Abr 2026</div>
+        <div class="archive-hl">ANVISA curcuma, magnésio+D3, 79% mulheres e clean label como exigência</div>
+        <div class="archive-tags"><span>Regulação</span><span>Ciência</span><span>Mercado</span><span>Tendências</span></div>
+      </a>
+      <a class="archive-card" href="edicoes/2026-04-23.html">
+        <div class="archive-date">22 Abr 2026</div>
+        <div class="archive-hl">ANVISA clandestinos, mulheres lideram, psicobióticos clínicos e clean label obrigatório</div>
+        <div class="archive-tags"><span>Regulação</span><span>Mercado</span><span>Ciência</span><span>Tendências</span></div>
+      </a>
+      <a class="archive-card" href="edicoes/2026-04-22.html">
+        <div class="archive-date">21 Abr 2026</div>
+        <div class="archive-hl">ANVISA IN 431, menopausa US$60 tri, magnésio e personalização via IA</div>
+        <div class="archive-tags"><span>Regulação</span><span>Mercado</span><span>Ciência</span><span>Tendências</span></div>
+      </a>
+      <a class="archive-card" href="edicoes/2026-04-21.html">
+        <div class="archive-date">19 Abr 2026</div>
+        <div class="archive-hl">ANVISA curcumina, creatina feminina, social commerce e compliance urgente</div>
+        <div class="archive-tags"><span>Regulação</span><span>Ciência</span><span>Mercado</span><span>Digital</span></div>
+      </a>
+      <a class="archive-card" href="edicoes/2026-04-19.html">
+        <div class="archive-date">18 Abr 2026</div>
+        <div class="archive-hl">Ômega-3 80% deficientes, creatina feminina, clean label e longevidade</div>
+        <div class="archive-tags"><span>Ciência</span><span>Tendências</span><span>Mercado</span><span>Digital</span></div>
+      </a>
+      <a class="archive-card" href="edicoes/2026-04-18.html">
+        <div class="archive-date">17 Abr 2026</div>
+        <div class="archive-hl">ANVISA IN 432, magnésio lidera, feminino 79% e nootrópicos</div>
+        <div class="archive-tags"><span>Regulação</span><span>Mercado</span><span>Tendências</span><span>Feminino</span></div>
+      </a>
+      <a class="archive-card" href="edicoes/2026-04-17.html">
+        <div class="archive-date">16 Abr 2026</div>
+        <div class="archive-hl">Vitamina D, adaptogenos, longevidade e psicobioticos</div>
+        <div class="archive-tags"><span>Ciência</span><span>Regulação</span><span>Mercado</span><span>Tendências</span></div>
+      </a>
+      <a class="archive-card" href="edicoes/2026-04-16.html">
+        <div class="archive-date">15 Abr 2026</div>
+        <div class="archive-hl">Crescimento 42%, ANVISA, feminino e clean label</div>
+        <div class="archive-tags"><span>Mercado</span><span>Regulação</span><span>Ciência</span><span>Tendências</span></div>
+      </a>
+      <!-- ARCHIVE_ENTRIES_END -->
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="logo-branca.png" alt="você-mais+" style="height:16px;opacity:.75;" />
+      <div class="footer-sep"></div>
+      <span class="footer-tagline">Nutrição com clareza.</span>
+    </div>
+    <span class="footer-note">Atualizado automaticamente às 7h · Para uso interno — fundadores e time comercial</span>
+  </div>
+</footer>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modal">
+  <div class="modal">
+    <div class="modal-header">
+      <button class="modal-close" id="modal-close-btn">&#x2715;</button>
+      <div class="modal-tag" id="m-tag"></div>
+      <div class="modal-headline" id="m-headline"></div>
+      <div class="modal-stars" id="m-stars"></div>
+    </div>
+    <div class="modal-body">
+      <div class="modal-section">
+        <div class="modal-section-title">Análise</div>
+        <div class="modal-text" id="m-summary"></div>
+        <div class="modal-source">
+          <span class="modal-source-label">Fonte</span>
+          <span class="modal-source-val" id="m-source"></span>
+        </div>
+      </div>
+      <div class="modal-section">
+        <div class="modal-section-title">Score de Impacto</div>
+        <div class="modal-scores">
+          <div class="score-item"><div class="score-num" id="m-curto"></div><div class="score-label">Curto Prazo</div></div>
+          <div class="score-item"><div class="score-num" id="m-medio"></div><div class="score-label">Médio Prazo</div></div>
+          <div class="score-item"><div class="score-num" id="m-longo"></div><div class="score-label">Longo Prazo</div></div>
+        </div>
+      </div>
+      <div class="modal-idea">
+        <span class="modal-idea-accent"></span>
+        <div class="modal-idea-label">Ideia para Você Mais+</div>
+        <div class="modal-idea-text" id="m-idea"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL DATA -->
+<script>
+var MODALS = {
+  1: { tag:"Ciência · Longevidade Urgente", stars:"⭐⭐⭐⭐⭐", headline:"NAD+ pode desacelerar envelhecimento e combater Alzheimer e Parkinson, confirmam cientistas — corrida global por NMN e NR atinge pico histórico em 2026", summary:"Em março de 2026, a ScienceDaily publicou pesquisa baseada em dados da Nature confirmando o mecanismo pelo qual o NAD+ (Nicotinamida Adenina Dinucleotídeo) protege neurônios contra a degeneração associada ao Alzheimer e Parkinson. O NAD+ é coenzima essencial para a produção de energia celular e reparo de DNA, com níveis que caem naturalmente com o envelhecimento — sendo essa queda associada ao declínio cognitivo e à progressão de doenças neurodegenerativas. Os pesquisadores identificaram que elevar os níveis de NAD+ via precursores (NMN — Mononucleotídeo de Nicotinamida, ou NR — Nicotinamida Ribosídeo) preserva a função mitocondrial neuronal e reduz acúmulo de proteínas tóxicas associadas ao Alzheimer. Ensaios clínicos de 2025-2026 mostram que suplementação com NMN (900-1250mg/dia) é segura e bem tolerada, dobrando os níveis circulantes de NAD+ em adultos saudáveis. O mercado global de precursores de NAD+ cresce acima de 20% ao ano com penetração crescente no Brasil via importação e farmácias de manipulação. O estudo da Nestlé Research de 2026 revela ainda que NMN e NR interagem positivamente com a microbiota intestinal, produzindo ácido nicotínico e melhorando a atividade microbiana — conectando longevidade ao eixo intestino-cérebro.", source:"ScienceDaily / Nature, Mar 2026 / Nestlé Research 2026 / Consumer Health Digest / WonderFeel / BioNutrica", curto:"5", medio:"8", longo:"10", idea:"Dossiê técnico interno Longevidade Celular Você Mais+: monitorar NMN, NR e urolitina A enquanto a evidência clínica amadurece. Identificar fornecedor nacional certificado de NMN ou NR para pré-formulação. Conteúdo imediato: série educativa sobre NAD+ — o que é, por que cai com a idade, como repor. Posicionar a Você Mais+ como a marca que explica a ciência da longevidade antes do produto existir. Lançamento planejado para 2027: Linha Longevidade Ativa NMN + resveratrol + D3+K2 com linguagem de vitalidade celular — não anti-aging absoluto para evitar claims regulatórios problemáticos." },
+  2: { tag:"Tendências · FemTechs", stars:"⭐⭐⭐⭐", headline:"Revolução FemTech personaliza saúde feminina — investimento global cresce 170% com wearables e IA para ciclo, menopausa e hormônios em 2026", summary:"Publicação do Estado de Minas de abril de 2026 documenta a explosão das FemTechs no Brasil: startups e plataformas que combinam inteligência artificial, wearables e tele-saúde para personalizar o cuidado com saúde feminina. Os dispositivos de nova geração monitoram continuamente temperatura corporal, variação de batimentos cardíacos e sudorese noturna — mapeando ciclo menstrual, ondas de calor da menopausa e perturbações do sono com uma precisão antes reservada a clínicas especializadas. O impacto direto no mercado de suplementação é imediato: mulheres com diagnóstico personalizado de déficits hormonais buscam ativamente suplementos específicos para cada fase. Dados de 2026 indicam que 70% das mulheres usarão alguma tecnologia personalizada de saúde até 2027. O crescimento das FemTechs democratiza o diagnóstico hormonal — antes restrito a consultas médicas caras — e cria uma base de consumidoras informadas que chegam às farmácias e e-commerces de suplementos sabendo exatamente o que precisam. Para marcas de suplementação, isso representa uma oportunidade de parceria com plataformas FemTech para integrar recomendação personalizada de suplementos à jornada de monitoramento hormonal.", source:"Estado de Minas, 7 Abr 2026 / Bonitamulher.com.br / CartaCapital / JovemPan Saúde / Sincofarma SP", curto:"6", medio:"9", longo:"10", idea:"Parceria estratégica com FemTech: prospectar 2-3 plataformas de saúde feminina no Brasil (apps de ciclo, monitoramento de menopausa) para integrar o portfólio da Você Mais+ como sugestão personalizada de suplementação. Modelo: a plataforma identifica a fase da mulher, o algoritmo sugere o produto Você Mais+ mais adequado com link de compra direto. Para início: criar landing page dedicada por fase da vida (ciclo / pós-parto / menopausa) com conteúdo científico + produto recomendado — base para futuras integrações tecnológicas. Custo de entrada baixo, potencial de conversão altíssimo por audiência qualificada." },
+  3: { tag:"Ciência · NMN Cardiovascular", stars:"⭐⭐⭐⭐", headline:"NMN reduz pressão arterial — pesquisa de abril 2026 confirma novo efeito clínico do suplemento anti-envelhecimento além da longevidade celular", summary:"Em 12 de abril de 2026, o portal Tua Saúde publicou análise de pesquisa recente confirmando que o NMN (Mononucleotídeo de Nicotinamida), amplamente estudado por seus efeitos na longevidade celular, demonstra agora benefício adicional documentado: redução da pressão arterial em adultos de meia-idade. O mecanismo proposto envolve a melhora da função endotelial — a capacidade dos vasos sanguíneos de se dilatar adequadamente — e a redução de marcadores inflamatórios vasculares, ambos mediados pela elevação dos níveis de NAD+. Esta descoberta expande significativamente o mercado potencial do NMN: de suplemento voltado a um nicho de biohackers e entusiastas de longevidade para produto com apelo cardiometabólico mainstream. No Brasil, hipertensão afeta 36 milhões de pessoas, representando uma base de consumidores potenciais vastamente maior do que os interessados em longevidade. A convergência de NMN com saúde cardiovascular é o tipo de sinalização científica que antecede movimentos de mercado em 12-18 meses, quando a evidência se consolida e o produto migra de nicho para prescrição médica preventiva.", source:"Tua Saúde, 12 Abr 2026 / Consumer Health Digest / BioNutrica Ireland / WonderFeel 2026", curto:"4", medio:"8", longo:"9", idea:"Monitorar de perto a literatura sobre NMN e hipertensão nos próximos 6 meses. Quando dois ou mais estudos clínicos confirmarem o efeito, desenvolver conteúdo técnico para médicos e nutricionistas posicionando NMN + resveratrol como protocolo preventivo cardiovascular e de longevidade. Parceria com cardiologistas e médicos do estilo de vida para criar série de conteúdo. Pré-formular NMN + berberina ou NMN + coenzima Q10 como stack cardiometabólico diferenciado. Horizonte de lançamento: 2027, quando regulação ANVISA para novos ingredientes bioativos estiver mais clara." },
+  4: { tag:"Dado · Probióticos Brasil", stars:"⭐⭐⭐⭐", headline:"Mercado de probióticos no Brasil cresce 9,88% ao ano até 2034 — US$2,1 bilhões em 2025 projetam US$4,9 bilhões, maior CAGR setorial do mercado global", summary:"Segundo relatório IMARC Group de 2026, o Brasil possui o mercado de probióticos com maior CAGR do mundo no segmento: 9,88% ao ano de 2026 a 2034, partindo de US$2,1 bilhões em 2025 para US$4,9 bilhões até 2034. Os vetores são múltiplos: crescimento da consciência sobre saúde intestinal, aumento das prescrições de probióticos por médicos e nutricionistas brasileiros, expansão do segmento de alimentos fermentados (kombucha, kefir, iogurte funcional) e penetração crescente de suplementos com cepas específicas declaradas. O dado de 59% dos consumidores globais que consideram o intestino determinante para o bem-estar integral reforça a demanda estrutural. No Brasil, digestão é o principal benefício buscado em suplementos alimentares — o que posiciona probióticos como categoria de entrada ideal para novos consumidores do mercado de suplementação. Para marcas, a tendência de cepas específicas declaradas é o diferencial técnico que separa produtos premium de genéricos — consumidor informado já busca Lactobacillus helveticus R0052, Bifidobacterium longum R0175 e Lactobacillus rhamnosus GG por nome.", source:"IMARC Group Brazil Probiotics Market 2026 / Pronutrition.com.br / Mordor Intelligence / BHBFood / Linkedin Bertolino MSc MBA", curto:"7", medio:"9", longo:"10", idea:"Probiótico Premium Você Mais+ com cepas declaradas no rótulo frontal: Lactobacillus helveticus R0052 + Bifidobacterium longum R0175 (foco em saúde mental e sono) ou Lactobacillus rhamnosus GG + Bifidobacterium lactis BB-12 (foco em imunidade e digestão). Formato: sachê stick com prebiótico FOS integrado. Conteúdo de posicionamento: por que cepas específicas importam — comparativo visual entre probiótico genérico vs probiótico com identidade de cepa declarada. Parceria com nutricionistas LODs para prescrição nominal da cepa. Alta fidelização por uso diário e resultados perceptíveis em 2-4 semanas." },
+  5: { tag:"Ciência · Magnésio Avançado", stars:"⭐⭐⭐", headline:"7 tipos de magnésio com benefícios distintos — consumidor informado de 2026 já pergunta qual forma comprar: bisglicinato, threonate, malato ou citrato", summary:"O mercado de magnésio em 2026 está passando por uma sofisticação notável: o consumidor informado — especialmente mulheres 25-45 anos com alto consumo de conteúdo de saúde no Instagram e TikTok — não pergunta mais apenas por magnésio, mas por qual tipo de magnésio. As sete formas principais têm indicações distintas e documentadas: Magnésio Bisglicinato (ou Glicinato) — forma quelada de alta absorção, ideal para ansiedade, insônia e TPM, com mínimo efeito laxante; Magnésio Threonate (L-Treonato) — atravessa a barreira hematoencefálica, indicado para cognição, memória e neuroproteção; Magnésio Malato — combinado com ácido málico, indicado para energia muscular e fibromialgia; Magnésio Citrato — alta absorção, indicado para constipação e relaxamento muscular; Magnésio Taurato — combinado com taurina, indicado para saúde cardiovascular; Magnésio Cloreto — uso tópico e oral, indicado para repor magnésio rapidamente; Magnésio Óxido — baixa absorção, uso como laxante. Para marcas, esta fragmentação educacional é uma oportunidade de posicionamento: a marca que educa sobre os tipos constrói autoridade e captura o consumidor que entende a diferença.", source:"Neoquimica.com.br / GeniusNutra 2026 / NewNutrition / Farmacotécnica / MSD Manuals, 2026", curto:"6", medio:"8", longo:"7", idea:"Série de conteúdo Você Mais+ 'Qual Magnésio é o Seu?': 7 posts (um por forma de magnésio) explicando indicação, absorção e para quem é ideal. Incluir quiz interativo no site: responde 5 perguntas sobre seus sintomas e recebe recomendação do tipo de magnésio ideal. Reformulação do portfólio: lançar magnésio bisglicinato (sono/ansiedade) e magnésio threonate (cognição) como SKUs distintos com posicionamento diferenciado — não como variações do mesmo produto. Alta conversão por audiência que já pesquisou e está pronta para comprar o tipo específico." },
+  6: { tag:"Ciência · Ômega-3 50+", stars:"⭐⭐⭐⭐", headline:"Ômega-3 para maiores de 50: três fontes de qualidade comprovadas para proteger cérebro e articulações — déficit na população 50+ torna-se prioridade clínica em abril 2026", summary:"Publicação do Tua Saúde de 20 de abril de 2026 detalha as três fontes de ômega-3 de alta qualidade mais indicadas para adultos com mais de 50 anos, com foco especial em proteção cerebral e suporte articular. O contexto é urgente: estudos de 2025-2026 confirmam que a grande maioria dos brasileiros nessa faixa etária consome EPA e DHA abaixo das recomendações clínicas. As três fontes destacadas são: (1) Óleo de peixe concentrado (mínimo 1000mg EPA+DHA por cápsula, não apenas óleo total) — fonte mais acessível com mais evidência clínica para saúde cardiovascular e cerebral; (2) Óleo de algas DHA — fonte vegana de DHA puro, especialmente indicada para neuroproteção, com alta sustentabilidade e sem contaminantes de peixes; (3) Óleo de krill — forma fosfolipídica de alta biodisponibilidade com astaxantina natural antioxidante, menor dose necessária. A diferenciação por fonte começa a se tornar estratégica: o mercado premium cresce mais rápido que o commodity, e consumidores informados 50+ são dispostos a pagar pelo produto certo.", source:"Tua Saúde, 20 Abr 2026 / SBCM Revista / Farmacotécnica / NHLBI NIH / Correiobraziliense, 2026", curto:"6", medio:"8", longo:"8", idea:"Linha Ômega Premium 50+ Você Mais+: três SKUs diferenciados por fonte e indicação. (1) Ômega-3 Concentrado: declaração frontal de EPA+DHA em mg reais por cápsula (ex: 600mg EPA + 400mg DHA), certificação IFOS de pureza, para público geral. (2) DHA Algas: fonte vegana, foco em cognição e saúde cerebral, para vegetarianos/veganos e público que não consome peixe. (3) Krill Premium: para consumidor que busca máxima biodisponibilidade. Conteúdo: infográfico comparativo das três formas com indicação por objetivo de saúde. Parceria com nutricionistas de 45-60 anos para endosso técnico por faixa etária." },
+  7: { tag:"Digital · IA e Suplementos", stars:"⭐⭐⭐⭐", headline:"Influenciadores criados por IA vendem suplementos nas redes — risco regulatório e reputacional cresce enquanto CONAR prepara regulação para personagens virtuais em saúde", summary:"Em 24 de março de 2026, o Sindpd (Sindicato dos Trabalhadores em Processamento de Dados) publicou investigação revelando o crescimento alarmante de influenciadores digitais criados inteiramente por inteligência artificial que promovem suplementos alimentares em plataformas como Instagram e TikTok. O caso mais emblemático é 'Melanskia', uma influenciadora amish virtual que recomenda suplementos ainda não testados para uma audiência de centenas de milhares de seguidores. O problema não é apenas ético — é regulatório e sanitário: esses personagens virtuais contornam as normas do CONAR para publicidade de produtos de saúde, não possuem responsabilidade legal pelas afirmações feitas e frequentemente recomendam produtos sem registro ANVISA ou com claims proibidos. Para marcas legítimas, este cenário cria dois efeitos simultâneos: (1) Erosão da confiança do consumidor em recomendações de influenciadores em geral, favorecendo marcas que apostam em LODs com credencial técnica verificável; (2) Oportunidade de posicionamento como marca autêntica e transparente em contraste com o ruído digital gerado pela IA. O CONAR está em processo de regulação específica para personagens virtuais — marcas que usam IA em marketing devem preparar compliance proativo.", source:"Sindpd, 24 Mar 2026 / Favikon Blog 2026 / Exame Pop TikTok 2026 / HypeAuditor Brazil, Mar 2026", curto:"8", medio:"7", longo:"6", idea:"Programa Autenticidade Verificável Você Mais+: (1) Política pública de transparência — publicar no site e nas redes os nomes e qualificações de todos os embaixadores e criadores parceiros, com link para o CRN/CFF de cada nutricionista ou farmacêutico. (2) Declaração formal de que a Você Mais+ não usa influenciadores de IA para promover produtos de saúde. (3) Transformar o compliance em conteúdo: post educativo sobre como identificar influenciadores falsos de saúde e por que isso importa para o consumidor. Diferencial imediato de confiança em um mercado contaminado por ruído digital — custo mínimo, impacto de percepção elevado." },
+  8: { tag:"Dado · Saúde Intestinal", stars:"⭐⭐⭐⭐", headline:"59% dos consumidores globais consideram o intestino determinante para o bem-estar — dado do Global Wellness Institute 2026 consolida probióticos, prebióticos e fibras como pilares inegociáveis", summary:"O Global Wellness Institute 2026 registrou que 59% dos consumidores globais consideram a saúde intestinal determinante para o bom funcionamento de todo o organismo — dado que reflete uma mudança de paradigma cultural que começou com pesquisas sobre o eixo intestino-cérebro e se consolidou no imaginário popular. No Brasil, a digestão é o principal benefício buscado em suplementos alimentares, e o mercado de probióticos cresce 9,88% ao ano até 2034. O mercado de prebióticos também expande rapidamente: fibras como inulina, FOS, GOS e pectina ganham espaço não apenas em suplementos, mas em alimentos funcionais. A demanda por produtos simbióticos (probióticos + prebióticos combinados) representa a fronteira mais avançada: o consumidor sofisticado entende que sem o sustrato adequado (prebiótico), as bactérias benéficas (probiótico) não colonizam com eficácia. Bebidas funcionais com probióticos — kombucha, kefir e sucos enriquecidos — crescem como vetor de entrada para novos consumidores que rejeitam cápsulas. A tendência 2026-2028 é a integração intestinal: produtos que combinam probióticos + prebióticos + enzimas digestivas + polifenóis em formulação sinérgica.", source:"Global Wellness Institute 2026 / IMARC Group / Mordor Intelligence / ProNutrition.com.br / BHBFood", curto:"7", medio:"9", longo:"10", idea:"Kit Saúde Intestinal Integral Você Mais+: combinação simbiótica com cepas declaradas (Lactobacillus rhamnosus GG + Bifidobacterium lactis BB-12) + prebiótico FOS + inulina + enzimas digestivas (protease, amilase, lipase) em cápsula de liberação controlada. Posicionamento: o primeiro passo de qualquer protocolo de saúde começa no intestino. Campanha de conteúdo com 8 semanas de protocolo intestinal guiado — blog posts + vídeos com nutricionistas sobre o eixo intestino-cérebro, imunidade e digestão. Alta recompra por uso diário, alto apelo para público que já usa probiótico genérico e quer evoluir para produto com mais tecnologia." },
+  9: { tag:"Tendências · Beauty Drinks", stars:"⭐⭐⭐", headline:"Colágeno migra das cápsulas para bebidas funcionais — café com colágeno, shots e beauty drinks crescem 24% no mercado global e chegam ao Brasil com formato premium", summary:"O mercado de beauty drinks com colágeno hidrolisado cresce 24% globalmente em 2026, segundo a Food Connection, e começa a ganhar tração consistente no Brasil. O formato rompe com a barreira do suplemento tradicional (cápsula ou sachê sem sabor) e oferece ao consumidor uma experiência de consumo integrada à rotina: café da manhã com colágeno, shot pré-treino com peptídeos de colágeno e vitamina C, smoothie beauty com colágeno + biotina + silício orgânico. Os benefícios do colágeno hidrolisado são amplamente documentados: melhora na elasticidade e hidratação da pele, suporte à saúde articular, e quando combinado com vitamina C (essencial para síntese de colágeno endógeno) os resultados são mensuráveis em 8-12 semanas de uso consistente. O consumidor que compra beauty drink não se identifica como usuário de suplemento — ele compra uma experiência de bem-estar e beleza, o que eleva o ticket médio e reduz a resistência de entrada. No Brasil, o segmento de beleza funcional (beauty from within) está anos atrás dos EUA e Europa — uma janela clara para primeiros movimentos.", source:"Food Connection 2026 / Hilê Suplementos 2026 / Hile.com.br / Mercado e Consumo Jan 2026 / FoodBiz Brasil", curto:"5", medio:"8", longo:"9", idea:"Linha Beauty Drink Você Mais+: sachê de colágeno hidrolisado tipo I e III (5g) + vitamina C natural (acerola 200mg) + biotina + ácido hialurônico em sabores funcionais (hibisco + cranberry, baunilha + açafrão). Dissolve em agua fria, café ou leite vegetal. Embalagem premium com design aspiracional. Posicionamento: não é suplemento — é o ritual de beleza da manhã. Público: mulheres 25-45 anos que investem em skincare e querem a beleza de dentro para fora. Ticket médio 30-40% maior que colágeno convencional, com experiência de consumo que gera conteúdo orgânico nas redes." },
+  10: { tag:"Mercado · Suplementos de Sono", stars:"⭐⭐⭐⭐", headline:"Sono emerge como terceiro pilar de wellness em 2026 — combos naturais de magnésio + L-teanina + ashwagandha superam melatonina isolada em satisfação do consumidor", summary:"Em 2026, o sono consolidou-se definitivamente como o terceiro pilar de wellness — ao lado de nutrição e exercício — com um mercado de suplementos específico que cresce acima da média do setor. A pesquisa do InfoMoney e Catarinense Pharma aponta fórmulas voltadas ao sono e bem-estar emocional entre as três categorias com maior crescimento. O dado central que explica este movimento: a melatonina isolada, por décadas o padrão para insônia leve, está perdendo espaço para stacks multiingredientes que atuam em múltiplos mecanismos do sono. As combinações mais buscadas em 2026: Magnésio Bisglicinato (300-400mg) — ativa receptores GABA e promove relaxamento neuromuscular; L-Teanina (200mg) — aminoácido do chá verde que eleva ondas alfa cerebrais e reduz ansiedade sem sedação; Ashwagandha KSM-66 (300mg) — adaptogênico que reduz cortisol noturno; Melatonina low dose (0,5-1mg) — dose fisiológica que regula o ritmo circadiano sem criar dependência ou tolerância. Este stack resolve os três principais obstáculos ao sono: cortisol elevado (ashwagandha), hiperatividade mental (L-teanina), tensão muscular (magnésio) e ritmo circadiano desregulado (melatonina). Alta demanda por formato sachê noturno que dissolve em água quente — ritual de transição vigília-sono.", source:"InfoMoney / Rodrigo Sangion / Catarinense Pharma 2026 / MEDBR Médicos Brasil / Acontece Botucatu 2026", curto:"8", medio:"9", longo:"8", idea:"Ritual Noite Você Mais+: sachê solúvel sabor camomila + maracujá com magnésio bisglicinato (350mg) + L-teanina (200mg) + ashwagandha KSM-66 (300mg) + melatonina 0,5mg + extrato de maracujá. Posicionamento: o ritual dos 5 minutos antes de dormir que muda sua noite — e seu dia. Formato sachê dissolúvel quente é diferenciador claro versus cápsulas. Conteúdo: série 7 dias para melhorar o sono + testemunhal de LODs nutricionistas com monitoramento via app de sono. Alta recompra por uso diário, alta satisfação percebida (resultado perceptível em 1-2 semanas) e amplo público-alvo (30-60 anos, ambos os gêneros)." },
+  11: { tag:"Mercado · Democratização", stars:"⭐⭐⭐", headline:"Wellness se democratiza em 2026 — marcas nacionais ampliam portfólios com preços acessíveis e formatos de entrada para atingir a classe C e novos consumidores de suplementação", summary:"O Ativa Investimentos e a Food Connection documentam em 2026 uma tendência estrutural que redefine o mercado de wellness no Brasil: a democratização. Se até 2022 wellness era sinônimo de produto premium para classes A e B, 2026 marca a entrada definitiva de marcas nacionais com produtos de qualidade em faixas de preço acessíveis à classe C. Os fatores que tornam isso possível: (1) Escala industrial — marcas que cresceram nos últimos 5 anos conseguem reduzir custo por unidade mantendo qualidade; (2) Formatos de entrada — sachê unitário, frasco de 30 cápsulas e formato compacto reduzem o investimento inicial do consumidor novo; (3) Canais de distribuição — D2C digital democratiza acesso sem necessidade de lojas físicas premium; (4) Educação digital — conteúdo de LODs científicos forma consumidores em todas as faixas de renda. O risco desta tendência para marcas premium: comoditização dos ingredientes básicos (vitamina C, vitamina D, magnésio) em guerra de preços. A resposta estratégica é a diferenciação por formulação e evidência — não por ingrediente isolado. O consumidor democratizado que entra pelo produto mais acessível migra para produtos premium quando experimenta resultados reais.", source:"Ativa Investimentos Blog / Food Connection 2026 / FoodBiz Brasil / Mercado e Consumo Jan 2026 / Sincofarma SP", curto:"5", medio:"7", longo:"8", idea:"Linha Entrada Você Mais+: versão compacta (30 doses) dos 3 produtos mais vendidos com embalagem simplificada e preço de entrada 30-40% abaixo da linha principal. Objetivo: converter consumidores novos de classe C que nunca compraram suplemento de qualidade. Estratégia de upgrade: após a primeira compra, oferta automática do kit completo (60-90 doses) com desconto de fidelidade. Kit de degustação com 5 sachês de produtos diferentes a R$9,90 — ponto de entrada de baixo risco para o consumidor novo experimentar antes de comprar o frasco completo. Distribuição via farmácias populares e marketplaces com foco em volume, não margem." },
+  12: { tag:"Digital · Social Commerce", stars:"⭐⭐⭐⭐", headline:"Live commerce domina vendas de suplementos em 2026 — plataformas são pontos de venda diretos com links rastreáveis e influenciadores que convertem audiência em clientes na hora", summary:"O We Are Social Brasil e a Colinatech documentam em 2026 a consolidação do social commerce como o canal de maior crescimento para venda direta de suplementos. A transformação é radical: plataformas como Instagram, TikTok Shop e YouTube Shopping deixaram de ser vitrines onde o consumidor descobre o produto para se tornarem pontos de venda onde a compra acontece sem sair da plataforma. As lives de suplementos convertem de forma inédita: um influenciador nutricionista com 50 mil seguidores fazendo uma live de 60 minutos sobre protocolo de sono gera vendas superiores a campanhas de mídia paga de R$10 mil. Os dados que explicam o fenômeno: 73% das compras de suplementos no Brasil são influenciadas por criadores digitais; formatos de 60-90 segundos com ingrediente + mecanismo + benefício + cuidados de uso são os de maior conversão; cupons de desconto exclusivos durante lives criam urgência e rastreabilidade. Para marcas sem estratégia de live commerce em 2026, a janela está fechando: plataformas favorecem criadores e marcas que adotam o formato nativo com algoritmos que amplificam lives para audiências qualificadas.", source:"We Are Social Brasil 2026 / Colinatech / Favikon Blog 2026 / Lab Growth / Drytelecom 2026", curto:"9", medio:"9", longo:"8", idea:"Programa Live Commerce Você Mais+ com protocolo operacional completo: (1) Calendário mensal de 4 lives com LODs parceiros — um por semana, rotacionando entre temas: sono, imunidade, energia e longevidade. (2) Kit de live para o LOD: briefing científico do produto, roteiro de 60 minutos, link rastreável com código exclusivo, comissão de 20% sobre vendas geradas durante e até 48h após a live. (3) Promoção exclusiva de live: desconto de 15% válido apenas durante a transmissão para criar senso de urgência. KPI: vendas por live, CAC por canal e LTV do cliente adquirido via live. Meta: 30% das vendas DTC via live commerce até Q4 2026." },
+  13: { tag:"Análise de Cruzamento", stars:"⭐⭐⭐⭐⭐", headline:"NAD+ na ciência + FemTechs em expansão + IA nas redes + sono como pilar = mercado em aceleração técnica com exigência crescente de autenticidade, evidência e personalização profunda", summary:"Os 13 vetores da edição de 24 de abril de 2026 revelam um mercado de suplementação em transição acelerada em três dimensões simultâneas. DIMENSÃO 1 — CIÊNCIA SE ACELERA: NAD+/NMN confirma proteção neuronal contra Alzheimer e Parkinson (ScienceDaily/Nature), NMN reduz pressão arterial (novo dado clínico), 7 tipos de magnésio com indicações distintas documentadas e ômega-3 para 50+ como prioridade clínica. A ciência de 2026 está producindo evidências que expandem as indicações dos ingredientes existentes — não apenas criando categorias novas. Para a Você Mais+: cada estudo novo é conteúdo e é oportunidade de reformulação inteligente. DIMENSÃO 2 — PERSONALIZAÇÃO RADICAL: FemTechs crescem 170% com IA e wearables que mapeiam hormônios e sono em tempo real; 59% dos consumidores entendem o intestino como centro do bem-estar; suplementos de sono em combos multiingredientes superam melatonina isolada. A demanda por precisão — o produto certo para o perfil certo no momento certo — é a principal força de compra em 2026. DIMENSÃO 3 — DIGITAL EXIGE AUTENTICIDADE: IA cria influenciadores falsos de saúde enquanto o mercado migra para social commerce com links rastreáveis; LODs científicos convertem 3x mais que celebridades; marcas que provam transparência constroem ativos de longo prazo. O tema unificador: ciência com evidência + personalização por fase da vida + comunicação autêntica e rastreável é o posicionamento mais difícil de copiar e mais valioso de construir. A janela mais urgente para a Você Mais+ em 24 de abril de 2026: (1) Construir estratégia de live commerce com LODs científicos — 30 dias para primeiro piloto; (2) Lançar ritual de sono multiingrediente — formulação simples, diferenciação de formato; (3) Iniciar dossiê técnico de NAD+/NMN para lançamento planejado em 2027.", source:"Análise cruzada — Wellness Intelligence Você Mais+, 24 Abr 2026", curto:"10", medio:"10", longo:"9", idea:"Plano de Ação 30-60-90 dias: PRIMEIROS 30 DIAS — Lançar piloto de live commerce com 2 LODs nutricionistas (uma sobre sono, uma sobre saúde intestinal); criar landing pages por fase da vida (ciclo, menopausa, 50+); iniciar pesquisa de formuladores de NMN certificados no Brasil. DIAS 31-60 — Lançar Ritual Noite (combo sono multiingrediente em sachê); formalizar programa de embaixadores LOD com contrato, briefing mensal e comissão rastreável; publicar série de conteúdo sobre magnésio e tipos. DIAS 61-90 — Análise de conversão de live commerce e ajuste do programa; decisão sobre magnésio threonate vs bisglicinato como próximo lançamento; dossiê NAD+ entregue ao time de desenvolvimento de produto com roadmap 2027." }
+};
+
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('[data-modal]').forEach(function(card) {
+    card.addEventListener('click', function() {
+      var id = this.getAttribute('data-modal');
+      var d  = MODALS[id];
+      if (!d) return;
+      document.getElementById('m-tag').textContent      = d.tag;
+      document.getElementById('m-headline').textContent = d.headline;
+      document.getElementById('m-stars').textContent    = d.stars;
+      document.getElementById('m-summary').textContent  = d.summary;
+      document.getElementById('m-source').textContent   = d.source;
+      document.getElementById('m-curto').textContent    = d.curto + '/10';
+      document.getElementById('m-medio').textContent    = d.medio + '/10';
+      document.getElementById('m-longo').textContent    = d.longo + '/10';
+      document.getElementById('m-idea').textContent     = d.idea;
+      document.getElementById('modal').classList.add('open');
+      document.body.style.overflow = 'hidden';
+    });
+  });
+
+  document.getElementById('modal').addEventListener('click', function(e) {
+    if (e.target === this) closeModal();
+  });
+
+  document.getElementById('modal-close-btn').addEventListener('click', closeModal);
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeModal();
+  });
+
+  function closeModal() {
+    document.getElementById('modal').classList.remove('open');
+    document.body.style.overflow = '';
+    document.querySelectorAll('.modal-fit-btn').forEach(function(b) { b.classList.remove('selected'); });
+  }
+
+  var crossView = document.getElementById('cross-edition-view');
+  var mainContent = document.getElementById('main-content');
+
+  document.querySelectorAll('nav a[data-filter]').forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      var filter = this.getAttribute('data-filter');
+
+      document.querySelectorAll('nav a').forEach(function(a) { a.classList.remove('active'); });
+      this.classList.add('active');
+
+      if (filter === 'all') {
+        mainContent.style.display = '';
+        crossView.style.display = 'none';
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        return;
+      }
+
+      fetch('data.json?v=' + Date.now())
+        .then(function(r) { return r.json(); })
+        .then(function(data) {
+          var results = [];
+          data.editions.forEach(function(edition) {
+            edition.cards.forEach(function(card) {
+              if (card.category === filter) {
+                results.push({ card: card, date: edition.date, dateLabel: edition.dateLabel });
+              }
+            });
+          });
+
+          results.sort(function(a, b) { return b.date.localeCompare(a.date); });
+
+          var label = link.textContent;
+          var html = '<div style="max-width:1280px;margin:0 auto;padding:48px 40px 80px;">';
+          html += '<div class="edition-bar"><div class="edition-live"><div class="live-dot"></div><span class="edition-label">Filtro: ' + label + '</span></div><span class="edition-meta">' + results.length + ' resultado' + (results.length !== 1 ? 's' : '') + ' · todas as edicoes</span></div>';
+
+          if (results.length === 0) {
+            html += '<p style="color:var(--gray-400);font-size:14px;margin-top:32px;">Nenhum resultado encontrado para esta categoria.</p>';
+          } else {
+            results.forEach(function(item) {
+              var c = item.card;
+              html += '<div style="display:flex;gap:20px;padding:24px 0;border-bottom:1px solid var(--border);cursor:pointer;" onclick="openCrossModal(' + JSON.stringify(c).replace(/"/g, '&quot;') + ')">';
+              html += '<div style="min-width:110px;text-align:right;padding-top:4px;"><span style="font-size:9px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--white);background:var(--navy);padding:3px 8px;border-radius:4px;">' + item.dateLabel + '</span></div>';
+              html += '<div style="flex:1;">';
+              html += '<div style="font-size:9px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--gray-400);margin-bottom:6px;">' + c.tag + ' · ' + c.stars + '</div>';
+              html += '<div style="font-size:18px;font-weight:800;line-height:1.2;letter-spacing:-.02em;color:var(--black);margin-bottom:8px;">' + c.headline + '</div>';
+              html += '<div style="font-size:13px;line-height:1.6;color:var(--gray-600);">' + c.summary + '</div>';
+              html += '<div style="margin-top:10px;font-size:11px;color:var(--gray-400);">Fonte: ' + c.source + '</div>';
+              html += '</div>';
+              html += '<div style="align-self:center;width:34px;height:34px;border-radius:50%;background:var(--navy);color:var(--white);display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0;">&#8594;</div>';
+              html += '</div>';
+            });
+          }
+
+          html += '</div>';
+          crossView.innerHTML = html;
+          mainContent.style.display = 'none';
+          crossView.style.display = '';
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        })
+        .catch(function() {
+          crossView.innerHTML = '<div style="max-width:1280px;margin:0 auto;padding:48px 40px;"><p style="color:var(--gray-400);">Erro ao carregar dados.</p></div>';
+          mainContent.style.display = 'none';
+          crossView.style.display = '';
+        });
+    });
+  });
+});
+
+function openCrossModal(c) {
+  document.getElementById('m-tag').textContent      = c.tag;
+  document.getElementById('m-headline').textContent = c.headline;
+  document.getElementById('m-stars').textContent    = c.stars;
+  document.getElementById('m-summary').textContent  = c.summary;
+  document.getElementById('m-source').textContent   = c.source;
+  document.getElementById('m-curto').textContent    = c.curto + '/10';
+  document.getElementById('m-medio').textContent    = c.medio + '/10';
+  document.getElementById('m-longo').textContent    = c.longo + '/10';
+  document.getElementById('m-idea').textContent     = c.idea;
+  document.getElementById('modal').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function selectFit(btn) {
+  document.querySelectorAll('.modal-fit-btn').forEach(function(b) { b.classList.remove('selected'); });
+  btn.classList.add('selected');
+}
+</script>
+</body>
+</html>

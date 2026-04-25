@@ -1,6 +1,156 @@
 {
   "editions": [
     {
+      "date": "2026-04-25",
+      "dateLabel": "25 de Abril de 2026",
+      "cards": [
+        {
+          "category": "regulação",
+          "tag": "Regulação · ANVISA Urgente",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "ANVISA publica novas regras para cúrcuma em suplementos após alertas de dano hepático — advertência obrigatória em rótulos vigente desde 22 de abril de 2026",
+          "summary": "Em 22 de abril de 2026, a ANVISA publicou no DOU novas regras para suplementos com extratos de Curcuma longa, baseadas em Alerta 04/2026 de farmacovigilância. Casos suspeitos de hepatotoxicidade foram identificados em formulações com tecnologias que elevam drasticamente a biodisponibilidade da curcumina. Novas exigências: advertência obrigatória no rótulo para gestantes, lactantes, crianças e pessoas com doenças hepáticas ou biliares. O risco é restrito a formulações de alta concentração — o uso culinário da cúrcuma permanece seguro. Empresas devem atualizar rótulos de novos lotes imediatamente.",
+          "source": "ANVISA DOU 22 Abr 2026 / Agência Brasil / Diário Grande ABC / Tribuna de Minas / gov.br/anvisa",
+          "curto": "10",
+          "medio": "8",
+          "longo": "6",
+          "idea": "Auditar todos os produtos do portfólio com extrato de cúrcuma, verificar concentração de curcuminoides e tecnologia de biodisponibilidade. Acionar gráfica para atualização emergencial dos rótulos. Preparar comunicado técnico para nutricionistas e revendedores. Publicar post educativo posicionando a Você Mais+ como marca proativa em compliance — diferencial de transparência em momento de desconfiança."
+        },
+        {
+          "category": "mercado",
+          "tag": "Mercado · Feminino Lidera",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "79% das mulheres brasileiras usam suplementos — liderança feminina redefine portfólio, comunicação e canais de toda a indústria de wellness em 2026",
+          "summary": "Instituto Locomotiva e Sincofarma SP, março 2026: 79% das mulheres brasileiras utilizam suplementos, contra 71% dos homens. Mulheres lideram três das cinco categorias de maior crescimento no setor. Perfil da consumidora de 2026: pesquisa mais antes de comprar, valoriza prova científica e tem maior lealdade à marca quando o produto foi desenvolvido com ela em mente. Principais motivações de compra femininas: qualidade do sono, equilíbrio hormonal, saúde intestinal e beleza funcional.",
+          "source": "Instituto Locomotiva / Sincofarma SP, Mar 2026 / Bonitamulher.com.br / Catracalivre / Sanavita",
+          "curto": "8",
+          "medio": "9",
+          "longo": "9",
+          "idea": "Feminização estratégica do portfólio: criar três landing pages por fase da vida (Ciclo Ativo 20-35 anos, Força e Equilíbrio 35-50 anos, Vitalidade Plena 50+) com produtos e conteúdo específicos. Campanha UGC com consumidoras compartilhando seu ritual de suplementação. Parceria com ginecologistas e nutricionistas especializadas em saúde feminina para série de lives mensais por fase da vida."
+        },
+        {
+          "category": "mercado",
+          "tag": "Mercado · Crescimento Setorial",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Mercado de suplementos no Brasil cresce 15% em 2025 e projeta R$13,8 bilhões até 2030 — Brasil é o 3° maior mercado global",
+          "summary": "BRASNUTRI e Euromonitor 2026: setor movimenta R$7,6 bilhões em 2025 com crescimento de 15%. Projeção de R$13,8 bilhões até 2030 com CAGR de 9,5% ao ano. Brasil é terceiro maior mercado global de suplementos, atrás apenas de EUA e Austrália. Fusões e aquisições aceleram consolidação. Democratização do wellness traz consumidores de classe C como novo vetor de crescimento.",
+          "source": "BRASNUTRI / Euromonitor International 2026 / CartaCapital / Revista Suplementação / Panorama Farmacêutico",
+          "curto": "6",
+          "medio": "8",
+          "longo": "9",
+          "idea": "Publicar Relatório de Impacto Você Mais+ com dados de qualidade dos ingredientes, fornecedores auditados e resultados de consumidoras. Construir comunidade proprietária — lista de e-mail qualificada e comunidade de consumidoras comprometidas com o protocolo. Meta: 60% das vendas de fontes de tráfego proprietário até 2027."
+        },
+        {
+          "category": "tendências",
+          "tag": "Dado · Plant-Based Brasil",
+          "stars": "⭐⭐⭐",
+          "headline": "Mercado plant-based no Brasil projeta R$2,2 bilhões em 2026 — proteínas vegetais lideram como alternativa sustentável e atendem veganos, intolerantes e consumidores conscientes",
+          "summary": "Euromonitor 2026: segmento plant-based deve superar R$2,2 bilhões no Brasil em 2026. Proteína de ervilha, de arroz e blends vegetais crescem como alternativa ao whey para os 46% de brasileiros 35+ que já reduzem consumo de carne (IPEC). Mercado global de proteína vegetal cresce CAGR 7,8% até 2027. Desafio central de formulação: textura e palatabilidade próximas ao whey.",
+          "source": "Euromonitor International / VeganBusiness.com.br / BHBFood / FoodBiz Brasil / IPEC / Mercado e Consumo 2026",
+          "curto": "5",
+          "medio": "7",
+          "longo": "8",
+          "idea": "Linha Plant Power Você Mais+: blend proteína de ervilha isolada 60% + proteína de arroz 40%, 25g de proteína por porção, com leucina isolada e enzimas digestivas. Sabores funcionais. Público-alvo: mulheres 25-40 anos que reduzem carne e intolerantes à lactose. Diferenciação: qualidade e digestibilidade, não apenas o ingrediente vegetal."
+        },
+        {
+          "category": "ciência",
+          "tag": "Ciência · Cogumelos Medicinais",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Lion's Mane estimula fator de crescimento nervoso — hericeninas e erinacinas confirmam cogumelo como nootrópico natural de maior evidência científica em 2026",
+          "summary": "O Lion's Mane (Hericium erinaceus) consolidou-se como o nootrópico natural mais respaldado cientificamente em 2026. Hericeninas e erinacinas — compostos bioativos exclusivos — estimulam a síntese endógena de NGF (Fator de Crescimento Nervoso), essencial para o crescimento e manutenção de neurônios. Evidências clínicas: melhora em memória de curto prazo, velocidade de processamento cognitivo e redução de ansiedade leve. Mercado global de cogumelos funcionais cresce acima de 15% ao ano.",
+          "source": "Vitaminer.com.br / Brazilian Journals of Health Review 2026 / NamMuShroom / Primacêutica / SaulNutri",
+          "curto": "5",
+          "medio": "8",
+          "longo": "9",
+          "idea": "Linha Cogumelos Funcionais Você Mais+: Lion's Mane Focus com extrato padronizado do corpo do fruto, 30% polissacarídeos declarados, 500mg por cápsula. Reishi Immune e Chaga Energy como SKUs complementares. Série técnica educativa: o que torna um extrato de cogumelo eficaz (padronização vs. pó genérico). Diferenciação alta, concorrência ainda baixa em produto de qualidade no Brasil."
+        },
+        {
+          "category": "ciência",
+          "tag": "Ciência · Psicobióticos",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Psicobióticos produzem serotonina e GABA — eixo microbiota-intestino-cérebro ganha evidência clínica robusta e cria categoria de suplementação para saúde mental natural em 2026",
+          "summary": "RSD Journal e Revista Saber Digital 2026: psicobióticos — subclasse de probióticos com ação no sistema nervoso central — atingiram massa crítica de evidências. Lactobacillus reuteri produz serotonina; L. rhamnosus regula receptores GABA; Bifidobacterium longum modula o nervo vago e reduz marcadores de estresse em ensaios controlados. Cepas específicas reduzem ansiedade e melhoram humor em 4-8 semanas. Demanda enorme, oferta de qualidade ainda escassa no Brasil.",
+          "source": "RSD Journal 2026 / Revista Saber Digital / UFRJ LanutriLab / FCFar UNESP / Saobernardo.com",
+          "curto": "5",
+          "medio": "9",
+          "longo": "10",
+          "idea": "Linha Psicobiótico Saúde Mental Você Mais+: Lactobacillus helveticus R0052 + Bifidobacterium longum R0175 + prebiótico FOS + L-triptofano. Posicionamento: equilíbrio emocional e clareza mental. Evitar claims sobre transtornos — usar linguagem de bem-estar. Parceria com psicólogos e psiquiatras integrativistas para série de conteúdo sobre o eixo intestino-cérebro."
+        },
+        {
+          "category": "tendências",
+          "tag": "Tendências · Clean Label 3.0",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Clean Label evolui para 3.0 em 2026 — 60% dos consumidores globais confiam mais em marcas que explicam a origem e o processamento de cada ingrediente de forma clara",
+          "summary": "Innova Market Insights e Food Connection 2026: Clean Label 3.0 vai além de listas simples — exige narrativa de ingredientes com origem, processamento e rastreabilidade declarados. 60% dos consumidores globais confiam mais em marcas transparentes sobre a cadeia de ingredientes. No Brasil, clean label virou critério de decisão de compra mesmo para classe média. Marcas menores com fornecedores locais têm vantagem de implementação sobre grandes players.",
+          "source": "Innova Market Insights 2026 / Food Connection 2026 / BHBFood / Purefy Nutrition / SantosFlora / Sebrae",
+          "curto": "6",
+          "medio": "8",
+          "longo": "9",
+          "idea": "Programa Clean Label 3.0 Você Mais+: mapa de origem dos ingredientes no site, QR code no rótulo levando para a página de rastreabilidade do lote específico. Série de conteúdo de onde vem cada ingrediente do portfólio. Custo progressivo — começa com 3 ingredientes mais icônicos. Posicionamento irreplicável por players sem controle da cadeia."
+        },
+        {
+          "category": "ciência",
+          "tag": "Dado · Vitamina D Brasil",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "50,9% dos brasileiros têm insuficiência de vitamina D — pandemia silenciosa impacta imunidade, humor e ossos; suplementação agora recomendada para crianças e adolescentes",
+          "summary": "SBEM 2026: 15,3% de deficiência clínica e 50,9% de insuficiência de vitamina D na população brasileira. São Paulo lidera com 20,5% de deficiência apesar do clima tropical — explicado pelo estilo de vida indoor. CNN Brasil reporta que suplementação passou a ser indicada para toda criança e adolescente em 2026. Combo D3+K2 ganha tração clínica: K2 MK-7 direciona cálcio para ossos, protegendo artérias.",
+          "source": "SBEM / ENDOCRINOSP / Grupo Medcof / Nutritotal PRO / CNN Brasil / Artmed 2026",
+          "curto": "7",
+          "medio": "8",
+          "longo": "8",
+          "idea": "Stack D3+K2 família Você Mais+: Adultos 50+ (D3 2000UI + K2 MK-7 100mcg), Família/crianças 4+ (drops D3 400UI em óleo de coco), Gestantes (D3 1000UI + folato + ferro). Conteúdo urgente: infográfico com sintomas de insuficiência e grupos de risco. Alta recorrência de compra anual, alta conversão por dado de prevalência irrefutável."
+        },
+        {
+          "category": "tendências",
+          "tag": "Tendências · Saúde Feminina Fase",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Suplementos por fase da vida feminina ganham protocolos específicos — TPM, pós-parto e menopausa têm fitoestrógenos, óleo de prímula e maca peruana como protagonistas em 2026",
+          "summary": "LabSL e BoniMulher 2026: consumidora informada não quer vitamina genérica — quer protocolo específico para sua fase. TPM: óleo de prímula (GLA), magnésio bisglicinato, vitamina B6. Pós-parto: ferro bisglicinato, DHA algas, colágeno. Menopausa: isoflavonas de trevo vermelho, maca peruana, cálcio+D3+K2. 79% das mulheres usando suplementos significa que a demanda por personalização feminina é o maior vetor de crescimento do setor.",
+          "source": "LabSL / Bonitamulher.com.br / Farmácia Sempre Viva / Laboratório do Valle / Catracalivre / Sanavita 2026",
+          "curto": "7",
+          "medio": "9",
+          "longo": "10",
+          "idea": "Arquitetura Jornada da Mulher Você Mais+: Equilíbrio Ciclo (prímula+magnésio+B6+shatavari), Renascer Pós-Parto (ferro+folato+DHA+C), Equilíbrio Menopausa (isoflavonas+maca+D3+K2+Ca). Visual unificado por fase. Calendário editorial mensal com tema de fase da vida — construção progressiva de autoridade com audiência feminina segmentada."
+        },
+        {
+          "category": "tendências",
+          "tag": "Tendências · Adaptogênicos",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Ashwagandha e adaptogênicos dominam interesse global — Ayurveda ganha base científica sólida e consumidor combina adaptogênico + sono + microbioma como protocolo integrado de bem-estar 2026",
+          "summary": "Exame Casual e BBC Good Food 2026: ashwagandha KSM-66 lidera buscas de suplementos no Brasil, com estudos confirmando redução de 27-30% no cortisol em 8-12 semanas. Cogumelos adaptogênicos (reishi, chaga) entram no mainstream. Mercado global de adaptogênicos cresce CAGR 8,7% até 2030. Consumidor avançado monta stacks por objetivo: performance, sono, cognição ou imunidade.",
+          "source": "Exame Casual 2026 / BBC Good Food / DASA Saúde / Acontece Botucatu / Vitaminer.com.br / Nordic Oil PT",
+          "curto": "6",
+          "medio": "8",
+          "longo": "9",
+          "idea": "Linha Adapto Stack Você Mais+: Ashwagandha KSM-66 Premium (extrato padronizado certificado), Stack Performance (ashwagandha+rhodiola+eleuthero) e Stack Sono (ashwagandha+L-teanina+magnésio). Conteúdo técnico: por que o extrato KSM-66 é diferente da ashwagandha genérica — educa o consumidor a exigir qualidade, beneficiando quem usa o ingrediente correto."
+        },
+        {
+          "category": "tendências",
+          "tag": "Digital · Desinformação GutTok",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "GutTok gera internações ao disseminar desinformação sobre saúde intestinal — TikTok vira fonte de saúde para milhões enquanto gastroenterologistas alertam para práticas perigosas em 2026",
+          "summary": "Medscape Português, março 2026: consultórios de gastroenterologia recebem diariamente jovens com transtornos alimentares causados por protocolos virais de cura intestinal no TikTok. Hashtags #guttok acumulam bilhões de visualizações com práticas sem base científica. No Brasil, tempo médio de TikTok ultrapassa 90 minutos diários. Para marcas sérias: oportunidade de ser a voz científica no meio do caos informacional.",
+          "source": "Medscape Português Mar 2026 / PSIQ.med.br / HipermídiaCom / Brazilian Journals 2026",
+          "curto": "7",
+          "medio": "7",
+          "longo": "6",
+          "idea": "Programa Ciência Clara Você Mais+: série semanal Verdade ou GutTok desmontando mitos virais com base científica. Parceria com gastroenterologista e nutricionista de microbioma para lives mensais de perguntas e respostas. Badge de verificação técnica em todos os conteúdos de saúde com nome, CRN e data de revisão do LOD responsável."
+        },
+        {
+          "category": "tendências",
+          "tag": "Tendências · Longevidade Funcional",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Longevidade funcional substitui anti-aging em 2026 — CoQ10, colágeno e vitamina D+K2 formam stack de vitalidade para 50+ que querem viver mais com qualidade real",
+          "summary": "Food Connection e Folha PE 2026: suplementos para longevidade crescem acima da média do setor com CAGR projetado acima de 12% ao ano globalmente até 2034. Consumidores 50+ têm maior poder aquisitivo e menor sensibilidade a preço quando percebem resultado. Stack longevidade 2026: CoQ10 ubiquinol para energia mitocondrial, colágeno hidrolisado tipo II para articulações, D3+K2 para saúde óssea e cardiovascular, ômega-3 para neuroproteção.",
+          "source": "Food Connection 2026 / Folha PE 2026 / BetterBe Health BR / Instituto de Longevidade / Naturecan PT",
+          "curto": "5",
+          "medio": "8",
+          "longo": "10",
+          "idea": "Linha Longevidade Ativa Você Mais+: Vitalidade Celular (CoQ10 ubiquinol 200mg+PQQ+vitamina E), Mobilidade Premium (colágeno UC-II 40mg+C+MSM), Stack 50+ Essential (D3 2000UI+K2+magnésio+ômega-3). Parceria com médicos do estilo de vida e geriatras para endosso técnico. Embalagem aspiracional adulta — não juvenil nem medicamentosa."
+        }
+      ]
+    },
+    {
       "date": "2026-04-24",
       "dateLabel": "24 de Abril de 2026",
       "cards": [
