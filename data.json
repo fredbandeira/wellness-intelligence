@@ -1,6 +1,156 @@
 {
   "editions": [
     {
+      "date": "2026-04-27",
+      "dateLabel": "27 de Abril de 2026",
+      "cards": [
+        {
+          "category": "regulacao",
+          "tag": "Regulacao - Fiscalizacao Ativa",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "ANVISA determina recolhimento de suplementos alimentares irregulares — operacao de abril 2026 retira do mercado produtos sem registro e com alegacoes de saude proibidas",
+          "summary": "ANVISA intensifica fiscalizacao de suplementos com claims de cura e tratamento de doencas. Produtos sem registro obrigatorio e com apelos terapeuticos ilegais sao alvo imediato. Marcas precisam auditar rotulos e comunicacao digital com urgencia.",
+          "source": "gov.br/anvisa Abr 2026 / BNewsNatal / CRN6 / Nutritotal PRO / ANVISA 2026",
+          "curto": "10",
+          "medio": "7",
+          "longo": "6",
+          "idea": "Auditoria regulatoria completa: mapear todos os claims em posts, emails, site e embalagens. Criar badge de verificacao Produto Registrado ANVISA. Posicionar compliance como vantagem competitiva."
+        },
+        {
+          "category": "mercado",
+          "tag": "Mercado - Brasil no Mundo",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Brasil e o 3 mercado que mais cresce no planeta em suplementos — CAGR 9,5% ate 2036 consolida posicao global atras so da India e da China",
+          "summary": "Setor de nutricao e suplementos brasileiro cresce 5,61% ao ano ate 2035 e se consolida no varejo digital. Classe C entra no wellness como novo vetor de democratizacao do mercado nacional.",
+          "source": "Panorama Farmaceutico / Paraiba Total, Abr 2026 / Ekobe / Hile Suplementos",
+          "curto": "5",
+          "medio": "8",
+          "longo": "9",
+          "idea": "Posicionamento DTC para capturar o crescimento do varejo digital. Reduzir dependencia de marketplace de 70% para 50% das vendas ate Q4 2026. Construir canal proprio com assinatura e comunidade."
+        },
+        {
+          "category": "ciencia",
+          "tag": "Ciencia - Saude Cognitiva",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Mercado global de nootropicos atinge US0,64 bilhoes em 2026 com CAGR 12,39% — cerebro e a nova fronteira da suplementacao natural",
+          "summary": "Brain health supplements crescem de US2,6bi para US3,99bi entre 2025 e 2026. Online retail cresce 13,2% ao ano. Lions Mane, Bacopa e L-teanina dominam o top de ingredientes cognitivos naturais.",
+          "source": "Grand View Research / Precedence Research / Fortune Business Insights / Technavio 2026",
+          "curto": "5",
+          "medio": "8",
+          "longo": "9",
+          "idea": "Linha Cognicao Natural: Focus Stack com Lions Mane 500mg + Bacopa 300mg + L-teanina 200mg. Brain Restore com Lions Mane + Ashwagandha KSM-66 + magnesio bisglicinato."
+        },
+        {
+          "category": "tendencias",
+          "tag": "Dado - Gummies Brasil",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Gummies e formatos inovadores crescem 11,3% ao ano no Brasil ate 2030 — formato projeta US69,8 milhoes e cresce acima da media do setor",
+          "summary": "O mercado brasileiro de suplementos em gummies cresce CAGR 11,3% entre 2023 e 2030. Aceitacao sensorial, praticidade e shareability impulsionam adocao em publicos que resistem a capsulas tradicionais.",
+          "source": "Food Connection / Blog do Amarildo Gummies / Hile Suplementos / Ekobe / Capsexpress 2026",
+          "curto": "6",
+          "medio": "8",
+          "longo": "9",
+          "idea": "Linha Gummies: Collagen Gummy (colageno 2,5g + vitamina C), Sleep Gummy (melatonina + L-teanina), Imune Kids Gummy (D3 400UI + vitamina C + zinco para criancas)."
+        },
+        {
+          "category": "ciencia",
+          "tag": "Ciencia - Longevidade NMN",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "NMN e NAD+ entram no mainstream em 2026 — protocolo de longevidade de David Sinclair consolida categoria com evidencia clinica crescente",
+          "summary": "Ensaios clinicos humanos confirmam seguranca de NMN em doses de 100-1250mg/dia. Stack NMN + resveratrol + vitamina D3 e o mais citado por especialistas em 2026. Mercado de suplementos longevidade cresce CAGR 12% ao ano.",
+          "source": "Rolling Stone / Consumer Health Digest / Naturecan Portugal / iHerb Blog / Omre Supplements 2026",
+          "curto": "4",
+          "medio": "7",
+          "longo": "10",
+          "idea": "Linha Longevidade Celular para o publico 40+: NMN 500 Premium + resveratrol 250mg. Posicionamento: Nao e anti-envelhecimento. E pro-vitalidade. Canal: medicos do estilo de vida e nutricionistas funcionais."
+        },
+        {
+          "category": "mercado",
+          "tag": "Tendencias - Hormonios Femininos",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Alimentos e nutrientes que regulam hormonios femininos ganham destaque cientifico em 2026 — nova fronteira conecta nutricao funcional e equilibrio hormonal",
+          "summary": "Fitoestrogenios, magnesio, vitamina B6, inositol e omega-3 formam o protocolo nutricional de suporte hormonal feminino com maior respaldo cientifico em 2026. Consumidora busca prevencao natural antes de terapia hormonal convencional.",
+          "source": "Tua Saude, 26 Abr 2026 / Bonitamulher.com.br / Catracalivre / LabSL / Farmacotecnica 2026",
+          "curto": "6",
+          "medio": "9",
+          "longo": "9",
+          "idea": "Protocolo Hormonal Natural por fase do ciclo: pack mensal com dois SKUs — Fase Folicular (ferro + B12 + vitamina C) e Fase Lutea (magnesio + B6 + oleo de primula). Calendario menstrual integrado ao email."
+        },
+        {
+          "category": "tendencias",
+          "tag": "Tendencias - Adaptogenicos Validados",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "A ciencia responde: adaptogenicos realmente funcionam — Detroit News, abril 2026, consolida mecanismo de acao do eixo HPA e legitima categoria para o consumidor mainstream global",
+          "summary": "Detroit News, 8 Abr 2026: revisao de evidencias confirma que adaptogenicos atuam no eixo HPA com efeito documentado na reducao de cortisol, melhora cognitiva e suporte imunologico. Ashwagandha KSM-66 e Rhodiola rosea lideram trials controlados.",
+          "source": "Detroit News, 8 Abr 2026 / FoodConnection Guia Adaptogenicos / DASA Saude / Curious Elixirs / Mind Lab Pro 2026",
+          "curto": "5",
+          "medio": "8",
+          "longo": "9",
+          "idea": "Linha Adapto com certificacao de qualidade: Ashwagandha KSM-66 300mg + Adapto Stack Profissional + Adapto Reishi Night. Conteudo-ancora: Como escolher um adaptogenico — guia de padronizacao de extratos."
+        },
+        {
+          "category": "mercado",
+          "tag": "Dado - Crescimento Setorial",
+          "stars": "⭐⭐⭐",
+          "headline": "Mercado de nutricao e suplementos cresce 5,61% ao ano ate 2035 — varejo digital consolida-se como canal principal superando farmacias fisicas em frequencia de compra",
+          "summary": "O varejo digital tornou-se o ponto de contato primario do consumidor de suplementos. Marcas que constroem canal DTC proprio tem CAC 40-60% menor e LTV 2-3x maior que as que operam exclusivamente em marketplace.",
+          "source": "Paraiba Total, Abr 2026 / Labra E-commerce / GR6 / LabGrowth Marketing Digital / Food Connection 2026",
+          "curto": "5",
+          "medio": "7",
+          "longo": "9",
+          "idea": "Estrategia digital: SEO de ingrediente para cada SKU + email marketing segmentado por objetivo de saude + Subscribe and Save com desconto 15%. Meta: 40% da receita em assinaturas ate Q4 2026."
+        },
+        {
+          "category": "tendencias",
+          "tag": "Digital - Live Commerce",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Live commerce transforma vendas de suplementos no Brasil — formato converte 8,3% da audiencia ao vivo contra 1,8% do e-commerce tradicional",
+          "summary": "Live commerce de suplementos fitness cresce acima de 200% no Brasil em 2025-2026. Taxa de segunda compra em clientes adquiridos por live e 20% maior que em clientes de marketplace. Ainda nao ha player dominante no segmento natural.",
+          "source": "GR6 Novos Milionarios 2026 / LabGrowth Marketing Digital / Focusnetworks Wellness / Modash Brazil Fitness Influencers 2026",
+          "curto": "7",
+          "medio": "9",
+          "longo": "8",
+          "idea": "Programa Live Commerce: live semanal propria toda terca-feira as 20h + programa de embaixadoras nutricionistas com comissao 15% + TikTok Shop integrado. Meta: 2.000 espectadores simultaneos em 6 meses."
+        },
+        {
+          "category": "ciencia",
+          "tag": "Ciencia - Magnesio",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Magnesio bisglicinato lidera vendas como o mineral do sono, ansiedade e energia — um ingrediente, multiplos publicos, demanda estrutural com 70% dos brasileiros abaixo da ingestao adequada",
+          "summary": "Magnesio com evidencia clinica solida em quatro pilares de wellness: sono (regula GABA, -17 min para adormecer), ansiedade (cofator serotonina/dopamina), energia muscular (producao de ATP) e saude cardiovascular. Forma bisglicinato: absorcao 45-65% vs 15-20% do oxido.",
+          "source": "Teletica Suplementos 2026 / Paleobull Nutrientes Essenciais / Farmacotecnica Tendencias / IVB Pack / Farmacia Sao Lucas 2026",
+          "curto": "7",
+          "medio": "8",
+          "longo": "8",
+          "idea": "Linha Magnesio com tres posicionamentos: Magnesio Noite (bisglicinato 300mg + L-teanina + maracuja), Magnesio Energia (bisglicinato + B6 + zinco), Magnesio Sport (glicinato 400mg + potassio). Cross-sell obrigatorio entre os tres SKUs."
+        },
+        {
+          "category": "tendencias",
+          "tag": "Tendencias - FemTech Hormonal",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Saude feminina 2026 integra wearables e IA — 70% das mulheres usarao tecnologia personalizada para monitorar hormonios ate 2027, eliminando suplementacao generica",
+          "summary": "70% das mulheres usarao tecnologia personalizada de monitoramento hormonal ate 2027. Terapias hormonais ajustadas por IA cortam 80% de efeitos colaterais. Suplementacao personalizada por dados biometricos e a proxima grande categoria do wellness feminino.",
+          "source": "Bonitamulher.com.br Saude da Mulher 2026 / Catracalivre / Meganesia.com.br / Drogasil Blog / Sanavita 2026",
+          "curto": "4",
+          "medio": "8",
+          "longo": "10",
+          "idea": "Quiz de diagnostico no site (7 perguntas, 2 min) recomendando protocolo de produtos ideal. Calendario de suplementacao por fase do ciclo como brinde digital. Email sazonal por fase. Meta: NPS de 60 para 75 em 2026."
+        },
+        {
+          "category": "tendencias",
+          "tag": "Tendencias - Plant-Based 2026",
+          "stars": "⭐⭐⭐",
+          "headline": "Proteinas plant-based superam expectativas no Brasil em 2026 — mercado cresce alem das projecoes com publico nao-vegano como principal motor de expansao",
+          "summary": "Mercado plant-based supera R,2 bilhoes. 26% dos brasileiros consomem carne vegetal ao menos 1x/mes. Publico nao-vegano (intolerantes a lactose e consumidores conscientes) move categoria ao mainstream. Blend ervilha+arroz resolve aminoacidos essenciais.",
+          "source": "VeganBusiness.com.br 2026 / GFI Brasil / BHBFood Plant-Based / Exame Negocios / Agrishow Proteina Brasil 2026",
+          "curto": "4",
+          "medio": "7",
+          "longo": "8",
+          "idea": "Linha Plant Power: Proteina de Ervilha Isolada Premium (25g proteina + leucina + enzimas digestivas) + Barra Plant Protein (20g proteina, 0 acucar). Conteudo: review pessoal trocando whey por proteina vegetal com dados reais."
+        }
+      ]
+    },
+    {
       "date": "2026-04-25",
       "dateLabel": "25 de Abril de 2026",
       "cards": [
