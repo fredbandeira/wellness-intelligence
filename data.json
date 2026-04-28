@@ -1,6 +1,156 @@
 {
   "editions": [
     {
+      "date": "2026-04-28",
+      "dateLabel": "28 de Abril de 2026",
+      "cards": [
+        {
+          "category": "regulacao",
+          "tag": "Regulacao - Curcuma Hepatica",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "ANVISA atualiza limites de curcuma em suplementos por risco hepatico — nova rotulagem obrigatoria afeta todo portfolio com curcuminoides e exige adequacao urgente de embalagens",
+          "summary": "A ANVISA publicou em 22 de abril de 2026 nova norma atualizando os limites de uso de curcuma em suplementos alimentares, motivada por evidencias de dano hepatico identificadas no monitoramento pos-mercado. Advertencias obrigatorias para gestantes, criancas e hepatopatas. Tetraidrocurcuminoides incluidos com restricao de mistura.",
+          "source": "Agencia Brasil / Imirante.com / Acessa.com / Hoje em Dia / ANVISA Abr 2026",
+          "curto": "10",
+          "medio": "7",
+          "longo": "5",
+          "idea": "Adequacao emergencial de rotulagem + post de transparencia ANVISA-compliant + conteudo educativo Curcuma com seguranca para engajamento organico."
+        },
+        {
+          "category": "mercado",
+          "tag": "Mercado - Feminino Lidera",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Mulheres lideram consumo de suplementos no Brasil — 79% das brasileiras usam suplementos vs 71% dos homens e impulsionam nova onda de produtos femininos premium",
+          "summary": "Pesquisa do Instituto Locomotiva pelo Sincofarma SP mar 2026: 79% das mulheres consomem suplementos regularmente. Tres frentes: equilibrio hormonal, sono/bem-estar e beleza funcional. Mercado global de saude feminina vai dobrar para US16 bilhoes ate 2035.",
+          "source": "Sincofarma SP / Instituto Locomotiva / Brasnutri / Bonitamulher / Catracalivre 2026",
+          "curto": "9",
+          "medio": "9",
+          "longo": "8",
+          "idea": "Linha Ciclo Feminino por fase da vida (reprodutiva, perimenopausa, menopausa) com quiz no site para recomendacao personalizada de protocolo."
+        },
+        {
+          "category": "mercado",
+          "tag": "Mercado - Crescimento Brasil",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Mercado de suplementos do Brasil cresce 15% em 2025 e deve atingir R3,8 bilhoes ate 2030 — setor avanca em maturidade, ciencia e inovacao de formulacao",
+          "summary": "Crescimento de 15% em 2025 consolida Brasil como 3 maior mercado global. Suplementacao feminina, saude mental e transparencia cientifica definem o bienio 2026-2027. Euromonitor confirma trajetoria para R3,8bi.",
+          "source": "Revista Suplementacao / Euromonitor / BRASNUTRI / Food Connection / Revista Kdea 360 2026",
+          "curto": "5",
+          "medio": "8",
+          "longo": "9",
+          "idea": "Posicionamento de marca premium baseado em ciencia: pagina de transparencia com laudos por produto, newsletter Ciencia Voce Mais+ e certificacao de qualidade visivel."
+        },
+        {
+          "category": "ciencia",
+          "tag": "Dado - Deficiencia Nacional",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "85% dos brasileiros consomem abaixo da ingestao adequada de magnesio — pandemia silenciosa de deficiencia mineral cria demanda estrutural enorme",
+          "summary": "Dados IBGE: mais de 50% dos adultos com ingestao inadequada de magnesio; estimativas chegam a 85%. Solo empobrecido, processamento de alimentos e estresse cronico agravam deficiencia. Bisglicinato tem absorcao 3x superior ao oxido.",
+          "source": "Natusvita / Unikka Pharma / IBGE / Genius Nutra / MedBR 2026",
+          "curto": "7",
+          "medio": "8",
+          "longo": "8",
+          "idea": "Campanha O Mineral Invisivel + linha Magnesio com tres SKUs (manha/treino/noite) + bundle triplo com assinatura recorrente."
+        },
+        {
+          "category": "ciencia",
+          "tag": "Ciencia - Ashwagandha KSM-66",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "KSM-66 reduz cortisol em atletas em novo estudo de janeiro 2026 — pesquisa valida mecanismo HPA em esportes coletivos e consolida claims de reducao de estresse para o mainstream",
+          "summary": "Estudo MDPI Nutrients jan 2026: 600mg/dia de KSM-66 por 42 dias reduz cortisol e melhora recuperacao em atletas de rugby, polo aquatico e futebol. Seguranca confirmada ate 1250mg/dia. Eixo HPA documentado.",
+          "source": "NutraIngredients Jan 2026 / MDPI Nutrients / KSM66 Science / Vitafoods Insights 2026",
+          "curto": "5",
+          "medio": "8",
+          "longo": "8",
+          "idea": "Linha Adapto KSM-66 com padronizacao 5% withanolidas declarada no rotulo + Adapto Stack Performance + Adapto Night com Reishi."
+        },
+        {
+          "category": "ciencia",
+          "tag": "Ciencia - Psicobioticos",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Psicobioticos emergem como fronteira da saude mental natural — eixo microbiota-intestino-cerebro consolida mercado de probioticos com claims cognitivos no Brasil",
+          "summary": "95% da serotonina produzida no intestino. Cepas L. rhamnosus e B. longum com evidencia em ansiedade e depressao. Mercado de probioticos cresce CAGR 9,88%. Akkermansia muciniphila emerge em saude metabolica.",
+          "source": "Nutritotal / ESADI / Fiocruz InVivo / Revista Questao de Ciencia / Debates em Psiquiatria 2026",
+          "curto": "6",
+          "medio": "9",
+          "longo": "9",
+          "idea": "Simbiotico Equilibrio Mental com cepas psicobioticas + FOS + L-triptofano. Conteudo-ancora Seu intestino e seu segundo cerebro."
+        },
+        {
+          "category": "tendencias",
+          "tag": "Tendencias - Clean Label Global",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Clean label define compra para 42% dos consumidores globais — mercado US4,97 bilhoes com CAGR 7,18% ate 2034 e transparencia de rotulo se torna barreira de entrada para marcas",
+          "summary": "42% dos consumidores definem clean label por ingredientes naturais. 40% dos usuarios de suplementos citam qualidade como fator primario de escolha. 58% querem informacoes claras sobre ingredientes e origem.",
+          "source": "Innova Market Insights / Allied Market Research / Glanbia Nutritionals / Makers Nutrition 2026",
+          "curto": "5",
+          "medio": "8",
+          "longo": "9",
+          "idea": "Estrategia Clean Label Total: revisao de rotulagem com nomes acessiveis, pagina de ingredientes com laudos, declaracao das ausencias no rotulo."
+        },
+        {
+          "category": "mercado",
+          "tag": "Dado - Saude Feminina Global",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Mercado global de saude feminina vai de US63 bilhoes para US16 bilhoes ate 2035 — menopausa como maior oportunidade subatendida com US0 trilhoes em demanda nao satisfeita",
+          "summary": "Capital de risco em saude feminina cresceu 314% entre 2018 e 2023. Geracao Millennial entra em perimenopausa em massa entre 2026 e 2032. Isoflavonas, magnesio, maca peruana e D3+K2 lideram suplementos para climatério.",
+          "source": "Silicon Valley Bank FemTech Report / Central do Varejo / Bonitamulher / Ocean Drop / Marcas e Mercados 2026",
+          "curto": "6",
+          "medio": "9",
+          "longo": "9",
+          "idea": "Linha Voce Mais+ Climatério com Equilibrio Hormonal + Ossa Fortes + Vitalidade Plus. Campanha Menopausa nao e o fim."
+        },
+        {
+          "category": "ciencia",
+          "tag": "Ciencia - Lions Mane",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Lion s Mane e cogumelos funcionais saem do nicho para o mainstream em 2026 — mercado global projeta US5,8 bilhoes ate 2030 com neuronutricao como principal driver",
+          "summary": "Hericium erinaceus estimula NGF (fator de crescimento nervoso). Mercado global de cogumelos funcionais cresce 8,3% ao ano. Lion Mane projeta US,5bi ate 2030. Cafe funcional com cogumelos e tendencia de produto de entrada.",
+          "source": "Mordor Intelligence / BJHR Hericium 2026 / Armillab / Kayamind / Food Connection Cogumelos 2026",
+          "curto": "5",
+          "medio": "9",
+          "longo": "9",
+          "idea": "Linha Cogumelos Funcionais: Lion s Mane 500mg + Cogni Stack + Cafe Funcional como produto de entrada."
+        },
+        {
+          "category": "ciencia",
+          "tag": "Ciencia - Colageno Tipo II",
+          "stars": "⭐⭐⭐",
+          "headline": "Colageno tipo II avanca em saude articular com evidencia clinica robusta — busca 8x maior que tipo I no Brasil consolida categoria em publico ativo 40+",
+          "summary": "UC-II nao desnaturado age por tolerancia oral protegendo cartilagem. Estudos mostram reducao de dor e rigidez articular vs placebo. Eficacia em 40mg/dia. Busca 8x maior que tipo I no Brasil em 2026.",
+          "source": "My Best Brasil / Dr. Diego Munhoz / Selektz Brasil / Espacosaude / Projeto Acerto 2026",
+          "curto": "4",
+          "medio": "7",
+          "longo": "8",
+          "idea": "Linha Mobilidade com UC-II 40mg + Articular Stack completo + Colageno Multi-Age combinando tipos I e II."
+        },
+        {
+          "category": "ciencia",
+          "tag": "Ciencia - Vitamina D Brasil",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "66% dos brasileiros tem insuficiencia de vitamina D mesmo em pais tropical — Fiocruz confirma paradoxo com prevalencia similar a paises europeus",
+          "summary": "Estudo multicentrico Fiocruz (SP, Salvador, Curitiba): 60 a 72% da populacao adulta com niveis subotimos de D3 mesmo no verao. Magnesio e cofator essencial para ativar vitamina D no organismo — sinergia de produto.",
+          "source": "Agencia Fiocruz / Portal Fiocruz / Correio Braziliense Jan 2026 / Unikka Pharma / Genius Nutra 2026",
+          "curto": "6",
+          "medio": "8",
+          "longo": "8",
+          "idea": "Stack Sol+ (D3+K2+Mg) com sinergia declarada + campanha O Paradoxo Brasileiro com meta de 3mi visualizacoes organicas."
+        },
+        {
+          "category": "tendencias",
+          "tag": "Tendencias - Plant-Based 2026",
+          "stars": "⭐⭐⭐",
+          "headline": "Mercado plant-based supera R,2 bilhoes no Brasil em 2026 — blend ervilha mais arroz converte publico nao-vegano e consolida proteina vegetal como alternativa mainstream",
+          "summary": "50% dos brasileiros sao flexitarianos. Mercado plant-based caminha para superar R,2bi em 2026. Mulheres intolerantes a lactose sao o motor do crescimento em suplementos de proteina vegetal.",
+          "source": "VeganBusiness / GFI Brasil / Exame Negocios / Euromonitor / BHBFood 2026",
+          "curto": "4",
+          "medio": "7",
+          "longo": "8",
+          "idea": "Linha Plant Power com proteina de ervilha isolada premium + enzimas digestivas + Desafio 30 Dias Plant como campanha de aquisicao."
+        }
+      ]
+    },
+    {
       "date": "2026-04-27",
       "dateLabel": "27 de Abril de 2026",
       "cards": [
