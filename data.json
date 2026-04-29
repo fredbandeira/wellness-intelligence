@@ -1,6 +1,156 @@
 {
   "editions": [
     {
+      "date": "2026-04-29",
+      "dateLabel": "29 de Abril de 2026",
+      "cards": [
+        {
+          "category": "regulacao",
+          "tag": "Regulacao - ANVISA Fiscalizacao Ativa",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "ANVISA barra suplementos sem registro sanitario em operacao de marco 2026 — agencia entra na era da fiscalizacao ativa e o mercado informal perde espaco de vez",
+          "summary": "Em marco de 2026, a ANVISA intensificou sua acao de fiscalizacao pos-mercado, barrando suplementos sem notificacao sanitaria regular. O prazo de adequacao encerrou em setembro de 2025. Para marcas regulares, cada acao da ANVISA contra o informal e uma oportunidade: o consumidor migra para marcas com seguranca regulatoria comprovada.",
+          "source": "Terra Brasil Noticias ANVISA / Gov.br Agenda Regulatoria 2026-2027 / Sincofarma SP / CRN6",
+          "curto": "10",
+          "medio": "8",
+          "longo": "7",
+          "idea": "Publicar declaracao de compliance ANVISA com numero de notificacao de cada produto visivel; post educativo Como verificar se seu suplemento e regularizado; campanha de aquisicao com mensagem seguranca primeiro."
+        },
+        {
+          "category": "mercado",
+          "tag": "Mercado - GLP-1 Suplementacao",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Ozempic e GLP-1 dobram mercado para R$20 bilhoes em 2026 e criam nova demanda urgente por suplementacao de suporte nutricional em usuarios de emagrecedores",
+          "summary": "Com a patente do Ozempic vencendo no Brasil em abril de 2026, o mercado de GLP-1 deve atingir R$20bi. Usuarios apresentam deficiencias de proteina, magnesio, zinco e vitaminas B — criando nova categoria adjacente de suplementos de suporte.",
+          "source": "InvestNews Ozempic 2026 / Food Connection GLP-1 Suplementos / FoodBiz Brasil GLP-1",
+          "curto": "9",
+          "medio": "10",
+          "longo": "9",
+          "idea": "Linha Suporte GLP-1: proteina vegetal 20g + enzimas digestivas; Nutri Reposicao GLP-1 com magnesio + zinco + B12 + D3; Fibra Metabolica psyllium + inulina. Parceria com endocrinologistas prescritores."
+        },
+        {
+          "category": "tendencias",
+          "tag": "Tendencias - Fibras em Alta",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Fibras explodem 62,3% em buscas em um ano e emergem como nova protagonista da suplementacao preventiva superando proteina em crescimento de interesse",
+          "summary": "Google Trends e Exploding Topics: 62,3% de crescimento em buscas por fibras em 12 meses. Inulina, psyllium e pectina saem do nicho digestivo para virar estrategia de saude metabolica, saciedade e microbioma.",
+          "source": "Ekobe Nutraceuticos 2026 / Food Connection Mercado / Glanbia Nutritionals Top 5 Trends 2026",
+          "curto": "5",
+          "medio": "8",
+          "longo": "9",
+          "idea": "Fibra Metabolica Premium: blend psyllium + inulina + beta-glucana; Bundle Microbioma Total com probiotico + omega-3; campanha sinergia com usuarios de GLP-1."
+        },
+        {
+          "category": "tendencias",
+          "tag": "Tendencias - Nootropicos Mainstream",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Nootropicos lideram crescimento cognitivo — Lion Mane, Bacopa e Ashwagandha saem do nicho para o mainstream em 2026 com mercado global projetando US$50 bilhoes ate 2033",
+          "summary": "CAGR de 15,7% para nootropicos. Trabalho remoto e sobrecarga digital impulsionam busca por foco e memoria naturais. Lion Mane cresceu 340% em buscas brasileiras em 3 anos.",
+          "source": "Ekobe Nutraceuticos 2026 / Vitaminer Lions Mane / Blog Farmacia Sempre Viva Lion Mane",
+          "curto": "6",
+          "medio": "9",
+          "longo": "9",
+          "idea": "Linha Cogni: Lion Mane 500mg padronizado + Cogni Stack com Bacopa + L-teanina + Cafe Funcional com Lion Mane como produto de entrada. Live com neurologista para lancamento."
+        },
+        {
+          "category": "ciencia",
+          "tag": "Ciencia - Longevidade NMN NAD+",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "NMN mais Resveratrol aumenta NAD+ em 1,7x em musculo e 1,6x no coracao — combinacao longevidade consolida protocolo anti-aging preferido por biologos e medicos de medicina preventiva",
+          "summary": "Estudo Garber 2024: sinergia comprovada NMN + Resveratrol eleva NAD+ 1,7x no musculo. Mercado de longevidade cresce CAGR 8,9%. Busca por NMN cresceu 280% no Brasil entre 2023-2025.",
+          "source": "Vitaminer NAD+ Lipossomal 2026 / Naturecan NMN / LCL Med Longevidade / Metropoles Harvard Suplementos",
+          "curto": "5",
+          "medio": "8",
+          "longo": "9",
+          "idea": "Linha Longevidade Ativa: NMN 250mg Lipossomal + Longevity Stack com NMN + Resveratrol + CoQ10 + Vitamina C. Ticket medio 2,8x superior a media do portfolio."
+        },
+        {
+          "category": "ciencia",
+          "tag": "Ciencia - Colageno Oxford 2026",
+          "stars": "⭐⭐⭐",
+          "headline": "Revisao Oxford jan 2026 redefine claims do colageno — elasticidade confirmada, anti-rugas refutado; marcas precisam reformular comunicacao ou enfrentar risco regulatorio",
+          "summary": "Aesthetic Surgery Journal jan 2026: colageno hidrolisado melhora elasticidade e hidratacao da pele de forma estatisticamente significativa, mas nao previne rugas formadas. Marcas com claims anti-rugas em risco regulatorio.",
+          "source": "Bons Fluidos Colageno Revisao 2026 / Correio Braziliense Colageno Estudo / Metropoles Colageno Rugas",
+          "curto": "7",
+          "medio": "6",
+          "longo": "7",
+          "idea": "Reposicionar claims para elasticidade e firmeza comprovadas em estudos; diferenciar tipo I (pele) do tipo II UC-II (articulacoes); criar pagina de evidencias com resumo da revisao Oxford."
+        },
+        {
+          "category": "mercado",
+          "tag": "Mercado - Economia Climaterica",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Menopausa impulsiona economia climaterica com mercado feminino 45+ dobrando para US$316 bilhoes ate 2035 — segmento mais subatendido do wellness brasileiro espera por marcas com voz propria",
+          "summary": "Geração Millennial entra em massa na perimenopausa 2026-2032. Capital de risco em FemTechs cresceu 314% entre 2018-2023. No Brasil, nenhuma marca nativa posicionada especificamente para perimenopausa e menopausa.",
+          "source": "Silicon Valley Bank FemTech / Bonitamulher Saude Mulher 2026 / Central do Varejo Menopausa / Meio e Mensagem Economia Climaterica",
+          "curto": "7",
+          "medio": "9",
+          "longo": "9",
+          "idea": "Linha Voce Mais+ Climaterio: Equilibrio Hormonal (isoflavonas + trevo vermelho + magnesio); Sono e Calma (magnesio + ashwagandha + L-teanina); Ossatura Forte (calcio + D3 + K2). Quiz online para captacao de leads."
+        },
+        {
+          "category": "ciencia",
+          "tag": "Dado - Magnesio Nacional 85%",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "85% dos brasileiros abaixo da ingestao adequada de magnesio — pandemia silenciosa de deficiencia mineral cria demanda recorrente e estrutural",
+          "summary": "Dados IBGE: 50%+ de inadequacao declarada, estimativas de mercado chegam a 85%. Solo empobrecido + processamento industrial + fatores de perda (estresse, cafe, alcool) explicam o paradoxo. Bisglicinato tem absorcao 3x superior ao oxido.",
+          "source": "Natusvita Magnesio / Vitaminar Deficiencia Magnesio / IBGE INA 2026 / Nutritotal Desafios Nutricionais",
+          "curto": "8",
+          "medio": "8",
+          "longo": "9",
+          "idea": "Linha Magnesio Essencial por momento: Manha (bisglicinato + B6 + zinco), Sport (glicinato + potassio), Sono (bisglicinato + L-teanina + valeriana). Campanha O Mineral Invisivel com video 90s."
+        },
+        {
+          "category": "tendencias",
+          "tag": "Tendencias - Clean Label Global",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Clean label define compra para 42% dos consumidores — mercado ingredientes naturais vale US$83 bilhoes ate 2034 e transparencia de rotulo vira barreira de entrada no segmento premium",
+          "summary": "FMCG Gurus Trend Report 2026: mercado clean label CAGR 7,18%. 42% dos consumidores decidem por ingredientes naturais; 81% consideram importante comprar clean label. Gap brasileiro: marcas locais ainda ocultam forma quimica dos ingredientes.",
+          "source": "FMCG Gurus Clean Label 2026 / Allied Market Research / Innova Market Insights / Glanbia Nutritionals",
+          "curto": "5",
+          "medio": "8",
+          "longo": "9",
+          "idea": "Declarar forma quimica em todos os rotulos; criar fichas de ingredientes no site; lancamento do Rotulo Negativo (sem corantes artificiais, sem edulcorantes sinteticos, sem titanio); serie educativa Como ler um rotulo de suplemento."
+        },
+        {
+          "category": "ciencia",
+          "tag": "Ciencia - Psicobioticos Eixo Intestino-Cerebro",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Psicobioticos consolidam eixo intestino-cerebro como fronteira da saude mental natural — probioticos com claims cognitivos crescem CAGR 9,88% e abrem nova categoria no Brasil",
+          "summary": "95% da serotonina no intestino. L. rhamnosus, B. longum e L. helveticus com evidencia em ansiedade e humor. Akkermansia muciniphila emerge em saude metabolica. Mercado de probioticos CAGR 9,88%. Desafio: garantir 10bi UFCs viáveis na data de validade.",
+          "source": "Nutritotal Psicobioticos / Fiocruz InVivo / Debates em Psiquiatria Microbiota 2026",
+          "curto": "6",
+          "medio": "9",
+          "longo": "9",
+          "idea": "Psicobiotico Equilibrio: L. rhamnosus + B. longum + L. helveticus + FOS; Gut-Brain Stack com magnesio + L-triptofano; comunicacao focada em qualidade de sono e reducao de ansiedade, nao apenas digestao."
+        },
+        {
+          "category": "ciencia",
+          "tag": "Ciencia - Vitamina D Paradoxo Fiocruz",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "66% dos brasileiros com insuficiencia de vitamina D mesmo em pais tropical — Fiocruz 2026 confirma paradoxo que cria janela de suplementacao preventiva de grande escala",
+          "summary": "Estudo Fiocruz 2026: entre 60-72% da populacao adulta nas tres capitais com niveis subotimos. Protetor solar, trabalho fechado e IMC explicam o paradoxo. Magnesio e cofator essencial para ativar a D3 — sinergia poderosa de produto.",
+          "source": "Agencia Fiocruz de Noticias / Fiocruz Estudo Vitamina D / Correio Braziliense Jan 2026 / Unikka Pharma",
+          "curto": "6",
+          "medio": "8",
+          "longo": "8",
+          "idea": "Stack Sol+: D3+K2+Mg Premium (2000UI + MK-7 45mcg + bisglicinato 150mg); video O Paradoxo Brasileiro com estimativa de 2 milhoes de visualizacoes organicas; bundle D+Mg com assinatura mensal."
+        },
+        {
+          "category": "mercado",
+          "tag": "Mercado - Plant-Based Proteina",
+          "stars": "⭐⭐⭐",
+          "headline": "Plant-based supera R$2,2 bilhoes no Brasil em 2026 — blend ervilha mais arroz converte publico nao-vegano e abre corrida por proteina vegetal limpa como alternativa ao whey",
+          "summary": "GFI Brasil: crescimento acumulado 70% entre 2019-2025. Motor do crescimento: flexitarianos (50% dos brasileiros), nao veganos. Mulher 25-45 anos intolerante a lactose e o perfil-alvo. Textura e palatabilidade ainda sao gargalos.",
+          "source": "VeganBusiness Plant-Based 2026 / GFI Brasil / Exame Plant-Based / Euromonitor",
+          "curto": "4",
+          "medio": "7",
+          "longo": "8",
+          "idea": "Plant Power Premium: blend ervilha 60% + arroz 40% com leucina isolada 1g e enzimas digestivas; Barra Plant 20g proteina 0 acucar; Desafio 30 Dias Plant para conversao de usuarios de whey."
+        }
+      ]
+    },
+    {
       "date": "2026-04-28",
       "dateLabel": "28 de Abril de 2026",
       "cards": [
