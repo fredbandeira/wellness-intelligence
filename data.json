@@ -1,6 +1,156 @@
 {
   "editions": [
     {
+      "date": "2026-04-30",
+      "dateLabel": "30 de Abril de 2026",
+      "cards": [
+        {
+          "category": "regulacao",
+          "tag": "Regulacao - ANVISA Curcuma Novos Limites",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "ANVISA publica novos limites para curcuma em suplementos em abril de 2026 — curcuminoides com teto de 130mg/dia e prazo de 6 meses para adequacao de formulas e embalagens",
+          "summary": "A ANVISA publicou em abril de 2026 Instrucao Normativa que redefine os parametros maximos de curcuma em suplementos: Curcumina maxima 130mg/dia, Tetraidrocurcuminoides 120mg/dia, Curcuminoides totais minimo 80mg/dia. Produtos devem exibir advertencia para grupos de risco e empresas tem 6 meses para adequar formulas e embalagens. A curcuma e o 3 ingrediente mais vendido em suplementos no Brasil, presente em mais de 1.200 SKUs notificados.",
+          "source": "Revista Forum ANVISA Curcuma Abr 2026 / Gov.br ANVISA Agenda Regulatoria 2026-2027",
+          "curto": "10",
+          "medio": "8",
+          "longo": "7",
+          "idea": "Auditoria imediata de todos os SKUs com curcuma, publicacao de declaracao de conformidade ANVISA e conteudo educativo Por que a ANVISA regulou a curcuma — posiciona a Voce Mais+ como marca de compliance ativo."
+        },
+        {
+          "category": "mercado",
+          "tag": "Mercado - Brasil Suplementos R3,8bi 2030",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Mercado de suplementos cresce 15% em 2025 e deve atingir R3,8 bilhoes ate 2030 — Brasil consolida posicao entre os 5 maiores mercados globais",
+          "summary": "Mercado brasileiro de suplementos cresceu 15% em 2025, acima da media global de 8-9%. Projecao de R3,8 bilhoes ate 2030. Fatores: envelhecimento, digitalizacao do canal DTC e expansao de prescritores de saude funcional. Capital estrangeiro (Glanbia, Kerry Group) acelera entrada no Brasil para 2026-2027.",
+          "source": "Revista Suplementacao 2025 / ABIAD / Euromonitor International",
+          "curto": "6",
+          "medio": "8",
+          "longo": "9",
+          "idea": "Canal DTC first, programa de assinaturas e rede de 200 prescritores ativos como antecipacao da entrada de capital estrangeiro no mercado."
+        },
+        {
+          "category": "tendencias",
+          "tag": "Tendencias - Magnesio Formas Moleculares",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Magnesio entra na era da personalizacao molecular — consumidor de 2026 pesquisa bisglicinato vs taurato vs treonato e rejeita produto sem declaracao de forma quimica",
+          "summary": "Busca por magnesio bisglicinato cresceu 280% e por magnesio treonato 190% no Google Trends Brasil em 24 meses. Consumidor educado exige declaracao da forma quimica e escolhe o magnesio pelo objetivo: bisglicinato para sono, taurato para cardiovascular, treonato para cognicao, malato para energia.",
+          "source": "GeniusNutra Magnesio 2026 / Farmacotecnica Tendencias 2026 / Hile Suplementos 2026",
+          "curto": "7",
+          "medio": "9",
+          "longo": "9",
+          "idea": "Linha Magnesio Personalizado com 4 SKUs por objetivo + quiz Qual magnesio e o seu? para captacao organica."
+        },
+        {
+          "category": "ciencia",
+          "tag": "Ciencia - NMN Pressao Arterial Idosos",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Meta-analise 2026 confirma: NMN reduz pressao arterial diastolica de forma significativa com efeito mais forte em adultos acima de 60 anos",
+          "summary": "Revisao sistematica publicada na Nutrients 2026 mostra reducao de 3,8mmHg sistolica e 2,4mmHg diastolica em 60+. Mecanismo: NMN eleva NAD+ que ativa SIRT1, regulando funcao endotelial e oxido nitrico. Mercado longevidade cresce CAGR 8,9%. NMN ainda aguarda regularizacao na Agenda ANVISA 2026-2027.",
+          "source": "Tua Saude NMN Abr 2026 / PubMed NMN RCT / Neuroganhealth NMN News 2026",
+          "curto": "5",
+          "medio": "8",
+          "longo": "9",
+          "idea": "Monitorar regularizacao NMN pela ANVISA em 2026-2027; preparar dossiê tecnico para submissao e lista de espera pre-lancamento com webinar cientifico."
+        },
+        {
+          "category": "ciencia",
+          "tag": "Ciencia - Cogumelos Funcionais Mercado",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Lion Mane, Chaga e Reishi impulsionam mercado de cogumelos funcionais para US,5 bilhoes ate 2030 — CAGR 8,3% com saude cerebral como vetor principal",
+          "summary": "Lion Mane cresceu 340% em buscas no Brasil em 3 anos. Hericenonas e erinacinas estimulam NGF confirmado em estudos clinicos japoneses. Mercado global projetado em US,5bi ate 2030. Reishi e Chaga somam-se como pilares de imunidade e adaptogenicidade.",
+          "source": "Vitaminer Lions Mane Chaga 2026 / Mushmush Lion Mane / iHerb Lions Mane Benefits",
+          "curto": "6",
+          "medio": "9",
+          "longo": "9",
+          "idea": "Linha Fungi+: Lion Mane 500mg corpo do fruto padronizado + Reishi Imunidade + Fungi Stack Adaptogenico; lancamento via canais de produtividade e biohacking."
+        },
+        {
+          "category": "regulacao",
+          "tag": "Regulacao - Biohealth Conference Maio 2026",
+          "stars": "⭐⭐⭐",
+          "headline": "Biohealth Conference 2026 debate novo marco regulatorio de fitoterapicos em Sao Paulo em 8 e 9 de maio — ANVISA discute NMN, Akkermansia e claims de saude mental",
+          "summary": "Maior evento cientifico de fitoterapicos do Brasil reune industria, pesquisadores e ANVISA. Pautas: revisao de limites de vitaminas, novos ingredientes (NMN, Akkermansia), claims de saude mental e regulacao de suplementos personalizados. Marco de fitoterapicos de dez/2025 alinha Brasil a padroes OMS e UE.",
+          "source": "Folha de Curitiba Biohealth 2026 / Gov.br ANVISA Agenda 2026-2027",
+          "curto": "7",
+          "medio": "8",
+          "longo": "7",
+          "idea": "Enviar representante ao evento; networking com ANVISA e pesquisadores; producao de relatorio pos-evento compartilhado como conteudo de autoridade."
+        },
+        {
+          "category": "tendencias",
+          "tag": "Tendencias - Psicobioticos Tri-Biotics",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Psicobioticos consolidam eixo intestino-cerebro — tri-biotics de 4a geracao chegam ao mercado com cepas especificas para ansiedade, humor e sono",
+          "summary": "95% da serotonina e produzida no intestino; psicobioticos de 4a geracao combinam pre+pro+pos-biotics em formulacao sinergica. Cepas com maior evidencia: L. rhamnosus JB-1, B. longum 1714 e L. helveticus R0052+B. longum R0175 (reducao de cortisol e melhora de sono). Mercado de probioticos cresce CAGR 9,88%.",
+          "source": "Pharma Scalabis Tri-Bioticos 2026 / Nutritotal Psicobioticos / Debates em Psiquiatria Microbiota",
+          "curto": "5",
+          "medio": "9",
+          "longo": "9",
+          "idea": "Psicobiotico Calm com cepas selecionadas + Gut-Brain Stack premium; comunicacao via saude mental e bem-estar sem claims terapeuticos; parceria com psicologas e nutricionistas funcionais."
+        },
+        {
+          "category": "mercado",
+          "tag": "Mercado - Mulheres Lideram Consumo 2026",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "79% das mulheres usam suplementos e lideram o mercado — as 3 tendencias que ditam a pauta do maior segmento nacional",
+          "summary": "Instituto Locomotiva: 79% das mulheres brasileiras usam suplementos vs 71% dos homens; media de 18 minutos de pesquisa por produto. As 3 tendencias: (1) suplementacao ciclo-sintonizada; (2) saude mental e hormonal integrada; (3) longevidade feminina preventiva com D3+K2, calcio e NMN.",
+          "source": "Sincofarma SP Mar 2026 / Instituto Locomotiva / Farmacotecnica Tendencias 2026",
+          "curto": "7",
+          "medio": "9",
+          "longo": "9",
+          "idea": "Ciclo Feminino Pack com 4 SKUs por fase + newsletter Saude Feminina com Ciencia com meta de 10.000 assinantes."
+        },
+        {
+          "category": "tendencias",
+          "tag": "Mercado - FemTechs Saude Feminina 2026",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Revolucao FemTech: mercado de menopausa e climaterio projeta US16 bilhoes ate 2035 com geracao Millennial na perimenopausa e territorio vazio de marcas nativas no Brasil",
+          "summary": "Geracao Millennial entra na perimenopausa entre 2026-2032; mercado global de saude feminina vai de US63bi a US16bi ate 2035. Capital de risco em FemTechs cresceu 314% desde 2018. Isoflavonas reduzem fogachos em 40% (Maturitas 2023). Nao existe marca de suplementos naturais posicionada para climaterio no Brasil.",
+          "source": "Estado de Minas FemTechs Abr 2026 / Central do Varejo Menopausa / Silicon Valley Bank FemTech Report",
+          "curto": "7",
+          "medio": "10",
+          "longo": "9",
+          "idea": "Linha Climaterio Voce Mais+: Equilibrio Hormonal (isoflavonas+trevo vermelho), Sono e Calma 45+ (magnesio+ashwagandha), Ossatura Forte (Ca+D3+K2); quiz de personalizacao e parceria com ginecologistas."
+        },
+        {
+          "category": "mercado",
+          "tag": "Dados - Wellness Global US,8 Trilhoes",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Economia do wellness atinge US,8 trilhoes em 2024 — longevidade, fibras e digitalizacao da saude sao os tres pilares do crescimento ate 2029",
+          "summary": "Global Wellness Institute: US,8 trilhoes em 2024, crescendo para US0 trilhoes ate 2029 (CAGR 7,3%). Brasil: US6 bilhoes, maior mercado da AL. 60% dos consumidores globais tem longevidade como prioridade alta. Fibras crescem 43,8% em buscas em um ano. Wearables e apps criam nova demanda por suplementacao de precisao.",
+          "source": "GWI Global Wellness Institute 2025 / Infomoney Wellness / Naturaltech Macroeconomia",
+          "curto": "5",
+          "medio": "8",
+          "longo": "9",
+          "idea": "Hub de conteudo Longevidade Possivel + quiz de inteligencia de saude personalizado + programa de acompanhamento de resultados para dados proprios de marketing."
+        },
+        {
+          "category": "tendencias",
+          "tag": "Mercado - Plant-Based Brasil 2026",
+          "stars": "⭐⭐⭐",
+          "headline": "Mercado plant-based supera R,2 bilhoes no Brasil com flexitarianos como novo motor — blend ervilha mais arroz converte publico que nunca se chamou de vegano",
+          "summary": "50% dos brasileiros sao flexitarianos; 35% tem intolerancia a lactose. Mercado plant-based supera R,2bi em 2026 segundo Euromonitor. A barreira de adocao e palatabilidade. Startup Geltor lanca primeiro colageno plant-based via fermentacao microbiana — sinal de que ate o colageno vai se democratizar.",
+          "source": "VeganBusiness Plant-Based 2026 / GFI Brasil / Euromonitor",
+          "curto": "4",
+          "medio": "7",
+          "longo": "8",
+          "idea": "Proteina Vegetal 25g Premium com tecnologia de microencapsulamento para palatabilidade equivalente ao whey; Desafio 30 Dias Plant para conversao de intolerantes a lactose."
+        },
+        {
+          "category": "tendencias",
+          "tag": "Digital - LODs e Microinfluencia Saude",
+          "stars": "⭐⭐⭐",
+          "headline": "Era dos Lideres de Opiniao Digital transforma marketing de wellness — microinfluenciadores especialistas geram conversao 3x superior a celebridades genericas em saude",
+          "summary": "Micro-influenciadores de saude (5k-100k seguidores) tem engajamento 6x superior e conversao 3x maior vs macro-influenciadores. Videos de saude cresceram 2.670% em interesse (2022-2025). 77% dos consumidores de fitness sao mulheres 25-34 anos. O termo influenciador e obsoleto no wellness — o futuro e dos LODs com credibilidade profissional verificavel.",
+          "source": "FocusNetworks Content Wellness 2026 / Hipermidia TikTok Instagram Saude / CreatorEconomy Influenciadores Saude",
+          "curto": "6",
+          "medio": "8",
+          "longo": "8",
+          "idea": "Programa LOD Voce Mais+ com 30 profissionais de saude; biblioteca de conteudo cientifico exclusiva; politica anti-well-washing como diferencial de marca; comissao de 15% sobre vendas rastreadas."
+        }
+      ]
+    },
+    {
       "date": "2026-04-29",
       "dateLabel": "29 de Abril de 2026",
       "cards": [
