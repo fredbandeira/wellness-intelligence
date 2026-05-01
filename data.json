@@ -1,6 +1,168 @@
 {
   "editions": [
     {
+      "date": "2026-05-01",
+      "dateLabel": "1 de Maio de 2026",
+      "cards": [
+        {
+          "category": "ciencia",
+          "tag": "Ciencia - Psicobioticos ADM 30 Abr 2026",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Estudo ADM (30 abr 2026) confirma: blend psicobiotico reduz estresse percebido e melhora vitalidade em duplo-cego de 12 semanas - eixo intestino-cerebro vira pauta central do wellness de maio",
+          "summary": "Pesquisa ADM publicada em 30/04/2026 na NutraIngredients confirma que blend B. longum CECT 7347 + L. rhamnosus CECT 8361 preserva bacterias produtoras de butirato e reduz cortisol em 12 semanas. Postbioticos emergem como proxima geracao com vantagens de estabilidade. Dia do Trabalhador 2026: burnout e estresse sao os principais drivers de vendas de psicobioticos.",
+          "source": "NutraIngredients ADM Psychobiotics April 30 2026 / Frontiers Microbiology Mar 2026 / MDPI Nutrients Gut-Brain Axis",
+          "curto": "9",
+          "medio": "9",
+          "longo": "9",
+          "idea": "Lancamento Psicobiotico Equilibrio Mental em campanha Maio da Saude Mental - blend com cepas clinicamente validadas; parceria com psicologas e nutris funcionais como LODs; pre-venda com desconto de lancamento."
+        },
+        {
+          "category": "tendencias",
+          "tag": "Alerta - Vitamina D Inverno Brasil Maio 2026",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Brasil entra no outono-inverno e vitamina D cai 30% - 52% dos adultos em Sao Paulo ja tem insuficiencia; janela de suplementacao de maior urgencia do ano se abre em maio",
+          "summary": "52,4% dos adultos em SP tem insuficiencia de vitamina D antes do inverno. No periodo frio, niveis caem 30% adicionalmente. SP recebe menos de 3h de sol/dia entre maio e agosto. Combinacao D3+K2 cresceu 22% ao ano em buscas no Brasil.",
+          "source": "Fiocruz Deficiencia Vitamina D Brasil / ABRASSO Vitamina D Outono Inverno / O Povo Mar 2026",
+          "curto": "9",
+          "medio": "8",
+          "longo": "7",
+          "idea": "Campanha Inverno Sem Deficiencia com produto D3 2000UI + K2 MK-7 45mcg; quiz de risco; bundle D3+K2 + Omega-3 + Magnesio com desconto sazonal."
+        },
+        {
+          "category": "tendencias",
+          "tag": "Tendencias - Adaptogenicos Burnout Wellness 2026",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Adaptogenicos dominam wellness de 2026 - epidemia de burnout impulsiona mercado de US$64 bilhoes; ashwagandha reduz cortisol 27,9% em 60 dias e vira o suplemento do trabalhador consciente",
+          "summary": "Mercado global de herbal supplements supera US$64bi em 2026, CAGR acima de 11%. Ashwagandha KSM-66 cresce 340% em buscas no Brasil em 3 anos. Rhodiola e Lion Mane completam o trio adaptogenico. Burnout e estresse cronico sao os principais drivers de vendas.",
+          "source": "Collagen Sei Herbal Market 2026 / MixMasters Trends 2026 / FoodNavigator Functional Ingredients 2026",
+          "curto": "7",
+          "medio": "9",
+          "longo": "9",
+          "idea": "Stack Anti-Burnout (ashwagandha + rhodiola + lion mane) com campanha Dia do Trabalhador; quiz Voce esta em burnout?; bundle com psicobiotico e magnesio."
+        },
+        {
+          "category": "ciencia",
+          "tag": "Ciencia - Frontiers Gut-Brain Axis Mar 2026",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Frontiers in Microbiology (mar 2026): psicobioticos tem evidencia clinica solida - reducao de 23% em ansiedade, melhora de humor confirmada em EEG e qualidade de sono em 8 semanas",
+          "summary": "Revisao sistematica na Frontiers (marc 2026): reducao de 23% em ansiedade (GAD-7) com L. helveticus R0052 + B. longum R0175; melhora de humor confirmada em EEG (ondas theta); qualidade de sono em 8 semanas. Postbioticos emergem com vantagens de estabilidade.",
+          "source": "Frontiers in Microbiology Psychobiotics Mar 2026 / NutraIngredients Psychobiotic Research 2026 / Pharma Scalabis Tri-Bioticos 2026",
+          "curto": "6",
+          "medio": "9",
+          "longo": "9",
+          "idea": "Linha Mente Equilibrio em 3 niveis: Probiotico Diario (entrada), Psicobiotico Sono e Calma (premium), Tri-Biotic Pro (elite com postbiotico). Meta: lider em psicobioticos no Brasil em 18 meses."
+        },
+        {
+          "category": "mercado",
+          "tag": "Mercado - Proteina Vegetal Brasil 2026",
+          "stars": "⭐⭐⭐",
+          "headline": "Proteina de ervilha avanca sobre soja no Brasil - 67% dos consumidores interessados; blend ervilha-arroz resolve aminoacidos completos e 35% de adultos com lactose impulsionam conversao",
+          "summary": "67% dos consumidores brasileiros interessados em plant protein; 35% com intolerancia a lactose declarada; CAGR 13,7% em proteinas. Blend ervilha 60% + arroz 40% tem perfil aminoacidico comparavel ao whey. Palatabilidade ainda e a barreira critica de adocao em massa.",
+          "source": "Grand View Research Brazil Supplements 2030 / IndexBox Brazil Plant Proteins 2026 / Allied Market Research Plant Protein 2026",
+          "curto": "5",
+          "medio": "8",
+          "longo": "8",
+          "idea": "Plant Power Voce Mais+: blend com microencapsulamento para zero granularidade; Desafio 30 Dias Plant como estrategia de conversao; foco no publico com intolerancia a lactose."
+        },
+        {
+          "category": "regulacao",
+          "tag": "Regulacao - ANVISA IN 412 Fitoterapicos Biohealth",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "ANVISA disponibiliza documentos para registro simplificado de fitoterapicos (IN 412/2025) - Biohealth Conference 8-9 mai antecipa normas sobre NMN, Akkermansia e claims de saude mental",
+          "summary": "IN 412/2025 (vigente desde fev 2026) simplifica registro de fitoterapicos, reduzindo 40-60% tempo e custo. Biohealth Conference 8-9 mai pauta NMN como potencial novo ingrediente, Akkermansia muciniphila, claims de saude mental e suplementos personalizados.",
+          "source": "Gov.br ANVISA Registro Simplificado Fitoterapicos 2026 / Parana Portal Biohealth 2026 / AnvisaLegis IN 412 2025",
+          "curto": "7",
+          "medio": "9",
+          "longo": "8",
+          "idea": "Enviar representante a Biohealth 8-9 mai; preparar dossiê tecnico de NMN; revisar portfolio para registro simplificado; publicar relatorio pos-evento como conteudo de autoridade."
+        },
+        {
+          "category": "tendencias",
+          "tag": "Tendencias - Longevidade Stack NMN Fisetin 2026",
+          "stars": "⭐⭐⭐",
+          "headline": "Stack de longevidade 2026: NMN + fisetin + resveratrol - protocolo Sinclair gera 280% de crescimento em buscas no Brasil e mercado longevidade atinge CAGR 8,9%",
+          "summary": "NMN cresceu 280% em buscas no Brasil 2023-2025; Fisetin confirmado como o senolitico natural mais potente (Mayo Clinic); Resveratrol com sinergia documentada com NMN via SIRT1. NMN ainda aguarda regularizacao ANVISA 2026-2027.",
+          "source": "Brainflow David Sinclair 2026 / Omre Best Longevity 2026 / NMN Labo Sinclair 2026 / Fortune NMN 2026",
+          "curto": "4",
+          "medio": "7",
+          "longo": "9",
+          "idea": "Longevidade Stack com ingredientes ja aprovados (resveratrol + CoQ10 + D3 + omega-3 + astaxantina) mais NMN lipossomal em lista de espera para lancamento pos-aprovacao ANVISA."
+        },
+        {
+          "category": "mercado",
+          "tag": "Mercado - Colageno Plant-Based 2026",
+          "stars": "⭐⭐⭐",
+          "headline": "Colageno plant-based cresce 11,1% ao ano e atinge US$8,64 bilhoes em 2026 - boosters vegetais reduzem rugas 27,5% e hidratacao +15% em duplo-cego de 12 semanas",
+          "summary": "Mercado de colageno plant-based cresce para US$8,64bi em 2026, CAGR 11,1%. Estudo duplo-cego confirma formulacao vegan (aminoacidos precursores + C + zinco + silicio) com resultado equivalente ao colageno bovino: -27,5% rugas e +15% hidratacao. Fermentacao de precisao (Geltor) promete democratizar colageno vegan em 2027-2028.",
+          "source": "Research and Markets Plant Collagen 2026 / ScienceDirect Vegan Collagen Biomimetic Study / Future Kind Plant Collagen",
+          "curto": "5",
+          "medio": "8",
+          "longo": "8",
+          "idea": "Colageno Vegan Booster: vitamina C lipossomal + zinco bisglicinato + silicio organico + lisina + glicina + prolina + biotina; bundle com CoQ10 = Protocolo Anti-Aging Natural vegan."
+        },
+        {
+          "category": "mercado",
+          "tag": "Mercado - Saude Feminina Ciclo Climaterio 2026",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Mulheres 35+ lideram com 79% de uso regular - ciclo-suplementacao cresce 380% em buscas e mercado de climaterio vale US$316 bilhoes ate 2035 com nicho vazio no Brasil",
+          "summary": "79% das mulheres usam suplementos regularmente; pesquisam 18 minutos antes de comprar. Ciclo-suplementacao cresceu 380% em buscas no Brasil. Geracao Millennial entra em massa na perimenopausa 2026-2032. Mercado global de climaterio vale US$316bi ate 2035. No Brasil, NENHUMA marca de suplementos esta posicionada para perimenopausa - territorio completamente vazio.",
+          "source": "Sincofarma SP Marc 2026 / Instituto Locomotiva 2026 / Nexira Womens Health 2026 / Nutraceutical Business Review 2026",
+          "curto": "7",
+          "medio": "10",
+          "longo": "9",
+          "idea": "Linha Ciclo Voce Mais+ (primeiro sistema ciclo-suplementacao do Brasil) + linha Climaterio como primeira marca de perimenopausa natural do mercado brasileiro."
+        },
+        {
+          "category": "tendencias",
+          "tag": "Comportamento - Clean Label Brasil 2026",
+          "stars": "⭐⭐⭐",
+          "headline": "59% dos lares brasileiros consomem suplementos e clean label vira exigencia - transparencia supera preco como driver de fidelizacao; comunidades digitais denunciam bem-washing em tempo real",
+          "summary": "59% dos lares brasileiros tem ao menos um consumidor de suplementos (ABIAD 2026); 67% declaram lista de ingredientes como principal fator de confianca. Consumidor exige: forma quimica declarada, origem do ativo, certificacoes, laudo via QR code. Comunidades digitais denunciam marcas sem compliance em tempo real.",
+          "source": "ABIAD Mercado Suplementos Brasil 2026 / Food Connection Clean Label Brasil 2026 / BHBFood Clean Label 2026",
+          "curto": "6",
+          "medio": "8",
+          "longo": "9",
+          "idea": "Programa Clean Label Certificado: rotulo radical com forma quimica de todos os ativos, QR code para laudo HPLC por lote, certificacao terceira (NSF ou equivalente), politica anti-well-washing publicada."
+        },
+        {
+          "category": "mercado",
+          "tag": "Dados - D3 K2 Omega-3 Magnesio Fundacionais 2026",
+          "stars": "⭐⭐⭐",
+          "headline": "D3+K2 cresce 22% ao ano e com omega-3 e magnesio glicinate (823k buscas/mes) forma o trio fundacional - consumidor prefere saude de base a biohacking e exige EPA e DHA declarados por dose",
+          "summary": "Magnesio glicinate: 823.000 buscas mensais, +22% ao ano; tornou-se o suplemento de maior crescimento em 2025-2026. D3+K2: +22% ano. Omega-3: consumidor exige declaracao de EPA e DHA por dose e TOTOX declarado. Top 5 suplementos de 2026 sao os mesmos de 2023 - o consumidor quer o que funciona.",
+          "source": "Wellworthy Most Stacked Supplements 2026 / RisingTrends Trends 2026 / Glanbia Top 5 Trends 2026 / NutraIngredients 2025",
+          "curto": "7",
+          "medio": "8",
+          "longo": "8",
+          "idea": "Linha Fundamentos com qualidade premium declarada: D3+K2 com QR laudo, Omega-3 Ultra com EPA/DHA declarados e TOTOX informado, Magnesio Sono bisglicinato; bundle com 20% desconto."
+        },
+        {
+          "category": "tendencias",
+          "tag": "Digital - Micro-LODs Saude Conversao 3x 2026",
+          "stars": "⭐⭐⭐",
+          "headline": "Microinfluenciadores de saude (5-80k) convertem 3x mais que celebridades - engajamento 6x superior e 2.670% de crescimento em conteudo de saude no TikTok/Instagram Brasil 2022-2025",
+          "summary": "Microinfluenciadores de saude (5-100k) tem engajamento 6x superior a macro; conversao 3x maior que celebridades. Conteudo de saude no TikTok/Instagram Brasil cresceu 2.670% entre 2022 e 2025. Comunidades digitais denunciam well-washing em tempo real.",
+          "source": "FocusNetworks Wellness 2026 / Hipermidia TikTok Saude Brasil / Nacao Digital Influencer Marketing 2026 / Winnin Intelligence 2025",
+          "curto": "6",
+          "medio": "8",
+          "longo": "8",
+          "idea": "Programa LOD Voce Mais+: 30 profissionais de saude (CRN/CRM/CRF) com 5-80k seguidores; biblioteca cientifica exclusiva; comissao 15%; badge Parceiro Cientifico verificavel; politica anti-well-washing publicada."
+        },
+        {
+          "category": "tendencias",
+          "tag": "Analise de Cruzamento - 1 Mai 2026",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Saude Mental x Suplementacao Natural: Dia do Trabalhador revela burnout como maior janela de Q2 - psicobioticos, adaptogenicos e magnesio formam o triangulo estrategico para lancamento em maio 2026",
+          "summary": "Tema unificador: Saude Mental Natural. Triangulo estrategico: psicobioticos (estudo ADM de ontem) + adaptogenicos (ashwagandha/rhodiola/lion mane) + magnesio sono. Timing: maio e o mes da saude mental (Green Ribbon) e o Dia do Trabalhador inaugurou o contexto. Marca que nao agir em maio perde o maior momento editorial do ano.",
+          "source": "Analise cruzada - Wellness Intelligence Voce Mais+, 1 de Maio de 2026",
+          "curto": "10",
+          "medio": "10",
+          "longo": "9",
+          "idea": "Sprint Q2 2026: semana 1 campanha Dia do Trabalhador, semana 2 lancamento psicobiotico + Biohealth, semana 3 Stack Anti-Burnout, semana 4 bundle Saude Mental Natural. KPIs: 1.000 unidades, 30 LODs, NPS acima de 78."
+        }
+      ]
+    },
+    {
       "date": "2026-04-30",
       "dateLabel": "30 de Abril de 2026",
       "cards": [
