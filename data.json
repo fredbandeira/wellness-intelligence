@@ -1,6 +1,156 @@
 {
   "editions": [
     {
+      "date": "2026-05-03",
+      "dateLabel": "3 de Maio de 2026",
+      "cards": [
+        {
+          "category": "ciencia",
+          "tag": "Ciencia - Fibra Prebiotica Gut-Brain Ansiedade",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Fibra prebiotica especifica reduz neuroinflamacao ligada a ansiedade (Tua Saude, 2 mai 2026) - eixo intestino-cerebro confirma prebioticos + psicobioticos como categoria mais urgente do wellness de maio",
+          "summary": "Estudo publicado em 2 mai 2026 identifica fibra prebiotica que nutre bacterias produtoras de butirato e reduz neuroinflamacao associada a ansiedade. Buscas por prebioticos cresceram 62,3% em 1 ano. Brasil lidera confianca em fibras prebioticas entre 14 paises.",
+          "source": "Tua Saude Fibra Prebiotica Ansiedade 2 Mai 2026 / Noticiamarajo Brasil Prebioticos / BHBFood Tendencias 2026",
+          "curto": "9",
+          "medio": "9",
+          "longo": "9",
+          "idea": "Lancamento Prebiotico Calma (FOS+Inulina+Psyllium) em maio; bundle Protocolo Intestino-Cerebro com psicobiotico e magnesio; parceria com nutris de microbioma como LODs."
+        },
+        {
+          "category": "regulacao",
+          "tag": "Regulacao - ANVISA IN 438 Curcuma Hepatotoxicidade",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "ANVISA IN 438/2026 (22 abr): limite obrigatorio de 120 mg/dia de curcuminoides totais em suplementos com advertencia de hepatotoxicidade - prazo de adequacao 1 de setembro de 2026",
+          "summary": "ANVISA publicou IN 438/2026 em 22 abr limitando curcuminoides a 120mg/dia em suplementos e exigindo advertencia obrigatoria de risco hepatico. Prazo de adequacao: 1 set 2026. Afeta todo portfolio com curcuma do mercado brasileiro.",
+          "source": "Gov.br ANVISA Alerta 04/2026 / Agencia Brasil Curcuma Abr 2026 / Gov.br ANVISA IN 438/2026",
+          "curto": "10",
+          "medio": "8",
+          "longo": "6",
+          "idea": "Acao imediata: mapear portfolio com curcuma, calcular doses de curcuminoides totais, reformular produtos fora do limite, atualizar rotulos com advertencia obrigatoria ate agosto 2026."
+        },
+        {
+          "category": "tendencias",
+          "tag": "Tendencias - Adaptogenicos Ciencia Real vs Hype",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Adaptogenicos funcionam de verdade? Detroit News (abr 2026) confirma mecanismos solidos para ashwagandha, rhodiola e lion mane; mercado de herbal supplements atinge US4 bilhoes",
+          "summary": "Revisao independente confirma: ashwagandha KSM-66 reduz cortisol 27,9% em 60 dias; rhodiola ativa AMPK e SIRT1 no burnout cognitivo; lion mane estimula NGF. Mercado US4bi, CAGR 11%. Ashwagandha cresceu 340% em buscas no Brasil em 3 anos.",
+          "source": "Detroit News Adaptogens Really Work Abr 2026 / FoodNavigator Functional Ingredients 2026 / MindLabPro Adaptogens Athletes 2026",
+          "curto": "7",
+          "medio": "9",
+          "longo": "9",
+          "idea": "Linha Adaptogenicos com Evidencia: ashwagandha KSM-66 600mg + rhodiola 300mg + lion mane 500mg; bundle Anti-Burnout com 20% de desconto; serie Adaptogenicos com Ciencia como conteudo."
+        },
+        {
+          "category": "mercado",
+          "tag": "Mercado - Wellness Economy Global GWI 2025 Monitor",
+          "stars": "⭐⭐⭐",
+          "headline": "GWI (jan 2026): economia do wellness atinge US,8 trilhoes em 2024 com CAGR 7,9%; saude mental cresce 12,4% ao ano e lidera o boom; projecao de US,8 tri ate 2029",
+          "summary": "GWI 2025 Monitor: mercado global de wellness atingiu US,8 tri em 2024. Saude mental: CAGR 12,4%/ano. Wellness imobiliario: 19,5%/ano. Todos os 11 setores superaram niveis pre-pandemia. Brasil no top 10 mercados de maior crescimento.",
+          "source": "GWI 2025 Global Wellness Economy Monitor Jan 2026 / PR Newswire GWI .8 Trillion 2026",
+          "curto": "5",
+          "medio": "8",
+          "longo": "9",
+          "idea": "Posicionar Voce Mais+ explicitamente no segmento de saude mental natural (12,4%/ano); declarar publicamente este posicionamento; publicar relatorio Wellness Intelligence Brasil 2026 como ancora de autoridade."
+        },
+        {
+          "category": "mercado",
+          "tag": "Mercado - Saude Feminina Perimenopausa Millennial",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Geracao millennial entra na perimenopausa em massa (2026-2032) - mercado climaterio vale US16 bi ate 2035; nicho de suplementos naturais completamente vazio no Brasil",
+          "summary": "Millennials (1981-1996) entram na perimenopausa entre 2026-2032. Mercado global de climaterio: US16bi ate 2035. No Brasil, nenhuma DTC de suplementos naturais posicionada para perimenopausa. Isoflavonas reduzem fogachos 40% em meta-analises.",
+          "source": "Sincofarma SP Mulheres Suplementos 2026 / CartaCapital Saude Feminina 2026 / Farmacotecnica Tendencias 2026",
+          "curto": "6",
+          "medio": "10",
+          "longo": "9",
+          "idea": "Linha Equilibrio Voce Mais+: Equilibrio Hormonal (isoflavonas+maca+agnus castus), Sono da Menopausa (magnesio+L-teanina+melatonina), Densidade Ossea (calcio+D3+K2); lancamento em meados de 2026."
+        },
+        {
+          "category": "ciencia",
+          "tag": "Ciencia - Creatina Cognitiva Nootrofico Emergente",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Creatina emerge como nootrofico evidence-based em 2026 - melhora memoria e fluencia verbal; beneficia pos-COVID cognitivo em estudo de 6 meses; 20% do estoque corporal esta no cerebro",
+          "summary": "20% do estoque corporal de creatina esta no cerebro. Estudos confirmam melhora em memoria de curto prazo em adultos 66-76 anos; 4g/dia por 6 meses melhorou concentracao pos-COVID. Reposicionamento de suplemento muscular para nootrofico de base ampla.",
+          "source": "Creatina 2026 Engenharia Energetica / Ocean Drop Creatina Cerebro / Medico24hs Creatina Cognitiva",
+          "curto": "7",
+          "medio": "8",
+          "longo": "8",
+          "idea": "Creatina Mental Voce Mais+ (Creapure 3g + taurina + B6): campanha Creatina nao e so para musculo; target profissional de alta performance e adulto 50+ em longevidade cognitiva."
+        },
+        {
+          "category": "mercado",
+          "tag": "Mercado - Magnesio D3 K2 Omega-3 Trio Fundacional",
+          "stars": "⭐⭐⭐",
+          "headline": "Magnesio bisglicinato lidera com 823 mil buscas mensais (+22% ao ano) - trio D3+K2+Omega-3 consolida como padrao ouro; consumidor exige EPA+DHA declarados por dose no omega-3",
+          "summary": "823k buscas mensais globais de magnesio bisglicinato; D3+K2 cresce 22%/ano em buscas no Brasil. Consumidor 2026 exige forma quimica declarada, origem do ingrediente e laudo de analise. Top 5 suplementos de 2026 = os mesmos de 2023, porem com exigencia de qualidade superior.",
+          "source": "RisingTrends Supplement Trends 2026 / Glanbia Top 5 Trends 2026 / Med-br Melhores Suplementos 2026",
+          "curto": "7",
+          "medio": "8",
+          "longo": "8",
+          "idea": "Linha Fundamentos Premium com QR laudo HPLC por lote; D3+K2 com mecanismo declarado no rotulo; Omega-3 Ultra com EPA+DHA e TOTOX declarados; bundle com 20% de desconto."
+        },
+        {
+          "category": "tendencias",
+          "tag": "Tendencias - Longevidade Stack NMN Fisetin Sinclair",
+          "stars": "⭐⭐⭐",
+          "headline": "Protocolo Sinclair gera 280% de crescimento em buscas no Brasil - NMN aguarda ANVISA; fisetin confirmado como senolytico mais potente (Mayo Clinic); mercado longevidade CAGR 8,9%",
+          "summary": "NMN cresce 280% em buscas no Brasil (2023-2025); aguarda regularizacao ANVISA. Fisetin: senolytico natural mais potente (Mayo Clinic 2018). Stack completo: NMN 1000mg + resveratrol 500mg + fisetin 500mg. Nicho premium AB urbano 40+ com crescimento acelerado.",
+          "source": "Omre Sinclair Supplements 2026 / Fortune NMN 2026 / LCL Med Longevidade 2026",
+          "curto": "4",
+          "medio": "7",
+          "longo": "9",
+          "idea": "Longevidade Stack com ingredientes aprovados agora + lista de espera NMN para pos-aprovacao ANVISA; serie mensal Longevidade Possivel como ancora de conteudo e autoridade."
+        },
+        {
+          "category": "ciencia",
+          "tag": "Ciencia - Colageno Revisao Cientifica Pele Articulacoes",
+          "stars": "⭐⭐⭐",
+          "headline": "Nova revisao cientifica confirma beneficios reais do colageno para pele e articulacoes; Butantan identifica peptideos anti-aging; colageno plant-based atinge US,64 bi com CAGR 11,1%",
+          "summary": "Revisao abr 2026 confirma reducao de rugas e melhora de articulacoes com peptideos de colageno. Instituto Butantan identifica peptideos que inibem colagenase. Plant-based cresce de US,78bi para US,64bi em 2026 (CAGR 11,1%); fermentacao de precisao chegando em 2027-2028.",
+          "source": "Bons Fluidos Revisao Colageno Abr 2026 / Butantan Peptideos Colageno 2026 / Research Markets Plant Collagen 2026",
+          "curto": "5",
+          "medio": "7",
+          "longo": "8",
+          "idea": "Portfolio de colageno segmentado: Pele (tipo I+III + C + biotina), Articular (tipo II nativo 40mg + MSM), Vegan Booster (precursores + cofatores). Bundle Anti-Aging com astaxantina."
+        },
+        {
+          "category": "tendencias",
+          "tag": "Tendencias - Fibremaxxing Prebioticos Brasil Lidera",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Fibremaxxing atinge mainstream global em 2026 - buscas por fibras crescem 43,8% e prebioticos 62,3%; Brasil lidera confianca em fibras prebioticas entre 14 paises (Mintel)",
+          "summary": "Buscas por fibras +43,8% e prebioticos +62,3% em 1 ano. Brasil lidera confianca em prebioticos. Mercado global de fibras: US,16bi em 2025, US4,59bi ate 2030. 59% dos consumidores reconhecem saude intestinal como determinante para bem-estar geral.",
+          "source": "Noticiamarajo Brasil Prebioticos Confianca / FoodBiz Nutricao 2026 / BHBFood Tendencias 2026",
+          "curto": "8",
+          "medio": "8",
+          "longo": "8",
+          "idea": "Fibra Equilibrio Diario (FOS+Inulina+Psyllium) em sache; Prebiotico Cognitivo especifico para eixo gut-brain; comunicacao O fibremaxxing chegou ao Brasil."
+        },
+        {
+          "category": "mercado",
+          "tag": "Mercado - Proteina Plant-Based Brasil CAGR 13,7%",
+          "stars": "⭐⭐⭐",
+          "headline": "Proteina vegetal cresce CAGR 13,7% no Brasil - 67% interessados; blend ervilha-arroz resolve aminoacidos completos; 35% dos adultos com lactose sao o publico real",
+          "summary": "CAGR 13,7% em proteinas vegetais no Brasil. 67% interessados, 35% com intolerancia a lactose. Blend ervilha 60% + arroz 40% = perfil aminoacidico comparavel ao whey. Palatabilidade ainda e a barreira critica de adocao em massa.",
+          "source": "FoodConnection Mercado Suplementos 2026 / Allied Market Research Plant Protein 2026 / Abimapi Boom Proteinas 2026",
+          "curto": "5",
+          "medio": "8",
+          "longo": "8",
+          "idea": "Plant Power Premium com microencapsulamento (zero granularidade); Desafio 30 Dias Plant como estrategia de conversao; foco em mulher 25-45 com intolerancia a lactose."
+        },
+        {
+          "category": "tendencias",
+          "tag": "Digital - Micro-LODs Saude Conversao 3x Brasil",
+          "stars": "⭐⭐⭐",
+          "headline": "Microinfluenciadores de saude (5-80k) convertem 3x mais que celebridades - 73% dos brasileiros compram por recomendacao digital; conteudo de saude cresceu 2.670% no TikTok e Instagram entre 2022 e 2025",
+          "summary": "Micro-LODs (5-100k): engajamento 6x superior, conversao 3x maior. 73% dos brasileiros ja compraram por recomendacao de influenciador. Conteudo de saude cresceu 2.670% no TikTok e Instagram Brasil 2022-2025. LOD eficaz: profissional de saude verificavel com audiencia de nicho.",
+          "source": "FocusNetworks Content Wellness 2026 / O Hoje Nutricao Digital Abr 2026 / Nacao Digital Influencer 2026",
+          "curto": "6",
+          "medio": "8",
+          "longo": "8",
+          "idea": "Programa LOD Certificado Voce Mais+: 30 profissionais de saude com 5-80k seguidores; badge Parceiro Cientifico; biblioteca cientifica exclusiva; politica anti-well-washing declarada."
+        }
+      ]
+    },
+    {
       "date": "2026-05-01",
       "dateLabel": "1 de Maio de 2026",
       "cards": [
