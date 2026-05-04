@@ -1,6 +1,174 @@
 {
   "editions": [
     {
+      "date": "2026-05-04",
+      "dateLabel": "4 de Maio de 2026",
+      "headline": "Magnesio cerebral, saude feminina lidera 58% do mercado e longevidade emerge como maior oportunidade",
+      "tags": [
+        "cognicao",
+        "feminino",
+        "longevidade"
+      ],
+      "cards": [
+        {
+          "category": "ciencia",
+          "tag": "Ciencia - Magnesio L-Treonato Barreira Cerebral Mai 2026",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Magnesio L-Treonato e a unica forma que atravessa a barreira hematoencefalica - estudo maio 2026",
+          "summary": "Brazilian Journal of Health Review (maio/2026) confirma que L-Treonato e a unica forma de magnesio com acesso eficiente ao sistema nervoso central, melhorando foco, memoria e desacelerando declinio cognitivo.",
+          "source": "Brazilian Journal of Health Review / Tua Saude 01 Mai 2026",
+          "curto": "7",
+          "medio": "9",
+          "longo": "10",
+          "idea": "Posicionar o Magnesio L-Treonato como o magnesio do cerebro - upgrade para quem ja usa bisglicinato para sono e agora quer foco e cognicao. Bundle: L-Treonato + Lion Mane + Omega-3 = Protocolo Cognicao."
+        },
+        {
+          "category": "mercado",
+          "tag": "Mercado - Brasil Suplementos R$13,8 Bilhoes 2030",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Mercado brasileiro cresce 15% em 2025 e deve atingir R$13,8 bilhoes ate 2030",
+          "summary": "O setor brasileiro de suplementos cresceu 15% em 2025 com projecao de R$13,8 bilhoes ate 2030, top 5 mundial.",
+          "source": "Revista Suplementacao / Food Connection, 2026",
+          "curto": "5",
+          "medio": "7",
+          "longo": "10",
+          "idea": "Auditoria de mix: mapear as 5 categorias de maior crescimento e identificar lacunas no portfolio atual."
+        },
+        {
+          "category": "mercado",
+          "tag": "Perfil - Consumidora Feminina 58% Mercado Sincofarma 2026",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Mulheres sao 58% do mercado de suplementos em 2026 - tres categorias definem o ticket mais alto",
+          "summary": "Sincofarma SP confirma mulheres liderando consumo. As tres categorias: equilibrio hormonal, sono/bem-estar emocional, e pele/cabelo/unhas.",
+          "source": "Sincofarma SP / Farmacotecnica, marco/2026",
+          "curto": "9",
+          "medio": "9",
+          "longo": "9",
+          "idea": "Roteiro consultivo feminino em 3 perguntas: O que mais te incomoda - sono, disposicao ou pele? Que fase de vida? Ja usa suplemento?"
+        },
+        {
+          "category": "ciencia",
+          "tag": "Ciencia - Omega-3 Deficit 76% Populacao Nature Aging 2026",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "76% da populacao tem deficit de Omega-3 sem saber - combinacao com D3 protege envelhecimento biologico",
+          "summary": "Estudo de 100 paises: 76% das pessoas nao atingem recomendacao de EPA e DHA. Combinacao omega-3 + D3 + exercicio protege envelhecimento biologico (Nature Aging, abril 2026).",
+          "source": "Universidades East Anglia e Southampton / Nature Aging, abril/2026",
+          "curto": "8",
+          "medio": "9",
+          "longo": "8",
+          "idea": "Argumento: 3 em cada 4 pessoas tem omega-3 baixo sem perceber. A deficiencia nao doi — mas acelera o envelhecimento."
+        },
+        {
+          "category": "tendencias",
+          "tag": "Tendencias - Ashwagandha KSM-66 Buscas Brasil 2026",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Ashwagandha domina buscas de 2026 - KSM-66 versus generico: diferenca de ate 10x nos principios ativos",
+          "summary": "O adaptogeno mais buscado de 2026. KSM-66 tem 5% withanolides certificados. Generico pode ter 10x menos ativo. Cliente chega pesquisado - o argumento diferencia a venda premium.",
+          "source": "Academia Central Fitness / Umas e Ostras, maio/2026",
+          "curto": "9",
+          "medio": "9",
+          "longo": "9",
+          "idea": "Argumento do KSM-66: A versao generica pode ter 10x menos ativo. O KSM-66 tem 5% de withanolides - a concentracao dos estudos clinicos."
+        },
+        {
+          "category": "regulacao",
+          "tag": "Regulacao - ANVISA IN 438/2026 Curcuma Follow-up",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "ANVISA IN 438/2026: 130 mg/dia de curcuminoides com advertencia hepatica - prazo setembro 2026",
+          "summary": "Seguimento da regulacao de abril. Limite de 130mg/dia de curcuminoides totais. Prazo: 1 de setembro de 2026. Compliance proativo ja e diferencial de confianca.",
+          "source": "ANVISA Alerta 04/2026 / Agencia Brasil / Acessa.com Abr 2026",
+          "curto": "8",
+          "medio": "7",
+          "longo": "7",
+          "idea": "Transformar compliance em argumento de confianca: nosso produto esta dentro do limite e vamos atualizar antes do prazo."
+        },
+        {
+          "category": "ciencia",
+          "tag": "Ciencia - Psicobioticos Maturidade Clinica Gut-Brain 2026",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Psicobioticos chegam a maturidade clinica - cepas produzem serotonina e GABA diretamente no intestino",
+          "summary": "Em 2026, psicobioticos com cepas especificas alcancaram maturidade clinica. Eixo intestino-cerebro via nervo vago completamente confirmado. Cliente com ansiedade e candidato natural.",
+          "source": "Gut Microbiota for Health / Nutritotal Brasil, jan/2026",
+          "curto": "6",
+          "medio": "8",
+          "longo": "9",
+          "idea": "90% da serotonina e produzida no intestino. Para ansiedade e humor instavel, psicobiotico com cepas especificas pode ser o complemento faltante."
+        },
+        {
+          "category": "tendencias",
+          "tag": "Tendencias - Lion Mane Cogumelo Cognitivo 2026",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Lion Mane e o adaptogeno cognitivo de maior crescimento - ativos exclusivos estimulam NGF em 4 semanas",
+          "summary": "Erinacinas e Hericenonas so existem nesse cogumelo. Estimulam NGF para neuroproteucao. Reduz depressao e ansiedade em 4 semanas. Publico premium que paga por exotismo comprovado.",
+          "source": "Sociedade Global / Brazilian Journals of Health Review, 2026",
+          "curto": "7",
+          "medio": "8",
+          "longo": "9",
+          "idea": "Bundle cognitivo premium: Lion Mane + Magnesio L-Treonato + Omega-3 = Protocolo Performance Cerebral. Ticket alto, margem alta."
+        },
+        {
+          "category": "mercado",
+          "tag": "Mercado - Clean Label US$89 Bilhoes 2034",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Clean label vai de US$28bi para US$89bi ate 2034 - 60% dos consumidores pagam mais por transparencia",
+          "summary": "CAGR 12,2%. O consumidor de 2026 exige ingrediente reconhecivel, procedencia rastreavel e sem aditivos artificiais. Clean label e o novo preco de entrada.",
+          "source": "Food Connection / BHB Food / Santos Flora, 2026",
+          "curto": "7",
+          "medio": "8",
+          "longo": "9",
+          "idea": "QR code em cada produto com laudo do lote, origem e certificacoes. Comunicar: nosso rotulo nao tem ingrediente que voce nao consegue entender."
+        },
+        {
+          "category": "tendencias",
+          "tag": "Tendencias - Longevidade NAD+ Brasil 2026",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Longevidade e o maior mercado emergente - NAD+, espermidina e urolitina A chegam com ticket 40-60% maior",
+          "summary": "Mercado global ultrapassa US$252bi em 2025, CAGR 7,5%. Cliente AB urbano 40+ ja busca ativamente. Ticket medio 40-60% superior a suplementos convencionais.",
+          "source": "Food Connection / Instituto de Longevidade / Grand View Research, 2026",
+          "curto": "5",
+          "medio": "7",
+          "longo": "10",
+          "idea": "Longevidade Stack imediato: Resveratrol + CoQ10 Ubiquinol + D3 + Omega-3. Lista de espera NAD+ agora para lancamento pos-regulacao."
+        },
+        {
+          "category": "regulacao",
+          "tag": "Regulacao - Colageno VERISOL Alegacao ANVISA Pele 2026",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "VERISOL: unico colageno com alegacao ANVISA para pele - resultado visivel em 4 semanas com 2,5g/dia",
+          "summary": "Unico peptideo de colageno com alegacao funcional aprovada pela ANVISA para pele. Estudos Universidade de Kiel: reducao de rugas em 4 semanas. K-Beauty boom: +300% em buscas.",
+          "source": "VERISOL Brazil / ANVISA / Skin Pharmacology, 2026",
+          "curto": "9",
+          "medio": "10",
+          "longo": "9",
+          "idea": "Todo colageno promete - mas so o VERISOL tem alegacao aprovada pela ANVISA. Eliminacao de objecao de preco com um unico argumento regulatorio."
+        },
+        {
+          "category": "tendencias",
+          "tag": "Tendencias - Saude Feminina Menopausa TPM Wearables 2026",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "70% das mulheres usarao tech para monitorar hormonios - vitex, magnesio e EstroG-100 lideram evidencia natural",
+          "summary": "Wearables hormonais chegando em massa. Para TPM: vitex + B6 + magnesio. Para menopausa: EstroG-100 com 80% menos efeitos colaterais. Alto poder aquisitivo + alta intencao de compra.",
+          "source": "Bonitamulher.com.br / Meganesia / Farmacia Alquimia, 2026",
+          "curto": "8",
+          "medio": "8",
+          "longo": "9",
+          "idea": "Roteiro por fase de vida: TPM → trio vitex+B6+magnesio. Perimenopausa → adicionar isoflavonas ou EstroG-100. Menopausa → protocolo completo 5 produtos."
+        },
+        {
+          "category": "mercado",
+          "tag": "Analise de Cruzamento - 4 Mai 2026",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Triangulo de ouro de maio: magnesio cognitivo + saude feminina + longevidade emergente convergem como vetores de crescimento",
+          "summary": "Os tres vetores de crescimento de 2026: cognicao natural (L-Treonato + Lion Mane + psicobioticos), feminino consultivo (58% do mercado, roteiro de 3 a 5 produtos) e longevidade preventiva (ticket 40-60% maior). O lojista que domina os tres domina o crescimento do setor.",
+          "source": "Analise Wellness Intelligence Voce Mais+ - 4 de Maio de 2026",
+          "curto": "10",
+          "medio": "10",
+          "longo": "10",
+          "idea": "Roteiro definitivo: qual sua maior queixa? Sono+ansiedade+cansaco: MAG-7+ashwagandha+omega-3. Foco+cognicao: L-Treonato+Lion Mane. Mulher 35+: adicionar VERISOL+D3+K2. Ticket: 3 a 5 produtos."
+        }
+      ]
+    },
+    {
       "date": "2026-05-03",
       "dateLabel": "3 de Maio de 2026",
       "cards": [
