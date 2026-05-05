@@ -1,6 +1,156 @@
 {
   "editions": [
     {
+      "date": "2026-05-05",
+      "dateLabel": "5 de Maio de 2026",
+      "cards": [
+        {
+          "category": "mercado",
+          "tag": "GLP-1 Suplementos",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "GLP-1 remodela o mercado global de suplementos: consumidor de Ozempic e Wegovy precisa de alta densidade nutricional e abre segmento de US$160 bilhoes ate 2030",
+          "summary": "O avanco dos analogos de GLP-1 criou ruptura estrutural no mercado de suplementos. O usuario desses medicamentos ingere 30-50% menos volume alimentar, mas nao reduz sua necessidade de micronutrientes, proteina de qualidade, fibra e vitaminas. A industria que posicionar-se como parceira do usuario de GLP-1 captura o segmento de maior crescimento e ticket de 2026.",
+          "source": "FoodBiz Brasil / Itau BBA / Essential Nutrition GLP-1 Support, 2026",
+          "curto": "8",
+          "medio": "9",
+          "longo": "10",
+          "idea": "Criar Bundle GLP-1 Support: proteina de alta biodisponibilidade + colageno peptideo + probiotico multiestirpe + multivitaminico de alta potencia. Ticket R$380-520/mes com alta recorrencia."
+        },
+        {
+          "category": "mercado",
+          "tag": "Consumo Feminino Brasil",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "79% das mulheres brasileiras usam suplementos vs 71% dos homens (Instituto Locomotiva) - personalizacao feminina e a maior oportunidade de ticket alto de 2026",
+          "summary": "Pesquisa do Instituto Locomotiva (2026) revela que 79% das mulheres brasileiras usam suplementos regularmente. O mercado feminino e maior em ticket medio, fidelidade de marca e propensao a indicar. Tres categorias dominam: equilibrio metabolico e hormonal, sono e bem-estar emocional, pele cabelo e unhas.",
+          "source": "Instituto Locomotiva / Sincofarma SP, 2026",
+          "curto": "9",
+          "medio": "9",
+          "longo": "9",
+          "idea": "Implementar Roteiro da Consultoria Feminina em 3 perguntas: o que mais incomoda agora, em que fase de vida esta, ja usa suplemento? Com essas 3 perguntas monta-se protocolo de 2-3 produtos com argumento de recompra garantido."
+        },
+        {
+          "category": "tendencias",
+          "tag": "Berberina Metabolismo",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Berberina explode como ativo metabolico mais buscado de 2026 - evidencia clinica de melhora em resistencia a insulina, microbioma e colesterol consolida posicao de alta margem",
+          "summary": "Estudo da Tua Saude (28/abr/2026) confirma que a berberina atua no intestino melhorando metabolismo de bile, resistencia a insulina e equilibrio da microbiota. Buscas por berberina cresceram mais de 200% em 12 meses no Brasil. Dose estudada: 900-1500mg/dia.",
+          "source": "Tua Saude 28/abr/2026 / Botica Nativa / Selektz Brasil, 2026",
+          "curto": "8",
+          "medio": "8",
+          "longo": "7",
+          "idea": "Posicionar berberina como ativo metabolico natural mais estudado de 2026. Bundle Metabolismo Natural: berberina 500mg 3x/dia + psyllium + probiotico = protocolo completo. Ticket R$280-380/mes. Publico: mulheres 35-55 anos com resistencia a insulina ou pre-diabetes."
+        },
+        {
+          "category": "ciencia",
+          "tag": "Psicobioticos Cortisol HPA",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Especialistas indicam Lactobacillus helveticus R0052 e Bifidobacterium longum como cepas essenciais para reducao de cortisol - psicobioticos consolidam maturidade clinica em maio de 2026",
+          "summary": "Artigo de especialistas publicado na Tua Saude (2/mai/2026) aponta cepas especificas de psicobioticos com efeitos clinicamente relevantes na reducao de estresse e ansiedade. Mecanismo: producao de GABA e modulacao de serotonina via nervo vago, reduzindo ativacao do eixo HPA.",
+          "source": "Tua Saude 2/mai/2026 / Nutritotal Brasil / Pharma Scalabis, 2026",
+          "curto": "7",
+          "medio": "8",
+          "longo": "9",
+          "idea": "Bundle Equilibrio Mental: magnesio bisglicinato (ativa receptores GABA) + probiotico com cepas R0052 + R0175. Argumento: 90% da serotonina e produzida no intestino. Ticket R$220-280. Alta recorrencia de 6+ meses."
+        },
+        {
+          "category": "tendencias",
+          "tag": "Fibra Alimentar Boom",
+          "stars": "⭐⭐⭐",
+          "headline": "Fibra alimentar e a proxima grande onda do wellness: buscas por suplemento de fibra cresceram 62,3% em um ano - conexao gut-brain e suporte GLP-1 impulsionam demanda",
+          "summary": "O Global Wellness Institute (2026) reporta buscas por fibras +43,8% e por suplemento de fibra +62,3% em 12 meses. Tres drivers: consciencia sobre eixo intestino-cerebro, pesquisa de longevidade confirmando fibra como marcador de saude, e usuarios de GLP-1 precisando de fibra com menor volume alimentar.",
+          "source": "Global Wellness Institute / Exame Casual, 2026",
+          "curto": "6",
+          "medio": "8",
+          "longo": "9",
+          "idea": "Bundle Intestino Saudavel: fibra prebiotica (psyllium ou inulina) + probiotico multiestirpe + enzimas digestivas = protocolo completo. Ticket R$180-240/mes com recorrencia garantida. Conteudo educativo: 5 sinais de que voce precisa de mais fibra."
+        },
+        {
+          "category": "regulacao",
+          "tag": "ANVISA CP 1394/2026",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "ANVISA abre Consulta Publica 1.394/2026 com impactos para setor de alimentos e suplementos - agenda regulatoria 2026-2027 preve mudancas de grande alcance para a industria",
+          "summary": "Intertox publicou alerta sobre a CP 1.394/2026 da ANVISA com implicacoes para toda a cadeia de alimentos e suplementos. A ANVISA intensificou fiscalizacao de suplementos sem registro sanitario. 9a edicao do documento de Perguntas e Respostas atualizada com base na RDC 843/2024 e IN 281/2024.",
+          "source": "Intertox / ANVISA / Sincofarma SP, 2026",
+          "curto": "8",
+          "medio": "7",
+          "longo": "7",
+          "idea": "Checklist trimestral de adequacao regulatoria. Publicar nota de transparencia regulatoria semestralmente. Transformar compliance em argumento de confianca: Nossos produtos seguem rigorosamente as normas ANVISA - e atualizamos sempre que a regulacao evolui."
+        },
+        {
+          "category": "tendencias",
+          "tag": "Stack Cognitivo Natural",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Stack cognitivo natural explode entre 25-40 anos: Lion Mane, L-teanina, bacopa monnieri e ashwagandha formam o protocolo de foco sem dependencia mais buscado de 2026",
+          "summary": "O mercado de aprimoramento cognitivo natural atinge pico de demanda em 2026. Stack mais buscado: Lion Mane para NGF e neuroplasticidade; L-teanina para foco relaxado; bacopa monnieri para memoria em 12 semanas; ashwagandha KSM-66 para cortisol e sono. Publico: executivos, estudantes e profissionais criativos.",
+          "source": "Selektz Brasil / California Business Journal / Metropoles, 2026",
+          "curto": "7",
+          "medio": "8",
+          "longo": "9",
+          "idea": "Bundle Performance Cerebral: Lion Mane + L-teanina + bacopa monnieri + ashwagandha KSM-66. Posicionamento: Para quem quer pensar melhor sem precisar de mais cafe. Ticket R$280-380. Protocolo de 90 dias para resultado mensuravel."
+        },
+        {
+          "category": "mercado",
+          "tag": "Plant-Based Proteina Vegetal",
+          "stars": "⭐⭐⭐",
+          "headline": "Mercado plant-based supera R$2,2 bilhoes no Brasil em 2026 - crescimento de 11,1% ao ano abre janela para suplementos proteicos vegetais com publico consciente em expansao",
+          "summary": "O mercado plant-based brasileiro atingira R$2,2 bilhoes em 2026 (Euromonitor), com 11,1% de crescimento anual nos ultimos 5 anos. Publico flexitariano passou de 29% para 50% dos brasileiros entre 2018 e 2020. Proteinas de ervilha e arroz integral lideram a demanda de suplementos vegetais.",
+          "source": "Euromonitor / Vegan Business BR / Exame, 2026",
+          "curto": "5",
+          "medio": "7",
+          "longo": "8",
+          "idea": "Posicionar proteina plant-based como produto estrategico feminino. Argumento clean label: perfil completo de aminoacidos sem lactose, sem soja processada. Bundle Plant Wellness: proteina vegetal + fibra prebiotica. Ticket R$320-420."
+        },
+        {
+          "category": "mercado",
+          "tag": "Clean Label Qualidade Ingrediente",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "40% dos consumidores citam qualidade do ingrediente como fator decisivo de compra (Glanbia 2026) - clean label nao e mais diferencial: e prerequisito para competir no segmento consciente",
+          "summary": "Relatorio Glanbia Nutritionals 2026: 40% dos consumidores de suplementos nos EUA citam qualidade do ingrediente como fator decisivo. 27% sao influenciados por ingredientes naturais. Globalmente, quase 1 em cada 2 consumidores prioriza clean label. Em 2026 o consumidor exige ingrediente reconhecivel, procedencia rastreavel e ausencia de aditivos artificiais.",
+          "source": "Glanbia Nutritionals / Innova Market Insights / Nutraceuticals World, 2026",
+          "curto": "7",
+          "medio": "8",
+          "longo": "9",
+          "idea": "Auditoria de comunicacao clean label: garantir que o consultor sabe explicar origem e processo de cada produto. Implementar QR code com transparencia de ingredientes e laudos. Argumento: Em nosso produto voce entende cada ingrediente do rotulo. Nao colocamos nada que precisamos esconder."
+        },
+        {
+          "category": "tendencias",
+          "tag": "Economia Climaterica Menopausa",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Menopausa impulsiona nova economia de consumo em 2026 - EstroG-100, isoflavonas e ashwagandha ganham tração como alternativas naturais a TRH com publico de altissimo poder aquisitivo",
+          "summary": "Meio e Mensagem (2026): menopausa recebeu a visibilidade que merecia. Mulheres 45-60 anos com alto poder aquisitivo buscam abordagens personalizadas para densidade ossea, sono, metabolismo e sintomas vasomotores. EstroG-100 com evidencia de reducao de 80% nos efeitos colaterais vs TRH lidera interesse clinico.",
+          "source": "Meio e Mensagem / Jovem Pan Saude / Meganesia, 2026",
+          "curto": "8",
+          "medio": "9",
+          "longo": "9",
+          "idea": "Protocolo Transicao Feminina: EstroG-100 ou isoflavona + magnesio L-treonato + vitamina D3 + colageno Verisol = Bundle Bem-Estar Climaterico. Ticket R$480-620/mes. Parceria com ginecologistas e nutris especializadas para validacao e indicacao."
+        },
+        {
+          "category": "ciencia",
+          "tag": "Omega-3 Frequencia Cardiaca",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Omega-3 EPA e DHA reduzem frequencia cardiaca em 2,23 bpm segundo DSM-Firmenich 2026 - meta-analise confirma reducao de 29% na morte cardiaca com doses acima de 1g por dia",
+          "summary": "Pesquisa DSM-Firmenich (2026): omega-3 reduz frequencia cardiaca em 2,23 bpm com suplementacao regular. Meta-analise confirma reducao de 29% na morte cardiaca com 1g+/dia de EPA+DHA. 76% da populacao mundial nao atinge recomendacao diaria de EPA e DHA.",
+          "source": "DSM-Firmenich / SBCM / ProdutosAnalisados, 2026",
+          "curto": "8",
+          "medio": "8",
+          "longo": "8",
+          "idea": "Argumento de 30 segundos: 3 em cada 4 pessoas tem omega-3 baixo sem saber. Diferenciar pela qualidade com EPA+DHA declarados por dose e certificacao IFOS. Bundle Cardiovascular: Omega-3 Ultra + D3 2000UI + K2. Recompra com exame de triglicerideos em 3 meses."
+        },
+        {
+          "category": "tendencias",
+          "tag": "Influenciadores Wellness Digital",
+          "stars": "⭐⭐⭐",
+          "headline": "Instagram concentra 53% do conteudo de saude no Brasil - publico wellness e 77% feminino 25-34 anos e cada video gera em media 174 mil interacoes superando outros nichos",
+          "summary": "HypeAuditor e TikTok Analytics (2026): wellness e o nicho de maior engajamento nas redes sociais brasileiras. Instagram com 53,1% de todo o conteudo de saude. Publico: 77,4% feminino, 25-34 anos, alto poder de decisao de compra. LODs de saude convertem com eficiencia 3x superior ao anuncio pago.",
+          "source": "HypeAuditor / HiperMidia Comunicacao / Modash, 2026",
+          "curto": "6",
+          "medio": "8",
+          "longo": "7",
+          "idea": "Estrategia LOD: identificar 5-10 micro-influenciadores wellness (10k-150k seguidores) com engajamento acima de 3%. Parceria com produto gratuito + codigo de desconto rastreavel. Conteudo que converte: resultado pessoal apos 30 dias de uso. Meta: 8-15 conversoes por parceiro por mes."
+        }
+      ]
+    },
+    {
       "date": "2026-05-04",
       "dateLabel": "4 de Maio de 2026",
       "headline": "Magnesio cerebral, saude feminina lidera 58% do mercado e longevidade emerge como maior oportunidade",

@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wellness Intelligence | você-mais+</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --navy:     #00276e;
+      --yellow:   #feda14;
+      --black:    #1d1d1b;
+      --white:    #ffffff;
+      --gray-50:  #f7f7f7;
+      --gray-100: #efefef;
+      --gray-200: #e0e0e0;
+      --gray-400: #adadad;
+      --gray-600: #6b6b6b;
+      --gray-800: #2e2e2e;
+      --border:   rgba(0,0,0,0.09);
+    }
+    body { font-family:'Inter',sans-serif; background:var(--white); color:var(--black); -webkit-font-smoothing:antialiased; }
+    header { background:var(--white); border-bottom:1px solid var(--border); position:sticky; top:0; z-index:100; }
+    .header-inner { max-width:1280px; margin:0 auto; padding:0 40px; height:64px; display:flex; align-items:center; justify-content:space-between; }
+    .logo-wrap { display:flex; align-items:center; gap:16px; text-decoration:none; }
+    .logo-img  { height:22px; width:auto; }
+    .logo-divider { width:1px; height:20px; background:var(--gray-200); }
+    .logo-sub { font-size:10px; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:var(--gray-400); }
+    nav { display:flex; gap:2px; }
+    nav a { font-size:11px; font-weight:600; letter-spacing:0.08em; text-transform:uppercase; color:var(--gray-600); text-decoration:none; padding:6px 14px; border-radius:100px; transition:all .15s; }
+    nav a:hover  { color:var(--navy); background:var(--gray-50); }
+    nav a.active { color:var(--navy); background:var(--yellow); }
+    .header-date { font-size:11px; font-weight:500; color:var(--gray-400); }
+    .alert-strip { background:var(--navy); color:var(--white); padding:11px 40px; display:flex; align-items:center; justify-content:center; gap:20px; }
+    .alert-badge { font-size:9px; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; background:var(--yellow); color:var(--navy); padding:4px 10px; border-radius:100px; white-space:nowrap; }
+    .alert-text  { font-size:12.5px; opacity:.9; }
+    .alert-text strong { font-weight:700; }
+    main { max-width:1280px; margin:0 auto; padding:48px 40px 80px; }
+    .edition-bar { display:flex; align-items:center; justify-content:space-between; margin-bottom:28px; padding-bottom:20px; border-bottom:1px solid var(--border); }
+    .edition-live { display:flex; align-items:center; gap:10px; }
+    .live-dot { width:7px; height:7px; background:var(--navy); border-radius:50%; animation:blink 1.8s infinite; }
+    @keyframes blink { 0%,100%{opacity:1} 50%{opacity:.25} }
+    .edition-label { font-size:11px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--navy); }
+    .edition-meta  { font-size:11px; color:var(--gray-400); }
+    .grid { display:grid; grid-template-columns:repeat(12,1fr); grid-auto-rows:76px; gap:14px; }
+    .card { border-radius:14px; padding:26px; position:relative; overflow:hidden; display:flex; flex-direction:column; justify-content:space-between; transition:transform .18s,box-shadow .18s; cursor:pointer; }
+    .card:hover { transform:translateY(-3px); box-shadow:0 14px 36px rgba(0,0,0,.10); }
+    .c-hero  { grid-column:span 7; grid-row:span 5; }
+    .c-tall  { grid-column:span 5; grid-row:span 5; }
+    .c-wide  { grid-column:span 8; grid-row:span 4; }
+    .c-med   { grid-column:span 4; grid-row:span 4; }
+    .c-sm    { grid-column:span 4; grid-row:span 4; }
+    .c-third { grid-column:span 4; grid-row:span 3; }
+    .c-full  { grid-column:span 12; grid-row:span 3; }
+    .bg-navy    { background:var(--navy);    color:var(--white); }
+    .bg-yellow  { background:var(--yellow);  color:var(--navy);  }
+    .bg-black   { background:var(--black);   color:var(--white); }
+    .bg-gray800 { background:var(--gray-800);color:var(--white); }
+    .bg-gray100 { background:var(--gray-100);color:var(--black); }
+    .bg-white   { background:var(--white);   color:var(--black); border:1px solid var(--border); }
+    .tag { display:inline-flex; align-items:center; gap:5px; font-size:9px; font-weight:800; letter-spacing:.12em; text-transform:uppercase; padding:4px 10px; border-radius:100px; width:fit-content; }
+    .bg-navy .tag,.bg-black .tag,.bg-gray800 .tag { background:rgba(255,255,255,.15); color:var(--white); }
+    .bg-yellow .tag  { background:rgba(0,39,110,.12); color:var(--navy); }
+    .bg-gray100 .tag,.bg-white .tag { background:var(--navy); color:var(--white); }
+    .tag-dot { width:4px; height:4px; border-radius:50%; background:currentColor; opacity:.6; }
+    .headline { font-size:clamp(15px,2vw,24px); font-weight:800; line-height:1.15; letter-spacing:-.025em; margin-top:10px; }
+    .c-hero .headline { font-size:clamp(22px,2.8vw,36px); }
+    .c-full .headline { font-size:clamp(16px,2vw,26px); max-width:900px; }
+    .sub { font-size:12px; line-height:1.55; margin-top:8px; opacity:.72; }
+    .stat-num  { font-size:clamp(36px,5vw,60px); font-weight:900; letter-spacing:-.04em; line-height:1; margin:10px 0 4px; }
+    .stat-desc { font-size:11px; font-weight:500; line-height:1.45; opacity:.70; }
+    .card-foot { display:flex; align-items:center; justify-content:space-between; margin-top:14px; }
+    .cta-label { font-size:9.5px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; opacity:.50; }
+    .arrow-btn { width:34px; height:34px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:14px; }
+    .bg-navy .arrow-btn,.bg-black .arrow-btn,.bg-gray800 .arrow-btn { background:rgba(255,255,255,.15); }
+    .bg-yellow .arrow-btn { background:rgba(0,39,110,.12); }
+    .bg-gray100 .arrow-btn,.bg-white .arrow-btn { background:var(--navy); color:var(--white); }
+    .accent-bar { display:block; width:28px; height:3px; background:var(--yellow); border-radius:2px; margin-bottom:12px; }
+    .bg-yellow .accent-bar { background:var(--navy); }
+    .plus-deco  { position:absolute; right:20px; font-size:52px; font-weight:900; opacity:.08; pointer-events:none; }
+    .modal-overlay { position:fixed; inset:0; z-index:500; background:rgba(0,20,55,.55); backdrop-filter:blur(6px); display:flex; align-items:center; justify-content:center; padding:24px; opacity:0; pointer-events:none; transition:opacity .22s; }
+    .modal-overlay.open { opacity:1; pointer-events:all; }
+    .modal { background:var(--white); border-radius:20px; width:100%; max-width:640px; max-height:88vh; overflow-y:auto; box-shadow:0 32px 80px rgba(0,0,0,.22); transform:translateY(20px); transition:transform .25s; position:relative; }
+    .modal-overlay.open .modal { transform:translateY(0); }
+    .modal-header { background:var(--navy); border-radius:20px 20px 0 0; padding:28px 32px 24px; position:relative; }
+    .modal-tag    { display:inline-flex; align-items:center; gap:5px; font-size:9px; font-weight:800; letter-spacing:.12em; text-transform:uppercase; padding:4px 10px; border-radius:100px; background:rgba(255,255,255,.15); color:var(--white); margin-bottom:12px; }
+    .modal-headline { font-size:22px; font-weight:800; line-height:1.2; letter-spacing:-.02em; color:var(--white); }
+    .modal-stars  { font-size:16px; margin-top:8px; }
+    .modal-close  { position:absolute; top:20px; right:20px; width:36px; height:36px; border-radius:50%; background:rgba(255,255,255,.15); border:none; color:var(--white); font-size:18px; cursor:pointer; display:flex; align-items:center; justify-content:center; transition:background .15s; }
+    .modal-close:hover { background:rgba(255,255,255,.28); }
+    .modal-body { padding:28px 32px 32px; }
+    .modal-section { margin-bottom:24px; }
+    .modal-section-title { font-size:9px; font-weight:800; letter-spacing:.14em; text-transform:uppercase; color:var(--gray-400); margin-bottom:8px; padding-bottom:8px; border-bottom:1px solid var(--border); }
+    .modal-text { font-size:14px; line-height:1.65; color:var(--black); }
+    .modal-source { display:flex; align-items:center; gap:8px; margin-top:12px; }
+    .modal-source-label { font-size:10px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--gray-400); }
+    .modal-source-val   { font-size:12px; font-weight:500; color:var(--navy); }
+    .modal-scores { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; }
+    .score-item   { background:var(--gray-50); border:1px solid var(--border); border-radius:10px; padding:14px; text-align:center; }
+    .score-num    { font-size:26px; font-weight:900; color:var(--navy); line-height:1; }
+    .score-label  { font-size:9px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--gray-400); margin-top:4px; }
+    .modal-idea       { background:var(--navy); border-radius:12px; padding:18px 20px; color:var(--white); }
+    .modal-idea-accent{ display:inline-block; width:20px; height:3px; background:var(--yellow); border-radius:2px; margin-bottom:10px; }
+    .modal-idea-label { font-size:9px; font-weight:800; letter-spacing:.12em; text-transform:uppercase; opacity:.5; margin-bottom:6px; }
+    .modal-idea-text  { font-size:14px; font-weight:600; line-height:1.5; }
+    .archive { background:var(--gray-50); border-top:1px solid var(--border); padding:60px 40px; }
+    .archive-inner { max-width:1280px; margin:0 auto; }
+    .archive-hd { display:flex; align-items:center; gap:20px; margin-bottom:28px; }
+    .archive-title { font-size:10px; font-weight:800; letter-spacing:.14em; text-transform:uppercase; color:var(--gray-600); white-space:nowrap; }
+    .archive-line { flex:1; height:1px; background:var(--border); }
+    .archive-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:12px; }
+    .archive-card { display:block; background:var(--white); border:1px solid var(--border); border-radius:12px; padding:18px 20px; text-decoration:none; color:var(--black); transition:all .15s; }
+    .archive-card:hover { border-color:var(--navy); transform:translateY(-2px); }
+    .archive-date { font-size:10px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--navy); margin-bottom:6px; }
+    .archive-hl   { font-size:13px; font-weight:600; line-height:1.4; margin-bottom:10px; }
+    .archive-tags { display:flex; flex-wrap:wrap; gap:5px; }
+    .archive-tags span { font-size:9px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; background:var(--gray-100); color:var(--gray-600); padding:3px 8px; border-radius:100px; }
+    footer { background:var(--black); color:var(--white); padding:24px 40px; }
+    .footer-inner { max-width:1280px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; }
+    .footer-brand { display:flex; align-items:center; gap:16px; }
+    .footer-sep   { width:1px; height:16px; background:rgba(255,255,255,.2); }
+    .footer-tagline { font-size:11px; font-weight:500; opacity:.4; }
+    .footer-note  { font-size:10px; opacity:.3; }
+    @media(max-width:900px){
+      .header-inner{padding:0 20px;} main{padding:28px 16px 60px;}
+      .grid{grid-template-columns:1fr 1fr;grid-auto-rows:90px;gap:10px;}
+      .c-hero,.c-wide,.c-full{grid-column:span 2;grid-row:span 4;}
+      .c-tall,.c-med,.c-sm{grid-column:span 2;grid-row:span 3;}
+      .c-third{grid-column:span 1;grid-row:span 2;}
+      .alert-strip{flex-direction:column;gap:6px;padding:12px 20px;text-align:center;}
+      .archive{padding:40px 16px;} .footer-inner{flex-direction:column;gap:10px;text-align:center;}
+      .modal{border-radius:14px;} .modal-header{padding:22px 22px 18px;} .modal-body{padding:20px 22px 24px;}
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a class="logo-wrap" href="#">
+      <img src="logo-positiva.png" alt="voce-mais+" class="logo-img" />
+      <div class="logo-divider"></div>
+      <span class="logo-sub">Wellness Intelligence</span>
+    </a>
+    <nav>
+      <a href="#" class="active">Hoje</a>
+      <a href="#" onclick="document.querySelector('.archive').scrollIntoView({behavior:'smooth'});return false;">Arquivo</a>
+    </nav>
+    <span class="header-date">4 de Maio de 2026</span>
+  </div>
+</header>
+<div class="alert-strip">
+  <span class="alert-badge">&#9888; Urgente</span>
+  <span class="alert-text"><strong>Magnesio L-Treonato atravessa a barreira cerebral</strong> &mdash; novo estudo maio 2026 confirma upgrade cognitivo premium. <strong>Mulheres = 58% do mercado:</strong> quem nao tem argumento consultivo perde a cliente mais fiel.</span>
+</div>
+<main>
+  <div class="edition-bar">
+    <div class="edition-live">
+      <div class="live-dot"></div>
+      <span class="edition-label">Edicao de hoje &mdash; 4 de Maio de 2026</span>
+    </div>
+    <span class="edition-meta">13 tendencias analisadas &middot; Wellness Intelligence Voce Mais+</span>
+  </div>
+
+  <div class="grid">
+
+    <!-- CARD 1: HERO -->
+    <div class="card c-hero bg-navy" data-modal="1">
+      <div>
+        <span class="accent-bar"></span>
+        <div class="tag"><div class="tag-dot"></div>Ciencia &middot; Magnesio Cognitivo Mai 2026</div>
+        <div class="headline">Magnesio L-Treonato e a unica forma que atravessa a barreira cerebral &mdash; novo estudo de maio 2026 confirma melhora de foco, memoria e desaceleracao do declinio cognitivo</div>
+        <p class="sub">Brazilian Journal of Health Review (maio/2026) confirma: L-Treonato e a unica forma de magnesio com acesso eficiente ao sistema nervoso central. Enquanto clientes conhecem magnesio para camara e sono, o potencial cognitivo e o diferencial premium que ainda nao chegou ao grande publico.</p>
+      </div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <!-- CARD 2: TALL -->
+    <div class="card c-tall bg-yellow" data-modal="2">
+      <div>
+        <span class="accent-bar"></span>
+        <div class="tag"><div class="tag-dot"></div>Mercado &middot; Brasil Suplementos 2026</div>
+        <div class="headline">Mercado brasileiro cresce 15% em 2025 e deve atingir R$13,8 bilhoes ate 2030 &mdash; Brasil entra no top 5 global</div>
+        <div class="stat-num">R$13,8bi</div>
+        <div class="stat-desc">projecao do mercado brasileiro de suplementos ate 2030; crescimento liderado por mulheres 30-50 anos, saude feminina e suplementacao de precisao</div>
+      </div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <!-- CARD 3: WIDE -->
+    <div class="card c-wide bg-gray100" data-modal="3">
+      <div>
+        <div class="tag"><div class="tag-dot"></div>Perfil &middot; Consumidora Feminina 2026</div>
+        <div class="headline">Mulheres sao 58% do mercado de suplementos em 2026 (Sincofarma SP) &mdash; tres categorias lideram a demanda e definem o ticket mais alto do setor</div>
+        <p class="sub">Equilíbrio hormonal, sono e bem-estar emocional, e pele/cabelo/unhas sao as tres categorias lideradas por mulheres. Alta fidelidade, alto ticket medio e maior propensao a indicar. O consultivo e o diferencial que fideliza essa cliente.</p>
+      </div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <!-- CARD 4: MED -->
+    <div class="card c-med bg-gray800" data-modal="4">
+      <div>
+        <div class="tag"><div class="tag-dot"></div>Ciencia &middot; Omega-3 Deficit Global</div>
+        <div class="headline">76% da populacao tem deficit de Omega-3 sem saber &mdash; combinacao com D3 e exercicio protege o envelhecimento biologico (Nature Aging)</div>
+        <p class="sub">Estudo de 100 paises: maioria das pessoas nao atinge a recomendacao de EPA e DHA. A deficiencia e silenciosa — mas aumenta inflamacao, piora humor e acelera envelhecimento.</p>
+      </div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <!-- CARD 5: SM -->
+    <div class="card c-sm bg-gray100" data-modal="5">
+      <div>
+        <div class="tag"><div class="tag-dot"></div>Tendencias &middot; Ashwagandha KSM-66 2026</div>
+        <div class="headline">Ashwagandha domina buscas de 2026 no Brasil &mdash; KSM-66 certificado versus generico: diferenca de ate 10x nos principios ativos</div>
+        <p class="sub">O adaptogeno mais buscado de 2026. Cliente chega pesquisado — o lojista que diferencia o extrato certificado fecha a venda premium sem esforco.</p>
+      </div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <!-- CARD 6: THIRD -->
+    <div class="card c-third bg-black" data-modal="6">
+      <div>
+        <div class="tag"><div class="tag-dot"></div>Regulacao &middot; ANVISA Curcuma 2026</div>
+        <div class="headline">ANVISA IN 438/2026: 130 mg/dia de curcuminoides com advertencia hepatica obrigatoria &mdash; prazo: setembro 2026</div>
+        <p class="sub">Seguimento da regulacao de abril: empresas tem ate 1 de setembro para adequar rotulos e formulas. Compliance proativo ja e diferencial de confianca.</p>
+      </div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <!-- CARD 7: THIRD -->
+    <div class="card c-third bg-gray100" data-modal="7">
+      <div>
+        <div class="tag"><div class="tag-dot"></div>Ciencia &middot; Psicobioticos Maturidade 2026</div>
+        <div class="headline">Psicobioticos chegam a maturidade clinica em 2026 &mdash; cepas produzem serotonina e GABA diretamente no intestino</div>
+        <p class="sub">Pesquisa espanhola confirma eixo intestino-cerebro como abordagem terapeutica real. Cliente com ansiedade ja e candidato ao suplemento — margem alta, argumento solido.</p>
+      </div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <!-- CARD 8: THIRD -->
+    <div class="card c-third bg-white" data-modal="8">
+      <div>
+        <div class="tag"><div class="tag-dot"></div>Tendencias &middot; Lion Mane Cogumelo</div>
+        <div class="headline">Lion Mane e o adaptogeno cognitivo de maior crescimento em 2026 &mdash; ativos unicos estimulam NGF e crescimento neuronal</div>
+        <p class="sub">Erinacinas e Hericenonas existem exclusivamente nesse cogumelo. Reduz depressao e ansiedade em 4 semanas. Publico premium que paga por exotismo comprovado.</p>
+      </div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <!-- CARD 9: FULL -->
+    <div class="card c-full bg-navy" data-modal="9">
+      <div>
+        <div class="tag"><div class="tag-dot"></div>Mercado &middot; Clean Label US$89bi ate 2034</div>
+        <div class="headline">Clean label vai de US$28 bilhoes para US$89 bilhoes ate 2034 &mdash; mais de 60% dos consumidores globais pagam mais por marcas que explicam a origem dos ingredientes</div>
+        <p class="sub">CAGR de 12,2%. Em 2026 o consumidor consciente exige: ingrediente reconhecivel, procedencia rasteravel, sem aditivos artificiais. O rotulo limpo deixou de ser diferencial — e o preco de entrada para competir.</p>
+      </div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <!-- CARD 10: THIRD -->
+    <div class="card c-third bg-gray800" data-modal="10">
+      <div>
+        <div class="tag"><div class="tag-dot"></div>Tendencias &middot; Longevidade NAD+ 2026</div>
+        <div class="headline">Longevidade e o maior mercado emergente &mdash; NAD+, espermidina e urolitina A chegam ao Brasil com ticket 40-60% maior</div>
+        <p class="sub">Mercado global ultrapassa US$252 bilhoes em 2025, CAGR 7,5%. Cliente AB urbano 40+ ja busca ativamente. Quem educa primeiro fideliza com alto valor.</p>
+      </div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <!-- CARD 11: THIRD -->
+    <div class="card c-third bg-yellow" data-modal="11">
+      <div>
+        <span class="accent-bar"></span>
+        <div class="tag"><div class="tag-dot"></div>Regulacao &middot; Colageno VERISOL ANVISA</div>
+        <div class="headline">Verisol e o unico colageno com alegacao aprovada pela ANVISA para saude da pele &mdash; argumento irrebativel contra o concorrente</div>
+        <div class="stat-num">4sem</div>
+        <div class="stat-desc">tempo para resultado visivel com 2,5g/dia de VERISOL confirmado em estudos da Universidade de Kiel; K-Beauty boom: buscas por mascara de colageno coreana subiram 300% em 2025</div>
+      </div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <!-- CARD 12: THIRD -->
+    <div class="card c-third bg-white" data-modal="12">
+      <div>
+        <div class="tag"><div class="tag-dot"></div>Tendencias &middot; Saude Feminina Hormonal</div>
+        <div class="headline">TPM e menopausa em 2026: 70% das mulheres usarao tech para monitorar hormonios &mdash; como capturar a clientela mais valiosa do setor</div>
+        <p class="sub">Vitex, vitamina B6 e magnesio lideram evidencia para TPM. EstroG-100: 80% menos efeitos colaterais. Alto poder aquisitivo + alta intencao de compra.</p>
+      </div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <!-- CARD 13: FULL -->
+    <div class="card c-full bg-gray100" data-modal="13">
+      <div>
+        <div class="tag"><div class="tag-dot"></div>Analise de Cruzamento &middot; 4 Mai 2026</div>
+        <div class="headline">Triangulo de ouro de maio: magnesio cognitivo + saude feminina + longevidade emergente convergem &mdash; o lojista consultivo com esses tres argumentos domina o ticket mais alto de 2026</div>
+        <p class="sub">Cruzando as 13 tendencias desta edicao, um padrao inequivoco: publico feminino (58%), saude mental e cognitiva (magnesio L-Treonato, Lion Mane, psicobioticos) e longevidade premium sao os tres vetores de crescimento. O roteiro consultivo que une os tres fecha 4 a 5 produtos por atendimento.</p>
+      </div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+  </div>
+</main>
+
+<div class="archive">
+  <div class="archive-inner">
+    <div class="archive-hd">
+      <span class="archive-title">Edicoes Anteriores</span>
+      <div class="archive-line"></div>
+    </div>
+    <div class="archive-grid">
+      <a class="archive-card" href="edicoes/2026-05-03.html">
+        <div class="archive-date">3 de Maio de 2026</div>
+        <div class="archive-hl">Intestino como centro do wellness 2026: prebioticos + psicobioticos + fibra funcional formam o triangulo estrategico de Q2</div>
+        <div class="archive-tags"><span>psicobioticos</span><span>prebioticos</span><span>gut-brain</span></div>
+      </a>
+      <a class="archive-card" href="edicoes/2026-05-01.html">
+        <div class="archive-date">1 de Maio de 2026</div>
+        <div class="archive-hl">Psicobioticos ADM + burnout adaptogenicos + vitamina D inverno dominam Dia do Trabalhador</div>
+        <div class="archive-tags"><span>psicobioticos</span><span>adaptogenicos</span><span>vitamina-d</span></div>
+      </a>
+      <a class="archive-card" href="edicoes/2026-04-30.html">
+        <div class="archive-date">30 de Abril de 2026</div>
+        <div class="archive-hl">Colageno vegetal avanca + creatina cognitiva + D3+K2 fundacionais</div>
+        <div class="archive-tags"><span>colageno</span><span>creatina</span><span>vitamina-d</span></div>
+      </a>
+      <a class="archive-card" href="edicoes/2026-04-29.html">
+        <div class="archive-date">29 de Abril de 2026</div>
+        <div class="archive-hl">Saude mental + suplementacao natural + microbioma e o tripe da semana</div>
+        <div class="archive-tags"><span>saude-mental</span><span>microbioma</span><span>psicobioticos</span></div>
+      </a>
+      <a class="archive-card" href="edicoes/2026-04-28.html">
+        <div class="archive-date">28 de Abril de 2026</div>
+        <div class="archive-hl">Omega-3 qualidade EPA-DHA + longevidade NMN + saude feminina ciclo</div>
+        <div class="archive-tags"><span>omega-3</span><span>longevidade</span><span>feminina</span></div>
+      </a>
+      <a class="archive-card" href="edicoes/2026-04-27.html">
+        <div class="archive-date">27 de Abril de 2026</div>
+        <div class="archive-hl">Plant protein avanca + omega-3 fundacional + influenciadores LOD dominam conversao</div>
+        <div class="archive-tags"><span>plant-based</span><span>omega-3</span><span>digital</span></div>
+      </a>
+      <a class="archive-card" href="edicoes/2026-04-25.html">
+        <div class="archive-date">25 de Abril de 2026</div>
+        <div class="archive-hl">Adaptogenicos boom global + vitamina D sazonal + colageno vegetal ultrapassa US$8 bilhoes</div>
+        <div class="archive-tags"><span>adaptogenicos</span><span>vitamina-d</span><span>colageno</span></div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="logo-branca.png" alt="voce-mais+" style="height:18px;width:auto;" />
+      <div class="footer-sep"></div>
+      <span class="footer-tagline">Wellness Intelligence</span>
+    </div>
+    <span class="footer-note">Gerado automaticamente &mdash; 4 de Maio de 2026</span>
+  </div>
+</footer>
+
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal">
+    <div class="modal-header">
+      <button class="modal-close" id="modalClose">&#215;</button>
+      <div class="modal-tag" id="mTag"></div>
+      <div class="modal-headline" id="mHeadline"></div>
+      <div class="modal-stars" id="mStars"></div>
+    </div>
+    <div class="modal-body">
+      <div class="modal-section">
+        <div class="modal-section-title">Resumo &amp; Analise</div>
+        <p class="modal-text" id="mSummary"></p>
+        <div class="modal-source">
+          <span class="modal-source-label">Fonte</span>
+          <span class="modal-source-val" id="mSource"></span>
+        </div>
+      </div>
+      <div class="modal-section">
+        <div class="modal-section-title">Score de Impacto</div>
+        <div class="modal-scores">
+          <div class="score-item"><div class="score-num" id="mCurto"></div><div class="score-label">Curto Prazo</div></div>
+          <div class="score-item"><div class="score-num" id="mMedio"></div><div class="score-label">Medio Prazo</div></div>
+          <div class="score-item"><div class="score-num" id="mLongo"></div><div class="score-label">Longo Prazo</div></div>
+        </div>
+      </div>
+      <div class="modal-idea">
+        <div class="modal-idea-accent"></div>
+        <div class="modal-idea-label">Ideia para Voce Mais+</div>
+        <p class="modal-idea-text" id="mIdea"></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+var MODALS = {
+  1: {
+    tag: "Ciencia - Magnesio L-Treonato Barreira Cerebral Mai 2026",
+    stars: "&#11088;&#11088;&#11088;&#11088;&#11088;",
+    headline: "Magnesio L-Treonato e a unica forma que atravessa a barreira hematoencefalica - estudo maio 2026 confirma melhora de foco, memoria e desaceleracao do declinio cognitivo em adultos",
+    summary: "Estudo publicado em maio de 2026 no Brazilian Journal of Health Review confirma que o L-Treonato de magnesio e a unica forma que atravessa eficientemente a barreira hematoencefalica, chegando ao liquido cefalorraquidiano em concentracao terapeuticamente relevante. O mecanismo: o L-Treonato e um acido organico que facilita o transporte ativo de magnesio para o SNC, enquanto formas como o citrato e o bisglicinato sao absorvidas sistemicamente mas nao penetram o cerebro com a mesma eficiencia. A Tua Saude publicou em 01/05/2026 reportagem com titulo Qual tipo de magnesio atravessa a barreira do cerebro e e o mais recomendado para frear o declinio cognitivo. Beneficios documentados: melhora em testes de fluencia verbal e memoria de trabalho em 12 semanas; reducao de marcadores inflamatorios no SNC; potencial neuroprotetor em adultos a partir dos 45 anos. O insight de mercado: clientes conhecem magnesio para camara muscular, sono e ansiedade - mas o potencial cognitivo e completamente desconhecido do grande publico. Isso cria uma janela de venda premium com margem superior e diferenciacao real de produto.",
+    source: "Brazilian Journal of Health Review / Tua Saude 01 Mai 2026 / Geniusnutra Melhor Magnesio 2026",
+    curto: "7",
+    medio: "9",
+    longo: "10",
+    idea: "Posicionar o Magnesio L-Treonato como o magnesio do cerebro - upgrade para quem ja usa bisglicinato para sono e agora quer foco e cognicao. Script: Voce ja usa magnesio para dormir melhor. O L-Treonato e a proxima evolucao: e o unico que chega ao seu cerebro. Em 12 semanas, a maioria relata mais foco, menos esquecimento e raciocinio mais rapido. Serie de conteudo: O magnesio do cerebro - 3 posts explicando barreira hematoencefalica em linguagem visual. Bundle premium: L-Treonato + Lion Mane + Omega-3 = Protocolo Cognicao. Meta: posicionar como o suplemento cognitivo mais cientifico do portfolio, com ticket 40% superior ao bisglicinato."
+  },
+  2: {
+    tag: "Mercado - Brasil Suplementos R$13,8 Bilhoes 2030",
+    stars: "&#11088;&#11088;&#11088;&#11088;",
+    headline: "Mercado brasileiro de suplementos cresce 15% em 2025 e deve atingir R$13,8 bilhoes ate 2030 - Brasil entra no top 5 mundial impulsionado por mulheres e suplementacao de precisao",
+    summary: "O setor brasileiro de suplementos cresceu 15% em 2025 e as projecoes da Revista Suplementacao apontam para R$13,8 bilhoes ate 2030, consolidando o Brasil entre os 5 maiores mercados do mundo. O crescimento nao e uniforme: as categorias que mais crescem sao saude feminina (TPM, menopausa, ciclo), saude mental (magnesio, adaptogenicos, psicobioticos) e suplementacao de precisao (formas queladas, extratos padronizados). O consumidor de 2026 e mais exigente: pesquisa antes de comprar, identifica claims exagerados e paga premium por transparencia verificavel. O mercado global de suplementos foi avaliado em US$100,92 bilhoes em 2025 e deve chegar a US$219,33 bilhoes ate 2034 (Fortune Business Insights, CAGR 9,11%). Para a Voce Mais+: o crescimento do mercado nao garante crescimento da marca. Quem captura a curva e o lojista que tem o mix certo e o argumento certo para o consumidor maduro de 2026.",
+    source: "Revista Suplementacao / Food Connection / Fortune Business Insights, 2026",
+    curto: "5",
+    medio: "7",
+    longo: "10",
+    idea: "Auditoria de mix urgente: mapear quais das 5 categorias de maior crescimento (magnesio quelado, colageno Verisol, D3+K2, ashwagandha certificada, omega-3 com EPA+DHA declarados) estao no portfolio. Cada categoria ausente e uma fatia do crescimento sendo entregue para o concorrente. Acao imediata: comparar mix atual com top 10 buscas de suplementos no Brasil em 2026 e identificar as 3 maiores lacunas. Estrategia de posicionamento: posicionar como consultoria de qualidade, nao como preco - consumidor de 2030 vai pagar mais por marca que ele confia."
+  },
+  3: {
+    tag: "Perfil - Consumidora Feminina 58% Mercado Sincofarma 2026",
+    stars: "&#11088;&#11088;&#11088;&#11088;&#11088;",
+    headline: "Mulheres sao 58% do mercado de suplementos em 2026 (Sincofarma SP) - tres categorias definem a demanda feminina e o ticket medio mais alto do setor",
+    summary: "Pesquisa do Sincofarma SP publicada em marco de 2026 confirma que mulheres lideram o consumo de suplementos no Brasil com 58% do total. A pesquisa identifica tres categorias de maior demanda feminina: (1) EQUILIBRIO METABOLICO E HORMONAL - suplementos para TPM, menopausa, ciclo e equilibrio de cortisol; alta disposicao a pagar premium por resultados especificos. (2) SONO E BEM-ESTAR EMOCIONAL - magnesio quelado, ashwagandha, L-teanina; compra recorrente e alta fidelidade de marca. (3) PELE, CABELO E UNHAS - colageno Verisol, biotina, silicio organico; cliente que associa resultado visivel ao produto e retorna regularmente. O perfil dessa consumidora: pesquisa antes de comprar, ja chegou ao ponto de venda com informacao, busca confirmacao e personalizacao do consultor. Tem maior poder aquisitivo e maior propensao a indicar para a rede social. O lojista que tem o argumento consultivo para esse perfil tem a cliente mais valiosa do mercado.",
+    source: "Sincofarma SP / Farmacotecnica, marco/2026",
+    curto: "9",
+    medio: "9",
+    longo: "9",
+    idea: "Roteiro da consultoria feminina em 3 perguntas: (1) O que mais te incomoda agora - sono, disposicao ou pele? (2) Voce esta em alguma fase especifica - pos-parto, pre-menopausa, estresse intenso? (3) Ja usa algum suplemento? O que sente falta de resultado? Com essas tres perguntas o consultor tem informacao suficiente para indicar o produto certo, o complemento ideal e criar o argumento de recompra. Mulheres que sao ouvidas voltam e trazem amigas - o marketing mais eficiente do setor nao tem custo, e o atendimento consultivo que resolve o problema real."
+  },
+  4: {
+    tag: "Ciencia - Omega-3 Deficit 76% Populacao Nature Aging 2026",
+    stars: "&#11088;&#11088;&#11088;&#11088;&#11088;",
+    headline: "76% da populacao mundial tem deficit de Omega-3 sem saber - combinacao com vitamina D e exercicio protege contra envelhecimento biologico (Nature Aging, abril 2026)",
+    summary: "Pesquisadores das Universidades de East Anglia e Southampton analisaram dados de 100 paises incluindo o Brasil e descobriram que 76% das pessoas nao atingem a recomendacao diaria de EPA, DHA e DPA. No Brasil, a deficiencia se acentua pelo padrao alimentar com baixo consumo de peixes de agua fria. Em abril de 2026, estudo publicado na Nature Aging mostrou que o uso diario de omega-3 apresenta efeito protetor na desaceleracao do envelhecimento biologico em idosos acompanhados por 3 anos. A combinacao omega-3 + vitamina D + exercicio apresentou efeito adicional em diversas analises. Para o lojista: a maioria dos clientes que entra na loja ja tem deficit de omega-3 sem saber. A deficiencia e silenciosa - nao provoca sintoma agudo, mas aumenta inflamacao cronica, piora o humor e acelera o envelhecimento celular. O argumento de venda e direto: um dado epidemiologico que faz o cliente se reconhecer imediatamente como candidato ao produto.",
+    source: "Universidades East Anglia e Southampton / Nature Aging, via Tua Saude, abril/2026",
+    curto: "8",
+    medio: "9",
+    longo: "8",
+    idea: "Argumento que fecha a venda em 30 segundos: Sabia que 3 em cada 4 pessoas tem omega-3 baixo sem perceber? A deficiencia nao doi - mas aumenta inflamacao, piora o humor e acelera o envelhecimento. Uma capsula por dia ja faz diferenca em 4 semanas. Diferenciar pela qualidade: exigir e comunicar EPA e DHA por dose declarados no rotulo, indice TOTOX abaixo de 26 e origem certificada. Bundle com D3: Omega-3 Ultra + D3 2000UI = Protocolo Longevidade Fundacional. Argumento de recompra: mostra o exame de omega-3 em 3 meses para ver resultado nos niveis sanguineos."
+  },
+  5: {
+    tag: "Tendencias - Ashwagandha KSM-66 Buscas Brasil 2026",
+    stars: "&#11088;&#11088;&#11088;&#11088;&#11088;",
+    headline: "Ashwagandha domina as buscas de suplementos em 2026 no Brasil - KSM-66 certificado versus generico: diferenca de ate 10x nos principios ativos com consequencias diretas no resultado do cliente",
+    summary: "A ashwagandha (Withania somnifera) e o adaptogeno com maior crescimento de busca em 2025-2026 no Brasil, impulsionada por conteudo cientifico nas redes sociais e pela crescente consciencia sobre cortisol e estresse cronico. Em 2026, o guia completo publicado no Academia Central Fitness e em Umas e Ostras confirma os tres beneficios mais estudados: reducao de cortisol noturno, melhora da qualidade do sono profundo e regulacao da resposta ao estresse via eixo HPA. O KSM-66 e o extrato padronizado com 5% de withanolides, certificado e estudado em mais de 25 ensaios clinicos controlados. A versao generica pode ter concentracao de ativos de 0,5 a 1% - ou seja, 5 a 10x menos principio ativo na mesma dose declarada. Para o lojista: o cliente chega com a pesquisa feita. Ele nao precisa ser convencido de que ashwagandha funciona - precisa ser orientado sobre qual ashwagandha funciona. Quem entrega essa orientacao fecha a venda premium e a confianca de longo prazo.",
+    source: "Academia Central Fitness / Umas e Ostras / Food Connection, maio/2026",
+    curto: "9",
+    medio: "9",
+    longo: "9",
+    idea: "Argumento do KSM-66 em 20 segundos: Seu cliente chegou pedindo ashwagandha? A versao generica pode ter 10 vezes menos ativo. O KSM-66 e o extrato certificado com 5% de withanolides garantidos, a mesma concentracao usada nos 25 estudos clinicos que comprovam a eficacia. Esse e o certo. Crie um card fisico no ponto de venda: KSM-66 vs. Ashwagandha Generica com tabela comparativa de concentracao de withanolides. Cliente que entende a diferenca nao barganha o preco - ele sabe o que esta comprando."
+  },
+  6: {
+    tag: "Regulacao - ANVISA IN 438/2026 Curcuma Hepatotoxicidade Follow-up",
+    stars: "&#11088;&#11088;&#11088;&#11088;",
+    headline: "ANVISA IN 438/2026 (22 abr): limite de 130 mg/dia de curcuminoides totais com advertencia obrigatoria de hepatotoxicidade - prazo de adequacao total: 1 de setembro de 2026",
+    summary: "Seguimento da regulacao de abril: a ANVISA publicou a Instrucao Normativa 438/2026 estabelecendo 130mg/dia como limite maximo de curcuminoides totais (curcumina + demethoxicurcumina + bisdemethoxicurcumina) em suplementos alimentares. A motivacao foi o Alerta de Farmacovigilancia 04/2026, que identificou casos suspeitos de hepatotoxicidade associados a extratos concentrados de curcuma. Empresas que nao se adequarem ate 1 de setembro de 2026 terao produtos retirados do mercado. Para comunicacao ao cliente: nao ha risco do uso culinario de curcuma como tempero - o alerta e especifico a extratos concentrados em doses altas. O lojista informado que sabe explicar a diferenca ganha credibilidade e confianca do cliente que chegou assustado com a noticia na internet. Compliance proativo e diferencial de marca: publicar nota tecnica voluntaria antes do prazo demonstra seriedade cientifica.",
+    source: "ANVISA Alerta 04/2026 / Agencia Brasil / Acessa.com Curcuma Abr 2026",
+    curto: "8",
+    medio: "7",
+    longo: "7",
+    idea: "Transformar compliance em argumento de confianca: quando o cliente perguntar sobre curcuma e a ANVISA, usar este roteiro: A nova regra da ANVISA define 130mg/dia de curcuminoides como limite seguro. Nosso produto esta dentro desse limite e vamos atualizar o rotulo antes do prazo. Isso mostra que a regulacao existe para proteger voce - e que a gente respeita isso. O cliente que ouve essa resposta confia mais na marca do que antes de perguntar."
+  },
+  7: {
+    tag: "Ciencia - Psicobioticos Maturidade Clinica Gut-Brain 2026",
+    stars: "&#11088;&#11088;&#11088;&#11088;",
+    headline: "Psicobioticos chegam a maturidade clinica em 2026 - cepas especificas produzem serotonina e GABA no intestino e reduzem ansiedade em ensaios controlados",
+    summary: "O termo psicobiotico foi cunhado ha alguns anos, mas em 2026 a categoria alcancou maturidade clinica com evidencia de nivel 1. Estudo espanhol publicado em janeiro de 2026 no Diario en Positivo demonstrou que intestino inflamado envia sinais de alerta ao cerebro que antes eram tratados exclusivamente com farmacos psiquiatricos. As cepas psicobioticas mais estudadas em 2026 (Lactobacillus rhamnosus JB-1, Bifidobacterium longum 1714, Lactobacillus helveticus R0052) produzem GABA, reduzem cortisol e modulam o eixo HPA. O eixo intestino-cerebro via nervo vago esta completamente confirmado como via terapeutica. Para a Voce Mais+: cliente com ansiedade moderada, usuario de ansiolítico ou com queixa de humor instavel e candidato natural. O argumento da suplementacao natural como adjuvante ao tratamento medico - sem substituir - tem alta aceitacao por medicos e nutris progressistas. Margem alta, argumento solido, clientela com alto engajamento.",
+    source: "Gut Microbiota for Health / Nutritotal Brasil / Diario en Positivo, jan/2026",
+    curto: "6",
+    medio: "8",
+    longo: "9",
+    idea: "Argumento gut-brain para o balcao: Sabia que 90% da serotonina do seu corpo e produzida no intestino, nao no cerebro? Se voce tem ansiedade ou humor instavel, um probiotico com as cepas certas pode ser o complemento que esta faltando - de dentro para fora. Usar junto com psicobiotico: magnesio bisglicinato (ativa receptores GABA) + probiotico multiestirpe com cepas psicobioticas = bundle Equilibrio Mental. Parceria com nutris especializadas em microbioma como LODs validados. Citar: cada vez mais nutris e psiquiatras integrativos recomendam essa combinacao como adjuvante."
+  },
+  8: {
+    tag: "Tendencias - Lion Mane Cogumelo Cognitivo Crescimento 2026",
+    stars: "&#11088;&#11088;&#11088;&#11088;",
+    headline: "Lion Mane (Juba de Leao) e o adaptogeno cognitivo de maior crescimento em 2025-2026 - ativos exclusivos estimulam o fator de crescimento nervoso (NGF) e reduzem ansiedade em 4 semanas",
+    summary: "O Lion Mane (Hericium erinaceus) consolidou-se como o cogumelo medicinal de maior crescimento de interesse em 2025-2026. O mecanismo de acao unico: Erinacinas e Hericenonas - compostos que so existem nesse cogumelo - estimulam a producao de NGF (Nerve Growth Factor), proteina essencial para a plasticidade cerebral, aprendizagem e memoria. Estudos revisados em 2026 confirmam: melhora em testes de funcao cognitiva e humor em pessoas com comprometimento leve; reducao significativa de indices de depressao, ansiedade e insensatez em 4 semanas vs. placebo; potencial neuroprotetor na doenca de Alzheimer leve. O diferencial de mercado: o publico que busca foco natural sem cafeina paga premium por algo comprovado e com historia milenaria na medicina asiatica. Nao e um produto de massa - e um produto de nicho premium com historia e ciencia, exatamente o perfil que o consumidor de 2026 valoriza.",
+    source: "Sociedade Global / Brazilian Journals of Health Review / Kayamind, 2026",
+    curto: "7",
+    medio: "8",
+    longo: "9",
+    idea: "Argumento do Lion Mane em 30 segundos: Esse cogumelo tem compostos unicos que literalmente estimulam o crescimento de novas celulas nervosas no seu cerebro - algo que nenhuma outra planta faz. Estudos mostram melhora de memoria e humor em 4 semanas. Para quem quer foco sem precisar de mais cafe. Bundle cognitivo premium: Lion Mane + Magnesio L-Treonato + Omega-3 = Protocolo Performance Cerebral. Publico-alvo: executivos, estudantes em periodo de prova, profissionais criativos. Ticket alto, margem alta, publico de alta renda."
+  },
+  9: {
+    tag: "Mercado - Clean Label US$89 Bilhoes 2034 Transparencia Ingredientes",
+    stars: "&#11088;&#11088;&#11088;&#11088;",
+    headline: "Clean label vai de US$28 bilhoes para US$89 bilhoes ate 2034 (CAGR 12,2%) - mais de 60% dos consumidores globais confiam mais em marcas que explicam claramente a origem dos ingredientes",
+    summary: "O mercado global de ingredientes clean label movimentou US$28,2 bilhoes em 2024 e deve alcancar US$89,7 bilhoes ate 2034, com CAGR de 12,2%. A pesquisa da Food Connection publicada em 2026 confirma que mais de 60% dos consumidores globais afirmam confiar mais em marcas que explicam de forma clara de onde vem seus ingredientes e como sao processados. Para 2026, a exigencia do consumidor consciente e objetiva: (1) ingrediente reconhecivel no rotulo sem nome quimico obscuro; (2) procedencia rastreavel - pais de origem e forma de cultivo; (3) sem aditivos artificiais corantes, conservantes quimicos; (4) processo de producao compativel com discurso de naturalidade. O insight critico: clean label deixou de ser diferencial premium e passou a ser o preco de entrada para competir no segmento consciente. Marcas que nao conseguem comunicar essa transparencia estao perdendo a clientela de maior valor para o setor.",
+    source: "Food Connection / BHB Food / Santos Flora, 2026",
+    curto: "7",
+    medio: "8",
+    longo: "9",
+    idea: "Auditoria de comunicacao clean label urgente: para cada produto do portfolio, o lojista deve conseguir responder sem hesitar: De onde vem esse ingrediente? Como e produzido? Tem aditivos? O cliente de 2026 pergunta isso - e desconfianca da resposta imprecisa. Acao pratica: criar QR code em cada produto que leva para a pagina de transparencia com laudo do lote, origem dos ingredientes e certificacoes. Comunicar abertamente: Nosso rotulo nao tem ingrediente que voce nao consegue entender. Isso nao e so marketing - e o novo padrao que o mercado exige."
+  },
+  10: {
+    tag: "Tendencias - Longevidade NAD+ Espermidina Urolitina Brasil 2026",
+    stars: "&#11088;&#11088;&#11088;&#11088;&#11088;",
+    headline: "Longevidade e o maior mercado emergente de suplementos em 2026 - NAD+, espermidina e urolitina A chegam ao Brasil com ticket 40-60% maior que suplementos convencionais",
+    summary: "O mercado global de suplementos para longevidade ultrapassa US$252 bilhoes em 2025, crescendo 7,5% ao ano segundo o Grand View Research. No Brasil, lojistas com secoes dedicadas de longevidade ativa relatam tickets medios 40-60% maiores. Os ingredientes que lideram a categoria em 2026 sao tres: NAD+ (nicotinamida adenina dinucleotideo) - cofator essencial para reparo de DNA e energia mitocondrial, cai 50% dos 20 aos 60 anos; Espermidina - induz autofagia celular, removendo celulas danificadas; Urolitina A - derivado de metabolismo de polifenois, melhora funcao mitocondrial em musculo esqueletico, com estudos clinicos publicados. Ainda sao desconhecidos pelo grande publico, mas o cliente AB urbano acima de 45 anos ja os busca ativamente em farmácias de manipulacao e em plataformas especializadas. O insight: quem educa primeiro esse publico fideliza com alto valor e baixo churn, porque longevidade e uma jornada - nao uma compra unica.",
+    source: "Food Connection / Instituto de Longevidade / Grand View Research / Folha PE, 2026",
+    curto: "5",
+    medio: "7",
+    longo: "10",
+    idea: "Estrategia de longevidade em dois horizontes: IMEDIATO - Longevidade Stack com ingredientes ja aprovados: Resveratrol 200mg + CoQ10 Ubiquinol 100mg + D3 2000UI + Omega-3 Ultra 1g = Protocolo Longevidade Fundacional. MEDIO PRAZO (12-18m): NAD+ e urolitina A assim que regulacao avance. Lista de espera NAD+ agora: criar pre-cadastro, webinar mensal sobre longevidade, manter lista quente. Argumento para cliente 45+: Vitamina D e omega-3 sao a base. NAD+ e o proximo nivel - reabastece o combustivel que suas celulas perdem com a idade. Voce quer entrar na lista de novidades?"
+  },
+  11: {
+    tag: "Regulacao - Colageno VERISOL Alegacao ANVISA Pele 2026",
+    stars: "&#11088;&#11088;&#11088;&#11088;&#11088;",
+    headline: "VERISOL e o unico peptideo de colageno com alegacao funcional aprovada pela ANVISA para saude da pele - estudos confirmam resultado visivel em 4 semanas com 2,5g/dia",
+    summary: "O VERISOL (peptideo bioativo de colageno da GELITA) e o unico ingrediente de colageno com alegacao funcional especificamente para saude da pele aprovada pela ANVISA no Brasil. Isso significa que passou por estudos clinicos proprios que comprovam eficacia e que a agencia regulatoria reconheceu oficialmente o beneficio - nivel de evidencia que nenhum colageno bovino generico possui. Estudos da Universidade de Kiel (Proksch, 2014) confirmam: reducao visivel de rugas em 4 semanas com 2,5g/dia; aumento de 65% na teor de procolageno I e III da derme em 8 semanas. O contexto de mercado em 2026: a K-Beauty explodiu no Brasil com buscas por mascara de colageno coreana crescendo 300% em 2025. O cliente chega sensibilizado pela tendencia - o lojista que sabe diferenciar o VERISOL do colageno generico converte a venda e justifica o preco premium com uma unica frase: e o unico aprovado pela ANVISA para a pele.",
+    source: "VERISOL Brazil / ANVISA / Skin Pharmacology and Physiology / Dra. Caroline Cha, 2026",
+    curto: "9",
+    medio: "10",
+    longo: "9",
+    idea: "O argumento mais forte do colageno: Todo colageno promete - mas so o VERISOL tem alegacao aprovada pela ANVISA para saude da pele. Isso significa que passou por estudos clinicos proprios que comprovam o resultado, e a propria ANVISA reconheceu. 2,5g por dia, 4 semanas. E o que os dermatologistas indicam e a regulacao referenda. Argumento de diferenciacao de preco: Voce quer gastar menos em algo sem evidencia ou investir no unico que tem aprovacao regulatoria? Elimina objecao de preco sem discussao."
+  },
+  12: {
+    tag: "Tendencias - Saude Feminina Menopausa TPM Wearables 2026",
+    stars: "&#11088;&#11088;&#11088;&#11088;",
+    headline: "TPM e menopausa em 2026: 70% das mulheres usarao tecnologia para monitorar hormonios em breve - vitex, magnesio e EstroG-100 lideram evidencia natural com 80% menos efeitos colaterais",
+    summary: "Projecoes de 2026 apontam que 70% das mulheres usarao tecnologias de monitoramento hormonal em breve - wearables que medem cortisol, progesterona e estrogênio em tempo real, enviando alertas preventivos. Para o lojista, isso significa clientes que chegam sabendo o que precisam e buscando confirmacao e complementacao especializada. Para TPM: o trio com maior evidencia cientifica e vitex (agnus castus) - modula receptores de dopamina e prolactina, reduzindo irritabilidade, mastalgia e retencao hidrica; vitamina B6 - cofator na sintese de serotonina; magnesio bisglicinato - reduz conatracoes uterinas e melhora humor. Para menopausa: o EstroG-100 e um extrato fitoterápico patenteado sem hormonios que demonstrou em estudos clinicos 80% menos efeitos colaterais que terapia hormonal convencional, com melhora de ondas de calor, sudorese, sono e humor. Alto poder aquisitivo + alta intencao de compra = o perfil de cliente mais valioso do setor.",
+    source: "Bonitamulher.com.br / Meganesia / Jovem Pan / Farmacia Alquimia / Laboratorio do Valle, 2026",
+    curto: "8",
+    medio: "8",
+    longo: "9",
+    idea: "Roteiro de saude feminina por fase de vida: Para TPM: magnesio + vitamina B6 + vitex - o trio com mais evidencia cientifica. Para perimenopausa: adicionar isoflavonas ou EstroG-100, D3+K2 e colageno para ossos. Para menopausa estabelecida: EstroG-100 como base + magnesio para sono + colageno para pele + omega-3 para protecao cardiovascular. Pergunta que qualifica: Voce esta em qual momento - ainda tem TPM forte ou ja esta chegando na menopausa? A partir da resposta, o roteiro e automatico e o ticket medio e de 3 a 5 produtos."
+  },
+  13: {
+    tag: "Analise de Cruzamento - 4 Mai 2026",
+    stars: "&#11088;&#11088;&#11088;&#11088;&#11088;",
+    headline: "Triangulo de ouro de maio: magnesio cognitivo + saude feminina + longevidade emergente convergem como os tres vetores de crescimento de 2026 para a Voce Mais+",
+    summary: "Cruzando as 13 tendencias desta edicao, um padrao inequivoco emerge. VETOR 1 - COGNICAO NATURAL: as historias 1, 7 e 8 convergem no mesmo argumento - o consumidor quer saude mental e cognitiva sem farmacos. Magnesio L-Treonato (unico que chega ao cerebro), psicobioticos (serotonina via intestino) e Lion Mane (NGF via cogumelo) sao tres abordagens complementares e bundlaveis. Bundle Protocolo Cognicao = ticket medio de 3 produtos com margem alta e cliente de alto engajamento. VETOR 2 - FEMININO CONSULTIVO: as historias 3, 5 e 12 confirmam que mulheres (58% do mercado) chegam com pesquisa feita e pagam por consultivo que resolve o problema especifico. TPM, menopausa e cognicao feminina sao tres sub-nichos com roteiros proprios e tickets premium. VETOR 3 - LONGEVIDADE PREVENTIVA: as historias 2, 10 e 11 apontam para o crescimento de longo prazo: mercado que vai de R$10bi para R$13,8bi ate 2030 e puxado por consumidores 40+ que investem em saude preventiva com colageno, omega-3, D3+K2 e, em breve, NAD+. TEMA UNIFICADOR: o consumidor de 2026 quer personalizacao baseada em evidencia, nao produtos de prateleira. JANELA MAIS URGENTE: maio e junho para posicionar o Protocolo Cognicao como diferencial premium e refinar o roteiro consultivo feminino antes do inverno - estacao que eleva deficiencia de D3 e aumenta as queixas de sono e imunidade.",
+    source: "Analise cruzada exclusiva - Wellness Intelligence Voce Mais+, 4 de Maio de 2026",
+    curto: "10",
+    medio: "10",
+    longo: "10",
+    idea: "Roteiro definitivo para o mes: (1) Qual e sua maior queixa hoje - sono, ansiedade, cansaco ou foco? (2) Dois ou mais sintomas: MAG-7 + ashwagandha KSM-66 + omega-3 = Protocolo Equilíbrio. (3) Foco e cognicao especificamente: Magnesio L-Treonato + Lion Mane = Protocolo Cerebro. (4) Mulher 35+ com queixas hormonais: adicionar colágeno VERISOL + D3+K2. (5) Cliente 45+ preocupado com longevidade: Protocolo Longevidade Fundacional (D3+K2+Omega-3+Resveratrol). Ticket medio por roteiro: 3 a 5 produtos. Meta de maio: todos os consultores dominando pelo menos um roteiro de bundle."
+  }
+};
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelectorAll("[data-modal]").forEach(function(card) {
+    card.addEventListener("click", function() {
+      var id = this.getAttribute("data-modal");
+      var d  = MODALS[id];
+      if (!d) return;
+      document.getElementById("mTag").textContent      = d.tag;
+      document.getElementById("mHeadline").textContent = d.headline;
+      document.getElementById("mStars").innerHTML      = d.stars;
+      document.getElementById("mSummary").textContent  = d.summary;
+      document.getElementById("mSource").textContent   = d.source;
+      document.getElementById("mCurto").textContent    = d.curto + "/10";
+      document.getElementById("mMedio").textContent    = d.medio + "/10";
+      document.getElementById("mLongo").textContent    = d.longo + "/10";
+      document.getElementById("mIdea").textContent     = d.idea;
+      document.getElementById("modalOverlay").classList.add("open");
+    });
+  });
+  document.getElementById("modalClose").addEventListener("click", function() {
+    document.getElementById("modalOverlay").classList.remove("open");
+  });
+  document.getElementById("modalOverlay").addEventListener("click", function(e) {
+    if (e.target === this) this.classList.remove("open");
+  });
+  document.addEventListener("keydown", function(e) {
+    if (e.key === "Escape") document.getElementById("modalOverlay").classList.remove("open");
+  });
+});
+</script>
+</body>
+</html>
