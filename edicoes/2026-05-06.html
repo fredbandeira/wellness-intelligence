@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wellness Intelligence | você-mais+</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --navy:     #00276e;
+      --yellow:   #feda14;
+      --black:    #1d1d1b;
+      --white:    #ffffff;
+      --gray-50:  #f7f7f7;
+      --gray-100: #efefef;
+      --gray-200: #e0e0e0;
+      --gray-400: #adadad;
+      --gray-600: #6b6b6b;
+      --gray-800: #2e2e2e;
+      --border:   rgba(0,0,0,0.09);
+    }
+    body { font-family:'Inter',sans-serif; background:var(--white); color:var(--black); -webkit-font-smoothing:antialiased; }
+    header { background:var(--white); border-bottom:1px solid var(--border); position:sticky; top:0; z-index:100; }
+    .header-inner { max-width:1280px; margin:0 auto; padding:0 40px; height:64px; display:flex; align-items:center; justify-content:space-between; }
+    .logo-wrap { display:flex; align-items:center; gap:16px; text-decoration:none; }
+    .logo-img  { height:22px; width:auto; }
+    .logo-divider { width:1px; height:20px; background:var(--gray-200); }
+    .logo-sub { font-size:10px; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:var(--gray-400); }
+    nav { display:flex; gap:2px; }
+    nav a { font-size:11px; font-weight:600; letter-spacing:0.08em; text-transform:uppercase; color:var(--gray-600); text-decoration:none; padding:6px 14px; border-radius:100px; transition:all .15s; }
+    nav a:hover  { color:var(--navy); background:var(--gray-50); }
+    nav a.active { color:var(--navy); background:var(--yellow); }
+    .header-date { font-size:11px; font-weight:500; color:var(--gray-400); }
+    .alert-strip { background:var(--navy); color:var(--white); padding:11px 40px; display:flex; align-items:center; justify-content:center; gap:20px; }
+    .alert-badge { font-size:9px; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; background:var(--yellow); color:var(--navy); padding:4px 10px; border-radius:100px; white-space:nowrap; }
+    .alert-text  { font-size:12.5px; opacity:.9; }
+    .alert-text strong { font-weight:700; }
+    main { max-width:1280px; margin:0 auto; padding:48px 40px 80px; }
+    .edition-bar { display:flex; align-items:center; justify-content:space-between; margin-bottom:28px; padding-bottom:20px; border-bottom:1px solid var(--border); }
+    .edition-live { display:flex; align-items:center; gap:10px; }
+    .live-dot { width:7px; height:7px; background:var(--navy); border-radius:50%; animation:blink 1.8s infinite; }
+    @keyframes blink { 0%,100%{opacity:1} 50%{opacity:.25} }
+    .edition-label { font-size:11px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--navy); }
+    .edition-meta  { font-size:11px; color:var(--gray-400); }
+    .grid { display:grid; grid-template-columns:repeat(12,1fr); grid-auto-rows:76px; gap:14px; }
+    .card { border-radius:14px; padding:26px; position:relative; overflow:hidden; display:flex; flex-direction:column; justify-content:space-between; transition:transform .18s,box-shadow .18s; cursor:pointer; }
+    .card:hover { transform:translateY(-3px); box-shadow:0 14px 36px rgba(0,0,0,.10); }
+    .c-hero  { grid-column:span 7; grid-row:span 5; }
+    .c-tall  { grid-column:span 5; grid-row:span 5; }
+    .c-wide  { grid-column:span 8; grid-row:span 4; }
+    .c-med   { grid-column:span 4; grid-row:span 4; }
+    .c-sm    { grid-column:span 4; grid-row:span 4; }
+    .c-third { grid-column:span 4; grid-row:span 3; }
+    .c-full  { grid-column:span 12; grid-row:span 3; }
+    .bg-navy    { background:var(--navy);    color:var(--white); }
+    .bg-yellow  { background:var(--yellow);  color:var(--navy);  }
+    .bg-black   { background:var(--black);   color:var(--white); }
+    .bg-gray800 { background:var(--gray-800);color:var(--white); }
+    .bg-gray100 { background:var(--gray-100);color:var(--black); }
+    .bg-white   { background:var(--white);   color:var(--black); border:1px solid var(--border); }
+    .tag { display:inline-flex; align-items:center; gap:5px; font-size:9px; font-weight:800; letter-spacing:.12em; text-transform:uppercase; padding:4px 10px; border-radius:100px; width:fit-content; }
+    .bg-navy .tag,.bg-black .tag,.bg-gray800 .tag { background:rgba(255,255,255,.15); color:var(--white); }
+    .bg-yellow .tag  { background:rgba(0,39,110,.12); color:var(--navy); }
+    .bg-gray100 .tag,.bg-white .tag { background:var(--navy); color:var(--white); }
+    .tag-dot { width:4px; height:4px; border-radius:50%; background:currentColor; opacity:.6; }
+    .headline { font-size:clamp(15px,2vw,24px); font-weight:800; line-height:1.15; letter-spacing:-.025em; margin-top:10px; }
+    .c-hero .headline { font-size:clamp(22px,2.8vw,36px); }
+    .c-full .headline { font-size:clamp(16px,2vw,26px); max-width:900px; }
+    .sub { font-size:12px; line-height:1.55; margin-top:8px; opacity:.72; }
+    .stat-num  { font-size:clamp(36px,5vw,60px); font-weight:900; letter-spacing:-.04em; line-height:1; margin:10px 0 4px; }
+    .stat-desc { font-size:11px; font-weight:500; line-height:1.45; opacity:.70; }
+    .card-foot { display:flex; align-items:center; justify-content:space-between; margin-top:14px; }
+    .cta-label { font-size:9.5px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; opacity:.50; }
+    .arrow-btn { width:34px; height:34px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:14px; }
+    .bg-navy .arrow-btn,.bg-black .arrow-btn,.bg-gray800 .arrow-btn { background:rgba(255,255,255,.15); }
+    .bg-yellow .arrow-btn { background:rgba(0,39,110,.12); }
+    .bg-gray100 .arrow-btn,.bg-white .arrow-btn { background:var(--navy); color:var(--white); }
+    .accent-bar { display:block; width:28px; height:3px; background:var(--yellow); border-radius:2px; margin-bottom:12px; }
+    .bg-yellow .accent-bar { background:var(--navy); }
+    .plus-deco  { position:absolute; right:20px; font-size:52px; font-weight:900; opacity:.08; pointer-events:none; }
+    .modal-overlay { position:fixed; inset:0; z-index:500; background:rgba(0,20,55,.55); backdrop-filter:blur(6px); display:flex; align-items:center; justify-content:center; padding:24px; opacity:0; pointer-events:none; transition:opacity .22s; }
+    .modal-overlay.open { opacity:1; pointer-events:all; }
+    .modal { background:var(--white); border-radius:20px; width:100%; max-width:640px; max-height:88vh; overflow-y:auto; box-shadow:0 32px 80px rgba(0,0,0,.22); transform:translateY(20px); transition:transform .25s; position:relative; }
+    .modal-overlay.open .modal { transform:translateY(0); }
+    .modal-header { background:var(--navy); border-radius:20px 20px 0 0; padding:28px 32px 24px; position:relative; }
+    .modal-tag    { display:inline-flex; align-items:center; gap:5px; font-size:9px; font-weight:800; letter-spacing:.12em; text-transform:uppercase; padding:4px 10px; border-radius:100px; background:rgba(255,255,255,.15); color:var(--white); margin-bottom:12px; }
+    .modal-headline { font-size:22px; font-weight:800; line-height:1.2; letter-spacing:-.02em; color:var(--white); }
+    .modal-stars  { font-size:16px; margin-top:8px; }
+    .modal-close  { position:absolute; top:20px; right:20px; width:36px; height:36px; border-radius:50%; background:rgba(255,255,255,.15); border:none; color:var(--white); font-size:18px; cursor:pointer; display:flex; align-items:center; justify-content:center; transition:background .15s; }
+    .modal-close:hover { background:rgba(255,255,255,.28); }
+    .modal-body { padding:28px 32px 32px; }
+    .modal-section { margin-bottom:24px; }
+    .modal-section-title { font-size:9px; font-weight:800; letter-spacing:.14em; text-transform:uppercase; color:var(--gray-400); margin-bottom:8px; padding-bottom:8px; border-bottom:1px solid var(--border); }
+    .modal-text { font-size:14px; line-height:1.65; color:var(--black); }
+    .modal-source { display:flex; align-items:center; gap:8px; margin-top:12px; }
+    .modal-source-label { font-size:10px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--gray-400); }
+    .modal-source-val   { font-size:12px; font-weight:500; color:var(--navy); }
+    .modal-scores { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; }
+    .score-item   { background:var(--gray-50); border:1px solid var(--border); border-radius:10px; padding:14px; text-align:center; }
+    .score-num    { font-size:26px; font-weight:900; color:var(--navy); line-height:1; }
+    .score-label  { font-size:9px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--gray-400); margin-top:4px; }
+    .modal-idea       { background:var(--navy); border-radius:12px; padding:18px 20px; color:var(--white); }
+    .modal-idea-accent{ display:inline-block; width:20px; height:3px; background:var(--yellow); border-radius:2px; margin-bottom:10px; }
+    .modal-idea-label { font-size:9px; font-weight:800; letter-spacing:.12em; text-transform:uppercase; opacity:.5; margin-bottom:6px; }
+    .modal-idea-text  { font-size:14px; font-weight:600; line-height:1.5; }
+    .archive { background:var(--gray-50); border-top:1px solid var(--border); padding:60px 40px; }
+    .archive-inner { max-width:1280px; margin:0 auto; }
+    .archive-hd { display:flex; align-items:center; gap:20px; margin-bottom:28px; }
+    .archive-title { font-size:10px; font-weight:800; letter-spacing:.14em; text-transform:uppercase; color:var(--gray-600); white-space:nowrap; }
+    .archive-line { flex:1; height:1px; background:var(--border); }
+    .archive-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:12px; }
+    .archive-card { display:block; background:var(--white); border:1px solid var(--border); border-radius:12px; padding:18px 20px; text-decoration:none; color:var(--black); transition:all .15s; }
+    .archive-card:hover { border-color:var(--navy); transform:translateY(-2px); }
+    .archive-date { font-size:10px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--navy); margin-bottom:6px; }
+    .archive-hl   { font-size:13px; font-weight:600; line-height:1.4; margin-bottom:10px; }
+    .archive-tags { display:flex; flex-wrap:wrap; gap:5px; }
+    .archive-tags span { font-size:9px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; background:var(--gray-100); color:var(--gray-600); padding:3px 8px; border-radius:100px; }
+    footer { background:var(--black); color:var(--white); padding:24px 40px; }
+    .footer-inner { max-width:1280px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; }
+    .footer-brand { display:flex; align-items:center; gap:16px; }
+    .footer-sep   { width:1px; height:16px; background:rgba(255,255,255,.2); }
+    .footer-tagline { font-size:11px; font-weight:500; opacity:.4; }
+    .footer-note  { font-size:10px; opacity:.3; }
+    @media(max-width:900px){
+      .header-inner{padding:0 20px;} main{padding:28px 16px 60px;}
+      .grid{grid-template-columns:1fr 1fr;grid-auto-rows:90px;gap:10px;}
+      .c-hero,.c-wide,.c-full{grid-column:span 2;grid-row:span 4;}
+      .c-tall,.c-med,.c-sm{grid-column:span 2;grid-row:span 3;}
+      .c-third{grid-column:span 1;grid-row:span 2;}
+      .alert-strip{flex-direction:column;gap:6px;padding:12px 20px;text-align:center;}
+      .archive{padding:40px 16px;} .footer-inner{flex-direction:column;gap:10px;text-align:center;}
+      .modal{border-radius:14px;} .modal-header{padding:22px 22px 18px;} .modal-body{padding:20px 22px 24px;}
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a class="logo-wrap" href="#">
+      <img src="logo-positiva.png" alt="voce-mais+" class="logo-img" />
+      <div class="logo-divider"></div>
+      <span class="logo-sub">Wellness Intelligence</span>
+    </a>
+    <nav>
+      <a href="#" class="active">Hoje</a>
+      <a href="#" onclick="document.querySelector('.archive').scrollIntoView({behavior:'smooth'});return false;">Arquivo</a>
+    </nav>
+    <span class="header-date">5 de Maio de 2026</span>
+  </div>
+</header>
+<div class="alert-strip">
+  <span class="alert-badge">&#9888; Urgente</span>
+  <span class="alert-text"><strong>GLP-1 remodela o mercado de suplementos:</strong> usuarios de Ozempic e Wegovy precisam de alta densidade nutricional &mdash; industria global de US$160bi ate 2030 busca parceiros consultivos. <strong>Berberina explode em buscas como alternativa natural ao metabolismo.</strong></span>
+</div>
+<main>
+  <div class="edition-bar">
+    <div class="edition-live">
+      <div class="live-dot"></div>
+      <span class="edition-label">Edicao de hoje &mdash; 5 de Maio de 2026</span>
+    </div>
+    <span class="edition-meta">13 tendencias analisadas &middot; Wellness Intelligence Voce Mais+</span>
+  </div>
+
+  <div class="grid">
+
+    <!-- CARD 1: HERO -->
+    <div class="card c-hero bg-navy" data-modal="1">
+      <div>
+        <span class="accent-bar"></span>
+        <div class="tag"><div class="tag-dot"></div>Mercado &middot; GLP-1 Suplementos Mai 2026</div>
+        <div class="headline">GLP-1 remodela o mercado global de suplementos: consumidor de Ozempic e Wegovy precisa de alta densidade nutricional e abre segmento de US$160 bilhoes ate 2030</div>
+        <p class="sub">O avanco dos analogos de GLP-1 criou um novo perfil de consumidor: ingere menos volume de alimento mas exige muito mais densidade de nutrientes. Proteina de alta qualidade, fibra, vitaminas e micronutrientes se tornam imperativos. A industria de suplementos que posicionar-se como parceira do usuario de GLP-1 captura o segmento de maior crescimento e maior ticket de 2026.</p>
+      </div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <!-- CARD 2: TALL -->
+    <div class="card c-tall bg-yellow" data-modal="2">
+      <div>
+        <span class="accent-bar"></span>
+        <div class="tag"><div class="tag-dot"></div>Perfil &middot; Consumo Feminino Brasil 2026</div>
+        <div class="headline">79% das mulheres usam suplementos vs 71% dos homens (Instituto Locomotiva) &mdash; personalizacao feminina e a maior oportunidade de ticket alto de 2026</div>
+        <div class="stat-num">79%</div>
+        <div class="stat-desc">das mulheres brasileiras usam suplementos regularmente; tres categorias lideram: equilibrio metabolico e hormonal, sono e bem-estar emocional, pele cabelo e unhas</div>
+      </div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <!-- CARD 3: WIDE -->
+    <div class="card c-wide bg-gray100" data-modal="3">
+      <div>
+        <div class="tag"><div class="tag-dot"></div>Tendencias &middot; Berberina Metabolismo 2026</div>
+        <div class="headline">Berberina explode como o ativo metabolico mais buscado de 2026 &mdash; evidencia clinica aponta melhora de resistencia a insulina, microbioma e colesterol sem efeitos dos farmacos</div>
+        <p class="sub">Estudo publicado em Tua Saude (28/abr/2026) confirma que a berberina atua no intestino melhorando metabolismo de bile, resistencia a insulina e equilibrio da microbiota. Combinacao com fibra de psyllium potencializa resultados. Buscas por berberina cresceram mais de 200% em 12 meses no Brasil.</p>
+      </div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <!-- CARD 4: MED -->
+    <div class="card c-med bg-gray800" data-modal="4">
+      <div>
+        <div class="tag"><div class="tag-dot"></div>Ciencia &middot; Psicobioticos Cortisol 2026</div>
+        <div class="headline">Cepa probiotica reduz cortisol e ansiedade: especialistas indicam Lactobacillus helveticus R0052 como essencial para equilibrio do eixo HPA (Tua Saude, mai 2026)</div>
+        <p class="sub">Revisao de especialistas publicada em maio de 2026 aponta cepas especificas de psicobioticos como estrategia de primeira linha para cortisol cronico. Mecanismo: producao de GABA e serotonina no intestino via nervo vago.</p>
+      </div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <!-- CARD 5: SM -->
+    <div class="card c-sm bg-gray100" data-modal="5">
+      <div>
+        <div class="tag"><div class="tag-dot"></div>Tendencias &middot; Fibra Alimentar Boom 2026</div>
+        <div class="headline">Fibra alimentar e a proxima grande onda: buscas por suplemento de fibra cresceram 62,3% em um ano &mdash; conexao gut-brain e longevidade impulsionam demanda</div>
+        <p class="sub">Dados do Global Wellness Institute 2026: interesse em fibras aumentou 43,8% e em suplemento de fibra 62,3%. Prebioticos e pos-biotics formam o ecossistema intestinal de nova geracao.</p>
+      </div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <!-- CARD 6: THIRD -->
+    <div class="card c-third bg-black" data-modal="6">
+      <div>
+        <div class="tag"><div class="tag-dot"></div>Regulacao &middot; ANVISA CP 1394/2026</div>
+        <div class="headline">ANVISA Consulta Publica 1.394/2026 abre impactos para setor de alimentos &mdash; agenda regulatoria 2026-2027 preve novas normas para suplementos</div>
+        <p class="sub">Intertox publicou alerta: CP 1.394/2026 da ANVISA traz implicacoes para toda a cadeia de alimentos e suplementos. Agenda regulatoria 2026-2027 lista propostas com previsao de consulta publica em cronograma acelerado.</p>
+      </div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <!-- CARD 7: THIRD -->
+    <div class="card c-third bg-gray100" data-modal="7">
+      <div>
+        <div class="tag"><div class="tag-dot"></div>Tendencias &middot; Stack Cognitivo Natural 2026</div>
+        <div class="headline">Stack cognitivo natural lidera crescimento entre 25-40 anos: Lion Mane + L-teanina + bacopa + ashwagandha formam o protocolo de foco mais buscado de 2026</div>
+        <p class="sub">Nootripicos naturais explodem com a demanda de profissionais e estudantes por foco sem dependencia de cafeina. Lion Mane lidera como o adaptogeno cognitivo mais buscado, com evidencia de NGF e neuroplasticidade.</p>
+      </div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <!-- CARD 8: THIRD -->
+    <div class="card c-third bg-white" data-modal="8">
+      <div>
+        <div class="tag"><div class="tag-dot"></div>Mercado &middot; Plant-Based Brasil R$2.2bi</div>
+        <div class="headline">Proteina plant-based supera R$2,2 bilhoes no Brasil em 2026 &mdash; mercado flexitariano abre janela para suplementos proteicos vegetais de alto valor</div>
+        <p class="sub">Segundo Euromonitor, setor plant-based brasileiro cresce 11,1% ao ano. 48% dos brasileiros ja consomem alternativas vegetais. Suplementos proteicos de ervilha e arroz ganham tração com publico consciente.</p>
+      </div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <!-- CARD 9: FULL -->
+    <div class="card c-full bg-navy" data-modal="9">
+      <div>
+        <div class="tag"><div class="tag-dot"></div>Mercado &middot; Clean Label 40% Decisao de Compra EUA Glanbia 2026</div>
+        <div class="headline">40% dos consumidores de suplementos citam qualidade do ingrediente como fator decisivo de compra &mdash; clean label deixa de ser diferencial e passa a ser prerequisito para competir no segmento consciente</div>
+        <p class="sub">Relatorio Glanbia Nutritionals 2026: clean label, transparencia de origem e ausencia de aditivos artificiais sao os tres atributos mais valorados pelo consumidor de suplementos em 2026. Marcas sem certificacoes perdem espaco para quem investe em comunicacao de ingredientes. Ingredientes botanicos com rastreabilidade como ashwagandha KSM-66, curcuma certificada e omega-3 com IFOS lideram preferencia.</p>
+      </div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <!-- CARD 10: THIRD -->
+    <div class="card c-third bg-gray800" data-modal="10">
+      <div>
+        <div class="tag"><div class="tag-dot"></div>Tendencias &middot; Economia Climaterica 2026</div>
+        <div class="headline">Menopausa impulsiona novo mercado de consumo &mdash; economia climaterica emerge com extratos como EstroG-100, isoflavonas e ashwagandha para qualidade de vida na transicao</div>
+        <p class="sub">Meio e Mensagem (mai/2026): menopausa ganhou mais visibilidade e mulheres buscam cada vez mais qualidade de vida durante a transicao. Abordagens personalizadas com botanicos naturais crescem como alternativa a TRH.</p>
+      </div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <!-- CARD 11: THIRD -->
+    <div class="card c-third bg-yellow" data-modal="11">
+      <div>
+        <span class="accent-bar"></span>
+        <div class="tag"><div class="tag-dot"></div>Ciencia &middot; Omega-3 Frequencia Cardiaca 2026</div>
+        <div class="headline">Omega-3 EPA e DHA reduzem frequencia cardiaca em 2,23 bpm &mdash; nova pesquisa DSM-Firmenich reforca protocolo cardiovascular fundacional</div>
+        <div class="stat-num">2,23</div>
+        <div class="stat-desc">batimentos por minuto de reducao na frequencia cardiaca com suplementacao de EPA e DHA; reducao de 29% na morte cardiaca com doses acima de 1g/dia (meta-analise 2026)</div>
+      </div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <!-- CARD 12: THIRD -->
+    <div class="card c-third bg-white" data-modal="12">
+      <div>
+        <div class="tag"><div class="tag-dot"></div>Digital &middot; Influenciadores Wellness Brasil 2026</div>
+        <div class="headline">Instagram concentra 53% do conteudo de saude no Brasil &mdash; 77% do publico e feminino 25-34 anos e cada video gera em media 174 mil interacoes</div>
+        <p class="sub">HypeAuditor e TikTok Analytics (mai/2026): wellness creators sao o nicho de maior crescimento de engajamento. Influenciadores de saude do tipo LOD (lider de opiniao digital) convertem com 3x mais eficiencia que anuncio pago.</p>
+      </div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <!-- CARD 13: FULL -->
+    <div class="card c-full bg-gray100" data-modal="13">
+      <div>
+        <div class="tag"><div class="tag-dot"></div>Analise de Cruzamento &middot; 5 Mai 2026</div>
+        <div class="headline">Convergencia de maio: GLP-1 + metabolismo feminino + clean label definem o posicionamento mais urgente de Q2 2026 &mdash; quem tem o protocolo consultivo para esses tres vetores domina o ticket mais alto do setor</div>
+        <p class="sub">Cruzando as 13 tendencias desta edicao, emerge um padrao claro: o consumidor de maior valor de 2026 e a mulher de 30-50 anos, que usa ou considera GLP-1, busca alternativas metabolicas naturais como berberina e fibra, exige clean label verificavel e esta disposta a pagar premium por resultado consultivo. Protocolo recomendado: berberina 900mg + probiotico com cepas psicobioticas + fibra de psyllium + magnesio quelado = Bundle Metabolismo Consciente com ticket 60-80% superior ao produto isolado.</p>
+      </div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+  </div>
+</main>
+
+<div class="archive">
+  <div class="archive-inner">
+    <div class="archive-hd">
+      <span class="archive-title">Edicoes Anteriores</span>
+      <div class="archive-line"></div>
+    </div>
+    <div class="archive-grid">
+      <a class="archive-card" href="edicoes/2026-05-05.html">
+        <div class="archive-date">4 de Maio de 2026</div>
+        <div class="archive-hl">Magnesio L-Treonato atravessa barreira cerebral + mercado feminino 58% + longevidade NAD+ chegam ao Brasil</div>
+        <div class="archive-tags"><span>magnesio-cognitivo</span><span>feminino</span><span>longevidade</span></div>
+      </a>
+      <a class="archive-card" href="edicoes/2026-05-04.html">
+        <div class="archive-date">3 de Maio de 2026</div>
+        <div class="archive-hl">Intestino como centro do wellness 2026: prebioticos + psicobioticos + fibra funcional formam o triangulo estrategico de Q2</div>
+        <div class="archive-tags"><span>psicobioticos</span><span>prebioticos</span><span>gut-brain</span></div>
+      </a>
+      <a class="archive-card" href="edicoes/2026-05-01.html">
+        <div class="archive-date">1 de Maio de 2026</div>
+        <div class="archive-hl">Psicobioticos ADM + burnout adaptogenicos + vitamina D inverno dominam Dia do Trabalhador</div>
+        <div class="archive-tags"><span>psicobioticos</span><span>adaptogenicos</span><span>vitamina-d</span></div>
+      </a>
+      <a class="archive-card" href="edicoes/2026-04-30.html">
+        <div class="archive-date">30 de Abril de 2026</div>
+        <div class="archive-hl">Colageno vegetal avanca + creatina cognitiva + D3+K2 fundacionais</div>
+        <div class="archive-tags"><span>colageno</span><span>creatina</span><span>vitamina-d</span></div>
+      </a>
+      <a class="archive-card" href="edicoes/2026-04-29.html">
+        <div class="archive-date">29 de Abril de 2026</div>
+        <div class="archive-hl">Saude mental + suplementacao natural + microbioma e o tripe da semana</div>
+        <div class="archive-tags"><span>saude-mental</span><span>microbioma</span><span>psicobioticos</span></div>
+      </a>
+      <a class="archive-card" href="edicoes/2026-04-28.html">
+        <div class="archive-date">28 de Abril de 2026</div>
+        <div class="archive-hl">Omega-3 qualidade EPA-DHA + longevidade NMN + saude feminina ciclo</div>
+        <div class="archive-tags"><span>omega-3</span><span>longevidade</span><span>feminina</span></div>
+      </a>
+      <a class="archive-card" href="edicoes/2026-04-27.html">
+        <div class="archive-date">27 de Abril de 2026</div>
+        <div class="archive-hl">Plant protein avanca + omega-3 fundacional + influenciadores LOD dominam conversao</div>
+        <div class="archive-tags"><span>plant-based</span><span>omega-3</span><span>digital</span></div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="logo-branca.png" alt="voce-mais+" style="height:18px;width:auto;" />
+      <div class="footer-sep"></div>
+      <span class="footer-tagline">Wellness Intelligence</span>
+    </div>
+    <span class="footer-note">Gerado automaticamente &mdash; 5 de Maio de 2026</span>
+  </div>
+</footer>
+
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal">
+    <div class="modal-header">
+      <button class="modal-close" id="modalClose">&#215;</button>
+      <div class="modal-tag" id="mTag"></div>
+      <div class="modal-headline" id="mHeadline"></div>
+      <div class="modal-stars" id="mStars"></div>
+    </div>
+    <div class="modal-body">
+      <div class="modal-section">
+        <div class="modal-section-title">Resumo &amp; Analise</div>
+        <p class="modal-text" id="mSummary"></p>
+        <div class="modal-source">
+          <span class="modal-source-label">Fonte</span>
+          <span class="modal-source-val" id="mSource"></span>
+        </div>
+      </div>
+      <div class="modal-section">
+        <div class="modal-section-title">Score de Impacto</div>
+        <div class="modal-scores">
+          <div class="score-item"><div class="score-num" id="mCurto"></div><div class="score-label">Curto Prazo</div></div>
+          <div class="score-item"><div class="score-num" id="mMedio"></div><div class="score-label">Medio Prazo</div></div>
+          <div class="score-item"><div class="score-num" id="mLongo"></div><div class="score-label">Longo Prazo</div></div>
+        </div>
+      </div>
+      <div class="modal-idea">
+        <div class="modal-idea-accent"></div>
+        <div class="modal-idea-label">Ideia para Voce Mais+</div>
+        <p class="modal-idea-text" id="mIdea"></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+var MODALS = {
+  1: {
+    tag: "Mercado - GLP-1 Suplementos Densidade Nutricional 2026",
+    stars: "&#11088;&#11088;&#11088;&#11088;&#11088;",
+    headline: "GLP-1 remodela o mercado global de suplementos: consumidor de Ozempic e Wegovy precisa de alta densidade nutricional e abre segmento de US$160 bilhoes ate 2030",
+    summary: "O avanco dos analogos de GLP-1 (Ozempic, Wegovy, Mounjaro) criou uma ruptura estrutural no mercado de suplementos. O usuario desses medicamentos ingere entre 30 e 50% menos volume de alimento diario, mas nao reduz proporcionalmente sua necessidade de micronutrientes, proteina de qualidade, fibra e vitaminas. O resultado e um consumidor que precisa de alta densidade nutricional em menor volume - exatamente o que suplementos premium entregam. Segundo Itau BBA, esse segmento pode superar US$160 bilhoes globalmente ate 2030. No Brasil, a FoodBiz (2026) reportou que as industrias de suplementos ja se reinventam: formulas com proteina de alta biodisponibilidade, multivitaminicos de alta potencia, probioticos para microbioma (afetado pelos GLP-1) e colageno para preservacao de massa magra entram no protocolo de suporte. A oportunidade para a Voce Mais+: posicionar um Bundle GLP-1 Support com argumentacao consultiva especifica para esse publico, que tem alto poder aquisitivo e alta disposicao a pagar.",
+    source: "FoodBiz Brasil / Itau BBA / Essential Nutrition GLP-1 Support, 2026",
+    curto: "8",
+    medio: "9",
+    longo: "10",
+    idea: "Criar o Bundle GLP-1 Support da Voce Mais+: proteina de alta biodisponibilidade (whey isolado ou plant-based) + colageno peptideo para preservar musculo + probiotico multiestirpe para microbioma + multivitaminico de alta potencia. Argumento direto: quem usa Ozempic ou Wegovy precisa de suplementos mais do que nunca - nao menos. O medicamento reduz o que voce come, mas nao o que seu corpo precisa. Nossa consultoria monta o protocolo certo para voce ter resultado sem perder saude. Publico: 30-55 anos, classe AB, alto poder aquisitivo. Ticket medio do bundle: R$380-520/mes com recorrencia garantida."
+  },
+  2: {
+    tag: "Perfil - Consumo Feminino 79% Instituto Locomotiva Brasil 2026",
+    stars: "&#11088;&#11088;&#11088;&#11088;",
+    headline: "79% das mulheres brasileiras usam suplementos vs 71% dos homens segundo Instituto Locomotiva - personalizacao feminina e a maior oportunidade de ticket alto de 2026 com tres categorias dominantes",
+    summary: "Pesquisa do Instituto Locomotiva (2026) revela que 79% das mulheres brasileiras usam suplementos regularmente - 8 pontos percentuais acima dos homens (71%). O mercado feminino nao e apenas maior em numero: e maior em ticket medio, em fidelidade de marca e em propensao a indicar. As tres categorias dominantes de demanda feminina em 2026 sao: (1) EQUILIBRIO METABOLICO E HORMONAL - suplementos para TPM, ciclo, menopausa, cortisol e equilibrio hormonal geral. Alta disposicao a pagar por resultado especifico e comprovado. (2) SONO E BEM-ESTAR EMOCIONAL - magnesio quelado (bisglicinato ou L-treonato), ashwagandha, L-teanina, psicobioticos. Compra recorrente de alta fidelidade. (3) PELE, CABELO E UNHAS - colageno Verisol, biotina, silicio organico, vitamina C. Cliente que associa resultado visivel ao produto e retorna consistentemente. Para a Voce Mais+: o lojista que entende esse perfil e tem o argumento consultivo correto para cada uma dessas tres categorias tem a cliente mais valiosa, mais fiel e mais indicadora do setor.",
+    source: "Instituto Locomotiva / Sincofarma SP, 2026",
+    curto: "9",
+    medio: "9",
+    longo: "9",
+    idea: "Implementar o Roteiro da Consultoria Feminina em 3 perguntas: (1) O que mais te incomoda agora - ciclo e TPM, humor e sono, ou pele e cabelo? (2) Voce esta em alguma fase especifica - gestacao, pos-parto, pre-menopausa, estresse intenso? (3) Ja usa suplemento? O que sente que falta? Com essas tres perguntas o consultor monta um protocolo de 2 a 3 produtos com argumento de recompra. Mulheres que se sentem ouvidas retornam em 90% dos casos e trazem em media 1,8 novas clientes por indicacao. Meta: transformar cada atendimento feminino em ponto de inicio de relacionamento, nao em venda unica."
+  },
+  3: {
+    tag: "Tendencias - Berberina Metabolismo Resistencia Insulina Brasil 2026",
+    stars: "&#11088;&#11088;&#11088;&#11088;",
+    headline: "Berberina explode como ativo metabolico mais buscado de 2026 - evidencia clinica de melhora em resistencia a insulina, microbioma e colesterol consolida posicao como alternativa natural de alta margem",
+    summary: "A berberina (alcaloide extraido de plantas como berberis aristata) emergiu em 2026 como o suplemento metabolico de maior crescimento de busca no Brasil, com aumento superior a 200% em 12 meses. O estudo publicado na Tua Saude em 28 de abril de 2026 confirma o mecanismo de acao intestinal: a berberina atua diretamente no microbioma, aumenta a sensibilidade a insulina via ativacao da AMPK, melhora o metabolismo dos acidos biliares e reduz o LDL colesterol. A dose recomendada pelos estudos varia entre 900mg e 1500mg por dia, idealmente dividida em tres tomadas. A combinacao com fibra de psyllium potencializa os resultados no microbioma. O contexto de mercado: a berberina beneficia-se do mesmo movimento que impulsionou o interesse em GLP-1 - consumidores que buscam solucoes para metabolismo e controle glicemico sem dependencia de farmacos. Para a Voce Mais+: produto com alta margem, argumento cientifico forte e publico de alta intencao de compra.",
+    source: "Tua Saude 28/abr/2026 / Botica Nativa / Selektz Brasil, 2026",
+    curto: "8",
+    medio: "8",
+    longo: "7",
+    idea: "Posicionar berberina como o ativo metabolico natural mais estudado de 2026: Funciona no metabolismo de dentro para fora - regula o acucar no sangue, melhora o colesterol e equilibra o intestino ao mesmo tempo. Para quem quer resultado metabolico sem farmaco. Bundle Metabolismo Natural: berberina 500mg 3x/dia + psyllium fibra + probiotico com cepas de Lactobacillus e Bifidobacterium = protocolo completo de suporte metabolico. Ticket: R$280-380/mes. Publico-alvo: mulheres 35-55 anos com resistencia a insulina, pre-diabetes ou que buscam alternativa natural ao controle glicemico."
+  },
+  4: {
+    tag: "Ciencia - Psicobioticos Lactobacillus Cortisol HPA 2026",
+    stars: "&#11088;&#11088;&#11088;&#11088;",
+    headline: "Especialistas indicam Lactobacillus helveticus R0052 e Bifidobacterium longum como cepas essenciais para reducao de cortisol - psicobioticos consolidam maturidade clinica em maio de 2026",
+    summary: "Artigo de especialistas publicado na Tua Saude em 2 de maio de 2026 aponta que suplementos com cepas de Lactobacillus helveticus R0052 e Bifidobacterium longum R0175 mostraram efeitos clinicamente relevantes na reducao de estresse e ansiedade em ensaios randomizados controlados. O mecanismo confirmado: essas cepas produzem GABA e modulam a producao de serotonina no intestino via nervo vago, reduzindo a ativacao do eixo HPA e consequentemente os niveis de cortisol. Em 2026, a categoria psicobioticos superou a fase experimental e entrou na fase clinica, com evidencia de nivel 1 disponivel para profissionais de saude. A relevancia comercial: o publico com ansiedade moderada, usuario de ansiolítico leve ou com queixa de estresse cronico e candidato natural ao argumento psicobiotico. Margem superior ao probiotico convencional, com argumento diferencialvel e base cientifica solida.",
+    source: "Tua Saude 2/mai/2026 / Nutritotal Brasil / Pharma Scalabis, 2026",
+    curto: "7",
+    medio: "8",
+    longo: "9",
+    idea: "Argumento psicobiotico para o balcao: Sabia que 90% da serotonina do seu corpo e produzida no intestino - nao no cerebro? Essas bacterias especificas do probiotico ajudam seu intestino a produzir GABA e serotonina, reduzindo o cortisol de dentro para fora. Em estudos, reduziram ansiedade de forma significativa em 8 semanas. Indicar sempre: magnesio bisglicinato como complemento (ativa receptores GABA no cerebro) + probiotico com as cepas R0052 + R0175 = Bundle Equilibrio Mental. Ticket medio do duo: R$220-280. Alta recorrencia: cliente que sente resultado em 4-8 semanas compra por no minimo 6 meses."
+  },
+  5: {
+    tag: "Tendencias - Fibra Alimentar Suplemento Boom Prebiotico 2026",
+    stars: "&#11088;&#11088;&#11088;",
+    headline: "Fibra alimentar e a proxima grande onda do wellness: buscas por suplemento de fibra cresceram 62,3% em um ano - conexao gut-brain, longevidade e suporte GLP-1 impulsionam demanda",
+    summary: "O Global Wellness Institute e o Exame (2026) reportaram que as buscas por fibras aumentaram 43,8% e por suplementos de fibra 62,3% em 12 meses. O movimento e impulsionado por tres drivers simultaneos: (1) consciencia sobre o eixo intestino-cerebro e prebioticos como base da microbiota saudavel; (2) pesquisa de longevidade confirmando que consumo de fibra e um dos marcadores mais consistentes de longevidade e saude metabolica; (3) usuarios de GLP-1 que precisam de fibra para manter a saciedade e proteger o microbioma com menor volume alimentar. Os formatos de maior crescimento: psyllium em po, inulina, FOS (frutooligossacarideos) e combinacoes simbioticas. Produto com alto potencial de bundle: fibra + probiotico + enzimas digestivas = protocolo intestinal completo. Margem interessante, recorrencia garantida.",
+    source: "Global Wellness Institute / Exame Casual, 2026",
+    curto: "6",
+    medio: "8",
+    longo: "9",
+    idea: "Criar o Bundle Intestino Saudavel com argumento educativo: Voce sabia que a maioria dos brasileiros consome menos de 50% da fibra diaria recomendada? A fibra alimenta as bacterias boas do seu intestino - sem ela, o probiotico nao funciona direito. Nossa combinacao de fibra prebiotica + probiotico + enzimas digestivas e o protocolo completo para intestino que funciona. Ticket: R$180-240/mes. Criar conteudo educativo: 5 sinais de que voce precisa de mais fibra. Argumento de recompra mensal garantido."
+  },
+  6: {
+    tag: "Regulacao - ANVISA Consulta Publica 1394/2026 Alimentos Suplementos",
+    stars: "&#11088;&#11088;&#11088;&#11088;",
+    headline: "ANVISA abre Consulta Publica 1.394/2026 com impactos para setor de alimentos e suplementos - agenda regulatoria 2026-2027 preve mudancas de grande alcance para a industria",
+    summary: "A Intertox publicou alerta em 2026 sobre a Consulta Publica 1.394/2026 da ANVISA, que traz implicacoes para toda a cadeia de alimentos e suplementos. Simultaneamente, a ANVISA publicou o Painel de Acompanhamento da Agenda Regulatoria 2026-2027 com cronograma de todas as propostas regulatorias previstas, incluindo datas de consulta publica. O panorama regulatorio geral: a ANVISA intensificou a fiscalizacao de suplementos sem registro sanitario valido, com interdecoes ja ocorridas em 2026 (caso na Paraiba, marco/2026). A 9a edicao do documento de Perguntas e Respostas sobre suplementos alimentares foi publicada com atualizacoes decorrentes da RDC 843/2024 e IN 281/2024. Para a Voce Mais+: manter monitoramento continuo da agenda regulatoria e transformar compliance proativo em argumento de confianca com o consumidor.",
+    source: "Intertox / ANVISA / Sincofarma SP, 2026",
+    curto: "8",
+    medio: "7",
+    longo: "7",
+    idea: "Transformar compliance em vantagem competitiva: criar checklist interno trimestral de adequacao regulatoria para cada produto do portfolio. Para comunicacao ao cliente: publicar semestralmente uma nota de transparencia regulatoria informando que todos os produtos estao adequados as normas ANVISA vigentes. Publico sofisticado de 2026 valoriza marcas que mostram proativamente seu compromisso com a regulacao - em vez de aguardar fiscalizacao. Diferenciar: Nossos produtos seguem rigorosamente as normas da ANVISA - e atualizamos nossas formulas sempre que a regulacao evolui."
+  },
+  7: {
+    tag: "Tendencias - Stack Cognitivo Natural Lion Mane L-teanina 2026",
+    stars: "&#11088;&#11088;&#11088;&#11088;",
+    headline: "Stack cognitivo natural explode entre 25-40 anos em 2026: Lion Mane, L-teanina, bacopa monnieri e ashwagandha formam o protocolo de foco sem dependencia que profissionais e estudantes mais buscam",
+    summary: "Em 2026, a demanda por aprimoramento cognitivo natural nunca foi tao alta. O publico de 25-40 anos, entre profissionais criativos, executivos e estudantes, busca foco, memoria e clareza mental sem os efeitos colaterais da cafeina em excesso e sem dependencia. O stack mais buscado em 2026: Lion Mane (Hericium erinaceus) para NGF e neuroplasticidade; L-teanina para foco relaxado sem sedacao; bacopa monnieri para memoria de trabalho e aprendizagem (evidencia clinica de 12 semanas); ashwagandha KSM-66 para reducao de cortisol e melhora do sono reparador. O mercado global de nootripicos e suplementos cognitivos projeta crescimento expressivo, impulsionado pela cultura de produtividade e desempenho. Para a Voce Mais+: produto com argumentacao premium, cliente de alto poder aquisitivo e disposicao a pagar por resultado comprovado.",
+    source: "Selektz Brasil / California Business Journal / Metropoles, 2026",
+    curto: "7",
+    medio: "8",
+    longo: "9",
+    idea: "Lancamento do Bundle Performance Cerebral da Voce Mais+: Lion Mane (500mg extrato padronizado) + L-teanina (200mg) + bacopa monnieri (300mg) + ashwagandha KSM-66 (300mg). Posicionamento: Para quem quer pensar melhor, sem precisar de mais cafe. Ciencia milenaria com evidencia clinica moderna. Publico: executivos, estudantes, criadores de conteudo, profissionais de alta performance. Formato sugerido: capsulas diarias (manha e tarde) + protocolo de uso de 90 dias. Ticket: R$280-380. Criar conteudo: O stack cognitivo que neurologistas recomendam."
+  },
+  8: {
+    tag: "Mercado - Plant-Based Brasil R$2.2bi Flexitariano Proteina Vegetal",
+    stars: "&#11088;&#11088;&#11088;",
+    headline: "Mercado plant-based supera R$2,2 bilhoes no Brasil em 2026 - crescimento de 11,1% ao ano abre janela para suplementos proteicos vegetais de alta qualidade com publico consciente em expansao",
+    summary: "O mercado brasileiro de alimentos e suplementos plant-based atingira R$2,2 bilhoes em 2026, segundo Euromonitor, com crescimento anual de 11,1% nos ultimos 5 anos. O publico flexitariano cresceu de 29% dos brasileiros em 2018 para 50% em 2020, e o movimento nao perdeu traction. Os suplementos proteicos vegetais lideram a oportunidade: proteina de ervilha, arroz integral e combinacoes que entregam perfil completo de aminoacidos sao procurados por veganos, vegetarianos e flexitarianos que entendem da importancia da proteina de qualidade. O consumidor plant-based de 2026 e mais sofisticado: lê rotulos, conhece conceitos como PDCAAS, biodisponibilidade e aminoacidos essenciais. A combinacao proteina vegetal + clean label e a que mais cresce no segmento.",
+    source: "Euromonitor / Vegan Business BR / Exame, 2026",
+    curto: "5",
+    medio: "7",
+    longo: "8",
+    idea: "Posicionar proteina plant-based como produto estrategico do portfolio feminino: a consumidora plant-based de 2026 combina consciencia ambiental, seletividade de ingredientes e alto ticket medio. Argumento: Proteina de ervilha + arroz integral = perfil completo de aminoacidos sem lactose, sem soja processada, sem nada que voce nao consegue pronunciar. Tao completa quanto o whey, mais alinhada com os seus valores. Bundle sugerido: proteina vegetal + colageno vegetal (quando disponivel) + fibra prebiotica = Protocolo Plant Wellness. Ticket: R$320-420."
+  },
+  9: {
+    tag: "Mercado - Clean Label Qualidade Ingrediente 40% Decisao Compra Glanbia 2026",
+    stars: "&#11088;&#11088;&#11088;&#11088;",
+    headline: "40% dos consumidores de suplementos citam qualidade do ingrediente como fator decisivo de compra em 2026 (Glanbia) - clean label nao e mais diferencial premium: e o prerequisito para competir no segmento consciente",
+    summary: "O relatorio Top 5 Supplement Trends for 2026 da Glanbia Nutritionals e do Nutraceuticals World (2026) confirma o dado que redefine o mercado: 40% dos consumidores de suplementos nos EUA citam qualidade do ingrediente como fator decisivo de compra, enquanto 27% sao influenciados por ingredientes naturais ou organicos. Globalmente, 28% dos consumidores associam praticas ambientalmente responsaveis ao conceito de clean label. Em 2026, o consumidor sofisticado exige: ingrediente com nome reconhecivel; procedencia rastreavel com pais de origem e tipo de cultivo; ausencia de corantes artificiais, conservantes quimicos e adocantes sinteticos; processo de producao coerente com o discurso de naturalidade. A Innova Market Insights confirma: quase 1 em cada 2 consumidores globais ja prioriza clean label nas decisoes de compra. Para a Voce Mais+: marcas que nao comunicam transparencia de ingredientes perdem o consumidor de maior valor para quem o faz.",
+    source: "Glanbia Nutritionals / Innova Market Insights / Nutraceuticals World, 2026",
+    curto: "7",
+    medio: "8",
+    longo: "9",
+    idea: "Auditoria de comunicacao clean label em 3 passos: (1) Para cada produto do portfolio, garantir que o consultor consegue responder sem hesitar: de onde vem esse ingrediente, como e processado, tem aditivos? (2) Implementar QR code nos produtos que leva para pagina de transparencia com origem dos ingredientes, laudos e certificacoes. (3) Criar o argumento de venda: Em nosso produto voce consegue entender cada ingrediente do rotulo. Nao colocamos nada que precisamos esconder. Esse e o padrao que o consumidor de 2026 exige - e nos entregamos. Meta: tornar a transparencia de ingredientes um pilar de posicionamento da Voce Mais+, nao apenas uma feature."
+  },
+  10: {
+    tag: "Tendencias - Economia Climaterica Menopausa EstroG-100 2026",
+    stars: "&#11088;&#11088;&#11088;&#11088;&#11088;",
+    headline: "Menopausa impulsiona nova economia de consumo em 2026 - extratos botanicos como EstroG-100, isoflavonas e ashwagandha ganham tração como alternativa natural a TRH com publico de altissimo poder aquisitivo",
+    summary: "O Meio e Mensagem publicou em 2026 analise sobre a economia climaterica: a menopausa finalmente recebeu a visibilidade que merecia, e o mercado respondeu. Mulheres de 45-60 anos, com alto poder aquisitivo, buscam qualidade de vida durante a transicao climatérica com abordagens personalizadas que consideram densidade ossea, sono, metabolismo e sintomas vasomotores. Os extratos botanicos em destaque: EstroG-100 (combinacao de Cynanchum wilfordii, Phlomis umbrosa e Angelica gigas) com evidencia de reducao de 80% nos efeitos colaterais vs TRH; isoflavonas de soja padronizadas; ashwagandha KSM-66 para regulacao de cortisol e sono; magnesio L-treonato para foco e humor. A janela de oportunidade: esse publico tem alta disposicao a pagar, alta fidelidade quando vê resultado e alto poder de indicacao na rede social. E o cliente de maior valor do mercado de saúde feminina.",
+    source: "Meio e Mensagem / Jovem Pan Saude / Meganesia, 2026",
+    curto: "8",
+    medio: "9",
+    longo: "9",
+    idea: "Criar o Protocolo Transicao Feminina da Voce Mais+: EstroG-100 ou isoflavona padronizada (para fogachos e humor) + magnesio L-treonato (para foco e sono) + vitamina D3 2000UI (para densidade ossea) + colageno Verisol (para pele e articulacoes) = Bundle Bem-Estar Climaterico. Ticket: R$480-620/mes. Argumento: A menopausa nao e o fim do bem-estar - e o inicio de uma nova fase que merece o melhor cuidado. Nosso protocolo foi montado com os ativos mais estudados para essa transicao, sem os riscos da TRH convencional. Parceria com ginecologistas e nutris especialistas em saude feminina para validacao e indicacao."
+  },
+  11: {
+    tag: "Ciencia - Omega-3 EPA DHA Frequencia Cardiaca DSM-Firmenich 2026",
+    stars: "&#11088;&#11088;&#11088;&#11088;",
+    headline: "Omega-3 EPA e DHA reduzem frequencia cardiaca em 2,23 bpm segundo nova pesquisa DSM-Firmenich 2026 - meta-analise confirma reducao de 29% na morte cardiaca com doses acima de 1g por dia",
+    summary: "Pesquisa publicada pela DSM-Firmenich em 2026 sobre EPA e DHA demonstrou evidencia robusta de reducao da frequencia cardiaca com suplementacao de omega-3. A meta-analise confirmou reducao de 2,23 bpm na frequencia cardiaca de repouso com suplementacao regular. Quando a analise foi limitada a estudos com dose superior a 1g/dia de EPA + DHA combinados, os resultados apontaram reducao de 29% na morte cardiaca. O contexto global: pesquisadores de 100 paises confirmaram que 76% da populacao mundial nao atinge a recomendacao diaria de EPA e DHA. No Brasil, o deficit e acentuado pelo baixo consumo de peixes de agua fria. O argumento de venda direto: 3 em cada 4 pessoas tem omega-3 baixo sem perceber. A deficiencia nao doi - mas aumenta inflamacao cronica, piora o humor e acelera o envelhecimento celular. Para a Voce Mais+: produto fundacional com alta recorrencia e argumento cientifico irrebativel.",
+    source: "DSM-Firmenich / SBCM / ProdutosAnalisados, 2026",
+    curto: "8",
+    medio: "8",
+    longo: "8",
+    idea: "Argumento de venda em 30 segundos para omega-3: 3 em cada 4 pessoas tem omega-3 baixo sem saber. A deficiencia e silenciosa - mas aumenta inflamacao, piora o humor e acelera o envelhecimento. Uma capsula por dia ja faz diferenca em 4 semanas. Diferenciar pela qualidade: comunicar EPA e DHA por dose declarados no rotulo (ex: 600mg EPA + 400mg DHA), indice TOTOX abaixo de 26, origem certificada IFOS. Bundle longevidade fundacional: Omega-3 Ultra + D3 2000UI + K2 menaquinona = Protocolo Cardiovascular e Ossos. Argumento de recompra: mostrar exame de triglicerideos e omega-3 apos 3 meses para comprovar resultado."
+  },
+  12: {
+    tag: "Digital - Influenciadores Wellness Instagram TikTok Brasil 2026",
+    stars: "&#11088;&#11088;&#11088;",
+    headline: "Instagram concentra 53% do conteudo de saude no Brasil em 2026 - publico wellness e 77% feminino de 25-34 anos e cada video gera em media 174 mil interacoes, superando outros nichos",
+    summary: "Dados do HypeAuditor e analises de TikTok Analytics divulgados em 2026 confirmam que o nicho de saude e wellness e um dos de maior engajamento das redes sociais brasileiras. O Instagram concentra 53,1% de todo o conteudo de saude e bem-estar, sendo quase o dobro do YouTube. O perfil demografico do publico de wellness nas redes: 77,4% feminino, 25-34 anos, com alto poder de decisao de compra. Cada video de wellness gera em media 174 mil interacoes - indicador de forte potencial de conversao. Os influenciadores LOD (lideres de opiniao digital) de saude convertem com eficiencia 3x superior ao anuncio pago no mesmo segmento. O movimento das wellness creators: influenciadoras que antes eram musas fitness migraram para o wellness holistico, abrangendo suplementos, saude hormonal, sono e longevidade. Para a Voce Mais+: a estrategia de parceria com LODs de wellness tem ROI mensuravel e publico ja convertido.",
+    source: "HypeAuditor / HiperMidia Comunicacao / Modash, 2026",
+    curto: "6",
+    medio: "8",
+    longo: "7",
+    idea: "Estrategia LOD de wellness: identificar 5 a 10 micro-influenciadores (10k-150k seguidores) de saude feminina e wellness no Instagram com taxa de engajamento acima de 3%. Micro-LODs convertem melhor que mega-influenciadores e custam significativamente menos. Proposta: parceria com produto gratuito + comissao por venda (codigo de desconto rastreavel). Conteudo que mais converte: unboxing consultivo com explicacao dos beneficios do produto, resultado pessoal apos 30 dias de uso, comparativo entre produtos (credibilidade). Meta: 5 parcerias ativas gerando 8-15 conversoes cada por mes."
+  },
+  13: {
+    tag: "Analise de Cruzamento - Wellness Intelligence 5 Mai 2026",
+    stars: "&#11088;&#11088;&#11088;&#11088;&#11088;",
+    headline: "Convergencia de maio: GLP-1 + metabolismo feminino + clean label definem o posicionamento mais urgente de Q2 2026 - protocolo consultivo para esses tres vetores domina o ticket mais alto do setor",
+    summary: "Cruzando as 13 tendencias desta edicao de 5 de maio de 2026, emerge um padrao de alta clareza estrategica. O consumidor de maior valor de 2026 e identificado pela intersecao de tres vetores: (1) METABOLISMO E GLP-1: o avanco dos analogos de GLP-1 criou um novo perfil que precisa de suplementos de alta densidade nutricional - berberina, fibra, probiotico psicobiotico e proteina de alta qualidade. O mercado de suporte nutricional para usuarios de GLP-1 projeta US$160 bilhoes ate 2030. (2) SAUDE FEMININA HORMONAL E COGNITIVA: mulheres (79% usuarias de suplementos) buscam solucoes para menopausa, ciclo e bem-estar emocional. Os ativos com maior potencial de bundle: magnesio L-treonato, psicobioticos, EstroG-100, colageno Verisol e ashwagandha KSM-66. (3) CLEAN LABEL E TRANSPARENCIA: 40% dos compradores citam qualidade do ingrediente como fator decisivo. Sem transparencia verificavel, o produto nao compete no segmento de maior valor. A janela mais urgente: Bundle GLP-1 Support + Bundle Metabolismo Consciente (berberina + fibra + probiotico) = dois produtos novos com alta margem e publico ja educado para necessidade. Acao imediata: mapear o portfolio atual versus essas tres necessidades e identificar as lacunas.",
+    source: "Analise cruzada Wellness Intelligence Voce Mais+ / Mai 2026",
+    curto: "9",
+    medio: "9",
+    longo: "10",
+    idea: "Plano de acao Q2 2026 em 3 sprints: SPRINT 1 (maio): mapear portfolio versus as tres categorias criticas (GLP-1 support, metabolismo feminino, clean label). Identificar os 3 produtos com maior lacuna de posicionamento. SPRINT 2 (junho): criar os dois bundles estrategicos - GLP-1 Support e Metabolismo Consciente - com argumentacao consultiva por escrito para o time de vendas. SPRINT 3 (julho): ativar parcerias com 3 LODs de wellness no Instagram com foco no publico feminino 30-50 anos. Meta de resultado: aumento de 25-35% no ticket medio por atendimento em 90 dias."
+  }
+};
+
+document.querySelectorAll('[data-modal]').forEach(function(card) {
+  card.addEventListener('click', function() {
+    var id = this.getAttribute('data-modal');
+    var d = MODALS[id];
+    if (!d) return;
+    document.getElementById('mTag').textContent = d.tag;
+    document.getElementById('mHeadline').textContent = d.headline;
+    document.getElementById('mStars').innerHTML = d.stars;
+    document.getElementById('mSummary').textContent = d.summary;
+    document.getElementById('mSource').textContent = d.source;
+    document.getElementById('mCurto').textContent = d.curto + '/10';
+    document.getElementById('mMedio').textContent = d.medio + '/10';
+    document.getElementById('mLongo').textContent = d.longo + '/10';
+    document.getElementById('mIdea').textContent = d.idea;
+    document.getElementById('modalOverlay').classList.add('open');
+  });
+});
+document.getElementById('modalClose').addEventListener('click', function() {
+  document.getElementById('modalOverlay').classList.remove('open');
+});
+document.getElementById('modalOverlay').addEventListener('click', function(e) {
+  if (e.target === this) this.classList.remove('open');
+});
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') document.getElementById('modalOverlay').classList.remove('open');
+});
+</script>
+</body>
+</html>

@@ -1,6 +1,156 @@
 {
   "editions": [
     {
+      "date": "2026-05-06",
+      "dateLabel": "6 de Maio de 2026",
+      "cards": [
+        {
+          "category": "mercado",
+          "tag": "Wellness Brasil Macroeconomia 2026",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Brasil e o 12o maior mercado de wellness do mundo: US$96 bilhoes em 2026 com projecao de US$222 bilhoes ate 2034 e crescimento estrutural de 10,4% ao ano",
+          "summary": "O mercado brasileiro de saude e bem-estar consolidou faturamento bilionario em 2026. Cuidados pessoais e alimentacao saudavel somam US$69,6 bilhoes. O setor de saude, beleza e bem-estar registrou crescimento de 14,6% e alcancou R$74,3 bilhoes. A migracao do modelo de tratamento para saude preventiva, integral e personalizada cria oportunidade estrutural para marcas de suplementacao natural que comunicam ciencia com clareza.",
+          "source": "Inspira FM / Medicina S/A / Jornal de Brasilia / CartaCapital / BrazilEconomy, Mai 2026",
+          "curto": "9",
+          "medio": "10",
+          "longo": "10",
+          "idea": "Posicionar Voce Mais+ como marca de suplementacao preventiva e de longevidade com campanha Voce Mais+ cuida de quem cuida, comunicando ciencia verificavel, ingredientes rastreados e formatos praticos."
+        },
+        {
+          "category": "ciencia",
+          "tag": "Magnesio Ansiedade Sono 2026",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Revisao sistematica Cureus 2026: magnesio bisglicinato e treonato reduzem ansiedade em 5 de 7 estudos e melhoram sono em 5 de 8 estudos clinicos randomizados",
+          "summary": "Revisao sistematica analisou todos os ensaios clinicos disponiveis e demonstrou melhora em pelo menos um parametro de sono ou ansiedade na maioria dos estudos. Bisglicinato indicado para sono; treonato atravessa barreira hematoencefalica. Tua Saude publicou 6 materias sobre magnesio em abril-maio de 2026.",
+          "source": "Cureus 2026 / Tua Saude (fev-mai 2026) / Vhita / OceanDrop / NatusVita, 2026",
+          "curto": "9",
+          "medio": "9",
+          "longo": "8",
+          "idea": "Criar linha Magnesio Premium com tres versoes: Bisglicinato Sono e Relax, Treonato Foco Cerebral e Dimalato Energia e Musculos. Bundle Familia do Magnesio. Ticket R$180-280/mes."
+        },
+        {
+          "category": "regulacao",
+          "tag": "ANVISA Prazo Setembro 2026",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "ANVISA: prazo ate 1 de setembro de 2026 para notificacao obrigatoria de suplementos com estudos de estabilidade (IN 281/2024) e CP 1.394/2026 amplia escopo regulatorio",
+          "summary": "IN 281/2024 torna obrigatorio o Relatorio de Estudo de Estabilidade. Apos setembro, comercializacao sem notificacao e infracao sanitaria com multa, interdicao e apreensao. CP 1.394/2026 traz nova rodada regulatoria. Adequacao antes do prazo gera vantagem competitiva de credibilidade.",
+          "source": "ANVISA / CMALaw / Intertox / CRN6 / Pronutrition, 2025-2026",
+          "curto": "10",
+          "medio": "8",
+          "longo": "7",
+          "idea": "Iniciar imediatamente estudos de estabilidade e adequacao regulatoria. Transformar conformidade em argumento de venda: selos ANVISA como diferencial de confianca comunicado ativamente no packaging."
+        },
+        {
+          "category": "tendencias",
+          "tag": "Lion Mane Cogumelos Adaptogenicos 2026",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Lion Mane e Chaga lideram cogumelos adaptogenicos em 2026: foco cognitivo, memoria e imunidade em gummies e cafes funcionais para publico 25-40 anos",
+          "summary": "Lion Mane lidera com evidencias de NGF e neuroplasticidade. Combinacoes com Ashwagandha e L-teanina formam o stack cognitivo natural mais completo para profissionais 25-40 anos. Gummies com 5000mg sao o formato de maior crescimento no mercado brasileiro.",
+          "source": "Vitaminer Shop / Detroit News / Food Connection Guia Adaptogenos, Abr-Mai 2026",
+          "curto": "8",
+          "medio": "9",
+          "longo": "9",
+          "idea": "Lancar Stack Cognitivo Natural: Lion Mane 500mg + Ashwagandha KSM-66 300mg + L-teanina 200mg em capsula ou sache soluvel para cafe. Ticket R$240-320/mes para profissionais 25-40 anos."
+        },
+        {
+          "category": "ciencia",
+          "tag": "Vitamina D Deficiencia Brasil Inverno 2026",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Fiocruz: brasileiros tem deficiencia de vitamina D mesmo no verao; meta-analise Lancet 2025 com 64.000 participantes confirma protecao contra infeccoes respiratorias",
+          "summary": "Prevalencia de deficiencia proxima a paises europeus mesmo em individuos saudaveis no verao. Brasil sem politica nacional de fortificacao. Com inverno chegando em maio-junho, janela de suplementacao preventiva amplia-se para toda a populacao. Beneficio mais expressivo em pessoas deficientes.",
+          "source": "Fiocruz / The Lancet Diabetes Endocrinology 2025 / Tua Saude Mai 2026",
+          "curto": "10",
+          "medio": "8",
+          "longo": "7",
+          "idea": "Campanha Inverno Imunidade com Vitamina D3+K2: usar dado Fiocruz como gatilho de urgencia. Bundle inverno: D3+K2+Omega-3+Magnesio Bisglicinato. Ticket R$280-380/mes. Janela: maio-agosto 2026."
+        },
+        {
+          "category": "ciencia",
+          "tag": "Psicobioticos Eixo HPA Cortisol 2026",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Psicobioticos atingem maturidade clinica: L. helveticus R0052 e B. longum reduzem cortisol cronico e modulam serotonina via nervo vago com evidencia de nivel 1",
+          "summary": "Revista Contemporanea 2026 consolida evidencias: psicobioticos com cepas especificas reduzem estresse e ansiedade via eixo intestino-cerebro. Mecanismo: producao de GABA e serotonina no intestino via nervo vago. Demanda por probioticos com claims de saude mental cresce aceleradamente.",
+          "source": "Revista Contemporanea 2026 / Doity UNIFAMETRO 2024 / Revistardp.org.br",
+          "curto": "7",
+          "medio": "9",
+          "longo": "10",
+          "idea": "Linha Equilibrio Mental Natural com probiotico multiestirpe: L. helveticus R0052 + B. longum + prebiotico FOS. Bundle com magnesio bisglicinato para protocolo completo de sono e ansiedade. Ticket R$180-240/mes."
+        },
+        {
+          "category": "tendencias",
+          "tag": "Saude Feminina Longevidade Ovariana 2026",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Longevidade ovariana emerge como novo sinal vital e botanicos naturais explodem para menopausa e TPM com isoflavonas e oleo de primula",
+          "summary": "70% das mulheres usarao tecnologias de monitoramento hormonal ate 2027. Oleo de primula, borragem e linhaça crescem como alternativas naturais comprovadas. Isoflavonas, EstroG-100 e ashwagandha avancam para qualidade de vida na transicao da menopausa.",
+          "source": "Bonitamulher / Jovem Pan / TEX / CDPI Pharma / Avidaplena, 2026",
+          "curto": "8",
+          "medio": "9",
+          "longo": "9",
+          "idea": "Linha Voce Mais Femme: Equilibrio Ciclo (oleo de primula + magnesio + B6), Transicao Natural (isoflavonas + ashwagandha) e Longevidade Femme (colageno + D3+K2 + omega-3). Comunicacao de acolhimento e empoderamento."
+        },
+        {
+          "category": "mercado",
+          "tag": "Faux-zempic GLP-1 Natural WGSN 2026",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "WGSN elege Faux-zempic top trend 2026: berberina, OEA e fibras como ativadores naturais de GLP-1 endogeno; mercado GLP-1 global projetado em US$201 bilhoes ate 2033",
+          "summary": "Demanda por alternativas naturais ao Ozempic impulsiona berberina (mais de 200% em buscas no Brasil). OEA e fibras solúveis ativam GLP-1 endogeno. Industria de suplementos cria companion supplements para usuarios de GLP-1. Lentilhas e feijoes tambem ativam GLP-1 endogeno segundo pesquisa 2026.",
+          "source": "WGSN / NutraIngredients / GoodRx / NutritionInsight / GlobeNewswire, 2026",
+          "curto": "9",
+          "medio": "9",
+          "longo": "8",
+          "idea": "Bundle Metabolismo Natural: berberina 500mg 3x/dia + psyllium fibra + probiotico psicobiotico. Publico: mulheres 35-55 com interesse em controle metabolico natural. Ticket R$280-380/mes."
+        },
+        {
+          "category": "mercado",
+          "tag": "Clean Label Plant-Based Colageno NIS 2026",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "NIS Summit 2026: colageno cresce 170% em 5 anos, plant-based atinge US$20,5bi global e clean label vira prerequisito para 40% dos consumidores de suplementos",
+          "summary": "Tres vetores dominantes: colageno peptideo de alta absorcao em gummies e bebidas funcionais; proteinas de ervilha e arroz como protagonistas do mercado flexitariano (48% dos brasileiros ja consomem alternativas vegetais); clean label com rastreabilidade verificavel. Marcas sem certificacao perdem espaco aceleradamente.",
+          "source": "NIS Summit 2026 / BHBFood / Ekobe / VeganBusiness / Genu-in / Rousselot, 2026",
+          "curto": "8",
+          "medio": "9",
+          "longo": "10",
+          "idea": "Publicar ficha tecnica completa de cada ingrediente com QR code para pagina de certificacoes. Lancar linha Plant Power com proteina de ervilha + colageno vegetal + vitaminas."
+        },
+        {
+          "category": "ciencia",
+          "tag": "Omega-3 EPA DHA Saude Mental 2026",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Revisao sistematica 2026 de 25 estudos: omega-3 EPA+DHA reduzem depressao, melhoram cognicao e memoria; qualidade e certificacao IFOS tornam-se diferenciais criticos",
+          "summary": "Apenas 2 de 25 estudos sem beneficio observado. EPA e DHA regulam neurotransmissores e reduzem neuroinflamacao. CNN Brasil reporta crescimento de buscas entre estudantes. Qualidade do omega-3 (certificacao IFOS, forma TG) tornou-se diferencial critico de compra.",
+          "source": "RSD Journal 2026 / CNN Brasil / BJHR / OceanDrop, 2026",
+          "curto": "7",
+          "medio": "8",
+          "longo": "9",
+          "idea": "Comunicar qualidade com transparencia: laudo de concentracao real EPA+DHA, certificacao IFOS. Bundle Cerebro Saudavel: omega-3 TG + D3 + magnesio treonato. Ticket R$220-300/mes."
+        },
+        {
+          "category": "mercado",
+          "tag": "Longevidade 50plus Anti-Aging Natural",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Mercado global atinge US$252 bilhoes em 2025 puxado por longevidade saudavel: resveratrol, CoQ10, vitamina D e colageno formam protocolo anti-aging de maior ticket",
+          "summary": "CAGR de 7,5% puxado por envelhecimento saudavel. Segmento 50+ tem maior ticket medio e menor churn. IA entrou definitivamente no R&D em 2025. Populacao 50+ no Brasil em expansao acelerada com demanda crescente por vitality e cognicao.",
+          "source": "Food Connection / Instituto de Longevidade / CNN Brasil / DuxHumanHealth / iHerb BR, 2026",
+          "curto": "7",
+          "medio": "9",
+          "longo": "10",
+          "idea": "Linha Longevidade Ativa para 45+: Bundle (colageno peptideo + D3 5000UI + K2 MK7 + CoQ10 100mg + omega-3 TG). Ticket R$380-520/mes com programa de fidelidade trimestral."
+        },
+        {
+          "category": "tendencias",
+          "tag": "Cha de Realidade TikTok Wellness Brasil 2026",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "TikTok e Instagram lideram wellness 2026: trend Cha de Realidade premia autenticidade e conteudo real de saude converte 3x mais que anuncio pago",
+          "summary": "Instagram concentra 53,1% de todo conteudo de saude. Publico 25-34 anos feminino e o de maior conversao. Influenciadores LOD convertem 3x mais que anuncio pago. Conteudo despolido e autentico ganhou prevalencia em wellness.",
+          "source": "TikTok Brasil / Hipermidia Comunicacao / HypeAuditor / FocusNetworks, 2026",
+          "curto": "8",
+          "medio": "8",
+          "longo": "7",
+          "idea": "Parceria com 3-5 LODs de saude no nicho feminino 25-45 anos no formato Cha de Realidade. Conteudo: rotina real de suplementacao, bastidores de formulacao. Budget: 60% influencia organica, 40% paid."
+        }
+      ]
+    },
+    {
       "date": "2026-05-05",
       "dateLabel": "5 de Maio de 2026",
       "cards": [
