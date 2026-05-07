@@ -1,6 +1,156 @@
 {
   "editions": [
     {
+      "date": "2026-05-07",
+      "dateLabel": "7 de Maio de 2026",
+      "cards": [
+        {
+          "category": "mercado",
+          "tag": "Suplementos Brasil R$13,8bi 2030",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Mercado de suplementos cresce 15% em 2025 e deve atingir R$13,8 bilhoes ate 2030 com novo perfil de consumidor preventivo",
+          "summary": "Setor movimentou R$7,6 bilhoes em 2025 com expansao de 15%. Migracao do perfil de atleta para publico geral preventivo. Grupo Vitabe superou R$1 bilhao em 2026. Marcas com posicionamento cientifico sao as vencedoras estruturais.",
+          "source": "Revista SuplementAcao Mai 2026 / Food Connection / Abradilan / Hile, 2026",
+          "curto": "9",
+          "medio": "10",
+          "longo": "10",
+          "idea": "Capitalizar crescimento estrutural posicionando Voce Mais+ como marca de suplementacao preventiva e de longevidade. Campanha: Voce Mais+ cuida de quem cuida."
+        },
+        {
+          "category": "ciencia",
+          "tag": "Omega-3 Demencia Precoce Neuroproteção",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Estudo Dez/2025: omega-3 no sangue inversamente correlacionado ao risco de demencia precoce; 76% da populacao mundial deficiente em EPA+DHA",
+          "summary": "Estudo dez/2025 confirma que maiores niveis de DHA associam-se a menor risco de demencia precoce. 76% da populacao mundial deficiente em EPA+DHA. Certificacao IFOS e forma triglicerideo sao diferenciais criticos de qualidade.",
+          "source": "MVS Pharma 2026 / Nutritional Outlook / Springer Nature / CNN Brasil, 2026",
+          "curto": "8",
+          "medio": "9",
+          "longo": "10",
+          "idea": "Bundle Cerebro Saudavel: omega-3 TG 1g EPA+DHA + vitamina D3+K2 + magnesio treonato. Comunicar qualidade com laudo IFOS. Ticket R$220-300 por mes."
+        },
+        {
+          "category": "regulacao",
+          "tag": "ANVISA Fiscalizacao Intensificada 2026",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "ANVISA intensifica fiscalizacao em 2026: proibe marcas populares por falhas de qualidade, barra suplementos sem registro e pune propaganda irregular",
+          "summary": "Jan a mai 2026: proibicao de suplementos irregulares, interdição de marcas sem estudos de estabilidade, recolhimento por ingredientes proibidos e punicao de claims irregulares. Prazo IN 281/2024 em setembro 2026.",
+          "source": "ANVISA Gov.br / AgenciaGov / Terra Brasil Noticias / Metropoles, Jan-Mai 2026",
+          "curto": "10",
+          "medio": "9",
+          "longo": "8",
+          "idea": "Auditar portfolio e contratar laboratorio para estudos de estabilidade antes de julho. Usar conformidade como marketing: selos ANVISA como diferencial de confianca."
+        },
+        {
+          "category": "ciencia",
+          "tag": "Lion Mane NGF MDPI 2025",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Revisao MDPI 2025 consolida neuroproteção do Lion Mane: hericenones e erinacinas estimulam NGF e melhoram cognicao em Alzheimer leve",
+          "summary": "Revisao narrativa MDPI (mar 2025) consolida evidencias de estimulo ao NGF e neuroplasticidade. Estudo clinico com 1g diario por 49 semanas gerou melhora cognitiva em Alzheimer leve. Cogumelos adaptogenicos dominam busca de suplementos 25-40 anos.",
+          "source": "MDPI Nutrients Mar 2025 / Natura Myco / Andreia Torres Blog / iHerb BR, 2025-2026",
+          "curto": "8",
+          "medio": "9",
+          "longo": "9",
+          "idea": "Stack Cognitivo Natural: Lion Mane 500mg + Ashwagandha KSM-66 300mg + L-teanina 200mg. Formato sache soluvel para cafe. Publico 25-40 anos. Ticket R$240-320 por mes."
+        },
+        {
+          "category": "tendencias",
+          "tag": "IA Suplementacao Personalizada Brasil",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "IA chega ao mercado brasileiro: Gauss Health e Purissima criam protocolos por biomarcadores com validacao medica; McKinsey projeta US$16,4bi ate 2028",
+          "summary": "Startups brasileiras usam IA com validacao medica para gerar protocolos individualizados de suplementacao. Mercado global de nutricao personalizada projetado em US$16,4 bilhoes ate 2028. Personalizacao aumenta retencao e ticket.",
+          "source": "AI Business Journal BR / Tips for Life / Metropoles / Poder360, 2026",
+          "curto": "6",
+          "medio": "9",
+          "longo": "10",
+          "idea": "Piloto de quiz de personalizacao: 10 perguntas geram recomendacao de kit personalizado. Aumento projetado em conversao: 30-45%."
+        },
+        {
+          "category": "ciencia",
+          "tag": "Psicobioticos Serotonina 90% Intestino",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Intestino produz 90% da serotonina: psicobioticos com cepas especificas reduzem cortisol e ansiedade via nervo vago com evidencia nivel 1",
+          "summary": "Intestino produz 90% da serotonina e 50% da dopamina do organismo. L. helveticus R0052 e B. longum R0175 com maior volume de evidencias para ansiedade e estresse. Alternativa natural a ansioliticos ganha traction.",
+          "source": "Gut Microbiota for Health / Revista Contemporanea 2026 / UFRJ LANUTRI / RSD Journal, 2026",
+          "curto": "7",
+          "medio": "9",
+          "longo": "10",
+          "idea": "Linha Equilibrio Mental Natural: L. helveticus R0052 + B. longum + FOS. Bundle com magnesio bisglicinato para protocolo sono + ansiedade. Ticket R$180-240 por mes."
+        },
+        {
+          "category": "tendencias",
+          "tag": "Saude Feminina Botanicos Hormonais 2026",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Saude feminina 2026: botanicos hormonais crescem para TPM e menopausa e microbiota vaginal emerge como novo vetor de bem-estar feminino",
+          "summary": "Inflamacao cronica potencializa sintomas de TPM e menopausa. Oleo de primula, maca, feno-grego e ashwagandha como stack natural feminino. 70% das mulheres usarao monitoramento hormonal via wearables ate 2027.",
+          "source": "Bonitamulher / Jovem Pan / CartaCapital / TEX / Catracalivre, Mai 2026",
+          "curto": "8",
+          "medio": "9",
+          "longo": "9",
+          "idea": "Linha Voce Mais Femme: Equilibrio Ciclo + Transicao Natural + Longevidade Femme. Comunicacao de acolhimento e empoderamento feminino."
+        },
+        {
+          "category": "mercado",
+          "tag": "Longevidade 7 Tendencias 2026",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "7 tendencias de longevidade definem mercado premium 2026: segmento 45+ tem maior ticket e menor churn; populacao 60+ atinge 1,4 bilhao global ate 2030",
+          "summary": "Sono de qualidade, suplementacao preventiva com D3+K2+omega-3+colageno, prevencao ativa com biomarcadores e personalizacao como diferencial de adesao. Segmento 50+ tem maior ticket e menor churn.",
+          "source": "Portal Splish Splash Mai 2026 / Estado de Minas Abr 2026 / Instituto de Longevidade, 2026",
+          "curto": "7",
+          "medio": "9",
+          "longo": "10",
+          "idea": "Bundle Longevidade Ativa 45+: colageno + D3 5000UI + K2 MK7 + CoQ10 100mg + omega-3 TG. Ticket R$380-520 por mes com programa de fidelidade trimestral."
+        },
+        {
+          "category": "mercado",
+          "tag": "Proteina Plant-Based Brasil R$2,2bi 2026",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Mercado plant-based no Brasil supera R$2,2 bilhoes em 2026 com 48% dos brasileiros consumindo alternativas vegetais e crescimento de 12% ao ano",
+          "summary": "Vendas de proteinas plant-based cresceram 38% em 2023. 48% dos brasileiros consomem alternativas vegetais. Mercado global projetado em US$20,5 bilhoes ate 2029. Proteina de ervilha e arroz com perfil completo de aminoacidos e clean label verificavel.",
+          "source": "VeganBusiness BR / Agrishow Digital / Food Connection / PlantBasedBR, 2026",
+          "curto": "7",
+          "medio": "8",
+          "longo": "9",
+          "idea": "Linha Plant Power: proteina de ervilha + arroz (70/30) com clean label e QR code. Bundle Plant+: proteina vegetal + omega-3 de algas. Ticket R$180-260 por mes."
+        },
+        {
+          "category": "mercado",
+          "tag": "Ashwagandha Brasil Demanda +200%",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Ashwagandha e o suplemento mais procurado nas farmacias brasileiras em 2026: demanda acima de 200% impulsionada por Gisele Bundchen e evidencias de reducao de cortisol",
+          "summary": "Fenomeno de mercado em 2025-2026. KSM-66 (5% withanolides) como forma mais padronizada. Stacks com berberina e outros adaptogenicos criam oportunidade para regulacao do eixo estresse-metabolismo.",
+          "source": "iHerb Blog BR / Exame Casual / Nav DASA / Terra Brasil Noticias, 2026",
+          "curto": "9",
+          "medio": "9",
+          "longo": "8",
+          "idea": "Ashwagandha KSM-66 como hero product. Stack Anti-Estresse: Ashwagandha + Magnesio Bisglicinato + L-teanina. Ticket R$160-220 por mes."
+        },
+        {
+          "category": "tendencias",
+          "tag": "Clean Label US$89,7bi 2034 CAGR 12%",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Clean label vira prerequisito: mercado global atinge US$89,7bi ate 2034 (CAGR 12,2%) e 40% dos consumidores exigem rastreabilidade verificavel",
+          "summary": "Mercado global clean label era US$28,2 bilhoes em 2024, projetado a US$89,7 bilhoes ate 2034. IN 373/2025 ANVISA alinha Brasil com EUA e UE. 40% dos consumidores exigem transparencia como condicao de compra.",
+          "source": "Food Connection 2026 / Pantec / ANVISA IN 373/2025 / Grand View Research, 2026",
+          "curto": "7",
+          "medio": "9",
+          "longo": "10",
+          "idea": "QR code em embalagens levando a pagina de transparencia: origem, certificacoes (IFOS, KSM-66), laudos de pureza. Custo baixo, impacto de confianca alto."
+        },
+        {
+          "category": "tendencias",
+          "tag": "Microinfluenciadores Saude Wellness 2026",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Marketing wellness madurece: microinfluenciadores de saude com 7% de engajamento superam alcance massivo e autenticidade vira filtro de credibilidade",
+          "summary": "FocusNetworks (2026): videos curtos + WhatsApp + influenciadores-especialistas + shoppable. Conteudo despolido converte 3x mais que anuncio pago. Instagram: 53% do conteudo de saude.",
+          "source": "FocusNetworks Mai 2026 / Favikon / HypeAuditor / Nacao Digital, 2026",
+          "curto": "8",
+          "medio": "8",
+          "longo": "7",
+          "idea": "Parceria com 3-5 microinfluenciadores de saude feminino 25-45 anos. Formato: rotina real de suplementacao 30 dias. Budget: 60% organico, 40% paid."
+        }
+      ]
+    },
+    {
       "date": "2026-05-06",
       "dateLabel": "6 de Maio de 2026",
       "cards": [
