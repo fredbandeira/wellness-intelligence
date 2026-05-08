@@ -1,6 +1,156 @@
 {
   "editions": [
     {
+      "date": "2026-05-08",
+      "dateLabel": "8 de Maio de 2026",
+      "cards": [
+        {
+          "category": "regulação",
+          "tag": "Regulação · ANVISA Recolhimento Urgente",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "ANVISA manda recolher toda a linha Microdose Life: Lion Mane, Reishi, Cordyceps, Chaga e Tremella suspensos por Resolução 1.842/2026",
+          "summary": "Resolução 1.842/2026 publicada em 7 de maio suspende fabricação, distribuição e venda de toda a linha Microdose Life. Produtos continham ingredientes não permitidos na categoria suplemento alimentar e rotulagem com alegações terapêuticas irregulares. Mercado de cogumelos funcionais entra em alerta regulatório imediato no Brasil.",
+          "source": "ANVISA Gov.br Resolução 1.842/2026 / Gazeta Brasil / CartaCapital, 7 Mai 2026",
+          "curto": "10",
+          "medio": "8",
+          "longo": "7",
+          "idea": "Auditoria urgente de portfolio: verificar enquadramento de cogumelos funcionais na categoria ANVISA. Usar conformidade como diferencial competitivo frente a concorrentes irregulares."
+        },
+        {
+          "category": "regulação",
+          "tag": "Regulação · ANVISA Cúrcuma Limites Hepáticos",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "ANVISA impõe limite de 130mg de curcumina em suplementos após risco hepatotóxico: prazo de 6 meses para adequação obrigatória",
+          "summary": "ANVISA (abr/2026) estabelece limite máximo de 130mg curcumina por dia em suplementos após identificar risco hepático em tecnologias de alta absorção. Advertências obrigatórias incluem restrição a gestantes e pacientes com doenças hepáticas. Prazo de 6 meses para adequação de fórmulas e embalagens.",
+          "source": "ANVISA Gov.br / Agência Brasil / Olhar Digital, Abr 2026",
+          "curto": "10",
+          "medio": "8",
+          "longo": "6",
+          "idea": "Verificar imediatamente concentração e tecnologia de absorção de curcumina no portfolio. Adequar rotulagem e comunicar proativamente conformidade com novos limites."
+        },
+        {
+          "category": "mercado",
+          "tag": "Mercado · Brasil 3º Maior Mercado Global",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Brasil alcança 3º lugar no ranking mundial de suplementos em 2026: gummies crescem 40% e consumidor exige praticidade e ciência como pilares inegociáveis",
+          "summary": "Brasil é o 3º maior consumidor global de suplementos, atrás de EUA e Austrália. Gummies e formatos mastigáveis crescem 40%. 60% dos consumidores pesquisam online antes de comprar. Saúde cognitiva lidera crescimento de novos SKUs. Transparência e conformidade ANVISA viram filtros de sobrevivência do mercado.",
+          "source": "Central do Varejo 2026 / Underlabz / Ekobe Nutraceuticos / Hile Suplementos, 2026",
+          "curto": "7",
+          "medio": "9",
+          "longo": "10",
+          "idea": "Expandir linha com formato gummy ou sachê solúvel. Investir em landing pages com comunicação científica clara para capturar consumidor que pesquisa antes de comprar."
+        },
+        {
+          "category": "ciência",
+          "tag": "Ciência · Magnésio Suplementação de Precisão",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Era da suplementação de precisão eleva magnésio treonato e bisglicinato: deficiência subclínica é pandemia silenciosa agravada por solo agrícola 60% mais pobre",
+          "summary": "Consenso médico 2026 migra dos multivitamínicos para moléculas precisas. Solo agrícola brasileiro tem 60% menos magnésio que há 50 anos. Treonato atravessa barreira hematoencefálica para cognição; bisglicinato para sono e estresse. Categoria cresce acima da média do setor.",
+          "source": "MEDBR Médicos Brasil 2026 / Estado de Minas Abr 2026 / Xataka BR, 2026",
+          "curto": "8",
+          "medio": "9",
+          "longo": "9",
+          "idea": "Linha Magnésio Inteligente com três versões: MENTE (treonato), SONO (bisglicinato), ENERGIA (malato). Bundle Anti-Estresse com Ashwagandha KSM-66 e L-teanina."
+        },
+        {
+          "category": "ciência",
+          "tag": "Ciência · Vitamina D Inverno Lancet",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Meta-análise Lancet com 64 mil participantes confirma vitamina D como protetor de infecções respiratórias: inverno brasileiro chega em semanas com janela comercial crítica",
+          "summary": "Meta-análise com 46 ensaios clínicos e 64 mil participantes confirma proteção contra infecções respiratórias, com benefício maior em populações deficientes. Doses 400-1000 UI diárias apresentam melhor resposta. Inverno brasileiro (jun-ago) cria janela comercial imediata.",
+          "source": "The Lancet Diabetes Endocrinology 2025 / Tua Saúde Mai 2026 / Nutritotal, 2026",
+          "curto": "10",
+          "medio": "7",
+          "longo": "7",
+          "idea": "Bundle Imunidade Inverno 2026 lançamento IMEDIATO em maio: D3 5.000UI + K2 MK-7 + Zinco Quelato + Vitamina C 1g. Campanha: Seu inverno mais forte começa agora."
+        },
+        {
+          "category": "mercado",
+          "tag": "Mercado · Adaptogênicos US$18,8bi 2032",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Mercado global de adaptogênicos atinge US$18,8bi até 2032: ashwagandha lidera com 26% de share e bebidas funcionais migram de nicho para supermercado",
+          "summary": "Ashwagandha domina com 26% do share global. Rhodiola cresce por ação mais rápida (30min-2h). Bebidas funcionais adaptogênicas chegaram ao mainstream em 3 anos. Estresse crônico e ansiedade como motores estruturais de demanda.",
+          "source": "Verified Market Research 2026 / Beverage Daily Mar 2026 / Trail and Kale, 2026",
+          "curto": "8",
+          "medio": "9",
+          "longo": "9",
+          "idea": "Stack Gestão do Estresse: Ashwagandha KSM-66 300mg + Rhodiola 200mg + L-Teanina 200mg. Ticket R$200-280/mes. Diferencial: combinação sinérgica de ação rápida e ação prolongada."
+        },
+        {
+          "category": "ciência",
+          "tag": "Ciência · NMN NAD+ Anti-Aging",
+          "stars": "⭐⭐⭐",
+          "headline": "Meta-análise em Nutrients 2026 comprova que NMN reduz pressão arterial: NAD+ consolida-se como molécula anti-aging de Nível 1",
+          "summary": "Meta-análise de múltiplos RCTs demonstra redução significativa de pressão arterial com NMN. Harvard aponta NMN entre os melhores suplementos antienvelhecimento. Demanda concentrada no público 40-60 anos interessado em longevidade preventiva.",
+          "source": "Nutrients Meta-Análise 2026 / Metrópoles Harvard / Naturecan PT, 2026",
+          "curto": "6",
+          "medio": "8",
+          "longo": "10",
+          "idea": "Bundle Longevidade Celular: NMN 250mg + CoQ10 100mg + Resveratrol 100mg + D3 5.000UI. Ticket premium R$380-480/mes para público 40-60 anos de renda média-alta."
+        },
+        {
+          "category": "mercado",
+          "tag": "Mercado · Probióticos Brasil US$4,9bi 2034",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Mercado brasileiro de probióticos cresce a CAGR 9,88% rumo a US$4,9bi até 2034: abordagem multicomponente pré+pró+pós-bióticos define nova geração",
+          "summary": "Mercado brasileiro era US$2,1bi em 2025. CAGR 9,88% sustentado por consciência crescente sobre saúde intestinal. Pós-bióticos emergem como terceira onda. Personalização por microbioma ganha acessibilidade. Multi-biotics substituem cepas únicas.",
+          "source": "IMARC Group Brazil Probiotics 2026 / DSM-Firmenich Probiota 2025 / NIS Summit Gut Health, 2026",
+          "curto": "7",
+          "medio": "9",
+          "longo": "10",
+          "idea": "Linha Equilíbrio Intestinal Multi-Biotics: 10 cepas + prebiótico FOS + pós-biótico. Bundle Gut+Mind com ashwagandha e ômega-3. Ticket R$200-280/mes."
+        },
+        {
+          "category": "ciência",
+          "tag": "Ciência · Creatina Longevidade 45+",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Creatina 2026 vai além da academia: confirma anti-sarcopenia, melhora cognitiva em idosos e abre segmento 45+ com maior ticket e menor churn do portfolio",
+          "summary": "Creatina transcende o nicho atlético: combate sarcopenia em idosos, melhora memória de curto prazo e função executiva em 60+. Creapure aprovado pela ANVISA. Segmento 45+ tem ticket 2,5x maior e churn 40% menor.",
+          "source": "RSD Journal / BJIHS 2026 / Instituto de Longevidade / TuaSaúde Creatina Idosos, 2026",
+          "curto": "8",
+          "medio": "9",
+          "longo": "9",
+          "idea": "Bundle Ativo 55+: Creatina Creapure 5g + Colágeno 5g + D3 5.000UI + K2 + Magnésio Bisglicinato. Ticket R$320-420/mes. Programa de fidelidade semestral."
+        },
+        {
+          "category": "tendências",
+          "tag": "Tendências · L-Teanina Cafeína Viral",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "L-teanina + cafeína vira combo viral de produtividade em maio 2026: elimina agitação da cafeína sem perder foco e cresce 180% em buscas",
+          "summary": "L-teanina ganhou viralidade em maio/2026 como solução para eliminar ansiedade da cafeína preservando foco. Sem receita médica. Sem dependência. Novo público: profissionais 25-40 anos, estudantes e gamers buscando alternativa natural a energéticos.",
+          "source": "Tua Saúde Mai 2026 / Essential Nutrition / Saúde Molecular, 2026",
+          "curto": "9",
+          "medio": "8",
+          "longo": "7",
+          "idea": "Hero product imediato: L-Teanina 200mg + Cafeína Natural 100mg. FocusCalm Você Mais+. Target 22-40 anos. Ticket R$80-120/mes. Conteúdo viral: antes/depois do café com e sem L-teanina."
+        },
+        {
+          "category": "ciência",
+          "tag": "Ciência · Berberina Metformina Natural",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Berberina consolida-se como alternativa natural à metformina: reduz hemoglobina glicada de 9,5% para 7,5% em 3 meses com eficácia comparável ao fármaco",
+          "summary": "500mg 3x ao dia por 3 meses em DM2 recém-diagnosticados mostra resultado equivalente à metformina. Ativa AMPK, reduz colesterol e triglicerídeos. Cresce entre pré-diabéticos e usuários de GLP-1.",
+          "source": "TuaSaúde Abr 2026 / Clínica Rigatti Blog / SuperSmart AMPK / Biofase Berberina, 2026",
+          "curto": "8",
+          "medio": "9",
+          "longo": "8",
+          "idea": "Linha Metabolismo Natural: Berberina HCl 500mg + Cromo Picolinato + Canela de Ceilão. Bundle Metabólico: Berberina + Ômega-3 TG + Magnésio Malato. Ticket R$180-240/mes."
+        },
+        {
+          "category": "mercado",
+          "tag": "Mercado · Colágeno Longevidade Cutânea",
+          "stars": "⭐⭐⭐",
+          "headline": "Colágeno 2026 migra de estética para longevidade cutânea premium: Verisol + ácido hialurônico + vitamina C formam stack bioregenerativo para mulheres 45+",
+          "summary": "Conceito de longevidade cutânea como processo biologicamente modulável ganha tração. Verisol lidera com estudos clínicos próprios. Tipo I+III para pele; tipo II para articulações. Sachê solúvel e formatos premium crescem.",
+          "source": "Terra Brasil Notícias Mar 2026 / Instituto da Pele 2026 / Pharma Scalabis, 2026",
+          "curto": "7",
+          "medio": "8",
+          "longo": "8",
+          "idea": "Bundle Pele Viva 45+: Colágeno Verisol 2,5g + Ácido Hialurônico 150mg + Vitamina C 500mg + Biotina + Silício Orgânico. Sachê solúvel. Ticket R$220-280/mes."
+        }
+      ]
+    },
+    {
       "date": "2026-05-07",
       "dateLabel": "7 de Maio de 2026",
       "cards": [
