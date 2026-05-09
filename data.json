@@ -1,6 +1,156 @@
 {
   "editions": [
     {
+      "date": "2026-05-09",
+      "dateLabel": "9 de Maio de 2026",
+      "cards": [
+        {
+          "category": "mercado",
+          "tag": "Mercado · GLP-1 Ozempic Reformula Suplementos",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "GLP-1 e Ozempic transformam estrutura do mercado de suplementos: usuario ingere menos volume mas exige maxima densidade nutricional — segmento projetado em US$160bi ate 2030",
+          "summary": "Analogos de GLP-1 (Ozempic, Wegovy, Mounjaro) redesenham o comportamento alimentar criando consumidor de menor volume mas alta exigencia nutricional. Risco real: perda muscular e deficiencias de B12, ferro, calcio e magnesio. Industria reformula com maior densidade proteica, biodisponibilidade elevada e menor irritacao gastrica. Suplementos viram elementos-chave de apoio nutricional nos protocolos de emagrecimento farmacologico.",
+          "source": "FoodBiz Brasil / Dois A Mais Farma / BHB Food / Essential Nutrition GLP-1 / Itau BBA 2026",
+          "curto": "9",
+          "medio": "10",
+          "longo": "10",
+          "idea": "Linha GLP-1 Support Voce Mais+: proteina ervilha+arroz formato baixo volume; Micronutri B12+magnesio+ferro+D3; Fiber psilio+inulina+FOS. Lancamento Q3/2026."
+        },
+        {
+          "category": "regulação",
+          "tag": "Regulação · ANVISA Fiscalização Múltipla 2026",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "ANVISA intensifica operacoes em 2026: Bioghen, I-Capsulas e Morais e Argolo recolhidos — programa nacional expoe clandestinos e cria vantagem estrutural para marcas regulares",
+          "summary": "Programa de Fiscalizacao de Suplementos ANVISA 2026 realizou acoes simultaneas em tres estados e multiplos recolhimentos: Bioghen (fev), I-Capsulas (operacao em local nao licenciado), Fit Slim+, Morais e Argolo (mar). Ambiente regulatorio mais rigido cria vantagem competitiva estrutural para marcas totalmente conformes.",
+          "source": "ANVISA Gov.br / Terra Brasil Noticias / Agencia Gov / Agencia Brasil / CRN6, Fev-Mar 2026",
+          "curto": "9",
+          "medio": "8",
+          "longo": "7",
+          "idea": "Campanha de transparencia radical: publicar laudos de pureza, registros ANVISA e certificados BPF. Criar pagina de conformidade com QR code nas embalagens."
+        },
+        {
+          "category": "tendências",
+          "tag": "Tendências · Fibras Alimentares Próximo Protagonista",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Fibras alimentares emergem como proximo protagonista apos proteinas: buscas crescem 43,8% e suplementos de fibra avancam 62,3% em um ano — categoria subexplorada no Brasil",
+          "summary": "Dados Spate 2026: buscas por fibras +43,8% em um ano; suplementos de fibra +62,3%. Oportunidade tripla: saciedade (emagrecimento), saude intestinal (prebiotico) e controle glicemico (fibra soluvel). Formato en vogue: sache soluvel sem sabor para adicionar em qualquer bebida. Produto de entrada de baixo custo com alto potencial de upsell para protocolos completos.",
+          "source": "Spate Trends 2026 / Food Connection Brasil / Ekobe Nutraceuticos / Hile Suplementos 2026",
+          "curto": "7",
+          "medio": "9",
+          "longo": "10",
+          "idea": "Fibra Mix Voce Mais+: psilio 3g + inulina 2g + FOS 1g por sache, sabor neutro. Preco entrada R$60-80/mes. Porta de entrada para upsell de protocolo completo."
+        },
+        {
+          "category": "ciência",
+          "tag": "Ciência · Psicobióticos Tri-Biotics Gut-Brain 2026",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Tri-biotics de quarta geracao combinam pre+pro+pos-biotics e psicobioticos produzem GABA e serotonina intestinal — ciencia do microbioma entra em era de maior precisao em 2026",
+          "summary": "Mercado global probioticos: US$14,6bi em 2026 rumo a US$37,5bi ate 2036. Brasil: US$2,1bi rumo a US$4,9bi ate 2034. Nova geracao: psicobioticos (cepas que modulam serotonina e GABA), tri-biotics (pre+pro+pos), pos-biotics (butirato, metabolitos estaveis). Cepas especificas por objetivo substituem multipurpose genericas no mercado premium.",
+          "source": "DSM-Firmenich Probiota 2025 / IMARC Brazil 2026 / Pharma Scalabis / Future Market Insights 2026",
+          "curto": "7",
+          "medio": "9",
+          "longo": "10",
+          "idea": "Gut+Mind Voce Mais+: 10 cepas + FOS + butirato de sodio. Bundle Triple Gut com fibra + ashwagandha. Ticket R$220-300/mes."
+        },
+        {
+          "category": "mercado",
+          "tag": "Mercado · Saúde Feminina Hormonal 2026",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Saude feminina hormonal entra em nova era de personalizacao: 70% das mulheres usarao tecnologias de monitoramento hormonal e suplementos para menopausa e TPM crescem em duplo digito",
+          "summary": "70% das mulheres devem usar tecnologias de monitoramento hormonal. IA reduz 80% dos efeitos colaterais em tratamentos hormonais. Suplementos de destaque: magnesio bisglicinato (TPM), B6 (humor), oleo de primula (estrogeno), maca (menopausa), ashwagandha (cortisol), isoflavonas (fogachos), Ca+D3+K2 (ossos). Mercado feminino representa 58% do total de suplementos no Brasil.",
+          "source": "Bonita Mulher 2026 / Lab Sao Lucas / Sanavita / Meganesia Saude Feminina 2026 / Farmacotecnica",
+          "curto": "8",
+          "medio": "9",
+          "longo": "9",
+          "idea": "Linha Ciclo Voce Mais+ por fase hormonal: Equilibrio (TPM), Calma Hormonal, Menopausa Ativa, Pele Hormonal. Ticket R$150-480/mes."
+        },
+        {
+          "category": "mercado",
+          "tag": "Mercado · Plant-Based 67% Brasileiros Interessados",
+          "stars": "⭐⭐⭐",
+          "headline": "Proteina plant-based cresce 40% no Brasil em 2025 com 67% dos brasileiros interessados: ervilha e arroz consolidam-se e publico nao-vegano impulsiona volume de mercado",
+          "summary": "67% dos brasileiros demonstram interesse em proteinas plant-based. Mercado cresceu 40% em 2025. Protagonistas: ervilha (aminograma completo, hipoalergenica) + arroz (complementar, digestivel). Publico nao-vegano e o maior driver de volume. Mercado global US$20,5bi ate 2029 com CAGR 7,7%. Expansao para supermercados e farmácias amplifica alcance.",
+          "source": "Vegan Business Brasil 2026 / Ekobe Nutraceuticos / Pronutrition / Folha BV / Mybest 2026",
+          "curto": "6",
+          "medio": "8",
+          "longo": "9",
+          "idea": "Proteina Plant-Based Voce Mais+ ervilha 60%+arroz 40%, 25g por dose, laudo de aminograma publicado. Bundle com fibra + multivitaminico vegano. Ticket R$150-200/mes."
+        },
+        {
+          "category": "tendências",
+          "tag": "Tendências · Clean Label 3.0 Transparência 2026",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Clean Label 3.0 redefine o que consumidor exige de suplementos: 60% dos globais confiam mais em marcas transparentes sobre ingredientes — mercado de ingredientes naturais vale US$53bi rumo a US$99bi",
+          "summary": "Innova Market Insights 2026: 60% dos consumidores globais confiam mais em marcas que explicam origem dos ingredientes. 1 em cada 2 opta por clean label. Industria ingredientes naturais: US$53,2bi em 2024 para US$99,3bi ate 2034 (CAGR 6,4%). Clean Label 3.0 exige rastreabilidade, sustentabilidade e simplicidade coerente — nao apenas remover aditivos.",
+          "source": "Innova Market Insights 2026 / Food Connection Clean Label / Santosflora / Purefy Nutrition / Food Forum News",
+          "curto": "7",
+          "medio": "9",
+          "longo": "10",
+          "idea": "Pagina Nossos Ingredientes com mapa de origem, fornecedores e certificacoes. Embalagem com QR code para ficha tecnica e laudo. Justifica ticket premium de 20-30%."
+        },
+        {
+          "category": "tendências",
+          "tag": "Tendências · Gummies Formatos Inovadores 40%",
+          "stars": "⭐⭐⭐",
+          "headline": "Gummies e formatos mastigaveis crescem 40% no Brasil em 2026 consolidando experiencia sensorial como diferencial competitivo e expandindo distribuicao para supermercados",
+          "summary": "Crescimento de 40% em gummies e formatos inovadores em 2026. Ticket percebido 15-25% maior que capsulas. Formato gummy entra em Carrefour, Pao de Acucar e conveniencias. Shots liquidos crescem premium. Saches soluveis ampliam praticidade. Fidelizacao maior por aderencia ao uso diario por prazer, nao por obrigacao.",
+          "source": "Food Connection Suplementos 2026 / Underlabz / Hile Suplementos / Ekobe / Farmacotecnica 2026",
+          "curto": "8",
+          "medio": "9",
+          "longo": "8",
+          "idea": "Linha Gummies Voce Mais+: Magnesio Bisglicinato 200mg (maca verde), D3+K2 (laranja), Colageno 2,5g (morango). Preco 30-35% acima de capsulas equivalentes."
+        },
+        {
+          "category": "ciência",
+          "tag": "Ciência · Nootrópicos Cognitivo Gamers Profissionais 2026",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Nootropicos explodem no Brasil com tres novos perfis: gamers (reflexo), profissionais (foco) e estudantes (retencao) — saude cognitiva lidera crescimento de SKUs com CAGR 8,4% ate 2028",
+          "summary": "Tres perfis emergentes de consumidor cognitivo: Gamer (L-teanina+cafeina+Lion Mane+Bacopa), Profissional (Rhodiola+Ashwagandha+B12+Omega DHA), Estudante (Bacopa+L-teanina+Magnesio Treonato+B12). Cinco moleculas cognitivas de maior traction: B12 methylcobalamina, Bacopa 300mg, Rhodiola 200mg, L-teanina 200mg, Ginkgo 120mg. Formato AM+PM mais buscado.",
+          "source": "Food Connection 2026 / Farmacotecnica / Revista Kdea 360 / Acontece Botucatu / Metropoles Nootropicos 2026",
+          "curto": "8",
+          "medio": "9",
+          "longo": "9",
+          "idea": "Stack Cognitivo Voce Mais+ por perfil: Gamer Focus, Pro Performance, Study Mode. Comunicacao hyper-segmentada por canal (clips, LinkedIn, TikTok). Ticket R$100-200/mes."
+        },
+        {
+          "category": "tendências",
+          "tag": "Tendências · Wellness Pets Nova Fronteira 2026",
+          "stars": "⭐⭐⭐",
+          "headline": "Wellness animal emerge como nova fronteira: donos projetam valores de saude propria nos pets e suplementos para caes e gatos focam em saude preventiva e longevidade com crescimento de 35%",
+          "summary": "Mercado pet suplementos cresce 35% estimados em 2026 no Brasil. Categorias em alta: omega-3 (pelagem e articulacoes), probioticos pet (microbioma e imunidade), colageno para caes de grande porte. Extensao natural do wellness humano — donos que suplementam passam a buscar equivalentes para animais. Mercado pet food premium projeta R$32bi ate 2028.",
+          "source": "Juventude BM Pet Suplementos Mai 2026 / ABINPET / Sebrae Tendencias Pet 2026 / Loggi 2026",
+          "curto": "5",
+          "medio": "7",
+          "longo": "8",
+          "idea": "Linha Voce Mais+ Pet: Pet Omega-3 softgel, Pet Gut probiotico multiestirpe, Pet Joints colageno+glucosamina+MSM. Sub-marca ou co-branding. Ticket R$60-120/mes."
+        },
+        {
+          "category": "ciência",
+          "tag": "Ciência · Ômega-3 EPA+DHA Precisão Premium 2026",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Omega-3 entra na era da precisao em 2026: razao ideal EPA:DHA por objetivo de saude e novo padrao premium e certificacoes IFOS e TOTOX viram selos obrigatorios de confianca no mercado",
+          "summary": "Consumidor informado de 2026 exige concentracao real (600mg+ EPA+DHA/capsula), forma TG (vs esteres etilicos), razao EPA:DHA por objetivo (humor: 2:1 EPA; cognicao: 1:2 DHA) e certificacoes IFOS 5 estrelas + TOTOX abaixo de 10. Usuarios de GLP-1 entram como novo segmento prioritario. Omega-3 nos Big 5 de suplementos de maior robustez cientifica 2026.",
+          "source": "MEDBR Big 5 Suplementos 2026 / GeniusNutra / Pronutrition GLP-1 / OceanDrop Premium / Buscape 2026",
+          "curto": "7",
+          "medio": "8",
+          "longo": "9",
+          "idea": "Omega-3 Premium Voce Mais+ TG form: Omega Heart (2:1 EPA:DHA) e Omega Brain (1:2 EPA:DHA). 1000mg EPA+DHA por capsula. IFOS 5 estrelas publicado. Ticket R$150-220/mes."
+        },
+        {
+          "category": "mercado",
+          "tag": "Mercado · Bundle Inverno Imunidade Janela Crítica",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Janela comercial de imunidade para o inverno abre AGORA: meta-analise Lancet 64mil participantes confirma D3 e Bundle D3+K2+Zinco+C deve ser lancado na primeira quinzena de junho com antecipacao em maio",
+          "summary": "The Lancet: 46 RCTs, 64mil participantes confirmam D3 como protetor de infeccoes respiratorias. Timing critico: janela comercial de imunidade abre em maio, pico em junho-agosto. Bundle validado: D3 5000UI + K2 MK-7 100mcg + Zinco Quelato 15mg + Vitamina C Tamponada 1g. Formato efervescente diferencia no ponto de venda. Ticket R$120-160/mes com alta aderencia sazonal.",
+          "source": "The Lancet Diabetes Endocrinology Meta-Analise 2025 / Tua Saude Mai 2026 / Nutritotal / Agencia Brasil / Drogasil Blog 2026",
+          "curto": "10",
+          "medio": "7",
+          "longo": "6",
+          "idea": "Bundle Imunidade Inverno 2026: lancamento 25 de maio. Formato efervescente sabor laranja-gengibre. Campanha: Seu inverno mais forte comeca agora. Desconto pre-temporada 15% off em maio."
+        }
+      ]
+    },
+    {
       "date": "2026-05-08",
       "dateLabel": "8 de Maio de 2026",
       "cards": [
