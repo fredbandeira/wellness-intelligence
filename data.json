@@ -1,6 +1,306 @@
 {
   "editions": [
     {
+      "date": "2026-05-11",
+      "dateLabel": "11 de Maio de 2026",
+      "cards": [
+        {
+          "category": "mercado",
+          "tag": "Mercado - Creatina Feminina Boom 2026",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Creatina feminina e o maior boom do mercado de suplementos em 2026: mulheres tem niveis 70-80% menores que homens, consumo online cresce 50% e mercado global quadruplica ate 2030 chegando a US$4,2bi",
+          "summary": "Instituto Locomotiva: 79% das mulheres brasileiras usam suplementos. Creatina lidera o crescimento feminino saindo da academia para tornar-se hack cognitivo, hormonal e muscular. Niveis basais 70-80% menores que homens tornam suplementacao proporcionalmente mais impactante. Grand View Research: CAGR 25% ate 2030.",
+          "source": "Instituto Locomotiva / Guia da Farmacia Mai 2026 / Grand View Research / Exame Creatina Feminina",
+          "curto": "10",
+          "medio": "10",
+          "longo": "9",
+          "idea": "Linha Creatina Fem: creatina 3g + magnesio bisglicinato + B6. Lancamento junho 2026. Ticket R$80-150/mes."
+        },
+        {
+          "category": "ciência",
+          "tag": "Ciencia - Vitamina D Paradoxo Tropical Pre-Inverno",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Brasil tropical tem hipovitaminose D mesmo no verao: Fiocruz confirma paradoxo e meta-analise Lancet 64mil valida D3 contra infeccoes — inverno a 3 semanas",
+          "summary": "Estudo Fiocruz Bahia confirma deficiencia de D3 em populacao saudavel mesmo no verao. Meta-analise Lancet 46 RCTs 64mil participantes confirma protecao contra infeccoes respiratorias. Sinergia D3+K2 para seguranca ossea e vascular. Janela comercial de inverno abrindo agora.",
+          "source": "Fiocruz Bahia / The Lancet Diabetes Endocrinology / Tua Saude Mai 2026",
+          "curto": "10",
+          "medio": "7",
+          "longo": "6",
+          "idea": "Bundle Imunidade Inverno D3+K2+Zinco+C em sache efervescente. Lancamento 20/mai. Argumento Lancet 64mil. Ticket R$120-160/mes."
+        },
+        {
+          "category": "tendências",
+          "tag": "Tendencias - Cogumelos Medicinais Mainstream 2026",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Lion Mane, Reishi e Chaga entram no mainstream: cogumelos medicinais dominam nova categoria cognitiva e imunologica com gummies infantis e cafes funcionais",
+          "summary": "Lion Mane para neurogenese e foco, Reishi para imunomodulacao e calma, Chaga para antioxidacao. Formatos: gummies infantis, cafes funcionais, blends 20-em-1 de corpo de frutificacao. Categoria subpenetrada no Brasil.",
+          "source": "Vitaminer Shop 2026 / PlexNutri / Naturecan / NIS Summit 2026",
+          "curto": "6",
+          "medio": "9",
+          "longo": "10",
+          "idea": "Linha Fungi: FUNGI FOCUS (Lion Mane + Cordyceps AM) e FUNGI CALM (Reishi + Chaga PM). Corpo de frutificacao 100%. Ticket R$120-180/mes."
+        },
+        {
+          "category": "ciência",
+          "tag": "Ciencia - Magnesio 4 Formas 4 Objetivos",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Magnesio nao e tudo igual: L-treonato atravessa barreira hematoencefalica para cognicao, bisglicinato domina sono — diferenciacao eleva ticket e fidelizacao",
+          "summary": "L-treonato Magtein: unica forma que atravessa barreira cerebral. Bisglicinato: sono e ansiedade. Quelato: muscular. Malato: energia. Review Cureus 2024 confirma melhora de sono e ansiedade. Deficiencia estimada em 60-70% dos brasileiros.",
+          "source": "Tua Saude Abr 2026 / Cureus Review 2024 / Vhita Tipos de Magnesio",
+          "curto": "8",
+          "medio": "9",
+          "longo": "9",
+          "idea": "Linha Magnesio de Precisao: MAG BRAIN (L-Treonato AM) + MAG CALM (Bisglicinato PM). Bundle completo. Comunicacao: nem todo magnesio e igual."
+        },
+        {
+          "category": "tendências",
+          "tag": "Tendencias - NMN NAD+ Biohacking Longevidade Popular",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "NMN e NAD+ chegam ao mainstream: protocolo David Sinclair com NMN+resveratrol+CoQ10 vira rotina de longevidade e mercado anti-aging atinge US$91bi em 2026",
+          "summary": "NAD+ cai 50% entre 40 e 60 anos. NMN precursor direto. Sinergia com resveratrol ativa SIRT1. Custo caiu para R$200-400/mes. Mercado anti-aging US$91bi em 2026.",
+          "source": "Lifespan 2025 / Novoslabs 2026 / Mordor Intelligence 2026",
+          "curto": "5",
+          "medio": "8",
+          "longo": "10",
+          "idea": "NAD Stack: NMN 300mg + Resveratrol 200mg + CoQ10 100mg. Lancamento Q4/2026. Target 40-65 anos. Ticket R$200-350/mes."
+        },
+        {
+          "category": "ciência",
+          "tag": "Ciencia - Psicobioticos Cepas Especificas Ansiedade",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "L. helveticus R0052 e B. longum R0175 reduzem ansiedade em estudos RCT: psicobioticos com cepas especificas entram em era de prescricao nutricional baseada em evidencias",
+          "summary": "90% da serotonina produzida no intestino. L. helveticus R0052 + B. longum R0175 mais estudados para estresse e ansiedade. SciELO confirma eficacia em depressao. 33% dos brasileiros com sintomas de ansiedade.",
+          "source": "SciELO Revisao Sistematica / Nutritotal / UECE Nutrivisa",
+          "curto": "7",
+          "medio": "9",
+          "longo": "10",
+          "idea": "Gut Mind Daily: 10 cepas incluindo L. helveticus R0052 + B. longum R0175 + FOS + B12. Citar cepas especificas no rotulo."
+        },
+        {
+          "category": "ciência",
+          "tag": "Ciencia - Inulina FOS Butirato Neuroinflamacao Mai 2026",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Inulina e FOS produzem butirato que reduz neuroinflamacao ligada a ansiedade: achado mais relevante de maio 2026 conecta prebioticos a saude cerebral",
+          "summary": "Tua Saude Mai 2026: inulina e FOS fermentam gerando butirato que atravessa barreira hematoencefalica e inibe NF-kappaB. Reducao de citocinas pro-inflamatorias cerebrais. Triple win: microbioma + imunidade + saude mental.",
+          "source": "Tua Saude 2 Mai 2026 / Tua Saude 7 Mai 2026 / ISAPP",
+          "curto": "8",
+          "medio": "9",
+          "longo": "10",
+          "idea": "Fibra Mental: inulina 3g + FOS 1,5g + psicobioticos em sache. Posicionamento: a fibra que cuida do seu cerebro. Butirato que chega ao cerebro."
+        },
+        {
+          "category": "mercado",
+          "tag": "Mercado - Mulheres 79% Consumo Crescimento 50%",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "79% das mulheres usam suplementos e consumo online cresce 50% em 2026: publico feminino dita as categorias de maior crescimento do setor",
+          "summary": "Pedidos femininos online cresceram 24,8% em 2025 vs 18,6% total. Jan-fev 2026: +50%. Participacao crescendo de 21,6% para 23,2%. Creatina lidera performance, colageno beleza, D3+Mg bem-estar.",
+          "source": "Instituto Locomotiva / Guia da Farmacia / UAI Abr 2026",
+          "curto": "9",
+          "medio": "10",
+          "longo": "10",
+          "idea": "Linha umbrella Her Voce Mais+: Her Creatina, Her Magnesio, Her Colageno, Her Hormonal. Meta: 35% faturamento portfolio feminino ate Q2/2027."
+        },
+        {
+          "category": "ciência",
+          "tag": "Ciencia - Ashwagandha KSM-66 Springer Nature 2025-2026",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Ashwagandha KSM-66 consolida-se como adaptogeno mais estudado com multiplas publicacoes Springer Nature: reduz cortisol 27,9% em 60 dias e e base do protocolo de perimenopausa natural",
+          "summary": "Springer Advances in Therapy 2025: RCT duplo-cego confirma reducao de estresse e melhora de sono. Biogerontology Springer 2025: beneficios geroprotetores. Medicine Journal 2026: eficacia confirmada. Cortisol compromete progesterona — KSM-66 como primeira linha hormonal natural feminina.",
+          "source": "Springer 2025 / Biogerontology 2025 / Medicine 2026 / Medscape 2026",
+          "curto": "9",
+          "medio": "10",
+          "longo": "10",
+          "idea": "Stack Hormonal Fem: KSM-66 300mg + Magnesio Bisglicinato + B6 + Vitex. Publicar estudos Springer como credencial. Ticket R$150-200/mes."
+        },
+        {
+          "category": "tendências",
+          "tag": "Tendencias - Colageno Plant-Based PrimaColl",
+          "stars": "⭐⭐⭐",
+          "headline": "Primeiro colageno 100% plant-based: startup Geltor lanca PrimaColl por fermentacao microbiana e abre categoria para veganos e flexitarianos",
+          "summary": "Geltor PrimaColl: primeiro colageno sem animais produzido por fermentacao microbiana. Mercado vegano: US$31,4bi projetado para 2026. Convergencia plant-based + longevidade + beleza no mercado premium.",
+          "source": "Vegan Business / Mundo Verde / Ekobe 2026",
+          "curto": "4",
+          "medio": "7",
+          "longo": "9",
+          "idea": "Collagen Boost Vegan: estimuladores de colageno endogeno 100% plant-based certificado. Bundle Vegan Beauty Stack."
+        },
+        {
+          "category": "regulação",
+          "tag": "Regulacao - ANVISA RE 1.045 2026 Sancoes",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "ANVISA RE 1.045/2026 formaliza sancoes a propaganda enganosa: 4+ empresas recolhidas e conformidade total vira argumento de conversao de alto impacto",
+          "summary": "RE 1.045/2026 publicada no DOU. Operacao multiestadual fev 2026. Recolhimentos: Bioghen, I-Capsulas, Fit Slim+, Morais e Argolo. ANVISA faz curadoria do mercado — marcas conformes ganham share organicamente.",
+          "source": "ANVISA Gov.br RE 1045 2026 / Terra Brasil / Agencia Brasil 2026",
+          "curto": "9",
+          "medio": "8",
+          "longo": "7",
+          "idea": "Campanha Conformidade Radical: publicar laudos ANVISA mensalmente, QR code nas embalagens, selo 100% ANVISA Regulado. Custo zero, impacto maximo."
+        },
+        {
+          "category": "tendências",
+          "tag": "Tendencias - Bebidas Funcionais Canal Supermercado",
+          "stars": "⭐⭐⭐",
+          "headline": "Bebidas funcionais com prebioticos e adaptogenicos dominam NIS Summit 2026: formato drink abre canal supermercado e dobra audiencia de marcas wellness",
+          "summary": "NIS Summit 2026: suplementacao em bebida e maior fronteira. Cafes com Lion Mane, aguas vitaminas, shots de imunidade. Canal GPA/Carrefour/Oxxo abre distribuicao 10x maior que lojas de suplemento.",
+          "source": "NIS Summit 2026 / Food Connection / Milkpoint 2026",
+          "curto": "5",
+          "medio": "8",
+          "longo": "9",
+          "idea": "Linha Drink: Immunity Shot 30ml, Gut Drink sache, Collagen Water. Expansao supermercados Q1/2027."
+        }
+      ]
+    },
+    {
+      "date": "2026-05-11",
+      "dateLabel": "11 de Maio de 2026",
+      "cards": [
+        {
+          "category": "mercado",
+          "tag": "Mercado · Creatina Feminina Boom 2026",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Creatina feminina e o maior boom do mercado de suplementos em 2026: mulheres tem niveis 70-80% menores que homens, consumo online cresce 50% e mercado global quadruplica ate 2030 chegando a US$4,2bi",
+          "summary": "Instituto Locomotiva: 79% das mulheres brasileiras usam suplementos. Creatina lidera o crescimento feminino saindo da academia para tornar-se hack cognitivo, hormonal e muscular para mulheres de todas as idades. Niveis basais femininos 70-80% menores que homens tornam a suplementacao proporcionalmente mais impactante. Grand View Research: CAGR 25% ate 2030.",
+          "source": "Instituto Locomotiva / Guia da Farmacia Mai 2026 / Grand View Research / Exame Creatina Feminina",
+          "curto": "10",
+          "medio": "10",
+          "longo": "9",
+          "idea": "Linha Creatina Fem Voce Mais+: creatina monohidratada 3g + magnesio bisglicinato + B6. Lancamento junho 2026. Comunicacao de desmistificacao feminina. Ticket R$80-150/mes."
+        },
+        {
+          "category": "ciência",
+          "tag": "Ciência · Vitamina D Paradoxo Tropical Pre-Inverno",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Brasil tropical tem hipovitaminose D mesmo no verao: Fiocruz confirma paradoxo e meta-analise Lancet 64mil valida D3 contra infeccoes — inverno a 3 semanas",
+          "summary": "Estudo Fiocruz Bahia publicado no Journal of the Endocrine Society confirma deficiencia de D3 em populacao saudavel mesmo no verao. Meta-analise Lancet com 46 RCTs e 64 mil participantes confirma protecao contra infeccoes respiratorias. Janela comercial de inverno abrindo agora.",
+          "source": "Fiocruz Bahia / The Lancet Diabetes Endocrinology / Tua Saude Mai 2026",
+          "curto": "10",
+          "medio": "7",
+          "longo": "6",
+          "idea": "Bundle Imunidade Inverno: D3+K2+Zinco+C em sache efervescente. Lancamento 20/mai. Argumento Lancet 64mil. Ticket R$120-160/mes."
+        },
+        {
+          "category": "tendências",
+          "tag": "Tendências · Cogumelos Medicinais Mainstream 2026",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Lion Mane, Reishi e Chaga entram no mainstream em 2026: cogumelos medicinais dominam nova categoria cognitiva e imunologica com gummies infantis e cafes funcionais",
+          "summary": "Cogumelos medicinais fazem transicao definitiva de nicho biohacker para mainstream. Lion Mane para neurogenese, Reishi para imunomodulacao e calma, Chaga para antioxidacao. Formatos: gummies infantis, cafes funcionais, blends 20-em-1 de corpo de frutificacao. Categoria subpenetrada no Brasil com 10 anos de crescimento pela frente.",
+          "source": "Vitaminer Shop 2026 / PlexNutri / Naturecan / NIS Summit 2026",
+          "curto": "6",
+          "medio": "9",
+          "longo": "10",
+          "idea": "Linha Fungi Voce Mais+: FUNGI FOCUS (Lion Mane + Cordyceps AM) e FUNGI CALM (Reishi + Chaga PM). Diferencial: corpo de frutificacao 100%. Ticket R$120-180/mes."
+        },
+        {
+          "category": "ciência",
+          "tag": "Ciência · Magnésio 4 Formas 4 Objetivos",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Magnesio nao e tudo igual: L-treonato atravessa barreira hematoencefalica para cognicao, bisglicinato domina sono e ansiedade — diferenciacao eleva ticket e fidelizacao",
+          "summary": "L-treonato (Magtein): unica forma que atravessa barreira cerebral — cognicao e neuro-longevidade. Bisglicinato: quelado com glicina calmante — sono e ansiedade. Quelato: muscular e imunidade. Malato: energia celular. Review Cureus 2024 confirma melhora de sono e ansiedade. 60-70% dos brasileiros com deficiencia estimada.",
+          "source": "Tua Saude Abr 2026 / Cureus Review 2024 / Vhita Tipos de Magnesio",
+          "curto": "8",
+          "medio": "9",
+          "longo": "9",
+          "idea": "Linha Magnesio de Precisao: MAG BRAIN (L-Treonato AM) + MAG CALM (Bisglicinato PM). Bundle completo cognicao+sono. Comunicacao: nem todo magnesio e igual."
+        },
+        {
+          "category": "tendências",
+          "tag": "Tendências · NMN NAD+ Biohacking Popular",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "NMN e NAD+ chegam ao mainstream: protocolo David Sinclair com NMN+resveratrol+CoQ10 vira rotina de longevidade e mercado anti-aging atinge US$91bi em 2026",
+          "summary": "NAD+ cai 50% entre 40 e 60 anos comprometendo mitocondrias e reparacao DNA. NMN precursor direto. Sinergia NMN+Resveratrol ativa SIRT1 (gene da longevidade). Custo mensal caiu para R$200-400 com mais fabricantes. Mercado anti-aging: US$91bi em 2026 para US$127bi ate 2031.",
+          "source": "Lifespan Biohacking 2025 / Novoslabs 2026 / Mordor Intelligence Anti-Aging 2026",
+          "curto": "5",
+          "medio": "8",
+          "longo": "10",
+          "idea": "NAD Stack Voce Mais+: NMN 300mg + Resveratrol 200mg + CoQ10 100mg. Lancamento Q4/2026. Target: 40-65 anos instruido. Ticket R$200-350/mes."
+        },
+        {
+          "category": "ciência",
+          "tag": "Ciência · Psicobióticos Cepas Específicas Ansiedade",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "L. helveticus R0052 e B. longum R0175 reduzem ansiedade em estudos RCT: psicobioticos com cepas especificas entram em era de prescricao nutricional baseada em evidencias",
+          "summary": "90% da serotonina produzida no intestino. Cepas psicobioticas especificas produzem GABA e modulam humor. L. helveticus R0052 + B. longum R0175: combinacao mais estudada para estresse. SciELO confirma eficacia de probioticos em depressao e ansiedade. 33% dos brasileiros com sintomas.",
+          "source": "SciELO Revisao Sistematica / Nutritotal Psicobioticos / UECE Nutrivisa",
+          "curto": "7",
+          "medio": "9",
+          "longo": "10",
+          "idea": "Gut Mind Daily Voce Mais+: 10 cepas incluindo L. helveticus R0052 + B. longum R0175 + FOS + B12. Citar cepas especificas no rotulo. Parceria com psicologos funcionais."
+        },
+        {
+          "category": "ciência",
+          "tag": "Ciência · Inulina FOS Butirato Neuroinflamação",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Inulina e FOS produzem butirato que reduz neuroinflamacao ligada a ansiedade: achado mais relevante de maio 2026 conecta prebioticos diretamente a saude cerebral",
+          "summary": "Tua Saude Mai 2026: inulina e FOS fermentam gerando butirato que atravessa barreira hematoencefalica e inibe NF-kappaB reduzindo IL-6, TNF-alfa e IL-1beta cerebrais. Triple win: microbioma + imunidade + saude mental. ANVISA permite alegacao de flora com 3g de inulina.",
+          "source": "Tua Saude 2 Mai 2026 / Tua Saude 7 Mai 2026 / ISAPP / Nutritotal",
+          "curto": "8",
+          "medio": "9",
+          "longo": "10",
+          "idea": "Fibra Mental Voce Mais+: inulina 3g + FOS 1,5g + psicobioticos em sache soluvel. Posicionamento: a fibra que cuida do seu cerebro. Butirato intestinal que chega ao cerebro."
+        },
+        {
+          "category": "mercado",
+          "tag": "Mercado · Mulheres 79% Consumo Crescimento 50%",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "79% das mulheres usam suplementos e consumo online cresce 50% em 2026: publico feminino dita as categorias de maior crescimento do setor",
+          "summary": "Dados consolidados: pedidos femininos cresceram 24,8% em 2025 vs 18,6% total. Jan-fev 2026: +50%. Participacao de 21,6% para 23,2% em 2025. Creatina lidera performance, colageno beleza, D3+Mg bem-estar. Mulher como protagonista central do wellness 2026.",
+          "source": "Instituto Locomotiva / Guia da Farmacia / UAI Mundo Corporativo Abr 2026",
+          "curto": "9",
+          "medio": "10",
+          "longo": "10",
+          "idea": "Linha umbrella Her Voce Mais+: Her Creatina, Her Magnesio, Her Colageno, Her Hormonal. Meta: 35% do faturamento portfolio feminino ate Q2/2027."
+        },
+        {
+          "category": "ciência",
+          "tag": "Ciência · Ashwagandha KSM-66 Springer Nature 2025-2026",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Ashwagandha KSM-66 consolida-se como adaptogeno mais estudado com multiplas publicacoes Springer Nature: reduz cortisol 27,9% em 60 dias e e base do protocolo de perimenopausa natural",
+          "summary": "Springer Advances in Therapy 2025: RCT duplo-cego confirma reducao de estresse, ansiedade e melhora de sono. Biogerontology Springer 2025: beneficios geroprotetores documentados. Medicine Journal 2026: eficacia e seguranca confirmadas. Cortisol elevado compromete progesterona — KSM-66 como primeira linha hormonal natural.",
+          "source": "Springer Advances in Therapy 2025 / Springer Biogerontology 2025 / Medicine Journal 2026 / Medscape 2026",
+          "curto": "9",
+          "medio": "10",
+          "longo": "10",
+          "idea": "Stack Hormonal Fem: KSM-66 300mg + Magnesio Bisglicinato 300mg + B6 50mg + Vitex 200mg. Publicar estudos Springer como credencial no site. Ticket R$150-200/mes."
+        },
+        {
+          "category": "tendências",
+          "tag": "Tendências · Colágeno Plant-Based PrimaColl",
+          "stars": "⭐⭐⭐",
+          "headline": "Primeiro colageno 100% plant-based: startup Geltor lanca PrimaColl por fermentacao microbiana e abre categoria para 30 milhoes de veganos brasileiros",
+          "summary": "Geltor PrimaColl: primeiro colageno 100% plant-based sem uso de animais. Mercado vegano global: US$31,4bi projetado para 2026. Lacuna anterior: colageno sempre foi animal. Alternativa: estimuladores de colageno endogeno. Convergencia plant-based + longevidade + beleza domina mercado premium.",
+          "source": "Vegan Business PrimaColl / Mundo Verde / Ekobe Nutraceuticos 2026",
+          "curto": "4",
+          "medio": "7",
+          "longo": "9",
+          "idea": "Collagen Boost Vegan: vitamina C + silicio + biotina + glicina + prolina + lisina. Certificacao vegana ANDA. Bundle Vegan Beauty Stack. Ticket R$100-150/mes."
+        },
+        {
+          "category": "regulação",
+          "tag": "Regulação · ANVISA RE 1.045/2026 Sanções",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "ANVISA RE 1.045/2026 formaliza sancoes a propaganda enganosa: 4+ empresas recolhidas em 2026 e conformidade total vira argumento de conversao de alto impacto",
+          "summary": "RE 1.045/2026 publicada no DOU formaliza sancoes a propaganda enganosa. Operacao multiestadual fevereiro 2026. Recolhimentos: Bioghen, I-Capsulas, Fit Slim+, Morais e Argolo. ANVISA faz curadoria do mercado — marcas conformes ganham share organicamente.",
+          "source": "ANVISA Gov.br RE 1045 2026 / Terra Brasil Noticias / Agencia Brasil Jan 2026",
+          "curto": "9",
+          "medio": "8",
+          "longo": "7",
+          "idea": "Campanha Conformidade Radical: publicar laudos ANVISA mensalmente, QR code nas embalagens com link para documentos, selo 100% ANVISA Regulado. Custo zero, impacto maximo."
+        },
+        {
+          "category": "tendências",
+          "tag": "Tendências · Bebidas Funcionais Prebióticos Canal",
+          "stars": "⭐⭐⭐",
+          "headline": "Bebidas funcionais com prebioticos e adaptogenicos dominam NIS Summit 2026: formato drink abre canal supermercado e dobra audiencia potencial de marcas wellness",
+          "summary": "NIS Summit 2026: suplementacao em bebida e maior fronteira de inovacao. Cafes com Lion Mane, aguas vitaminas, shots de imunidade. Canal GPA/Carrefour/Oxxo abrem distribuicao 10x maior que lojas de suplemento. Conveniencia como driver principal de adocao para novos consumidores.",
+          "source": "NIS Summit 2026 / Food Connection Bebidas / Milkpoint 2026",
+          "curto": "5",
+          "medio": "8",
+          "longo": "9",
+          "idea": "Linha Drink Voce Mais+: Immunity Shot 30ml (C+Zinco+Gengibre), Gut Drink (sache inulina+FOS+probiotico), Collagen Water (colageno+C+hialuronico). Expansao para supermercados Q1/2027."
+        }
+      ]
+    },
+    {
       "date": "2026-05-09",
       "dateLabel": "9 de Maio de 2026",
       "cards": [
