@@ -1,6 +1,156 @@
 {
   "editions": [
     {
+      "date": "2026-05-12",
+      "dateLabel": "12 de Maio de 2026",
+      "cards": [
+        {
+          "category": "mercado",
+          "tag": "Mercado - GLP-1 Generico Semaglutida Suplementos 2026",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Generico de semaglutida chega ao Brasil em marco 2026 e redefine o mercado de suplementos: +600% em vendas GLP-1 entre 2018-2024, mercado US$160bi ate 2030 e demanda urgente por proteina, fibra e micronutrientes para usuarios",
+          "summary": "Patente semaglutida expirou em marco 2026, democratizando GLP-1 no Brasil. Deficiencias em usuarios: proteina (perda muscular), B12, ferro, zinco, D3. Itau BBA: mercado pode ultrapassar US$160bi globalmente ate 2030. Suplementos posicionados como protocolo de apoio nutricional ganham legitimidade medica imediata com endocrinologistas.",
+          "source": "FoodBiz GLP-1 Suplementos 2026 / FoodConnection GLP-1 Saude / Doisamaisfarma GLP-1 Industria / BHB Food GLP-1 Estimulador / Consumidor Moderno Ozempic 2026",
+          "curto": "9",
+          "medio": "10",
+          "longo": "9",
+          "idea": "Linha GLP Support: GLP Protein (proteina hidrolisada baixo volume) + GLP Nutri (B12 sublingual + ferro bisglicinato + D3 + zinco) + GLP Fiber (inulina + FOS + psyllium). Parceria com endocrinologistas. Ticket R$180-280/mes por kit. Lancamento imediato."
+        },
+        {
+          "category": "mercado",
+          "tag": "Mercado - Fibras Prebioticas Boom Brasil Lidera",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Brasil lidera confianca global em fibras prebioticas: 90%+ de confianca nos beneficios, buscas crescem 43,8% em um ano e mercado global vai de US$9,16bi para US$14,59bi ate 2030",
+          "summary": "Estudo ADM Global Fibersol: brasileiros com maior confianca em fibras no mundo. Buscas por fibras +43,8%, por suplemento de fibra +62,3%. 78% querem aumentar consumo. Fibra transforma imagem: de dietetica para cognitiva/imunologica via mecanismo butirato-neuroinflamacao.",
+          "source": "ADM Fibersol Consumer Perception / Noticiamarajo Prebioticos Brasil / FoodBiz Nutricao 2026 / Ekobe Tendencias 2026",
+          "curto": "9",
+          "medio": "10",
+          "longo": "10",
+          "idea": "Fibra Premium: inulina 3g + FOS 1,5g + psyllium 1,5g + goma acacia 1g em sache soluvel sabor maracuja. Alegacao ANVISA de equilibrio de flora. Bundle com probioticos. Ticket R$90-120/mes."
+        },
+        {
+          "category": "ciência",
+          "tag": "Ciencia - Omega-3 EPA DHA 80% Brasileiros Carentes",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "80% dos brasileiros nao atingem ingestao minima de omega-3 e pesquisas 2026 consolidam DHA como protetor estrutural do cerebro com janela de inverno abrindo em 2 semanas",
+          "summary": "Estudo Univ Texas 2024: maiores niveis de DHA = maior volume do hipocampo e melhor raciocinio abstrato. EPA antiinflamatorio cerebral inibe COX-2. 80% dos brasileiros abaixo de 250-500mg EPA+DHA/dia (OMS). Triglicerideos reesterificados: 70% mais absorcao que etil ester. Astaxantina protege DHA da oxidacao.",
+          "source": "Tua Saude Omega-3 Fontes Abr 2026 / Vhita Omega-3 Memoria / Synlab Cerebro Cardiovascular / OMS Ingestao EPA DHA",
+          "curto": "8",
+          "medio": "9",
+          "longo": "9",
+          "idea": "Omega Triple: 70%+ EPA+DHA ratio 2:1 (2g) + astaxantina 2mg + D3 1000UI. Forma triglicerideos reesterificados. IFOS 5 estrelas. Versao vegan: DHA algas. Bundle antiinflamatorio com Turmeric Pro. Ticket R$130-180/mes."
+        },
+        {
+          "category": "tendências",
+          "tag": "Tendencias - Berberina Ozempic Natural Viral TikTok",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Harvard analisa a berberina chamada de Ozempic natural no TikTok: controle glicemico real mas emagrecimento modesto — stack metabolico com honestidade cientifica e o angulo vencedor",
+          "summary": "Berberina ativa AMPK — mesma via da metformina. Controle glicemico em DM2 documentado. Emagrecimento: modesto, CFF e Harvard alertam. CNN Brasil debate viralidade. Oportunidade: suporte metabolico preventivo para adultos 35-55 sem expectativas infundadas.",
+          "source": "Metropoles Harvard Berberina / CNN Brasil Ozempic Natural / Correio 24h Berberina / Drogasil Berberina / Saude Americas Ciencia",
+          "curto": "7",
+          "medio": "8",
+          "longo": "7",
+          "idea": "Metabolic Support: berberina 500mg + cromo 200mcg + inulina 2g + gengibre 200mg + canela 300mg. Comunicacao honesta: sem prometer Ozempic. Argumento: ativa AMPK. Target 35-55 anos controle metabolico preventivo. Ticket R$100-150/mes."
+        },
+        {
+          "category": "ciência",
+          "tag": "Ciencia - Curcumina Piperina Meta-analise 29 RCTs",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Meta-analise Frontiers in Immunology com 29 ensaios e 2300+ pacientes comprova curcumina com piperina: absorcao aumenta 2000% e melhora significativa em dor articular em 8-12 semanas",
+          "summary": "Frontiers in Immunology: 29 RCTs, 2.300+ pacientes, melhora em dor e funcao articular. Curcumina inibe COX-2, lipoxigenase e NF-kappaB. Piperina eleva biodisponibilidade 2.000%. Tua Saude Mai 2026: 9 beneficios documentados. Doses terapeuticas em produto padronizado vs curcuma sem efeito.",
+          "source": "Frontiers Immunology Meta-analise 2026 / Tua Saude Curcuma Mar-Mai 2026 / Ferwer Curcumina Piperina",
+          "curto": "7",
+          "medio": "9",
+          "longo": "9",
+          "idea": "Turmeric Pro: curcumina 95% curcuminoides 500mg + piperina Bioperine 10mg. Bundle antiinflamatorio com Omega Triple. Comunicacao: curcuma sem piperina nao funciona. Ticket R$90-130/mes."
+        },
+        {
+          "category": "tendências",
+          "tag": "Tendencias - Imunidade Inverno C Zinco D3 Beta-glucana",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Inverno a menos de 2 semanas e janela de imunidade abre agora: D3 + vitamina C tamponada + zinco quelato + beta-glucana formam o stack mais estudado para prevencao de gripes em 2026",
+          "summary": "Lancet 46 RCTs 64mil: D3 protege contra infeccoes respiratorias. Vitamina C + zinco: duo classico com mecanismo dual. Beta-glucana 1,3D ativa macrofagos e NK cells. Formato efervescente: vantagem de adesao. Lancamento maio captura consumidor preventivo premium antes do frio.",
+          "source": "Lancet Diabetes Endocrinology D3 64k / Redoxon Vitaminas Imunidade / Essential Nutrition Vit C Zinco / Aproximando Distancias Inverno",
+          "curto": "10",
+          "medio": "7",
+          "longo": "5",
+          "idea": "Immunity Kit Inverno: sache efervescente laranja-gengibre — D3 5000UI + K2 100mcg + Vitamina C 1g + Zinco 15mg + Beta-glucana 500mg. Lancamento 15/mai. Kit 90 sachet. Desconto pre-inverno 20%. Ticket R$140-180/3 meses."
+        },
+        {
+          "category": "mercado",
+          "tag": "Mercado - FemTech Menopausa Hormonios US$27bi",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "FemTech cresce para US$50bi e mercado de menopausa projeta US$27,6bi ate 2033: wearables monitoram hormonios em tempo real e nova era de suplementacao hormonal personalizada abre espaco imenso",
+          "summary": "Mercado menopausa: US$17,7bi 2024 → US$27,6bi 2033. FemTech global: US$50bi ate 2030. Wearables 2026: monitoram estrogenio, progesterona, cortisol em tempo real. IA: 80% menos efeitos colaterais. 70% das mulheres usarao tecnologia para hormonios. Medscape 2026: perimenopausa mais negligenciada da saude feminina.",
+          "source": "EM.com.br FemTech Menopausa 2026 / Central Varejo Menopausa / Bonitamulher Saude 2026 / CartaCapital Saude Feminina",
+          "curto": "6",
+          "medio": "9",
+          "longo": "10",
+          "idea": "Hormonal Balance PM: Vitex 200mg + ashwagandha KSM-66 300mg + Mg bisglicinato 300mg + B6 50mg. Meno Support: isoflavonas 40mg + calcio citrato + D3 + K2. Parceria femtech apps de ciclo. Ticket R$130-200/mes. Lancamento julho 2026."
+        },
+        {
+          "category": "tendências",
+          "tag": "Tendencias - Personalizacao IA Suplementos Subscricao",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "IA entrou definitivamente no desenvolvimento de suplementos em 2026: wearables monitoram biomarcadores em tempo real e subscricao inteligente entrega LTV 3x maior que compra avulsa",
+          "summary": "IA reduz 60% do tempo de desenvolvimento. Wearables hormonais recomendam suplementos por biomarcadores. Protocolos personalizados com IA: 80% menos efeitos colaterais. Genomica orienta suplementos por DNA. LTV de subscricao personalizada: 3x maior que compra avulsa. Quiz de personalizacao e o ativo de conversao mais impactante em 2026.",
+          "source": "Bonitamulher Tecnologia Saude 2026 / Hile Mercado Suplementos 2026 / Underlabz Tendencias 2026 / Ekobe IA Nutraceuticos",
+          "curto": "5",
+          "medio": "9",
+          "longo": "10",
+          "idea": "Quiz personalizacao site: 12 perguntas, pack recomendado 3-4 produtos. Subscricao Smart: ajuste mensal por feedback. Parceria wearable (Oura, Garmin). Reducao 40% churn, LTV 3x. Lancamento Q3 2026."
+        },
+        {
+          "category": "regulação",
+          "tag": "Regulacao - ANVISA IN 432/2026 Aditivos Prazo Expirado",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "ANVISA IN 432/2026 atualiza aditivos alimentares e prazo de rotulos expirou em 31/marco/2026: empresas em desconformidade enfrentam sancoes — conformidade total vira argumento de conversao premium de custo zero",
+          "summary": "IN 432/2026 (1 abr 2026): atualizacoes em nomenclaturas INS de aditivos. Prazo rotulos: 31/mar/2026 expirado. Risco: retencao, suspensao, multas. Maior ciclo fiscalizacao da historia ANVISA: 4+ empresas recolhidas fev-mar. Cada empresa que sai libera market share para marcas conformes. Consumidor verifica ANVISA antes de comprar.",
+          "source": "ANVISA IN 432/2026 Intertox / AFABBRA Rotulos Prazo Mar 2026 / Kasznar Leonardos Marco Regulatorio / Garrastazu Novas Regras ANVISA",
+          "curto": "8",
+          "medio": "7",
+          "longo": "6",
+          "idea": "Auditoria rotulos IN 432/2026. Pagina transparencia ANVISA publica. QR code embalagem → documentos. Laudos semestrais publicados. Post mensal conformidade. Custo baixo, impacto altissimo de conversao."
+        },
+        {
+          "category": "tendências",
+          "tag": "Tendencias - Nootropicos Gamers Estudantes L-teanina",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "L-teanina + cafeina tornam-se o nootopico mais prescrito para gamers, estudantes e profissionais de tecnologia: foco fluido sem jitter e nova categoria cognitiva independente emerge no mercado brasileiro",
+          "summary": "L-teanina 250mg + cafeina 100mg: ondas alpha + bloqueio adenosina = foco fluido sem nervosismo ou crash. 90 milhoes de gamers brasileiros + 8,6M universitarios como publico. Bacopa monnieri para memoria. Rhodiola para estresse. Lion Mane para neurogenese. Formato shots/gummies para gamers.",
+          "source": "Monitor Casa L-teanina 2026 / Essential Nutrition Focus L-teanina / PlexNutri Concentracao Foco / Ekobe Tendencias Cognitivos 2026",
+          "curto": "7",
+          "medio": "9",
+          "longo": "10",
+          "idea": "Cognitive Focus: L-teanina 250mg + cafeina 100mg + Bacopa 300mg + Rhodiola 200mg + B6. Cognitive Night PM. Cognitive Shots 30ml para gamers. Comunicacao: foco sem jitter. Canal: Twitch, YouTube gamer. Ticket R$90-130/mes."
+        },
+        {
+          "category": "mercado",
+          "tag": "Mercado - Colageno Plant-Based US$8bi Flexitarianos",
+          "stars": "⭐⭐⭐",
+          "headline": "Mercado de colageno plant-based atinge US$8,27bi em 2026 com CAGR 8,7%: 30 milhoes de veganos e flexitarianos abrem categoria de estimuladores de colageno sem ingredientes animais no Brasil",
+          "summary": "Geltor lanca PrimaColl: primeiro colageno 100% plant-based por fermentacao microbiana. Mercado vegano global US$31,4bi 2026. Triangulo convergencia: clean beauty + plant-based + longevidade. Estimuladores endogenos (Vit C + silicio + biotina + aminoacidos) sao naturalmente veganos e tem base cientifica forte.",
+          "source": "Coherent Market Insights Plant Collagen 2026 / Geltor PrimaColl / Mundo Verde Colageno Vegano / Ekobe Tendencias 2026",
+          "curto": "4",
+          "medio": "7",
+          "longo": "9",
+          "idea": "Collagen Boost Plant: Vit C 500mg + silicio 10mg + biotina 2000mcg + glicina 1g + prolina 500mg + lisina 500mg + hialuronico 100mg. 100% plant-based. Certificacao ANDA. Bundle Vegan Beauty. Ticket R$100-150/mes. Lancamento Q3 2026."
+        },
+        {
+          "category": "tendências",
+          "tag": "Tendencias - Sono Sleep Stack Melatonina Magnesio 2026",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "72% dos brasileiros com disturbios de sono e mercado sleep wellness explode: stack melatonina 0,3mg + magnesio bisglicinato + L-teanina + ashwagandha PM emerge como protocolo de referencia para sono restaurador",
+          "summary": "IBGE: 72% dos brasileiros com disturbios de sono. Melatonina 0,3mg mais fisiologica que doses altas (5-10mg). Magnesio bisglicinato ativa GABA, relaxa musculatura. L-teanina: ondas alpha sem sedacao. Ashwagandha PM reduz cortisol 27,9%. Crossover GLP-1: usuarios relatam disturbios de sono como efeito secundario.",
+          "source": "Tua Saude Magnesio Sono Abr 2026 / Vhita Magnesio Ansiedade / Geniusnutra Melhor Magnesio / Springer Ashwagandha KSM-66 Sono",
+          "curto": "7",
+          "medio": "9",
+          "longo": "10",
+          "idea": "Sleep Stack PM: melatonina 0,5mg + Mg bisglicinato 300mg + L-teanina 200mg + ashwagandha KSM-66 300mg + lavanda 50mg. Bundle GLP+Sono. Ticket R$120-160/mes. Comunicacao: a ciencia do sono de qualidade sem dependencia."
+        }
+      ]
+    },
+    {
       "date": "2026-05-11",
       "dateLabel": "11 de Maio de 2026",
       "cards": [
