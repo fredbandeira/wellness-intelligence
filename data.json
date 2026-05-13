@@ -1,6 +1,156 @@
 {
   "editions": [
     {
+      "date": "2026-05-13",
+      "dateLabel": "13 de Maio de 2026",
+      "cards": [
+        {
+          "category": "mercado",
+          "tag": "Mercado - Suplementos Brasil R$13,8bi ate 2030 Crescimento 15%",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Mercado de suplementos do Brasil cresce 15% ao ano e deve atingir R$13,8 bilhoes ate 2030: pais e 3o em expansao global, consumidor de 2026 migra de performance para longevidade e prevencao",
+          "summary": "R$7,6bi em 2025 com 15% de crescimento. Globalmente: US$109bi 2026 → US$219bi 2034. Brasil 3o em expansao global. Consumidor exige longevidade, cognicao, bem-estar mental, transparencia e eficacia comprovada. Suplementos em 59% dos lares brasileiros.",
+          "source": "Revista Suplementacao Mercado 15% 2025 / Food Connection Pilares 2026 / Underlabz Tendencias 2026 / BPMoney 15% ao Ano",
+          "curto": "8",
+          "medio": "10",
+          "longo": "10",
+          "idea": "Posicionamento novo: de academia para performance cognitiva preventiva. Portfolio cobrindo 5 categorias: longevidade, cognicao, sono, imunidade, saude feminina. Subscricao mensal 15% desconto para LTV 3x maior. Pagina de laudos ANVISA publicos."
+        },
+        {
+          "category": "ciência",
+          "tag": "Ciencia - Magnesio 70% Brasileiros Deficientes Big 5 2026",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "70% dos brasileiros com magnesio abaixo do ideal e mineral lidera Big 5 cientifico de 2026: bisglicinato para sono e stress, L-treonato para cognicao, malato para energia formam trio premium",
+          "summary": "70% dos brasileiros abaixo de 310-420mg/dia recomendados. Bisglicinato: 46% de absorcao vs 4% do oxido, efeito sedativo proprio via glicina. L-treonato: unica forma que atravessa barreira hematoencefalica (MIT 2023-2024, melhora de memoria). Malato: ciclo de Krebs, energia diurna. Magnesio bisglicinato lider de crescimento em vendas de minerais no Brasil 2025.",
+          "source": "MedBR Guia Clinico Suplementos 2026 / Geniusnutra Melhor Magnesio 2026 / Vhita Magnesio Ansiedade / Hile Mercado Suplementos 2026",
+          "curto": "9",
+          "medio": "10",
+          "longo": "9",
+          "idea": "Mag Complex tri-forme: bisglicinato 200mg + L-treonato 144mg + malato 100mg = 444mg elementar. AM: malato + L-treonato. PM: bisglicinato + L-treonato. Maior produto prioritario dado gap de 70% da populacao. Ticket R$120-160/mes."
+        },
+        {
+          "category": "ciência",
+          "tag": "Ciencia - Vitamina D 34% Brasileiros Deficientes Inverno 2026",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "34,76% dos brasileiros sao deficientes em vitamina D mesmo em pais tropical: Lancet 64mil confirma D3 reduz infeccoes respiratorias em deficientes — inverno em 39 dias abre janela comercial pre-inverno",
+          "summary": "34,76% de deficiencia no Brasil apesar do clima tropical: estilo de vida indoor, protetor solar, envelhecimento. Lancet Diabetes Endocrinology 46 RCTs 64mil participantes: D3 reduz infeccoes respiratorias agudas, maior beneficio em populacao deficiente. Padrao ouro 2026: D3 5000UI + K2 MK-7 100mcg.",
+          "source": "UAI Noticias Vitamina D Mai 2026 / Tua Saude D3 Imunidade Baixa Abr 2026 / Lancet D3 64k Meta-analise / Correio Braziliense D3 Imunidade",
+          "curto": "9",
+          "medio": "7",
+          "longo": "6",
+          "idea": "D3+K2 Premium: D3 5000UI + K2 MK-7 100mcg em oleo de MCT (85% mais absorcao). Bundle pre-inverno: D3+K2 + Immunity Kit + Omega Triple com 20% desconto ate 31/mai. Lancamento imediato."
+        },
+        {
+          "category": "ciência",
+          "tag": "Ciencia - Creatina Neuroproteção Alzheimer Cerebro 2026",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Creatina documentada na prevencao do Alzheimer: neuroproteção cerebral em modelos animais, RCT em idosos mostra aumento significativo de creatina cerebral — novo publico de longevidade cognitiva emerge",
+          "summary": "Creatina mantem ATP cerebral, reduz estresse oxidativo neuronal e modula inflamacao. Modelos animais Alzheimer: melhora de bioenergética cerebral. RCT duplo-cego idosos: aumento significativo creatina cerebral + muscular. Aplicacoes em isquemia, Parkinson, Huntington documentadas. Dose eficaz: 3-5g/dia.",
+          "source": "Terra Saude Creatina Alzheimer 2026 / Exame Ciencia Creatina Beneficios / Revista Brasileira Neurologia Neuroproteção / BJIHS Creatina Idosos",
+          "curto": "6",
+          "medio": "9",
+          "longo": "10",
+          "idea": "Creatina Cognitiva: 3g monohidratada micronizada + fosfatidilserina 100mg + taurina 500mg. Versao Brain+: + lion mane 500mg + bacopa 300mg. Target: adultos 40-70 longevidade cognitiva. Lancamento junho como linha BRAIN. Ticket R$80-120/mes."
+        },
+        {
+          "category": "regulação",
+          "tag": "Regulacao - ANVISA CP 1394/2026 Aditivos 60 Dias",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "ANVISA abre CP 1.394/2026 sobre aditivos alimentares: 60 dias para contribuicoes ate 6 de julho — janela unica para influenciar regulacao de aditivos em suplementos e demostrar conformidade proativa",
+          "summary": "CP 1.394/2026 publicada 28 abr 2026. Propoe alteracoes a IN 211/2023 (funcoes tecnologicas, limites de aditivos). Impacto: antioxidantes, edulcorantes, conservantes, veiculos tecnologicos em suplementos. Prazo: 7 mai a 6 jul 2026. Contexto: ANVISA em ciclo mais rigoroso de fiscalizacao em 2026.",
+          "source": "Intertox ANVISA CP 1394/2026 Analise / Terra Brasil ANVISA Barra Suplementos / Garrastazu Novas Regras ANVISA 2026",
+          "curto": "7",
+          "medio": "6",
+          "longo": "5",
+          "idea": "Contratar especialista para analise da CP e submissao de contribuicoes tecnicas antes de 6 jul. Auditoria de aditivos por SKU. Publicar nota de conformidade regulatoria proativa."
+        },
+        {
+          "category": "ciência",
+          "tag": "Ciencia - Psicobioticos Microbioma Saude Mental GABA 2026",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Psicobioticos validados em 2026: L. helveticus + B. longum produzem GABA e precursores de serotonina com reducao de ansiedade documentada — ANVISA aprovou primeiro psicobiotico no Brasil e demanda explode",
+          "summary": "L. helveticus + B. longum: producao de GABA e serotonina, comunicacao via nervo vago, butirato atravessa barreira hematoencefalica e reduz neuroinflamacao. ANVISA aprovou primeiro psicobiotico brasileiro (2020). Brasil: maior prevalencia de ansiedade da AL (9,3% diagnosticados). Eixo intestino-cerebro e tema cientifico mais publicado em nutricao 2024-2026.",
+          "source": "Nav Dasa Psicobioticos Saude Mental / Sao Bernardo Psicobioticos 2026 / UNESP Cartilha Psicobioticos / Revista Contemporanea Microbiota",
+          "curto": "6",
+          "medio": "9",
+          "longo": "10",
+          "idea": "Psychobiotic Daily: L. helveticus R0052 10B UFC + B. longum R0175 10B UFC + FOS 1,5g + Mg bisglicinato 100mg + B6 10mg. Bundle Gut-Mind Kit com Fibra Premium. Ticket R$120-160/mes."
+        },
+        {
+          "category": "tendências",
+          "tag": "Tendencias - Proteina Plant-Based R,2bi Brasil 2026",
+          "stars": "⭐⭐⭐",
+          "headline": "Proteina plant-based compete de frente com whey em 2026: perfis completos de aminoacidos com ervilha + arroz, 40% dos consumidores buscam opcoes naturais e mercado brasileiro supera R$2,2bi",
+          "summary": "Euromonitor projeta R$2,2bi em plant-based no Brasil. Inovacao: ervilha (rica BCAA) + arroz (rica metionina) = perfil completo. Enzimas proteoliticas melhoram digestibilidade. 40% dos consumidores plant-based sao flexitarianos. 30 milhoes de veganos e vegetarianos no Brasil. Veganuary 2026: 30M globais experimentaram veganismo.",
+          "source": "Vegan Business Plant-Based Brasil 2026 / Food Connection Plant-Based Tendencias / AnalisaMelhor Proteina Vegana 2026",
+          "curto": "5",
+          "medio": "8",
+          "longo": "9",
+          "idea": "Blend Pro Plant: ervilha isolada 15g + arroz integral 10g + leucina livre 1,5g + enzimas digestivas + B12 250mcg. Certificacao ANDA. Bundle Vegan Complete. Ticket R$120-160/mes. Lancamento Q3 2026."
+        },
+        {
+          "category": "tendências",
+          "tag": "Tendencias - NMN NAD+ Longevidade Healthy Aging 2026",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "NMN 900mg/dia melhora forca muscular e insulina em idosos: NMN + resveratrol aumenta NAD+ 1,6x no coracao — healthy aging entra no mainstream com Fortune e Rolling Stone cobrindo protocolo de David Sinclair",
+          "summary": "NMN precursor direto de NAD+ — molecula do metabolismo energetico e reparacao do DNA que declina com a idade. Ensaio clinico humano 2022: 900mg/dia melhora forca muscular e sensibilidade a insulina em 65+. Sinergia NMN + resveratrol: NAD+ 1,6x no coracao, 1,7x no musculo. Sirtuinas ativadas por NAD+ protegem DNA contra dano oxidativo.",
+          "source": "Fortune Best NMN 2026 / Rolling Stone Best NMN 2026 / WellnessPulse NMN Resveratrol / Omre David Sinclair 2026",
+          "curto": "5",
+          "medio": "8",
+          "longo": "10",
+          "idea": "Longev+: NMN 300mg + resveratrol trans 100mg + CoQ10 ubiquinol 100mg + K2 MK-7 50mcg. Ticket R$180-280/mes. Target: profissionais 40-65 anos biohacking e longevidade. Lancamento julho 2026."
+        },
+        {
+          "category": "mercado",
+          "tag": "Mercado - Mulheres Lideram Consumo Suplementos 3 Tendencias 2026",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Mulheres superam homens no consumo de suplementos em 2026: equilibrio hormonal, sono emocional e beleza de dentro para fora formam 3 tendencias dominantes — suplementacao feminina e categoria premium autonoma",
+          "summary": "Mulheres lideram consumo em 2026. 3 vetores: (1) Hormonal: Vitex, maca, primula, isoflavonas — testes salivares hormonais acessiveis. (2) Sono emocional: Mg bisglicinato + L-teanina + ashwagandha — ansiedade afeta 2x mais mulheres. (3) Beauty from within: colageno hidrolisado + biotina 2000mcg + silicio — mercado beauty ingestivel US$4,8bi ate 2027.",
+          "source": "Sincofarma SP Mulheres Lideram 2026 / Bonitamulher Saude 2026 / Catracalivre Saude Feminina / Tua Saude Hormonios Femininos Abr 2026",
+          "curto": "7",
+          "medio": "9",
+          "longo": "10",
+          "idea": "Portfolio Feminino agosto 2026: Cicle Balance (Vitex + maca + B6) + Glow Within (colageno I+III 5g + biotina + silicio) + Calm Her (Mg bisglicinato + L-teanina + ashwagandha). Bundle Woman Essentials 25% off. Ticket R$130-220/mes."
+        },
+        {
+          "category": "tendências",
+          "tag": "Tendencias - Ashwagandha Lion Mane Adaptogenicos Springer Mainstream 2026",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Ashwagandha KSM-66 reduz cortisol 27,9% em Springer 2025 e Lion Mane estimula NGF documentado: adaptogenicos em supermercados e gummies virais — nova era da cognicao natural no Brasil",
+          "summary": "Ashwagandha KSM-66 Springer 2025: reducao de 27,9% no cortisol matinal, melhora do sono (actigrafia), reducao de ansiedade (GAD-7) em 8 semanas. Modula eixo HPA. Lion mane: estimula NGF (plasticidade sinaptica). Google Trends ashwagandha +180% em 24 meses no Brasil. Gummies de adaptogenicos: +40% globalmente em 2026.",
+          "source": "Vitaminer Lion Mane Chaga 2026 / Tecnovida Adaptogenicos Estresse 2026 / Springer Ashwagandha KSM-66 Estudo 2025 / Vitaminasbrasil Ashwagandha",
+          "curto": "7",
+          "medio": "9",
+          "longo": "10",
+          "idea": "Adapt Stack: ashwagandha KSM-66 300mg + lion mane 10:1 500mg + rhodiola 200mg + B5 100mg. Adapt Gummy: ashwagandha 150mg + lion mane 200mg + mel + hibisco-limao. Bundle Mental Performance. Ticket R$100-140/mes. Lançamento gummies agosto 2026."
+        },
+        {
+          "category": "tendências",
+          "tag": "Tendencias - Clean Label US8bi Transparencia 2026",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Mercado clean label atinge US$28,2bi em 2024 e vai para US$89,7bi em 2034: 60% dos consumidores confiam mais em marcas transparentes — movimento evolui de sem aditivos para cadeia de valor inteira",
+          "summary": "CAGR 12,2% do clean label. 60%+ dos consumidores globais confiam mais em marcas que explicam origem dos ingredientes. Exigencias 2026: certificacoes verificaveis (IFOS, ANDA, Non-GMO), QR code com laudo do lote, lista de ingredientes curta com nomes reconheciveis, sustentabilidade. Marcas com laudos publicos convertem 2-3x mais em DTC.",
+          "source": "Food Connection Clean Label 2026 / Santosflora Ingredientes Naturais 2026 / BHB Food Ingredientes 2026 / NIS Summit Ingredientes Ciencia 2026",
+          "curto": "7",
+          "medio": "8",
+          "longo": "10",
+          "idea": "Clean Label Commitment: hub de transparencia em voce-mais.com (laudos, certificados, rastreabilidade). QR code em embalagem com laudo do lote. Redesign rotulos com nomes comuns. Certificacao IFOS para omega-3. Serie de posts sobre origem dos ingredientes."
+        },
+        {
+          "category": "ciência",
+          "tag": "Ciencia - Omega-3 EPA Cardiovascular DHA Cerebro 80% Deficiencia 2026",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Nova hierarquia omega-3 em 2026: EPA para cardiovascular e DHA para cerebro — 80% dos brasileiros abaixo do minimo e triglicerideos reesterificados entregam 70% mais absorcao que etil ester padrao do mercado",
+          "summary": "EPA: cardiovascular (triglicerides), antiinflamatorio sistemico (COX-2, IL-6), depressao (9 RCTs). DHA: 60% do cortex cerebral, volume do hipocampo (Texas 2024), visao. Forma triglicerideos reesterificados: 70% mais absorcao. Concentracao minima 50% EPA+DHA combinados. IFOS: freshness index garantido. 80% dos brasileiros abaixo de 250-500mg/dia (OMS).",
+          "source": "Tua Saude Omega-3 EPA DHA Abr 2026 / Tua Saude Omega-3 Mai 2026 / Biobalance EPA DHA / CNN Brasil Omega-3 Memoria",
+          "curto": "7",
+          "medio": "9",
+          "longo": "9",
+          "idea": "Omega Triple Premium: 70% EPA+DHA (1350mg EPA + 670mg DHA) + astaxantina 4mg + vitamina E 15mg em triglicerideos reesterificados. Versao Vegan Omega: DHA algas + EPA algas. Versao Focus: + fosfatidilserina 100mg. IFOS como argumento central. Ticket R$130-180/mes."
+        }
+      ]
+    },
+    {
       "date": "2026-05-12",
       "dateLabel": "12 de Maio de 2026",
       "cards": [
