@@ -1,6 +1,168 @@
 {
   "editions": [
     {
+      "date": "2026-05-14",
+      "dateLabel": "14 de Maio de 2026",
+      "cards": [
+        {
+          "category": "mercado",
+          "tag": "Mercado - Vitafoods Europe 2026 Tendencias Globais Ingredientes",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Vitafoods Europe 2026 em Barcelona revela as 5 grandes tendencias globais de ingredientes: GLP-1 nutrition, nutricosmetica, healthy aging, gut health e cognitive wellbeing — sinaliza o que chega ao Brasil em 6-12 meses",
+          "summary": "O maior evento global de nutraceuticos encerrou em 7 de maio revelando o mapa de ingredientes do futuro. Os 5 macro-temas: GLP-1 nutrition, nutricosmetica (colágeno vegano Tosla+Geltor, Curcushine gummy Lubrizol), healthy aging (peptídeos colageno para glicose), gut health (postbioticos) e cognitive wellbeing. O que e lancado em Vitafoods chega ao Brasil entre 6 e 18 meses depois.",
+          "source": "FoodIngredientsfirst Vitafoods 2026 / NutritionInsight Vitafoods Beauty / NutraIngredients Vitafoods 2026",
+          "curto": "7",
+          "medio": "9",
+          "longo": "10",
+          "idea": "Fechar parceria de ingrediente exclusivo (colageno vegano, postbiotico) nos proximos 60 dias antes de concorrentes. Lancamento Q4 2026."
+        },
+        {
+          "category": "mercado",
+          "tag": "Mercado - GLP-1 Support Suplementacao 3 Milhoes Brasileiros",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "3 milhoes de brasileiros em analogos GLP-1 demandam suplementacao complementar urgente: perda de massa magra, deficiencias de proteina, B12, D3 e zinco documentadas — nova categoria GLP-1 Support nasce como maior oportunidade de 2026",
+          "summary": "Usuarios de semaglutida e tirzepatida perdem 25-35% de massa muscular e enfrentam deficiencias criticas de micronutrientes. Essential Nutrition ja lancou linha GLP-1 Support especifica. Janela comercial aberta: demanda instalada e sem solucao adequada no segmento natural.",
+          "source": "Essential Nutrition GLP-1 Support / Sanavita GLP-1 / Vitafor GLP-1 Nutricao Protocolo",
+          "curto": "10",
+          "medio": "10",
+          "longo": "9",
+          "idea": "GLP-1 Support Bundle: Protein Rescue (proteina hidrolisada 20g + creatina 3g) + Micro Rescue (B12+D3+zinco+magnesio) + Muscle Guard (BCAA+colageno). Lancamento imediato maio 2026."
+        },
+        {
+          "category": "regulação",
+          "tag": "Regulacao - ANVISA Proibe Suplementos Propaganda Irregular 2026",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "ANVISA proibe suplementos com propaganda irregular em 2026 e recolhe marcas por alegacoes terapeuticas nao aprovadas: fiscalizacao mais rigorosa da historia expoe marcas sem compliance",
+          "summary": "Multiplas proibicoes e recolhimentos em 2026 (Grancaps PEA 600, suplemento 100 Dores e outros). Novo Marco Regulatorio de Alimentos em vigor. Prazo de rotulos expirado em marco 2026. Compliance total vira vantagem competitiva definitiva.",
+          "source": "Anvisa.gov.br Proibicao Suplementos 2026 / Anvisa.gov.br Recolhimento 2026 / Kasznar Leonardos Marco Regulatorio",
+          "curto": "9",
+          "medio": "8",
+          "longo": "7",
+          "idea": "Auditoria completa de claims de marketing. Pagina de transparencia com laudos. Publicar nota de conformidade regulatoria proativa."
+        },
+        {
+          "category": "regulação",
+          "tag": "Regulacao - ANVISA Curcuma Limites Hepatotoxicidade Setembro 2026",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "ANVISA atualiza limites de curcuma em suplementos por risco hepatico: prazo obrigatorio de adequacao ate 1 de setembro de 2026 — 108 dias para reformular ou enfrentar recolhimento",
+          "summary": "Instrucao Normativa 438/2026 de abril ajusta limites maximos de curcumina apos risco de danos ao figado identificado em monitoramento. Novos alertas obrigatorios em rotulos. Empresas tem ate 1 de setembro para adequar.",
+          "source": "Agencia Brasil ANVISA Curcuma Abr 2026 / AnvisaLegis IN 438/2026 / CRN6 ANVISA Suplementos",
+          "curto": "8",
+          "medio": "6",
+          "longo": "5",
+          "idea": "Auditoria urgente de curcumina por SKU. Considerar migracao para Meriva ou Longvida (formas seguras com maior biodisponibilidade em doses menores)."
+        },
+        {
+          "category": "ciência",
+          "tag": "Ciencia - Creatina Fadiga Mental Privacao Sono Cognicao 2026",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Creatina documentada contra fadiga mental em privacao de sono abr 2026: 3-5g preserva performance cognitiva mesmo com sono insuficiente — argumento novo para adultos urbanos sobrecarregados alem da academia",
+          "summary": "Pesquisa de abril 2026 confirma que creatina preserva memoria de trabalho e tempo de reacao durante privacao de sono via manutencao de ATP cerebral. Abre publico de profissionais urbanos, pais de bebe e trabalhadores em turnos — muito maior que academia.",
+          "source": "Tua Saude Creatina Cerebro Sono Abr 2026 / Exame Ciencia Creatina / Food Connection Creatina Cognicao",
+          "curto": "8",
+          "medio": "9",
+          "longo": "9",
+          "idea": "Creatina Urban Performance (Focus Daily): creatina 3g + L-teanina 100mg + B5. Posicionamento: para quem trabalha muito e dorme pouco. Bundle com Magnesio Bisglicinato PM."
+        },
+        {
+          "category": "tendências",
+          "tag": "Tendencias - Fibras Alimentares Proximo Hit Wellness +62% Buscas",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Fibras alimentares emergem como proximo grande hit do wellness brasileiro: buscas por suplemento de fibra crescem 62,3% em 12 meses e 59% dos consumidores conectam intestino a bem-estar geral",
+          "summary": "Buscas gerais por fibras +43,8% e por suplementos de fibra +62,3% em 12 meses. Conexao com psicobioticos, GLP-1 e microbioma impulsiona categoria. Mercado sem lider dominante em suplementos de fibras premium.",
+          "source": "Food Connection Fibras Hit 2026 / Catarinense Pharma Tendencias 2026 / InfoMoney Futuro Wellness 2026",
+          "curto": "7",
+          "medio": "9",
+          "longo": "10",
+          "idea": "Fiber Complex: blend de 5 fibras (psyllium + inulina + FOS + beta-glucana + arabinoxilana). Bundle Gut-Brain System com Psychobiotic Daily. Lancamento junho 2026."
+        },
+        {
+          "category": "tendências",
+          "tag": "Tendencias - Gummies Shots Formatos Novos Adaptogenicos +40%",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Gummies e shots de adaptogenicos crescem 40% globalmente em 2026 abrindo mercado de nao-usuarios de capsulas: adesao superior, ticket maior e viralidade natural nas redes sociais",
+          "summary": "Gummies adaptogenicos crescem 40%+ globalmente. Adesao documentada 80%+ vs 55% capsulas. Ticket 40-60% superior. Audiencia nova: pessoas que nao toleram capsulas migram para formato mastigavel. Viralizacao organica em Instagram e TikTok.",
+          "source": "TrendHunter Mushroom Gummies / Datamintelligence Adaptogenic Beverages / FoodIngredientsfirst Vitafoods 2026",
+          "curto": "7",
+          "medio": "9",
+          "longo": "9",
+          "idea": "Linha Gummies Voce Mais+: Calm Gummy (ashwagandha+L-teanina), Sleep Gummy (melatonina+magnesio), Brain Gummy (lion mane+B12). Lancamento faseado a partir de agosto 2026."
+        },
+        {
+          "category": "mercado",
+          "tag": "Mercado - Fitohormionios Menopausa TPM Manipulacao Crescimento",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Fitohormionios para saude hormonal feminina explodem em 2026: amora, vitex, maca e yam mexicano lideram prescricoes para menopausa e TPM — mercado estimado em R$800M ao ano",
+          "summary": "18 milhoes de mulheres brasileiras em menopausa em 2026. Vitex reduz sintomas de TPM em estudo 2025. Amora eficaz contra fogachos. Maca peruana para libido e energia. Farmacias de manipulacao lideram distribuicao. Subatendido por marcas nacionais.",
+          "source": "Labsl Suplementos Hormonais 2026 / Sincofarma Mulheres Lideram / Ocean Drop Menopausa / Pharmac Fito Hormonal",
+          "curto": "7",
+          "medio": "9",
+          "longo": "10",
+          "idea": "Cicle Balance: Vitex 250mg + amora 250mg + maca 500mg + B6 + zinco. Versao Menopausa Plus com isoflavonas. Lancamento agosto 2026 como Portfolio Feminino."
+        },
+        {
+          "category": "mercado",
+          "tag": "Mercado - Healthy Aging US$1,6bi 2026 Suplementos Longevidade",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Mercado global de suplementos para healthy aging vale US$1,6 bilhao em 2026 com CAGR 5,3% ate US$2,3 bilhoes em 2033: creatina, colageno e CoQ10 ubiquinol lideram — adultos 45-70 sao consumidores-lider",
+          "summary": "Persistence Market Research confirma mercado de US$1,6bi em 2026. Ingredientes lideres: creatina (sarcopenia+cognicao), colageno tipo II (articulacoes), CoQ10 ubiquinol (mitocondrías), D3+K2, magnesio. Brasil envelhece aceleradamente: perfil demografico amplia janela.",
+          "source": "Persistence Market Research Healthy Aging 2026 / Food Connection Longevidade / EM Foco Suplementacao 45 Anos / Instituto Longevidade",
+          "curto": "6",
+          "medio": "9",
+          "longo": "10",
+          "idea": "Vitality 50+: creatina 3g + CoQ10 ubiquinol 100mg + magnesio malato + D3+K2. Bundle Healthy Aging completo. Lancamento agosto 2026."
+        },
+        {
+          "category": "tendências",
+          "tag": "Tendencias - Medicos Influencers Canal Aquisicao Suplementos 2026",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Medicos e nutricionistas influencers substituem fitness influencers como canal de aquisicao de suplementos: 50-500k seguidores convertem 3-5x mais — marcas sem prescritores parceiros perdem conversao definitivamente",
+          "summary": "Nutrologos e nutricionistas com 50-500k seguidores convertem 3-5x mais que fitness influencers com milhoes. Ticket medio 40% maior. LTV superior. Co-criacao de produto com profissional aumenta barreira de saida e credibilidade. Janela de parceria ainda acessivel.",
+          "source": "Labgrowth Marketing Suplementos 2026 / Narro Mercado Digital Suplementos / Nacao Digital Influencer 2026",
+          "curto": "8",
+          "medio": "9",
+          "longo": "9",
+          "idea": "Programa Prescritores Parceiros: identificar 20-30 medicos/nutris influencers, propor co-criacao de produto com participacao nos resultados. Meta: 5 parcerias ate agosto 2026."
+        },
+        {
+          "category": "ciência",
+          "tag": "Ciencia - Nootopicos Evidencia Clinica vs Claims 2026",
+          "stars": "⭐⭐⭐",
+          "headline": "Mercado de nootopicos em 2026 partido ao meio: ingredientes com evidencia solida vs sem respaldo — marcas que citam ciencia real convertem 4x mais e posicionamento honesto vira diferencial permanente",
+          "summary": "Ingredientes com evidencia robusta em 2026: L-teanina (meta-analise), lion mane (NGF, 16 semanas), bacopa (9 RCTs, memoria), fosfatidilserina (FDA claim qualificado), creatina. Marcas que citam estudos especificos e explicam mecanismo constroem credibilidade permanente vs hype efemero.",
+          "source": "Revista ProAtiva Nootropicos 2026 / Ekobe Tendencias 2026 / MedBR Suplementos Clinicos 2026",
+          "curto": "6",
+          "medio": "8",
+          "longo": "9",
+          "idea": "Clarity Formula: L-teanina 200mg + lion mane 500mg + bacopa 300mg + fosfatidilserina 100mg. Comunicacao radical de transparencia: citar estudo especifico para cada ingrediente."
+        },
+        {
+          "category": "tendências",
+          "tag": "Tendencias - Pets Wellness Longevidade Animal Suplementos 2026",
+          "stars": "⭐⭐⭐",
+          "headline": "Suplementos para pets com foco em longevidade chegam ao Brasil em 2026: mercado cresce 32% ao ano e espelha tendencias do wellness humano com 18 meses de defasagem — confirmacao do mainstream de healthy aging",
+          "summary": "Nova linha de suplementos para caes e gatos com glucosamina, omega-3 e probioticos chega ao Brasil em maio 2026. 32% de crescimento anual. 160 milhoes de pets no Brasil. Sinal claro: toda tendencia wellness humana chega ao mercado animal 12-24 meses depois — healthy aging humano confirmado como mainstream.",
+          "source": "Juventude BM Suplementos Pets Longevidade Mai 2026 / Underlabz Mercado Suplementos 2026 / Accor Tendencias Bem-Estar 2026",
+          "curto": "4",
+          "medio": "6",
+          "longo": "8",
+          "idea": "Usar pets como indicador antecipado de tendencias. Lancamento imediato de linha Healthy Aging humana: mainstream confirmado pelo mercado animal."
+        },
+        {
+          "category": "mercado",
+          "tag": "Analise de Cruzamento - 14 Maio 2026",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Edicao 14 Mai: GLP-1 Support + Vitafoods 2026 + ANVISA rigorosa + fibras + medicos-influencers + healthy aging + gummies = quatro acoes criticas para Voce Mais+ em maio-junho 2026",
+          "summary": "Tema unificador: mercado simultaneamente mais rigoroso (ANVISA) e mais cheio de oportunidades (GLP-1, fibras, gummies). Urgencias: GLP-1 Bundle imediato, auditoria curcuma, parceria prescritores, prototipo Calm Gummy. Vitafoods confirma colágeno vegano e postbioticos como proximas ondas.",
+          "source": "Analise cruzada de 12 fontes — Wellness Intelligence Voce Mais+ 14 Mai 2026",
+          "curto": "10",
+          "medio": "10",
+          "longo": "10",
+          "idea": "Esta semana: contratar consultor ANVISA + brief GLP-1 Bundle. Ate 31 mai: lancar GLP-1 Support + contatar 10 prescritores influencers. Junho: Fiber Complex + Psychobiotic Bundle + prototipo Calm Gummy."
+        }
+      ]
+    },
+    {
       "date": "2026-05-13",
       "dateLabel": "13 de Maio de 2026",
       "cards": [
