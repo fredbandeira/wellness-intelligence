@@ -1,6 +1,156 @@
 {
   "editions": [
     {
+      "date": "2026-05-15",
+      "dateLabel": "15 de Maio de 2026",
+      "cards": [
+        {
+          "category": "mercado",
+          "tag": "Economia Wellness Global US$6,8 Tri",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Economia wellness global atinge US$6,8 trilhoes em 2024 rumo a US$9,8 tri em 2029 — Brasil soma US$96bi e esta entre os 10 maiores mercados do planeta",
+          "summary": "GWI Wellness Economy Monitor 2025: crescimento de 7,9% ao ano. Mental wellness +12,4% a.a. e o segmento mais dinamico. Wellness (US$6,8 tri) supera turismo, IT e economia verde sendo quase 4x maior que a industria farmaceutica.",
+          "source": "Global Wellness Institute Wellness Economy Monitor 2025",
+          "curto": "7",
+          "medio": "9",
+          "longo": "10",
+          "idea": "Posicionamento de marca no contexto do maior mercado global. Serie de conteudo sobre wellness preventivo como investimento estrutural."
+        },
+        {
+          "category": "mercado",
+          "tag": "Suplementos Brasil R$13,8bi 2030",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Mercado de suplementos brasileiro cresce 15% em 2025 e projeta R$13,8 bilhoes ate 2030: fibras, personalizacao, gummies e saude preventiva sao os quatro vetores do crescimento",
+          "summary": "Crescimento de 15% em 2025 com janela de tres anos para capturar share em categorias ainda sem lider. Mulheres representam 58% dos compradores em 2026.",
+          "source": "Revista Suplementacao Mercado Suplementos 2025",
+          "curto": "8",
+          "medio": "10",
+          "longo": "10",
+          "idea": "Lancamento Fiber Complex 5-em-1, quiz de personalizacao digital e Calm Gummy para ampliar base de clientes fora do universo fitness."
+        },
+        {
+          "category": "regulacao",
+          "tag": "ANVISA Recolhimentos Proibicoes 2026",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "ANVISA intensifica fiscalizacao com serie de recolhimentos e proibicoes por propaganda irregular em 2026 — compliance total vira vantagem competitiva definitiva",
+          "summary": "Multiplas acoes de fiscalizacao em 2026. Prazo final setembro 2026 para adequacao da RDC 843/2024. Marcas com compliance publicado ganham confianca do consumidor.",
+          "source": "Anvisa.gov.br Proibicoes e Recolhimentos 2026",
+          "curto": "9",
+          "medio": "8",
+          "longo": "7",
+          "idea": "Programa Compliance Total: auditoria imediata, hub de transparencia com laudos por lote, comunicacao proativa de conformidade regulatoria."
+        },
+        {
+          "category": "mercado",
+          "tag": "Mulheres Lideram 79% Consumo",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Mulheres lideram consumo de suplementos com 79% de penetracao — equilibrio hormonal, sono, pele e emocional sao as quatro demandas prioritarias e mercado hormonal natural vale R$800M subatendido",
+          "summary": "Instituto Locomotiva marco 2026: 79% mulheres vs 71% homens. Saude hormonal natural e a maior lacuna no DTC para o publico de maior ticket e LTV do setor.",
+          "source": "Instituto Locomotiva / Sincofarma SP Mulheres Lideram 2026",
+          "curto": "8",
+          "medio": "9",
+          "longo": "10",
+          "idea": "Linha Feminina Completa: Cicle Balance (hormonal), Glow Formula (nutricosmetica), Calm Femme (emocional) + Bundle Saude Feminina Integral."
+        },
+        {
+          "category": "ciencia",
+          "tag": "Psicobioticos Psiquiatria Precisao",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Psicobioticos emergem como fronteira da psiquiatria de precisao: assinaturas microbianas transdiagnosticas em depressao e ansiedade documentadas — cepas especificas modulam serotonina e GABA via nervo vago",
+          "summary": "L. rhamnosus, B. longum e L. helveticus com maior evidencia em saude mental. Deplecao de taxons anti-inflamatorios confirmada. Psicobiotico com cepa especificada e o diferencial vs probiotico generico.",
+          "source": "Publicacoes 2026 Psicobioticos / UNESP / Nutritotal",
+          "curto": "7",
+          "medio": "9",
+          "longo": "10",
+          "idea": "Psychobiotic Daily: L. rhamnosus GG + B. longum 1714 + L. helveticus R0052 + inulina + FOS. 15 bilhoes UFC. Cepa especificada em rotulo = diferencial vs GutTok."
+        },
+        {
+          "category": "ciencia",
+          "tag": "NMN Resveratrol Longevidade",
+          "stars": "⭐⭐⭐",
+          "headline": "NMN + Resveratrol 2026: ativacao de sirtuinas, elevacao de NAD+ e reducao de inflamacao celular confirmadas — longevidade molecular entra no mainstream premium com janela de pioneirismo DTC no Brasil",
+          "summary": "Protocolo Sinclair atualizado 2026. NMN 250-500mg/dia eleva NAD+. Resveratrol ativa sirtuinas. Mercado brasileiro sem lider de categoria DTC estabelecido.",
+          "source": "Metatrends Sinclair 2026 / Fortune Best NMN 2026 / Rolling Stone NMN",
+          "curto": "5",
+          "medio": "8",
+          "longo": "10",
+          "idea": "Longevity Core: NMN 300mg + trans-resveratrol 100mg + CoQ10 ubiquinol 100mg + PQQ 10mg. Lancamento agosto-setembro 2026. Ticket R$200-280/mes."
+        },
+        {
+          "category": "ciencia",
+          "tag": "Creatina Feminina Cerebral",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Creatina de 2026 e feminina e cerebral: aceleracao da resposta ao SSRI em mulheres com depressao e preservacao cognitiva em privacao de sono confirmadas — mercado potencial 5x maior que academia",
+          "summary": "Ensaios RCT documentam adicionar creatina 5g ao SSRI acelera resposta e reduz depressao. 3-5g/dia preserva memoria de trabalho em privacao de sono. Novo publico urbano sobrecarregado.",
+          "source": "FitCraft Creatina Mulheres 2026 / Tua Saude / PUC Goias",
+          "curto": "8",
+          "medio": "9",
+          "longo": "9",
+          "idea": "Creatina Urban: MIND BALANCE (creatina + triptofano + B6 + magnesio) para bem-estar feminino; FOCUS DAILY (creatina + L-teanina + B12) para performance cognitiva urbana."
+        },
+        {
+          "category": "tendencias",
+          "tag": "Clean Label 3.0 Plant-Based",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Clean label 3.0 e plant-based convergem: 71% dos brasileiros pagam mais por ingredientes reconheciveis e mercado plant-based supera R$2,2 bilhoes — sem artificiais vira prerrequisito de compra",
+          "summary": "45% dos brasileiros reduzem artificiais. 71% pagam mais por clean label. Clean label 3.0 exige origem declarada, sem edulcorantes artificiais, certificacoes verificaveis.",
+          "source": "GlobalData / VeganBusiness / Food Connection Clean Label 2026",
+          "curto": "7",
+          "medio": "9",
+          "longo": "10",
+          "idea": "Selo VOCE MAIS+ CLEAN com criterios publicos. Redesign de embalagem destacando o que nao tem. Linha Plant Essential com proteina vegetal e saborizantes naturais."
+        },
+        {
+          "category": "ciencia",
+          "tag": "Omega-3 DHA Neuroproteção",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Omega-3 em 2026: DHA documentado como neuroprotetor contra Alzheimer — forma TG tem absorcao 70% superior ao etil ester criando diferencial tecnico que justifica premium",
+          "summary": "DHA reduz risco de Alzheimer por mecanismos anti-inflamatorios e neurotróficos. EPA reduz triglicerideos 25-30%. Forma TG com 70% maior biodisponibilidade vs EE.",
+          "source": "PMC NCBI Omega-3 / SBCM / CNN Brasil Omega-3",
+          "curto": "7",
+          "medio": "8",
+          "longo": "9",
+          "idea": "Omega Triple TG: forma TG com EPA 360mg + DHA 240mg por capsula + versao algal vegana. Certificacao IFOS. Posicionamento cognitivo-preventivo alem do cardiovascular."
+        },
+        {
+          "category": "tendencias",
+          "tag": "Suplementacao Personalizada IA",
+          "stars": "⭐⭐⭐",
+          "headline": "Suplementacao personalizada por IA e biomarkers: terapias hormonais com IA reduzem 80% efeitos colaterais e quiz de personalizacao eleva LTV em 3x e conversao em 35%",
+          "summary": "70% das mulheres devem usar tecnologia de monitoramento hormonal ate 2028. Quiz com 10-15 perguntas eleva conversao 25-35%. Biomarker partnership cria tier premium.",
+          "source": "Bonitamulher 2026 / Farmacotecnica Personalizacao / InfoMoney Wellness",
+          "curto": "5",
+          "medio": "8",
+          "longo": "10",
+          "idea": "Quiz diagnostico com 10 perguntas em voce-mais.com (junho 2026), parceria biomarker (setembro 2026), IA adaptativa (2027). Meta: 30% da base usando quiz em 90 dias."
+        },
+        {
+          "category": "tendencias",
+          "tag": "GutTok Desinformacao Brasil",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "GutTok causa internacoes: estudo marco 2026 documenta desinformacao sobre microbioma no TikTok causando transtornos alimentares em jovens brasileiros — oportunidade para marcas com evidencia real",
+          "summary": "SUS registra aumento de internacoes por protocolos extremos de jejum intestinal inspirados em conteudo sem evidencia. Brasil e dos mais afetados pelo GutTok. Demanda por autoridade genuina.",
+          "source": "Psiq Med BR GutTok 2026 / Nutritotal Psicobioticos",
+          "curto": "7",
+          "medio": "8",
+          "longo": "8",
+          "idea": "Serie educacional anti-GutTok, manifesto com cepas especificadas, parceria com gastroenterologistas como validadores. Newsletter semanal desmentindo mitos de saude intestinal."
+        },
+        {
+          "category": "tendencias",
+          "tag": "Vitamina D3+K2 Inverno 70%",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Pre-inverno 2026: vitamina D3+K2 como produto de entrada ideal — 70% dos brasileiros com deficit e janela sazonal maio-agosto com menor custo de aquisicao do ano",
+          "summary": "70% dos brasileiros com insuficiencia de vitamina D. Inverno amplifica deficit. D3+K2 (MK-7) e o combo clinico estabelecido - K2 direciona calcio para ossos impedindo calcificacao arterial.",
+          "source": "MedBR Suplementos 2026 / Maromba360 Multivitaminicos",
+          "curto": "9",
+          "medio": "7",
+          "longo": "6",
+          "idea": "Bundle Inverno Imunidade: D3 4000UI + K2 MK-7 100mcg + Mg malato + Vitamina C + Zinco + Elderberry. Campanha meta ads maio-agosto. Kit Familia com desconto 20%."
+        }
+      ]
+    },
+    {
       "date": "2026-05-14",
       "dateLabel": "14 de Maio de 2026",
       "cards": [
