@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wellness Intelligence | você-mais+</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --navy:#00276e;--yellow:#feda14;--black:#1d1d1b;--white:#ffffff;--gray-50:#f7f7f7;--gray-100:#efefef;--gray-200:#e0e0e0;--gray-400:#adadad;--gray-600:#6b6b6b;--gray-800:#2e2e2e;--border:rgba(0,0,0,0.09); }
+    body{font-family:'Inter',sans-serif;background:var(--white);color:var(--black);-webkit-font-smoothing:antialiased;}
+    header{background:var(--white);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100;}
+    .header-inner{max-width:1280px;margin:0 auto;padding:0 40px;height:64px;display:flex;align-items:center;justify-content:space-between;}
+    .logo-wrap{display:flex;align-items:center;gap:16px;text-decoration:none;}
+    .logo-img{height:22px;width:auto;}
+    .logo-divider{width:1px;height:20px;background:var(--gray-200);}
+    .logo-sub{font-size:10px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--gray-400);}
+    nav{display:flex;gap:2px;}
+    nav a{font-size:11px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--gray-600);text-decoration:none;padding:6px 14px;border-radius:100px;transition:all .15s;}
+    nav a:hover{color:var(--navy);background:var(--gray-50);}
+    nav a.active{color:var(--navy);background:var(--yellow);}
+    .header-date{font-size:11px;font-weight:500;color:var(--gray-400);}
+    .alert-strip{background:var(--navy);color:var(--white);padding:11px 40px;display:flex;align-items:center;justify-content:center;gap:20px;}
+    .alert-badge{font-size:9px;font-weight:800;letter-spacing:0.14em;text-transform:uppercase;background:var(--yellow);color:var(--navy);padding:4px 10px;border-radius:100px;white-space:nowrap;}
+    .alert-text{font-size:12.5px;opacity:.9;}
+    .alert-text strong{font-weight:700;}
+    main{max-width:1280px;margin:0 auto;padding:48px 40px 80px;}
+    .edition-bar{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px;padding-bottom:20px;border-bottom:1px solid var(--border);}
+    .edition-live{display:flex;align-items:center;gap:10px;}
+    .live-dot{width:7px;height:7px;background:var(--navy);border-radius:50%;animation:blink 1.8s infinite;}
+    @keyframes blink{0%,100%{opacity:1}50%{opacity:.25}}
+    .edition-label{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--navy);}
+    .edition-meta{font-size:11px;color:var(--gray-400);}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:76px;gap:14px;}
+    .card{border-radius:14px;padding:26px;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between;transition:transform .18s,box-shadow .18s;cursor:pointer;}
+    .card:hover{transform:translateY(-3px);box-shadow:0 14px 36px rgba(0,0,0,.10);}
+    .c-hero{grid-column:span 7;grid-row:span 5;}
+    .c-tall{grid-column:span 5;grid-row:span 5;}
+    .c-wide{grid-column:span 8;grid-row:span 4;}
+    .c-med{grid-column:span 4;grid-row:span 4;}
+    .c-sm{grid-column:span 4;grid-row:span 4;}
+    .c-third{grid-column:span 4;grid-row:span 3;}
+    .c-full{grid-column:span 12;grid-row:span 3;}
+    .bg-navy{background:var(--navy);color:var(--white);}
+    .bg-yellow{background:var(--yellow);color:var(--navy);}
+    .bg-black{background:var(--black);color:var(--white);}
+    .bg-gray800{background:var(--gray-800);color:var(--white);}
+    .bg-gray100{background:var(--gray-100);color:var(--black);}
+    .bg-white{background:var(--white);color:var(--black);border:1px solid var(--border);}
+    .tag{display:inline-flex;align-items:center;gap:5px;font-size:9px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;padding:4px 10px;border-radius:100px;width:fit-content;}
+    .bg-navy .tag,.bg-black .tag,.bg-gray800 .tag{background:rgba(255,255,255,.15);color:var(--white);}
+    .bg-yellow .tag{background:rgba(0,39,110,.12);color:var(--navy);}
+    .bg-gray100 .tag,.bg-white .tag{background:var(--navy);color:var(--white);}
+    .tag-dot{width:4px;height:4px;border-radius:50%;background:currentColor;opacity:.6;}
+    .headline{font-size:clamp(15px,2vw,24px);font-weight:800;line-height:1.15;letter-spacing:-.025em;margin-top:10px;}
+    .c-hero .headline{font-size:clamp(22px,2.8vw,36px);}
+    .c-full .headline{font-size:clamp(16px,2vw,26px);max-width:900px;}
+    .sub{font-size:12px;line-height:1.55;margin-top:8px;opacity:.72;}
+    .stat-num{font-size:clamp(36px,5vw,60px);font-weight:900;letter-spacing:-.04em;line-height:1;margin:10px 0 4px;}
+    .stat-desc{font-size:11px;font-weight:500;line-height:1.45;opacity:.70;}
+    .card-foot{display:flex;align-items:center;justify-content:space-between;margin-top:14px;}
+    .cta-label{font-size:9.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;opacity:.50;}
+    .arrow-btn{width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;}
+    .bg-navy .arrow-btn,.bg-black .arrow-btn,.bg-gray800 .arrow-btn{background:rgba(255,255,255,.15);}
+    .bg-yellow .arrow-btn{background:rgba(0,39,110,.12);}
+    .bg-gray100 .arrow-btn,.bg-white .arrow-btn{background:var(--navy);color:var(--white);}
+    .accent-bar{display:block;width:28px;height:3px;background:var(--yellow);border-radius:2px;margin-bottom:12px;}
+    .bg-yellow .accent-bar{background:var(--navy);}
+    .modal-overlay{position:fixed;inset:0;z-index:500;background:rgba(0,20,55,.55);backdrop-filter:blur(6px);display:flex;align-items:center;justify-content:center;padding:24px;opacity:0;pointer-events:none;transition:opacity .22s;}
+    .modal-overlay.open{opacity:1;pointer-events:all;}
+    .modal{background:var(--white);border-radius:20px;width:100%;max-width:640px;max-height:88vh;overflow-y:auto;box-shadow:0 32px 80px rgba(0,0,0,.22);transform:translateY(20px);transition:transform .25s;position:relative;}
+    .modal-overlay.open .modal{transform:translateY(0);}
+    .modal-header{background:var(--navy);border-radius:20px 20px 0 0;padding:28px 32px 24px;position:relative;}
+    .modal-tag{display:inline-flex;align-items:center;gap:5px;font-size:9px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;padding:4px 10px;border-radius:100px;background:rgba(255,255,255,.15);color:var(--white);margin-bottom:12px;}
+    .modal-headline{font-size:22px;font-weight:800;line-height:1.2;letter-spacing:-.02em;color:var(--white);}
+    .modal-stars{font-size:16px;margin-top:8px;}
+    .modal-close{position:absolute;top:20px;right:20px;width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.15);border:none;color:var(--white);font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .15s;}
+    .modal-close:hover{background:rgba(255,255,255,.28);}
+    .modal-body{padding:28px 32px 32px;}
+    .modal-section{margin-bottom:24px;}
+    .modal-section-title{font-size:9px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--gray-400);margin-bottom:8px;padding-bottom:8px;border-bottom:1px solid var(--border);}
+    .modal-text{font-size:14px;line-height:1.65;color:var(--black);}
+    .modal-source{display:flex;align-items:center;gap:8px;margin-top:12px;}
+    .modal-source-label{font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray-400);}
+    .modal-source-val{font-size:12px;font-weight:500;color:var(--navy);}
+    .modal-scores{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;}
+    .score-item{background:var(--gray-50);border:1px solid var(--border);border-radius:10px;padding:14px;text-align:center;}
+    .score-num{font-size:26px;font-weight:900;color:var(--navy);line-height:1;}
+    .score-label{font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gray-400);margin-top:4px;}
+    .modal-idea{background:var(--navy);border-radius:12px;padding:18px 20px;color:var(--white);}
+    .modal-idea-accent{display:inline-block;width:20px;height:3px;background:var(--yellow);border-radius:2px;margin-bottom:10px;}
+    .modal-idea-label{font-size:9px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;opacity:.5;margin-bottom:6px;}
+    .modal-idea-text{font-size:14px;font-weight:600;line-height:1.5;}
+    .archive{background:var(--gray-50);border-top:1px solid var(--border);padding:60px 40px;}
+    .archive-inner{max-width:1280px;margin:0 auto;}
+    .archive-hd{display:flex;align-items:center;gap:20px;margin-bottom:28px;}
+    .archive-title{font-size:10px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--gray-600);white-space:nowrap;}
+    .archive-line{flex:1;height:1px;background:var(--border);}
+    .archive-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px;}
+    .archive-card{display:block;background:var(--white);border:1px solid var(--border);border-radius:12px;padding:18px 20px;text-decoration:none;color:var(--black);transition:all .15s;}
+    .archive-card:hover{border-color:var(--navy);transform:translateY(-2px);}
+    .archive-date{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--navy);margin-bottom:6px;}
+    .archive-hl{font-size:13px;font-weight:600;line-height:1.4;margin-bottom:10px;}
+    .archive-tags{display:flex;flex-wrap:wrap;gap:5px;}
+    .archive-tags span{font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;background:var(--gray-100);color:var(--gray-600);padding:3px 8px;border-radius:100px;}
+    footer{background:var(--black);color:var(--white);padding:24px 40px;}
+    .footer-inner{max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;}
+    .footer-brand{display:flex;align-items:center;gap:16px;}
+    .footer-sep{width:1px;height:16px;background:rgba(255,255,255,.2);}
+    .footer-tagline{font-size:11px;font-weight:500;opacity:.4;}
+    .footer-note{font-size:10px;opacity:.3;}
+    @media(max-width:900px){
+      .header-inner{padding:0 20px;}main{padding:28px 16px 60px;}
+      .grid{grid-template-columns:1fr 1fr;grid-auto-rows:90px;gap:10px;}
+      .c-hero,.c-wide,.c-full{grid-column:span 2;grid-row:span 4;}
+      .c-tall,.c-med,.c-sm{grid-column:span 2;grid-row:span 3;}
+      .c-third{grid-column:span 1;grid-row:span 2;}
+      .alert-strip{flex-direction:column;gap:6px;padding:12px 20px;text-align:center;}
+      .archive{padding:40px 16px;}.footer-inner{flex-direction:column;gap:10px;text-align:center;}
+      .modal{border-radius:14px;}.modal-header{padding:22px 22px 18px;}.modal-body{padding:20px 22px 24px;}
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a class="logo-wrap" href="#"><img src="logo-positiva.png" alt="voce-mais+" class="logo-img" /><div class="logo-divider"></div><span class="logo-sub">Wellness Intelligence</span></a>
+    <nav><a href="#" class="active">Hoje</a><a href="#" onclick="document.querySelector('.archive').scrollIntoView({behavior:'smooth'});return false;">Arquivo</a></nav>
+    <span class="header-date">15 de Maio de 2026</span>
+  </div>
+</header>
+<div class="alert-strip">
+  <span class="alert-badge">&#9888; Urgente</span>
+  <span class="alert-text"><strong>Vitamina D3+K2: janela sazonal do inverno aberta HOJE — 70% dos brasileiros com deficit e demanda historicamente alta de maio a agosto.</strong> GutTok causa internacoes: desinformacao sobre microbioma destroi saude de jovens brasileiros e cria oportunidade para marcas com evidencia real. ANVISA fiscaliza sem parar. <strong>Voce Mais+ precisa ativar campanha D3+K2 imediatamente, lancar Psychobiotic Daily com cepas especificadas e garantir compliance total antes de setembro.</strong></span>
+</div>
+<main>
+  <div class="edition-bar">
+    <div class="edition-live"><div class="live-dot"></div><span class="edition-label">Edicao de hoje &mdash; 15 de Maio de 2026</span></div>
+    <span class="edition-meta">13 tendencias analisadas &middot; Wellness Intelligence Voce Mais+</span>
+  </div>
+  <div class="grid">
+
+    <div class="card c-hero bg-navy" data-modal="1">
+      <div><span class="accent-bar"></span><div class="tag"><div class="tag-dot"></div>Mercado &middot; Global Wellness Economy US$6,8 Tri 2024</div><div class="headline">Economia wellness global atinge recorde de US$6,8 trilhoes em 2024 rumo a US$9,8 tri ate 2029 — wellness supera turismo, IT e economia verde. Brasil soma US$96 bilhoes no 9o maior mercado do planeta</div><p class="sub">GWI Wellness Economy Monitor 2025: crescimento de 7,9% ao ano. Mental wellness (+12,4% a.a.) e o segmento mais dinamico. Wellness (US$6,8 tri) e quase 4x maior que a industria farmaceutica (US$1,8 tri). Mercado brasileiro em plena expansao estrutural.</p></div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <div class="card c-tall bg-yellow" data-modal="2">
+      <div><span class="accent-bar"></span><div class="tag"><div class="tag-dot"></div>Mercado &middot; Suplementos Brasil 15% R$13,8bi 2030</div><div class="headline">Mercado de suplementos brasileiro cresce 15% em 2025 e projeta R$13,8 bilhoes ate 2030: fibras, personalizacao, gummies e saude preventiva sao os quatro vetores do crescimento acelerado</div><div class="stat-num">15%</div><div class="stat-desc">crescimento do mercado de suplementos no Brasil em 2025 — projecao de R$13,8 bilhoes ate 2030, com janela de tres anos para capturar share em categorias ainda sem lider dominante</div></div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <div class="card c-wide bg-black" data-modal="3">
+      <div><div class="tag"><div class="tag-dot"></div>Regulacao &middot; ANVISA Recolhimentos Proibicoes Compliance 2026</div><div class="headline">ANVISA intensifica fiscalizacao em 2026 com serie de recolhimentos de lote, proibicoes por propaganda irregular e conformidade obrigatoria com novo Marco Regulatorio — compliance total vira vantagem competitiva definitiva no setor</div><p class="sub">Multiplas acoes de fiscalizacao em 2026: proibicoes por alegacoes terapeuticas nao aprovadas, recolhimentos multiestadуais e prazo final de setembro 2026 para adequacao da RDC 843/2024. Marcas com compliance publicado ganham confianca do consumidor que cada vez mais pesquisa antes de comprar.</p></div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <div class="card c-med bg-gray800" data-modal="4">
+      <div><div class="tag"><div class="tag-dot"></div>Mercado &middot; Mulheres Lideram 79% Consumo Suplementos</div><div class="headline">Mulheres lideram consumo de suplementos no Brasil em 2026 com 79% de penetracao: equilibrio hormonal, sono, pele e saude emocional sao as quatro demandas prioritarias — mercado hormonal feminino natural estimado em R$800M e subatendido</div><p class="sub">Instituto Locomotiva marco 2026: 79% das mulheres vs 71% dos homens usam suplementos. Mulheres 25-55 anos formam o publico de maior ticket e LTV do setor. Saude hormonal natural (fitohormionios, ciclo, menopausa) e a categoria de maior lacuna no segmento DTC.</p></div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <div class="card c-sm bg-gray100" data-modal="5">
+      <div><div class="tag"><div class="tag-dot"></div>Ciencia &middot; Psicobioticos Psiquiatria Precisao Eixo Intestino-Cerebro</div><div class="headline">Psicobioticos emergem como fronteira da psiquiatria de precisao em 2026: assinaturas microbianas transdiagnosticas em depressao e ansiedade documentadas — cepas especificas via nervo vago modulam serotonina, GABA e neuroinflamacao</div><p class="sub">Publicacoes 2026 consolidam que L. rhamnosus, B. longum e L. helveticus sao as cepas com maior evidencia em saude mental. Deplecao de taxons anti-inflamatorios confirmada em depressao, ansiedade e esquizofrenia. Psicobiotico com cepa especificada e o diferencial vs probiotico generico.</p></div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <div class="card c-third bg-navy" data-modal="6">
+      <div><div class="tag"><div class="tag-dot"></div>Ciencia &middot; NMN Resveratrol Longevidade Molecular Mainstream</div><div class="headline">NMN + Resveratrol 2026: ativacao de sirtuinas, elevacao de NAD+ e mitigacao da inflamacao celular confirmadas — longevidade molecular sai do nicho e entra no mainstream premium. Janela de 6-12 meses para pioneirismo DTC no Brasil</div></div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <div class="card c-third bg-gray100" data-modal="7">
+      <div><div class="tag"><div class="tag-dot"></div>Ciencia &middot; Creatina Feminina Depressao SSRI Cognicao 2026</div><div class="headline">Creatina em 2026 e feminina e cerebral: ensaios confirmam aceleracao da resposta ao SSRI em mulheres com depressao e preservacao cognitiva em privacao de sono — publico potencial 5x maior que academia aguarda produto correto</div></div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <div class="card c-third bg-white" data-modal="8">
+      <div><div class="tag"><div class="tag-dot"></div>Tendencias &middot; Clean Label 3.0 Plant-Based R$2,2bi 2026</div><div class="headline">Clean label 3.0 e plant-based convergem: 71% dos brasileiros pagam mais por ingredientes reconheciveis e mercado plant-based ultrapassa R$2,2 bilhoes — sem artificiais deixa de ser nicho e vira prerrequisito de compra</div></div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <div class="card c-med bg-gray100" data-modal="9">
+      <div><div class="tag"><div class="tag-dot"></div>Ciencia &middot; Omega-3 DHA Neuroproteção Alzheimer Forma TG</div><div class="headline">Omega-3 em 2026: DHA documentado como neuroprotetor contra Alzheimer com mecanismos anti-inflamatorios e neurotróficos confirmados — forma TG tem absorcao 70% superior a EE e justifica premium de mercado com argumento tecnico irrefutavel</div><p class="sub">Novos estudos documentam DHA em membranas neuronais como protetor de Alzheimer via anti-inflamacao, anti-apoptose e estimulacao de BDNF. EPA reduz triglicerides 25-30% em doses clinicas. Omega-3 algal como alternativa vegana sem contaminacao por metais pesados — tendencia crescente no Brasil.</p></div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <div class="card c-wide bg-gray800" data-modal="10">
+      <div><div class="tag"><div class="tag-dot"></div>Tendencias &middot; Suplementacao Personalizada IA Biomarkers FemTech</div><div class="headline">Suplementacao personalizada por IA e biomarkers: terapias hormonais com IA reduzem 80% dos efeitos colaterais e 70% das mulheres devem usar tecnologia de monitoramento hormonal ate 2028 — personalizacao digital aumenta LTV em 3x e conversao em 35%</div><p class="sub">Quiz de personalizacao com 10-15 perguntas ja eleva conversao em 25-35% vs produto generico em marcas DTC americanas. Parceria com laboratorio de biomarkers (D3, magnesio, hormonios) cria tier premium com ticket R$299+ por protocolo personalizado. IA adaptativa para ajuste do stack ao longo do tempo fideliza por anos.</p></div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <div class="card c-med bg-black" data-modal="11">
+      <div><div class="tag"><div class="tag-dot"></div>Alerta &middot; GutTok Desinformacao Internacoes Brasil Mar 2026</div><div class="headline">GutTok causa internacoes: estudo marco 2026 documenta que influencers sem formacao espalham desinformacao sobre microbioma no TikTok e Instagram, gerando transtornos alimentares e desnutricao em jovens brasileiros</div><p class="sub">SUS e rede privada registram aumento de internacoes por protocolos extremos de jejum intestinal e exclusao alimentar inspirados em conteudo sem evidencia. Brasil e dos mais afetados pelo mundo dado alto uso de TikTok. Oportunidade para marca que comunica saude intestinal com cepa especificada e evidencia real.</p></div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <div class="card c-med bg-yellow" data-modal="12">
+      <div><div class="tag"><div class="tag-dot"></div>Tendencias &middot; Vitamina D3+K2 Pre-Inverno Deficit 70%</div><div class="headline">Pre-inverno 2026: D3+K2 como produto de entrada ideal — 70% dos brasileiros com deficit de vitamina D e janela sazonal critica de maio a agosto com menor custo de aquisicao do ano para novo consumidor</div><div class="stat-num">70%</div><div class="stat-desc">dos brasileiros apresentam insuficiencia ou deficiencia de vitamina D — janela de maio a agosto e o momento de menor resistencia do consumidor para iniciar suplementacao preventiva de vitamina D</div></div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <div class="card c-full bg-gray100" data-modal="13">
+      <div><div class="tag"><div class="tag-dot"></div>Analise de Cruzamento &middot; 15 Maio 2026</div><div class="headline">Edicao 15 Mai: wellness US$6,8 tri + suplementos BR 15% + ANVISA rigorosa + psicobioticos ciencia + longevidade molecular + mulheres 79% + GutTok desinformacao + D3+K2 inverno = cinco acoes urgentes convergentes para Voce Mais+ agir ainda em maio 2026</div><p class="sub">TEMA UNIFICADOR: mercado nunca foi tao grande e consumidor nunca foi tao sofisticado e tao exposto a desinformacao ao mesmo tempo. ACOES URGENTES: (1) D3+K2 inverno — campanha de aquisicao agora; (2) Psychobiotic Daily com cepas especificadas — o anti-GutTok; (3) Linha hormonal feminina clean label — R$800M subatendido; (4) Compliance ANVISA total antes de setembro; (5) Longevity Core NMN+Resveratrol — janela de pioneirismo DTC de 6-12 meses. ESTRUTURAL: suplementos rumo a R$13,8bi ate 2030 — cada nova categoria aberta agora vira receita recorrente estrutural.</p></div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+  </div>
+</main>
+
+<div class="archive">
+  <div class="archive-inner">
+    <div class="archive-hd"><span class="archive-title">Edicoes Anteriores</span><div class="archive-line"></div></div>
+    <div class="archive-grid">
+      <a class="archive-card" href="edicoes/2026-05-14.html"><div class="archive-date">14 de Maio de 2026</div><div class="archive-hl">GLP-1 Support urgente + Vitafoods tendencias + ANVISA curcuma + fibras boom + medicos-influencers + healthy aging + gummies crescendo</div><div class="archive-tags"><span>glp-1</span><span>vitafoods</span><span>anvisa</span></div></a>
+      <a class="archive-card" href="edicoes/2026-05-13.html"><div class="archive-date">13 de Maio de 2026</div><div class="archive-hl">Magnesio 70% + creatina cognitiva + NMN longevidade + psicobioticos + vitamina D pre-inverno + clean label + mulher lidera</div><div class="archive-tags"><span>magnesio</span><span>creatina</span><span>nmn</span></div></a>
+      <a class="archive-card" href="edicoes/2026-05-12.html"><div class="archive-date">12 de Maio de 2026</div><div class="archive-hl">GLP-1 generico urgente + inverno imunidade + omega-3 + curcumina + FemTech hormonal + sono + personalizacao IA</div><div class="archive-tags"><span>glp-1</span><span>imunidade</span><span>femtech</span></div></a>
+      <a class="archive-card" href="edicoes/2026-05-09.html"><div class="archive-date">9 de Maio de 2026</div><div class="archive-hl">Creatina feminina boom + vitamina D pre-inverno + cogumelos mainstream + ashwagandha + NMN longevidade</div><div class="archive-tags"><span>creatina-fem</span><span>vitamina-d</span><span>cogumelos</span></div></a>
+      <a class="archive-card" href="edicoes/2026-05-08.html"><div class="archive-date">8 de Maio de 2026</div><div class="archive-hl">GLP-1 redefine portfolio + fibras emergem + cognitivo multigeracional + inverno a vista + ANVISA intensifica</div><div class="archive-tags"><span>glp-1</span><span>fibras</span><span>nootropicos</span></div></a>
+      <a class="archive-card" href="edicoes/2026-05-07.html"><div class="archive-date">7 de Maio de 2026</div><div class="archive-hl">ANVISA cogumelos + curcuma + creatina longevidade + L-teanina viral + inverno chegando</div><div class="archive-tags"><span>anvisa</span><span>cogumelos</span><span>l-teanina</span></div></a>
+      <a class="archive-card" href="edicoes/2026-05-06.html"><div class="archive-date">6 de Maio de 2026</div><div class="archive-hl">Mercado R$13,8bi 2030 + omega-3 neuroproteção + clean label obrigatorio + IA personalizada</div><div class="archive-tags"><span>mercado</span><span>omega-3</span><span>clean-label</span></div></a>
+      <a class="archive-card" href="edicoes/2026-05-05.html"><div class="archive-date">5 de Maio de 2026</div><div class="archive-hl">ANVISA setembro + Bundle Inverno Imunidade + Faux-zempic natural + longevidade feminina</div><div class="archive-tags"><span>anvisa</span><span>inverno</span><span>faux-zempic</span></div></a>
+      <a class="archive-card" href="edicoes/2026-05-04.html"><div class="archive-date">4 de Maio de 2026</div><div class="archive-hl">GLP-1 remodela mercado + berberina metabolismo + psicobioticos cortisol consolidam Q2 2026</div><div class="archive-tags"><span>glp-1</span><span>berberina</span><span>psicobioticos</span></div></a>
+      <a class="archive-card" href="edicoes/2026-05-03.html"><div class="archive-date">3 de Maio de 2026</div><div class="archive-hl">Magnesio L-Treonato atravessa barreira cerebral + mercado feminino 58% + longevidade NAD+</div><div class="archive-tags"><span>magnesio-cognitivo</span><span>feminino</span><span>longevidade</span></div></a>
+      <a class="archive-card" href="edicoes/2026-05-01.html"><div class="archive-date">1 de Maio de 2026</div><div class="archive-hl">Intestino como centro do wellness: prebioticos + psicobioticos + fibra funcional triangulo estrategico</div><div class="archive-tags"><span>psicobioticos</span><span>prebioticos</span><span>gut-brain</span></div></a>
+      <a class="archive-card" href="edicoes/2026-04-30.html"><div class="archive-date">30 de Abril de 2026</div><div class="archive-hl">Psicobioticos ADM + burnout adaptogenicos + vitamina D inverno dominam Dia do Trabalhador</div><div class="archive-tags"><span>psicobioticos</span><span>adaptogenicos</span><span>vitamina-d</span></div></a>
+      <a class="archive-card" href="edicoes/2026-04-29.html"><div class="archive-date">29 de Abril de 2026</div><div class="archive-hl">Colageno vegetal avanca + creatina cognitiva + D3+K2 fundacionais</div><div class="archive-tags"><span>colageno</span><span>creatina</span><span>vitamina-d</span></div></a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand"><img src="logo-branca.png" alt="voce-mais+" style="height:20px;width:auto;" /><div class="footer-sep"></div><span class="footer-tagline">Wellness Intelligence</span></div>
+    <span class="footer-note">Uso interno &mdash; Voce Mais+ &copy; 2026</span>
+  </div>
+</footer>
+
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal">
+    <div class="modal-header">
+      <div class="modal-tag" id="mTag"></div>
+      <div class="modal-headline" id="mHeadline"></div>
+      <div class="modal-stars" id="mStars"></div>
+      <button class="modal-close" id="modalClose">&#10005;</button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-section">
+        <div class="modal-section-title">Resumo e Analise</div>
+        <div class="modal-text" id="mSummary"></div>
+        <div class="modal-source"><span class="modal-source-label">Fonte</span><span class="modal-source-val" id="mSource"></span></div>
+      </div>
+      <div class="modal-section">
+        <div class="modal-section-title">Score de Impacto</div>
+        <div class="modal-scores">
+          <div class="score-item"><div class="score-num" id="mCurto"></div><div class="score-label">Curto Prazo</div></div>
+          <div class="score-item"><div class="score-num" id="mMedio"></div><div class="score-label">Medio Prazo</div></div>
+          <div class="score-item"><div class="score-num" id="mLongo"></div><div class="score-label">Longo Prazo</div></div>
+        </div>
+      </div>
+      <div class="modal-section">
+        <div class="modal-section-title">Ideia para Voce Mais+</div>
+        <div class="modal-idea"><div class="modal-idea-accent"></div><div class="modal-idea-label">Acao Recomendada</div><div class="modal-idea-text" id="mIdea"></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+var MODALS = {
+  1: {
+    tag: "Mercado - Global Wellness Economy US$6,8 Tri GWI 2025 Monitor",
+    stars: "&#11088;&#11088;&#11088;&#11088;&#11088;",
+    headline: "Economia wellness global atinge recorde de US$6,8 trilhoes em 2024 rumo a US$9,8 tri em 2029: wellness supera turismo, economia verde e IT sendo quase 4x maior que a industria farmaceutica — Brasil soma US$96 bilhoes e esta entre os 10 maiores mercados do planeta",
+    summary: "O Global Wellness Institute publicou em novembro 2025 o Wellness Economy Monitor com os dados de 2024: crescimento de 7,9% ao ano, atingindo US$6,8 trilhoes. SEGMENTOS QUE MAIS CRESCEM: (1) MENTAL WELLNESS: +12,4% ao ano de 2019 a 2024 - o segmento mais dinamico de toda a economia wellness; (2) WELLNESS REAL ESTATE: +19,5% ao ano. POSICAO RELATIVA: wellness (US$6,8 tri) supera esportes (US$2,7 tri), turismo (US$5 tri), economia verde (US$5,1 tri) e IT (US$5,3 tri), sendo quase 4x maior que a industria farmaceutica (US$1,8 tri). O QUE ISSO SIGNIFICA: o consumidor de wellness no Brasil esta inserido na maior industria do planeta em crescimento acelerado. A sofisticacao do consumidor brasileiro acompanha o crescimento global - mais informado, mais exigente, mais disposto a pagar por qualidade comprovada. PROJECAO 2029: crescimento de 7,6% ao ano leva o mercado a US$9,8-10 trilhoes - a decada de ouro do wellness continua.",
+    source: "Global Wellness Institute Wellness Economy Monitor 2025 / GWI Press Release US$6,8 Tri Nov 2025 / PRNewswire GWI Wellness Economy Record 2025 / Athletech News Global Wellness Market 2025 / GWI Country Rankings 2026",
+    curto: "7", medio: "9", longo: "10",
+    idea: "Posicionamento Estrategico Voce Mais+ no Contexto Global: (1) NARRATIVA DE MARCA: comunicar ao consumidor que ele faz parte do maior movimento de saude da historia humana - o wellness global de US$6,8 trilhoes. Voce Mais+ e a sua porta de entrada brasileira para esse movimento; (2) SEGMENTO MENTAL WELLNESS: o segmento que mais cresce globalmente (+12,4% a.a.) e exatamente onde adaptogenicos, psicobioticos e magnesio atuam - confirma prioridade de portfolio para os proximos 24 meses; (3) BENCHMARK INTERNACIONAL: criar dashboard interno comparando lancamentos de ingredientes e formatos nos EUA, Europa e Asia para antecipar o que chega ao Brasil em 6-18 meses; (4) CONTENT MARKETING: serie sobre o tamanho do mercado wellness, educando o consumidor sobre por que investir em saude preventiva. Posiciona Voce Mais+ como lider de pensamento no setor."
+  },
+  2: {
+    tag: "Mercado - Suplementos Brasil 15% Crescimento R$13,8bi 2030",
+    stars: "&#11088;&#11088;&#11088;&#11088;&#11088;",
+    headline: "Mercado de suplementos brasileiro cresce 15% em 2025 e projeta R$13,8 bilhoes ate 2030: fibras prebioticas, suplementacao personalizada, gummies e saude preventiva cognitiva sao os quatro motores do crescimento estrutural",
+    summary: "A Revista Suplementacao publicou os dados confirmando crescimento de 15% em 2025 e projecao de R$13,8 bilhoes ate 2030. OS QUATRO MOTORES DE CRESCIMENTO: (1) FIBRAS PREBIOTICAS: buscas por suplemento de fibra cresceram 62,3% em 12 meses - mercado sem lider dominante no DTC; (2) SUPLEMENTACAO PERSONALIZADA: consumidor rejeita abordagem generica, busca formulas baseadas em seu perfil especifico; (3) FORMATOS EXPERIENCIAIS: gummies, shots e sticks crescem 40%+ - barreira de entrada para nao-usuarios de capsulas eliminada; (4) SAUDE PREVENTIVA COGNITIVA: nootopicos, adaptogenicos e magnesio ganham consumidores fora do universo fitness. DADO ADICIONAL: mulheres representam 58% dos compradores de suplementos em 2026, com crescimento constante desde 2020. POSICAO ATUAL: 2026 e o momento de entrada em categorias novas antes da commoditizacao - fibras, psicobioticos e longevidade molecular estao na fase de crescimento acelerado sem lider consolidado.",
+    source: "Revista Suplementacao Mercado 15% 2025 R$13,8bi / Hile Suplementos 2026 Crescimento / Folha Vitoria Suplementos Mais Usados 2026 / Underlabz Mercado Suplementos Brasil 2026 / Food Connection Pilares Mercado Suplementos 2026",
+    curto: "8", medio: "10", longo: "10",
+    idea: "Plano de Crescimento Voce Mais+ para os R$13,8bi ate 2030: (1) FIBRAS - ENTRANDO AGORA: lancamento de Fiber Complex 5-em-1 (psyllium + inulina + FOS + beta-glucana + arabinoxilana) - primeiro mover em DTC com blend diversificado; (2) PERSONALIZACAO DIGITAL: quiz diagnostico em voce-mais.com com 8-10 perguntas gerando recomendacao de stack personalizado - aumenta ticket medio e reduz churn; (3) GUMMIES EM JUNHO 2026: Calm Gummy como produto de entrada para consumidores que nao tomam capsulas; (4) POSICIONAMENTO COGNITIVO-PREVENTIVO: campanha para adultos 30-60 anos fora do universo fitness - o maior publico novo do setor. Meta: crescer acima da media do setor chegando a 25-30% a.a."
+  },
+  3: {
+    tag: "Regulacao - ANVISA Fiscalizacao Intensificada Recolhimentos Proibicoes 2026",
+    stars: "&#11088;&#11088;&#11088;&#11088;&#11088;",
+    headline: "ANVISA intensifica fiscalizacao em 2026 com serie de recolhimentos de lote, proibicoes por propaganda irregular e exigencia de conformidade com Marco Regulatorio — compliance total vira vantagem competitiva definitiva enquanto concorrentes sao recolhidos",
+    summary: "A ANVISA publicou em 2026 multiplas acoes de fiscalizacao: proibicoes por alegacoes terapeuticas nao aprovadas, recolhimentos de lotes irregulares em operacoes multiestadуais, e determinacoes de conformidade urgente. O CONTEXTO REGULATORIO COMPLETO: (1) MARCO REGULATORIO EM VIGOR: novo Marco Regulatorio de Alimentos com requisitos mais rigorosos de rotulagem, rastreabilidade e documentacao - prazo final para adequacao de rotulos expirou em marco 2026; (2) RDC 843/2024: suplementos notificados antes da entrada em vigor tem ate 1 de setembro de 2026 para total conformidade; (3) INSTRUCAO NORMATIVA ATUALIZADA: 9a edicao do documento P&R da ANVISA com 178 orientacoes atualizadas (RDC 843/2024 e IN 281/2024); (4) ALEGACOES PROIBIDAS: claims que associam suplementos a cura, tratamento ou prevencao de doencas especificas sao alvo principal da fiscalizacao 2026. O PARADOXO: o mesmo rigor que ameaca marcas sem compliance cria oportunidade para marcas conformes - consumidor valoriza transparencia regulatoria e migra para marcas verificaveis.",
+    source: "Anvisa.gov.br Proibicao Suplementos Propaganda 2026 / Anvisa.gov.br Recolhimento Suplementos Irregulares 2026 / Anvisa.gov.br Recolhimento Produtos Alimenticios 2026 / CRN6 ANVISA Perguntas Respostas 2026 / AnvisaLegis RDC 843/2024",
+    curto: "9", medio: "8", longo: "7",
+    idea: "Programa Compliance Total Voce Mais+: (1) AUDITORIA URGENTE: especialista em regulatorio para revisao de todas as alegacoes de marketing - identificar qualquer claim que possa ser interpretado como terapeutico. Prazo: 15 dias; (2) HUB DE TRANSPARENCIA: pagina voce-mais.com/transparencia com laudos de analise por lote, numeros de registro ANVISA, fichas tecnicas de ingredientes; (3) ROTULOS CONFORMES: verificar que todos os rotulos estao 100% de acordo com Marco Regulatorio vigente; (4) COMUNICACAO PROATIVA: publicar nota de posicionamento sobre compliance total como diferencial - concorrentes sao recolhidos enquanto Voce Mais+ e 100% conforme; (5) TREINAMENTO INTERNO: capacitar equipe de marketing sobre alegacoes permitidas segundo IN 75/2020 e atualizacoes 2026."
+  },
+  4: {
+    tag: "Mercado - Mulheres Lideram 79% Saude Hormonal Emocional Estetica 2026",
+    stars: "&#11088;&#11088;&#11088;&#11088;",
+    headline: "Mulheres lideram consumo de suplementos no Brasil em 2026 com 79% de penetracao: equilibrio hormonal, sono, saude emocional e pele sao as quatro demandas prioritarias — mercado de saude hormonal feminina natural estimado em R$800M e ainda subatendido no DTC",
+    summary: "Pesquisa do Instituto Locomotiva publicada em marco 2026 confirma que mulheres lideram o consumo de suplementos no Brasil (79% vs 71% homens), com demandas especificas que os suplementos genericos nao atendem. AS QUATRO DEMANDAS PRIORITARIAS: (1) EQUILIBRIO HORMONAL: fitohormionios (vitex, amora, maca, yam mexicano) lideram prescricoes em farmacias de manipulacao para TPM e menopausa - 18 milhoes de mulheres em menopausa em 2026; (2) SONO E ESTRESSE: magnesio bisglicinato, melatonina, ashwagandha e melissa - segunda maior demanda; (3) SAUDE DA PELE, CABELOS E UNHAS: colageno hidrolisado, biotina, zinco e vitamina C em combinacao; (4) SAUDE EMOCIONAL INTEGRADA: ansiedade e burnout levam mulheres a buscar alternativas naturais. DADO CRITICO: mulheres 25-55 anos formam o publico com maior ticket medio, maior LTV e maior disposicao para experimentar - o publico mais valioso do setor.",
+    source: "Sincofarma SP Mulheres Lideram Suplementos 2026 / Bonitamulher Saude da Mulher 2026 / Jovem Pan Saude Feminina 2026 / Farmacotecnica 5 Tendencias Suplementos Femininos 2026 / Monde Joie de Vivre Menopausa Hormonios Longevidade",
+    curto: "8", medio: "9", longo: "10",
+    idea: "Linha Feminina Completa Voce Mais+: (1) CICLE BALANCE: Vitex 250mg + amora 250mg + maca 500mg + B6 25mg + zinco 8mg - para TPM e perimenopausa; (2) GLOW FORMULA: colageno tipo I 5g + biotina 5000mcg + vitamina C 200mg + zinco + acido hialuronico 80mg - nutricosmetica premium; (3) CALM FEMME: ashwagandha KSM-66 300mg + magnesio 200mg + melissa 200mg + L-teanina 100mg; (4) BUNDLE SAUDE FEMININA INTEGRAL: os tres + D3+K2 = protocolo completo. POSICIONAMENTO: feito para a mulher brasileira, com ingredientes que medicos funcionais mais prescrevem, em doses clinicamente relevantes. CANAL: ginecologistas e nutris influencers, grupos femininos de saude. Ticket R$220-320/mes bundle."
+  },
+  5: {
+    tag: "Ciencia - Psicobioticos Psiquiatria Precisao Eixo Intestino-Cerebro 2026",
+    stars: "&#11088;&#11088;&#11088;&#11088;",
+    headline: "Psicobioticos emergem como fronteira da psiquiatria de precisao em 2026: assinaturas microbianas transdiagnosticas documentadas em depressao, ansiedade e esquizofrenia — cepas especificas produzem serotonina e GABA via nervo vago, abrindo nova categoria nao-invasiva de alto valor",
+    summary: "Publicacoes de 2026 consolidam psicobioticos como area de alta prioridade em pesquisa clinica. O MECANISMO DOCUMENTADO: o eixo intestino-cerebro opera por tres vias: (a) NEURAL: nervo vago transmite sinais bidirecionais entre microbioma e SNC; (b) ENDOCRINA: bacterias intestinais produzem ou regulam serotonina (90% do total corporal no intestino), dopamina e GABA; (c) IMUNOLOGICA: acidos graxos de cadeia curta (AGCC) modulam neuroinflamacao. ASSINATURAS MICROBIANAS ENCONTRADAS: Lactobacillus e Bifidobacterium depletados em depressao e ansiedade - especialmente L. rhamnosus, L. helveticus, B. longum e B. infantis. A OPORTUNIDADE: psicobiotico com cepas especificadas (nao probiotico generico) + prebiotico para maximizar colonizacao = produto de alta margem com diferencial cientifico claro contra o hype do GutTok.",
+    source: "Ojs Studies Publicacoes Modulacao Microbiota Transtornos Mentais 2026 / Revistardp Microbiota Saude Mental Descobertas 2026 / Nutritotal Psicobioticos Saude Mental / UNESP Cartilha Psicobioticos / Lanutri UFRJ Saude Mental Microbiota",
+    curto: "7", medio: "9", longo: "10",
+    idea: "Psychobiotic Daily Voce Mais+: (1) FORMULA: L. rhamnosus GG 5B UFC + B. longum 1714 5B UFC + L. helveticus R0052 5B UFC + inulina 2g + FOS 1g + vitamina B9 400mcg. Total: 15 bilhoes UFC de cepas psicobioticas certificadas; (2) DIFERENCIAL: especificar a cepa exata em rotulo e marketing - L. rhamnosus GG, nao apenas Lactobacillus rhamnosus generico; (3) COMUNICACAO: Para o seu segundo cerebro - formulado com as cepas que a ciencia mais estudou para saude mental. Diferente de probiotico comum; (4) BUNDLE GUT-BRAIN SYSTEM: Psychobiotic Daily + Fiber Complex = protocolo completo; (5) POSICIONAMENTO vs GutTok: cepa especificada + estudo citado + transparencia de formula = o anti-GutTok. Ticket R$110-150/mes."
+  },
+  6: {
+    tag: "Ciencia - NMN Resveratrol Longevidade Molecular Sinclair 2026",
+    stars: "&#11088;&#11088;&#11088;",
+    headline: "NMN e Resveratrol: protocolo David Sinclair 2026 atualizado confirma ativacao de sirtuinas, elevacao de NAD+ e reducao de inflamacao celular — longevidade molecular sai do nicho early-adopter e entra no mainstream premium com janela de 6-12 meses para pioneirismo DTC no Brasil",
+    summary: "O protocolo de longevidade molecular do Prof. David Sinclair (Harvard) foi atualizado em 2026 com evidencias acumuladas. O MECANISMO NMN+RESVERATROL: (1) NMN e precursor direto do NAD+ - cofator essencial para 500+ reacoes celulares incluindo reparo de DNA, funcao mitocondrial e regulacao circadiana. Estudos humanos mostram elevacao documentada de NAD+ com 250-1250mg/dia; (2) RESVERATROL ativa sirtuinas (genes da longevidade) que so funcionam com NAD+ disponivel - Sinclair define NMN como combustivel e resveratrol como motor; (3) NAD+ elevado reduz NLRP3 inflammasome - via de neuroinflamacao ligada a Alzheimer e declinio cognitivo. CONTEXTO DE MERCADO: Rolling Stone, Fortune e especialistas confirmam NMN como um dos suplementos de maior crescimento em 2026. Mercado brasileiro: produto chegando ao mainstream sem lider de categoria DTC estabelecido. DOSES: NMN 250-500mg/dia + resveratrol trans 100-150mg/dia = protocolo base.",
+    source: "Metatrends Substack Longevity Protocols Sinclair 2026 / Fortune Best NMN Supplements 2026 / Rolling Stone Best NMN 2026 / Getwonderfeel NMN Resveratrol Longevity / iHerb Blog NMN Supplements Dr Guide",
+    curto: "5", medio: "8", longo: "10",
+    idea: "Longevity Core Voce Mais+ - entrando no mercado de longevidade molecular enquanto ainda ha posicao: (1) PRODUTO: NMN 300mg + trans-resveratrol 100mg + CoQ10 ubiquinol 100mg + PQQ 10mg. Formato: capsulas vegetais opacas (NMN e fotossensivel); (2) PREMIUM TIER: adicionar K2 MK-7 100mcg + D3 2000UI + magnesio malato 150mg = longevidade + estrutural; (3) POSICIONAMENTO: a formula da longevidade que a ciencia de Harvard validou - para quem quer chegar aos 80 funcionando como nos 50; (4) PRECO: ticket R$200-280/mes, margem superior justificada pelo custo dos ingredientes; (5) CANAL: podcasts de longevidade, biohackers, medicos anti-aging, medicina preventiva. Diferenciacao por especificacao de procedencia dos ingredientes."
+  },
+  7: {
+    tag: "Ciencia - Creatina Mercado Feminino Depressao SSRI Cognicao 2026",
+    stars: "&#11088;&#11088;&#11088;&#11088;",
+    headline: "Creatina de 2026 e feminina e cerebral: ensaios clinicos confirmam aceleracao da resposta ao SSRI em mulheres com depressao e preservacao cognitiva em privacao de sono — mercado potencial 5x maior que academia aguarda produto com posicionamento correto",
+    summary: "A ciencia da creatina em 2026 revelou dois novos publicos de altissimo valor: (1) MULHERES COM DEPRESSAO: multiplos ensaios randomizados documentam que adicionar creatina 5g/dia ao SSRI acelera o tempo de resposta e reduz sintomas significativamente mais do que SSRI sozinho. A revisao Smith-Ryan chamou creatina de um suplemento particularmente importante para mulheres ao longo da vida. Mecanismo: biossintese de creatina e energeticamente custosa - suplementacao libera recursos metabolicos para sintese de neurotransmissores; (2) TRABALHADORES COM PRIVACAO DE SONO: 3-5g/dia preserva memoria de trabalho, tempo de reacao e vigilancia mesmo em adultos com sono insuficiente. O cerebro usa fosfocreatina para regenerar ATP rapidamente durante demanda cognitiva elevada. O NOVO PUBLICO: profissionais urbanos sobrecarregados, pais com bebes, trabalhadores noturnos, estudantes - populacao varias ordens de magnitude maior que frequentadores de academia.",
+    source: "FitCraft Creatina para Mulheres Pesquisa 2026 / Tua Saude Creatina Cerebro Privacao Sono / Welvy Creatina Corpo e Mente / PUC Goias Creatina Funcao Cognitiva Revisao / Saudeamericas Creatina Idosos Beneficios",
+    curto: "8", medio: "9", longo: "9",
+    idea: "Creatina Urbana Voce Mais+ - reposicionamento para mercado 5x maior: (1) FEMME MIND: creatina micronizada 3g + triptofano 250mg + B6 25mg + magnesio bisglicinato 100mg. Para bem-estar emocional e clareza mental, nao performance atletica. Nome: MIND BALANCE; (2) URBAN FOCUS: creatina 3g + L-teanina 100mg + B12 500mcg. Para profissionais com sono insuficiente. Nome: FOCUS DAILY; (3) COMUNICACAO: design minimalista, paleta suave, copy - Para quem trabalha muito, dorme pouco e precisa do cerebro. Nao e so para musculo; (4) CANAL: Instagram lifestyle, podcasts produtividade, grupos de saude mental feminina, psicologas e nutri-psiquiatras. Ticket R$60-80/mes. Alta penetracao por preco acessivel."
+  },
+  8: {
+    tag: "Tendencias - Clean Label 3.0 Plant-Based R$2,2bi Convergencia 2026",
+    stars: "&#11088;&#11088;&#11088;&#11088;",
+    headline: "Clean label 3.0 e plant-based convergem em 2026: 45% dos brasileiros buscam reduzir artificiais, 71% pagam mais por ingredientes reconheciveis e mercado plant-based supera R$2,2 bilhoes — sem artificiais deixa de ser nicho e vira prerrequisito de compra para consumidor informado",
+    summary: "A convergencia entre clean label e plant-based criou um novo padrao de exigencia do consumidor brasileiro em 2026. OS DADOS: GlobalData: 45% dos brasileiros reduzem ativamente ingredientes artificiais; 71% pagam mais por clean label; mercado plant-based projeta R$2,2 bilhoes em 2026. O QUE E CLEAN LABEL 3.0: a primeira geracao foi sem artificiais. A segunda foi sem gluten e lactose. A terceira geracao de 2026 exige: (1) lista de ingredientes reconheciveis; (2) origem dos ingredientes declarada e rastreavel; (3) ausencia de adocantes artificiais - migra para stevia e eritritol; (4) embalagem que comunica o que tem e o que nao tem com igual enfase; (5) certificacoes verificaveis (organico, vegano, nao-OGM). IMPACTO: consumidor que compara rotulos rejeita maltodextrina, corantes FD&C e dioxido de titanio - ingredientes antes comuns agora sao dealbreakers.",
+    source: "VeganBusiness Ascensao Clean Label Plant-Based 2026 / Food Connection Mudancas Clean Label 2026 / Exame Clean Label Futuro Industria / BhbFood Tendencias Mercado Alimentar 2026 / Food Connection Mercado Plant-Based",
+    curto: "7", medio: "9", longo: "10",
+    idea: "Certificacao Clean Label Voce Mais+: (1) AUDITORIA DE FORMULA: revisar todos os SKUs para ingredientes que consumidores clean label rejeitam (maltodextrina, corantes artificiais, dioxido de titanio, edulcorantes artificiais, aromas artificiais); (2) SELO PROPRIO: criar selo VOCE MAIS+ CLEAN com criterios publicos - sem corantes artificiais, sem edulcorantes artificiais, sem conservantes sinteticos, origem declarada; (3) EMBALAGEM: redesign com destaque para o que nao tem tanto quanto o que tem; (4) LINHA PLANT ESSENTIAL: versao plant-based dos best-sellers com proteina de ervilha/arroz, capsulas vegetais, saborizantes naturais; (5) CONTEUDO: comparativo transparente de rotulos mostrando diferenca vs concorrentes - viralizacao organica garantida."
+  },
+  9: {
+    tag: "Ciencia - Omega-3 DHA Neuroproteção Alzheimer Forma TG 2026",
+    stars: "&#11088;&#11088;&#11088;&#11088;",
+    headline: "Omega-3 em 2026: DHA documentado como neuroprotetor contra Alzheimer com mecanismos anti-inflamatorios, anti-apoptoticos e neurotróficos confirmados — forma TG tem absorcao 70% superior ao etil ester e cria diferencial tecnico que justifica premium de mercado",
+    summary: "As pesquisas de omega-3 em 2026 consolidaram novos mecanismos de acao cerebral e cardiovascular. EVIDENCIA CEREBRAL: (a) DHA esta presente em grandes quantidades nas membranas dos neuronios - funcao estrutural direta no SNC; (b) Estudos documentam reducao de risco de Alzheimer por propriedades anti-inflamatorias, anti-apoptoticas e neurotróficas; (c) Melhora de memoria, concentracao e funcao executiva com 1-2g DHA/dia. EVIDENCIA CARDIOVASCULAR: reducao de triglicerideos 25-30% com 2-4g/dia (EPA+DHA). DIFERENCIAL DE FORMA: omega-3 na forma de triglicerideo (TG) tem biodisponibilidade 70% superior ao etil ester (EE) - o EE requer conversao no intestino que e limitada. Produto TG justifica premium e cria argumento tecnico diferenciador. NOVIDADE SUSTENTAVEL: omega-3 de algas (DHA algal) emerge como alternativa vegana sem risco de contaminacao por metais pesados.",
+    source: "PMC NCBI Omega-3 Cardiovascular Estrutura Lipidio / SBCM Eficacia Omega-3 Doencas Cardiovasculares / Synlab Omega-3 Saude Cerebral Cardiovascular / Farmacotecnica Omega-3 Cerebro Coracao / CNN Brasil Omega-3 Memoria Concentracao",
+    curto: "7", medio: "8", longo: "9",
+    idea: "Omega Triple TG Voce Mais+: (1) FORMULA: omega-3 forma TG com minimo 60% omega-3 total, EPA 360mg + DHA 240mg por capsula. 2 capsulas = dose clinicamente relevante para neuroproteção; (2) DIFERENCIAL: comunicar forma TG vs EE - a forma que o seu corpo absorve 70% mais. Argumento tecnico validado por profissional de saude; (3) VERSAO VEGANA: DHA algal 500mg - para vegetarianos e quem rejeita peixe; (4) POSICIONAMENTO COGNITIVO: omega-3 para o cerebro, nao apenas para o coracao. DHA e o nutriente que o seu cerebro mais precisa depois dos 35 anos; (5) CERTIFICACAO IFOS: verificacao independente de pureza e potencia - consumidor informado busca certificacao; (6) BUNDLE BRAIN SUPPORT: Omega Triple TG + Creatina Urban + Lion Mane. Ticket R$90-130/mes."
+  },
+  10: {
+    tag: "Tendencias - Suplementacao Personalizada IA Biomarkers FemTech 2026",
+    stars: "&#11088;&#11088;&#11088;",
+    headline: "Suplementacao personalizada por IA e biomarkers emerge como proximo paradigma em 2026: terapias hormonais com IA reduzem 80% dos efeitos colaterais, 70% das mulheres devem adotar monitoramento hormonal e quiz de personalizacao eleva conversao em 35%",
+    summary: "A integracao entre tecnologia e suplementacao chegou a um ponto de inflexao em 2026. OS DADOS: (a) 70% das mulheres devem usar tecnologias personalizadas para monitorar hormonios ate 2028; (b) Terapias hormonais com IA ajustadas por dados individuais cortam 80% dos efeitos colaterais; (c) Consumidores que passam por quiz de personalizacao tem LTV 3x superior ao consumidor de produto generico; (d) Startups de suplementacao personalizada foram adquiridas por grandes grupos. O MODELO: (1) QUIZ AVANCADO DIGITAL: 8-15 perguntas sobre sintomas, rotina e objetivos geram recomendacao de stack personalizado; (2) BIOMARKER PARTNERSHIP: parceria com laboratorio para exame basico (D3, magnesio, ferritina, hormonios) antes da recomendacao; (3) IA GENERATIVA: adaptar recomendacao ao longo do tempo com base em feedback do usuario. Fidelizacao superior.",
+    source: "Bonitamulher Saude da Mulher Tecnologia 2026 / Farmacotecnica Tendencias Suplementos Personalizados 2026 / InfoMoney Futuro Wellness 2026 / Jovem Pan Saude Feminina Tecnologia 2026 / Meganesia Saude Feminina 2026",
+    curto: "5", medio: "8", longo: "10",
+    idea: "Personalizacao Voce Mais+ - implementacao faseada: (1) FASE 1 - QUIZ BASICO (junho 2026): quiz de 10 perguntas em voce-mais.com cobrindo objetivo principal, sintomas, restricoes, frequencia de exercicio e faixa etaria. Recomendacao de 2-3 produtos com justificativa. Impacto: +25-35% de conversao; (2) FASE 2 - BIOMARKER LITE (setembro 2026): parceria com laboratorio de coleta em casa para kit Wellness Check: vitamina D, magnesio eritrocitico, ferritina, TSH. Resultado alimenta recomendacao personalizada. Premium tier R$299; (3) FASE 3 - IA ADAPTATIVA (2027): feedback mensal para ajuste automatico do stack. Meta: 30% da base usando quiz em 90 dias do lancamento."
+  },
+  11: {
+    tag: "Alerta - GutTok Desinformacao Internacoes Transtornos Alimentares Brasil 2026",
+    stars: "&#11088;&#11088;&#11088;&#11088;",
+    headline: "GutTok mata: estudo marco 2026 documenta que influencers sem formacao espalham desinformacao sobre microbioma no TikTok e Instagram, causando internacoes e transtornos alimentares em jovens brasileiros — oportunidade urgente para marcas com evidencia real",
+    summary: "Publicado em marco 2026, estudo documentou o fenomeno GutTok e seus efeitos deletérios. O PROBLEMA: influencers sem formacao clinica disseminam protocolos extremos de saude intestinal: jejum intestinal prolongado, laxativos como suplementos diarios, exclusao radical de alimentos. O QUE ACONTECE: (a) Constipacao ou diarreia cronicas por desequilibrio da microbiota; (b) Desnutricao por exclusao de grupos alimentares; (c) Internacoes por obstipacao grave ou desequilibrio eletrolitico; (d) Desenvolvimento de ortorexia - SUS e rede privada registram aumento de casos; (e) Ansiedade alimentar por medo de qualquer alimento. BRASIL ESPECIALMENTE AFETADO: uso de TikTok e Instagram entre os mais altos do mundo, com jovens 15-30 anos como principal demografico. O PARADOXO DE OPORTUNIDADE: o mesmo movimento que cria desinformacao cria demanda por autoridade genuina. Marca que comunica saude intestinal COM evidencia, cepas especificadas e transparencia captura o consumidor que foi queimado pelo GutTok.",
+    source: "Psiq Med BR Desinformacao Saude Intestinal GutTok 2026 / Nutritotal Psicobioticos Alternativa Saude Mental / Revistas FAA SaberDigital Alimentos Funcionais Saude Mental / Estudos Publicacoes Modulacao Microbiota / CadPed OJS Microbiota",
+    curto: "7", medio: "8", longo: "8",
+    idea: "Posicionamento Anti-GutTok Voce Mais+: (1) CONTENT STRATEGY: serie educacional A verdade sobre o microbioma - desmentindo mitos do GutTok com linguagem acessivel, citando estudos reais. Parceria com gastroenterologistas e psiquiatras para validacao; (2) MANIFESTO DE MARCA: pagina declarando que Voce Mais+ so formula com cepas especificadas, contagem UFC verificada por lote, prebioticos em doses documentadas; (3) PROTOCOLO SEGURO: instrucoes claras de uso, contraindicacoes e prazo recomendado; (4) PARCERIAS CLINICAS: linkar produto a nutris e gastros com credencial real; (5) ALERTA EDUCACIONAL: newsletter semanal desmentindo um mito de saude intestinal - construcao de autoridade de longo prazo. Diferenciacao permanente por credibilidade."
+  },
+  12: {
+    tag: "Tendencias - Vitamina D3+K2 Pre-Inverno Deficit 70% Brasileiros 2026",
+    stars: "&#11088;&#11088;&#11088;&#11088;",
+    headline: "Pre-inverno 2026: vitamina D3+K2 como produto de entrada ideal para novos consumidores — deficit documentado em 70% dos brasileiros e janela sazonal critica de maio a agosto com menor custo de aquisicao do ano e maior predisposicao do consumidor a iniciar suplementacao",
+    summary: "A chegada do outono-inverno cria a janela mais previsivel do calendario de suplementos. O DEFICIT DOCUMENTADO: 70% da populacao brasileira apresenta insuficiencia ou deficiencia de vitamina D mesmo em pais tropical - razoes: uso de protetor solar, estilo de vida indoor, melanina elevada e pouca alimentacao rica em D. O INVERNO AMPLIFICA: entre maio e agosto, angulacao solar no sul e sudeste reduz sintese cutanea. A COMBINACAO D3+K2: a ciencia consolidou que D3 so e prescrita com K2 (MK-7) na pratica clinica atual - D3 aumenta absorcao de calcio, K2 direciona para ossos impedindo calcificacao arterial. DOSE PREVENTIVA: D3 2000-4000 UI/dia + K2 MK-7 50-100 mcg/dia. PRODUTO DE ENTRADA: D3+K2 tem menor barreira de adocao para o consumidor que nunca usou suplemento - todo medico recomenda, e acessivel e tem beneficio percebido rapido. Custo de aquisicao historicamente mais baixo do ano em maio-julho.",
+    source: "MedBR Melhores Suplementos Clinicos 2026 / Maromba360 Melhores Multivitaminicos 2026 / Farmacia Farmanato Tendencias Suplementos Alimentares / Food Connection Suplementos 2026 / Hile Suplementos 2026 Crescimento",
+    curto: "9", medio: "7", longo: "6",
+    idea: "Bundle Inverno Imunidade Voce Mais+ - campanha de maio a agosto: (1) PRODUTO ANCORA: D3 4000UI + K2 MK-7 100mcg + magnesio malato 100mg (cofator para ativacao da vitamina D). Capsula unica. Clean label total; (2) BUNDLE IMUNIDADE INVERNO: D3+K2+Mg + Vitamina C Lipossomal 500mg + Zinco Bisglicinato 10mg + Elderberry 300mg = protocolo completo; (3) CAMPANHA SAZONAL: Seu medico ja te pediu para tomar vitamina D? Comece agora - antes do inverno. Meta ads e Google para quem buscou vitamina D recentemente; (4) KIT FAMILIA: 4 frascos de D3+K2 com desconto 20% - aumenta AOV e cria habito familiar; (5) TIMING CRITICO: lancamento da campanha em maio. Demanda cresce ate julho. Ticket R$40-60/mes - produto de entrada para upsell posterior."
+  },
+  13: {
+    tag: "Analise de Cruzamento - 15 Maio 2026",
+    stars: "&#11088;&#11088;&#11088;&#11088;&#11088;",
+    headline: "Edicao 15 Mai: wellness US$6,8 tri + suplementos BR 15% + ANVISA rigorosa + psicobioticos ciencia + longevidade molecular mainstream + mulheres 79% + GutTok desinformacao + D3+K2 inverno = cinco acoes urgentes convergentes para Voce Mais+ agir ainda em maio 2026",
+    summary: "TEMA UNIFICADOR DA EDICAO 15 MAI: o mercado de wellness global nunca foi tao grande e o consumidor brasileiro nunca foi tao sofisticado e tao exposto a desinformacao ao mesmo tempo. CINCO ACOES URGENTES IDENTIFICADAS: (1) VITAMINA D3+K2 AGORA: janela sazonal de inverno aberta hoje - campanha de aquisicao de novos consumidores com produto de menor barreira. Janela de maio a agosto que nao se repete; (2) PSYCHOBIOTIC DAILY COM CIENCIA: GutTok destruiu confianca - consumidor quer marca que especifique a cepa e cite o estudo. L. rhamnosus GG + B. longum 1714 = diferencial irrefutavel vs hype; (3) CLEAN LABEL FEMININO HORMONAL: mulheres lideram (79%), pagam mais por clean label (71%), subatendidas em saude hormonal. Cicle Balance = o maior mercado sub-explorado do setor; (4) COMPLIANCE ANVISA TOTAL: prazo de setembro 2026 e real. Marcas com compliance publicado viram porto seguro enquanto concorrentes sao recolhidos; (5) LONGEVITY CORE NMN+RESVERATROL: janela de 6-12 meses para pioneirismo DTC. ESTRUTURAL: suplementos rumo a R$13,8bi ate 2030. Cada nova categoria aberta agora vira receita recorrente estrutural.",
+    source: "Analise cruzada de todas as 12 fontes primarias desta edicao - Wellness Intelligence Voce Mais+, 15 Mai 2026",
+    curto: "10", medio: "10", longo: "10",
+    idea: "PLANO DE ACAO URGENTE 15-31 MAIO 2026 VOCE MAIS+: ESTA SEMANA: (1) Ativar campanha D3+K2 Inverno - janela sazonal aberta hoje. CAC historicamente mais baixo do ano; (2) Auditoria de compliance ANVISA - contratar especialista urgente, prazo setembro e real e obrigatorio. SEMANA QUE VEM: (3) Brief de produto para Psychobiotic Daily com cepas L. rhamnosus GG + B. longum 1714 especificadas; (4) Revisar todos os rotulos em vigor e identificar nao-conformidades. ATE 31 MAIO: (5) Lancar quiz de personalizacao basico em voce-mais.com - 10 perguntas. Impacto +25-35% em conversao imediato; (6) Contactar 5 prescritores-influencers para parceria de lancamento linha feminina. JUNHO: (7) Lancamento Cicle Balance - saude hormonal feminina com clean label; (8) Iniciar formulacao Longevity Core (NMN+Resveratrol) para lancamento agosto-setembro. META: 3 lancamentos ate agosto 2026, crescimento 30%+ vs mesmos meses 2025, risco regulatorio zerado antes de setembro."
+  }
+};
+
+document.querySelectorAll('.card[data-modal]').forEach(function(card) {
+  card.addEventListener('click', function() {
+    var n = this.getAttribute('data-modal');
+    var d = MODALS[n];
+    if (!d) return;
+    document.getElementById('mTag').textContent = d.tag;
+    document.getElementById('mHeadline').textContent = d.headline;
+    document.getElementById('mStars').innerHTML = d.stars;
+    document.getElementById('mSummary').textContent = d.summary;
+    document.getElementById('mSource').textContent = d.source;
+    document.getElementById('mCurto').textContent = d.curto + '/10';
+    document.getElementById('mMedio').textContent = d.medio + '/10';
+    document.getElementById('mLongo').textContent = d.longo + '/10';
+    document.getElementById('mIdea').textContent = d.idea;
+    document.getElementById('modalOverlay').classList.add('open');
+  });
+});
+document.getElementById('modalClose').addEventListener('click', function() {
+  document.getElementById('modalOverlay').classList.remove('open');
+});
+document.getElementById('modalOverlay').addEventListener('click', function(e) {
+  if (e.target === this) this.classList.remove('open');
+});
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') document.getElementById('modalOverlay').classList.remove('open');
+});
+</script>
+</body>
+</html>

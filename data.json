@@ -1,6 +1,156 @@
 {
   "editions": [
     {
+      "date": "2026-05-16",
+      "dateLabel": "16 de Maio de 2026",
+      "cards": [
+        {
+          "category": "mercado",
+          "tag": "Berberina GLP-1 Natural Faux-Zempic Brasil 2026",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Berberina vira o GLP-1 natural do Brasil: prescricoes triplicam em 90 dias e DTC sem lider — janela de 6 meses para pioneirismo",
+          "summary": "Berberina ativa AMPK, eleva GLP-1 endogeno e melhora sensibilidade insulinica. Combinada a banaba + cromo + gymnema cria stack metabolico natural completo. Mercado DTC sem marca dominante.",
+          "source": "BrazilHealth Nova Febre Suplementos EUA Brasil 2026 / Ekobe Tendencias 2026",
+          "curto": "9",
+          "medio": "10",
+          "longo": "8",
+          "idea": "Berberine Metabolic Support: berberina HCl 500mg + banaba + cromo + gymnema. Lancamento junho 2026."
+        },
+        {
+          "category": "regulacao",
+          "tag": "ANVISA IN 438/2026 Curcuma Hepatotoxicidade",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "ANVISA IN 438/2026: curcuma com risco hepatotoxico exige advertencia obrigatoria em rotulos imediatamente",
+          "summary": "IN 438/2026 publicada 22/04/2026 apos casos de hepatotoxicidade. Advertencia obrigatoria, novos limites de curcuminoides totais e restricao para gestantes, lactantes, criancas e hepatopatas.",
+          "source": "Agencia Brasil ANVISA Curcuma Abril 2026 / Anvisa.gov.br IN 438",
+          "curto": "10",
+          "medio": "7",
+          "longo": "5",
+          "idea": "Adequacao urgente de todos os rotulos com curcuma em 14 dias. Contratar regulatorio imediatamente."
+        },
+        {
+          "category": "ciencia",
+          "tag": "Cogumelos Funcionais Lion Mane NGF US$7,5bi 2030",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Cogumelos funcionais: US$7,5 bilhoes ate 2030 — Lion Mane com NGF documentado e Brasil sem lider DTC",
+          "summary": "Lion Mane: hericenones e erinacinas estimulam NGF. Reishi: beta-glucanas para imunidade. Chaga: antioxidante. Cordyceps: mitocondria atletas. Crescimento acelerado sem referencia DTC no Brasil.",
+          "source": "Vitaminer BR Cogumelos 2026 / Fortune Business Insights Functional Mushrooms",
+          "curto": "6",
+          "medio": "9",
+          "longo": "10",
+          "idea": "Brain Shield: Lion Mane 500mg + Reishi 250mg + Chaga 200mg. Especificar % beta-glucanas. Sport Shroom para atletas."
+        },
+        {
+          "category": "ciencia",
+          "tag": "Magnesio Bisglicinato vs Treonato Sono Cognicao 2026",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Magnesio 2026: bisglicinato para sono, L-treonato para cognicao — 80% dos brasileiros deficientes",
+          "summary": "Bisglicinato: ativa GABA, sono reparador. L-treonato: atravessa barreira hematoencefalica para memoria e foco. Oxido descartado por menos de 4% de absorcao. Cortisol depleta Mg criando ciclo vicioso.",
+          "source": "Tua Saude Magnesio 2026 / GeniusNutra Melhor Magnesio 2026",
+          "curto": "8",
+          "medio": "9",
+          "longo": "9",
+          "idea": "Sleep Mag + Brain Mag. Bundle Magnesium Duo = protocolo dia e noite. Guia das formas como conteudo viral."
+        },
+        {
+          "category": "ciencia",
+          "tag": "Colageno Butantan Peptideos Hialuronidase 100%",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Instituto Butantan identifica peptideos de colageno que inibem 100% da hialuronidase — nova fronteira para nutricosmetica",
+          "summary": "Quatro peptideos inibem totalmente enzima que degrada acido hialuronico. Colageno tipo II hidrolisado atravessa intestino e chega a cartilagem. Meta-analise 2026 confirma melhora de pele.",
+          "source": "Butantan.gov.br Pesquisa Peptideos Colageno 2026 / TuaSaude Colageno 2026",
+          "curto": "6",
+          "medio": "8",
+          "longo": "9",
+          "idea": "Skin Collagen + Joint Collagen. Bundle Total Collagen. Storytelling: pesquisa do Butantan como diferencial nacional."
+        },
+        {
+          "category": "mercado",
+          "tag": "Fibras Prebioticas Buscas +62% Sem Lider DTC",
+          "stars": "⭐⭐⭐",
+          "headline": "Fibras prebioticas: +62,3% de buscas em 12 meses e mercado DTC sem lider no Brasil",
+          "summary": "Deficit: 13-15g/dia vs recomendacao 25-38g. Psyllium, inulina, FOS, beta-glucana e arabinoxilana sao as cinco fibras principais. Primeiro mover em DTC captura share de categoria em formacao.",
+          "source": "FoodConnection Mercado Suplementos 2026 / Farmacotecnica Tendencias 2026",
+          "curto": "7",
+          "medio": "9",
+          "longo": "10",
+          "idea": "Fiber Complex 5-in-1: psyllium 3g + inulina 2g + FOS 1g + beta-glucana 500mg + arabinoxilana 500mg. Bundle com Psychobiotic Daily."
+        },
+        {
+          "category": "ciencia",
+          "tag": "Burnout Ashwagandha KSM-66 Cortisol -28% 2026",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Burnout epidemia 2026: KSM-66 reduz cortisol 27,9% — profissionais urbanos sao publico 10x maior que atletas",
+          "summary": "47% dos trabalhadores com esgotamento cronico. KSM-66: 22+ ensaios, reducao 27,9% cortisol, melhora sono e ansiedade. Rhodiola complementa. Adaptogenicos crescem 35% em 2026 com perfil saindo de atletas para profissionais.",
+          "source": "Umaseostras Adaptogenicos Estresse 2026 / DataBridge Adaptogen Market",
+          "curto": "8",
+          "medio": "9",
+          "longo": "8",
+          "idea": "Equilibrium Daily: KSM-66 300mg + rhodiola 200mg + magnesio + L-teanina. Especificar extratos padronizados como diferencial."
+        },
+        {
+          "category": "tendencias",
+          "tag": "Omega-3 Algal Vegano DHA Plant-Based",
+          "stars": "⭐⭐⭐",
+          "headline": "Omega-3 algal: DHA de microalgas sem metais pesados para mercado plant-based — Brasil sem referencia na categoria",
+          "summary": "DHA algal vai direto na fonte. Zero risco de metais pesados. Biodisponibilidade equivalente ao de peixe. ALA de chia tem conversao inferior a 10% — DHA algal e a unica opcao eficaz para veganos.",
+          "source": "VeganBusiness Plant-Based 2026 / TuaSaude Omega-3 2026",
+          "curto": "5",
+          "medio": "8",
+          "longo": "9",
+          "idea": "Omega-3 Algal 500mg DHA. SVB + IFOS certificado. Bundle Vegano Completo. Lancamento set-out 2026."
+        },
+        {
+          "category": "mercado",
+          "tag": "FemTech Hormonal 70% Monitoramento 2028 R$800M",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "FemTech hormonal: 70% das mulheres adotarao monitoramento ate 2028 — saude hormonal natural R$800M subatendida no DTC",
+          "summary": "18 milhoes de mulheres em menopausa no Brasil. Vitex, amora, maca, yam e isoflavonas com prescricoes crescentes. Ticket medio R$300+, LTV 3x superior. Farmacias de manipulacao dominam mas DTC sem referencia.",
+          "source": "Bonitamulher Saude da Mulher 2026 / Farmacotecnica Tendencias Femininas",
+          "curto": "7",
+          "medio": "9",
+          "longo": "10",
+          "idea": "Cicle Balance (TPM) + Meno Ease (menopausa) + quiz FemTech. Primeira marca DTC a personalizar por fase do ciclo no Brasil."
+        },
+        {
+          "category": "mercado",
+          "tag": "Proteina Plant-Based R$2,2bi Ervilha Arroz 2026",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Proteina plant-based supera R$2,2bi: ervilha e arroz protagonistas, clean label total obrigatorio",
+          "summary": "Blend ervilha 70% + arroz 30% similar ao whey isolado. Sucralose e corantes sao dealbreakers. Mercado real e 5x os 7% veganos declarados com flexitarianos. Global: US$10,19bi ate 2029.",
+          "source": "VeganBusiness Mercado Plant-Based 2026 / Veggieroots Tendencias 2026",
+          "curto": "7",
+          "medio": "9",
+          "longo": "9",
+          "idea": "Plant Protein Premium: ervilha 70% + arroz 30%, 25g proteina, stevia + eritritol, SVB certificado. Plant Performance com adaptogenicos."
+        },
+        {
+          "category": "regulacao",
+          "tag": "ANVISA Proibicoes Propaganda Irregular Maio 2026",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "ANVISA proibicoes por propaganda irregular em maio 2026 — compliance total vira vantagem permanente",
+          "summary": "PEA 600, energeticos e mix de frutas proibidos por claims terapeuticos. Agencia reforca que suplemento nao e medicamento. Marcas conformes ganham confianca do consumidor que pesquisa antes de comprar.",
+          "source": "ANVISA Proibicoes 2026 / CNN Brasil / AgenciaBrasil ANVISA",
+          "curto": "10",
+          "medio": "8",
+          "longo": "7",
+          "idea": "Compliance 360: auditoria de claims 7 dias, hub de transparencia com laudos, comunicado a cada nova proibicao do setor."
+        },
+        {
+          "category": "tendencias",
+          "tag": "Millennials Preventivos +32% Novos Consumidores 28-40",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Millennials lideram suplementacao preventiva: +32% novos consumidores 28-40 anos com LTV 3,4x superior",
+          "summary": "Mentalidade preventiva: suplementar para nao adoecer. Pesquisam 7+ fontes antes de comprar. Instagram (53% conteudo saude) + podcasts. Preferem assinatura mensal. LTV 3,4x maior que compra avulsa.",
+          "source": "FoodConnection Mercado 2026 / FolhaVitoria Suplementos 2026",
+          "curto": "7",
+          "medio": "9",
+          "longo": "10",
+          "idea": "Starter Kit R$150. Assinatura com 20% desconto. Quiz de protocolo preventivo. Comunidade para assinantes. Meta 40% base em assinatura dez 2026."
+        }
+      ]
+    },
+    {
       "date": "2026-05-15",
       "dateLabel": "15 de Maio de 2026",
       "cards": [
