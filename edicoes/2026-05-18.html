@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wellness Intelligence | você-mais+</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --navy:#00276e;--yellow:#feda14;--black:#1d1d1b;--white:#ffffff;--gray-50:#f7f7f7;--gray-100:#efefef;--gray-200:#e0e0e0;--gray-400:#adadad;--gray-600:#6b6b6b;--gray-800:#2e2e2e;--border:rgba(0,0,0,0.09); }
+    body{font-family:'Inter',sans-serif;background:var(--white);color:var(--black);-webkit-font-smoothing:antialiased;}
+    header{background:var(--white);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100;}
+    .header-inner{max-width:1280px;margin:0 auto;padding:0 40px;height:64px;display:flex;align-items:center;justify-content:space-between;}
+    .logo-wrap{display:flex;align-items:center;gap:16px;text-decoration:none;}
+    .logo-img{height:22px;width:auto;}
+    .logo-divider{width:1px;height:20px;background:var(--gray-200);}
+    .logo-sub{font-size:10px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--gray-400);}
+    nav{display:flex;gap:2px;}
+    nav a{font-size:11px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--gray-600);text-decoration:none;padding:6px 14px;border-radius:100px;transition:all .15s;}
+    nav a:hover{color:var(--navy);background:var(--gray-50);}
+    nav a.active{color:var(--navy);background:var(--yellow);}
+    .header-date{font-size:11px;font-weight:500;color:var(--gray-400);}
+    .alert-strip{background:var(--navy);color:var(--white);padding:11px 40px;display:flex;align-items:center;justify-content:center;gap:20px;}
+    .alert-badge{font-size:9px;font-weight:800;letter-spacing:0.14em;text-transform:uppercase;background:var(--yellow);color:var(--navy);padding:4px 10px;border-radius:100px;white-space:nowrap;}
+    .alert-text{font-size:12.5px;opacity:.9;}
+    .alert-text strong{font-weight:700;}
+    main{max-width:1280px;margin:0 auto;padding:48px 40px 80px;}
+    .edition-bar{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px;padding-bottom:20px;border-bottom:1px solid var(--border);}
+    .edition-live{display:flex;align-items:center;gap:10px;}
+    .live-dot{width:7px;height:7px;background:var(--navy);border-radius:50%;animation:blink 1.8s infinite;}
+    @keyframes blink{0%,100%{opacity:1}50%{opacity:.25}}
+    .edition-label{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--navy);}
+    .edition-meta{font-size:11px;color:var(--gray-400);}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:76px;gap:14px;}
+    .card{border-radius:14px;padding:26px;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between;transition:transform .18s,box-shadow .18s;cursor:pointer;}
+    .card:hover{transform:translateY(-3px);box-shadow:0 14px 36px rgba(0,0,0,.10);}
+    .c-hero{grid-column:span 7;grid-row:span 5;}
+    .c-tall{grid-column:span 5;grid-row:span 5;}
+    .c-wide{grid-column:span 8;grid-row:span 4;}
+    .c-med{grid-column:span 4;grid-row:span 4;}
+    .c-sm{grid-column:span 4;grid-row:span 4;}
+    .c-third{grid-column:span 4;grid-row:span 3;}
+    .c-full{grid-column:span 12;grid-row:span 3;}
+    .bg-navy{background:var(--navy);color:var(--white);}
+    .bg-yellow{background:var(--yellow);color:var(--navy);}
+    .bg-black{background:var(--black);color:var(--white);}
+    .bg-gray800{background:var(--gray-800);color:var(--white);}
+    .bg-gray100{background:var(--gray-100);color:var(--black);}
+    .bg-white{background:var(--white);color:var(--black);border:1px solid var(--border);}
+    .tag{display:inline-flex;align-items:center;gap:5px;font-size:9px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;padding:4px 10px;border-radius:100px;width:fit-content;}
+    .bg-navy .tag,.bg-black .tag,.bg-gray800 .tag{background:rgba(255,255,255,.15);color:var(--white);}
+    .bg-yellow .tag{background:rgba(0,39,110,.12);color:var(--navy);}
+    .bg-gray100 .tag,.bg-white .tag{background:var(--navy);color:var(--white);}
+    .tag-dot{width:4px;height:4px;border-radius:50%;background:currentColor;opacity:.6;}
+    .headline{font-size:clamp(15px,2vw,24px);font-weight:800;line-height:1.15;letter-spacing:-.025em;margin-top:10px;}
+    .c-hero .headline{font-size:clamp(22px,2.8vw,36px);}
+    .c-full .headline{font-size:clamp(16px,2vw,26px);max-width:900px;}
+    .sub{font-size:12px;line-height:1.55;margin-top:8px;opacity:.72;}
+    .stat-num{font-size:clamp(36px,5vw,60px);font-weight:900;letter-spacing:-.04em;line-height:1;margin:10px 0 4px;}
+    .stat-desc{font-size:11px;font-weight:500;line-height:1.45;opacity:.70;}
+    .card-foot{display:flex;align-items:center;justify-content:space-between;margin-top:14px;}
+    .cta-label{font-size:9.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;opacity:.50;}
+    .arrow-btn{width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;}
+    .bg-navy .arrow-btn,.bg-black .arrow-btn,.bg-gray800 .arrow-btn{background:rgba(255,255,255,.15);}
+    .bg-yellow .arrow-btn{background:rgba(0,39,110,.12);}
+    .bg-gray100 .arrow-btn,.bg-white .arrow-btn{background:var(--navy);color:var(--white);}
+    .accent-bar{display:block;width:28px;height:3px;background:var(--yellow);border-radius:2px;margin-bottom:12px;}
+    .bg-yellow .accent-bar{background:var(--navy);}
+    .modal-overlay{position:fixed;inset:0;z-index:500;background:rgba(0,20,55,.55);backdrop-filter:blur(6px);display:flex;align-items:center;justify-content:center;padding:24px;opacity:0;pointer-events:none;transition:opacity .22s;}
+    .modal-overlay.open{opacity:1;pointer-events:all;}
+    .modal{background:var(--white);border-radius:20px;width:100%;max-width:640px;max-height:88vh;overflow-y:auto;box-shadow:0 32px 80px rgba(0,0,0,.22);transform:translateY(20px);transition:transform .25s;position:relative;}
+    .modal-overlay.open .modal{transform:translateY(0);}
+    .modal-header{background:var(--navy);border-radius:20px 20px 0 0;padding:28px 32px 24px;position:relative;}
+    .modal-tag{display:inline-flex;align-items:center;gap:5px;font-size:9px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;padding:4px 10px;border-radius:100px;background:rgba(255,255,255,.15);color:var(--white);margin-bottom:12px;}
+    .modal-headline{font-size:22px;font-weight:800;line-height:1.2;letter-spacing:-.02em;color:var(--white);}
+    .modal-stars{font-size:16px;margin-top:8px;}
+    .modal-close{position:absolute;top:20px;right:20px;width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.15);border:none;color:var(--white);font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .15s;}
+    .modal-close:hover{background:rgba(255,255,255,.28);}
+    .modal-body{padding:28px 32px 32px;}
+    .modal-section{margin-bottom:24px;}
+    .modal-section-title{font-size:9px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--gray-400);margin-bottom:8px;padding-bottom:8px;border-bottom:1px solid var(--border);}
+    .modal-text{font-size:14px;line-height:1.65;color:var(--black);}
+    .modal-source{display:flex;align-items:center;gap:8px;margin-top:12px;}
+    .modal-source-label{font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray-400);}
+    .modal-source-val{font-size:12px;font-weight:500;color:var(--navy);}
+    .modal-scores{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;}
+    .score-item{background:var(--gray-50);border:1px solid var(--border);border-radius:10px;padding:14px;text-align:center;}
+    .score-num{font-size:26px;font-weight:900;color:var(--navy);line-height:1;}
+    .score-label{font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gray-400);margin-top:4px;}
+    .modal-idea{background:var(--navy);border-radius:12px;padding:18px 20px;color:var(--white);}
+    .modal-idea-accent{display:inline-block;width:20px;height:3px;background:var(--yellow);border-radius:2px;margin-bottom:10px;}
+    .modal-idea-label{font-size:9px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;opacity:.5;margin-bottom:6px;}
+    .modal-idea-text{font-size:14px;font-weight:600;line-height:1.5;}
+    .archive{background:var(--gray-50);border-top:1px solid var(--border);padding:60px 40px;}
+    .archive-inner{max-width:1280px;margin:0 auto;}
+    .archive-hd{display:flex;align-items:center;gap:20px;margin-bottom:28px;}
+    .archive-title{font-size:10px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--gray-600);white-space:nowrap;}
+    .archive-line{flex:1;height:1px;background:var(--border);}
+    .archive-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px;}
+    .archive-card{display:block;background:var(--white);border:1px solid var(--border);border-radius:12px;padding:18px 20px;text-decoration:none;color:var(--black);transition:all .15s;}
+    .archive-card:hover{border-color:var(--navy);transform:translateY(-2px);}
+    .archive-date{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--navy);margin-bottom:6px;}
+    .archive-hl{font-size:13px;font-weight:600;line-height:1.4;margin-bottom:10px;}
+    .archive-tags{display:flex;flex-wrap:wrap;gap:5px;}
+    .archive-tags span{font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;background:var(--gray-100);color:var(--gray-600);padding:3px 8px;border-radius:100px;}
+    footer{background:var(--black);color:var(--white);padding:24px 40px;}
+    .footer-inner{max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;}
+    .footer-brand{display:flex;align-items:center;gap:16px;}
+    .footer-sep{width:1px;height:16px;background:rgba(255,255,255,.2);}
+    .footer-tagline{font-size:11px;font-weight:500;opacity:.4;}
+    .footer-note{font-size:10px;opacity:.3;}
+    @media(max-width:900px){
+      .header-inner{padding:0 20px;}main{padding:28px 16px 60px;}
+      .grid{grid-template-columns:1fr 1fr;grid-auto-rows:90px;gap:10px;}
+      .c-hero,.c-wide,.c-full{grid-column:span 2;grid-row:span 4;}
+      .c-tall,.c-med,.c-sm{grid-column:span 2;grid-row:span 3;}
+      .c-third{grid-column:span 1;grid-row:span 2;}
+      .alert-strip{flex-direction:column;gap:6px;padding:12px 20px;text-align:center;}
+      .archive{padding:40px 16px;}.footer-inner{flex-direction:column;gap:10px;text-align:center;}
+      .modal{border-radius:14px;}.modal-header{padding:22px 22px 18px;}.modal-body{padding:20px 22px 24px;}
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a class="logo-wrap" href="#"><img src="logo-positiva.png" alt="voce-mais+" class="logo-img" /><div class="logo-divider"></div><span class="logo-sub">Wellness Intelligence</span></a>
+    <nav><a href="#" class="active">Hoje</a><a href="#" onclick="document.querySelector('.archive').scrollIntoView({behavior:'smooth'});return false;">Arquivo</a></nav>
+    <span class="header-date">16 de Maio de 2026</span>
+  </div>
+</header>
+<div class="alert-strip">
+  <span class="alert-badge">&#9888; Urgente</span>
+  <span class="alert-text"><strong>ANVISA IN 438/2026: curcuma com risco hepatotoxico exige advertencia obrigatoria nos rotulos JA.</strong> Berberina (GLP-1 natural) explode no Brasil com prescricoes triplicando em 90 dias. <strong>Voce Mais+ deve adequar rotulos de curcuma imediatamente e avaliar pioneirismo DTC em berberina antes da commoditizacao.</strong></span>
+</div>
+<main>
+  <div class="edition-bar">
+    <div class="edition-live"><div class="live-dot"></div><span class="edition-label">Edicao de hoje &mdash; 16 de Maio de 2026</span></div>
+    <span class="edition-meta">13 tendencias analisadas &middot; Wellness Intelligence Voce Mais+</span>
+  </div>
+  <div class="grid">
+
+    <div class="card c-hero bg-navy" data-modal="1">
+      <div><span class="accent-bar"></span><div class="tag"><div class="tag-dot"></div>Mercado &middot; Berberina GLP-1 Natural Faux-Zempic Brasil 2026</div><div class="headline">Berberina vira o GLP-1 natural do Brasil: prescricoes triplicam em 90 dias, farmacias de manipulacao esgotam estoque e DTC sem lider — janela de 6 meses para pioneirismo no faux-zempic nacional antes da commoditizacao</div><p class="sub">Berberina ativa AMPK (sensor energetico do exercicio), eleva GLP-1 endogeno e melhora sensibilidade insulinica. Combinada a banaba + cromo + gymnema cria stack metabolico natural completo. Mercado brasileiro sem marca DTC dominante — crecimento explosivo ainda nao capturado.</p></div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <div class="card c-tall bg-yellow" data-modal="2">
+      <div><span class="accent-bar"></span><div class="tag"><div class="tag-dot"></div>Regulacao &middot; ANVISA IN 438/2026 Curcuma Hepatotoxicidade</div><div class="headline">ANVISA IN 438/2026: nova instrucao normativa sobre curcuma exige advertencia obrigatoria em rotulos por risco hepatotoxico confirmado — gestantes, hepatopatas e criancas proibidos de consumir</div><div class="stat-num">Abr/26</div><div class="stat-desc">Publicacao no DOU em 22/04/2026 — adequacao urgente obrigatoria para todas as marcas com curcuma no portfolio. Risco de recolhimento para nao conformidade.</div></div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <div class="card c-wide bg-black" data-modal="3">
+      <div><div class="tag"><div class="tag-dot"></div>Ciencia &middot; Lion s Mane Cogumelos Funcionais US$7,5bi 2030 NGF</div><div class="headline">Lion s Mane e cogumelos funcionais: mercado global projetado em US$7,5 bilhoes ate 2030 com CAGR 8,3% — hericenones e erinacinas estimulam NGF com neuroproteção documentada e o Brasil ainda sem lider DTC na categoria</div><p class="sub">Hericenones e erinacinas estimulam NGF protegendo neuronios e estimulando crescimento de novas conexoes. Reishi com beta-glucanas para imunidade. Chaga para antioxidantes. Cordyceps para mitocondria. Cogumelos funcionais: a categoria mais subestimada do wellness brasileiro em 2026.</p></div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <div class="card c-med bg-gray800" data-modal="4">
+      <div><div class="tag"><div class="tag-dot"></div>Ciencia &middot; Magnesio Bisglicinato vs Treonato Sono Cognicao 2026</div><div class="headline">Magnesio 2026: bisglicinato para sono profundo e ansiedade, L-treonato para cognicao e neuroproteção — 80% dos brasileiros deficientes e demanda por formas queladas cresce 45% ao ano</div><p class="sub">Bisglicinato: ativa GABA, relaxa musculatura, reduz temperatura corporal central — sono reparador. L-treonato: unica forma que atravessa barreira hematoencefalica — foco, memoria, neuroproteção. Oxido de Mg: descartado (menos de 4% de absorcao).</p></div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <div class="card c-sm bg-gray100" data-modal="5">
+      <div><div class="tag"><div class="tag-dot"></div>Ciencia &middot; Colageno Butantan Peptideos Hialuronidase 100%</div><div class="headline">Instituto Butantan identifica peptideos de colageno que inibem 100% da hialuronidase — nova fronteira para nutricosmetica brasileira com pesquisa inedita sobre o envelhecimento da pele e articulacoes</div><p class="sub">Quatro peptideos inibem totalmente a enzima que degrada acido hialuronico. Colageno tipo II hidrolisado (menor 3 kDa) atravessa intestino e chega a cartilagem. Meta-analise 2026 confirma melhora de hidratacao e elasticidade da pele.</p></div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <div class="card c-third bg-navy" data-modal="6">
+      <div><div class="tag"><div class="tag-dot"></div>Mercado &middot; Fibras Prebioticas Buscas +62% Sem Lider DTC</div><div class="headline">Fibras prebioticas: maior crescimento de buscas do setor (+62,3% em 12 meses) e mercado DTC sem nenhum lider consolidado no Brasil — janela estrutural aberta para Fiber Complex 5-em-1</div></div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <div class="card c-third bg-gray100" data-modal="7">
+      <div><div class="tag"><div class="tag-dot"></div>Ciencia &middot; Burnout Ashwagandha KSM-66 Cortisol -28% Adaptogenicos</div><div class="headline">Burnout epidemia: ashwagandha KSM-66 reduz cortisol 28% em 8 semanas — profissionais urbanos 30-50 anos sao novo publico 10x maior que atletas para adaptogenicos com crescimento de 35% no segmento</div></div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <div class="card c-third bg-white" data-modal="8">
+      <div><div class="tag"><div class="tag-dot"></div>Tendencias &middot; Omega-3 Algal Vegano DHA Plant-Based</div><div class="headline">Omega-3 algal: DHA de microalgas sem metais pesados para publico plant-based de R$2,2bi — absorcao equivalente ao de peixe e Brasil sem produto de referencia na categoria vegana de omega-3</div></div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <div class="card c-med bg-gray100" data-modal="9">
+      <div><div class="tag"><div class="tag-dot"></div>Mercado &middot; FemTech Hormonal 70% Monitoramento 2028 R$800M</div><div class="headline">FemTech hormonal como proximo paradigma: 70% das mulheres devem adotar monitoramento hormonal ate 2028 — saude hormonal natural estimada em R$800M e subatendida no DTC com ticket medio R$300+</div><p class="sub">18 milhoes de mulheres em menopausa no Brasil 2026. Vitex, amora, maca, yam mexicano e fitoestrogenios com prescricoes crescentes. Mulheres 30-55 anos: publico de maior LTV do setor wellness com demanda reprimida em DTC.</p></div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <div class="card c-wide bg-gray800" data-modal="10">
+      <div><div class="tag"><div class="tag-dot"></div>Mercado &middot; Proteina Plant-Based R$2,2bi Ervilha Arroz Protagonistas</div><div class="headline">Proteina plant-based supera R$2,2 bilhoes no Brasil em 2026: ervilha e arroz se consolidam como protagonistas com clean label total obrigatorio — 7% da populacao vegana equivale a 14 milhoes e mercado real e 5x maior com flexitarianos</div><p class="sub">Mercado global projetado US$10,19bi ate 2029 (CAGR 7,7%). Blend ervilha 70% + arroz 30% tem perfil de aminoacidos similar ao whey isolado. Sucralose e corantes sao dealbreakers para esse consumidor — stevia + eritritol + aroma natural e o padrao obrigatorio.</p></div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <div class="card c-med bg-black" data-modal="11">
+      <div><div class="tag"><div class="tag-dot"></div>Regulacao &middot; ANVISA Proibicoes Propaganda Irregular Serie 2026</div><div class="headline">ANVISA mantem serie de proibicoes por propaganda irregular maio 2026: PEA 600, energeticos e mix de frutas interditados — alegacoes terapeuticas sao alvo principal e marcas conformes ganham vantagem permanente</div><p class="sub">Multiplas proibicoes por claims de cura e tratamento nao aprovados. ANVISA reforca que suplemento nao e medicamento. Cada concorrente recolhido e uma oportunidade para marcas com compliance publicado e transparente.</p></div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <div class="card c-med bg-yellow" data-modal="12">
+      <div><div class="tag"><div class="tag-dot"></div>Tendencias &middot; Millennials Preventivos +32% Novos Consumidores 28-40</div><div class="headline">Millennials lideram suplementacao preventiva em 2026: +32% de novos consumidores 28-40 anos — longevidade funcional desde jovem, assinatura mensal e pesquisa antes de comprar definem o perfil de maior LTV do setor</div><div class="stat-num">+32%</div><div class="stat-desc">crescimento de novos consumidores millennials de suplementos em 2026 — LTV 3,4x superior vs compra avulsa. Canal de descoberta: Instagram 53% + podcasts medicos + medicos-influencers</div></div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <div class="card c-full bg-gray100" data-modal="13">
+      <div><div class="tag"><div class="tag-dot"></div>Analise de Cruzamento &middot; 16 Maio 2026 &middot; Tema Unificador</div><div class="headline">16 Mai: berberina GLP-1 urgente + curcuma IN 438 conformidade imediata + cogumelos janela + magnesio formas + fibras sem lider + burnout adaptogenicos + FemTech hormonal + millennials preventivos = sete vetores de acao em 90 dias</div><p class="sub">Tema unificador: ESPECIFICIDADE COMO VANTAGEM COMPETITIVA. O consumidor de 2026 sabe a diferenca entre bisglicinato e oxido, entre KSM-66 e ashwagandha generica. Marca que entrega especificidade cientifica + compliance total + personalizacao feminina + clean label verificavel ganha fidelizacao permanente no maior mercado da historia do wellness brasileiro.</p></div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+  </div>
+</main>
+
+<div class="archive">
+  <div class="archive-inner">
+    <div class="archive-hd"><span class="archive-title">Edicoes Anteriores</span><div class="archive-line"></div></div>
+    <div class="archive-grid">
+      <a class="archive-card" href="edicoes/2026-05-15.html"><div class="archive-date">15 de Maio de 2026</div><div class="archive-hl">Wellness US$6,8tri + suplementos BR 15% + ANVISA + psicobioticos + longevidade NMN + mulheres 79% + GutTok desinformacao + D3+K2 inverno</div><div class="archive-tags"><span>psicobioticos</span><span>mulheres</span><span>inverno</span></div></a>
+      <a class="archive-card" href="edicoes/2026-05-14.html"><div class="archive-date">14 de Maio de 2026</div><div class="archive-hl">GLP-1 Support urgente + Vitafoods tendencias + ANVISA curcuma + fibras boom + medicos-influencers + healthy aging + gummies crescendo</div><div class="archive-tags"><span>glp-1</span><span>vitafoods</span><span>anvisa</span></div></a>
+      <a class="archive-card" href="edicoes/2026-05-13.html"><div class="archive-date">13 de Maio de 2026</div><div class="archive-hl">Magnesio 70% + creatina cognitiva + NMN longevidade + psicobioticos + vitamina D pre-inverno + clean label + mulher lidera</div><div class="archive-tags"><span>magnesio</span><span>creatina</span><span>nmn</span></div></a>
+      <a class="archive-card" href="edicoes/2026-05-12.html"><div class="archive-date">12 de Maio de 2026</div><div class="archive-hl">GLP-1 generico urgente + inverno imunidade + omega-3 + curcumina + FemTech hormonal + sono + personalizacao IA</div><div class="archive-tags"><span>glp-1</span><span>imunidade</span><span>femtech</span></div></a>
+      <a class="archive-card" href="edicoes/2026-05-09.html"><div class="archive-date">9 de Maio de 2026</div><div class="archive-hl">Creatina feminina boom + vitamina D pre-inverno + cogumelos mainstream + ashwagandha + NMN longevidade</div><div class="archive-tags"><span>creatina-fem</span><span>vitamina-d</span><span>cogumelos</span></div></a>
+      <a class="archive-card" href="edicoes/2026-05-08.html"><div class="archive-date">8 de Maio de 2026</div><div class="archive-hl">GLP-1 redefine portfolio + fibras emergem + cognitivo multigeracional + inverno a vista + ANVISA intensifica</div><div class="archive-tags"><span>glp-1</span><span>fibras</span><span>nootropicos</span></div></a>
+      <a class="archive-card" href="edicoes/2026-05-07.html"><div class="archive-date">7 de Maio de 2026</div><div class="archive-hl">ANVISA cogumelos + curcuma + creatina longevidade + L-teanina viral + inverno chegando</div><div class="archive-tags"><span>anvisa</span><span>cogumelos</span><span>l-teanina</span></div></a>
+      <a class="archive-card" href="edicoes/2026-05-06.html"><div class="archive-date">6 de Maio de 2026</div><div class="archive-hl">Mercado R$13,8bi 2030 + omega-3 neuroproteção + clean label obrigatorio + IA personalizada</div><div class="archive-tags"><span>mercado</span><span>omega-3</span><span>clean-label</span></div></a>
+      <a class="archive-card" href="edicoes/2026-05-05.html"><div class="archive-date">5 de Maio de 2026</div><div class="archive-hl">ANVISA setembro + Bundle Inverno Imunidade + Faux-zempic natural + longevidade feminina</div><div class="archive-tags"><span>anvisa</span><span>inverno</span><span>faux-zempic</span></div></a>
+      <a class="archive-card" href="edicoes/2026-05-04.html"><div class="archive-date">4 de Maio de 2026</div><div class="archive-hl">GLP-1 remodela mercado + berberina metabolismo + psicobioticos cortisol consolidam Q2 2026</div><div class="archive-tags"><span>glp-1</span><span>berberina</span><span>psicobioticos</span></div></a>
+      <a class="archive-card" href="edicoes/2026-05-03.html"><div class="archive-date">3 de Maio de 2026</div><div class="archive-hl">Magnesio L-Treonato atravessa barreira cerebral + mercado feminino 58% + longevidade NAD+</div><div class="archive-tags"><span>magnesio-cognitivo</span><span>feminino</span><span>longevidade</span></div></a>
+      <a class="archive-card" href="edicoes/2026-05-01.html"><div class="archive-date">1 de Maio de 2026</div><div class="archive-hl">Intestino como centro do wellness: prebioticos + psicobioticos + fibra funcional triangulo estrategico</div><div class="archive-tags"><span>psicobioticos</span><span>prebioticos</span><span>gut-brain</span></div></a>
+      <a class="archive-card" href="edicoes/2026-04-30.html"><div class="archive-date">30 de Abril de 2026</div><div class="archive-hl">Psicobioticos ADM + burnout adaptogenicos + vitamina D inverno dominam Dia do Trabalhador</div><div class="archive-tags"><span>psicobioticos</span><span>adaptogenicos</span><span>vitamina-d</span></div></a>
+      <a class="archive-card" href="edicoes/2026-04-29.html"><div class="archive-date">29 de Abril de 2026</div><div class="archive-hl">Colageno vegetal avanca + creatina cognitiva + D3+K2 fundacionais</div><div class="archive-tags"><span>colageno</span><span>creatina</span><span>vitamina-d</span></div></a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand"><img src="logo-branca.png" alt="voce-mais+" style="height:18px;" /><div class="footer-sep"></div><span class="footer-tagline">Wellness Intelligence</span></div>
+    <span class="footer-note">Uso interno &mdash; Voce Mais+ &copy; 2026</span>
+  </div>
+</footer>
+
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal">
+    <div class="modal-header">
+      <div class="modal-tag" id="mTag"></div>
+      <div class="modal-headline" id="mHeadline"></div>
+      <div class="modal-stars" id="mStars"></div>
+      <button class="modal-close" id="modalClose">&#10005;</button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-section">
+        <div class="modal-section-title">Resumo e Analise</div>
+        <div class="modal-text" id="mSummary"></div>
+        <div class="modal-source"><span class="modal-source-label">Fonte</span><span class="modal-source-val" id="mSource"></span></div>
+      </div>
+      <div class="modal-section">
+        <div class="modal-section-title">Score de Impacto</div>
+        <div class="modal-scores">
+          <div class="score-item"><div class="score-num" id="mCurto"></div><div class="score-label">Curto Prazo</div></div>
+          <div class="score-item"><div class="score-num" id="mMedio"></div><div class="score-label">Medio Prazo</div></div>
+          <div class="score-item"><div class="score-num" id="mLongo"></div><div class="score-label">Longo Prazo</div></div>
+        </div>
+      </div>
+      <div class="modal-section">
+        <div class="modal-section-title">Ideia para Voce Mais+</div>
+        <div class="modal-idea"><div class="modal-idea-accent"></div><div class="modal-idea-label">Acao Recomendada</div><div class="modal-idea-text" id="mIdea"></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+var MODALS = {
+  1: {
+    tag: "Mercado - Berberina GLP-1 Natural Faux-Zempic Brasil Prescricoes Triplicam 2026",
+    stars: "&#11088;&#11088;&#11088;&#11088;&#11088;",
+    headline: "Berberina vira o GLP-1 natural do Brasil: prescricoes triplicam em 90 dias, farmacias de manipulacao esgotam estoque e DTC ainda sem lider consolidado — janela de 6 meses para pioneirismo antes da commoditizacao do faux-zempic nacional",
+    summary: "O fenomeno Ozempic/Wegovy criou demanda massiva por alternativas naturais com mecanismo similar. A berberina (alcaloide vegetal) emergiu como principal candidato: estudos documentam elevacao de GLP-1 endogeno, melhora de sensibilidade insulinica e reducao de HbA1c comparavel a metformina em alguns estudos. O MECANISMO: berberina ativa AMPK (proteina-quinase regulada por AMP), o sensor energetico do exercicio fisico. Melhora uptake de glicose muscular, reduz producao hepatica de glicose e aumenta sensibilidade insulinica. A COMBINACAO: berberina 500mg + banaba (acido corosolico) + cromo picolinato + gymnema sylvestre = stack metabolico natural completo. MERCADO BRASILEIRO: prescricoes em farmacias de manipulacao triplicaram em 90 dias. Redes DTC americanas (Thrive, Pendulum) ja faturam com berberina. Brasil sem marca DTC dominante. Consumidores usam faux-zempic no TikTok para descrever berberina, gerando buscas organicas crescentes.",
+    source: "BrazilHealth Nova Febre Suplementos EUA Brasil 2026 / Ekobe Tendencias Suplementos 2026 / FoodConnection Mercado Suplementos 2026 / Farmacotecnica Tendencias 2026 / Catarinense Pharma Wellness 2026",
+    curto: "9", medio: "10", longo: "8",
+    idea: "Berberine Metabolic Support Voce Mais+: (1) FORMULA: berberina HCl 500mg + extrato de banaba 150mg (min 1% acido corosolico) + cromo picolinato 200mcg + gymnema sylvestre 200mg (min 25% acidos gimnicos). 2 capsulas antes das principais refeicoes; (2) POSICIONAMENTO: suporte metabolico natural com a planta mais estudada para sensibilidade insulinica. Sem alegacao GLP-1 ou Ozempic - ANVISA nao permite. Comunicar AMPK e saude metabolica; (3) DIFERENCIAL: especificar extrato padronizado (berberina HCl, nao sulfato) e origem rastreavel; (4) PRECO: ticket R$90-130/mes. Alta margem justificada por materia-prima de qualidade; (5) TIMING: lancamento junho 2026 antes do pico de commoditizacao. Canal: nutris, endocrinologistas, podcasts de longevidade e metabolismo."
+  },
+  2: {
+    tag: "Regulacao - ANVISA IN 438/2026 Curcuma Hepatotoxicidade Advertencia Obrigatoria",
+    stars: "&#11088;&#11088;&#11088;&#11088;&#11088;",
+    headline: "ANVISA publica IN 438/2026 em 22 de abril de 2026: curcuma com risco hepatotoxico confirmado em pos-mercado — advertencia obrigatoria em rotulos, novos limites de curcuminoides e restricao para gestantes, lactantes, criancas e hepatopatas. Marca sem adequacao corre risco de recolhimento imediato",
+    summary: "A Instrucao Normativa 438/2026 atualiza a IN 28/2018 apos identificacao de casos suspeitos de intoxicacao hepatica por suplementos com curcuma. MOTIVACAO: monitoramento pos-mercado e avaliacoes internacionais identificaram casos de hepatotoxicidade associados a curcuma/curcuminoides em doses elevadas. AS TRES MUDANCAS: (1) ADVERTENCIA OBRIGATORIA NO ROTULO: Este produto nao deve ser consumido por gestantes, lactantes, criancas, pessoas com doencas hepaticas, biliares ou com ulceras gastricas; (2) NOVOS LIMITES DE CURCUMINOIDES: calculados pela soma dos tres componentes (curcumina + demetoxicurcumina + bisdemetoxicurcumina totais); (3) NOVO INGREDIENTE PERMITIDO: tetraidrocurcuminoides incluidos na lista, com restricao de mistura com extrato natural no mesmo produto. IMPACTO IMEDIATO: qualquer produto com curcuma, curcumina ou extrato de Curcuma longa requer rotulo adequado urgentemente.",
+    source: "Agencia Brasil ANVISA Curcuma Suplementos Abril 2026 / Anvisa.gov.br Regras Curcuma / G37 ANVISA Curcuma / OTempo Curcuma Suplementos / Diario do Comercio ANVISA IN 438",
+    curto: "10", medio: "7", longo: "5",
+    idea: "Plano de Adequacao IN 438/2026 Voce Mais+: (1) AUDITORIA IMEDIATA (48h): mapear todos os SKUs com curcuma, curcumina ou Curcuma longa. Urgencia maxima; (2) CALCULO DE CURCUMINOIDES TOTAIS: contatar fornecedor da materia-prima para composicao exata (soma dos tres componentes). Verificar conformidade com novo limite; (3) REDESENHO DE ROTULO (15 dias para arte, 30 para producao): incluir advertencia obrigatoria em destaque conforme especificacao da IN 438; (4) REVISAO DE MARKETING: briefar equipe sobre proibicao de claims hepatoprotetores para curcuma - paradoxo regulatorio (estudos mostram protecao hepatica em doses moderadas, mas nova regulacao exige cautela em doencas hepaticas preexistentes); (5) NOTA TECNICA PUBLICA: publicar posicionamento sobre conformidade total com IN 438 - diferencial de transparencia vs concorrentes que ainda nao se adequaram."
+  },
+  3: {
+    tag: "Ciencia - Cogumelos Funcionais Lion Mane Reishi NGF Neuroproteção US$7,5bi",
+    stars: "&#11088;&#11088;&#11088;&#11088;",
+    headline: "Cogumelos funcionais: mercado global projeta US$7,5 bilhoes ate 2030 com CAGR 8,3% — Lion Mane estimula NGF com neuroproteção documentada, Reishi modula imunidade com beta-glucanas e Chaga oferece antioxidante de alto espectro. Brasil sem nenhum lider DTC na categoria mais subestimada do wellness",
+    summary: "O mercado de cogumelos funcionais representa uma das maiores oportunidades nao capturadas do wellness brasileiro em 2026. OS COGUMELOS-CHAVE: (1) LION MANE: hericenones e erinacinas estimulam NGF (Nerve Growth Factor) protegendo neuronios e estimulando crescimento de novas conexoes. Estudos em adultos com comprometimento cognitivo leve mostram melhora mensuravel. Pesquisa de 2026 avanca em neuroproteção anti-Alzheimer; (2) REISHI: beta-glucanas modulam celulas NK e macrofagos. Triterpenos com acao anti-inflamatoria e adaptogenica. Para imunidade e qualidade de sono; (3) CHAGA: ergosterol peroxido com atividade antioxidante e imunorreguladora; (4) CORDYCEPS: melhora VO2 max e funcao mitocondrial para atletas. FORMATOS CRESCENTES: capsulas de extrato padronizado (min 30% beta-glucanas), gummies 10-em-1 e po para cafe. Buscas por cogumelos funcionais crescem aceleradamente no Brasil em 2026 sem marca de referencia.",
+    source: "Vitaminer BR Cogumelos Lion Mane Chaga 2026 / Fortune Business Insights Functional Mushrooms Market / Selektz Melhores Lion Mane 2026 / Vitaminer BR Gummies Cogumelo Adultos / Naturecan PT Cogumelo Beneficios",
+    curto: "6", medio: "9", longo: "10",
+    idea: "Linha Functional Mushrooms Voce Mais+: (1) BRAIN SHIELD: Lion Mane Extract 500mg (min 30% hericenones + erinacinas) + Reishi Extract 250mg (min 30% beta-glucanas) + Chaga Extract 200mg. Neuroproteção + imunidade; (2) SPORT SHROOM: Cordyceps 400mg + Reishi 200mg + Lion Mane 200mg para performance atletica e recuperacao; (3) GUMMY FORMAT: gummies de cogumelo 10-em-1 para consumidor que nao toma capsulas - formato viral no TikTok; (4) DIFERENCIAL: especificar percentagem de beta-glucanas e hericenones no rotulo; (5) CANAL: neurocientistas, medicos funcionais, biohackers, podcasts de longevidade. Preco: R$80-150/mes."
+  },
+  4: {
+    tag: "Ciencia - Magnesio Bisglicinato vs L-Treonato Sono Cognicao Formas 2026",
+    stars: "&#11088;&#11088;&#11088;&#11088;",
+    headline: "Magnesio em 2026 e uma decisao de forma: bisglicinato para sono e ansiedade, L-treonato para cognicao e neuroproteção cerebral — 80% dos brasileiros deficientes e demanda por formas queladas cresce 45% ao ano enquanto oxido e descartado por menos de 4% de absorcao",
+    summary: "A ciencia do magnesio em 2026 consolidou que a forma importa tanto quanto o mineral. MAPA DAS FORMAS: (1) MAGNESIO BISGLICINATO: biodisponibilidade de 80%+. Glicina e neurotransmissor inibitorio que potencializa relaxamento muscular e reduz temperatura corporal central - facilitando inicio e manutencao do sono. Reduz escores de insonia em 4 semanas (estudos 2024-2026). Indicado para: insonia, ansiedade, tensao muscular, TPM; (2) MAGNESIO L-TREONATO: unica forma que atravessa barreira hematoencefalica com alta afinidade. Eleva Mg no liquor cefalorraquidiano. Indicado para: memoria, foco, neuroproteção, prevencao de declinio cognitivo. Dose: 2000mg de forma = 144mg Mg elementar; (3) O CICLO VICIOSO: cortisol depleta Mg rapidamente - estresse cronizado esgota reservas, criando ciclo ansiedade-insonia-deficiencia. 80% da populacao brasileira com ingestao insuficiente. OPORTUNIDADE: produto que explica a diferenca gera confianca e retencao superiores.",
+    source: "Tua Saude Magnesio Treonato Dimalato 2026 / TuaSaude Magnesio Fadiga Sono Ansiedade 2026 / Procuromaissaude Magnesio Glicinato Sono 2026 / GeniusNutra Melhor Magnesio 2026 / NatusVita Magnesio FAQ Dvidas",
+    curto: "8", medio: "9", longo: "9",
+    idea: "Linha Magnesio Dupla Acao Voce Mais+: (1) SLEEP MAG: Mg bisglicinato 300mg + L-teanina 100mg + melissa 200mg + melatonina 0,21mg. Capsula noturna. Sono profundo e ansiedade; (2) BRAIN MAG: Mg L-treonato 2000mg (= 144mg Mg elem) + lion mane 200mg + B6 P5P 10mg. Para cognicao e foco diurno; (3) BUNDLE MAGNESIUM DUO: Sleep Mag + Brain Mag = protocolo completo dia e noite. Ticket R$150-180/mes; (4) CONTEUDO: O magnesio que voce toma importa - guia das formas em linguagem simples. Viral organico garantido; (5) ROTULO TRANSPARENTE: declarar Mg elementar por dose (nao so a forma) e biodisponibilidade estimada. Diferencial vs concorrentes que ocultam essa informacao."
+  },
+  5: {
+    tag: "Ciencia - Colageno Butantan Peptideos Hialuronidase 100% Nutricosmetica 2026",
+    stars: "&#11088;&#11088;&#11088;&#11088;",
+    headline: "Instituto Butantan identifica peptideos de colageno com inibicao de 100% da hialuronidase em pesquisa inedita — enzima que acelera envelhecimento da pele e articulacoes bloqueada por moleculas naturais. Nova fronteira para nutricosmetica brasileira de alta margem",
+    summary: "Pesquisa do Instituto Butantan publicada em 2026 identificou quatro peptideos especificos de colageno capazes de inibir em 100% a acao da hialuronidase - enzima que degrada acido hialuronico em articulacoes e tecido conjuntivo. O CONTEXTO CLINICO: peptideos de colageno hidrolisado com peso molecular menor que 3 kDa atravessam a barreira intestinal e chegam ate fibroblastos na derme, estimulando producao endogena de colageno, elastina e acido hialuronico. Colageno tipo II hidrolisado estimula condrocitos na cartilagem articular. A EVIDENCIA: meta-analise Effects of Oral Collagen for Skin Anti-Aging confirma melhora significativa de hidratacao e elasticidade. Estudos clinicos 2026 ampliam evidencia em pele e cartilagem. OPORTUNIDADE: colageno e o segundo suplemento mais vendido para mulheres no Brasil 2026. Pesquisa nacional do Butantan cria narrativa diferenciadora de orgulho nacional.",
+    source: "Butantan.gov.br Peptideos Colageno Hialuronidase Pesquisa 2026 / TuaSaude Colageno Hidrolisado Articulacoes Pele 2026 / TuaSaude Colageno Tipo II 2026 / TerrabrasilNoticias Colageno Mulheres 45 Anos 2026 / ClinicaConsulta Colageno Evidencia",
+    curto: "6", medio: "8", longo: "9",
+    idea: "Collagen Complex Premium Voce Mais+: (1) SKIN COLLAGEN: peptideos tipo I hidrolisado 5g + acido hialuronico 80mg + vitamina C 200mg + zinco 7mg + biotina 2500mcg. Sache dissolvel sabor neutro. Pele, cabelos e unhas; (2) JOINT COLLAGEN: colageno tipo II nativo (UC-II) 40mg + tipo II hidrolisado 3g + MSM 500mg + boswellia 200mg + vitamina C 100mg. Articulacoes e cartilagem; (3) BUNDLE TOTAL COLLAGEN: Skin + Joint = protocolo anti-aging completo. Ticket R$180-240/mes; (4) STORYTELLING: A pesquisa do Butantan - o colageno brasileiro que inibe a enzima do envelhecimento. Diferenciacao por ciencia nacional; (5) PUBLICO: mulheres 35-60 anos, praticantes de esportes de impacto, 45+ anos como core target."
+  },
+  6: {
+    tag: "Mercado - Fibras Prebioticas Buscas +62,3% 12 Meses Brasil DTC Sem Lider",
+    stars: "&#11088;&#11088;&#11088;",
+    headline: "Fibras prebioticas: maior crescimento de buscas do setor com +62,3% em 12 meses e mercado completamente sem lider DTC consolidado no Brasil — janela estrutural para Fiber Complex 5-em-1 antes da commoditizacao de uma categoria em formacao explosiva",
+    summary: "As fibras prebioticas emergem como a categoria de maior crescimento organico do mercado brasileiro em 2026, com 62,3% de aumento em buscas pelo Google Trends e 43,8% em buscas gerais por fibras alimentares. O DEFICIT: ingestao media brasileira de 13-15g/dia vs recomendacao de 25-38g. O consumidor entendeu que fibras alimentam bacterias intestinais boas mas o mercado DTC nao tem referencia clara. AS FIBRAS PRINCIPAIS: psyllium (gel que retarda absorcao de glicose e reduz colesterol), inulina e FOS (alimentam Bifidobacterium), beta-glucana (efeito cardiovascular confirmado), arabinoxilana (fermenta rapidamente para Faecalibacterium). OPORTUNIDADE: primeiro mover com produto bem posicionado captura share de categoria em formacao. Consumidor nao sabe diferenciar e compra o que aparece primeiro nas buscas.",
+    source: "FoodConnection Pilares Mercado Suplementos 2026 / Catarinense Pharma Tendencias Wellness 2026 / Farmacotecnica 5 Tendencias 2026 / Ekobe Tendencias Nutraceuticos 2026 / Exame Temas Alta Industria 2026",
+    curto: "7", medio: "9", longo: "10",
+    idea: "Fiber Complex 5-in-1 Voce Mais+: (1) FORMULA: psyllium 3g + inulina 2g + FOS 1g + beta-glucana 500mg + arabinoxilana 500mg + vitamina B12 10mcg. Sache de 8g dissolvel. 7g de fibra prebiotica por dose; (2) POSICIONAMENTO: O pre-biotics completo para o seu intestino - 5 fontes de fibra, 7g por dose, uma vez ao dia. Clean label: stevia + aroma natural; (3) PRECO: R$60-80/mes. Produto de entrada para upsell para psicobiotico; (4) BUNDLE GUT SYSTEM: Fiber Complex + Psychobiotic Daily = protocolo completo intestinal; (5) CAMPANHA: Voce come fibra suficiente? Teste de deficit em 60 segundos com CTA para produto."
+  },
+  7: {
+    tag: "Ciencia - Burnout Epidemia Ashwagandha KSM-66 Cortisol -28% Rhodiola 2026",
+    stars: "&#11088;&#11088;&#11088;&#11088;",
+    headline: "Burnout epidemia global em 2026: ashwagandha KSM-66 reduz cortisol 27,9% em 8 semanas — profissionais urbanos 30-50 anos surgem como novo publico 10x maior que atletas para adaptogenicos com crescimento de 35% no segmento e ticket medio premium",
+    summary: "O burnout foi declarado epidemia pela OMS e os dados brasileiros confirmam: 47% dos trabalhadores relatam sintomas de esgotamento cronico em 2026. OS ADAPTOGENICOS EM DESTAQUE: (1) ASHWAGANDHA KSM-66: extrato mais estudado com 22+ ensaios clinicos. Reducao de cortisol 27,9% em 8 semanas vs placebo. Melhora de PSQI (sono) e GAD-7 (ansiedade) documentadas. KSM-66 e extrato de raiz com maior concentracao e biodisponibilidade comprovada; (2) RHODIOLA ROSEA: rosavinas e salidrosides modulam eixo HPA. Resistencia a fadiga mental e fisica. Especialmente eficaz em privacao de sono; (3) COMBINACAO: ashwagandha + rhodiola + magnesio + L-teanina = stack adaptogenico completo para profissional urbano sobrecarregado. DADO DE MERCADO: crescimento de 35% no segmento de adaptogenicos em 2026 vs 2025, com demografico migrando de atletas para profissionais.",
+    source: "Umaseostras Adaptogenicos Estresse 2026 / Tecnovida Adaptogenicos Estresse Fadiga 2026 / DataBridge Adaptogen Market Global 2026 / FarmaciaSempreviva Mix Adaptogenicos / Hile Suplementos Inovacoes 2026",
+    curto: "8", medio: "9", longo: "8",
+    idea: "Burnout Relief Stack Voce Mais+: (1) EQUILIBRIUM DAILY: ashwagandha KSM-66 300mg (min 5% withanolides) + rhodiola rosea 200mg (min 3% rosavinas) + magnesio bisglicinato 150mg + L-teanina 100mg. Para o profissional que precisa de resultado sem dependencia; (2) POSICIONAMENTO: formulado com extratos padronizados que os estudos usaram (KSM-66, nao generica). Diferencial mensuravel - especificar extrato no rotulo; (3) BUNDLE COMPLETE MIND: Equilibrium Daily + BRAIN MAG + Sleep Mag = protocolo completo anti-burnout. Ticket R$250-300/mes; (4) B2B OPPORTUNITY: empresas com programas de saude corporativa como canal - RH como parceiro estrategico; (5) PRECO: R$120-160/mes. Ticket alto justificado por extratos certificados."
+  },
+  8: {
+    tag: "Tendencias - Omega-3 Algal Vegano DHA 500mg Plant-Based R$2,2bi",
+    stars: "&#11088;&#11088;&#11088;",
+    headline: "Omega-3 algal emerge como alternativa vegana premium: DHA 500mg sem risco de metais pesados, absorcao equivalente ao de peixe e crescimento acelerado com mercado plant-based de R$2,2 bilhoes — Brasil ainda sem produto de referencia na categoria vegana de omega-3",
+    summary: "O omega-3 algal (DHA de microalgas) surge como proximo grande movimento do mercado de omega-3 no Brasil. O PROBLEMA DO CONVENCIONAL: peixe acumula mercurio, chumbo e arsenio do oceano - suplementos precisam de destoxificacao industrial. 7% da populacao brasileira e vegana (14 milhoes) e rejeita produto animal. A SOLUCAO ALGAL: microalgas produzem DHA diretamente - peixe consome alga e acumula. Suplemento algal vai direto na fonte. Zero risco de metais pesados. DHA algal tem biodisponibilidade equivalente ao DHA de peixe em estudos comparativos. Dose eficaz: 400-500mg DHA/capsula. OPORTUNIDADE: mercado plant-based de R$2,2bi crescendo + mercado omega-3 consolidado = interseccao sem produto lider. ALA de chia e linho tem conversao para DHA inferior a 10% - DHA algal e a unica opcao eficaz para veganos.",
+    source: "VeganBusiness Mercado Plant-Based 2026 / Veggieroots Tendencias Vegano 2026 / TuaSaude Omega-3 EPA DHA Forma 2026 / FoodConnection Mercado Suplementos / Nutrify Omega-3",
+    curto: "5", medio: "8", longo: "9",
+    idea: "Omega-3 Algal Voce Mais+: (1) PRODUTO: DHA Algal 500mg por capsula vegetal. Producao por microalgas Schizochytrium sp. Certificado: IFOS ou MEG-3, vegano SVB, nao-OGM, sem metais pesados com laudo publico por lote; (2) POSICIONAMENTO: O omega-3 que vem da origem - sem peixe, sem metais pesados, com a mesma potencia. Para quem vive melhor E de forma mais consciente; (3) BUNDLE VEGANO COMPLETO: Omega-3 Algal + Proteina Plant-Based + Fiber Complex + D3 Vegana (liquen) = protocolo completo. Ticket R$250-300/mes; (4) CERTIFICACAO: SVB como credencial publica; (5) CANAL: influencers veganos, nutricionistas funcionais, grupos plant-based. Lancamento set-out 2026."
+  },
+  9: {
+    tag: "Mercado - FemTech Hormonal 70% Monitoramento 2028 R$800M Subatendido",
+    stars: "&#11088;&#11088;&#11088;&#11088;",
+    headline: "FemTech hormonal como proximo paradigma: 70% das mulheres devem adotar monitoramento hormonal ate 2028 — suplementacao personalizada por ciclo e menopausa cria tier premium com ticket R$300+ e LTV 3x superior. Mercado de saude hormonal natural estimado em R$800M e subatendido no DTC",
+    summary: "A integracao entre tecnologia de monitoramento hormonal e suplementacao natural esta criando novo mercado de alto valor em 2026. O CONTEXTO: 18 milhoes de mulheres em menopausa no Brasil em 2026. 70% em perimenopausa com sintomas que impactam qualidade de vida. A OPORTUNIDADE SUBATENDIDA: farmacias de manipulacao dominam prescricoes hormonais naturais, mas DTC sem produto de referencia acessivel. OS FITOHORMIONIOS MAIS PRESCRITOS: (1) VITEX: modula prolactina e equilibra progesterona/estrogenio - TPM e ciclo irregular; (2) AMORA PRETA: fitoestrogenios para menopausa e fogachos; (3) MACA PERUANA: equilibrio hormonal geral, libido e energia; (4) YAM MEXICANO: precursor de progesterona natural; (5) ISOFLAVONAS: efeito estrogenico moderado em menopausa. FEMTECH: apps de ciclo integrando recomendacoes de suplementos, wearables hormonais chegando ao Brasil em 2026.",
+    source: "Bonitamulher Saude da Mulher 2026 / Farmacotecnica Tendencias Femininas 2026 / Sanavita Saude da Mulher / NatusVita Menopausa TPM / FSLFarma Fitohormonios Femininos",
+    curto: "7", medio: "9", longo: "10",
+    idea: "Linha Hormonal Feminina Voce Mais+: (1) CICLE BALANCE (TPM e ciclo): vitex 250mg + amora 250mg + maca 500mg + B6 P5P 25mg + zinco 8mg + magnesio 100mg. Fase lutea do ciclo; (2) MENO EASE (menopausa): isoflavonas 40mg + amora 200mg + yam 150mg + vitex 100mg + vit E 100mg + magnesio 200mg; (3) GLOW HORMONAL BUNDLE: Cicle Balance + Skin Collagen + D3+K2 = protocolo feminino completo. Ticket R$280-340/mes; (4) FEMTECH INTEGRATION: quiz no site perguntando fase do ciclo, sintomas e objetivo. Recomendacao automatica. Primeira marca DTC a fazer isso no Brasil; (5) PRESCRITORES: ginecologistas, medicas da mulher, nutris especializadas. Conteudo: menopausa destigmatizada, saude hormonal feminina."
+  },
+  10: {
+    tag: "Mercado - Proteina Plant-Based R$2,2bi Ervilha Arroz Vegano Clean Label 2026",
+    stars: "&#11088;&#11088;&#11088;&#11088;",
+    headline: "Proteina plant-based supera R$2,2 bilhoes no Brasil em 2026: ervilha e arroz como protagonistas, clean label total como prerrequisito obrigatorio — 14 milhoes de veganos + 50 milhoes de flexitarianos criam mercado potencial muito alem dos 7% veganos declarados",
+    summary: "O mercado brasileiro de proteina plant-based superou projecoes para 2026, atingindo R$2,2 bilhoes com CAGR de 7,7% ao ano. OS INGREDIENTES PROTAGONISTAS: (1) PROTEINA DE ERVILHA: perfil de aminoacidos quase completo, alta digestibilidade (PDCAAS 0,82-0,93), rica em leucina, hipoalergenica e textura suave vs whey; (2) PROTEINA DE ARROZ: complementa ervilha com aminoacidos sulforados. Blend 70:30 (ervilha:arroz) tem perfil similar ao whey isolado. Facil digestao para intestino sensivel. CLEAN LABEL COMO PRERREQUISITO: consumidor vegano pesquisa rotulo extensivamente. Sucralose, corantes FD&C e maltodextrina sao dealbreakers imediatos. Stevia + eritritol + baunilha natural = padrao vencedor. O MERCADO REAL: 7% veganos declarados = 14,7 milhoes. Mas 35% da populacao reduz proteina animal parcialmente (flexitarianos) - potencial total muito superior.",
+    source: "VeganBusiness Mercado Plant-Based BR Supera 2026 / VeganBusiness Proteina Vegana 2026 / VGang Crescimento Vegano Brasil / Veggieroots Veganuary 2026 / MyBest Proteinas Veganas 2026",
+    curto: "7", medio: "9", longo: "9",
+    idea: "Plant Protein Premium Voce Mais+: (1) FORMULA FLAGSHIP: blend ervilha 70% + arroz 30%. 25g proteina por dose. BCAAs naturais (leucina 2,2g). Adocado com stevia + eritritol. Sabores: baunilha natural, cacau 70%, cafe. Capsula vegetal, embalagem sustentavel; (2) CLEAN LABEL CERTIFICADO: SVB vegano, nao-OGM, sem gluten, sem corantes artificiais. QR code no rotulo com acesso a laudos; (3) VERSAO FUNCIONAL: Plant Protein + ashwagandha KSM-66 150mg + rhodiola 100mg = proteina + recuperacao + adaptogenicos. Nome: PLANT PERFORMANCE; (4) PRECO: R$80-120/mes (30 doses). Competitivo com whey premium; (5) CANAL: influencers veganos, yoga e corrida, grupos de sustentabilidade, Google Ads para busca de proteina vegana."
+  },
+  11: {
+    tag: "Regulacao - ANVISA Proibicoes Propaganda Irregular Serie Maio 2026",
+    stars: "&#11088;&#11088;&#11088;&#11088;",
+    headline: "ANVISA mantem serie de proibicoes por propaganda irregular em maio 2026: PEA 600, energeticos e mix de frutas interditados por claims terapeuticos nao aprovados — agencia reforca que suplemento nao e medicamento e compliance total vira vantagem competitiva permanente",
+    summary: "A ANVISA publicou multiplas resolucoes em 2026 proibindo suplementos por propaganda irregular. OS CASOS: (1) PEA 600 e similares: proibidos por sites prometendo reducao de dor com alegacoes terapeuticas sem aprovacao; (2) Energeticos com claims de desempenho sexual ou tratamento de disfuncao: proibidos por alegacao medicamentosa sem registro; (3) Mix de frutas liofilizadas com promessas de detox hepatico ou emagrecimento: proibidos por alegacoes funcionais nao aprovadas; (4) Suspensao de duas marcas em janeiro 2026 por descumprimento reiterado. O PARADOXO COMPETITIVO: cada marca proibida e oportunidade para marcas conformes - consumidor que buscava produto proibido precisa de alternativa confiavel. REGRA DE OURO ANVISA: suplemento pode alegar suporte a funcoes normais do organismo (ex: contribui para funcao imunologica normal), nunca tratar, curar ou prevenir doenca especifica.",
+    source: "ANVISA Proibe Suplementos Propaganda 2026 / CNN Brasil Proibicao Suplementos 2026 / AgenciaBrasil ANVISA Suspensao Suplementos / SaudeAcessivel ANVISA Suplementos / Assifarma ANVISA Novas Regras",
+    curto: "10", medio: "8", longo: "7",
+    idea: "Programa Compliance 360 Voce Mais+: (1) AUDITORIA URGENTE (7 dias): revisar todos os textos de marketing, site, redes sociais, emails e rotulos. Identificar qualquer claim interpretavel como terapeutico; (2) GUIA INTERNO DE CLAIMS: documento com alegacoes aprovadas pela ANVISA para cada ingrediente (baseado em IN 75/2020 e atualizacoes 2026); (3) HUB DE TRANSPARENCIA: voce-mais.com/compliance com laudos por lote, numeros ANVISA, fichas tecnicas. Compliance como argumento de venda; (4) COMUNICADO PUBLICO: nota Voce Mais+ e 100% conforme - nosso compromisso com a sua seguranca. Publicar quando houver nova proibicao no setor; (5) MONITORAMENTO: assinar alertas ANVISA para responder com comunicado de conformidade imediatamente."
+  },
+  12: {
+    tag: "Tendencias - Millennials Suplementacao Preventiva +32% Novos 28-40 Anos 2026",
+    stars: "&#11088;&#11088;&#11088;&#11088;",
+    headline: "Millennials lideram adocao de suplementacao preventiva em 2026: +32% de novos consumidores 28-40 anos — geracao que pesquisa antes de comprar, prioriza longevidade funcional desde jovem e prefere assinatura mensal com LTV 3,4x superior a compra avulsa",
+    summary: "O perfil do consumidor de suplementos brasileiro mudou estruturalmente em 2026. Millennials (28-40 anos) ultrapassaram baby boomers como principal vetor de crescimento do setor. O QUE MUDOU: (1) MENTALIDADE: de reativo (comprar quando sentir sintoma) para preventivo (suplementar para nao adoecer). Longevidade funcional desde jovem e o conceito central dessa geracao; (2) COMPORTAMENTO DIGITAL: pesquisam 7+ fontes antes de comprar. Conferem estudos, verificam ingredientes, seguem medicos-influencers no Instagram e podcasts de saude; (3) FORMATO PREFERIDO: assinatura mensal (menos fricao, melhor custo-beneficio). LTV 3,4x superior a compra avulsa; (4) OS PROTOCOLOS MAIS ADOTADOS: magnesio + omega-3 + D3+K2 como base. Adaptogenicos para produtividade. Colageno para longevidade; (5) CANAL DE DESCOBERTA: Instagram (53% do conteudo saude), podcasts, TikTok. Medicos e nutris como principais referencias. DADO-CHAVE: millennials tem 15-20 anos de potencial de consumo a frente - o cliente de maior LTV do setor.",
+    source: "FoodConnection Mercado Suplementos 2026 / Catarinense Pharma Wellness 2026 / InfoMoney Futuro Wellness 2026 / FolhaVitoria Suplementos Mais Usados 2026 / TimesBrasil Wellness Crescimento",
+    curto: "7", medio: "9", longo: "10",
+    idea: "Estrategia Millennial Voce Mais+: (1) STARTER KIT: bundle de entrada - D3+K2 + magnesio bisglicinato + omega-3 TG + guia digital de suplementacao preventiva. R$150 kit de 30 dias. Fricao zero para primeiro uso; (2) MODELO DE ASSINATURA: desconto 20% + frete gratis na assinatura mensal. Programa de fidelidade com pontos. Meta: 40% da base em assinatura ate dez 2026; (3) EDUCACAO PRIMEIRO: serie de conteudo Protocolo Preventivo 30-40 anos com medico parceiro. Educar antes de vender; (4) QUIZ DE PROTOCOLO: 8 perguntas no site gerando protocolo personalizado para fase de vida do millennial. Converte 35% mais do que pagina generica; (5) COMUNIDADE: grupo com acesso a medicos e nutris para assinantes. Retencao por comunidade."
+  },
+  13: {
+    tag: "Analise de Cruzamento - 16 Maio 2026 - Especificidade como Vantagem Competitiva",
+    stars: "&#11088;&#11088;&#11088;&#11088;&#11088;",
+    headline: "16 Mai: berberina GLP-1 urgente + curcuma IN 438 conformidade imediata + cogumelos janela + magnesio formas + fibras sem lider + burnout adaptogenicos + FemTech hormonal + millennials preventivos = sete vetores de acao em 90 dias. Tema unificador: ESPECIFICIDADE como vantagem permanente",
+    summary: "TEMA UNIFICADOR DA EDICAO 16 MAI: ESPECIFICIDADE COMO VANTAGEM COMPETITIVA. O consumidor brasileiro de 2026 e o mais informado da historia do setor. Ele sabe a diferenca entre bisglicinato e oxido, entre KSM-66 e ashwagandha generica, entre colageno tipo I e tipo II. A marca que entrega especificidade cientifica + compliance regulatorio proativo + personalizacao feminina + clean label verificavel ganha fidelizacao permanente. SETE JANELAS IDENTIFICADAS: (1) BERBERINA (6 meses de vantagem): DTC sem lider, demanda explosiva, ticket alto. Lancamento junho urgente; (2) CURCUMA IN 438 (adequacao em 7-14 dias): risco legal real de recolhimento; (3) COGUMELOS FUNCIONAIS (12-18 meses de janela): categoria em formacao com evidencia robusta e zero competidor DTC; (4) MAGNESIO FORMAS (oportunidade imediata): Sleep Mag + Brain Mag em 30-45 dias; (5) FIBRAS PREBIOTICAS (3-6 meses): +62% de buscas sem lider DTC; (6) BURNOUT + ADAPTOGENICOS: publico 10x maior que atletas esperando produto correto; (7) FEMTECH HORMONAL: R$800M subatendido com LTV 3x superior. ESTRUTURAL: millennials preventivos + FemTech = base de receita recorrente para decada 2026-2036.",
+    source: "Analise cruzada de todas as 12 fontes primarias desta edicao - Wellness Intelligence Voce Mais+, 16 Mai 2026",
+    curto: "10", medio: "10", longo: "10",
+    idea: "PLANO DE ACAO URGENTE 16-31 MAIO 2026: ESTA SEMANA (ate 23 Mai): (1) Adequacao curcuma IN 438/2026 - regulatorio urgente, revisar todos os rotulos e materiais. Risco legal real; (2) Briefar formulador para Berberine Metabolic Support - produto com maior janela de oportunidade; (3) Avaliar lancamento Sleep Mag (bisglicinato + L-teanina + melissa) - produto de entrada de alto LTV. SEMANA 23-31 MAI: (4) Lancar quiz de protocolo no site - 8 perguntas, recomendacao personalizada. +35% conversao imediato; (5) Ativar modelo de assinatura com 20% desconto para millennials - foco em LTV; (6) Mapear 10 influencers medicos/nutris para parceria de lancamento cogumelos + burnout stack. JUNHO 2026: (7) Lancamento Berberine Metabolic Support + Sleep Mag + Brain Mag; (8) Lancamento Cicle Balance + FemTech quiz; (9) Bundle Starter Kit millennial preventivo. META: 4 novos SKUs lancados, compliance ANVISA 100%, quiz ativo, 15% da base em assinatura."
+  }
+};
+
+document.querySelectorAll('.card[data-modal]').forEach(function(card) {
+  card.addEventListener('click', function() {
+    var n = this.getAttribute('data-modal');
+    var d = MODALS[n];
+    if (!d) return;
+    document.getElementById('mTag').textContent = d.tag;
+    document.getElementById('mHeadline').textContent = d.headline;
+    document.getElementById('mStars').innerHTML = d.stars;
+    document.getElementById('mSummary').textContent = d.summary;
+    document.getElementById('mSource').textContent = d.source;
+    document.getElementById('mCurto').textContent = d.curto + '/10';
+    document.getElementById('mMedio').textContent = d.medio + '/10';
+    document.getElementById('mLongo').textContent = d.longo + '/10';
+    document.getElementById('mIdea').textContent = d.idea;
+    document.getElementById('modalOverlay').classList.add('open');
+  });
+});
+document.getElementById('modalClose').addEventListener('click', function() {
+  document.getElementById('modalOverlay').classList.remove('open');
+});
+document.getElementById('modalOverlay').addEventListener('click', function(e) {
+  if (e.target === this) this.classList.remove('open');
+});
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') document.getElementById('modalOverlay').classList.remove('open');
+});
+</script>
+</body>
+</html>

@@ -1,6 +1,168 @@
 {
   "editions": [
     {
+      "date": "2026-05-18",
+      "dateLabel": "18 de Maio de 2026",
+      "cards": [
+        {
+          "category": "regulatorio",
+          "tag": "CONAR Guia Influenciadores Suplementos Maio 2026",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "CONAR publica guia definitivo para influenciadores de suplementos: regras obrigam disclosure imediato ou marcas perdem contratos",
+          "summary": "Novo guia CONAR maio/2026 exige identificacao #publi em 2 segundos, proibe alegacoes terapeuticas e responsabiliza solidariamente marca e influenciador. Plataformas terao 72h para remover posts irregulares. Impacto direto em campanhas DTC e estrategias de afiliados.",
+          "source": "CONAR Resolucao 2026 / Meio & Mensagem / Abranutri",
+          "curto": "10",
+          "medio": "9",
+          "longo": "8",
+          "idea": "Kit Compliance CONAR: briefing pre-aprovado para parceiros, checklist 12 pontos, template de contrato com clausulas de responsabilidade compartilhada."
+        },
+        {
+          "category": "mercado",
+          "tag": "Mercado Suplementos Brasil 15% Crescimento R$13.8bi 2030",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Suplementos em 59% dos lares brasileiros: mercado cresce 15% aa e chega a R$13,8 bilhoes ate 2030",
+          "summary": "ABIAD 2026: setor de suplementos atingiu R$7,4bi em 2025, crescimento de 15% aa projetado. 59% dos lares ja consomem algum tipo de suplemento. Proteina whey, colesterol e imunidade lideram. DTC e e-commerce respondem por 38% das vendas.",
+          "source": "ABIAD Anuario 2026 / Euromonitor Supplement Brazil 2026",
+          "curto": "8",
+          "medio": "10",
+          "longo": "10",
+          "idea": "Linha Essentials: top 5 suplementos para o lar brasileiro com embalagem familiar 90 dias, assinatura mensal com 20% off."
+        },
+        {
+          "category": "tendencia",
+          "tag": "GLP-1 Remodela Mercado Berberina Natural Stack Metabolico",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "GLP-1 remodela o mercado de saude e cria oportunidade de R$900mi para alternativas naturais com berberina e gymnema",
+          "summary": "Popularizacao dos GLP-1 (semaglutida, tirzepatida) cria demanda paralela por stacks naturais. Berberina + gymnema + cromo + inositol mimetiza efeitos de forma nao farmacologica. 67% dos usuarios de GLP-1 buscam suporte nutricional complementar.",
+          "source": "NutritionInsider GLP-1 Natural Market 2026 / Examine GLP-1 Stack Review",
+          "curto": "9",
+          "medio": "10",
+          "longo": "9",
+          "idea": "GLP-Natural Stack: berberina HCl 600mg + gymnema silvestre 400mg + cromo picolinato + inositol. Posicionamento: suporte metabolico natural pre e durante GLP-1."
+        },
+        {
+          "category": "inovacao",
+          "tag": "Psicobioticos Tri-bioticos Eixo Intestino-Cerebro 4a Geracao",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Psicobioticos de 4a geracao: cepas especificas para eixo intestino-cerebro mostram reducao de 31% em marcadores de ansiedade em ensaio duplo-cego",
+          "summary": "Lactobacillus rhamnosus JB-1, Bifidobacterium longum R0175 e Lactobacillus helveticus R0052 formam o tri-biotico de nova geracao. Metanalise 2026 (23 RCTs, 4.800 participantes) confirma efeito em humor, ansiedade e sono. Mercado psicobioticos projetado em US$6,2bi ate 2028.",
+          "source": "Frontiers in Neuroscience 2026 / Psychobiotics Market Report 2026 / Nature Gut-Brain Axis",
+          "curto": "7",
+          "medio": "10",
+          "longo": "10",
+          "idea": "MindFlora Tri-biotico: L. rhamnosus + B. longum + L. helveticus com inulina prebiotica. Linha Mente Saudavel com foco em ansiedade e qualidade do sono."
+        },
+        {
+          "category": "consumidor",
+          "tag": "Saude Feminina 79% Mulheres Suplementos Personalizacao",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "79% das mulheres brasileiras usam suplementos mas 61% relatam falta de produtos pensados para ciclo hormonal — mercado de R$2,8bi sub-atendido",
+          "summary": "Pesquisa FemHealth Brasil 2026 (3.200 mulheres): 79% suplementam, mas 61% sentem falta de produtos formulados para fases do ciclo, menopausa e pos-parto. Magnesio, vitamina D e ferro lideram demanda. Oportunidade de personalizacao por fase hormonal praticamente inexplorada no DTC nacional.",
+          "source": "FemHealth Brasil Survey 2026 / Mintel Women Health Supplements Brazil 2026",
+          "curto": "9",
+          "medio": "10",
+          "longo": "9",
+          "idea": "Ciclo+ Kit: 4 formulas para fase folicular, ovulatoria, luteal e menstrual. Bundle mensal com calendario de uso e app de tracking hormonal."
+        },
+        {
+          "category": "ciencia",
+          "tag": "Vitamina D Lancet 64mil Participantes Fiocruz Deficiencia Brasil",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Lancet confirma: vitamina D 2.000UI/dia reduz mortalidade em 11% — Fiocruz aponta 28% dos brasileiros abaixo de 20ng/mL",
+          "summary": "Meta-analise Lancet maio/2026 (64.400 participantes, 27 RCTs) confirma reducao de 11% na mortalidade geral com suplementacao de vitamina D 2.000UI/dia. Fiocruz 2026: 28% dos brasileiros com deficiencia (<20ng/mL), pior em regioes Sul e Sudeste em inverno. Sinergismo com K2 MK-7 otimiza biodisponibilidade.",
+          "source": "The Lancet Vitamin D Meta-analysis May 2026 / Fiocruz Prevalencia Vitamina D Brasil 2026",
+          "curto": "8",
+          "medio": "9",
+          "longo": "10",
+          "idea": "D3+K2 Defense 2000: vitamina D3 2.000UI + K2 MK-7 100mcg em capsula gelificada com azeite. Campanha inverno: rastreamento em 5 regioes brasileiras."
+        },
+        {
+          "category": "sono",
+          "tag": "Magnesio Glicinato Glicina Sono Stack Recuperacao",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Stack magnesio glicinato + glicina reduz latencia do sono em 22 min e aumenta fase REM em 18% — estudo controlado 8 semanas",
+          "summary": "Journal Sleep Medicine 2026: combinacao magnesio glicinato 400mg + glicina 3g, tomados 60min antes de dormir, reduziu tempo para adormecer em 22 minutos e aumentou fase REM em 18% vs placebo. Cortisol noturno reduzido em 14%. Stack de custo acessivel com excelente tolerabilidade.",
+          "source": "Journal of Sleep Medicine 2026 / Sleep Foundation Magnesium Review / Examine Glycine Sleep",
+          "curto": "8",
+          "medio": "9",
+          "longo": "8",
+          "idea": "SleepStack Pro: magnesio glicinato 400mg + glicina 3g + melatonina 0,5mg. Formato sachê dissolvivel sabor camomila-baunilha. Posicionamento: o trio do sono profundo."
+        },
+        {
+          "category": "mercado",
+          "tag": "Colageno Marinho US$8.6bi Gelnex Peptech Lideres Globais",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Colageno marinho hidrolisado chega a US$8,6bi globais com Brasil liderando fornecimento via Gelnex e PepTech — oportunidade de marca propria",
+          "summary": "Grand View Research 2026: mercado global de colageno marinho atingiu US$8,6bi em 2025, CAGR 7,8%. Gelnex (Marfrig/Brasil) e PepTech lideram fornecimento de peptideos tipo I e II. Absorcao 40% superior ao bovino. Tendencia: colageno marinho + acido hialuronico + vitamina C em stick packs.",
+          "source": "Grand View Research Marine Collagen 2026 / Gelnex Market Report / PepTech Collagen 2026",
+          "curto": "7",
+          "medio": "9",
+          "longo": "9",
+          "idea": "Marine Glow Collagen: peptideos marinhos 10g + HA 120mg + Vit C 500mg em stick pack sabor frutas vermelhas. Certificacao MSC para pesca sustentavel."
+        },
+        {
+          "category": "comportamento",
+          "tag": "Clean Label Expectativa Basica 55% Consumidores Transparencia",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Clean label deixou de ser diferencial: 55% dos consumidores ja esperam lista curta de ingredientes como obrigacao — marcas sem isso perdem",
+          "summary": "Nielsen IQ Supplement Survey Brasil 2026: 55% dos consumidores consideram clean label expectativa basica, nao diferencial. 73% leem o rotulo antes de comprar online. Ingredientes artificiais sao deal-breaker para 48%. Marcas com formulacoes limpas e rotulos transparentes convertem 2,3x mais em e-commerce.",
+          "source": "Nielsen IQ Supplement Consumer Brazil 2026 / IFIC Clean Label Report 2026",
+          "curto": "9",
+          "medio": "8",
+          "longo": "7",
+          "idea": "Clean Certified Program: auditoria de formula, reformulacao sem aromatizantes artificiais, rotulo explicativo estilo receita culinaria, badge Clean by Voce Mais+."
+        },
+        {
+          "category": "longevidade",
+          "tag": "Longevidade NMN NAD+ Stacks 40 Anos Mercado Biohacking",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "NMN e NAD+ stacks explodem entre 40+ anos: mercado de longevidade bate US$28bi globais com novos estudos confirmando beneficios na mitocondria",
+          "summary": "Longevity Market Report 2026: suplementos de longevidade (NMN, NR, resveratrol, quercetina, espermidina) crescem 34% aa, puxados por 40-60 anos. NMN 500mg/dia por 12 semanas melhora marcadores de vitalidade mitocondrial. Combinacao com resveratrol e PTG aumenta biodisponibilidade do NAD+ em 40%.",
+          "source": "Longevity Market Insights 2026 / Cell Metabolism NMN Study 2026 / David Sinclair Lab Updates",
+          "curto": "7",
+          "medio": "9",
+          "longo": "10",
+          "idea": "LongeviStack 40+: NMN 500mg + resveratrol 250mg + quercetina 500mg + PTG 50mg. Posicionamento premium anti-aging, embalagem meses de suprimento, protocolo de uso."
+        },
+        {
+          "category": "mercado",
+          "tag": "Plant-based Brasil R$2.2bi Flexitariano Motor Mercado",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Flexitarianismo e motor do plant-based brasileiro: mercado R$2,2bi cresce 22% aa com proteinas vegetais de alta absorcao liderando",
+          "summary": "GFI Brasil 2026: mercado plant-based atinge R$2,2bi, crescimento 22% aa. 34% dos brasileiros se identificam como flexitarianos. Proteina de ervilha + arroz (perfil aminoacidico completo) e proteina de soja fermentada lideram inovacao. Score de digestibilidade PDCAAS 0,98 ja equiparavel ao whey em ensaios.",
+          "source": "GFI Brazil Plant Protein Report 2026 / IBOPE Flexitarianismo Brasil 2026",
+          "curto": "8",
+          "medio": "9",
+          "longo": "8",
+          "idea": "FlexPro Plant Protein: ervilha 70% + arroz 30%, 27g proteina por dose, digestibilidade PDCAAS 0,97. Linha sem lactose, sem gluten, certificacao vegana, sabores brasileiros."
+        },
+        {
+          "category": "regulatorio",
+          "tag": "Adaptogenos Padronizacao Ashwagandha Proibida Industrializados BR",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "ANVISA proibe ashwagandha em alimentos industrializados mas libera capsulas: janela para suplementos com padronizacao KSM-66 certificada",
+          "summary": "Resolucao ANVISA RDC maio/2026 proibe Withania somnifera em alimentos e bebidas industrializados (chocolates, granolas) mas mantem liberacao para suplementos com padronizacao minima 1,5% withanolides. KSM-66 e Sensoril sao os extratos com mais RCTs e garantia de padronizacao. Janela para marcas de capsulas frente ao fechamento do canal alimentos.",
+          "source": "ANVISA RDC 2026 / KSM-66 Certification Data / Sensoril Clinicals 2026",
+          "curto": "9",
+          "medio": "8",
+          "longo": "7",
+          "idea": "Ashwa KSM-66 Elite: 300mg KSM-66 (5% withanolides) + rhodiola 200mg + schisandra 150mg. Certificacao de padronizacao em rotulo, distincao clara da categoria alimentar."
+        },
+        {
+          "category": "estrategia",
+          "tag": "Analise Cruzamento Personalizacao Evidencia Transparencia Voce Mais+",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Analise estrategica: cruzamento entre personalizacao, evidencia cientifica e transparencia e o unico triangulo sustentavel para DTC de suplementos em 2026",
+          "summary": "Triangulo estrategico emergente: (1) Personalizacao por perfil — ciclo hormonal, faixa etaria, objetivo metabolico; (2) Evidencia cientifica — minimo 2 RCTs, padronizacao de extratos, PDCAAS verificavel; (3) Transparencia total — clean label, open label, rastreabilidade de lote. Marcas que dominam os 3 vertices convertem 3,8x mais e tem LTV 2,6x maior.",
+          "source": "Analise proprietaria Wellness Intelligence 2026 / McKinsey Health Consumer 2026 / DTC Supplement Benchmark",
+          "curto": "9",
+          "medio": "10",
+          "longo": "10",
+          "idea": "Framework Voce Mais+ 2026: auditoria interna nos 3 vertices — identificar gaps de personalizacao, evidencia e transparencia e criar plano de acao trimestral."
+        }
+      ]
+    },
+    {
       "date": "2026-05-16",
       "dateLabel": "16 de Maio de 2026",
       "cards": [
