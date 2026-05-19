@@ -1,6 +1,156 @@
 {
   "editions": [
     {
+      "date": "2026-05-19",
+      "dateLabel": "19 de Maio de 2026",
+      "cards": [
+        {
+          "category": "regulacao",
+          "tag": "ANVISA CP 1.394/2026 Aditivos Alimentares Mai 2026",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "ANVISA abre Consulta Publica 1.394/2026 para reformular lista de aditivos alimentares: 60 dias para comentarios ate 6 de julho",
+          "summary": "Em 28/04/2026, a ANVISA publicou a CP 1.394/2026 propondo alteracoes a IN 211/2023 sobre aditivos alimentares. Periodo aberto de 07/mai a 06/jul/2026 (60 dias). A RDC 843/2024 ja exige adequacao de toda a industria de suplementos ate setembro 2026. Empresas que participarem com argumentos tecnicos fundamentados podem influenciar quais aditivos serao permitidos, em quais limites e condicoes — poder de moldar o marco regulatorio por anos.",
+          "source": "ANVISA CP 1.394/2026 - AnvisaLegis / Intertox / CMALaw",
+          "curto": "9",
+          "medio": "10",
+          "longo": "10",
+          "idea": "Participar formalmente da Consulta Publica 1.394/2026 ate 06/jul com comentarios tecnicos sobre os aditivos mais criticos para a linha Voce Mais+. Contratar consultoria regulatoria para mapear os artigos de maior impacto e redigir manifestacoes fundamentadas."
+        },
+        {
+          "category": "mercado",
+          "tag": "Brasil 3 Maior Crescimento Suplementos Global CAGR 9.5%",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Brasil e o 3 pais com maior crescimento na demanda global por suplementos com CAGR de 9,5% projetado ate 2036 — mercado de R$ 13,8 bilhoes ate 2030",
+          "summary": "O Brasil e o 3 pais com maior expansao da demanda por suplementos no mundo (atras de India e China), projetando CAGR de 9,5% ate 2036. Crescimento de 15% em 2025, R$ 7,6bi. 59% dos lares brasileiros consomem suplementos. Creatina lidera (57,8%), seguida por whey (31,3%) e vitaminas. 60% dos consumidores pesquisam online antes de comprar.",
+          "source": "Panorama Farmaceutico / Revista SuplementAcao 2026 / Food Connection",
+          "curto": "8",
+          "medio": "10",
+          "longo": "10",
+          "idea": "Posicionar Voce Mais+ como a marca do novo padrao do mercado brasileiro: eficacia comprovada, transparencia de formulacao e curadoria cientifica. Campanha '3 do Mundo' destacando o momento historico do mercado nacional."
+        },
+        {
+          "category": "tendencias",
+          "tag": "Ashwagandha KSM-66 Adaptogenicos US$1.75bi 2035",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Ashwagandha domina 28% do mercado global de adaptogenicos e projeta US$ 1,75 bilhao ate 2035 — diferenciacao migra para ingredientes certificados com dose clinica (KSM-66, Sensoril)",
+          "summary": "Ashwagandha detem 28% do mercado de adaptogenicos global (US$1,75bi ate 2035, CAGR 10,07%). Migracao de genericos para formas patenteadas: KSM-66 e Sensoril. Mais de 70% dos consumidores pagam premium por evidencia clinica. Lion's mane cresce junto: nootropicos +12,8% e fungo responde por 38% dos novos SKUs cognitivos com L-teanina.",
+          "source": "Fortune Business Insights Adaptogens 2026 / Yahoo Finance SNS Insider / Champion Bio 2026",
+          "curto": "8",
+          "medio": "9",
+          "longo": "10",
+          "idea": "Linha Adapto Elite: ashwagandha KSM-66 600mg + rhodiola rosea 300mg + lion's mane 500mg em capsula vegetal. Comunicacao baseada em dose clinica documentada, certificado de forma patenteada e QR code para estudos."
+        },
+        {
+          "category": "ciencia",
+          "tag": "Nootropicos Lion's Mane L-Teanina Mercado Cognitivo US$6bi",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Mercado global de suplementos cerebrais atinge US$ 6 bilhoes em 2026 — lion's mane e L-teanina lideram novos SKUs com evidencia clinica mais forte da categoria",
+          "summary": "Mercado de nootropicos em US$6bi em 2026 (CAGR 10% ate 2033). Lion's mane + L-teanina = 38% dos novos SKUs cognitivos. Top ingredientes com maior evidencia: bacopa monnieri, citicolina, lion's mane, L-teanina, rhodiola rosea. Proxima onda: IA customizando regimes cognitivos com base em genomica e microbioma.",
+          "source": "Persistence Market Research 2026 / Ekang Nutra Cognitive 2026 / Toward Healthcare 2026",
+          "curto": "7",
+          "medio": "9",
+          "longo": "10",
+          "idea": "Brain Stack Voce Mais+: lion's mane 500mg + L-teanina 200mg + rhodiola rosea 300mg + vitamina B12. Foco, memoria e clareza mental. Comunicacao com estudos clinicos em QR code. Target profissionais 25-45 anos."
+        },
+        {
+          "category": "consumidor",
+          "tag": "Mulheres 79% Lideram Suplementos Ciclo Hormonal Brasil",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "79% das mulheres brasileiras consomem suplementos e lideram o mercado, mas maioria relata falta de produtos para ciclo hormonal — oportunidade de R$ 2,8bi sub-atendida",
+          "summary": "Instituto Locomotiva: 79% das mulheres vs 71% dos homens consomem suplementos. Tres categorias mais crescentes entre mulheres: equilibrio metabolico, sono e pele. Maioria relata ausencia de produtos formulados para as fases do ciclo hormonal. Projecao: 70% das mulheres usarao tecnologias de monitoramento hormonal personalizado ate o fim de 2026.",
+          "source": "Instituto Locomotiva Survey 2026 / Sincofarma SP Mar 2026 / BHB Food 2026",
+          "curto": "9",
+          "medio": "10",
+          "longo": "9",
+          "idea": "Ciclo+ Kit: 4 formulas para fase folicular, ovulatoria, luteal e menstrual. Bundle mensal com calendario digital e guia educativo. Primeiro produto DTC nacional com suplementacao ciclo-sincronizada de verdade."
+        },
+        {
+          "category": "ciencia",
+          "tag": "Omega-3 Deficiencia 76% Populacao Global 100 Paises",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Estudo em 100 paises revela 76% da populacao mundial sem aporte adequado de omega-3 — deficiencia estrutural que cria mega-demanda por suplementacao de EPA e DHA",
+          "summary": "Pesquisadores de East Anglia e Southampton analisaram dados de 100 paises: 76% das criancas, adultos e idosos nao atingem a recomendacao diaria de EPA+DHA+DPA. Deficiencia estrutural por transicao para dietas ultra-processadas. No Brasil, baixo consumo de pescado nas classes C e D agrava o cenario. Omega-3 de alta qualidade (forma triglicerideo reesterificado, 1000mg+ EPA+DHA) tem o maior argumento de necessidade real.",
+          "source": "Correiobraziliense / Universidade East Anglia e Southampton / CentraldeIdeias 2026",
+          "curto": "9",
+          "medio": "9",
+          "longo": "10",
+          "idea": "Omega-3 Ultra TG Voce Mais+: formula em triglicerideos reesterificados com 1200mg EPA+DHA, certificado IFOS. Campanha: 76% do Brasil nao tem omega-3 suficiente. Teste gratuito de indice omega-3 como lead magnet. Produto ancora para subscribe-and-save."
+        },
+        {
+          "category": "ciencia",
+          "tag": "NMN NAD+ Longevidade Nestle Gut Health 2026",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "NMN eleva NAD+ e melhora funcao muscular em idosos — Nestle Research descobre conexao inedita entre suplementacao NAD+ e saude intestinal",
+          "summary": "Estudo humano: NMN 250mg/dia por 12 semanas foi seguro, elevou NAD+ e melhorou performance muscular em homens idosos. Nestle Research 2026: NMN por 14 dias aumenta NAD+ circulante E aprimora crescimento microbiano intestinal — expandindo posicionamento de longevidade para o eixo gut-energia. Abre novo vetor de comunicacao para publico ja engajado com microbioma.",
+          "source": "NutritionInsight Nestle NAD+ Gut Health 2026 / PubMed NMN Older Men RCT 2023",
+          "curto": "6",
+          "medio": "9",
+          "longo": "10",
+          "idea": "NMN Longevidade 250mg: NMN alta pureza + resveratrol + pterostilbeno. Narrativa dupla: energia celular + microbioma saudavel. Posicionamento para 45+ que ja consome probioticos e quer evoluir na jornada de longevidade."
+        },
+        {
+          "category": "mercado",
+          "tag": "Probioticos US$97bi Personalizacao Microbioma Sequenciamento",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Mercado global de probioticos atinge US$ 97 bilhoes em 2026 com CAGR de 12,8% — personalizacao via sequenciamento de microbioma chega ao mainstream",
+          "summary": "Mercado global de probioticos: US$97,28bi em 2026, projetado US$139bi ate 2031 (CAGR 12,8%). Grande movimento: probioticos customizados de acordo com microbioma individual. FDA aprovou terapias baseadas em microbiota para uso prescritivo. Pesquisas conectam microbioma com ansiedade, depressao, obesidade e imunidade — expandindo muito o escopo da categoria.",
+          "source": "GlobeNewsWire Global Probiotics May 2026 / Fortune Business Insights 2026",
+          "curto": "7",
+          "medio": "10",
+          "longo": "10",
+          "idea": "Psicobiotico Mente Saudavel Voce Mais+: L. rhamnosus + B. longum + inulina prebiotica. Posicionamento eixo intestino-cerebro com foco em ansiedade e sono. Cepas com ensaio clinico publicado, dose diaria transparente, sem acucar."
+        },
+        {
+          "category": "produtos",
+          "tag": "Pea Protein Plant-Based Brasil 16-19% Crescimento 2026",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Proteina de ervilha cresce 16-19% ao ano no Brasil — 12 milhoes de veganos e 60% com intolerancia a lactose tornam plant-based o segmento mais dinamico",
+          "summary": "Mercado brasileiro de plant-based superando expectativas para 2026. Pea protein: crescimento de 16-19% aa — dobro da soja. Tres forcas: 30-35mi de praticantes fitness, 60-70% dos adultos com intolerancia a lactose, 10-12mi de veganos/vegetarianos. Clean label e certificacao vegana sao diferenciais pelos quais consumidores pagam mais.",
+          "source": "Vegconomist Brazil Plant-Based 2026 / Mordor Intelligence South America Plant Protein 2026",
+          "curto": "7",
+          "medio": "9",
+          "longo": "10",
+          "idea": "Pea Protein Clean Voce Mais+: proteina de ervilha isolada 80% sem lactose, gluten e edulcorantes artificiais. Certificacao vegana e clean label. Posicionamento como proteina inclusiva — para os 60% que o whey exclui."
+        },
+        {
+          "category": "tendencias",
+          "tag": "Clean Label 3.0 Rastreabilidade Transparencia US$53bi",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Clean Label 3.0 transforma rastreabilidade e transparencia em pre-requisito de mercado — industria de US$ 53 bilhoes cresce 6,4% ao ano ate US$ 99 bilhoes em 2034",
+          "summary": "Clean Label 3.0: nao basta reduzir ingredientes artificiais — e preciso rastreabilidade completa e transparencia proativa. 60%+ dos consumidores globais confiam mais em marcas que explicam a origem dos ingredientes. Mercado de clean labels: US$53,2bi em 2024, crescendo 6,4% aa para US$99,3bi em 2034. No mercado de suplementos, clean label deixou de ser diferencial e virou piso de entrada.",
+          "source": "FoodForum Clean Label 2026 / Food Connection Brasil Clean Label 3.0 / Santos Flora 2026",
+          "curto": "8",
+          "medio": "8",
+          "longo": "9",
+          "idea": "Programa Transparencia Radical Voce Mais+: QR code em cada embalagem com mapa de origem dos ingredientes, certificados de analise e estudos que embasam cada dose. Primeira marca de suplementos naturais brasileira com Clean Label 3.0."
+        },
+        {
+          "category": "produtos",
+          "tag": "Menopausa Fitoterapicos EstroG-100 Vitamina E Hormonal 45+",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Suplementacao natural para menopausa avanca com fitoterapicos patenteados livres de hormonios — segmento 45+ e o de maior crescimento com maior poder de compra",
+          "summary": "EstroG-100: extrato fitoterápico patenteado, livre de hormonios, com evidencia clinica de melhora de ondas de calor, sono, humor e articulacoes. Vitamina E fitoestrogenica cresce como alternativa para contraindicadas ao estrogênio. 70% das mulheres usarao tecnologias de monitoramento hormonal ate fim de 2026. Segmento 45+ e o mais sub-atendido e com maior poder de compra em suplementacao feminina.",
+          "source": "Sincofarma SP 2026 / Ocean Drop Menopausa / Bonita Mulher Saude 2026",
+          "curto": "8",
+          "medio": "9",
+          "longo": "9",
+          "idea": "Linha Equilibrio 45+ Voce Mais+: EstroG-100 ou isoflavonas padronizadas + vitamina E d-alfa-tocoferol + magnesio glicinato + B6. Comunicacao: menopausa com conforto e sem hormonios sinteticos."
+        },
+        {
+          "category": "mercado",
+          "tag": "Instagram TikTok Wellness 2.670% Crescimento Conteudo Saude",
+          "stars": "⭐⭐⭐",
+          "headline": "Instagram concentra 53% do conteudo de saude digital e videos de alimentacao saudavel cresceram 2.670% desde 2022 — influenciadores sao a nova referencia em suplementacao",
+          "summary": "Instagram: 53,1% de todo o conteudo de saude e bem-estar. Videos de alimentacao saudavel: +2.670% entre mar/2022 e jan/2025. Influenciadores assumem papel de referencia com rotinas de suplementacao, treinos e nutricao. Risco crescente de desinformacao — CONAR ja mais ativo. Marcas com influenciadores educativos e conformes terao vantagem competitiva.",
+          "source": "Hipermídia Comunicacao TikTok Instagram Wellness 2026 / Modash Brazil Fitness Apr 2026",
+          "curto": "8",
+          "medio": "8",
+          "longo": "7",
+          "idea": "Programa Embaixadores Cientificos Voce Mais+: 10-15 micro-influenciadores com formacao em nutricao ou saude. Conteudo educativo com QR code para estudos. Compliance CONAR total. Influenciadores que ensinam, nao apenas promovem."
+        }
+      ]
+    },
+    {
       "date": "2026-05-18",
       "dateLabel": "18 de Maio de 2026",
       "cards": [
