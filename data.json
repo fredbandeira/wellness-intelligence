@@ -1,6 +1,156 @@
 {
   "editions": [
     {
+      "date": "2026-05-20",
+      "dateLabel": "20 de Maio de 2026",
+      "cards": [
+        {
+          "category": "regulacao",
+          "tag": "ANVISA Propaganda Irregular Suplementos Mai 2026",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "ANVISA proibe suplementos alimentares por propaganda irregular: claims nao autorizados em embalagens e redes sociais resultam em interdicao imediata",
+          "summary": "A ANVISA publicou em 2026 ato proibindo comercializacao de suplementos com propaganda irregular, incluindo alegacoes terapeuticas nao autorizadas em posts de influenciadores. RDC 843/2024 e IN 281/2024 definem estritamente o que pode ser comunicado. Adequacao ate setembro 2026 ou risco de interdicao, multas e apreensao.",
+          "source": "ANVISA Gov.br 2026 - Proibicao Propaganda Irregular / RDC 843/2024",
+          "curto": "10",
+          "medio": "9",
+          "longo": "8",
+          "idea": "Auditoria imediata de compliance: mapear todos os claims em embalagens, site, redes e posts de influenciadores. Criar Guia de Comunicacao com claims aprovados e frases proibidas — distribuir para equipe e parceiros."
+        },
+        {
+          "category": "mercado",
+          "tag": "Fibras Alimentares Boom CAGR 8% US$9.47bi 2026",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Buscas por suplementos de fibra disparam 62,3% em um ano — mercado global de fibra alimentar atinge US$ 9,47 bilhoes em 2026 com CAGR de 8% ate 2035",
+          "summary": "Interesse por fibras explodiu em 2026: buscas +43,8% por fibras em geral e +62,3% por suplementos de fibra em 12 meses. Mercado global USD 9,47bi em 2026, projetado para USD 19,06bi ate 2035. 59% dos consumidores dizem que saude intestinal e determinante para o bem-estar geral.",
+          "source": "Exame Industria Bem-Estar 2026 / BusinessResearchInsights Dietary Fiber Market 2026-2035",
+          "curto": "8",
+          "medio": "9",
+          "longo": "9",
+          "idea": "Fibra Funcional Voce Mais+: blend inulina + psyllium + beta-glucana em sachet solavel. Zero acucar. Produto de entrada com recompra mensal garantida e abertura para upsell em probioticos."
+        },
+        {
+          "category": "tendencias",
+          "tag": "Lion Mane Chaga Cogumelos Medicinais 38% SKUs 2026",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Lion mane e Chaga dominam 38% dos novos SKUs funcionais em 2026 — cogumelos medicinais saem do nicho para o mainstream com gummies, cafes e blends em po",
+          "summary": "Lion mane estimula NGF para foco e memoria. Chaga lidera em antioxidantes e suporte imune. Juntos respondem por 38% dos novos SKUs cognitivos e funcionais de 2026. Gummies de cogumelo sao o formato de crescimento mais rapido. No Brasil, janela de entrada ainda precoce e sem saturacao.",
+          "source": "Vitaminer Cogumelos 2026 / Ekobe Nutraceuticos Tendencias 2026",
+          "curto": "7",
+          "medio": "9",
+          "longo": "10",
+          "idea": "Linha Cogumelos Funcionais Voce Mais+: Lion Mane 500mg, Chaga 400mg e Blend Total (lion + chaga + reishi). Comunicacao educativa sobre mecanismo de cada cogumelo. Lancamento em capsulas e blend em po para cafe funcional."
+        },
+        {
+          "category": "ciencia",
+          "tag": "Espermidina Urolitina A Autofagia Longevidade Mainstream",
+          "stars": "⭐⭐⭐",
+          "headline": "Espermidina e urolitina A chegam ao mainstream de longevidade: autofagia celular como mecanismo anti-aging mais buscado de 2026",
+          "summary": "Espermidina estimula autofagia (reciclagem celular que declina com a idade). Urolitina A melhora saude das mitocondrias via mitofagia. Ensaios humanos mostram melhoras em funcao muscular e energia celular. No Brasil, categoria praticamente inexplorada no DTC — oportunidade de posicionamento educativo precoce.",
+          "source": "Metropoles Espermidina 2026 / ETProtein Espermidina vs Urolitina A / Instituto de Longevidade 2026",
+          "curto": "5",
+          "medio": "8",
+          "longo": "10",
+          "idea": "Longevidade Celular Voce Mais+: NMN 250mg + germe de trigo (espermidina natural) + roma 500mg (precursor urolitina A) + resveratrol. Comunicacao honesta sobre evidencia em desenvolvimento. Posicionamento educativo para publico 45+."
+        },
+        {
+          "category": "tendencias",
+          "tag": "FemTech Wearables Hormonais Personalizacao 70% Mulheres 2026",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Wearables monitoram hormonios 24/7 em tempo real — 70% das mulheres usarao tecnologia personalizada de saude ate o fim de 2026 criando demanda por suplementacao ciclo-sincronizada",
+          "summary": "Wearables monitoram hormonios, sono e cortisol em tempo real. 70% das mulheres usarao tech personalizada ate fim de 2026. Terapias com doses ajustadas por IA reduzem efeitos colaterais em 80%. Cria demanda direta por suplementacao adaptada a cada fase do ciclo — vitamina B6 para PMS, magnesio na fase luteal, ferro no ciclo.",
+          "source": "Bonita Mulher Saude Feminina 2026 / Farmacotecnica Tendencias Suplementos 2026",
+          "curto": "7",
+          "medio": "9",
+          "longo": "10",
+          "idea": "Ciclo Kit 4 fases Voce Mais+: formulas especificas para folicular, ovulatoria, luteal e menstrual. Integracao futura com apps de ciclo via API. Diferencial inedito no DTC brasileiro."
+        },
+        {
+          "category": "ciencia",
+          "tag": "Psicobioticos Gut Brain GABA Serotonina Varejo Mainstream",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Psicobioticos entram no varejo mainstream: Lactobacillus rhamnosus e Bifidobacterium longum modulam serotonina e GABA com evidencia clinica crescente para ansiedade",
+          "summary": "Psicobioticos — probioticos com impacto em humor e cognicao — saem dos laboratorios para o varejo em 2026. Cepas com melhor evidencia: L. rhamnosus JB-1 (ansiedade), L. plantarum 299v (humor), B. longum (estresse). 90% da serotonina e produzida no intestino. Categoria sub-comunicada no Brasil: consumidores conhecem probioticos para digestao mas nao para saude mental.",
+          "source": "UNESP UFRJ Psicobioticos 2026 / Revista Debates Psiquiatria Microbiota",
+          "curto": "7",
+          "medio": "9",
+          "longo": "10",
+          "idea": "Psicobiotico Mente Voce Mais+: L. rhamnosus + B. longum com cepas documentadas + prebiotico FOS. Comunicacao: o intestino que cuida da mente. Conteudo educativo sobre eixo gut-brain com nutricionistas parceiros."
+        },
+        {
+          "category": "produtos",
+          "tag": "Colageno Verisol Beauty From Within Marinho Tipo I 2026",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Verisol e o unico colageno bioativo com comprovacao clinica para pele — beauty from within consolida como mega-tendencia com colageno marinho tipo I mais acido hialuronico e Q10",
+          "summary": "Em 2026, Verisol (peptideos bioativos patenteados) tem evidencia peer-reviewed demonstrando reducao de rugas e melhora de elasticidade. Colageno marinho tipo I com 300 Daltons e o de maior biodisponibilidade. Formulas completas combinam colageno + acido hialuronico + CoQ10 + vitamina C. Marcas que nomeiam o Verisol e mostram os estudos superam as de claims vagos.",
+          "source": "Maromba360 Melhores Colagenos 2026 / Vitaminer Biomelano Colageno Marinho",
+          "curto": "8",
+          "medio": "8",
+          "longo": "9",
+          "idea": "Colageno Beauty Voce Mais+: Verisol 2,5g (dose clinica validada) + acido hialuronico 100mg + vitamina C natural 200mg. Sachet solavel. QR code para estudo publicado. Preco premium justificado pela evidencia. Target: mulheres 30-55 anos que pesquisam ingredientes."
+        },
+        {
+          "category": "produtos",
+          "tag": "Proteina de Fava Plant-Based Emergente Sensorial Alternativa",
+          "stars": "⭐⭐⭐",
+          "headline": "Proteina de fava emerge como nova fronteira plant-based: perfil nutricional superior a ervilha, textura melhor e ausencia dos fitoestrogenos da soja",
+          "summary": "Proteina de fava (Vicia faba) ganhou destaque em 2026: aminoacidos mais completos que ervilha, textura e solubilidade superiores, sem fitoestrogenos da soja. Mercado plant-based brasileiro cresce 9,5% ao ano. Ingrediente disponivel em fornecedores especializados mas praticamente desconhecido do consumidor final brasileiro. Janela de pioneirismo clara.",
+          "source": "Veganbusiness.com.br Clean Label Plant-Based 2026 / Vegconomist Brazil Plant Protein",
+          "curto": "5",
+          "medio": "8",
+          "longo": "9",
+          "idea": "Ser a primeira DTC brasileira com proteina de fava isolada como produto standalone. Lancamento pilot em lote limitado para criar percepcao de novidade e gerar PR organico. Posicionamento: para quem ja foi alem da ervilha e da soja."
+        },
+        {
+          "category": "produtos",
+          "tag": "Magnesio Glicinato L-Treonato Sinergia D3 K2 Stack Fundacional",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Magnesio glicinato e L-treonato redefinem a categoria: sinergia com vitamina D e K2 cria stack fundacional que vira padrao do consumidor informado em 2026",
+          "summary": "Magnesio virou categoria premium em 2026: glicinato para tolerabilidade e absorcao geral (estresse, sono, musculos), L-treonato para saude cognitiva (unico que atravessa barreira hematoencefalica). Sinergia com D3 e critica: magnesio e cofator para conversao de vitamina D. K2 MK7 direciona calcio para ossos. Triade D3+K2+Mg virou stack mais recomendado por nutrologos no Brasil.",
+          "source": "Paleobull Magnesio Vitamina D 2026 / Sincofarma Suplementos 2026",
+          "curto": "9",
+          "medio": "9",
+          "longo": "8",
+          "idea": "Stack Fundacional Voce Mais+: D3 5.000UI + K2 MK7 200mcg + Magnesio Glicinato 300mg em formula unica. SKU secundario: Magnesio L-Treonato para cognicao. Educacao sobre sinergia em carousel e video curto."
+        },
+        {
+          "category": "mercado",
+          "tag": "Microinfluenciadores Especialistas Conversao 7% Engajamento 2026",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Microinfluenciadores especialistas superam macro em conversao para suplementos: nutri e medicos com 7% de engajamento convertem 3x mais que celebridades de lifestyle",
+          "summary": "Em 2026 o futuro e dos Lideres de Opiniao Digitais: profissionais de saude com audiencias segmentadas. Microinfluenciadores especialistas: 7% engajamento vs 1-2% dos macro. Recomendacao de nutricionista certificado converte 3x mais que celebridade. CONAR e ANVISA mais ativos com claims irregulares de influenciadores.",
+          "source": "Focusnetworks Marketing Wellness 2026 / Modash Brazil Fitness Influencers 2026",
+          "curto": "9",
+          "medio": "8",
+          "longo": "7",
+          "idea": "Rede Especialistas Voce Mais+: 15 microinfluenciadores com formacao em nutricao ou medicina. Kit de comunicacao com claims aprovados ANVISA, estudos em PDF e templates de posts. Remuneracao por CPA. Pagina de vendas personalizada por especialista."
+        },
+        {
+          "category": "mercado",
+          "tag": "Wellness Brasil US$96bi 59% Lares DTC Online 60% Pesquisa",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Mercado wellness Brasil atinge US$ 96 bilhoes: suplementos em 59% dos lares com R$ 500 gastos por semestre e 60% dos consumidores pesquisam online antes de comprar",
+          "summary": "Brasil consolidou posicao de maior mercado wellness: US$96bi totais, suplementos em 59% dos lares (alta de 10pp vs 2015), gasto de R$500+ no primeiro semestre. Creatina lidera (57,8%), whey (31,3%), vitaminas (6,4%). Dado estrategico para DTC: 60% pesquisam online antes de comprar — quem investe em conteudo educativo captura essa demanda antes da concorrencia.",
+          "source": "Times Brasil CNBC Wellness 2026 / Sincofarma SP Mar 2026 / Food Connection Brasil 2026",
+          "curto": "8",
+          "medio": "9",
+          "longo": "10",
+          "idea": "SEO e Conteudo DTC Voce Mais+: mapear 50 perguntas mais buscadas sobre suplementacao e criar conteudo ranqueavel para cada uma. Blog com artigos por ingrediente ligados diretamente ao produto. Estrategia de captura organica que alimenta o funil sem custo de midia."
+        },
+        {
+          "category": "tendencias",
+          "tag": "Clean Label 3.0 Rastreabilidade Radical US$53bi 6.4% CAGR",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Clean Label 3.0 transforma rastreabilidade em obrigacao moral: 6 em cada 10 consumidores confiam apenas em marcas que explicam a origem de cada ingrediente",
+          "summary": "Clean Label 3.0 exige rastreabilidade completa e proativa: origem, processamento, certificacoes e estudos de cada ingrediente. 6 em 10 consumidores globais querem saber a origem dos ingredientes. Mercado clean labels USD 53,2bi (2024), crescendo 6,4% ao ano para USD 99,3bi ate 2034. Para suplementos, clean label nao e diferencial: e piso minimo para entrar em consideracao do consumidor informado.",
+          "source": "BHB Food Clean Label Brasil 2026 / Food Connection Clean Label 3.0 / Alquimia Saude 2026",
+          "curto": "8",
+          "medio": "9",
+          "longo": "9",
+          "idea": "Transparencia Radical Voce Mais+: QR code em cada produto abre pagina com origem do ingrediente, CoA do lote, estudo que embasou a dose e identidade do formulador. Primeira marca DTC brasileira com transparencia nivel Clean Label 3.0 verificavel."
+        }
+      ]
+    },
+    {
       "date": "2026-05-19",
       "dateLabel": "19 de Maio de 2026",
       "cards": [
