@@ -1,6 +1,156 @@
 {
   "editions": [
     {
+      "date": "2026-05-21",
+      "dateLabel": "21 de Maio de 2026",
+      "cards": [
+        {
+          "category": "mercado",
+          "tag": "GLP-1 Support Nova Categoria US$160bi 2030",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "GLP-1 Support vira nova categoria obrigatoria do portfolio: usuarios de Ozempic e Wegovy precisam de proteina de alta densidade, fibra e micronutrientes — mercado a US$ 160 bilhoes ate 2030",
+          "summary": "O boom dos analogos de GLP-1 criou um perfil de consumidor com deficit nutricional grave em proteina, B12, ferro, calcio e magnesio. Essential Nutrition ja lancou GLP-1 Support no Brasil. Mercado global pode superar US$160bi ate 2030.",
+          "source": "FoodBiz Brasil GLP-1 Suplementos 2026 / Essential Nutrition GLP-1 Support / Naturaltech",
+          "curto": "10",
+          "medio": "9",
+          "longo": "9",
+          "idea": "GLP-1 Support Voce Mais+: linha especifica com proteina densa GLP-1 Ready, vitaminas GLP-1 Support e fibra GLP-1."
+        },
+        {
+          "category": "tendencias",
+          "tag": "Peptideos Beauty Therapy Boom Google 281% TikTok 459%",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Busca por peptide therapy explode 281% no Google e 459% no TikTok — BASF lanca NeoHelix e colageno peptideo supera USD 744 milhoes",
+          "summary": "Mercado de colageno peptideo vale USD 744mi em 2026 com CAGR 5,97%. BASF lancou NeoHelix Regenerate e SkinNexus Collag3n em abril 2026. Formulas em po lideram com 57,64% do mercado.",
+          "source": "Glossy.co Peptides 2026 / BASF NeoHelix Abril 2026 / FutureMarketInsights Collagen Peptide",
+          "curto": "8",
+          "medio": "9",
+          "longo": "9",
+          "idea": "Peptideo Premium Voce Mais+: colageno com Verisol 2,5g + elastina + acido hialuronico. QR code para o estudo publicado."
+        },
+        {
+          "category": "mercado",
+          "tag": "Adaptogenicos USD 9,26bi Ashwagandha 26% Share 2026",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Mercado global de adaptogenicos chega a US$ 9,26 bilhoes em 2026 com ashwagandha liderando 26% do share — setor cresce para US$ 12,81 bi ate 2036",
+          "summary": "Ashwagandha lidera adaptogenicos com 26% de share global. Mais de 70% dos consumidores pagam premium por ingredientes com certificacao clinica. KSM-66 e Sensoril sao as formas patenteadas mais reconhecidas.",
+          "source": "OpenPR Adaptogens Market 12.81bi 2036 / Champion Bio Premium Ingredients 2026",
+          "curto": "7",
+          "medio": "9",
+          "longo": "10",
+          "idea": "Stack Adaptogenico Voce Mais+: Calma Profunda (ashwagandha KSM-66 + magnesio + L-teanina) e Foco Ativo (lion mane + rhodiola + B complex)."
+        },
+        {
+          "category": "ciencia",
+          "tag": "NMN NAD+ Evidencia Humana Critica MedicalXpress Mai 2026",
+          "stars": "⭐⭐⭐",
+          "headline": "MedicalXpress maio 2026: revisao critica questiona evidencia humana de NMN e NAD+ para anti-aging — mecanismo biologico e real mas claims de retardo de envelhecimento nao estao validados",
+          "summary": "NAD+ e essencial no metabolismo energetico e declina com a idade. Mas ensaios humanos ainda nao provam retardo de envelhecimento de forma robusta. Oportunidade de comunicacao honesta para marcas serias.",
+          "source": "MedicalXpress NMN NAD+ Resveratrol Aging Evidence Review Maio 2026",
+          "curto": "5",
+          "medio": "7",
+          "longo": "9",
+          "idea": "NMN 500mg com comunicacao de suporte energetico celular — sem claims anti-aging. Pagina educativa com o que a ciencia sabe hoje."
+        },
+        {
+          "category": "mercado",
+          "tag": "Sono Suplementos USD 7,94bi Gummies L-Teanina Formato Lider",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Mercado de suplementos de sono atinge US$ 7,94 bilhoes em 2026 — gummies clean label com L-teanina, magnesio e melatonina sao o formato de crescimento mais rapido",
+          "summary": "Mercado cresce de USD 7,46bi em 2025 para USD 7,94bi em 2026 (CAGR 6,5%). L-teanina e o segmento de crescimento mais rapido. Gummies clean label com melatonina 1-3mg + magnesio + L-teanina definem padrao premium.",
+          "source": "Precedence Research Sleep Aid Supplements 2026 / Sleep Supplements Global Market Report 2026",
+          "curto": "8",
+          "medio": "9",
+          "longo": "8",
+          "idea": "Sono Profundo Voce Mais+: gummy clean label com melatonina 1mg + magnesio glicinate 150mg + L-teanina 100mg + maracuja. Bundle com D3 para inverno."
+        },
+        {
+          "category": "ciencia",
+          "tag": "Vitamina D3 K2 Consenso BR Insuficiencia 50,9% Inverno",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Novo consenso brasileiro da Endocrinologia atualiza D3+K2: inverno se aproxima e 50,9% da populacao tem insuficiencia — janela de lancamento pre-inverno aberta agora",
+          "summary": "15,3% tem deficiencia e 50,9% tem insuficiencia de vitamina D no Brasil. Suplementacao padrao: 1.000 a 4.000 UI de D3 com K2 MK-7 como cofator essencial. Demanda organica cresce no inverno.",
+          "source": "Nutritotal Novo Consenso Vitamina D 2026 / CNN Brasil Vitamina D / MedBR Melhores Suplementos 2026",
+          "curto": "9",
+          "medio": "8",
+          "longo": "8",
+          "idea": "Bundle Inverno Voce Mais+: D3 5.000UI + K2 MK-7 200mcg. Lancamento campanha pre-inverno primeira quinzena de junho."
+        },
+        {
+          "category": "ciencia",
+          "tag": "Krill Oil Omega-3 Biodisponibilidade 40% Superior Fish Oil",
+          "stars": "⭐⭐⭐",
+          "headline": "Krill oil eleva indice de omega-3 40% acima do fish oil — mercado de omega-3 em ebulicao com inovacoes em formas e biodisponibilidade redefinindo o padrao de qualidade",
+          "summary": "Krill oil em forma fosfolipidica tem 40% maior absorcao que fish oil convencional. Bonus: astaxantina natural e ausencia de odor. Limitacao honesta: menor concentracao absoluta de EPA+DHA por capsula.",
+          "source": "Cleveland Clinic Krill vs Fish Oil / ConsumerLab Fish Oil Review 2026",
+          "curto": "6",
+          "medio": "7",
+          "longo": "8",
+          "idea": "Omega-3 Premium Voce Mais+: Krill Oil 500mg para manutencao + Omega-3 Concentrado 1.000mg EPA+DHA para doses terapeuticas. Terceiro SKU: Algal Omega-3 vegano."
+        },
+        {
+          "category": "tendencias",
+          "tag": "Menopausa TPM Hormonios Naturais 79% Mulheres BR 2026",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Menopausa e TPM lideram crescimento de suplementos femininos — 79% das mulheres brasileiras ja suplementam e buscam solucoes hormonais naturais com maca, primula e vitex",
+          "summary": "Mulheres 38-55 anos sao o segmento de maior LTV do mercado de suplementos. Ingredientes mais buscados: maca peruana, oleo de primula (GLA), vitex agnus castus, vitamina B6 e magnesio.",
+          "source": "Instituto Locomotiva 79% Mulheres 2026 / Natusvita Menopausa TPM / Evolve Primula",
+          "curto": "8",
+          "medio": "9",
+          "longo": "9",
+          "idea": "Linha FemBalance Voce Mais+: Equilibrio Ciclo (vitex + B6 + magnesio), Energia Hormonal (maca + zinco + C) e Perimenopausa Suave (primula + isoflavonas + E)."
+        },
+        {
+          "category": "ciencia",
+          "tag": "Creatina Cognitiva Alem Fitness Memoria Concentracao 2026",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Creatina vai alem do fitness: estudos 2026 confirmam melhora de memoria e concentracao em nao-atletas — categoria cognitiva adiciona novo mercado bilionario",
+          "summary": "Creatina aumenta fosfocreatina cerebral, melhorando producao de ATP para neuronios. Beneficios confirmados em adultos, mulheres menopausicas e trabalhadores sob stress. Dose cognitiva: 3g/dia (vs 5g atletica).",
+          "source": "Sincofarma SP Creatina Cognitiva 2026 / MedBR Melhores Suplementos 2026",
+          "curto": "8",
+          "medio": "9",
+          "longo": "9",
+          "idea": "Creatina Cerebro Voce Mais+: 3g em sachet solavel com comunicacao 100% cognitiva. Bundle com adaptogenico como stack cognitivo completo."
+        },
+        {
+          "category": "tendencias",
+          "tag": "Berberina Metabolismo Natural GLP-1 Vegetal Buscas 87%",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Berberina volta como alternativa metabolica natural ao GLP-1 — buscas crescem 87% em 2026 e mercado de suporte metabolico natural supera US$ 3 bilhoes",
+          "summary": "Berberina ativa AMPK, a mesma via da metformina. Estudos mostram reducao de glicemia de jejum, melhora de insulina e reducao de LDL. Posicionamento ideal: suporte metabolico natural, nao substituto de GLP-1.",
+          "source": "BHB Food GLP-1 Natural 2026 / FoodBiz GLP-1 Industrias / Naturaltech GLP-1 Mercado",
+          "curto": "8",
+          "medio": "8",
+          "longo": "8",
+          "idea": "Metabolismo Natural Voce Mais+: berberina 500mg + cromo picolinato + canela de ceylao. Claims aprovados: suporte a glicemia normal e saude metabolica."
+        },
+        {
+          "category": "mercado",
+          "tag": "Live Commerce Suplementos 7x Conversao TikTok Shop R$10,4bi",
+          "stars": "⭐⭐⭐",
+          "headline": "Live commerce converte 7x mais que posts estaticos para suplementos — mercado de influencia mobiliza R$ 10,4 bi e TikTok Shop vira canal de lancamento obrigatorio",
+          "summary": "Lives com especialistas de saude convertem 7x mais que posts estaticos. Mercado de influencia R$ 10,4bi com crescimento de 29%. TikTok Shop supera marketplaces em conversao no publico 18-35 anos para nutraceuticos.",
+          "source": "Nacao Digital Influencer Marketing 2026 / HypeAuditor Tendencias BR 2026 / Influency.me Mercado",
+          "curto": "9",
+          "medio": "8",
+          "longo": "7",
+          "idea": "5 microinfluenciadores com formacao validada para lives mensais com roteiro de claims pre-validados pela ANVISA. Meta: R$15k-30k por live com custo de R$2k-5k."
+        },
+        {
+          "category": "mercado",
+          "tag": "Inverno Imunidade Bundle Vitamina C Zinco Beta-Glucana Jun-Ago",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Buscas por suplementos de imunidade crescem 34% em maio — vitamina C, zinco e beta-glucana formam o trio mais buscado e janela de bundle de inverno se fecha em julho",
+          "summary": "Buscas por imunidade crescem 34% em maio. Pico em junho-julho. Beta-glucana de aveia ativa macrofagos e celulas NK com evidencia robusta. Bundle preventivo tem janela ate julho.",
+          "source": "Hile.com.br Suplementos 2026 / Farmacotecnica Tendencias 2026 / Ekobe Tendencias 2026",
+          "curto": "9",
+          "medio": "7",
+          "longo": "6",
+          "idea": "Bundle Defesa Total Voce Mais+: vitamina C lipossomal 1.000mg + zinco quelado 15mg + beta-glucana 250mg. Lancamento campanha primeira semana de junho."
+        }
+      ]
+    },
+    {
       "date": "2026-05-20",
       "dateLabel": "20 de Maio de 2026",
       "cards": [
