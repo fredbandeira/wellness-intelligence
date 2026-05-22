@@ -1,6 +1,156 @@
 {
   "editions": [
     {
+      "date": "2026-05-22",
+      "dateLabel": "22 de Maio de 2026",
+      "cards": [
+        {
+          "category": "regulação",
+          "tag": "ANVISA RDC 843 Prazo Set 2026 Urgente",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "100 dias para o prazo final ANVISA: RDC 843/2024 exige notificacao de todos os suplementos ate setembro de 2026",
+          "summary": "A RDC 843/2024 e a IN 281/2024 exigem notificacao de todos os suplementos ate 1 de setembro de 2026. ANVISA ja proibiu suplementos por propaganda irregular e suspendeu marcas em 2026.",
+          "source": "gov.br/anvisa 2026 / Exame Brasil / CMA Law RDC 843",
+          "curto": "10",
+          "medio": "7",
+          "longo": "5",
+          "idea": "Auditoria regulatoria urgente e notificacao de toda a linha antes de setembro de 2026."
+        },
+        {
+          "category": "mercado",
+          "tag": "Mercado BR R$13,8bi 2030 CAGR 15%",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Mercado brasileiro de suplementos cresce 15% em 2025 e deve atingir R$ 13,8 bilhoes ate 2030",
+          "summary": "Crescimento de 15% em 2025 movimentando R$ 7,6 bilhoes. 48% dos brasileiros consomem semanalmente. 40% compram por indicacao de influenciador.",
+          "source": "Revista Suplementacao BR / Grand View Research / Hile Suplementos 2026",
+          "curto": "8",
+          "medio": "9",
+          "longo": "9",
+          "idea": "Programa de micro-influenciadores profissionais de saude para capturar os 40% que compram por indicacao."
+        },
+        {
+          "category": "tendências",
+          "tag": "Adaptogenicos Estresse USD 9bi Ashwagandha KSM-66",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Adaptogenicos disparam em 2026 impulsionados por estresse cronico — ashwagandha KSM-66 lidera com 26% de share",
+          "summary": "Mercado global a USD 9,26 bilhoes em 2026. Ashwagandha domina com 26% de share. Stacks multi-adaptogenicos (calm focus, sleep stack) sao o formato de maior crescimento.",
+          "source": "Genie Blog Supplement Trends 2026 / Klova Adaptogens 2026 / Detroit News Apr 2026",
+          "curto": "9",
+          "medio": "9",
+          "longo": "8",
+          "idea": "Stack Adaptogenico com 3 formulas por outcome: Calm Stack, Focus Stack e Sleep Stack."
+        },
+        {
+          "category": "ciência",
+          "tag": "Psicobioticos Gut-Brain Ansiedade Tri-biotics 4a Geracao",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Psicobioticos consolidam evidencia: cepas especificas produzem GABA e serotonina via eixo intestino-cerebro em 2026",
+          "summary": "Tri-biotics de quarta geracao combinam prebiotico, probiotico e pos-biotics. Butirato como mediador gut-brain central. Mercado de psicobioticos cresce a CAGR 9% ate 2030.",
+          "source": "Pharma Scalabis Tri-biotics 2026 / Med-BR 2026 / RSD Journal Psicobioticos",
+          "curto": "8",
+          "medio": "9",
+          "longo": "9",
+          "idea": "Psicobiotico 4a geracao com Lactobacillus rhamnosus + FOS + butirato de sodio microencapsulado."
+        },
+        {
+          "category": "ciência",
+          "tag": "Creatina Cognicao Cerebro Nao-Atletas Mai 2026",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Estudo maio 2026 confirma: creatina melhora cognicao em nao-atletas — nova categoria para publico 50+ e mulheres",
+          "summary": "Dose unica de creatina melhorou desempenho cognitivo em privacao de sono. Fosfocreatina cerebral aumenta com suplementacao oral. Categoria cognitiva vazia no Brasil.",
+          "source": "Alo Alo Bahia Mai 2026 / Tua Saude Abr 2026 / Olhar Digital Jan 2026",
+          "curto": "8",
+          "medio": "9",
+          "longo": "9",
+          "idea": "Creatina Cognitiva reposicionada para nao-atletas: mulheres 35-55, profissionais e 50+."
+        },
+        {
+          "category": "tendências",
+          "tag": "FemSaude Menopausa TPM Natural Maca Vitex Primula",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Saude feminina 2026: menopausa e TPM impulsionam demanda por fitoestrogenos naturais — maca, vitex, primula e dong quai no mainstream",
+          "summary": "79% das mulheres brasileiras consomem suplementos. Mercado global de saude feminina a USD 163 bi em 2025, dobrando para USD 316 bi ate 2035. Segmento menopausa = economia climatérica.",
+          "source": "Bonita Mulher Saude 2026 / Ocean Drop Suplementos Menopausa / Lab Sao Lucas 2026",
+          "curto": "9",
+          "medio": "9",
+          "longo": "8",
+          "idea": "Linha Ciclo Feminino com 3 kits: TPM Calm, Menopausa Equilibrio e Fertil Energia."
+        },
+        {
+          "category": "tendências",
+          "tag": "Clean Label 3.0 Rastreabilidade Ingredientes USD 89bi 2034",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Clean label evolui para 3.0: 60% dos consumidores exigem saber origem e processo de cada ingrediente",
+          "summary": "Mercado global clean label movimentou USD 28,2 bi em 2024, projetado para USD 89,7 bi ate 2034. Rastreabilidade de ingrediente e nova exigencia minima.",
+          "source": "Food Connection Clean Label 2026 / BHB Food Ingredientes 2026 / Innova Market Insights",
+          "curto": "7",
+          "medio": "9",
+          "longo": "9",
+          "idea": "QR code em todas as embalagens com rastreabilidade completa do ingrediente — origem e certificacoes."
+        },
+        {
+          "category": "produtos",
+          "tag": "Proteina Plant-Based Ervilha Arroz Brasil R$2,2bi",
+          "stars": "⭐⭐⭐",
+          "headline": "Proteina plant-based consolida no Brasil: mercado supera R$ 2,2 bi com ervilha e arroz liderando — 40% priorizam ingredientes naturais",
+          "summary": "Mercado global de proteina plant-based a USD 9,57 bi ate 2027. 60% dos brasileiros aumentando ingestao proteica. Movimento migrou de mimetismo de whey para atributos vegetais proprios.",
+          "source": "Vegan Business BR 2026 / Ekobe Tendencias 2026 / Food Connection BR 2026",
+          "curto": "7",
+          "medio": "8",
+          "longo": "8",
+          "idea": "Proteina Pure Plant com ervilha 70% + arroz 30%, sem soja, sem lactose, clean label com enzimas digestivas."
+        },
+        {
+          "category": "produtos",
+          "tag": "Magnesio Complexo L-Treonato Bisglicinato Malato 2026",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Complexo de magnesio vira top vendido: L-treonato para cognicao, bisglicinato para sono, malato para energia — 70% dos brasileiros deficientes",
+          "summary": "Consumidor sofisticado entende diferencas entre formas de magnesio. Complexos com 3 formas viram padrao premium. 70% dos brasileiros abaixo da ingestao recomendada.",
+          "source": "Selektz Top Complexos Magnesio BR 2026 / Med-BR 2026 / Hile Suplementos 2026",
+          "curto": "8",
+          "medio": "8",
+          "longo": "7",
+          "idea": "Magnesio 3X com L-treonato + bisglicinato + malato em 3 versoes por beneficio: cognicao, sono e energia."
+        },
+        {
+          "category": "tendências",
+          "tag": "Cogumelos Funcionais Lion Mane Chaga USD 65bi 2030",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Cogumelos funcionais ao mainstream: lion mane e chaga lideram — mercado a USD 65,8 bi ate 2030 com atencao crescente da ANVISA",
+          "summary": "CAGR de 8,44% ate 2030. Lion mane unico adaptogenico com mecanismo NGF. ANVISA proibiu gotas — capsulas e pos sao formatos seguros. Blends de 6-8 cogumelos em capsula crescem mais rapido.",
+          "source": "Mordor Intelligence 2026 / CartaCapital ANVISA Cogumelos / Vitaminer Shop 2026",
+          "curto": "8",
+          "medio": "9",
+          "longo": "9",
+          "idea": "Blend 6 Cogumelos em capsula: lion mane + chaga + reishi + cordyceps + turkey tail + maitake em conformidade ANVISA."
+        },
+        {
+          "category": "ciência",
+          "tag": "Omega-3 EPA DHA Alta Concentracao Biodisponibilidade",
+          "stars": "⭐⭐⭐",
+          "headline": "Omega-3 de qualidade redefine categoria: EPA+DHA acima de 50% e novo padrao — reducao de 30-40% de triglicerideos documentada",
+          "summary": "Krill oil supera fish oil em biodisponibilidade. Reducao de 25% de risco cardiovascular com dosagem adequada. Certificacoes MSC e IFOS 5 estrelas viram exigencia de mercado.",
+          "source": "Tua Saude Mai 2026 / Manuel Roman Omega-3 2026 / Suravitasan Guia 2026",
+          "curto": "7",
+          "medio": "8",
+          "longo": "8",
+          "idea": "Omega-3 Ultra com 80% EPA+DHA, certificacao IFOS 5 estrelas e MSC, concentracao visivel no front."
+        },
+        {
+          "category": "ciência",
+          "tag": "NMN NAD+ Longevidade Evidencia Humana 2026",
+          "stars": "⭐⭐⭐",
+          "headline": "NMN e NAD+ em 2026: mecanismo biologico real mas evidencia em humanos limitada — oportunidade de posicionamento honesto",
+          "summary": "NAD+ declina com a idade e suplementacao aumenta NAD+ sanguineo. Mas ensaios humanos ainda nao provam extensao de vida. Posicionamento honesto diferencia marcas serias.",
+          "source": "The Conversation NMN Ciencia 2026 / Fortune Best NMN 2026 / Ramos da Ciencia",
+          "curto": "6",
+          "medio": "8",
+          "longo": "9",
+          "idea": "NMN Integrity com claim honesto de suporte mitocondrial — sem overpromise de anti-aging."
+        }
+      ]
+    },
+    {
       "date": "2026-05-21",
       "dateLabel": "21 de Maio de 2026",
       "cards": [

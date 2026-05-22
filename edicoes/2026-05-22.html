@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wellness Intelligence | voce-mais+</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --navy:#00276e;--yellow:#feda14;--black:#1d1d1b;--white:#ffffff;--gray-50:#f7f7f7;--gray-100:#efefef;--gray-200:#e0e0e0;--gray-400:#adadad;--gray-600:#6b6b6b;--gray-800:#2e2e2e;--border:rgba(0,0,0,0.09); }
+    body{font-family:'Inter',sans-serif;background:var(--white);color:var(--black);-webkit-font-smoothing:antialiased;}
+    header{background:var(--white);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100;}
+    .header-inner{max-width:1280px;margin:0 auto;padding:0 40px;height:64px;display:flex;align-items:center;justify-content:space-between;}
+    .logo-wrap{display:flex;align-items:center;gap:16px;text-decoration:none;}
+    .logo-img{height:22px;width:auto;}
+    .logo-divider{width:1px;height:20px;background:var(--gray-200);}
+    .logo-sub{font-size:10px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--gray-400);}
+    nav{display:flex;gap:2px;}
+    nav a{font-size:11px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--gray-600);text-decoration:none;padding:6px 14px;border-radius:100px;transition:all .15s;}
+    nav a:hover{color:var(--navy);background:var(--gray-50);}
+    nav a.active{color:var(--navy);background:var(--yellow);}
+    .header-date{font-size:11px;font-weight:500;color:var(--gray-400);}
+    .alert-strip{background:var(--navy);color:var(--white);padding:11px 40px;display:flex;align-items:center;justify-content:center;gap:20px;}
+    .alert-badge{font-size:9px;font-weight:800;letter-spacing:0.14em;text-transform:uppercase;background:var(--yellow);color:var(--navy);padding:4px 10px;border-radius:100px;white-space:nowrap;}
+    .alert-text{font-size:12.5px;opacity:.9;}
+    .alert-text strong{font-weight:700;}
+    main{max-width:1280px;margin:0 auto;padding:48px 40px 80px;}
+    .edition-bar{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px;padding-bottom:20px;border-bottom:1px solid var(--border);}
+    .edition-live{display:flex;align-items:center;gap:10px;}
+    .live-dot{width:7px;height:7px;background:var(--navy);border-radius:50%;animation:blink 1.8s infinite;}
+    @keyframes blink{0%,100%{opacity:1}50%{opacity:.25}}
+    .edition-label{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--navy);}
+    .edition-meta{font-size:11px;color:var(--gray-400);}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:76px;gap:14px;}
+    .card{border-radius:14px;padding:26px;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between;transition:transform .18s,box-shadow .18s;cursor:pointer;}
+    .card:hover{transform:translateY(-3px);box-shadow:0 14px 36px rgba(0,0,0,.10);}
+    .c-hero{grid-column:span 7;grid-row:span 5;}
+    .c-tall{grid-column:span 5;grid-row:span 5;}
+    .c-wide{grid-column:span 8;grid-row:span 4;}
+    .c-med{grid-column:span 4;grid-row:span 4;}
+    .c-sm{grid-column:span 4;grid-row:span 4;}
+    .c-third{grid-column:span 4;grid-row:span 3;}
+    .c-full{grid-column:span 12;grid-row:span 3;}
+    .bg-navy{background:var(--navy);color:var(--white);}
+    .bg-yellow{background:var(--yellow);color:var(--navy);}
+    .bg-black{background:var(--black);color:var(--white);}
+    .bg-gray800{background:var(--gray-800);color:var(--white);}
+    .bg-gray100{background:var(--gray-100);color:var(--black);}
+    .bg-white{background:var(--white);color:var(--black);border:1px solid var(--border);}
+    .tag{display:inline-flex;align-items:center;gap:5px;font-size:9px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;padding:4px 10px;border-radius:100px;width:fit-content;}
+    .bg-navy .tag,.bg-black .tag,.bg-gray800 .tag{background:rgba(255,255,255,.15);color:var(--white);}
+    .bg-yellow .tag{background:rgba(0,39,110,.12);color:var(--navy);}
+    .bg-gray100 .tag,.bg-white .tag{background:var(--navy);color:var(--white);}
+    .tag-dot{width:4px;height:4px;border-radius:50%;background:currentColor;opacity:.6;}
+    .headline{font-size:clamp(15px,2vw,24px);font-weight:800;line-height:1.15;letter-spacing:-.025em;margin-top:10px;}
+    .c-hero .headline{font-size:clamp(22px,2.8vw,36px);}
+    .c-full .headline{font-size:clamp(16px,2vw,26px);max-width:900px;}
+    .sub{font-size:12px;line-height:1.55;margin-top:8px;opacity:.72;}
+    .stat-num{font-size:clamp(36px,5vw,60px);font-weight:900;letter-spacing:-.04em;line-height:1;margin:10px 0 4px;}
+    .stat-desc{font-size:11px;font-weight:500;line-height:1.45;opacity:.70;}
+    .card-foot{display:flex;align-items:center;justify-content:space-between;margin-top:14px;}
+    .cta-label{font-size:9.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;opacity:.50;}
+    .arrow-btn{width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;}
+    .bg-navy .arrow-btn,.bg-black .arrow-btn,.bg-gray800 .arrow-btn{background:rgba(255,255,255,.15);}
+    .bg-yellow .arrow-btn{background:rgba(0,39,110,.12);}
+    .bg-gray100 .arrow-btn,.bg-white .arrow-btn{background:var(--navy);color:var(--white);}
+    .accent-bar{display:block;width:28px;height:3px;background:var(--yellow);border-radius:2px;margin-bottom:12px;}
+    .bg-yellow .accent-bar{background:var(--navy);}
+    .modal-overlay{position:fixed;inset:0;z-index:500;background:rgba(0,20,55,.55);backdrop-filter:blur(6px);display:flex;align-items:center;justify-content:center;padding:24px;opacity:0;pointer-events:none;transition:opacity .22s;}
+    .modal-overlay.open{opacity:1;pointer-events:all;}
+    .modal{background:var(--white);border-radius:20px;width:100%;max-width:640px;max-height:88vh;overflow-y:auto;box-shadow:0 32px 80px rgba(0,0,0,.22);transform:translateY(20px);transition:transform .25s;position:relative;}
+    .modal-overlay.open .modal{transform:translateY(0);}
+    .modal-header{background:var(--navy);border-radius:20px 20px 0 0;padding:28px 32px 24px;position:relative;}
+    .modal-tag{display:inline-flex;align-items:center;gap:5px;font-size:9px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;padding:4px 10px;border-radius:100px;background:rgba(255,255,255,.15);color:var(--white);margin-bottom:12px;}
+    .modal-headline{font-size:22px;font-weight:800;line-height:1.2;letter-spacing:-.02em;color:var(--white);}
+    .modal-stars{font-size:16px;margin-top:8px;}
+    .modal-close{position:absolute;top:20px;right:20px;width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.15);border:none;color:var(--white);font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .15s;}
+    .modal-close:hover{background:rgba(255,255,255,.28);}
+    .modal-body{padding:28px 32px 32px;}
+    .modal-section{margin-bottom:24px;}
+    .modal-section-title{font-size:9px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--gray-400);margin-bottom:10px;}
+    .modal-summary{font-size:14px;line-height:1.7;color:var(--black);}
+    .modal-source{font-size:11px;color:var(--gray-600);font-style:italic;margin-top:6px;}
+    .scores{display:flex;gap:12px;margin-top:14px;}
+    .score-box{flex:1;background:var(--gray-50);border-radius:10px;padding:12px;text-align:center;}
+    .score-label{font-size:8.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gray-400);display:block;margin-bottom:4px;}
+    .score-val{font-size:22px;font-weight:900;color:var(--navy);}
+    .idea-box{background:var(--navy);border-radius:12px;padding:18px 20px;color:var(--white);}
+    .idea-label{font-size:8.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--yellow);display:block;margin-bottom:8px;}
+    .idea-text{font-size:13px;line-height:1.65;opacity:.9;}
+    .archive{background:var(--gray-50);border-top:1px solid var(--border);padding:56px 40px;}
+    .archive-inner{max-width:1280px;margin:0 auto;}
+    .archive-hd{display:flex;align-items:center;gap:16px;margin-bottom:28px;}
+    .archive-title{font-size:10px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--gray-400);white-space:nowrap;}
+    .archive-line{flex:1;height:1px;background:var(--border);}
+    .archive-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;}
+    .archive-card{display:block;text-decoration:none;color:var(--black);background:var(--white);padding:18px 20px;border-radius:10px;border:1px solid var(--border);transition:all .15s;}
+    .archive-card:hover{border-color:var(--navy);box-shadow:0 4px 16px rgba(0,39,110,.09);transform:translateY(-2px);}
+    .archive-date{font-size:9px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--white);background:var(--navy);display:inline-block;padding:3px 8px;border-radius:4px;margin-bottom:9px;}
+    .archive-hl{font-size:12px;font-weight:600;line-height:1.4;margin-bottom:9px;}
+    .archive-tags{display:flex;flex-wrap:wrap;gap:4px;}
+    .archive-tags span{font-size:8.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:3px 7px;border-radius:100px;background:var(--gray-100);color:var(--gray-600);}
+    footer{background:var(--navy);padding:28px 40px;}
+    .footer-inner{max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;}
+    .footer-brand{display:flex;align-items:center;gap:14px;}
+    .footer-sep{width:1px;height:16px;background:rgba(255,255,255,.2);}
+    .footer-tagline{font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.4);}
+    .footer-note{font-size:10px;opacity:.3;color:var(--white);}
+    @media(max-width:768px){
+      .header-inner{padding:0 20px;}.alert-strip{flex-direction:column;gap:6px;padding:12px 20px;text-align:center;}
+      main{padding:32px 16px 60px;}.grid{grid-template-columns:1fr;grid-auto-rows:auto;}
+      .c-hero,.c-tall,.c-wide,.c-med,.c-sm,.c-third,.c-full{grid-column:span 1;grid-row:span 1;min-height:180px;}
+      .archive{padding:40px 16px;}.footer-inner{flex-direction:column;gap:10px;text-align:center;}
+      .modal-body{padding:20px 20px 24px;}.modal-header{padding:22px 22px 18px;}
+    }
+  </style>
+</head>
+<body>
+
+<div class="modal-overlay" id="modal-overlay">
+  <div class="modal">
+    <div class="modal-header">
+      <div class="modal-tag" id="m-tag"></div>
+      <div class="modal-headline" id="m-headline"></div>
+      <div class="modal-stars" id="m-stars"></div>
+      <button class="modal-close" id="modal-close">&#10005;</button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-section">
+        <div class="modal-section-title">Analise Completa</div>
+        <div class="modal-summary" id="m-summary"></div>
+        <div class="modal-source" id="m-source"></div>
+      </div>
+      <div class="scores">
+        <div class="score-box"><span class="score-label">Curto Prazo</span><span class="score-val" id="m-curto"></span></div>
+        <div class="score-box"><span class="score-label">Medio Prazo</span><span class="score-val" id="m-medio"></span></div>
+        <div class="score-box"><span class="score-label">Longo Prazo</span><span class="score-val" id="m-longo"></span></div>
+      </div>
+      <div class="idea-box" style="margin-top:20px;">
+        <span class="idea-label">Ideia para Voce Mais+</span>
+        <div class="idea-text" id="m-idea"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="header-inner">
+    <a class="logo-wrap" href="#"><img src="logo-positiva.png" alt="voce-mais+" class="logo-img" /><div class="logo-divider"></div><span class="logo-sub">Wellness Intelligence</span></a>
+    <nav><a href="#" class="active">Hoje</a><a href="#" onclick="document.querySelector('.archive').scrollIntoView({behavior:'smooth'});return false;">Arquivo</a></nav>
+    <span class="header-date">21 de Maio de 2026</span>
+  </div>
+</header>
+
+<div class="alert-strip">
+  <span class="alert-badge">&#9888; Urgente &mdash; 21 Mai</span>
+  <span class="alert-text"><strong>GLP-1 Support vira categoria obrigatoria em 2026:</strong> usuarios de Ozempic e Wegovy precisam de proteina, fibra e micronutrientes de alta densidade — marcas que nao lancarem linha GLP-1 Support perdem fatia do segmento que vai a <strong>US$ 160 bi ate 2030.</strong></span>
+</div>
+
+<main>
+  <div class="edition-bar">
+    <div class="edition-live"><div class="live-dot"></div><span class="edition-label">Edicao de hoje &mdash; 21 de Maio de 2026</span></div>
+    <span class="edition-meta">13 tendencias analisadas &middot; Wellness Intelligence Voce Mais+</span>
+  </div>
+
+  <div class="grid">
+
+    <!-- Card 1: Hero navy - GLP-1 Support categoria -->
+    <div class="card c-hero bg-navy" data-modal="1">
+      <div><span class="accent-bar"></span><div class="tag"><div class="tag-dot"></div>Mercado &middot; GLP-1 Support Nova Categoria US$160bi 2030</div><div class="headline">GLP-1 Support vira nova categoria obrigatoria do portfolio: usuarios de Ozempic e Wegovy precisam de proteina de alta densidade, fibra e micronutrientes — mercado caminha para US$ 160 bilhoes ate 2030 e marcas que ignorarem perdem posicionamento agora</div><p class="sub">Semaglutida reduz ingestao calorica drasticamente. Isso cria um consumidor com deficit nutricional grave em proteina, B12, ferro e calcio. A Essential Nutrition ja lancou protocolo GLP-1 Support. Quem entra antes define a categoria.</p></div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <!-- Card 2: Tall yellow - Peptídeos 281% boom -->
+    <div class="card c-tall bg-yellow" data-modal="2">
+      <div><span class="accent-bar"></span><div class="tag"><div class="tag-dot"></div>Tendencias &middot; Peptideos Beauty Therapy Boom 2026</div><div class="headline">Busca por peptide therapy explode 281% no Google e 459% no TikTok — BASF lanca NeoHelix em abril 2026 e colageno peptideo supera US$ 744 mi</div><div class="stat-num">281%</div><div class="stat-desc">crescimento nas buscas por terapia com peptideos no Google em 2026. No TikTok, +459%. No Instagram, +412%. Colageno peptideo hidrolisado lidera com mercado de USD 744 mi crescendo a 5,97% ao ano.</div></div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <!-- Card 3: Wide black - Adaptógenos USD 9,26bi -->
+    <div class="card c-wide bg-black" data-modal="3">
+      <div><div class="tag"><div class="tag-dot"></div>Mercado &middot; Adaptogenicos USD 9,26bi Ashwagandha 26% Share 2026</div><div class="headline">Mercado global de adaptogenicos chega a US$ 9,26 bilhoes em 2026 com ashwagandha liderando 26% do share — caminho para US$ 12,81 bi ate 2036 impulsionado por estresse cronico e saude mental</div><p class="sub">Ashwagandha domina por heranca ayurvedica, 26% de share de mercado e forte evidencia clinica para cortisol e estresse. Rhodiola, Holy Basil e Lion Mane completam o top 4. Bundles como Focus Stack e Calm Kit sao o formato de maior crescimento.</p></div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <!-- Card 4: Med gray800 - NMN NAD+ evidencia questionada -->
+    <div class="card c-med bg-gray800" data-modal="4">
+      <div><div class="tag"><div class="tag-dot"></div>Ciencia &middot; NMN NAD+ Evidencia Humana Questionada Mai 2026</div><div class="headline">MedicalXpress maio 2026: revisao critica questiona se NMN e NAD+ realmente retardam o envelhecimento em humanos — evidencia atual nao suporta claims anti-aging, mas mecanismo biologico e real</div><p class="sub">NAD+ declina com a idade e e fundamental no metabolismo energetico. Mas ensaios humanos ainda nao provam retardo de envelhecimento. Oportunidade de comunicacao honesta que diferencia marcas serias.</p></div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <!-- Card 5: Sm gray100 - Sono gummies L-theanina -->
+    <div class="card c-sm bg-gray100" data-modal="5">
+      <div><div class="tag"><div class="tag-dot"></div>Mercado &middot; Sono Suplementos USD 7,94bi Gummies L-Teanina</div><div class="headline">Mercado de suplementos de sono atinge US$ 7,94 bi em 2026 — gummies com L-teanina sao o formato de crescimento mais rapido, superando melatonina isolada em buscas e conversao</div><p class="sub">L-teanina tem o crescimento mais rapido na categoria. Gummies clean label com melatonina + magnesio + L-teanina definem o padrao de produto premium de sono em 2026.</p></div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <!-- Card 6: Third navy - D3+K2 inverno -->
+    <div class="card c-third bg-navy" data-modal="6">
+      <div><div class="tag"><div class="tag-dot"></div>Ciencia &middot; Vitamina D3 K2 Consenso BR Inverno 50,9% Deficiente</div><div class="headline">Novo consenso brasileiro atualiza protocolo D3+K2: inverno se aproxima e 50,9% da populacao tem insuficiencia — janela de posicionamento pre-inverno esta aberta agora</div></div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <!-- Card 7: Third gray100 - Omega-3 krill biodisponibilidade -->
+    <div class="card c-third bg-gray100" data-modal="7">
+      <div><div class="tag"><div class="tag-dot"></div>Ciencia &middot; Krill Oil Biodisponibilidade Omega-3 40% Superior</div><div class="headline">Krill oil eleva indice de omega-3 40% a mais que fish oil — mercado de omega-3 em ebulicao com inovacoes em formas e biodisponibilidade redefinindo o padrao de qualidade</div></div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <!-- Card 8: Third white - Saúde feminina menopausa TPM -->
+    <div class="card c-third bg-white" data-modal="8">
+      <div><div class="tag"><div class="tag-dot"></div>FemSaude &middot; Menopausa TPM Hormonios Naturais Brasil 2026</div><div class="headline">Menopausa e TPM lideram crescimento de suplementos femininos em 2026 — 79% das mulheres brasileiras ja suplementam e buscam solucoes hormonais naturais com maca, primula e vitex</div></div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <!-- Card 9: Wide gray100 - Creatina cognitiva -->
+    <div class="card c-wide bg-gray100" data-modal="9">
+      <div><div class="tag"><div class="tag-dot"></div>Ciencia &middot; Creatina Cognitiva Alem do Fitness Novo Mercado 2026</div><div class="headline">Creatina vai alem do fitness: pesquisas de 2026 confirmam melhora de cognicao e memoria em nao-atletas — categoria cognitiva abre mercado bilionario para o ingrediente mais consolidado do universo fitness</div><p class="sub">Creatina aumenta fosfocreatina cerebral, melhorando producao de energia para neuronios. Estudos em adultos mais velhos, mulheres e trabalhadores sob stress mostram beneficios cognitivos mensuráveis — sem relacao com ganho muscular.</p></div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <!-- Card 10: Med navy - Berberina metabolica -->
+    <div class="card c-med bg-navy" data-modal="10">
+      <div><div class="tag"><div class="tag-dot"></div>Tendencias &middot; Berberina Metabolismo Natural GLP-1 Vegetal 87%</div><div class="headline">Berberina volta aos holofotes como alternativa metabolica natural ao GLP-1 — buscas crescem 87% em 2026 e mercado de metabolismo natural supera US$ 3 bilhoes globalmente</div><p class="sub">Berberina ativa AMPK, a mesma via metabolica que a metformina. Estudos mostram reducao de glicemia, LDL e insulina de jejum. Posicionamento como aliado natural para quem nao usa ou nao pode usar GLP-1.</p></div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <!-- Card 11: Sm yellow - Live commerce suplementos -->
+    <div class="card c-sm bg-yellow" data-modal="11">
+      <div><div class="tag"><div class="tag-dot"></div>Digital &middot; Live Commerce Suplementos 7x Conversao 2026</div><div class="headline">Live commerce converte 7x mais que posts estaticos para suplementos — mercado de influencia de saude mobiliza R$ 10,4 bi no Brasil e TikTok Shop vira canal de lancamento obrigatorio</div><div class="stat-num">7x</div><div class="stat-desc">mais conversao de live commerce vs posts estaticos em suplementos. Mercado de marketing de influencia no Brasil: R$ 10,4 bilhoes em 2025 com crescimento de 29%. TikTok Shop ja supera marketplace em conversao para nutraceuticos.</div></div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <!-- Card 12: Third black - Inverno imunidade -->
+    <div class="card c-third bg-black" data-modal="12">
+      <div><div class="tag"><div class="tag-dot"></div>Mercado &middot; Inverno Imunidade Bundle Vitamina C Zinco Beta-Glucana</div><div class="headline">Outono chegando: buscas por suplementos de imunidade crescem 34% em maio — vitamina C, zinco e beta-glucana de aveia formam o trio mais buscado e janela de lancamento de bundle se fecha em julho</div></div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <!-- Card 13: Full gray100 - Análise de Cruzamento -->
+    <div class="card c-full bg-gray100" data-modal="13">
+      <div><div class="tag"><div class="tag-dot"></div>Analise de Cruzamento &middot; 21 Maio 2026 &middot; Tema Unificador</div><div class="headline">21 Mai: GLP-1 Support urgente + peptideos 281% + adaptogenicos US$9bi + NMN evidence update + sono gummies + D3+K2 inverno + krill omega-3 + menopausa feminina + creatina cognitiva + berberina metabolica + live commerce + imunidade inverno = POSICIONAMENTO PROATIVO + EVIDENCIA + SAZONALIDADE como triade operacional</div><p class="sub">A marca que entrar em GLP-1 Support agora, comunicar evidencia com honestidade e preparar o bundle de inverno ate julho captura tres ondas simultaneas de demanda no maior mercado de wellness do hemisfério sul.</p></div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+  </div>
+</main>
+
+<section class="archive">
+  <div class="archive-inner">
+    <div class="archive-hd"><div class="archive-title">Edicoes Anteriores</div><div class="archive-line"></div></div>
+    <div class="archive-grid">
+      <a class="archive-card" href="edicoes/2026-05-20.html"><div class="archive-date">20 de Maio de 2026</div><div class="archive-hl">ANVISA propaganda irregular urgente + fibras 62% + cogumelos mainstream + espermidina autofagia + FemTech wearables + psicobioticos + verisol beauty + proteina fava + magnesio stack + microinfluenciadores + wellness US$96bi + clean label 3.0</div><div class="archive-tags"><span>anvisa</span><span>cogumelos</span><span>clean-label</span></div></a>
+      <a class="archive-card" href="edicoes/2026-05-19.html"><div class="archive-date">19 de Maio de 2026</div><div class="archive-hl">CONAR influenciadores urgente + suplementos 59% lares + GLP-1 remodela + psicobioticos + feminino 79% + D3 Lancet + sono formas + plant-based + clean label + longevidade NMN</div><div class="archive-tags"><span>conar</span><span>glp-1</span><span>psicobioticos</span></div></a>
+      <a class="archive-card" href="edicoes/2026-05-18.html"><div class="archive-date">16 de Maio de 2026</div><div class="archive-hl">Berberina GLP-1 urgente + curcuma IN 438 conformidade + cogumelos janela + magnesio formas + fibras boom + burnout adaptogenicos + FemTech hormonal + millennials preventivos</div><div class="archive-tags"><span>berberina</span><span>curcuma-anvisa</span><span>cogumelos</span></div></a>
+      <a class="archive-card" href="edicoes/2026-05-15.html"><div class="archive-date">15 de Maio de 2026</div><div class="archive-hl">Wellness US$6,8tri + suplementos BR 15% + ANVISA + psicobioticos + longevidade NMN + mulheres 79% + GutTok desinformacao + D3+K2 inverno</div><div class="archive-tags"><span>psicobioticos</span><span>mulheres</span><span>inverno</span></div></a>
+      <a class="archive-card" href="edicoes/2026-05-14.html"><div class="archive-date">14 de Maio de 2026</div><div class="archive-hl">GLP-1 Support urgente + Vitafoods tendencias + ANVISA curcuma + fibras boom + medicos-influencers + healthy aging + gummies crescendo</div><div class="archive-tags"><span>glp-1</span><span>vitafoods</span><span>anvisa</span></div></a>
+      <a class="archive-card" href="edicoes/2026-05-13.html"><div class="archive-date">13 de Maio de 2026</div><div class="archive-hl">Magnesio 70% + creatina cognitiva + NMN longevidade + psicobioticos + vitamina D pre-inverno + clean label + mulher lidera</div><div class="archive-tags"><span>magnesio</span><span>creatina</span><span>nmn</span></div></a>
+      <a class="archive-card" href="edicoes/2026-05-12.html"><div class="archive-date">12 de Maio de 2026</div><div class="archive-hl">GLP-1 generico urgente + inverno imunidade + omega-3 + curcumina + FemTech hormonal + sono + personalizacao IA</div><div class="archive-tags"><span>glp-1</span><span>imunidade</span><span>femtech</span></div></a>
+      <a class="archive-card" href="edicoes/2026-05-09.html"><div class="archive-date">9 de Maio de 2026</div><div class="archive-hl">Creatina feminina boom + vitamina D pre-inverno + cogumelos mainstream + ashwagandha + NMN longevidade</div><div class="archive-tags"><span>creatina-fem</span><span>vitamina-d</span><span>cogumelos</span></div></a>
+      <a class="archive-card" href="edicoes/2026-05-08.html"><div class="archive-date">8 de Maio de 2026</div><div class="archive-hl">GLP-1 redefine portfolio + fibras emergem + cognitivo multigeracional + inverno a vista + ANVISA intensifica</div><div class="archive-tags"><span>glp-1</span><span>fibras</span><span>nootropicos</span></div></a>
+      <a class="archive-card" href="edicoes/2026-05-07.html"><div class="archive-date">7 de Maio de 2026</div><div class="archive-hl">ANVISA cogumelos + curcuma + creatina longevidade + L-teanina viral + inverno chegando</div><div class="archive-tags"><span>anvisa</span><span>cogumelos</span><span>l-teanina</span></div></a>
+      <a class="archive-card" href="edicoes/2026-05-06.html"><div class="archive-date">6 de Maio de 2026</div><div class="archive-hl">Mercado R$13,8bi 2030 + omega-3 neuroprotecao + clean label obrigatorio + IA personalizada</div><div class="archive-tags"><span>mercado</span><span>omega-3</span><span>clean-label</span></div></a>
+      <a class="archive-card" href="edicoes/2026-05-05.html"><div class="archive-date">5 de Maio de 2026</div><div class="archive-hl">ANVISA setembro + Bundle Inverno Imunidade + Faux-zempic natural + longevidade feminina</div><div class="archive-tags"><span>anvisa</span><span>inverno</span><span>faux-zempic</span></div></a>
+      <a class="archive-card" href="edicoes/2026-05-04.html"><div class="archive-date">4 de Maio de 2026</div><div class="archive-hl">GLP-1 remodela mercado + berberina metabolismo + psicobioticos cortisol consolidam Q2 2026</div><div class="archive-tags"><span>glp-1</span><span>berberina</span><span>psicobioticos</span></div></a>
+      <a class="archive-card" href="edicoes/2026-05-03.html"><div class="archive-date">3 de Maio de 2026</div><div class="archive-hl">Magnesio L-Treonato atravessa barreira cerebral + mercado feminino 58% + longevidade NAD+</div><div class="archive-tags"><span>magnesio-cognitivo</span><span>feminino</span><span>longevidade</span></div></a>
+      <a class="archive-card" href="edicoes/2026-05-01.html"><div class="archive-date">1 de Maio de 2026</div><div class="archive-hl">Intestino como centro do wellness: prebioticos + psicobioticos + fibra funcional triangulo estrategico</div><div class="archive-tags"><span>psicobioticos</span><span>prebioticos</span><span>gut-brain</span></div></a>
+      <a class="archive-card" href="edicoes/2026-04-30.html"><div class="archive-date">30 de Abril de 2026</div><div class="archive-hl">Psicobioticos ADM + burnout adaptogenicos + vitamina D inverno dominam Dia do Trabalhador</div><div class="archive-tags"><span>psicobioticos</span><span>adaptogenicos</span><span>vitamina-d</span></div></a>
+      <a class="archive-card" href="edicoes/2026-04-29.html"><div class="archive-date">29 de Abril de 2026</div><div class="archive-hl">Colageno vegetal avanca + creatina cognitiva + D3+K2 fundacionais</div><div class="archive-tags"><span>colageno</span><span>creatina</span><span>vitamina-d</span></div></a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand"><img src="logo-branca.png" alt="voce-mais+" style="height:20px;width:auto;" /><div class="footer-sep"></div><span class="footer-tagline">Wellness Intelligence</span></div>
+    <span class="footer-note">Gerado automaticamente &middot; 21 de Maio de 2026</span>
+  </div>
+</footer>
+
+<script>
+const MODALS = {
+  1: {
+    tag: "Mercado - GLP-1 Support Nova Categoria US$160bi ate 2030",
+    headline: "GLP-1 Support vira nova categoria obrigatoria do portfolio: usuarios de Ozempic e Wegovy precisam de proteina de alta densidade, fibra e micronutrientes — mercado a US$ 160 bilhoes ate 2030",
+    stars: "⭐⭐⭐⭐⭐",
+    summary: "O boom dos analogos de GLP-1 (semaglutida, tirzepatida) criou um perfil de consumidor radicalmente novo: aquele que come menos de 1.200 kcal por dia mas precisa de todos os micronutrientes. O deficit nutricional em proteina, vitamina B12, ferro, calcio, vitamina D e magnesio e grave e documentado. Marcas de suplementos que entendem isso primeiro ganham posicionamento de categoria antes da concorrencia. A Essential Nutrition ja lancou o protocolo GLP-1 Support no Brasil, com foco em proteina de alta biodisponibilidade, fibra e vitaminas lipossoliveis. O mercado global de GLP-1 pode superar US$ 160 bilhoes ate 2030, e a demanda por suplementos de apoio nutricional crescera proporcionalmente. Outro angulo de produto: suplementos que estimulam GLP-1 endogeno de forma natural (fibra viscosa, berberina, inulina), atendendo quem busca os beneficios sem o farmaco.",
+    source: "FoodBiz Brasil GLP-1 Suplementos 2026 / Essential Nutrition GLP-1 Support / Naturaltech GLP-1 Mercado / BioredBrasil Alta Proteina",
+    curto: "10", medio: "9", longo: "9",
+    idea: "GLP-1 Support Voce Mais+: linha especifica para usuarios de semaglutida com (1) Proteina Premium GLP-1 Ready — whey ou blend plant-based com alta densidade proteica e baixo volume; (2) Vitaminas GLP-1 Support — B12, ferro, D3+K2, calcio em doses corrigidas para deficit tipico; (3) Fibra GLP-1 — sachet de inulina + psyllium para saciedade e transito. Comunicacao clara: feito para quem come menos mas precisa de mais. Primeiro DTC brasileiro com linha pensada do zero para esse publico."
+  },
+  2: {
+    tag: "Tendencias - Peptideos Beauty Therapy Boom Google 281% TikTok 459%",
+    headline: "Busca por terapia com peptideos explode 281% no Google e 459% no TikTok em 2026 — BASF lanca NeoHelix e colageno peptideo hidrolisado supera USD 744 milhoes",
+    stars: "⭐⭐⭐⭐",
+    summary: "O universo dos peptideos saiu dos clinicas de medicina estetica e entrou definitivamente nas redes sociais e nas prateleiras de suplementos em 2026. Buscas por peptide therapy cresceram 281% no Google, 459% no TikTok e 412% no Instagram. Colageno hidrolisado peptideo lidera o mercado com USD 744 mi em 2026, projetado para USD 1,25 bilhao ate 2035 (CAGR 5,97%). Em abril 2026, a BASF lancou dois ativos cosmeticos de ponta: NeoHelix Regenerate e SkinNexus Collag3n — sinalizando que a innovacao de ingredientes premium nao vai desacelerar. Formulas em po lideram com 57,64% do mercado, mas gummies e capsulas crescem mais rapido. O consumidor sofisticado de 2026 pede peptideos especificos — nao genericamente colageno — e quer saber o peso molecular, a cepa de origem e o estudo que embasa a dose. Marcas que nao falarem a lingua tecnica do peptideo perdem o cliente informado.",
+    source: "Glossy.co Beauty Industry Peptides 2026 / BASF NeoHelix SkinNexus Abril 2026 / FutureMarketInsights Collagen Peptide 2026-2035 / Wellbeing Nutrition Guide 2026",
+    curto: "8", medio: "9", longo: "9",
+    idea: "Peptideo Premium Voce Mais+: linha Colageno Clinico com Verisol 2,5g (peptideo bioativo patenteado com estudo peer-reviewed) + peptideo de elastina + acido hialuronico de baixo peso molecular. Comunicacao: nao e colageno generico — e peptideo especifico com dose e estudo. QR code leva ao paper original. Colaborar com dermatologistas como validadores de conteudo para credibilidade tecnica. Posicionar como o produto para quem ja sabe o que e Verisol."
+  },
+  3: {
+    tag: "Mercado - Adaptogenicos USD 9,26bi Ashwagandha 26% Share Mercado 2026",
+    headline: "Mercado global de adaptogenicos chega a US$ 9,26 bilhoes em 2026 com ashwagandha liderando 26% do share — setor cresce para US$ 12,81 bi ate 2036 impulsionado por estresse cronico e demanda cognitiva",
+    stars: "⭐⭐⭐⭐",
+    summary: "O mercado global de adaptogenicos foi avaliado em USD 9,26 bilhoes em 2026, com projecao de crescimento robusto para USD 12,81 bilhoes ate 2036. Ashwagandha lidera com 26% de share, impulsionada por heranca ayurvedica milenar, ampla base de estudos clinicos e forte reconhecimento global de marca. A demanda central e a saude mental: em 2026, estresse cronico e a principal razao de compra de adaptogenicos, com burnout e ansiedade como gatilhos de busca mais frequentes. Além de ashwagandha, Rhodiola Rosea, Holy Basil e Lion Mane completam o top 4. Tendencia de produto: bundles tematicos como Focus Stack (lion mane + rhodiola) e Calm Kit (ashwagandha + reishi + magnesio glicinate) superam SKUs isolados em ticket e recompra. Mais de 70% dos consumidores pagam premium por ingredientes com certificacao clinica. KSM-66 e Sensoril sao as formas patenteadas de ashwagandha com maior reconhecimento pelo consumidor informado.",
+    source: "OpenPR Adaptogens Market 12.81bi 2036 / Champion Bio Premium Ingredients 2025-2026 / Makers Nutrition Supplement Trends 2026 / MixMasters Supplement Trends 2026",
+    curto: "7", medio: "9", longo: "10",
+    idea: "Adaptogenicos Stack Voce Mais+: dois SKUs de entrada — (1) Calma Profunda: ashwagandha KSM-66 600mg + magnesio glicinato + L-teanina; (2) Foco Ativo: lion mane 500mg + rhodiola 200mg + vitaminas B complexo. Comunicacao separada por problema, nao por ingrediente — quem tem estresse escolhe Calma, quem quer foco escolhe Foco. Preco premium justificado pelo ingrediente patenteado (KSM-66) com estudos publicados visivel no rotulo."
+  },
+  4: {
+    tag: "Ciencia - NMN NAD+ Evidencia Humana Critica MedicalXpress Mai 2026",
+    headline: "MedicalXpress publicas revisao critica de NMN e NAD+ em maio 2026: evidencia humana atual nao suporta claims de retardo do envelhecimento — mas mecanismo biologico e real e oportunidade de comunicacao honesta e unica",
+    stars: "⭐⭐⭐",
+    summary: "Uma revisao critica publicada no MedicalXpress em maio de 2026 analisou os principais estudos com NMN, NAD+ e resveratrol e concluiu que, embora o mecanismo biologico seja bem estabelecido (NAD+ e essencial no metabolismo energetico, reparo de DNA e regulacao de sirtuinas, e declina com a idade), a evidencia humana atual nao suporta a afirmacao de que esses suplementos retardam o envelhecimento de forma mensuravel. Ensaios clinicos em humanos mostram seguranca e tolerabilidade em doses de 100 a 1.250 mg/dia, mas efeitos anti-aging robustos ainda nao foram replicados em populacoes humanas largas. Ensaios com 900mg de NMN diario mostram melhorias em energia e resistencia, mas evidencia de anti-aging permanece em construcao. Esse cenario e uma oportunidade para marcas serias: comunicar com honestidade ('ciencia em desenvolvimento, mecanismo estabelecido') diferencia de competidores que fazem claims exagerados — e cria credibilidade de longo prazo com o consumidor que pesquisa.",
+    source: "MedicalXpress NMN NAD+ Resveratrol Aging Evidence Review Maio 2026 / ConsumerHealthDigest Top NMN 2026 / Naturecan PT Suplementos Longevidade",
+    curto: "5", medio: "7", longo: "9",
+    idea: "Comunicacao Honesta Longevidade Voce Mais+: lancar NMN 500mg com comunicacao diferenciada — sem claims de anti-aging, com linguagem de suporte energetico celular baseado em mecanismo biologico estabelecido. Criar pagina educativa com infografico explicando o ciclo NAD+ e o que a ciencia sabe (e nao sabe) hoje. Ser a marca de longevidade que ensina com honestidade em vez de vender ilusao — isso gera confianca e LTV superior com o publico 40-65 anos que ja pesquisou antes de clicar."
+  },
+  5: {
+    tag: "Mercado - Sono Suplementos USD 7,94bi Gummies L-Teanina Formato Lider",
+    headline: "Mercado de suplementos de sono atinge US$ 7,94 bilhoes em 2026 — gummies clean label com L-teanina, magnesio e melatonina sao o formato de crescimento mais rapido e definem o produto premium da categoria",
+    stars: "⭐⭐⭐⭐",
+    summary: "O mercado global de suplementos de sono cresceu de USD 7,46 bilhoes em 2025 para USD 7,94 bilhoes em 2026 (CAGR 6,5%), com projecao de atingir USD 10,07 bilhoes ate 2030. A melatonina manteve 30% de share de mercado, mas o segmento de aminoacidos e precursores de neurotransmissores (L-teanina, GABA, L-triptofano) e o que mais cresce em 2026. O formato que mais expande sao gummies clean label — sem corantes artificiais, sem adocantes sinteticos — com combinacoes de melatonina 1-3mg + magnesio glicinate 200mg + L-teanina 100mg. A L-teanina produz ondas alfa cerebrais (estado de calma sem sedacao) e sinergiza com a melatonina para um sono mais profundo sem o efeito de embotamento do dia seguinte. O driver de crescimento e o stress cronico: 62% dos adultos brasileiros relatam dificuldades de sono relacionadas ao estresse. Inverno e estacao de pico de demanda por produtos de sono no Brasil.",
+    source: "Precedence Research Sleep Aid Supplements Market 2026 / Sleep Supplements Global Market Report 2026 / Fortune Best Melatonin 2026 / Sleep Foundation Magnesium for Sleep 2026",
+    curto: "8", medio: "9", longo: "8",
+    idea: "Sono Profundo Voce Mais+: gummy clean label com melatonina 1mg (dose minima eficaz, sem efeito hangover) + magnesio glicinate 150mg + L-teanina 100mg + extrato de maracuja (adaptogeno tradicional brasileiro com perfil ansiolítico). Sem corantes artificiais, sem adocantes sinteticos. Sabor maracuja natural. Comunicacao: dormir e o melhor suplemento que existe. Posicionar para o publico que nao quer depender de farmaco mas nao consegue desligar. Bundle de inverno com vitamina D3."
+  },
+  6: {
+    tag: "Ciencia - Vitamina D3 K2 Novo Consenso BR Insuficiencia 50,9% Inverno",
+    headline: "Novo consenso brasileiro da Endocrinologia atualiza protocolo de vitamina D3 e K2 com inverno se aproximando: 50,9% da populacao tem insuficiencia e janela de lancamento pre-inverno esta aberta agora",
+    stars: "⭐⭐⭐⭐",
+    summary: "A Sociedade Brasileira de Endocrinologia atualizou em 2026 o consenso sobre avaliacao e suplementacao de vitamina D, confirmando dados alarmantes: 15,3% da populacao brasileira tem deficiencia e 50,9% tem insuficiencia — em um pais tropical com sol durante praticamente o ano todo. O mecanismo explica a paradoxo: a maioria dos brasileiros trabalha em escritorios com ar condicionado, usa protetor solar e tem agendas que impedem exposicao solar adequada. A suplementacao padrao atual e de 1.000 a 4.000 UI de D3 diario, com K2 MK-7 como cofator essencial para direcionar o calcio mobilizado para os ossos (e nao para arterias). O binomio D3+K2 virou o stack mais prescrito por medicos funcionalistas e nutrologos no Brasil. Com o inverno se aproximando (junho-agosto), a janela de lancamento e comunicacao de produtos D3+K2 esta aberta — demanda organica cresce naturalmente nessa estacao.",
+    source: "Novo Consenso Avaliacao Suplementacao Vitamina D 2026 - Nutritotal / CNN Brasil Vitamina D Criancas / MedBR Melhores Suplementos 2026 / Artmed Vitamina D Diretrizes",
+    curto: "9", medio: "8", longo: "8",
+    idea: "Bundle Inverno Voce Mais+: D3 5.000UI + K2 MK-7 200mcg em softgel de alta biodisponibilidade. Lancamento em campanha pre-inverno na primeira quinzena de junho. Comunicacao: 50,9% do Brasil tem insuficiencia — e voce? Teste de autopercepcao no Instagram Stories (fadiga, imunidade baixa, dores osseas leves) como mecanismo de conscientizacao. Parceria com medicos e nutrologos como validadores de conteudo. Meta de vender o stock pre-inverno ate agosto."
+  },
+  7: {
+    tag: "Ciencia - Krill Oil Omega-3 Biodisponibilidade 40% Superior Fish Oil 2026",
+    headline: "Krill oil eleva o indice de omega-3 40% acima do fish oil convencional: mercado de omega-3 em ebulicao com inovacoes em formas e biodisponibilidade redefinindo o padrao de qualidade da categoria",
+    stars: "⭐⭐⭐",
+    summary: "Estudos comparativos confirmam que o krill oil (oleo de krill antartico) eleva o indice de omega-3 sanguineo de forma significativamente mais eficaz do que o fish oil convencional, com diferenca de 40% na absorcao atribuida a forma fosfolipidica dos omega-3 no krill — versus a forma triglicerida no fish oil, que requer conversao no intestino. Beneficios adicionais do krill: astaxantina natural (potente antioxidante carotenóide sem equivalente no fish oil), menor risco de oxidacao lipidica e ausencia de odor de peixe. A limitacao a ser comunicada com honestidade: o krill tem concentracao absoluta de EPA+DHA menor por capsula — um capsule tipico tem 188mg de EPA+DHA vs 300-1000mg no fish oil. Para manutencao geral, krill e adequado. Para doses terapeuticas altas, fish oil concentrado ainda e necessario. O mercado de omega-3 global cresce com inovacoes em forma (phospholipid omega-3, algal omega-3 para veganos) redefinindo o que o consumidor informado aceita como qualidade.",
+    source: "Cleveland Clinic Krill Oil vs Fish Oil / Healthline Krill Oil vs Fish Oil / ConsumerLab Fish Oil Review 2026 / PMC Enhanced Omega-3 Index Krill vs Fish 2026",
+    curto: "6", medio: "7", longo: "8",
+    idea: "Omega-3 Premium Voce Mais+: dois SKUs com comunicacao clara — (1) Krill Oil 500mg para manutencao diaria (superior em biodisponibilidade, zero odor, com astaxantina) e (2) Omega-3 Concentrado 1.000mg EPA+DHA para doses terapeuticas. Criar conteudo educativo sobre diferenca de formas e quando usar cada um — educar e converter ao mesmo tempo. Para veganos: Algal Omega-3 como terceiro SKU (DHA de algas marinhas, fonte primaria de onde os peixes retiram o omega-3)."
+  },
+  8: {
+    tag: "FemSaude - Menopausa TPM Hormonios Naturais 79% Mulheres BR 2026",
+    headline: "Menopausa e TPM lideram crescimento de suplementos femininos em 2026: 79% das mulheres brasileiras ja suplementam e buscam solucoes hormonais naturais com maca peruana, oleo de primula e vitex agnus castus",
+    stars: "⭐⭐⭐⭐",
+    summary: "Pesquisa do Instituto Locomotiva de 2026 confirma que 79% das mulheres brasileiras usam suplementos — e o segmento de saude hormonal feminina e o que mais cresce. As categorias mais buscadas: alivio de TPM (tensao pre-menstrual), regulacao hormonal na perimenopausa e suporte na menopausa natural sem terapia de reposicao. Os ingredientes mais pesquisados: Maca Peruana (adaptogeno com suporte a libido e energia), oleo de primula (acido gama-linolenico para inflamacao hormonal e sintomas de TPM), vitex agnus castus (modulacao de prolactina e alivio de TPM), vitamina B6 (essencial na fase luteal) e magnesio (alivia crampes e irritabilidade). O dado critico: mulheres entre 38 e 55 anos sao o segmento de maior LTV do mercado de suplementos — alta renda disponivel, alta consciencia de saude, forte tendencia de recompra e disposicao para pagar premium por produto especifico para sua fase de vida.",
+    source: "Instituto Locomotiva 79% Mulheres Suplementam 2026 / Lab SL Suplementos Naturais Saude Hormonal / Natusvita Menopausa TPM 2026 / Evolve Oleo Primula Saude Feminina",
+    curto: "8", medio: "9", longo: "9",
+    idea: "Linha FemBalance Voce Mais+: tres SKUs por fase — (1) Equilibrio Ciclo: vitex 200mg + B6 50mg + magnesio glicinate 300mg (fase luteal e TPM); (2) Energia Hormonal: maca peruana 1.500mg + zinco + vitamina C (suporte libido e energia); (3) Perimenopausa Suave: oleo de primula 1.000mg + isoflavonas de soja 40mg + vitamina E. Comunicacao por sintoma e nao por ingrediente: cada produto tem o nome do problema que resolve. Target: mulheres 38-58 anos. Canal: microinfluenciadoras nutri e ginecologistas com audiencia feminina madura."
+  },
+  9: {
+    tag: "Ciencia - Creatina Cognitiva Alem do Fitness Memoria Concentracao 2026",
+    headline: "Creatina vai alem do fitness em 2026: estudos confirmam melhora de memoria e concentracao em nao-atletas — categoria cognitiva adiciona novo mercado bilionario ao ingrediente mais consolidado do universo de suplementos",
+    stars: "⭐⭐⭐⭐",
+    headline: "Creatina vai alem do fitness em 2026: estudos confirmam melhora de memoria e concentracao em nao-atletas — categoria cognitiva adiciona novo mercado bilionario ao ingrediente mais consolidado",
+    summary: "A creatina, por decadas posicionada exclusivamente como suplemento de performance atletica, vive uma reinvencao em 2026 com base em evidencia cientifica crescente para beneficios cognitivos em nao-atletas. O mecanismo: creatina aumenta a reserva de fosfocreatina no cerebro, melhorando a producao de ATP para neuronios — especialmente em situacoes de stress cognitivo, privacao de sono e envelhecimento. Estudos em 2026 mostram melhoras em memoria de trabalho, velocidade de processamento e resistencia a fadiga mental em adultos, mulheres na menopausa (que tem menor fosfocreatina cerebral naturalmente) e trabalhadores sob estresse cronico. A dose para beneficio cognitivo pode ser menor que para atletica (3g vs 5g). A creatina monoidrato e a forma mais estudada e com custo-beneficio superior. A janela de mercado e clara: o publico cognitivo (35-65 anos, profissionais, mulheres menopausicas) nao se identifica com marketing de academia mas responde a evidencia cientifica e comunicacao de saude cerebral.",
+    source: "Sincofarma SP Creatina Cognitiva Mar 2026 / Food Connection Suplementos Brasil 2026 / Underlabz Tendencias Mercado 2026 / MedBR Melhores Suplementos 2026",
+    curto: "8", medio: "9", longo: "9",
+    idea: "Creatina Cerebro Voce Mais+: creatina monoidrato 3g em sachet solavel com comunicacao 100% focada em cognicao — sem halter, sem musculo, sem academia. Claim: suporte a memoria, concentracao e energia mental. Target: profissionais 35-55 anos sob pressao cognitiva. Bundle com adaptogenico (ashwagandha ou lion mane) como stack cognitivo completo. Conteudo educativo: o que a creatina faz no cerebro (com infografico neural). Produto de entrada para o publico que nunca considerou creatina mas precisa de foco."
+  },
+  10: {
+    tag: "Tendencias - Berberina Metabolismo Natural GLP-1 Vegetal Buscas 87% 2026",
+    headline: "Berberina volta aos holofotes como alternativa metabolica natural ao GLP-1 — buscas crescem 87% em 2026 e categoria de suporte metabolico natural supera US$ 3 bilhoes globalmente",
+    stars: "⭐⭐⭐⭐",
+    summary: "A berberina, alcaloide vegetal encontrado na raiz de Berberis e outras plantas medicinais, experimentou em 2026 um renascimento impulsionado pelo boom dos medicamentos GLP-1. Como alternativa ou complemento natural, a berberina ativa a AMPK (proteina quinase ativada por AMP) — a mesma via metabolica da metformina. Estudos clinicos publicados mostram reducao da glicemia de jejum, melhora da resistencia a insulina, reducao de LDL e perda de peso modesta em pacientes com pre-diabetes e sindrome metabolica. O apelido informal de metformina natural ou GLP-1 vegetal circula em redes sociais e impulsionou buscas 87% acima do ano anterior. O posicionamento ideal nao e como substituto direto de medicamentos GLP-1, mas como suporte metabolico natural para quem: (1) nao tem indicacao medica para GLP-1, (2) busca solucao natural para pre-diabetes ou resistencia a insulina, (3) quer potencializar o resultado de dieta e exercicio com suporte metabolico comprovado.",
+    source: "BHB Food Suplemento GLP-1 Natural 2026 / FoodBiz Industrias GLP-1 Remodelo / Naturaltech GLP-1 Impulsiona Mercado / Underlabz Mercado Suplementos 2026",
+    curto: "8", medio: "8", longo: "8",
+    idea: "Metabolismo Natural Voce Mais+: berberina 500mg 3x ao dia + cromo picolinato + canela de ceylao. Comunicacao: suporte metabolico baseado em ciencia — sem promessas de emagrecimento, sem comparacao com farmaco. Claims aprovados: suporte a glicemia normal, saude metabolica. Conteudo educativo com endocrinologista explicando mecanismo AMPK. Target: adultos 35-60 com pre-diabetes ou queda de energia metabolica. Produto que responde a uma busca de 87% de crescimento anual com posicionamento seguro e honesto."
+  },
+  11: {
+    tag: "Digital - Live Commerce Suplementos 7x Conversao TikTok Shop R$10,4bi",
+    headline: "Live commerce converte 7x mais que posts estaticos para suplementos no Brasil — mercado de influencia de saude mobiliza R$ 10,4 bilhoes e TikTok Shop vira canal de lancamento obrigatorio para marcas DTC",
+    stars: "⭐⭐⭐",
+    summary: "O live commerce tornou-se o canal de conversao de maior performance para suplementos no Brasil em 2026. Lives com criadores de conteudo especializado em saude convertem 7 vezes mais que posts estaticos no mesmo periodo, segundo dados compilados da industria. O motor e a combinacao de demonstracao em tempo real, interacao com duvidas ao vivo e urgencia de oferta. O mercado de marketing de influencia no Brasil movimentou R$ 10,4 bilhoes em 2025, com crescimento de 29% sobre 2023 — o maior dinamismo global na categoria. TikTok Shop consolidou em 2026 como canal de lancamento para marcas DTC de nutraceuticos, superando marketplaces tradicionais em conversao no publico 18-35 anos. A tendencia estrutural: creators que se posicionam como especialistas de nicho (nutris, medicos, farmaceuticos) geram confianca que macro-influenciadores generalistas nao entregam — e cobrancoes de 10x menos por post com 3x mais conversao. O risco: ANVISA e CONAR estao monitorando ativamente claims irregulares feitos durante lives — o ambiente ao vivo nao da imunidade regulatoria.",
+    source: "Nacao Digital Influencer Marketing 2026 / HypeAuditor Tendencias BR 2026 / Labgrowth Marketing Digital Suplementos / Influency.me Mercado Influenciadores Brasil",
+    curto: "9", medio: "8", longo: "7",
+    idea: "Live Commerce Strategy Voce Mais+: selecionar 5 microinfluenciadores com formacao validada (nutri, farmaceutico, medico) para uma live mensal de lancamento de produto. Preparar roteiro estruturado com claims ANVISA-aprovados pre-validados, Q&A com respostas padronizadas e oferta exclusiva de live (desconto ou kit). Criar checklist de compliance para cada live — o que pode e o que nao pode ser dito ao vivo. Meta: cada live de lancamento gerando R$ 15.000-30.000 em vendas diretas com custo de influenciador de R$ 2.000-5.000."
+  },
+  12: {
+    tag: "Mercado - Inverno Imunidade Bundle Vitamina C Zinco Beta-Glucana Janela Jun-Ago",
+    headline: "Outono se aproxima e buscas por suplementos de imunidade crescem 34% em maio — vitamina C, zinco e beta-glucana de aveia formam o trio mais buscado e janela estrategica de bundle de inverno se fecha em julho",
+    stars: "⭐⭐⭐⭐",
+    summary: "Com o outono ja instalado no Brasil (marco-maio) e o inverno chegando (junho-agosto), o mercado de imunidade entra no seu pico sazonal de demanda. Buscas por suplementos de imunidade crescem 34% em maio em relacao a media anual — e o pico acontece em junho e julho, quando as gripes e resfriados sao mais prevalentes. Os tres ingredientes mais buscados: (1) Vitamina C — classica e com forte apelo popular, funcionando como porta de entrada para suplementacao; (2) Zinco — imprescindivel para funcao de celulas imunes, subestimado pelo consumidor mas reconhecido pela ciencia; (3) Beta-glucana de aveia — imunomodulador com mecanismo de ativacao de macrofagos e celulas NK, menos conhecido mas com evidencia robusta. O produto de maior crescimento e o bundle imunidade com os tres juntos, que reduz a fricao de compra e aumenta o ticket medio. A janela de marketing e junho — em julho o consumidor ja esta doente e comprando reactivamente, perdendo-se o posicionamento preventivo.",
+    source: "Hile.com.br Suplementos 2026 / Farmacotecnica Tendencias Suplementos 2026 / Food Connection Mercado Suplementos 2026 / Ekobe Tendencias Suplementos 2026",
+    curto: "9", medio: "7", longo: "6",
+    idea: "Bundle Imunidade Inverno Voce Mais+: Kit Defesa Total com vitamina C lipossomal 1.000mg + zinco quelado 15mg + beta-glucana de aveia 250mg em porcao diaria. Preco bundle com desconto de 20% vs SKUs separados. Lancamento campanha na primeira semana de junho com comunicacao: inverno esta chegando — prepare suas defesas agora. Conteudo: infografico mostrando pico de gripes por mes no Brasil (dados IBGE) justificando preventivo vs reativo. Bundle limitado de estacao com identidade visual de inverno. Parceria com farmacêuticos como validadores."
+  },
+  13: {
+    tag: "Analise de Cruzamento - 21 Maio 2026 - Posicionamento Proativo Evidencia Sazonalidade",
+    headline: "21 Mai: GLP-1 Support urgente + peptideos 281% + adaptogenicos US$9bi + NMN evidence update + sono gummies + D3+K2 inverno + krill omega-3 + menopausa feminina + creatina cognitiva + berberina metabolica + live commerce + imunidade inverno = POSICIONAMENTO PROATIVO + EVIDENCIA + SAZONALIDADE",
+    stars: "⭐⭐⭐⭐⭐",
+    summary: "TEMA UNIFICADOR 21 MAI: POSICIONAMENTO PROATIVO + COMUNICACAO COM EVIDENCIA + SAZONALIDADE como triade operacional que define quem captura o mercado nos proximos 90 dias. (A) POSICIONAMENTO PROATIVO — tres categorias estao abertas para pioneirismo imediato: GLP-1 Support (quem lanca primeiro define a categoria), Creatina Cognitiva (quem comunica fora do fitness conquista mercado novo) e Berberina Metabolica (demanda organica crescendo 87% sem players DTC dominantes). Entrar hoje e diferente de entrar em seis meses. (B) COMUNICACAO COM EVIDENCIA HONESTA — NMN e NAD+ sendo questionados pela ciencia e uma oportunidade para marcas que se posicionam com transparencia. Krill vs fish oil, peptideo com peso molecular declarado, ashwagandha com forma patenteada (KSM-66): o consumidor de 2026 pesquisa antes de comprar e recompensa honestidade com LTV superior. (C) SAZONALIDADE IMEDIATA — tres janelas de demanda se abrem nos proximos 60 dias: (i) Inverno imunidade: Bundle D3+K2+Vitamina C+Zinco deve ser lancado ate junho para capturar demanda preventiva; (ii) Pre-inverno sono: noites mais longas e frias criam pico de busca por suplementos de sono; (iii) Menopausa outono: mulheres 40-55 relatam piora de sintomas no frio — janela para FemBalance. URGENCIA POR PRIORIDADE: (1) LANCAMENTO ate junho — Bundle Imunidade Inverno (janela se fecha em julho); (2) LANCAMENTO 30 dias — GLP-1 Support linha minima viable (market share ainda aberto); (3) COMUNICACAO imediata — criatina cognitiva: mudar angulo de comunicacao dos SKUs existentes sem lancar produto novo; (4) PLANEJAMENTO 60-90 dias — berberina metabolica e krill premium. ESTRUTURAL: a marca de suplementos que vence em 2026 no Brasil DTC opera em tres velocidades simultaneas: resposta a sazonalidade (60 dias), pioneirismo em categoria emergente (30-90 dias) e construcao de evidencia como diferencial permanente (12-24 meses).",
+    source: "Sintese das 12 tendencias monitoradas em 21/05/2026 — Wellness Intelligence Voce Mais+",
+    curto: "10", medio: "10", longo: "10",
+    idea: "Plano de Acao 90 Dias Voce Mais+: (Semana 1-2) Briefing para lancar Bundle Imunidade Inverno em junho — vitamina C lipossomal + zinco + beta-glucana. (Semana 3-4) Redirecionar comunicacao de creatina para angulo cognitivo nos canais digitais existentes sem custo de lancamento. (Mes 2) Lancar GLP-1 Support Linha 1 com 2 SKUs: proteina densa e vitaminas de apoio. (Mes 3) Iniciar projeto de live commerce com 3 microinfluenciadores nutricionistas. Cada acao tem custo mensuravel e retorno rastreavel — priorizacao por janela de mercado aberta, nao por tamanho do projeto."
+  }
+};
+
+document.querySelectorAll('.card[data-modal]').forEach(function(card) {
+  card.addEventListener('click', function() {
+    var n = this.getAttribute('data-modal');
+    var d = MODALS[n];
+    if (!d) return;
+    document.getElementById('m-tag').textContent = d.tag;
+    document.getElementById('m-headline').textContent = d.headline;
+    document.getElementById('m-stars').textContent = d.stars;
+    document.getElementById('m-summary').textContent = d.summary;
+    document.getElementById('m-source').textContent = 'Fonte: ' + d.source;
+    document.getElementById('m-curto').textContent = d.curto + '/10';
+    document.getElementById('m-medio').textContent = d.medio + '/10';
+    document.getElementById('m-longo').textContent = d.longo + '/10';
+    document.getElementById('m-idea').textContent = d.idea;
+    document.getElementById('modal-overlay').classList.add('open');
+  });
+});
+document.getElementById('modal-close').addEventListener('click', function() {
+  document.getElementById('modal-overlay').classList.remove('open');
+});
+document.getElementById('modal-overlay').addEventListener('click', function(e) {
+  if (e.target === this) this.classList.remove('open');
+});
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') document.getElementById('modal-overlay').classList.remove('open');
+});
+</script>
+</body>
+</html>
