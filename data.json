@@ -1,6 +1,176 @@
 {
   "editions": [
     {
+      "date": "2026-05-24",
+      "dateLabel": "24 de Maio de 2026",
+      "headline": "Wellness explode no Brasil, longevidade feminina lidera, magnésio+D3, gut health 2.0 e ômega 3 cardiovascular",
+      "tags": [
+        "Mercado",
+        "Tendências",
+        "Ciência",
+        "Regulação",
+        "Saúde Feminina"
+      ],
+      "cards": [
+        {
+          "category": "mercado",
+          "tag": "Mercado · Brasil",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Wellness explode no Brasil: setor bate R$ 74,3 bilhões e cresce 14,6%",
+          "summary": "O segmento de Saúde, Beleza e Bem-estar no Brasil registrou crescimento de 14,6% e atingiu R$ 74,3 bilhões em 2025, consolidando o país como maior mercado de wellness da América Latina e 12º do mundo. Projeção de US$ 222 bilhões até 2034.",
+          "source": "Global Wellness Institute — 2026 Wellness Economy Country Rankings / Brazil Economy, Mar 2026",
+          "curto": "9",
+          "medio": "9",
+          "longo": "10",
+          "idea": "Posicione-se como o lojista de referência no setor que mais cresce: 14% ao ano."
+        },
+        {
+          "category": "tendências",
+          "tag": "Adaptógenos · Estresse",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Ashwagandha em 2026: 28% de redução de cortisol confirmada — adaptógenos dominam",
+          "summary": "Ashwagandha consolidou-se como o adaptógeno mais vendido do Brasil em 2026. Estudo Nutrition & Metabolism: redução de 27,9% no cortisol sérico após 60 dias com 600mg de KSM-66.",
+          "source": "Nutrition & Metabolism / Springer Nature; Academia Central Fitness, Tua Saúde 2026",
+          "curto": "9",
+          "medio": "9",
+          "longo": "8",
+          "idea": "Cortisol elevado é o hormônio do estresse crônico. Ashwagandha KSM-66 tem estudo de 60 dias mostrando queda de 28%."
+        },
+        {
+          "category": "ciência",
+          "tag": "Longevidade · Micronutrientes",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Magnésio + vitamina D3: a dupla que reduz 50% da mortalidade coronariana",
+          "summary": "Trio D3+K2+Magnésio é o mais prescrito em medicina funcional para longevidade ativa. Vitamina D3 com K2 reduz 50% do risco de morte coronariana; magnésio envolvido em 300+ reações com deficiência em 80% dos brasileiros.",
+          "source": "Instituto de Longevidade / SEGS Portal de Saúde, 2026; MEDBR Médicos Brasil, 2026",
+          "curto": "9",
+          "medio": "10",
+          "longo": "10",
+          "idea": "Trio D3+K2+Magnésio tem o maior ticket, maior frequência de recompra e cliente mais fidelizado da loja."
+        },
+        {
+          "category": "ciência",
+          "tag": "Saúde Intestinal · Psicobióticos",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Gut Health 2.0: pós-bióticos como nova fronteira — 42% de alta em lançamentos globais",
+          "summary": "Mercado de saúde intestinal registrou 42% de crescimento em lançamentos com alegações digestivas vs. 2025. Pós-bióticos emergem como terceira onda. Frontiers in Nutrition (2026) confirma microbiota diversificada ligada a longevidade.",
+          "source": "Frontiers in Nutrition, 2026; DSM-Firmenich Probiota 2025; NIS Summit Gut Health 2.0",
+          "curto": "7",
+          "medio": "8",
+          "longo": "10",
+          "idea": "Intestino produz 90% da serotonina — quando a microbiota está em equilíbrio, humor, imunidade e sono funcionam melhor."
+        },
+        {
+          "category": "regulação",
+          "tag": "Regulação · ANVISA",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "ANVISA: Consulta Pública 1.394/2026 sobre aditivos alimentares — prazo até 6 de julho",
+          "summary": "ANVISA abriu em 28/04/2026 a CP 1.394/2026 propondo alterações à IN 211/2023 sobre aditivos alimentares autorizados. Contribuições aceitas até 6 de julho. Pode impactar formulações com conservantes e edulcorantes.",
+          "source": "ANVISA — Consulta Pública nº 1.394, 28/04/2026; AnvisaLegis; Intertox, 2026",
+          "curto": "5",
+          "medio": "7",
+          "longo": "9",
+          "idea": "Valorize conformidade regulatória: a Você Mais+ acompanha cada atualização da ANVISA e adapta fórmulas antes de qualquer prazo."
+        },
+        {
+          "category": "produtos",
+          "tag": "Produtos · Formatos",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Gummies de suplemento: US$ 270 milhões no Brasil até 2030 — crescimento de 11,3% ao ano",
+          "summary": "Mercado brasileiro de gummies vitamínicos deve atingir US$ 269,8 milhões até 2030, crescendo 11,3% ao ano. Categorias líderes: multivitamínicos, imunidade, sono, colágeno e foco.",
+          "source": "UAI / Mundo Corporativo, 24 Mar 2026; Ekobé Nutracêuticos 2026",
+          "curto": "7",
+          "medio": "8",
+          "longo": "8",
+          "idea": "Gummy é a porta de entrada para o cliente que nunca manteve o hábito de cápsula — ticket menor, recompra alta, adesão superior."
+        },
+        {
+          "category": "tendências",
+          "tag": "Tendências · Global",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "GWI: wellness global bate US$ 6,8 tri — longevidade feminina é o novo epicentro",
+          "summary": "GWI confirma economia wellness global em US$ 6,8 tri (2024), projetada para US$ 9,8 tri até 2029. Top trend 2026: Longevidade Feminina — protocolos pensados para biologia feminina, não adaptados de dados masculinos.",
+          "source": "Global Wellness Institute — 2026 Wellness Trends; Athletech News; Global Wellness Summit 2026",
+          "curto": "8",
+          "medio": "9",
+          "longo": "10",
+          "idea": "Posicione a Você Mais+ para mulheres 35-60: magnésio para nervos, colágeno para articulações, D3+K2 para ossos e adaptógenos para cortisol."
+        },
+        {
+          "category": "ciência",
+          "tag": "Ciência · Anti-aging",
+          "stars": "⭐⭐⭐",
+          "headline": "NMN, NAD+ e resveratrol: ciência de 2026 pede cautela — honestidade vende mais",
+          "summary": "Revisão em The Conversation (maio 2026): NMN e resveratrol elevam NAD+ no sangue mas evidências em humanos ainda não provam efeitos mensuráveis no envelhecimento real. Vender com honestidade diferencia do concorrente que promete milagre.",
+          "source": "The Conversation, maio 2026; CRN1 Brasil, maio 2026; Nutraingredients EU, 2026",
+          "curto": "5",
+          "medio": "7",
+          "longo": "8",
+          "idea": "Diferencial de credibilidade: a ciência mostra que NMN eleva NAD+ — a lógica celular é sólida, mas a evidência em humanos ainda está maturando."
+        },
+        {
+          "category": "tendências",
+          "tag": "Tendências · Plant-based",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Plant-based supera R$ 2,2 bilhões no Brasil — clean label vira requisito",
+          "summary": "Mercado plant-based brasileiro supera projeções em 2026 com R$ 2,2 bilhões. Clean label é requisito de compra para 67% dos consumidores premium. Ticket médio 35% maior e maior fidelidade entre clientes clean label.",
+          "source": "VeganBusiness Brasil, 2026; Euromonitor International; Food Connection Brasil 2026",
+          "curto": "7",
+          "medio": "8",
+          "longo": "9",
+          "idea": "Clean label não é mais premium — é o mínimo esperado. A Você Mais+ com extratos padronizados e laudos de pureza atende esse critério."
+        },
+        {
+          "category": "tendências",
+          "tag": "Adaptógenos · Cognição",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Lion's Mane em alta no Brasil: erinacinas estimulam crescimento nervoso — cognição vira categoria",
+          "summary": "Lion's Mane consolida-se como adaptógeno cognitivo mais buscado de 2026. Erinacinas e hericenonas estimulam NGF (fator de crescimento nervoso). Atrai público 25-45 anos que busca performance mental, memória e neuroproteção.",
+          "source": "Brazilian Journal of Health Research, 2026; Selektz Brasil — Melhores Lion's Mane 2026",
+          "curto": "7",
+          "medio": "8",
+          "longo": "9",
+          "idea": "Para névoa mental: Lion's Mane é o único cogumelo medicinal comprovado para estimular crescimento de células nervosas — diferente de qualquer outro suplemento."
+        },
+        {
+          "category": "ciência",
+          "tag": "Ciência · Cardiovascular",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Ômega 3: revisão com 149 mil pessoas confirma redução de mortalidade cardiovascular",
+          "summary": "Meta-análise com 149.051 participantes confirma redução de mortalidade cardiovascular com EPA+DHA. Relação dose-resposta: cada 1g a mais de EPA+DHA por dia reduz 9% o risco de infarto.",
+          "source": "PMC/NCBI — Meta-análise 149.051 participantes, 2026; DSM-Firmenich; PubMed PMC12628397",
+          "curto": "9",
+          "medio": "9",
+          "longo": "9",
+          "idea": "Para clientes com histórico familiar cardíaco: cada grama extra de ômega 3 EPA+DHA reduz 9% o risco de infarto — dado de 149 mil pessoas."
+        },
+        {
+          "category": "mercado",
+          "tag": "Mercado · Saúde Feminina",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Suplementos femininos explodem: TPM, cortisol, menopausa e foco lideram 2026",
+          "summary": "Mulheres 25-45 anos lideram nova onda de consumo de suplementos com crescimento 50% acima da média do setor. Pela primeira vez mulheres superam homens em intenção de compra de suplementos no Brasil.",
+          "source": "Marcas e Mercados, 2026; Farmacotécnica 2026; GWI Wellness Trends 2026",
+          "curto": "9",
+          "medio": "9",
+          "longo": "10",
+          "idea": "Mulher de 2026 pesquisa cortisol, TPM, menopausa, foco e sono. Lojista que souber responder conquista cliente com alto poder aquisitivo e alta fidelidade."
+        },
+        {
+          "category": "tendências",
+          "tag": "Tendências · Marketing Digital",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Microinfluenciadores com 7% de engajamento vendem mais que macros no wellness",
+          "summary": "Relatório Focusnetworks 2026: futuro pertence a Líderes de Opinião Digital — nutricionistas e coaches com credibilidade técnica. Microinfluenciadores: 7% engajamento vs. 0,8% de perfis com +1M seguidores.",
+          "source": "Focusnetworks — 4 Tendências de Conteúdo para Marcas de Wellness 2026; Medicina S/A, 2026",
+          "curto": "7",
+          "medio": "8",
+          "longo": "9",
+          "idea": "Para ampliar vendas online: parceria com nutricionista local de 10-50k seguidores entrega 9x mais engajamento que influenciador famoso."
+        }
+      ]
+    },
+    {
       "date": "2026-05-22",
       "dateLabel": "22 de Maio de 2026",
       "cards": [
