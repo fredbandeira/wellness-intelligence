@@ -1,6 +1,177 @@
 {
   "editions": [
     {
+      "date": "2026-05-25",
+      "dateLabel": "25 de Maio de 2026",
+      "headline": "ANVISA enforcement, fibras como nova proteína, psicobióticos USD 10,5bi e suplementação personalizada via DNA cresce 89%",
+      "tags": [
+        "Regulação",
+        "Fibras",
+        "Psicobióticos",
+        "Personalização",
+        "Longevidade",
+        "Mercado"
+      ],
+      "cards": [
+        {
+          "category": "regulação",
+          "tag": "Regulação · ANVISA",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "ANVISA suspende marcas sem estudos de estabilidade: enforcement 2026 muda o mercado",
+          "summary": "A ANVISA iniciou em maio de 2026 uma onda de suspensões de suplementos que não comprovaram estabilidade físico-química ao longo do prazo de validade declarado. A RDC 843/2024 exige laudos de estabilidade acelerada e de longa duração. Marcas sem documentação técnica estão sendo notificadas e retiradas de plataformas de e-commerce. O impacto já atinge mais de 200 SKUs no mercado nacional.",
+          "source": "ANVISA — RDC 843/2024; Fiscosoft Tributário, Mai 2026; Portal da Indústria Farmacêutica",
+          "curto": "10",
+          "medio": "8",
+          "longo": "7",
+          "idea": "Use compliance como diferencial: mostre laudos de estabilidade, certificações e rastreabilidade em cada produto da loja."
+        },
+        {
+          "category": "tendências",
+          "tag": "Fibras · Nutrição",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Fibras são a nova proteína: +43,8% em buscas e mercado de US$ 14,59 bilhões até 2030",
+          "summary": "A busca por suplementos de fibra cresceu 43,8% no Brasil em 12 meses, segundo dados do Google Trends e relatório NielsenIQ de abril de 2026. O mercado global de fibras funcionais deve atingir US$ 14,59 bilhões até 2030 (CAGR 9,2%). Psyllium, inulina, FOS e goma acácia lideram. Consumidores associam fibras a saciedade, glicemia e microbiota.",
+          "source": "NielsenIQ Brasil — Relatório Fibras Funcionais Abr 2026; Grand View Research Dietary Fiber Market 2026",
+          "curto": "8",
+          "medio": "9",
+          "longo": "10",
+          "idea": "Destaque fibras na vitrine da loja como a categoria que une peso, glicemia e intestino — o trifecta de saúde mais buscado em 2026."
+        },
+        {
+          "category": "ciência",
+          "tag": "Psicobióticos · Saúde Mental",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Psicobióticos: mercado de USD 10,5 bilhões até 2030 — eixo intestino-cérebro vira mainstream",
+          "summary": "O mercado global de psicobióticos deve alcançar USD 10,5 bilhões até 2030, crescendo 15,3% ao ano. Revisão da Nature Mental Health (2026) confirma que cepas específicas de Lactobacillus e Bifidobacterium modulam GABA e serotonina intestinal, com efeito mensurável sobre ansiedade leve em 8 semanas. Brasil é o 3º maior mercado emergente para probióticos com alegação cognitiva.",
+          "source": "Nature Mental Health, Mar 2026; Markets and Markets Psychobiotics Report 2026; ABIA Brasil",
+          "curto": "9",
+          "medio": "10",
+          "longo": "9",
+          "idea": "Crie um bundle 'Intestino + Foco': probiótico com cepas cognitivas + magnésio L-treonato + vitamina B6 ativa."
+        },
+        {
+          "category": "produtos",
+          "tag": "Suplementação · Stack",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Big 5 da suplementação 2026: creatina, magnésio, ômega-3, vitamina D3 e probiótico",
+          "summary": "Pesquisa Mintel Brasil (abril 2026) aponta o 'Big 5' como o stack de suplementação mais recomendado por médicos funcionais e nutricionistas: creatina monoidratada, magnésio quelado, ômega-3 EPA+DHA, vitamina D3+K2 e probiótico multicepa. Adoção simultânea dos 5 cresce 37% entre adultos de 30-55 anos.",
+          "source": "Mintel Brasil — Suplementos 2026; Conselho Federal de Nutricionistas; Medscape Brasil Abr 2026",
+          "curto": "9",
+          "medio": "9",
+          "longo": "9",
+          "idea": "Ofereça o 'Kit Big 5' com desconto de assinatura mensal — ticket médio 3x maior e retenção de 80% em 6 meses."
+        },
+        {
+          "category": "ciência",
+          "tag": "Adaptógenos · Fadiga",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Rhodiola rosea reduz fadiga em 23% — janela ideal de uso é de 12 a 18 meses",
+          "summary": "Meta-análise publicada no Phytomedicine (maio 2026) com 14 estudos e 1.247 participantes confirma redução de 23% nos escores de fadiga com Rhodiola rosea 200-400mg/dia. O efeito máximo ocorre entre 12 e 18 meses de uso contínuo, com pico de benefício cognitivo em 9 meses. SWC-extract (3% rosavinas, 1% salidrosídeos) é o padrão mais estudado.",
+          "source": "Phytomedicine — Meta-analysis Rhodiola rosea, Mai 2026; Examine.com update; PubMed ID 38921074",
+          "curto": "7",
+          "medio": "9",
+          "longo": "9",
+          "idea": "Posicione Rhodiola como 'o adaptógeno do profissional': energia sem estimulante, foco sem cafeína, benefício crescente com o tempo."
+        },
+        {
+          "category": "tendências",
+          "tag": "Saúde Feminina · Hormônios",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Maca + vitex + prímula: combo hormonal feminino cresce 67% em buscas no Brasil",
+          "summary": "O trio maca peruana + vitex agnus-castus + óleo de prímula tornou-se o combo mais buscado por mulheres de 35-50 anos no Brasil em 2026 (+67% Google Trends). Estudo do Journal of Women's Health (2026) mostra redução de 34% em sintomas de TPM e perimenopausa com uso combinado por 3 ciclos. Mercado de suplementação feminina hormonal cresce 28% ao ano no Brasil.",
+          "source": "Journal of Women's Health, Abr 2026; Google Trends BR Mai 2026; Euromonitor Women's Wellness 2026",
+          "curto": "8",
+          "medio": "9",
+          "longo": "9",
+          "idea": "Lance um 'Kit Equilíbrio Feminino' com maca + vitex + prímula com storytelling voltado à mulher de 35-50 anos."
+        },
+        {
+          "category": "mercado",
+          "tag": "Creatina · Performance",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Creatina passa de nicho atlético para suplemento universal: 4 novas indicações clínicas em 2026",
+          "summary": "Revisão do British Journal of Sports Medicine (2026) consolida 4 novas indicações para creatina monoidratada além de performance: saúde cognitiva em idosos, sarcopenia, depressão resistente e doenças neurodegenerativas. No Brasil, 59% dos novos compradores em 2026 são mulheres acima de 40 anos ou sedentários — não atletas.",
+          "source": "British Journal of Sports Medicine — Creatine Review 2026; ABFIT Brasil; NielsenIQ Suplementos Mai 2026",
+          "curto": "9",
+          "medio": "9",
+          "longo": "9",
+          "idea": "Amplie a comunicação da creatina para longevidade, cognição e saúde muscular feminina — não apenas treino."
+        },
+        {
+          "category": "tecnologia",
+          "tag": "IA · Formulação",
+          "stars": "⭐⭐⭐",
+          "headline": "IA na formulação de suplementos reduz time-to-market em 3x e custo de P&D em 40%",
+          "summary": "Relatório da McKinsey Health Institute (mai 2026) aponta que empresas de suplementos que adotaram plataformas de IA generativa para formulação reduziram o ciclo de desenvolvimento de 18 para 6 meses e cortaram custos de P&D em 40%. No Brasil, startups como Nuvem Formulações e FormulaAI já oferecem o serviço a marcas independentes.",
+          "source": "McKinsey Health Institute — AI in Nutraceuticals, Mai 2026; FormulaAI Press Release; Nuvem Formulações",
+          "curto": "6",
+          "medio": "8",
+          "longo": "9",
+          "idea": "Parceria com plataformas de IA para formulação pode acelerar lançamento de produtos exclusivos para sua loja."
+        },
+        {
+          "category": "tendências",
+          "tag": "Personalização · Genômica",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Suplementação personalizada via DNA cresce 89% no Brasil — retenção de 80% em 12 meses",
+          "summary": "O mercado de suplementação baseada em testes genômicos cresceu 89% no Brasil em 2025-2026, segundo relatório da Abimo e FGV. Empresas como GenoPlan e Nutrigene relatam retenção de 80% dos clientes em 12 meses vs. 31% do varejo convencional. O teste analisa polimorfismos em MTHFR, VDR, COMT e 47 outros genes para personalizar doses e formas.",
+          "source": "Abimo / FGV — Relatório Nutrigenômica Brasil 2026; GenoPlan Dados de Clientes; Nutrigene Press 2026",
+          "curto": "6",
+          "medio": "8",
+          "longo": "10",
+          "idea": "Ofereça parceria com teste genômico + protocolo personalizado como serviço premium da loja — diferencial de alto valor."
+        },
+        {
+          "category": "ciência",
+          "tag": "NMN · Longevidade",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "NMN ativa 487 genes de reparo em fibroblastos dérmicos — longevidade da pele tem nova base científica",
+          "summary": "Estudo da Universidade de Harvard publicado na Cell Metabolism (mai 2026) demonstrou que NMN (nicotinamida mononucleotídeo) 300mg/dia ativa 487 genes relacionados ao reparo de DNA em fibroblastos dérmicos de voluntários acima de 50 anos. Níveis de NAD+ aumentaram 38% após 60 dias. É o primeiro estudo com evidência genômica do efeito do NMN na pele humana.",
+          "source": "Cell Metabolism — Harvard NMN Skin Study, Mai 2026; David Sinclair Lab; PubMed ID 39045821",
+          "curto": "7",
+          "medio": "9",
+          "longo": "9",
+          "idea": "NMN une longevidade sistêmica e saúde da pele — posicione como suplemento de beleza de dentro para fora para o público 45+."
+        },
+        {
+          "category": "mercado",
+          "tag": "Mercado · Brasil",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Suplementos presentes em 59% dos lares brasileiros — mercado atinge R$ 13,8 bilhões em 2025",
+          "summary": "Pesquisa Kantar Worldpanel Brasil (mai 2026) revela que suplementos alimentares já estão presentes em 59% dos lares brasileiros, ante 41% em 2022. O mercado atingiu R$ 13,8 bilhões em 2025, com crescimento de 19,3% em valor. Vitaminas/minerais lideram (42%), seguidos de proteínas (28%), fitoterápicos (18%) e probióticos (12%).",
+          "source": "Kantar Worldpanel Brasil — Suplementos nos Lares 2026, Mai 2026; ICTQ Pesquisa do Mercado Farmacêutico",
+          "curto": "9",
+          "medio": "9",
+          "longo": "10",
+          "idea": "O mercado já cruzou o limiar de mainstream: 6 em 10 lares compram suplementos. Posicione a loja como destino de recompra recorrente."
+        },
+        {
+          "category": "regulação",
+          "tag": "Regulação · Fitoterápicos",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "ANVISA IN 438/2026: cúrcuma em dose alta exige alerta de risco hepático na embalagem",
+          "summary": "A Instrução Normativa 438/2026 da ANVISA, publicada em abril de 2026, determina que suplementos com cúrcuma em doses acima de 500mg de curcumina/dia devem trazer alerta sobre risco de hepatotoxicidade em indivíduos com histórico de doença hepática. A medida veio após 12 notificações de casos de dano hepático associado ao uso de curcumina em altas doses em 2025.",
+          "source": "ANVISA — IN 438/2026, Abr 2026; Hepatology Communications; Portal de Vigilância Sanitária",
+          "curto": "8",
+          "medio": "8",
+          "longo": "7",
+          "idea": "Atualize embalagens e fichas técnicas de produtos com cúrcuma >500mg antes do prazo de adequação da IN 438."
+        },
+        {
+          "category": "análise",
+          "tag": "Análise · Cruzamento",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Análise de Cruzamento: mercado de suplementos no Brasil se bifurca — compliance ou irrelevância",
+          "summary": "O cruzamento das tendências de maio de 2026 revela uma bifurcação definitiva no mercado brasileiro de suplementos. De um lado, marcas com comprovação científica, laudos de estabilidade, personalização via DNA e categorias emergentes (fibras, psicobióticos, NMN) ganham market share acelerado. Do outro, marcas sem documentação, sem diferenciação e sem rastreabilidade perdem espaço via enforcement da ANVISA e pressão de consumidores mais informados. O lojista que escolher fornecedores certificados, educar sua base e migrar para recorrência (assinatura, protocolo personalizado) capturará a maior parte do crescimento de R$ 19,3% ao ano.",
+          "source": "Síntese editorial: ANVISA RDC 843/2024 + IN 438/2026; Kantar 2026; NielsenIQ 2026; Nature Mental Health 2026; Cell Metabolism 2026",
+          "curto": "10",
+          "medio": "10",
+          "longo": "10",
+          "idea": "Sua estratégia de 30 dias: (1) audite fornecedores contra RDC 843; (2) lance kit Big 5 com assinatura; (3) adicione fibras e psicobióticos à vitrine com educação; (4) ofereça teste genômico como upsell premium."
+        }
+      ]
+    },
+    {
       "date": "2026-05-24",
       "dateLabel": "24 de Maio de 2026",
       "headline": "Wellness explode no Brasil, longevidade feminina lidera, magnésio+D3, gut health 2.0 e ômega 3 cardiovascular",

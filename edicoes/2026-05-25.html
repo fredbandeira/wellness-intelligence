@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wellness Intelligence | voce-mais+</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --navy:#00276e;--yellow:#feda14;--black:#1d1d1b;--white:#ffffff;--gray-50:#f7f7f7;--gray-100:#efefef;--gray-200:#e0e0e0;--gray-400:#adadad;--gray-600:#6b6b6b;--gray-800:#2e2e2e;--border:rgba(0,0,0,0.09); }
+    body{font-family:'Inter',sans-serif;background:var(--white);color:var(--black);-webkit-font-smoothing:antialiased;}
+    header{background:var(--white);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100;}
+    .header-inner{max-width:1280px;margin:0 auto;padding:0 40px;height:64px;display:flex;align-items:center;justify-content:space-between;}
+    .logo-wrap{display:flex;align-items:center;gap:16px;text-decoration:none;}
+    .logo-img{height:22px;width:auto;}
+    .logo-divider{width:1px;height:20px;background:var(--gray-200);}
+    .logo-sub{font-size:10px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--gray-400);}
+    nav{display:flex;gap:2px;}
+    nav a{font-size:11px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--gray-600);text-decoration:none;padding:6px 14px;border-radius:100px;transition:all .15s;}
+    nav a:hover{color:var(--navy);background:var(--gray-50);}
+    nav a.active{color:var(--navy);background:var(--yellow);}
+    .header-date{font-size:11px;font-weight:500;color:var(--gray-400);}
+    .alert-strip{background:var(--navy);color:var(--white);padding:11px 40px;display:flex;align-items:center;justify-content:center;gap:20px;}
+    .alert-badge{font-size:9px;font-weight:800;letter-spacing:0.14em;text-transform:uppercase;background:var(--yellow);color:var(--navy);padding:4px 10px;border-radius:100px;white-space:nowrap;}
+    .alert-text{font-size:12.5px;opacity:.9;}
+    .alert-text strong{font-weight:700;}
+    main{max-width:1280px;margin:0 auto;padding:48px 40px 80px;}
+    .edition-bar{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px;padding-bottom:20px;border-bottom:1px solid var(--border);}
+    .edition-live{display:flex;align-items:center;gap:10px;}
+    .live-dot{width:7px;height:7px;background:var(--navy);border-radius:50%;animation:blink 1.8s infinite;}
+    @keyframes blink{0%,100%{opacity:1}50%{opacity:.25}}
+    .edition-label{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--navy);}
+    .edition-meta{font-size:11px;color:var(--gray-400);}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:76px;gap:14px;}
+    .card{border-radius:14px;padding:26px;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between;transition:transform .18s,box-shadow .18s;cursor:pointer;}
+    .card:hover{transform:translateY(-3px);box-shadow:0 14px 36px rgba(0,0,0,.10);}
+    .c-hero{grid-column:span 7;grid-row:span 5;}
+    .c-tall{grid-column:span 5;grid-row:span 5;}
+    .c-wide{grid-column:span 8;grid-row:span 4;}
+    .c-med{grid-column:span 4;grid-row:span 4;}
+    .c-sm{grid-column:span 4;grid-row:span 4;}
+    .c-third{grid-column:span 4;grid-row:span 3;}
+    .c-full{grid-column:span 12;grid-row:span 3;}
+    .bg-navy{background:var(--navy);color:var(--white);}
+    .bg-yellow{background:var(--yellow);color:var(--navy);}
+    .bg-black{background:var(--black);color:var(--white);}
+    .bg-gray800{background:var(--gray-800);color:var(--white);}
+    .bg-gray100{background:var(--gray-100);color:var(--black);}
+    .bg-white{background:var(--white);color:var(--black);border:1px solid var(--border);}
+    .tag{display:inline-flex;align-items:center;gap:5px;font-size:9px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;padding:4px 10px;border-radius:100px;width:fit-content;}
+    .bg-navy .tag,.bg-black .tag,.bg-gray800 .tag{background:rgba(255,255,255,.15);color:var(--white);}
+    .bg-yellow .tag{background:rgba(0,39,110,.12);color:var(--navy);}
+    .bg-gray100 .tag,.bg-white .tag{background:var(--navy);color:var(--white);}
+    .tag-dot{width:4px;height:4px;border-radius:50%;background:currentColor;opacity:.6;}
+    .headline{font-size:clamp(15px,2vw,24px);font-weight:800;line-height:1.15;letter-spacing:-.025em;margin-top:10px;}
+    .c-hero .headline{font-size:clamp(22px,2.8vw,36px);}
+    .c-full .headline{font-size:clamp(16px,2vw,26px);max-width:900px;}
+    .sub{font-size:12px;line-height:1.55;margin-top:8px;opacity:.72;}
+    .stat-num{font-size:clamp(36px,5vw,60px);font-weight:900;letter-spacing:-.04em;line-height:1;margin:10px 0 4px;}
+    .stat-desc{font-size:11px;font-weight:500;line-height:1.45;opacity:.70;}
+    .card-foot{display:flex;align-items:center;justify-content:space-between;margin-top:14px;}
+    .cta-label{font-size:9.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;opacity:.50;}
+    .arrow-btn{width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;}
+    .bg-navy .arrow-btn,.bg-black .arrow-btn,.bg-gray800 .arrow-btn{background:rgba(255,255,255,.15);}
+    .bg-yellow .arrow-btn{background:rgba(0,39,110,.12);}
+    .bg-gray100 .arrow-btn,.bg-white .arrow-btn{background:var(--navy);color:var(--white);}
+    .accent-bar{display:block;width:28px;height:3px;background:var(--yellow);border-radius:2px;margin-bottom:12px;}
+    .bg-yellow .accent-bar{background:var(--navy);}
+    .modal-overlay{position:fixed;inset:0;z-index:500;background:rgba(0,20,55,.55);backdrop-filter:blur(6px);display:flex;align-items:center;justify-content:center;padding:24px;opacity:0;pointer-events:none;transition:opacity .22s;}
+    .modal-overlay.open{opacity:1;pointer-events:all;}
+    .modal{background:var(--white);border-radius:20px;width:100%;max-width:640px;max-height:88vh;overflow-y:auto;box-shadow:0 32px 80px rgba(0,0,0,.22);transform:translateY(20px);transition:transform .25s;position:relative;}
+    .modal-overlay.open .modal{transform:translateY(0);}
+    .modal-header{background:var(--navy);border-radius:20px 20px 0 0;padding:28px 32px 24px;position:relative;}
+    .modal-tag{display:inline-flex;align-items:center;gap:5px;font-size:9px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;padding:4px 10px;border-radius:100px;background:rgba(255,255,255,.15);color:var(--white);margin-bottom:12px;}
+    .modal-headline{font-size:22px;font-weight:800;line-height:1.2;letter-spacing:-.02em;color:var(--white);}
+    .modal-stars{font-size:16px;margin-top:8px;}
+    .modal-close{position:absolute;top:20px;right:20px;width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.15);border:none;color:var(--white);font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .15s;}
+    .modal-close:hover{background:rgba(255,255,255,.28);}
+    .modal-body{padding:28px 32px 32px;}
+    .modal-section{margin-bottom:24px;}
+    .modal-section-title{font-size:9px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--gray-400);margin-bottom:10px;}
+    .modal-summary{font-size:14px;line-height:1.7;color:var(--black);}
+    .modal-source{font-size:11px;color:var(--gray-600);font-style:italic;margin-top:6px;}
+    .scores{display:flex;gap:12px;margin-top:14px;}
+    .score-box{flex:1;background:var(--gray-50);border-radius:10px;padding:12px;text-align:center;}
+    .score-label{font-size:8.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gray-400);display:block;margin-bottom:4px;}
+    .score-val{font-size:22px;font-weight:900;color:var(--navy);}
+    .idea-box{background:var(--navy);border-radius:12px;padding:18px 20px;color:var(--white);}
+    .idea-label{font-size:8.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--yellow);display:block;margin-bottom:8px;}
+    .idea-text{font-size:13px;line-height:1.65;opacity:.9;}
+    .archive{background:var(--gray-50);border-top:1px solid var(--border);padding:56px 40px;}
+    .archive-inner{max-width:1280px;margin:0 auto;}
+    .archive-hd{display:flex;align-items:center;gap:16px;margin-bottom:28px;}
+    .archive-title{font-size:10px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--gray-400);white-space:nowrap;}
+    .archive-line{flex:1;height:1px;background:var(--border);}
+    .archive-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;}
+    .archive-card{display:block;text-decoration:none;color:var(--black);background:var(--white);padding:18px 20px;border-radius:10px;border:1px solid var(--border);transition:all .15s;}
+    .archive-card:hover{border-color:var(--navy);box-shadow:0 4px 16px rgba(0,39,110,.09);transform:translateY(-2px);}
+    .archive-date{font-size:9px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--white);background:var(--navy);display:inline-block;padding:3px 8px;border-radius:4px;margin-bottom:9px;}
+    .archive-hl{font-size:12px;font-weight:600;line-height:1.4;margin-bottom:9px;}
+    .archive-tags{display:flex;flex-wrap:wrap;gap:4px;}
+    .archive-tags span{font-size:8.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:3px 7px;border-radius:100px;background:var(--gray-100);color:var(--gray-600);}
+    footer{background:var(--navy);padding:28px 40px;}
+    .footer-inner{max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;}
+    .footer-brand{display:flex;align-items:center;gap:14px;}
+    .footer-sep{width:1px;height:16px;background:rgba(255,255,255,.2);}
+    .footer-tagline{font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.4);}
+    .footer-note{font-size:10px;opacity:.3;color:var(--white);}
+    @media(max-width:768px){
+      .header-inner{padding:0 20px;}.alert-strip{flex-direction:column;gap:6px;padding:12px 20px;text-align:center;}
+      main{padding:32px 16px 60px;}.grid{grid-template-columns:1fr;grid-auto-rows:auto;}
+      .c-hero,.c-tall,.c-wide,.c-med,.c-sm,.c-third,.c-full{grid-column:span 1;grid-row:span 1;min-height:180px;}
+      .archive{padding:40px 16px;}.footer-inner{flex-direction:column;gap:10px;text-align:center;}
+      .modal-body{padding:20px 20px 24px;}.modal-header{padding:22px 22px 18px;}
+    }
+  </style>
+</head>
+<body>
+
+<div class="modal-overlay" id="modal-overlay">
+  <div class="modal">
+    <div class="modal-header">
+      <div class="modal-tag" id="m-tag"></div>
+      <div class="modal-headline" id="m-headline"></div>
+      <div class="modal-stars" id="m-stars"></div>
+      <button class="modal-close" id="modal-close">&#10005;</button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-section">
+        <div class="modal-section-title">Analise Completa</div>
+        <div class="modal-summary" id="m-summary"></div>
+        <div class="modal-source" id="m-source"></div>
+      </div>
+      <div class="scores">
+        <div class="score-box"><span class="score-label">Curto Prazo</span><span class="score-val" id="m-curto"></span></div>
+        <div class="score-box"><span class="score-label">Medio Prazo</span><span class="score-val" id="m-medio"></span></div>
+        <div class="score-box"><span class="score-label">Longo Prazo</span><span class="score-val" id="m-longo"></span></div>
+      </div>
+      <div class="idea-box" style="margin-top:20px;">
+        <span class="idea-label">Ideia para Voce Mais+</span>
+        <div class="idea-text" id="m-idea"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="header-inner">
+    <a class="logo-wrap" href="#"><img src="logo-positiva.png" alt="voce-mais+" class="logo-img" /><div class="logo-divider"></div><span class="logo-sub">Wellness Intelligence</span></a>
+    <nav><a href="#" class="active">Hoje</a><a href="#" onclick="document.querySelector('.archive').scrollIntoView({behavior:'smooth'});return false;">Arquivo</a></nav>
+    <span class="header-date">24 de Maio de 2026</span>
+  </div>
+</header>
+
+<div class="alert-strip">
+  <span class="alert-badge">Urgente · Hoje</span>
+  <span class="alert-text"><strong>ANVISA CP 1.394/2026: prazo 6 de julho para aditivos alimentares em suplementos</strong> — Gut Health 2.0 cresce 42%, omega-3 com 149 mil participantes comprova 9% por grama e wellness brasileiro atinge R$ 74,3 bilhoes com crescimento de 14,6%.</span>
+</div>
+
+<main>
+  <div class="edition-bar">
+    <div class="edition-live"><div class="live-dot"></div><span class="edition-label">Edicao de hoje &mdash; 24 de Maio de 2026</span></div>
+    <span class="edition-meta">13 tendencias analisadas &middot; Wellness Intelligence Voce Mais+</span>
+  </div>
+
+  <div class="grid">
+
+    <!-- Card 1: Hero navy - ANVISA CP 1.394/2026 urgente -->
+    <div class="card c-hero bg-navy" data-modal="1">
+      <div><span class="accent-bar"></span><div class="tag"><div class="tag-dot"></div>Regulacao &middot; ANVISA CP 1.394/2026 Aditivos Prazo 6 Julho Urgente</div><div class="headline">ANVISA publica Consulta Publica 1.394/2026 sobre aditivos em suplementos: prazo encerra 6 de julho — marcas que ignorarem podem perder base regulatoria de formulacoes inteiras antes de setembro</div><p class="sub">A CP 1.394 revisa a lista de aditivos alimentares permitidos em suplementos. Formulacoes com aditivos fora da nova lista exigirao reformulacao antes do prazo da RDC 843. A janela de adequacao esta se fechando — setembro e o deadline final para toda a linha de produtos.</p></div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <!-- Card 2: Tall yellow - Wellness BR R$74.3bi 14.6% -->
+    <div class="card c-tall bg-yellow" data-modal="2">
+      <div><span class="accent-bar"></span><div class="tag"><div class="tag-dot"></div>Mercado &middot; Wellness Brasil R$74.3bi GWI 14.6% Crescimento 2026</div><div class="headline">Wellness explode no Brasil: R$ 74,3 bilhoes com crescimento de 14,6% em 2025 — GWI projeta US$ 222 bilhoes na economia global de longevidade ate 2034</div><div class="stat-num">14,6%</div><div class="stat-desc">crescimento do mercado de wellness no Brasil em 2025, movimentando R$ 74,3 bilhoes segundo o Global Wellness Institute. Longevidade feminina e o segmento de maior expansao projetada ate 2034.</div></div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <!-- Card 3: Wide black - Gut Health 2.0 pos-biotics -->
+    <div class="card c-wide bg-black" data-modal="3">
+      <div><div class="tag"><div class="tag-dot"></div>Saude Intestinal &middot; Gut Health 2.0 Pos-biotics Psicobioticos 42% 2026</div><div class="headline">Gut Health 2.0 redefine a categoria: pos-biotics e psicobioticos substituem probioticos classicos como padrao de mercado — lancamentos crescem 42% em 2025, Frontiers in Nutrition confirma</div><p class="sub">Pos-biotics (metabolitos bioativos como butirato e peptideos de cadeia curta) sao a fronteira de inovacao. Psicobioticos ativam eixo intestino-cerebro. Consumidor de 2026 entende a diferenca — marcas presas no probiotico classico perdem para quem lidera a quarta geracao do microbioma.</p></div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <!-- Card 4: Med gray800 - Magnésio + D3 longevidade -->
+    <div class="card c-med bg-gray800" data-modal="4">
+      <div><div class="tag"><div class="tag-dot"></div>Longevidade &middot; Magnesio D3 Sinergia 50% Mortalidade Coronariana 2026</div><div class="headline">Magnesio + D3 se consolida como protocolo de longevidade: estudo aponta 50% de reducao na mortalidade coronariana — magnesio participa de mais de 300 reacoes enzimaticas essenciais</div><p class="sub">Sem magnesio suficiente, suplementar vitamina D3 tem eficacia comprometida — magnesio e co-fator da conversao de D3 em forma ativa. Protocolo completo D3+K2+Magnesio esta virando standard em clinicas de longevidade e medicina preventiva.</p></div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <!-- Card 5: Sm gray100 - Ashwagandha KSM-66 cortisol -->
+    <div class="card c-sm bg-gray100" data-modal="5">
+      <div><div class="tag"><div class="tag-dot"></div>Adaptogenicos &middot; Ashwagandha KSM-66 28% Cortisol 60 Dias 2026</div><div class="headline">Ashwagandha KSM-66 reduz cortisol em 28% em 60 dias: ensaio duplo-cego 2026 confirma — apenas extrato padronizado em withanolides replica resultados clinicos</div><p class="sub">Genericos de ashwagandha sem padronizacao em withanolides nao reproduzem resultados. KSM-66 e Sensoril sao os unicos com base de evidencias suficiente para claims de cortisol e estresse.</p></div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <!-- Card 6: Third navy - Lion's Mane NGF cognicao -->
+    <div class="card c-third bg-navy" data-modal="6">
+      <div><div class="tag"><div class="tag-dot"></div>Adaptogenicos &middot; Lion Mane NGF Erinacinas Cognicao Mercado 18%</div><div class="headline">Lion's Mane redefine cognicao natural: estimulacao de NGF via erinacinas e o unico mecanismo neurotrofico direto entre adaptogenicos — mercado cognitivo cresce 18% ao ano</div></div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <!-- Card 7: Third gray100 - Plant-based R$2.2bi clean label -->
+    <div class="card c-third bg-gray100" data-modal="7">
+      <div><div class="tag"><div class="tag-dot"></div>Tendencias &middot; Plant-Based R$2.2bi Clean Label Requisito Minimo 2026</div><div class="headline">Plant-based supera R$ 2,2 bilhoes no Brasil e clean label vira requisito minimo — nao e mais diferencial, e expectativa basica do consumidor de suplementos naturais em 2026</div></div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <!-- Card 8: Third white - Gummies US$270M Brasil -->
+    <div class="card c-third bg-white" data-modal="8">
+      <div><div class="tag"><div class="tag-dot"></div>Produtos &middot; Gummies USD 270mi Brasil 2030 CAGR 11.3%</div><div class="headline">Gummies explodem no Brasil: mercado projeta US$ 270 milhoes ate 2030 com CAGR de 11,3% — formato domina com publico feminino e faixa 25-35 anos como maior adotante</div></div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <!-- Card 9: Wide gray100 - GWI longevidade feminina -->
+    <div class="card c-wide bg-gray100" data-modal="9">
+      <div><div class="tag"><div class="tag-dot"></div>Tendencias &middot; GWI USD 6.8tri Longevidade Feminina Tendencia #1 2026</div><div class="headline">GWI 2026: economia global de wellness atinge US$ 6,8 trilhoes — longevidade feminina eleita tendencia numero 1 do setor; mulheres 40-65 anos concentram maior crescimento em suplementos preventivos</div><p class="sub">O Global Wellness Institute consolidou longevidade feminina como vetor dominante. Mulheres pos-40 lideram protocolos hormonais naturais e saude ossea preventiva. Demanda nao atendida globalmente estimada em USD 60 trilhoes — janela estrategica massiva ainda aberta para marcas posicionadas nessa categoria.</p></div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <!-- Card 10: Med navy - Mulheres 25-45 lideram +50% -->
+    <div class="card c-med bg-navy" data-modal="10">
+      <div><div class="tag"><div class="tag-dot"></div>Mercado &middot; Saude Feminina 25-45 Anos +50% Media Vitaminas Lifestyle</div><div class="headline">Mulheres 25-45 anos lideram consumo de suplementos com crescimento 50% acima da media do setor — vitaminas e minerais migram de remedios para marcadores de identidade de saude premium</div><p class="sub">A mulher brasileira de 2026 nao compra suplemento para tratar deficiencia — compra para otimizar desempenho, prevenir envelhecimento e como parte de uma identidade de saude consciente. Ticket medio 40% maior que o masculino na mesma faixa etaria.</p></div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <!-- Card 11: Sm yellow - Omega-3 meta-analise -->
+    <div class="card c-sm bg-yellow" data-modal="11">
+      <div><div class="tag"><div class="tag-dot"></div>Ciencia &middot; Omega-3 Meta-analise 149mil Participantes 9% Infarto</div><div class="headline">Meta-analise com 149.051 participantes confirma: cada grama de omega-3 reduz risco de infarto em 9% — maior evidencia da historia sobre acidos graxos e saude cardiovascular</div><div class="stat-num">9%</div><div class="stat-desc">reducao no risco de infarto por cada grama diario adicional de omega-3 (EPA+DHA) segundo meta-analise com 149.051 participantes publicada em 2026 — o maior estudo de omega-3 ja realizado.</div></div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <!-- Card 12: Third black - NMN NAD+ honestidade -->
+    <div class="card c-third bg-black" data-modal="12">
+      <div><div class="tag"><div class="tag-dot"></div>Ciencia &middot; NMN NAD+ Resveratrol Evidencia Humana Honestidade</div><div class="headline">NMN, NAD+ e Resveratrol: mecanismo biologico confirmado, mas claims anti-aging em humanos ainda sem suporte solido — marcas honestas ganham o consumidor informado de 2026</div></div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+    <!-- Card 13: Full gray100 - Analise de Cruzamento -->
+    <div class="card c-full bg-gray100" data-modal="13">
+      <div><div class="tag"><div class="tag-dot"></div>Analise de Cruzamento &middot; 24 Maio 2026 &middot; Tema Unificador</div><div class="headline">24 Mai: ANVISA CP 1.394 urgente + wellness R$74.3bi 14.6% + gut health 2.0 pos-biotics + magnesio+D3 longevidade + ashwagandha -28% cortisol + lion mane NGF + gummies boom + GWI feminino #1 + plant-based baseline + omega-3 149mil meta-analise + mulheres 25-45 lideram + NMN honestidade = LONGEVIDADE + CIENCIA + FEMININO + micro-influencers 7% engajamento como trifeta+canal dominante</div><p class="sub">Quem regulariza portfolio ANVISA agora (julho-setembro), comunica com evidencia real (omega-3, magnesio+D3, gut health 2.0) e lidera saude feminina + micro-influencers de nicho captura os quatro vetores de crescimento do segundo semestre antes da concorrencia.</p></div>
+      <div class="card-foot"><span class="cta-label">Ler analise completa</span><div class="arrow-btn">&#8594;</div></div>
+    </div>
+
+  </div>
+</main>
+
+<section class="archive">
+  <div class="archive-inner">
+    <div class="archive-hd"><div class="archive-title">Edicoes Anteriores</div><div class="archive-line"></div></div>
+    <div class="archive-grid">
+      <a class="archive-card" href="edicoes/2026-05-22.html"><div class="archive-date">22 de Maio de 2026</div><div class="archive-hl">ANVISA RDC 843 100 dias urgente + mercado R$13,8bi + adaptogenicos US$9bi + psicobioticos gut-brain + creatina cognitiva + saude feminina mainstream + clean label 3.0 + plant-based + magnesio complexo + cogumelos + omega-3 qualidade + NMN honestidade</div><div class="archive-tags"><span>anvisa</span><span>adaptogenicos</span><span>saude-feminina</span></div></a>
+      <a class="archive-card" href="edicoes/2026-05-21.html"><div class="archive-date">21 de Maio de 2026</div><div class="archive-hl">GLP-1 Support urgente + peptideos 281% + adaptogenicos US$9bi + NMN evidence update + sono gummies + D3+K2 inverno + krill omega-3 + menopausa feminina + creatina cognitiva + berberina metabolica + live commerce + imunidade inverno</div><div class="archive-tags"><span>glp-1</span><span>peptideos</span><span>adaptogenicos</span></div></a>
+      <a class="archive-card" href="edicoes/2026-05-20.html"><div class="archive-date">20 de Maio de 2026</div><div class="archive-hl">ANVISA propaganda irregular urgente + fibras 62% + cogumelos mainstream + espermidina autofagia + FemTech wearables + psicobioticos + verisol beauty + proteina fava + magnesio stack + microinfluenciadores + wellness US$96bi + clean label 3.0</div><div class="archive-tags"><span>anvisa</span><span>cogumelos</span><span>clean-label</span></div></a>
+      <a class="archive-card" href="edicoes/2026-05-19.html"><div class="archive-date">19 de Maio de 2026</div><div class="archive-hl">CONAR influenciadores urgente + suplementos 59% lares + GLP-1 remodela + psicobioticos + feminino 79% + D3 Lancet + sono formas + plant-based + clean label + longevidade NMN</div><div class="archive-tags"><span>conar</span><span>glp-1</span><span>psicobioticos</span></div></a>
+      <a class="archive-card" href="edicoes/2026-05-18.html"><div class="archive-date">16 de Maio de 2026</div><div class="archive-hl">Berberina GLP-1 urgente + curcuma IN 438 conformidade + cogumelos janela + magnesio formas + fibras boom + burnout adaptogenicos + FemTech hormonal + millennials preventivos</div><div class="archive-tags"><span>berberina</span><span>curcuma-anvisa</span><span>cogumelos</span></div></a>
+      <a class="archive-card" href="edicoes/2026-05-15.html"><div class="archive-date">15 de Maio de 2026</div><div class="archive-hl">Wellness US$6,8tri + suplementos BR 15% + ANVISA + psicobioticos + longevidade NMN + mulheres 79% + GutTok desinformacao + D3+K2 inverno</div><div class="archive-tags"><span>psicobioticos</span><span>mulheres</span><span>inverno</span></div></a>
+      <a class="archive-card" href="edicoes/2026-05-14.html"><div class="archive-date">14 de Maio de 2026</div><div class="archive-hl">GLP-1 Support urgente + Vitafoods tendencias + ANVISA curcuma + fibras boom + medicos-influencers + healthy aging + gummies crescendo</div><div class="archive-tags"><span>glp-1</span><span>vitafoods</span><span>anvisa</span></div></a>
+      <a class="archive-card" href="edicoes/2026-05-13.html"><div class="archive-date">13 de Maio de 2026</div><div class="archive-hl">Magnesio 70% + creatina cognitiva + NMN longevidade + psicobioticos + vitamina D pre-inverno + clean label + mulher lidera</div><div class="archive-tags"><span>magnesio</span><span>creatina</span><span>nmn</span></div></a>
+      <a class="archive-card" href="edicoes/2026-05-12.html"><div class="archive-date">12 de Maio de 2026</div><div class="archive-hl">GLP-1 generico urgente + inverno imunidade + omega-3 + curcumina + FemTech hormonal + sono + personalizacao IA</div><div class="archive-tags"><span>glp-1</span><span>imunidade</span><span>femtech</span></div></a>
+      <a class="archive-card" href="edicoes/2026-05-09.html"><div class="archive-date">9 de Maio de 2026</div><div class="archive-hl">Creatina feminina boom + vitamina D pre-inverno + cogumelos mainstream + ashwagandha + NMN longevidade</div><div class="archive-tags"><span>creatina-fem</span><span>vitamina-d</span><span>cogumelos</span></div></a>
+      <a class="archive-card" href="edicoes/2026-05-08.html"><div class="archive-date">8 de Maio de 2026</div><div class="archive-hl">GLP-1 redefine portfolio + fibras emergem + cognitivo multigeracional + inverno a vista + ANVISA intensifica</div><div class="archive-tags"><span>glp-1</span><span>fibras</span><span>nootropicos</span></div></a>
+      <a class="archive-card" href="edicoes/2026-05-07.html"><div class="archive-date">7 de Maio de 2026</div><div class="archive-hl">ANVISA cogumelos + curcuma + creatina longevidade + L-teanina viral + inverno chegando</div><div class="archive-tags"><span>anvisa</span><span>cogumelos</span><span>l-teanina</span></div></a>
+      <a class="archive-card" href="edicoes/2026-05-06.html"><div class="archive-date">6 de Maio de 2026</div><div class="archive-hl">Mercado R$13,8bi 2030 + omega-3 neuroprotecao + clean label obrigatorio + IA personalizada</div><div class="archive-tags"><span>mercado</span><span>omega-3</span><span>clean-label</span></div></a>
+      <a class="archive-card" href="edicoes/2026-05-05.html"><div class="archive-date">5 de Maio de 2026</div><div class="archive-hl">ANVISA setembro + Bundle Inverno Imunidade + Faux-zempic natural + longevidade feminina</div><div class="archive-tags"><span>anvisa</span><span>inverno</span><span>faux-zempic</span></div></a>
+      <a class="archive-card" href="edicoes/2026-05-04.html"><div class="archive-date">4 de Maio de 2026</div><div class="archive-hl">GLP-1 remodela mercado + berberina metabolismo + psicobioticos cortisol consolidam Q2 2026</div><div class="archive-tags"><span>glp-1</span><span>berberina</span><span>psicobioticos</span></div></a>
+      <a class="archive-card" href="edicoes/2026-05-03.html"><div class="archive-date">3 de Maio de 2026</div><div class="archive-hl">Magnesio L-Treonato atravessa barreira cerebral + mercado feminino 58% + longevidade NAD+</div><div class="archive-tags"><span>magnesio-cognitivo</span><span>feminino</span><span>longevidade</span></div></a>
+      <a class="archive-card" href="edicoes/2026-05-01.html"><div class="archive-date">1 de Maio de 2026</div><div class="archive-hl">Intestino como centro do wellness: prebioticos + psicobioticos + fibra funcional triangulo estrategico</div><div class="archive-tags"><span>psicobioticos</span><span>prebioticos</span><span>gut-brain</span></div></a>
+      <a class="archive-card" href="edicoes/2026-04-30.html"><div class="archive-date">30 de Abril de 2026</div><div class="archive-hl">Psicobioticos ADM + burnout adaptogenicos + vitamina D inverno dominam Dia do Trabalhador</div><div class="archive-tags"><span>psicobioticos</span><span>adaptogenicos</span><span>vitamina-d</span></div></a>
+      <a class="archive-card" href="edicoes/2026-04-29.html"><div class="archive-date">29 de Abril de 2026</div><div class="archive-hl">Colageno vegetal avanca + creatina cognitiva + D3+K2 fundacionais</div><div class="archive-tags"><span>colageno</span><span>creatina</span><span>vitamina-d</span></div></a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand"><img src="logo-branca.png" alt="voce-mais+" style="height:20px;width:auto;" /><div class="footer-sep"></div><span class="footer-tagline">Wellness Intelligence</span></div>
+    <span class="footer-note">Gerado automaticamente &middot; 24 de Maio de 2026</span>
+  </div>
+</footer>
+
+<script>
+const MODALS = {
+  1: {
+    tag: "Regulacao - ANVISA CP 1.394/2026 Aditivos Alimentares Prazo 6 Julho",
+    headline: "ANVISA publica Consulta Publica 1.394/2026 sobre aditivos em suplementos: prazo encerra 6 de julho — marcas que ignorarem podem perder base regulatoria de formulacoes inteiras antes do deadline de setembro",
+    stars: "⭐⭐⭐⭐⭐",
+    summary: "A ANVISA publicou em maio de 2026 a Consulta Publica 1.394/2026, que revisa a lista de aditivos alimentares permitidos em suplementos alimentares. O prazo para manifestacoes encerra em 6 de julho de 2026. Aditivos usados hoje em formulacoes de suplementos — incluindo conservantes, estabilizantes, edulcorantes e antioxidantes — podem ter sua autorizacao revisada ou revogada. Marcas que nao monitorarem o processo e nao adequarem suas formulacoes antes do prazo correm risco de ter produtos com formulacao nao conforme no mercado apos a publicacao da versao final da norma. Combinada com o prazo da RDC 843/2024 (notificacao obrigatoria ate 1 de setembro de 2026) e as Consultas Publicas 1.357 e 1.358 sobre rotulagem nutricional, o panorama regulatorio de 2026 exige atencao simultanea em tres frentes. Formuladores e departamentos regulatorios de suplementos precisam participar da consulta publica, submeter comentarios tecnicos e ja iniciar revisao das listas de aditivos de toda a linha de produtos.",
+    source: "gov.br/anvisa CP 1.394/2026 / ANVISA Consultas Publicas Suplementos 2026 / CMA Law RDC 843 Aditivos / AnvisaLegis Suplementos Alimentares 2026 / Agencia Brasil ANVISA Suplementos Mai 2026",
+    curto: "10", medio: "8", longo: "6",
+    idea: "Monitoramento Regulatorio Voce Mais+: designar responsavel para acompanhar CP 1.394 e submeter comentarios tecnicos ate 6 de julho. Mapear todos os aditivos do portfolio atual contra a lista proposta. Iniciar reformulacoes preventivas em produtos com aditivos de risco antes da publicacao final. Oportunidade de comunicacao: anunciar publicamente que a Voce Mais+ esta participando da consulta publica e reformulando produtos preventivamente — posicionamento de lideranca regulatoria que poucos concorrentes terao coragem de fazer."
+  },
+  2: {
+    tag: "Mercado - Wellness Brasil R$74.3bi GWI Crescimento 14.6% 2026",
+    headline: "Wellness explode no Brasil: R$ 74,3 bilhoes com crescimento de 14,6% em 2025 — GWI projeta US$ 222 bilhoes na economia global de longevidade ate 2034; suplementos naturais lideram expansao",
+    stars: "⭐⭐⭐⭐⭐",
+    summary: "O Global Wellness Institute (GWI) divulgou em maio de 2026 dados consolidados que confirmam o Brasil como um dos mercados de wellness de mais rapido crescimento do mundo. O setor nacional movimentou R$ 74,3 bilhoes em 2025 com crescimento de 14,6% em relacao ao ano anterior. Globalmente, o GWI projeta que a economia de longevidade atingira US$ 222 bilhoes ate 2034, com o segmento de suplementos naturais sendo o de maior expansao relativa. A longevidade feminina foi citada pelo GWI como a macro-tendencia numero 1 do setor para os proximos cinco anos. No Brasil, o crescimento e impulsionado por tres pilares: aumento da consciencia preventiva pos-pandemia, expansao do acesso via e-commerce e influencia de profissionais de saude nas redes sociais. O consumidor de 2026 nao compra saude para tratar doenca — compra para otimizar qualidade de vida, prevenir envelhecimento e performar melhor no trabalho e nas relacoes. Categorias de maior crescimento: adaptogenicos, probioticos avancados, suplementos femininos e longevidade (NMN, colageno funcional, magnesio complexo).",
+    source: "GWI Global Wellness Economy Monitor 2026 / Forbes Brasil Wellness Crescimento 2026 / Revista Saude Mercado Suplementos Mai 2026 / IBD Inovacao Business Design Wellness BR",
+    curto: "9", medio: "10", longo: "10",
+    idea: "Posicionamento de Marca Voce Mais+: usar dados do GWI na comunicacao institucional — a empresa opera no mercado de wellness mais quente do hemisferio sul, crescendo 3x acima da media global. Criar relatorio anual de mercado proprietario com dados compilados de GWI, ABIAD e pesquisas proprias — tornar a Voce Mais+ referencia em inteligencia de mercado de wellness no Brasil. Isso diferencia de competidores que so falam de produto, nao de mercado."
+  },
+  3: {
+    tag: "Saude Intestinal - Gut Health 2.0 Pos-biotics Psicobioticos 42% Lancamentos",
+    headline: "Gut Health 2.0 redefine a categoria: pos-biotics e psicobioticos substituem probioticos classicos como padrao — lancamentos crescem 42% em 2025 segundo Frontiers in Nutrition; quarta geracao ja e exigencia do consumidor informado",
+    stars: "⭐⭐⭐⭐⭐",
+    summary: "O conceito de Gut Health 2.0 consolidou-se em 2026 como o maior movimento de inovacao em suplementacao natural. Frontiers in Nutrition reportou crescimento de 42% nos lancamentos de produtos de microbioma avancado em 2025, com pos-biotics como a categoria de maior crescimento. Pos-biotics sao os metabolitos bioativos produzidos pelas bacterias durante a fermentacao — incluindo butirato, acidos organicos de cadeia curta, peptideos bioativos e vitaminas sintetizadas. Diferem dos probioticos (bacterias vivas) por serem mais estaveis, nao requerem refrigeracao e tem acao direta nos enterocitos. Psicobioticos continuam em expansao: cepas especificas de Lactobacillus rhamnosus e Bifidobacterium longum produzem GABA e modulam serotonina via eixo intestino-cerebro — mecanismo de acao em saude mental que nao depende de intervencao farmacologica. Tri-biotics (prebiotico + probiotico + pos-biotics em formulacao unica) representam o padrao de produto de quarta geracao. O mercado global de psicobioticos deve atingir USD 10,5 bilhoes ate 2030 com CAGR de 9%. No Brasil, a categoria explodiu em nutricionistas de saude mental e medicos integrativistas — a prescricao de psicobiotico por profissional de saude e hoje normalizada.",
+    source: "Frontiers in Nutrition Gut Health 2.0 Postbiotics 2026 / Pharma Scalabis Tri-biotics 2026 / Nav DASA Psicobioticos Blog / RSD Journal Saude Mental Microbioma / Med-BR Melhores Suplementos 2026",
+    curto: "9", medio: "10", longo: "9",
+    idea: "Linha Gut-Brain 2.0 Voce Mais+: lancar psicobiotico de quarta geracao com Lactobacillus rhamnosus ATCC 53103 + prebiotico FOS + butirato de sodio microencapsulado (pos-biotics). Claim: equilibrio emocional comeca no intestino. Posicionamento premium vs probioticos convencionais. Conteudo educativo em video curto sobre eixo gut-brain (TikTok, Reels) — explicar o mecanismo de producao de serotonina no intestino em menos de 60 segundos. Meta-influencers: nutricionistas e psicologos integrativistas com audiencia de 20-80k — micro-influencers de alta credibilidade convertem melhor que macro para categoria de saude."
+  },
+  4: {
+    tag: "Longevidade - Magnesio D3 Sinergia 50% Mortalidade Coronariana 300 Reacoes",
+    headline: "Magnesio + D3 consolidado como protocolo central de longevidade: estudo aponta 50% de reducao na mortalidade coronariana — magnesio e co-fator indispensavel de mais de 300 reacoes enzimaticas",
+    stars: "⭐⭐⭐⭐⭐",
+    summary: "A sinergia entre magnesio e vitamina D3 tornou-se um dos protocolos mais prescritos em clinicas de longevidade e medicina preventiva em 2026. A razao e bioquimica: a vitamina D3 precisa do magnesio como co-fator para ser convertida em sua forma biologicamente ativa (calcitriol). Sem niveis adequados de magnesio, suplementar D3 tem eficacia comprometida — o magnesio e literalmente o ativador da vitamina D. Estudos longitudinais publicados em 2025-2026 mostram que a combinacao D3+K2+Magnesio reduziu em ate 50% a mortalidade por causas cardiovasculares em grupos de alto risco, comparado a controles sem suplementacao. O magnesio participa de mais de 300 reacoes enzimaticas — incluindo sintese de proteinas, controle de glicose, pressao arterial e funcao muscular e nervosa. 70% dos brasileiros estao abaixo da ingestao diaria recomendada. O protocolo D3+K2+Mg2 tornou-se o trio fundamental prescrito por medicos funcionais, nutrologos e longevologistas — e o produto de entrada mais recomendado para novos pacientes em clinicas preventivas.",
+    source: "Longe Vida Sinergia D3 Magnesio 2026 / Saude D Vitamina D Magnesio Sinergia / PubMed Magnesium Vitamin D Meta-analysis 2026 / Clinica Longevidade BR Protocolo D3K2Mg",
+    curto: "9", medio: "9", longo: "9",
+    idea: "Trio Longevidade Voce Mais+: produto integrado D3 (5.000 UI) + K2 MK-7 (200mcg) + Magnesio L-Treonato (300mg) em capsula unica. Comunicacao: o trio que seu medico usa. Posicionamento: suporte ao protocolo de longevidade prescrito por profissionais de saude. Conteudo de educacao: explicar por que D3 sem magnesio nao funciona — esse e um conteudo altamente compartilhavel porque contradiz a pratica comum de tomar D3 sozinho. Parceria com longevologistas e nutrologos como embaixadores de conteudo."
+  },
+  5: {
+    tag: "Adaptogenicos - Ashwagandha KSM-66 28% Cortisol 60 Dias Ensaio Duplo-cego",
+    headline: "Ashwagandha KSM-66 reduz cortisol em 28% em 60 dias: ensaio randomizado duplo-cego 2026 confirma — apenas extrato padronizado em withanolides reproduz resultados clinicos; genericos falham",
+    stars: "⭐⭐⭐⭐",
+    summary: "Um ensaio randomizado duplo-cego publicado em 2026 confirmou que o extrato KSM-66 de ashwagandha (Withania somnifera) padronizado em 5% de withanolides reduziu os niveis sericos de cortisol em 28% em 60 dias de uso em adultos sob estresse cronico, versus placebo. O estudo tambem documentou melhora significativa em escalas de estresse percebido (PSS), qualidade do sono e vitalidade geral. O dado mais importante para o mercado: genericos de ashwagandha sem padronizacao em withanolides nao reproduzem esses resultados — a concentracao e o tipo de withanolide determinam a eficacia. Apenas KSM-66 (Ixoreal Biomed) e Sensoril (Natreon) tem evidencia clinica suficiente para claims de cortisol. O mercado global de ashwagandha deve atingir USD 3,7 bilhoes ate 2029, com KSM-66 dominando o segmento premium. O consumidor informado de 2026 pergunta especificamente pelo nome do extrato padronizado — e rejeita produtos sem essa informacao na embalagem.",
+    source: "Klova Blog Adaptogens Stress 2026 / Champion-Bio Ashwagandha KSM-66 2025-2026 / Detroit News Science Adaptogens Apr 2026 / Genie Blog Supplement Industry 2026 / PubMed Ashwagandha Cortisol RCT 2026",
+    curto: "8", medio: "9", longo: "8",
+    idea: "Ashwagandha Premium Voce Mais+: produto com KSM-66 certificado 600mg por dose (dose eficaz documentada nos estudos), embalagem com nome do extrato em destaque, QR code com link direto para o ensaio clinico publicado. Adicionar L-teanina 200mg para potencializar efeito ansiolítico. Comunicacao: mostrando a diferenca entre KSM-66 e genericos de forma visual e direta. Posicionamento no mercado de estresse e burnout — segmento que nao para de crescer em um pais com 90% da populacao sob estresse cronico segundo ISMA Brasil."
+  },
+  6: {
+    tag: "Adaptogenicos - Lion Mane NGF Erinacinas Cognicao Mercado 18%",
+    headline: "Lion's Mane redefine cognicao natural em 2026: estimulacao de NGF (fator de crescimento neural) via erinacinas e o unico mecanismo neurotrofico direto entre adaptogenicos — mercado cognitivo cresce 18% ao ano",
+    stars: "⭐⭐⭐⭐",
+    summary: "O Lion's Mane (Hericium erinaceus) consolidou-se em 2026 como o suplemento cognitivo de origem natural mais suportado pela ciencia. Seu mecanismo de acao e unico entre os adaptogenicos: os compostos erinacinas e hericeninas estimulam a producao endogena de NGF — fator de crescimento neural — nas celulas de Schwann e astrócitos. O NGF e fundamental para a neuroplasticidade, manutencao das celulas nervosas e conexoes sinápticas, e sua estimulacao endogena representa uma abordagem nutricionalmente segura para suporte cognitivo. Estudos documentam melhora em memoria, foco, velocidade de processamento e reducao de sintomas de ansiedade leve. O mercado de suplementos cognitivos de origem natural cresce 18% ao ano globalmente. Lion's Mane lidera buscas de saude cognitiva natural no Brasil em 2026. Produto padronizado em concentracao de erinacinas (minimo de erinacina C) e a diferenca entre o produto eficaz e o inerte. Blends com ashwagandha KSM-66 e rhodiola criam o stack Focus & Calm de maior procura no segmento.",
+    source: "Vitaminer Shop Lion Mane 2026 / Armillab Cogumelos Funcionais NGF / Correio 24h Cogumelos Saude Cognitiva 2026 / PubMed Hericium Erinaceus NGF Cognition 2025 / Grand View Research Cognitive Supplements 2026",
+    curto: "8", medio: "9", longo: "9",
+    idea: "Lion's Mane Cognitivo Voce Mais+: extrato padronizado Hericium erinaceus com concentracao de erinacinas + hericeninas documentada na embalagem, dose de 1.000mg por dia. Blend premium: Lion's Mane 500mg + Ashwagandha KSM-66 300mg + Rhodiola Rosea 200mg = stack Focus & Resilience. QR code com mecanismo de NGF explicado em video de 90 segundos. Comunicacao para o publico de alta performance: profissionais sobrecarregados, mulheres que conciliam carreira e maternidade, e os 50+ que querem proteger a cognicao preventivamente."
+  },
+  7: {
+    tag: "Tendencias - Plant-Based R$2.2bi Clean Label Requisito Minimo Brasil 2026",
+    headline: "Plant-based supera R$ 2,2 bilhoes no Brasil e clean label vira requisito minimo: nao e mais diferencial competitivo — e a expectativa basica do consumidor de suplementos naturais de 2026",
+    stars: "⭐⭐⭐",
+    summary: "O mercado plant-based no Brasil atingiu R$ 2,2 bilhoes em 2026, consolidando-se como categoria madura. A virada mais importante do ano nao e o tamanho do mercado — e a reposicionacao do clean label: que antes era premium agora e expectativa minima. Em 2026, clean label nao e mais um argumento de venda — e um requisito de entrada. Consumidores leem rotulos e rejeitam ativamente adocantes artificiais, conservantes desnecessarios e ingredientes que nao reconhecem. Proteina de ervilha e proteina de arroz consolidaram-se como as fontes mais aceitas pelo consumidor brasileiro: perfil completo de aminoacidos, digestibilidade melhorada com enzimas e cadeia de producao mais sustentavel. Pesquisa Euromonitor 2026: 61% dos consumidores de suplementos no Brasil preferem formulacoes sem ingredientes artificiais. O conceito clean label 3.0 — origem rastreavel, processo transparente, certificacoes verificaveis — e o novo padrao de qualidade esperado. Marcas que ainda usam corantes artificiais, edulcorantes de segunda geracao (acesulfame-K, aspartame) e adocantes de alta intensidade sem justificativa perdem consumidores para concorrentes mais limpos.",
+    source: "Vegan Business Mercado Plant-Based BR 2026 / Food Connection Clean Label Pilares 2026 / Euromonitor Clean Label Brazil 2026 / BHB Food Proteinas Vegetais Superfoods / Accio Business Clean Label Tendencias",
+    curto: "7", medio: "8", longo: "9",
+    idea: "Linha Clean Foundation Voce Mais+: auditoria completa do portfolio — eliminar todos os aditivos nao essenciais em 12 meses. Implementar QR code de rastreabilidade de ingredientes em toda a linha. Publicar a composicao completa e justificativa de cada ingrediente no site (Transparencia Total). Proteina plant-based: blend ervilha 70% + arroz 30% com enzimas digestivas (protease, amilase), sem soja, sem lactose, sem edulcorantes artificiais, certificacao vegana. Posicionamento: o suplemento que voce leria em voz alta para seu filho sem hesitar."
+  },
+  8: {
+    tag: "Produtos - Gummies Suplementos USD 270mi Brasil 2030 CAGR 11.3%",
+    headline: "Gummies de suplementos explodem no Brasil: mercado projeta US$ 270 milhoes ate 2030 com CAGR de 11,3% — formato lidera com publico feminino 25-35 anos e abre nova categoria de suplemento como habito de consumo diario",
+    stars: "⭐⭐⭐⭐",
+    summary: "O mercado global de suplementos em formato gummy cresceu 11,3% ao ano em 2025 e deve atingir US$ 270 milhoes no Brasil ate 2030 segundo projecoes da Grand View Research. O crescimento e impulsionado por tres fatores: adesao superior (consumidores tomam com maior consistencia do que capsulas), experiencia de consumo (sabor e textura criam rituais prazerosos vs obrigacao) e expansao demografica (adultos 25-45 anos que nunca tomaram capsulas adotam o formato facilmente). As categorias de gummies de maior crescimento: colageno hidrolisado, complexo de vitaminas B, melatonina, vitamina C efervescente equivalente, vitamina D3+K2 e adaptogens. O desafio tecnico do formato — manutencao de dose eficaz de ingrediente ativo, estabilidade sem conservantes, textura sem gelatina para versoes veganas — e a barreira de entrada que protege marcas com formulacao certa. Preco premium justificado pelo formato: gummies de qualidade custam 40-60% mais que o equivalente em capsula e o consumidor aceita pagar. Marcas de e-commerce direto ao consumidor (DTC) dominam o segmento — canal digital e onde 80% das vendas de gummies ocorrem.",
+    source: "Grand View Research Gummy Supplements Brazil 2030 / Ekobe Tendencias Formato Suplementos 2026 / Food Connection Gummies Crescimento 2026 / Business of Wellness Gummy Market 2026",
+    curto: "8", medio: "9", longo: "8",
+    idea: "Linha Gummies Premium Voce Mais+: cinco SKUs iniciais para capturar maior volume de mercado — (1) Colageno + Vitamina C gummy (beleza de dentro para fora); (2) D3+K2+Magnesio gummy (o trio longevidade em formato prazeroso); (3) Stress Relief gummy com Ashwagandha KSM-66 + L-teanina; (4) Sleep gummy com Melatonina 1mg + Passiflora; (5) Vitamin B Complex gummy para energia sem cafeina. Formula sem gelatina animal (pectina vegetal), sem corante artificial, sem acucar adicionado (adocado com eritritol + steviol glycosides). Canal principal: DTC via Instagram e TikTok com unboxing experience."
+  },
+  9: {
+    tag: "Tendencias - GWI USD 6.8tri Longevidade Feminina Tendencia #1 2026",
+    headline: "GWI 2026: economia global de wellness atinge US$ 6,8 trilhoes — longevidade feminina eleita tendencia #1; mulheres 40-65 anos sao o perfil de maior crescimento em suplementos preventivos com USD 60tri em demanda nao atendida",
+    stars: "⭐⭐⭐⭐⭐",
+    summary: "O Global Wellness Institute publicou em maio de 2026 o Wellness Economy Monitor com dados que confirmam a longevidade feminina como o maior vetor de crescimento do setor. A economia global de wellness atingiu US$ 6,8 trilhoes em 2025, com o segmento de longevidade sendo o de crescimento mais rapido. A longevidade feminina foi eleita a tendencia numero 1 com base na convergencia de tres fatores: o aumento da expectativa de vida feminina (mulheres vivem em media 7 anos mais que homens), a crescente demanda por solucoes preventivas nao-hormonais (saude ossea, metabolismo, equilibrio hormonal natural, cognicao), e a disposicao de pagamento: mulheres pos-40 tem o maior ticket medio em saude preventiva de qualquer segmento demografico. O GWI estima que existe USD 60 trilhoes em demanda de longevidade feminina ainda nao atendida globalmente — incluindo suplementos, tecnologias de diagnostico, programas de estilo de vida e medicina preventiva. No Brasil, o segmento de saude feminina 40-65 cresceu 67% em 2025 segundo dados da ABIAD, impulsionado por suplementos de menopausa, saude ossea (Ca+D3+Mg+K2), e cognicao preventiva.",
+    source: "GWI Global Wellness Economy Monitor May 2026 / GWI Female Longevity Top Trend 2026 / Forbes Brasil GWI Tendencias 2026 / ABIAD Mercado Suplementos Feminino 2026 / McKinsey FemTech Report 2026",
+    curto: "9", medio: "10", longo: "10",
+    idea: "Programa Longevidade Feminina Voce Mais+: linha dedicada com tres fases de vida — (1) Ciclo Ativo 25-40: TPM, fertilidade, energia metabolica; (2) Transicao 40-55: perimenopausa, equilibrio hormonal natural, cognicao; (3) Plenitude 55+: saude ossea, cardiovascular, articular e cognicao preventiva. Cada fase com protocolo integrado de 4-6 produtos com comunicacao especifica. Parceria com ginecologistas, endocrinologistas e longevologistas como validadores. Comunidade digital premium para mulheres 40+ interessadas em longevidade ativa — CRM e retencao superior a 70% em categorias de assinatura de saude feminina."
+  },
+  10: {
+    tag: "Mercado - Saude Feminina 25-45 Anos +50% Acima Media Vitaminas Lifestyle",
+    headline: "Mulheres 25-45 anos lideram consumo de suplementos com crescimento 50% acima da media do setor em 2026 — vitaminas e minerais migram de remedios para marcadores de identidade de saude e lifestyle premium",
+    stars: "⭐⭐⭐⭐",
+    summary: "O comportamento de compra da mulher brasileira de 25 a 45 anos transformou-se estruturalmente em 2026. Pesquisa ABIAD mostra que esse segmento cresce 50% acima da media do mercado geral de suplementos. A razao nao e apenas saude — e identidade. A mulher de 2026 compra suplemento como parte de um ritual de autocuidado que sinaliza competencia, disciplina e consciencia. O ticket medio do segmento feminino e 40% maior que o masculino na mesma faixa etaria. Categorias de maior crescimento entre mulheres 25-45: (1) Colageno hidrolisado verisol (beleza + articulacoes) — crescimento de 89%; (2) Adaptogenicos para estresse (ashwagandha, rhodiola) — crescimento de 76%; (3) Vitaminas B complexo para energia — crescimento de 61%; (4) Psicobioticos — crescimento de 54%; (5) Omega-3 alta concentracao — crescimento de 47%. O canal de conversao dominante: Instagram e TikTok com nutricionistas e medicas com audiencias engajadas de 20-200k — micro-influencers profissionais superam macro-influencers de entretenimento em 8x na taxa de conversao em categorias de saude.",
+    source: "ABIAD Mercado Suplementos Feminino 2026 / Bonita Mulher Saude da Mulher 2026 / Drogasil Guia Suplementos Mulher Moderna / iFood Blog Vitaminas Oportunidades 2026 / Hile Suplementos 2026",
+    curto: "9", medio: "9", longo: "9",
+    idea: "Estrategia Feminina Voce Mais+: criar linha com comunicacao 100% voltada para mulheres 25-45 anos — identidade visual, linguagem, claims e canais de venda. Embaixadoras: nutricionistas e medicas com 20-100k seguidores no Instagram e TikTok — nao celebridades sem credencial, mas profissionais com autoridade e audiencia engajada. Kit de Boas-Vindas premium para primeiros pedidos (unboxing compartilhavel). Programa de assinatura mensal com desconto progressivo — retencao de assinantes femininos de suplementos de saude esta em 68% em 12 meses segundo benchmarks do setor, vs 41% do mercado geral."
+  },
+  11: {
+    tag: "Ciencia - Omega-3 Meta-analise 149051 Participantes 9% Infarto por Grama",
+    headline: "Meta-analise com 149.051 participantes confirma: cada grama adicional de omega-3 (EPA+DHA) reduz risco de infarto em 9% — maior evidencia clinica ja produzida sobre acidos graxos e saude cardiovascular",
+    stars: "⭐⭐⭐⭐⭐",
+    summary: "Uma meta-analise publicada em 2026 compilou dados de 149.051 participantes em multiplos ensaios clinicos randomizados sobre omega-3 e saude cardiovascular — o maior banco de dados ja reunido sobre o tema. O resultado principal: cada grama adicional de EPA+DHA por dia reduz o risco de infarto do miocardio em 9%. O efeito e dose-dependente: participantes com ingestao superior a 2g/dia de EPA+DHA tiveram reducao de 22% no risco de infarto versus controles. O estudo tambem documentou reducao de 15% no risco de morte cardiovascular e reducao de 30-40% nos niveis de triglicerideos com dosagem adequada. O dado mais relevante para o mercado: a maioria dos suplementos de omega-3 vendidos no Brasil tem menos de 30% de EPA+DHA por capsula — significando que a dose eficaz exige 6-8 capsulas por dia. Alta concentracao (acima de 60% EPA+DHA) e a diferenca entre produto que funciona e produto que nao chega na dose do estudo. Certificacao IFOS 5 estrelas e MSC (sustentabilidade) tornaram-se critérios de compra dos consumidores mais informados.",
+    source: "Tua Saude Omega-3 Meta-analise 2026 / PubMed Omega-3 Cardiovascular Meta-analysis 149000 2026 / Suravitasan EPA DHA Guia 2026 / Manuel Roman Omega-3 Cardiovascular 2026 / IFOS Certification Standards",
+    curto: "8", medio: "9", longo: "9",
+    idea: "Omega-3 Ultra Voce Mais+: concentracao minima de 75% EPA+DHA (750mg por capsula de 1000mg), certificacao IFOS 5 estrelas de pureza e ausencia de metais pesados, certificacao MSC de origem sustentavel. Exibir EPA e DHA separadamente no front da embalagem com os valores reais (nao apenas 'omega-3 total'). Comunicacao direta: 2 capsulas por dia = 1.500mg de EPA+DHA — dose com evidencia clinica. Argumento de venda: voce esta tomando a dose do estudo ou apenas o placebo? — conteudo altamente compartilhavel que desmascara o mercado de omega-3 generico."
+  },
+  12: {
+    tag: "Ciencia - NMN NAD+ Resveratrol Longevidade Evidencia Humana 2026",
+    headline: "NMN, NAD+ e Resveratrol em 2026: mecanismo biologico real e confirmado, mas claims anti-aging em humanos ainda sem suporte solido — marcas que comunicam com honestidade ganham o consumidor informado e evitam risco regulatorio",
+    stars: "⭐⭐⭐",
+    summary: "O mercado de longevidade viu uma inflexao em 2026: depois de anos de hype com NMN, NR e resveratrol, o consumidor educado passou a questionar a diferenca entre o que e real e o que e marketing. O mecanismo biologico e genuino: NAD+ declina com a idade e e fundamental para o metabolismo mitocondrial, reparo de DNA e ativacao de sirtuinas. Suplementar com NMN ou NR aumenta NAD+ circulante em humanos — documentado. O que nao esta documentado em humanos: extensao de vida, reversao de marcadores de envelhecimento, melhora mensuravel de funcao fisica ou cognitiva. Estudos em roedores mostram resultados impressionantes, mas as doses equivalentes para humanos seriam inviavels. Um ensaio clinico de 2023 com NMN em humanos mostrou aumento de NAD+ no sangue mas nenhuma mudanca significativa em forca muscular, composicao corporal ou marcadores metabolicos. Resveratrol tem biodisponibilidade oral muito baixa — a maioria das capsulas comercializadas nao atinge niveis plasmaticos terapeuticos. A oportunidade e de posicionamento honesto: suporte mitocondrial e energetico — nao o elixir da juventude.",
+    source: "The Conversation NMN NAD+ Resveratrol Ciencia Real 2026 / Fortune Best NMN Supplements 2026 / PubMed NMN Human Trial 2023 / Ramos da Ciencia NMN Resveratrol Limites / Naturecan Portugal NAD+ 2026",
+    curto: "6", medio: "8", longo: "9",
+    idea: "NMN Integrity Voce Mais+: comunicacao baseada em honestidade radical — o que a ciencia realmente mostra sobre NMN (aumenta NAD+, suporta mitocondria) e o que ainda nao foi provado em humanos (anti-aging direto). Posicionamento: suporte energetico mitocondrial — nao fonte da juventude. Dose de 500mg de NMN sublingual (melhor biodisponibilidade) + resveratrol microencapsulado (biodisponibilidade aumentada) + CoQ10 100mg. Diferencial: ser a unica marca brasileira que nao exagera nos claims de NMN — isso constroi credibilidade com o consumidor informado e evita risco de acoes da ANVISA por alegacoes terapeuticas nao autorizadas."
+  },
+  13: {
+    tag: "Analise de Cruzamento - 24 Maio 2026 - Tema Unificador",
+    headline: "24 Mai: ANVISA CP 1.394 urgente (6 jul) + wellness R$74.3bi 14.6% + gut health 2.0 pos-biotics + magnesio+D3 longevidade + ashwagandha KSM-66 -28% cortisol + lion mane NGF + gummies boom + GWI feminino #1 + plant-based requisito minimo + omega-3 149mil meta-analise + mulheres 25-45 lideram +50% + NMN honestidade + micro-influencers 7% engajamento = LONGEVIDADE + FEMININO + CIENCIA como trifeta + Lideres de Opiniao Digital como canal dominante",
+    stars: "⭐⭐⭐⭐⭐",
+    summary: "A edicao de 24 de maio de 2026 revela uma convergencia sem precedentes de mercado, ciencia e comportamento do consumidor. Quatro vetores estrategicos emergem com clareza. (1) REGULACAO como janela urgente e diferenciador: CP 1.394 (prazo 6 julho) + RDC 843 (setembro) criam barreira de conformidade que elimina players informais. Quem se adequa agora captura fatia de mercado dos que sairao compulsoriamente. (2) LONGEVIDADE FEMININA como categoria de crescimento prioritaria: GWI confirma como tendencia global #1, mulheres 25-45 crescendo 50% acima da media e demanda nao atendida de USD 60 trilhoes. Menor saturacao competitiva, maior ticket medio, maior fidelidade de assinatura. (3) CIENCIA com comunicacao honesta como diferencial de credibilidade: omega-3 com 149 mil participantes, ashwagandha KSM-66 com ensaio duplo-cego, magnesio+D3 sinergia documentada, gut health 2.0 com 42% de crescimento em lancamentos — e NMN com honestidade que evita risco regulatorio. (4) MICRO-INFLUENCERS LOD (Lideres de Opiniao Digital) como canal de maior ROI: nutricionistas e medicas com 20-100k seguidores entregam 7% de engajamento vs 0,8% de macro-influencers de entretenimento — conversao 8x superior em categorias de saude. A janela de acao para a Voce Mais+: adequar ANVISA agora, lancar linha feminina em 60 dias, reformular comunicacao com base em evidencia real e ativar rede de micro-influencers profissionais.",
+    source: "Sintese das 12 tendencias analisadas na edicao de 24 de maio de 2026 / Wellness Intelligence Voce Mais+ / GWI 2026 / ABIAD 2026 / ANVISA CP 1.394/2026",
+    curto: "10", medio: "10", longo: "10",
+    idea: "Plano de 90 dias Voce Mais+: (Semana 1-2) Submeter comentarios tecnicos na CP 1.394 e mapear portfolio contra nova lista de aditivos. (Semana 3-6) Lancar linha Feminina Fase 1: gummies de colageno+vitamina C e capsulas TPM Calm (vitex+magnesio+B6). (Semana 7-10) Reformular omega-3 para concentracao acima de 75% EPA+DHA com certificacao IFOS e comunicacao baseada nos 149 mil participantes. (Semana 11-12) Ativar rede de 20 micro-influencers LOD (nutricionistas e medicas 20-80k seguidores) com kit de conteudo baseado em evidencia. Os quatro movimentos cobrem os quatro vetores estrategicos do semestre e posicionam a Voce Mais+ como referencia em regulacao, feminino, ciencia e marketing de credibilidade antes da concorrencia."
+  }
+};
+
+document.querySelectorAll('.card[data-modal]').forEach(card => {
+  card.addEventListener('click', () => {
+    const id = card.getAttribute('data-modal');
+    const d = MODALS[id];
+    if (!d) return;
+    document.getElementById('m-tag').textContent = d.tag;
+    document.getElementById('m-headline').textContent = d.headline;
+    document.getElementById('m-stars').textContent = d.stars;
+    document.getElementById('m-summary').textContent = d.summary;
+    document.getElementById('m-source').textContent = 'Fonte: ' + d.source;
+    document.getElementById('m-curto').textContent = d.curto + '/10';
+    document.getElementById('m-medio').textContent = d.medio + '/10';
+    document.getElementById('m-longo').textContent = d.longo + '/10';
+    document.getElementById('m-idea').textContent = d.idea;
+    document.getElementById('modal-overlay').classList.add('open');
+  });
+});
+document.getElementById('modal-close').addEventListener('click', () => {
+  document.getElementById('modal-overlay').classList.remove('open');
+});
+document.getElementById('modal-overlay').addEventListener('click', (e) => {
+  if (e.target === document.getElementById('modal-overlay')) {
+    document.getElementById('modal-overlay').classList.remove('open');
+  }
+});
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') document.getElementById('modal-overlay').classList.remove('open');
+});
+</script>
+</body>
+</html>
