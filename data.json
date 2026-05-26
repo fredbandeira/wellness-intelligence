@@ -1,6 +1,156 @@
 {
   "editions": [
     {
+      "date": "2026-05-26",
+      "dateLabel": "26 de Maio de 2026",
+      "cards": [
+        {
+          "category": "mercado",
+          "tag": "GLP-1 Ozempic Pilula 2026",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Ozempic em pilula democratiza emagrecimento em 2026 e remodela mercado de suplementos — usuarios GLP-1 demandam proteina, fibras e micronutrientes de alta densidade",
+          "summary": "A chegada do Ozempic em pilula em 2026 remodela o mercado de suplementos. Usuarios de GLP-1 reduzem volume alimentar mas precisam de alta densidade nutricional. R$20bi projecao GLP-1 em 2026; 95 milhoes de brasileiros com sobrepeso ainda fora do tratamento representam mercado enorme. Proteinas, fibras, vitaminas e probioticos sao os segmentos mais beneficiados.",
+          "source": "FoodBiz GLP-1 Suplementos 2026 / Naturaltech GLP-1 Mercado / Exame Ozempic Pilula 2026",
+          "curto": "10",
+          "medio": "9",
+          "longo": "8",
+          "idea": "Linha GLP-1 Support Voce Mais+: 4 produtos (Proteina Dense, Fibra+Sac, MultiDense, ProbioGLP) como protocolo completo para usuarios de Ozempic e similares."
+        },
+        {
+          "category": "tendencias",
+          "tag": "Longevidade USD 219bi 2034 CAGR 9.5%",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Longevidade saudavel: mercado salta de USD 109bi para USD 219bi ate 2034 com CAGR de 9,5% — Self-Empowered Wellness e o novo paradigma do consumidor que assume controle da propria saude",
+          "summary": "O mercado global de longevidade e wellness foi avaliado em USD 109,20 bilhoes em 2026 e deve atingir USD 219,33 bilhoes ate 2034, CAGR de 9,5%. Self-Empowered Wellness: individuos assumem controle direto da saude via biohacking, wearables e personalizacao. Consumidor de longevidade gasta 2,3x mais por produto.",
+          "source": "Genu-in Tendencia Wellness Longevidade 2026 / RS Works Mercado Suplementos Longevidade",
+          "curto": "8",
+          "medio": "10",
+          "longo": "10",
+          "idea": "Linha Longevidade Ativa Voce Mais+: NMN + CoQ10 + Magnesio L-Treonato + Omega-3 alta pureza + Resveratrol em bundle premium DTC com assinatura mensal. Ticket R$520-780/mes."
+        },
+        {
+          "category": "regulacao",
+          "tag": "ANVISA IN 412/2025 Fitoterapicos Simplificado",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "ANVISA aprova registro simplificado de fitoterapicos com IN 412/2025 — novo marco em vigor desde fev/2026 viabiliza biodiversidade brasileira como insumo estrategico",
+          "summary": "IN 412/2025 da ANVISA em vigor desde fev/2026 abandona logica de sinteticos e adapta regulacao a especificidade vegetal. 350 fitoterapicos registrados podem crescer significativamente. Maior oportunidade regulatoria da ultima decada para marcas de suplementos naturais com plantas nativas brasileiras.",
+          "source": "ANVISA Registro Simplificado Fitoterapicos 2026 / Campo Grande News Fitoterapicos 10 Anos",
+          "curto": "8",
+          "medio": "9",
+          "longo": "10",
+          "idea": "Linha Biodiversidade Brasileira Voce Mais+: Espinheira-Santa, Unha de Gato, Catuaba, Guarana puro com registro ANVISA simplificado. Diferencial impossivel de replicar a curto prazo."
+        },
+        {
+          "category": "tendencias",
+          "tag": "Saude Feminina +67% Brasil Lifestyle 2026",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Suplementos femininos viram lifestyle em 2026: categoria cresce 67% liderada por mulheres 25-45 anos — capsulas para cortisol, gummies de concentracao e formulas para menopausa entram no mainstream",
+          "summary": "Mulheres 25-45 anos lideram nova onda de consumo: equilibrio emocional, disposicao e prevencao hormonal. Protocolo prescrito por nutrologas: Maca peruana + Vitex agnus-castus + Oleo de Primula + Magnesio Bisglicinato. Retencao feminina 40% superior a media do mercado.",
+          "source": "Marcas e Mercados Suplementos Femininos 2026 / Bonita Mulher Saude da Mulher 2026",
+          "curto": "9",
+          "medio": "10",
+          "longo": "9",
+          "idea": "Linha Ciclo Feminino Voce Mais+: TPM Calm + Energia Feminina + Transicao 40+. Lancamento via micro-influencers nutricionistas especializadas em saude feminina."
+        },
+        {
+          "category": "ciencia",
+          "tag": "Lion Mane BDNF NGF Duplo-Cego 2025",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Lion Mane e BDNF: duplo-cego 2025 confirma foco imediato e neuroproteçao estrutural apos 4 semanas — cogumelo funcional entra no mainstream cognitivo brasileiro",
+          "summary": "Estudo duplo-cego randomizado 2025 confirma efeito agudo de foco e reducao de estresse oxidativo apos 4 semanas. Hericeninas e erinacinas cruzam barreira hematoencefalica, estimulam NGF e BDNF. Janela de 12 meses no Brasil antes do mainstream.",
+          "source": "Brazilian Journal Health Review Lion Mane 2026 / PubMed Hericium Erinaceus 2025",
+          "curto": "8",
+          "medio": "9",
+          "longo": "9",
+          "idea": "Stack Cognitivo Funcional Voce Mais+: Lion Mane 500mg (30% polissacarideos) + Bacopa 300mg + L-Teanina 200mg. Ser a primeira marca premium de cogumelos funcionais no DTC brasileiro."
+        },
+        {
+          "category": "ciencia",
+          "tag": "Omega-3 Deficit Global 40 Ensaios EPA DHA",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Deficit global de omega-3 confirmado: revisao de 40 ensaios vincula omega-3 a cardioproteçao e neuroproteçao contra Alzheimer e Parkinson",
+          "summary": "Populacao global com ingestao insuficiente de EPA+DHA. Revisao de 40 ensaios confirma cardioproteçao. Neuroproteçao documentada contra declinio cognitivo. Tendencia: migrar de omega-3 low-cost para versoes de alta concentracao (acima de 60% EPA+DHA) em formato rTG ou krill.",
+          "source": "Correio Braziliense Deficit Omega-3 Dez 2025 / Gloryful Nutrition 40 Ensaios 2026",
+          "curto": "8",
+          "medio": "8",
+          "longo": "9",
+          "idea": "Omega-3 Ultra 75% Voce Mais+: 2g EPA+DHA por dose em formato rTG. Comunicacao: nao e so tomar omega-3, e tomar a forma certa e a dose certa."
+        },
+        {
+          "category": "tendencias",
+          "tag": "Magnesio Bisglicinato L-Treonato Big 5 70%",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Magnesio quelado domina protocolo Big 5: 70% dos brasileiros deficientes e formas bisglicinato e L-treonato mostram absorcao 4x superior — categoria cresceu 62% em 2025",
+          "summary": "70% dos brasileiros deficientes em magnesio. Bisglicinato: biodisponibilidade 15-20%, melhor para sono e ansiedade. L-Treonato: atravessa barreira hematoencefalica, indicado para foco cognitivo. Mercado cresceu 62%. Consumidor de 2026 ja pergunta pela forma, nao apenas pelo produto.",
+          "source": "Selektz Brasil Top 8 Complexos Magnesio 2026 / Med-BR Melhores Suplementos Ciencia 2026",
+          "curto": "9",
+          "medio": "9",
+          "longo": "8",
+          "idea": "Magnesio Complexo Premium Voce Mais+: Mag Sono (Bisglicinato + L-Teanina), Mag Focus (L-Treonato + Lion Mane), Mag Total (complexo diario). Comunicacao: nem todo magnesio e igual."
+        },
+        {
+          "category": "mercado",
+          "tag": "Clean Label 3.0 USD 199bi 2034 Transparencia",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Clean Label 3.0: 1 em cada 2 consumidores globais escolhe rotulo limpo — mercado de ingredientes naturais vai de USD 130bi para USD 199bi ate 2034",
+          "summary": "Clean Label 3.0 vai alem da lista curta: consumidor quer origem, rastreabilidade e proposito genuino. 6 em 10 consumidores querem conhecer origem dos ingredientes. Mercado ingredientes naturais CAGR 4,32% para USD 199bi em 2034. No Brasil, pressao vem do consumidor digital que aprende a ler rotulos.",
+          "source": "Food Connection Clean Label 2026 / ANB Farma Clean Label Farmacias / BHB Food Ingredientes Naturais 2026",
+          "curto": "7",
+          "medio": "8",
+          "longo": "9",
+          "idea": "Compromisso Clean Label 3.0 Voce Mais+: publicar Declaracao de Ingredientes no site com origem de cada insumo + QR code em cada embalagem. Quem mais se expoe constroi mais confiança."
+        },
+        {
+          "category": "tendencias",
+          "tag": "Biohacking Wearables DNA Metilacao Suplementacao Dados",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Biohacking acessivel 2026: wearables HRV e testes de metilacao de DNA permitem monitorar idade biologica — suplementacao de dados proprios cria consumidor com retencao de 80% em 12 meses",
+          "summary": "Aneis inteligentes, HRV e testes epigeneticos de metilacao democratizam autoconhecimento biologico. Suplementacao personalizada via genomica cresceu 89% no Brasil em 2026. Modelo teste + protocolo + assinatura: retencao 12 meses superior a 80%. IA de formulacao analisa 300+ ensaios em minutos.",
+          "source": "Pharma Scalabis Biohacking Acessivel Wearables 2026 / Coletividade Evolutiva Biohacking 2026",
+          "curto": "7",
+          "medio": "9",
+          "longo": "10",
+          "idea": "Programa Voce Mais+ Precision: parceria com plataforma de microbioma e genomica. Kit teste + protocolo personalizado + subscricao mensal. Beta com 200 clientes. Ticket estimado R$480-720/mes."
+        },
+        {
+          "category": "tendencias",
+          "tag": "Colageno K-Beauty Beauty-from-Within NMN Verisol",
+          "stars": "⭐⭐⭐",
+          "headline": "Colageno beauty-from-within domina em Maio 2026: K-Beauty leva colageno premium ao mainstream brasileiro — NMN + Verisol + hialuronico cria categoria de alta retencao",
+          "summary": "K-Beauty e produtos coreanos de colageno lideram buscas em Mai 2026. Nutrify Collagen Renew lidera rankings brasileiros. Combinacao premium: Verisol 2,5g + NMN 500mg + hialuronico 150mg + Vit C 200mg. Consumidora beauty-from-within gasta 2,5x mais que na linha topica equivalente.",
+          "source": "Estado de Minas K-Beauty Colageno Mai 2026 / Radar Beleza Melhores Colagenos 2026",
+          "curto": "7",
+          "medio": "8",
+          "longo": "8",
+          "idea": "Collagen Longe Voce Mais+: Verisol 2,5g + NMN 300mg + CoQ10 50mg + Biotina 5mg — beauty-from-within com componente de longevidade dermica. Publico: mulheres 30-55 anos."
+        },
+        {
+          "category": "mercado",
+          "tag": "Plant-Based Brasil R$2.2bi Flexitariano 12% aa",
+          "stars": "⭐⭐⭐",
+          "headline": "Mercado plant-based supera R$ 2,2 bilhoes no Brasil em 2026 com crescimento de 12% ao ano — flexitariano, nao vegano, lidera; proteina de ervilha e grao-de-bico surgem como alternativas premium",
+          "summary": "R$2.2bi projecao plant-based Brasil 2026, crescimento 12% aa ate 2027. Motor: flexitariano (35-40% brasileiros adultos) que reduz proteina animal por saude e sustentabilidade. Proteina de ervilha: perfil aminoacidos mais completo que soja, sem alergenicidade.",
+          "source": "VeganBusiness Plant-Based Brasil 2026 / Good Food Institute Brasil Crescimento",
+          "curto": "6",
+          "medio": "7",
+          "longo": "8",
+          "idea": "Proteina Plant-Based Premium Voce Mais+: blend Ervilha 60% + Grao-de-Bico 30% + Arroz 10%. Comunicacao para flexitariano: diversificar fontes proteicas, nao eliminar animal."
+        },
+        {
+          "category": "tendencias",
+          "tag": "Influencers Saude 82% Sem Formacao CONAR Evidencia",
+          "stars": "⭐⭐⭐",
+          "headline": "82% dos perfis de nutricao no Instagram sem formacao comprovada em 2026 — CONAR intensifica fiscalizacao; marcas baseadas em evidencia ganham vantagem decisiva de credibilidade",
+          "summary": "Segmento cresceu 20% em social commerce mas critica ao conteudo sem base cientifica ganhou escala. Micro-influencers com formacao real (nutricionistas, nutrologos) tem engajamento de 9,2% no TikTok. CONAR intensifica fiscalizacao de claims em suplementos. Oportunidade: parceria com profissionais de saude reais.",
+          "source": "Questao de Ciencia Suplementos Influencers 2024 / E-Commerce Brasil Marketing Influencia 2026",
+          "curto": "7",
+          "medio": "8",
+          "longo": "8",
+          "idea": "Programa de Embaixadores Clinicos Voce Mais+: 50 nutricionistas e nutrologos com CRM como parceiros. Serie Ciencia Sem Enrolacao: videos tecnicos com profissional de saude visivel e identificado."
+        }
+      ]
+    },
+    {
       "date": "2026-05-25",
       "dateLabel": "25 de Maio de 2026",
       "headline": "ANVISA enforcement, fibras como nova proteína, psicobióticos USD 10,5bi e suplementação personalizada via DNA cresce 89%",
