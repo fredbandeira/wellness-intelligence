@@ -1,6 +1,156 @@
 {
   "editions": [
     {
+      "date": "2026-05-28",
+      "dateLabel": "28 de Maio de 2026",
+      "cards": [
+        {
+          "category": "mercado",
+          "tag": "Mercado - Brasil R$7,6bi +15% 2025 3 Maior Mercado Mundial Suplementos",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Mercado brasileiro de suplementos cresce 15% em 2025 e alcanca R$7,6 bilhoes - Brasil ultrapassa Australia e se torna o 3 maior mercado mundial",
+          "summary": "O setor brasileiro de suplementos registrou crescimento de 15% em 2025, movimentando R$7,6 bilhoes. Os segmentos de maior crescimento: formatos inovadores (gummies, softgels, sticks), clean label e saude feminina. Projecao de R$13,8bi ate 2030.",
+          "source": "Food Connection / Revista Suplementacao / Revista Imprensa Brasil",
+          "curto": "9",
+          "medio": "9",
+          "longo": "10",
+          "idea": "Posicionar a Voce Mais+ como a marca clean label de referencia no Brasil com QR code de rastreabilidade e Big 5 da longevidade como protocolo base."
+        },
+        {
+          "category": "regulacao",
+          "tag": "Regulacao - ANVISA IN 438 Abril 2026 Curcuma Adequacao 6 Meses",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "ANVISA IN 438/2026: suplementos com extrato de curcuma tem 6 meses para adequacao - nova lista de constituintes autorizados entra em vigor",
+          "summary": "A IN ANVISA 438, publicada em 16/04/2026, estabelece prazo de 6 meses para adequacao de suplementos com extrato de curcuma. Deadline: outubro 2026. Marcas devem revisar fornecedores, dosagens e documentacao tecnica imediatamente.",
+          "source": "ANVISA Anvisalegis IN 438/2026 / CRN6 / Assifarma / Kasznar Leonardos",
+          "curto": "10",
+          "medio": "8",
+          "longo": "7",
+          "idea": "Auditoria regulatoria urgente em todos os SKUs com curcuma ou turmerica. Oportunidade: desenvolver Curcumina + Piperina + D3 clean label com documentacao 100% atualizada como diferencial competitivo."
+        },
+        {
+          "category": "tendencias",
+          "tag": "Tendencias - Fibras GLP-1 Saude Metabolica Hit Inverno 2026",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Fibras alimentares emergem como o maior hit da industria wellness no inverno 2026 - onda GLP-1 transforma psyllium, glucomanano e inulina em ingredientes estrategicos",
+          "summary": "A fibra alimentar e o maior hit de 2026 pela onda GLP-1: psyllium, glucomanano e inulina estimulam secrecao natural de GLP-1, modulam microbioma e prolongam saciedade. Mercado de fibras funcionais cresceu 40% no e-commerce de saude no Q1 2026.",
+          "source": "Food Connection / Exame Wellness 2026 / BHB Food GLP-1 / iHerb Blog",
+          "curto": "10",
+          "medio": "9",
+          "longo": "8",
+          "idea": "Lancar Fibra+ Metabolica: blend psyllium (3g) + glucomanano (1g) + inulina (2g) + gengibre (200mg) + vitamina C. Sache solavel. Lancamento junho-julho 2026."
+        },
+        {
+          "category": "ciencia",
+          "tag": "Ciencia - Lion Mane Chaga NGF Beta-Glucanos Cognicao Imunidade 2026",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Lion Mane + Chaga: a dupla de cogumelos funcionais que revoluciona saude cognitiva e imunidade em 2026 - NGF, beta-glucanos e adaptacao ao estresse",
+          "summary": "Lion Mane estimula o Fator de Crescimento Neural (NGF) para foco e clareza cognitiva. Chaga oferece beta-glucanos para suporte imunologico. Stack mais buscado no Brasil em 2026 para performance cognitiva sustentavel sem cafeina excessiva.",
+          "source": "Vitaminer Shop 2026 / Food Connection Guia Adaptogenicos / Verified Market Research",
+          "curto": "8",
+          "medio": "9",
+          "longo": "9",
+          "idea": "Lancar Cogumelos+ Voce Mais+: blend Lion Mane 500mg + Chaga 300mg + Reishi 200mg + Cordyceps 200mg. Extratos padronizados em polissacarideos minimo 30% e beta-glucanos minimo 20%."
+        },
+        {
+          "category": "mercado",
+          "tag": "Mercado - Clean Label USD28bi 2024 USD89bi 2034 CAGR 12.2% Ingredientes Naturais",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Clean label: mercado global de ingredientes naturais vai de USD 28,2bi a USD 89,7bi em 2034 com CAGR de 12,2% - consumidor brasileiro exige transparencia de origem",
+          "summary": "O mercado global de clean label movimentou USD 28,2bi em 2024 e deve atingir USD 89,7bi em 2034. No Brasil, 6 em cada 10 consumidores querem saber a origem exata dos ingredientes. Marcas clean label registram NPS 30% superior e recompra 25% maior.",
+          "source": "Global Market Insights / Food Connection / Purefy Nutrition / Innova Market Insights",
+          "curto": "8",
+          "medio": "9",
+          "longo": "10",
+          "idea": "Criar pagina de transparencia no site com origem de cada ingrediente e QR code. Adicionar selo Clean Label em toda embalagem. Comunicar proativamente o que NAO tem nos produtos."
+        },
+        {
+          "category": "ciencia",
+          "tag": "Ciencia - Berberina GLP-1 Natural Metabolismo Glicose Viral 2026",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Berberina torna-se o ativo mais buscado do wellness metabolico em 2026 - mimetiza acao GLP-1 no metabolismo da glicose e vira alternativa natural ao Ozempic",
+          "summary": "A berberina ativa a via AMPK, mimetiza a acao da insulina no metabolismo da glicose e estimula a secrecao de GLP-1. Chamada de Ozempic natural nas redes sociais em 2026. Atencao: berberina nao esta autorizada como suplemento alimentar pela ANVISA - deve ser comercializada como fitoterapico.",
+          "source": "GoodRx / iHerb Blog GLP-1 Natural / Geisinger GLP-1 Supplements 2026",
+          "curto": "9",
+          "medio": "10",
+          "longo": "8",
+          "idea": "Desenvolver MetaboFlow Voce Mais+: curcumina fitossoma (200mg) + gengibre (300mg) + psyllium (2g) + inulina (1g) + chromium picolinato. Dentro da regulacao ANVISA vigente."
+        },
+        {
+          "category": "tendencias",
+          "tag": "Tendencias - IA Personalizacao PD Suplementos Ciclos Inovacao 6 Meses",
+          "stars": "⭐⭐⭐",
+          "headline": "Inteligencia Artificial encurta ciclos de P&D de suplementos de 24 para 6 meses em 2026 - analise de evidencias clinicas e combinacoes de ingredientes em tempo real",
+          "summary": "IA no P&D de suplementos encurta ciclos de inovacao de 24 para 6 meses. No varejo, a IA recomenda protocolos personalizados de suplementacao. No Brasil, o movimento ainda engatinha, criando janela de primeiro-movedor para marcas com capacidade tecnologica.",
+          "source": "Food Connection Mercado 2026 / Revista Kdea 360 / Underlab Tendencias 2026",
+          "curto": "6",
+          "medio": "8",
+          "longo": "9",
+          "idea": "Desenvolver Quiz de Suplementacao Voce Mais+: 10 perguntas sobre objetivos e sintomas que recomendam o protocolo ideal de produtos. Comecar com arvore de decisao e evoluir para ML."
+        },
+        {
+          "category": "mercado",
+          "tag": "Mercado - Plant-Based Proteina R$2.2bi Brasil 2026 Flexitariano Vegetal",
+          "stars": "⭐⭐⭐",
+          "headline": "Mercado plant-based brasileiro supera R$2,2 bilhoes em 2026 - proteina de ervilha e arroz crescem 38%; consumidor flexitariano impulsiona suplementacao vegetal premium",
+          "summary": "O setor plant-based deve superar R$2,2bi em vendas em 2026 (Euromonitor). Proteinas vegetais crescem 38% no varejo. O motor e o consumidor flexitariano. 26% dos brasileiros consomem carne vegetal 1x/mes. Desafio: sabor e textura ainda sao barreiras. Blend ervilha+arroz tem perfil de aminoacidos mais completo.",
+          "source": "Vegan Business Brasil 2026 / Euromonitor / Beef Point / Compre Rural",
+          "curto": "7",
+          "medio": "8",
+          "longo": "8",
+          "idea": "Lancar PlantPro Voce Mais+: proteina vegetal premium blend ervilha+arroz (25g/dose), sem sucralose, sem corantes, sabores naturais. Posicionamento: a proteina vegetal que tem gosto bom. Preco: R$149-189/kg."
+        },
+        {
+          "category": "ciencia",
+          "tag": "Ciencia - Psicobioticos Gut-Brain Ansiedade Humor Cepas Precisao USD10bi 2026",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Psicobioticos 2026: L. plantarum e L. helveticus reduzem ansiedade e melhoram humor em 8 semanas - eixo gut-brain entra na clinica com cepas de precisao",
+          "summary": "Em 2026, psicobioticos entram na pratica clinica com cepas de precisao por indicacao. Mercado avaliado em USD 10,5bi. Pesquisas UNESP e UFRJ confirmam eficacia em populacao brasileira com reducao significativa de ansiedade em 8 semanas de uso continuo.",
+          "source": "UNESP Psicobioticos / UFRJ Microbiota / LabVital 2026 / Debates em Psiquiatria",
+          "curto": "8",
+          "medio": "9",
+          "longo": "9",
+          "idea": "Lancar PsicoPro Voce Mais+: L. plantarum 299v (10bi UFC) + L. helveticus R0052 (5bi UFC) + B. longum R0175 (5bi UFC) + D3 + zinco. Capsula com enteric coating. Canal: parcerias com psiquiatras integrativas."
+        },
+        {
+          "category": "tendencias",
+          "tag": "Tendencias - Colageno Hidrolisado Gummies Sticks Verisol Inverno Pele 2026",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Colageno hidrolisado em formatos inovadores domina saude da pele em 2026 - gummies e sticks com Verisol superam capsulas tradicionais; sinergia com hialuronico e vitamina C e padrao",
+          "summary": "Gummies, sticks soluveis e bebidas com colageno crescem 3x mais rapido que capsulas tradicionais. Sinergia obrigatoria em 2026: Verisol 2,5g + hialuronico 150mg + vitamina C 500mg. O inverno cria janela ideal com pele ressecada amplificando demanda. Mercado de colageno na America do Sul cresce a CAGR de 7,2%.",
+          "source": "Hile Suplementos 2026 / Mordor Intelligence South America Collagen / Fortune Business Insights",
+          "curto": "9",
+          "medio": "8",
+          "longo": "8",
+          "idea": "Campanha Inverno Voce Mais+: Colageno Luminoso em sache solavel sabor tangerina. Verisol 2,5g + hialuronico 150mg + vitamina C 500mg + biotina 5000mcg. Lancamento junho 2026."
+        },
+        {
+          "category": "tendencias",
+          "tag": "Tendencias - Saude Feminina Perimenopausa Ashwagandha Magnesio USD6.5bi 2030",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Ashwagandha + Magnesio: protocolo base da perimenopausa natural em 2026 - mulher de 40-55 anos e o segmento de maior crescimento com retencao 40% superior ao mercado",
+          "summary": "Mulher na perimenopausa (40-55 anos) e o segmento de maior crescimento em suplementacao natural. Protocolo mais prescrito: Ashwagandha KSM-66 para cortisol, Magnesio Bisglicinato para sono e ansiedade hormonal. Mercado de terapias nao-hormonais cresce de USD 4,5bi (2024) para USD 6,5bi (2030) com CAGR de 7,8%.",
+          "source": "Pharma Scalabis Longevidade Feminina 2026 / Ocean Drop / Bonita Mulher 2026 / Jovem Pan",
+          "curto": "9",
+          "medio": "10",
+          "longo": "10",
+          "idea": "Linha HormoBalance Voce Mais+ com 3 SKUs: Dia (Ashwagandha+Vitex+B6+Zinco), Noite (Magnesio+Triptofano+Valeriana+Melatonina) e Pele (Colageno+Primula+VitE+Selenio). Canal: ginecologistas e nutrologas integrativas."
+        },
+        {
+          "category": "tendencias",
+          "tag": "Digital - Microinfluenciadores Wellness 7% Engajamento Especialistas Conversao",
+          "stars": "⭐⭐⭐",
+          "headline": "Microinfluenciadores de wellness com 7% engajamento superam mega-influenciadores em conversao - consumidor de saude busca especialistas autenticos com credencial",
+          "summary": "Microinfluenciadores (10k-100k seguidores) com 7% de engajamento convertem 3-5x mais que mega-influenciadores com 1-2%. Marcas que trabalham com nutri-influencers registram CPA 40% menor e LTV 60% maior. O consumidor de saude e o mais cetico do ecossistema digital.",
+          "source": "Focusnetworks Marketing Wellness 2026 / Hype Auditor / Jornal Cruzeiro Influenciadores 2026",
+          "curto": "8",
+          "medio": "8",
+          "longo": "7",
+          "idea": "Programa Voce Mais+ Especialistas: 20 microinfluenciadores especialistas (nutricionistas, medicos) com 5k-50k seguidores e engajamento acima de 5%. Comissao de 15% em vendas rastreadas. Meta: R$50k/mes em 6 meses."
+        }
+      ]
+    },
+    {
       "date": "2026-05-27",
       "dateLabel": "27 de Maio de 2026",
       "cards": [
