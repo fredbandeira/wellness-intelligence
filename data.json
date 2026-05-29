@@ -1,6 +1,168 @@
 {
   "editions": [
     {
+      "date": "2026-05-29",
+      "dateLabel": "29 de Maio de 2026",
+      "cards": [
+        {
+          "category": "evento",
+          "tag": "Evento - Naturaltech 2026 20a Edicao Junho SP America Latina",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Naturaltech 2026 chega a 20a edicao em junho em Sao Paulo - maior feira de produtos naturais da America Latina e vitrine estrategica que se fecha em 12 dias",
+          "summary": "A 20a edicao da Naturaltech acontece de 10 a 13 de junho de 2026 no Distrito Anhembi, Sao Paulo. Longevidade feminina como tema central, organizacao por objetivos de saude (Sono, Metabolismo, Cognicao, Imunidade) e IA no P&D dominam o evento. Para a Voce Mais+, estar presente ou representada e uma oportunidade estrategica que se fecha em 12 dias.",
+          "source": "Naturaltech.com.br / WS Naturais / ABC da Comunicacao Allright / Juventude BM",
+          "curto": "10",
+          "medio": "9",
+          "longo": "8",
+          "idea": "Preparar kit de amostras e materiais institucionais com foco em clean label. Fazer cobertura digital ao vivo do evento. Identificar 3-5 microinfluenciadores especialistas presentes para iniciar parcerias."
+        },
+        {
+          "category": "regulacao",
+          "tag": "Regulacao - ANVISA RDC 843 Deadline 1 Setembro 2026 95 Dias",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "ANVISA deadline final: 1 de setembro de 2026 - apenas 95 dias para adequacao completa de todos os suplementos ao novo marco regulatorio",
+          "summary": "A RDC 843/2024 estabeleceu prazo final de adequacao em 1 de setembro de 2026. Apos essa data, produtos nao conformes serao retirados do mercado. Exigencias: notificacao ANVISA, estudos de estabilidade e ingredientes na lista autorizada. A IN 438/2026 de abril atualiza limites de curcumina. Adequacoes regulatorias levam de 30 a 90 dias.",
+          "source": "ANVISA RDC 843/2024 / Pronutrition / Kasznar Leonardos / Assifarma",
+          "curto": "10",
+          "medio": "9",
+          "longo": "7",
+          "idea": "Auditoria completa de todos os SKUs ativos. Contratar consultoria regulatoria ANVISA. Transformar a adequacao em argumento de marketing: marca 100% conforme antes do deadline se diferencia dos concorrentes."
+        },
+        {
+          "category": "tendencias",
+          "tag": "Tendencias - Sono 3o Pilar Wellness USD 7,91bi Magnesio Melatonina L-Theanina",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Sono emerge como o 3o pilar do wellness em 2026 - mercado de suplementos de sono atinge USD 7,91bi com stack magnesio glicinat + L-theanina + melatonina liderando lancamentos",
+          "summary": "O mercado global de suplementos para sono atinge USD 7,91 bilhoes em 2026. Melatonina domina com 36,7% de market share, mas a combinacao magnesio glicinat + L-theanina e a tendencia real: eficacia sem dependencia. 35-40% dos brasileiros relatam problemas de sono cronico. Ingredientes naturais dominam 58,4% do mercado.",
+          "source": "Future Market Insights Sleep Supplement Market / BetterLife Lab / Healthline Sleep Aids",
+          "curto": "9",
+          "medio": "9",
+          "longo": "8",
+          "idea": "Lancar Sono+ Voce Mais+: magnesio bisglicinato (300mg) + L-theanina (200mg) + melatonina (0,5mg) + passiflora (300mg). Posicionamento: o suplemento de sono que nao cria dependencia. Janela ideal: inverno 2026."
+        },
+        {
+          "category": "ciencia",
+          "tag": "Ciencia - Lion Mane Ensaio Clinico NCT07405957 Dual Extract Cognicao 2026",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Novo ensaio clinico NCT07405957 compara dual extract de Lion Mane em cognicao, humor e microbiota - maior estudo ja conduzido com o ingrediente em adultos saudaveis",
+          "summary": "O ensaio NCT07405957 compara fruitbody vs fruitbody com mycelium em adultos saudaveis mensurando cognicao, biomarcadores e microbiota. Estudos anteriores confirmam melhora cognitiva aguda em 60 minutos e beneficios cronicos em 8-16 semanas via estimulacao de NGF.",
+          "source": "ClinicalTrials.gov NCT07405957 / HealthDataConsortium / Nutritional Outlook Dual Extract",
+          "curto": "7",
+          "medio": "9",
+          "longo": "10",
+          "idea": "Posicionar o Lion Mane com evidencia clinica: extrato padronizado em beta-glucanos minimo 20%, referenciar NCT07405957 nas paginas de produto, dosagem evidence-based de 500-1000mg/dia."
+        },
+        {
+          "category": "mercado",
+          "tag": "Mercado - 70% Consumidores Premium Ingredientes Clinicos KSM-66 Verisol",
+          "stars": "⭐⭐⭐",
+          "headline": "70% dos consumidores globais pagam premium por ingredientes clinicamente comprovados - KSM-66 e Verisol lideram willingness to pay com diferencial de 40-60% no ticket",
+          "summary": "Mais de 70% dos consumidores em EUA, Europa e Asia pagam valor premium por ingredientes branded e clinicamente testados. KSM-66 (ashwagandha), Verisol (colageno) e Sensoril lideram. No Brasil o movimento cresce em saude feminina e longevidade. Ticket medio 40-60% superior para marcas com ingredientes branded.",
+          "source": "Champion Bio Premium Supplement Ingredients 2025-2026 / Makers Nutrition / MixMasters EU",
+          "curto": "7",
+          "medio": "8",
+          "longo": "9",
+          "idea": "Incorporar KSM-66, Verisol e OptiMSM nos produtos de maior ticket. Comunicar os nomes das patentes nas embalagens. Esse upgrade pode justificar aumento de preco de 30-50%."
+        },
+        {
+          "category": "regulacao",
+          "tag": "Regulacao - Lei 15.325/2026 Influenciadores Claims Suplementos Marketing",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Lei dos Influenciadores 15.325/2026 torna claims sem evidencia em risco legal para marcas - marketing de suplementos precisa de revisao imediata para compliance",
+          "summary": "A Lei 15.325/2026 sancionada em janeiro regula influenciadores digitais no Brasil. Claims de saude sem evidencia passam a ter risco legal para o influenciador E para a marca contratante. Publicidade deve ser claramente identificada. O custo juridico de publicidade irresponsavel aumentou significativamente.",
+          "source": "Correio Braziliense Lei Influenciadores Jan 2026 / Migalhas / Guia da Farmacia",
+          "curto": "8",
+          "medio": "8",
+          "longo": "7",
+          "idea": "Revisar todos os claims ativos em posts, embalagens e site. Criar briefing de compliance para parceiros influenciadores. Transformar evidencia clinica no argumento central de comunicacao."
+        },
+        {
+          "category": "produtos",
+          "tag": "Produtos - Adaptogenicos Bebidas RTD Shots Cafe Funcional Ashwagandha 2026",
+          "stars": "⭐⭐⭐",
+          "headline": "Adaptogenicos conquistam formatos liquidos em 2026 - ashwagandha e lion mane em cafes funcionais, shots RTD e aguas; botanicals crescem 9,3% puxados por novos formatos",
+          "summary": "Ashwagandha e lion mane estao sendo incorporados a cafes funcionais, shots RTD e aguas funcionais. Botanicals cresceram 9,33% com adaptogenicos liderando novos lancamentos. No Brasil, cafe funcional com lion mane e categoria de rapido crescimento.",
+          "source": "Nutritional Outlook Ingredient Trends / Beverage Daily Adaptogen Guide / MixMasters",
+          "curto": "7",
+          "medio": "8",
+          "longo": "7",
+          "idea": "Cafe Funcional Voce Mais+: cafe arabica + lion mane 300mg + ashwagandha KSM-66 200mg em sache ou drip bag. Canal: varejo premium, academias e co-workings."
+        },
+        {
+          "category": "ciencia",
+          "tag": "Ciencia - Akkermansia muciniphila GLP-1 Endogeno Microbioma Saciedade",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Akkermansia muciniphila surge como o probiotico mais promissor de 2026 - estimula GLP-1 endogeno via microbioma, reduz resistencia insulinica e promove saciedade natural",
+          "summary": "A Akkermansia muciniphila coloniza a mucosa intestinal, aumenta GLP-1 pelo intestino e melhora a barreira intestinal. Reducao de resistencia insulinica e modulacao de apetite sem efeitos colaterais farmacologicos. Suplementos com A. muciniphila pasteurizada ja disponiveis globalmente.",
+          "source": "GoodRx / FoodBiz GLP-1 Suplementos / AFormulaBR Alternativas Naturais / iHerb Blog",
+          "curto": "6",
+          "medio": "9",
+          "longo": "9",
+          "idea": "Pioneirismo em Akkermansia no Brasil: estudar viabilidade de importacao, desenvolver produto Bioma Metabolico com A. muciniphila + psyllium + inulina. Canal inicial: prescricao por nutrologistas."
+        },
+        {
+          "category": "mercado",
+          "tag": "Mercado - Colageno Marinho CAGR 14-18% Beauty From Within USD 3,3bi Global",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Colageno marinho cresce 14-18% ao ano no Brasil e deve dobrar participacao ate 2035 - beauty from within global chega a USD 3,3bi com envelhecimento ativo como motor",
+          "summary": "Marine collagen avanca de 20% para 28-30% do consumo brasileiro ate 2035. Segmento beauty captura 45-50% da demanda. O inverno amplifica a procura. Diferencial: colageno marinho + acido hialuronico + vitamina C com claim de resultado visivel em 8 semanas.",
+          "source": "PR Newswire Global Collagen USD 3.3bi / IndexBox Brazil / Future Market Insights Latin America",
+          "curto": "8",
+          "medio": "8",
+          "longo": "9",
+          "idea": "Colageno Marinho+ Voce Mais+: colageno marinho 5g + acido hialuronico 150mg + vitamina C 500mg + biotina 5000mcg em stick solavel. Premium pricing R$149-179. Bundle com Vitamina D3+K2."
+        },
+        {
+          "category": "ciencia",
+          "tag": "Ciencia - Vitamina D 97% Deficiencia Mulheres 40+ D3+K2+Magnesio",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Vitamina D deficiente em ate 97% das mulheres acima de 40 anos no Brasil - combinacao D3+K2+Magnesio resolve as 3 deficiencias mais prevalentes num unico SKU de alta adesao",
+          "summary": "Prevalencias alarmantes em mulheres 40+: vitamina D (ate 97%), magnesio (44-62%), calcio (48-74%). A combinacao D3+K2 MK-7+Magnesio resolve tres deficiencias simultaneamente e tem entre as maiores taxas de recompra do mercado feminino de suplementos.",
+          "source": "Catarinense Pharma Saude Mulher 40+ / Drogasil / Marcas e Mercados Vitaminas Lifestyle",
+          "curto": "9",
+          "medio": "9",
+          "longo": "10",
+          "idea": "VitaFem D3+K2+Mag Voce Mais+: vitamina D3 (2000 UI) + K2 MK-7 (100mcg) + magnesio quelado (300mg) em softgel de oleo de oliva. O suplemento base para saude da mulher 40+ no Brasil."
+        },
+        {
+          "category": "produtos",
+          "tag": "Produtos - Fava Bean Proteina Amendoa Plant-Based Crescimento Rapido 2026",
+          "stars": "⭐⭐⭐",
+          "headline": "Fava bean e proteina de amendoa sao as plant-based proteins de mais rapido crescimento em 2026 - 64% dos consumidores querem menos processamento; ervilha e arroz perdem share",
+          "summary": "Fava bean e amendoa lideram novos lancamentos em proteina vegetal pelo perfil clean label. 64% dos consumidores globais preferem produtos plant-based com menos processamento. Ervilha e arroz perdem share para alternativas mais naturais e menos processadas.",
+          "source": "Innova Market Insights / Speciality Food Magazine / Reliance Vitamin / GlobeNewswire",
+          "curto": "6",
+          "medio": "8",
+          "longo": "9",
+          "idea": "Reformular proteina vegetal para 2027 com blend fava bean + amendoa. Clean label absoluto: sem maltodextrina, sem sucralose, zero artificial. Lista de ingredientes curta e legivel como argumento de marketing."
+        },
+        {
+          "category": "mercado",
+          "tag": "Mercado - Nootropicos 12,8% Crescimento L-Theanina Lion Mane 38% Novos SKUs",
+          "stars": "⭐⭐⭐⭐",
+          "headline": "Nootropicos crescem 12,8% em 2026 - L-theanina e Lion Mane respondem por 38% dos novos SKUs; cognicao natural supera performance esportiva em novidades do mercado",
+          "summary": "Nootropicos sao a categoria de maior crescimento em suplementos com 12,8% de expansao. L-theanina + Lion Mane = 38% dos novos SKUs. Driver: consumidores 28-45 anos buscam foco e produtividade sem estimulantes. Stack mais buscado: Lion Mane + L-theanina + cafeina 100mg.",
+          "source": "Makers Nutrition Supplement Trends 2026 / Nutritional Outlook / MixMasters / Genie Blog",
+          "curto": "8",
+          "medio": "9",
+          "longo": "9",
+          "idea": "Lancar Foco+ Voce Mais+: Lion Mane dual extract 500mg + L-theanina 200mg + bacopa monnieri 300mg + B12 500mcg. Posicionamento: energia mental limpa sem estimulantes. Canal: LinkedIn Ads profissionais 30-45 anos."
+        },
+        {
+          "category": "analise",
+          "tag": "Analise - Cruzamento Naturaltech ANVISA Lei Influenciadores Sono Janela Acao",
+          "stars": "⭐⭐⭐⭐⭐",
+          "headline": "Cruzamento estrategico 29 maio: Naturaltech 12 dias + ANVISA 95 dias + Lei Influenciadores ativa + Sono USD 7,91bi sub-explorado = janela de acao convergente urgente",
+          "summary": "Tema unificador: a profissionalizacao do wellness. Quatro vetores urgentes convergem: (1) Naturaltech 10-13 junho - 12 dias; (2) ANVISA deadline 1 setembro - 95 dias; (3) Lei Influenciadores 15.325/2026 - marketing de suplementos precisa de revisao imediata; (4) Sono como pilar emergente - USD 7,91bi com baixa penetracao premium no Brasil. Janela mais urgente: Sono+ (inverno 2026). Janela media: Foco+ nootropico.",
+          "source": "Analise cruzada das 12 tendencias da edicao / Naturaltech / ANVISA / Correio Braziliense / Future Market Insights",
+          "curto": "10",
+          "medio": "10",
+          "longo": "10",
+          "idea": "Plano imediato: ESTA SEMANA - presenca digital Naturaltech, auditoria ANVISA, revisao briefings influenciadores. JUNHO - Fibra+ Metabolica, Naturaltech. JULHO - Sono+ inverno, HormoBalance. AGOSTO - Foco+, adequacao ANVISA deadline setembro."
+        }
+      ]
+    },
+    {
       "date": "2026-05-28",
       "dateLabel": "28 de Maio de 2026",
       "cards": [
